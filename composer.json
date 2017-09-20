@@ -1,0 +1,8 @@
+{
+	"autoload" : {
+		"psr-4": {
+			"BS\\PageAssignments\\": "src",
+			"BS\\PageAssignments\\Tests\\": "tests/phpunit"
+		}
+	}
+}
