@@ -1,4 +1,11 @@
 {
+	"name": "mediawiki/blue-spice-page-assignments",
+	"type": "mediawiki-extension",
+	"description": "Enables you to assign users or groups to a page",
+	"license": "GPL-3.0",
+	"require": {
+		"composer/installers": "~1.0"
+	},
 	"autoload" : {
 		"psr-4": {
 			"BS\\PageAssignments\\": "src",
