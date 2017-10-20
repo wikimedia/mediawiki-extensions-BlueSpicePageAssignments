@@ -1,5 +1,5 @@
 Ext.onReady( function() {
-	Ext.Loader.setPath( 'BS.PageAssignments', mw.config.get('wgScriptPath') + '/extensions/BlueSpiceExtensions/PageAssignments/resources/BS.PageAssignments' );
+	Ext.Loader.setPath( 'BS.PageAssignments', mw.config.get('wgScriptPath') + '/extensions/BlueSpicePageAssignments/resources/BS.PageAssignments' );
 });
 
 (function( mw, $, d, bs, undefined ){

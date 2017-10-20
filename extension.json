@@ -10,7 +10,7 @@
 	"version": "2.27.1-alpha",
 	"descriptionmsg": "bs-pageassignments-desc",
 	"bsgExtensions": {
-		"PageAssignments": {
+		"BlueSpicePageAssignments": {
 			"className": "PageAssignments",
 			"extPath": "/BlueSpicePageAssignments"
 		}
