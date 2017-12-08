@@ -152,7 +152,7 @@ class PageAssignmentsNotificationHooks {
 
 	/**
 	 *
-	 * @param Article $article
+	 * @param WikiPage $wikiPage
 	 * @param user $user
 	 * @param Content $content
 	 * @param string $summary
@@ -165,8 +165,8 @@ class PageAssignmentsNotificationHooks {
 	 * @param int $baseRevId
 	 * @return boolean
 	 */
-	public static function onPageContentSaveComplete( &$article, &$user, $content, $summary, $minoredit, $watchthis, $sectionanchor, &$flags, $revision, &$status, $baseRevId ) {
-		PageAssignmentsNotificationHooks::notify( 'bs-pageassignments-page-edit', $user, $article->getTitle() );
+	public static function onPageContentSaveComplete( WikiPage &$wikiPage, &$user, $content, $summary, $minoredit, $watchthis, $sectionanchor, &$flags, $revision, &$status, $baseRevId ) {
+		PageAssignmentsNotificationHooks::notify( 'bs-pageassignments-page-edit', $user, $wikiPage->getTitle() );
 		return true;
 	}
 
