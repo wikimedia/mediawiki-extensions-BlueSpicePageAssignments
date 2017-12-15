@@ -4,7 +4,8 @@
 			"Wladek92",
 			"Gomoko",
 			"Samihuc",
-			"Verdy p"
+			"Verdy p",
+			"Urhixidur"
 		]
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d'affecter des utilisateurs ou groupes à une page",
@@ -29,8 +30,8 @@
 	"log-name-bs-pageassignments": "Journal des affectations",
 	"log-description-bs-pageassignments": "Journal des modifications sur les affectations de la page",
 	"log-show-hide-bs-pageassignments": "$1 le journal des affectations",
-	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|a affecté}} la page « $3 » à {{GENDER:$4|l’utilisateur|l’utilisatrice}} « $4 »",
-	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|a retiré}} l’affectation de la page « $3 » de {{GENDER:$4|l’utilisateur|l’utilisatrice}} « $4 »",
+	"logentry-bs-pageassignments-add-user": "$1 a affecté la page « $3 » à l’utilisat{{GENDER:$4|eur|rice}} « $4 »",
+	"logentry-bs-pageassignments-remove-user": "$1 a retiré l’affectation de la page « $3 » de l’utilisat{{GENDER:$4|eur|rice}} « $4 »",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|a affecté}} le groupe « $4 » à la page « $3 »",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|a retiré}} l’affectation du groupe « $4 » de la page « $3 »",
 	"echo-category-title-bs-pageassignments-action-cat": "Affectations de pages",
@@ -39,7 +40,7 @@
 	"bs-pageassignments-notification-reason-group": "Vous êtes un membre {{PLURAL:$1|du groupe|des groupes}}: $2",
 	"notification-bs-pageassignments-assignment-change-add-summary": "$1 vous {{GENDER:$2|a affecté}} à $3",
 	"notification-bs-pageassignments-assignment-change-add-subject": "Affectation à $2",
-	"notification-bs-pageassignments-assignment-change-add-body": "$1{{GENDER:$2||}} vous a affecté{{GENDER:||e}} à la page $2.",
+	"notification-bs-pageassignments-assignment-change-add-body": "$1 vous a affecté{{GENDER:||e}} à la page $2.",
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$2|a retiré}} votre affectation de $3",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "Suppression de l'affectation à $2",
 	"notification-bs-pageassignments-assignment-change-remove-body": "Votre affectation à la page $2 a été retirée par $1{{GENDER:$2||}}.",
