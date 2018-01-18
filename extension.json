@@ -16,6 +16,9 @@
 		}
 	},
 	"callback": "PageAssignments::onRegistration",
+	"BlueSpiceFoundationAdminToolRegistry": {
+		"bs-pageassignments-manager": "BS\\PageAssignments\\AdminTool"
+	},
 	"DefaultUserOptions": {
 		"echo-subscriptions-web-bs-pageassignments-action-cat": true,
 		"echo-subscriptions-email-bs-pageassignments-action-cat": true
@@ -175,7 +178,6 @@
 		"BSStateBarBeforeBodyViewAdd": "PageAssignmentsStateBarHooks::onStateBarBeforeBodyViewAdd",
 		"BSStatebarAddSortTopVars": "PageAssignmentsStateBarHooks::onStatebarAddSortTopVars",
 		"BSStatebarAddSortBodyVars": "PageAssignmentsStateBarHooks::onStatebarAddSortBodyVars",
-		"BSWikiAdminMenuItems": "PageAssignmentsHooks::onBSWikiAdminMenuItems",
 		"PageContentSaveComplete": "PageAssignmentsNotificationHooks::onPageContentSaveComplete",
 		"BSUserManagerAfterSetGroups": "PageAssignmentsNotificationHooks::onBSUserManagerAfterSetGroups",
 		"UserAddGroup": "PageAssignmentsUsersAdditionalPermissionsHooks::onUserAddGroup",

@@ -37,23 +37,6 @@ class PageAssignmentsHooks {
 		return true;
 	}
 
-	/**
-	 *
-	 * @param array $aOut
-	 * @param \User The user in which context the menu is rendered
-	 * @return boolean
-	 */
-	public static function onBSWikiAdminMenuItems( &$aOut, $oUser ){
-		if( !$oUser->isAllowed( 'pageassignments' ) ) {
-			return true;
-		}
-		$sLabel = wfMessage( 'managepageassignments' )->plain();
-		$aOut[$sLabel] = Html::rawElement( 'li', array(),
-			Linker::link( SpecialPage::getTitleFor( 'ManagePageAssignments' ), $sLabel, array( 'class' => 'bs-admin-link bs-icon-profile' )  )
-		);
-		return true;
-	}
-
 	public static function onPersonalUrls( &$aPersonal_urls, &$oTitle ) {
 		$oUser = RequestContext::getMain()->getUser();
 		if ( $oUser->isLoggedIn() ) {

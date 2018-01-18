@@ -138,7 +138,7 @@ class PageAssignments extends BsExtensionMW {
 	public function runPreferencePlugin( $sAdapterName, $oVariable ) {
 		$aPermissions = array_diff(
 			User::getAllRights(),
-			WikiAdmin::get( 'ExcludeRights' )
+			$this->getConfig()->get( 'UIPermissionBlacklist' )
 		);
 		return array(
 			'type' => 'multiselectex',
