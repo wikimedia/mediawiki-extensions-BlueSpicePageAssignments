@@ -40,6 +40,7 @@
 	"notification-bs-pageassignments-page-edit-subject": "$2 foi editada",
 	"notification-bs-pageassignments-page-delete-summary": "$3 foi{{GENDER:$2|excluído}} por $1",
 	"notification-bs-pageassignments-page-delete-subject": "$2 foi eliminada",
+	"notification-bs-pageassignments-user-group-add-summary": "Foi adicionado ao grupo $4",
 	"notification-bs-pageassignments-user-group-add-subject": "Adicionado ao grupo $4",
 	"notification-bs-pageassignments-user-group-add-body": "$1 {{GENDER:$2|adicionou}}-o ao grupo $4. Verifique as atribuições que lhe foram feitas em $3, por favor.",
 	"notification-bs-pageassignments-user-group-remove-summary": "Foi removido {{PLURAL:$5|do grupo|dos grupos}} $4",
