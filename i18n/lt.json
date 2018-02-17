@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Zygimantus",
-			"Eitvys200"
+			"Eitvys200",
+			"Manvydasz"
 		]
 	},
 	"bs-pageassignments-desc": "Leidžia jums priskirti vartotojus ar grupes į puslapį",
@@ -43,19 +44,19 @@
 	"notification-bs-pageassignments-assignment-change-remove-body": "Jūsų priskyrimas prie puslapio $2 buvo {{GENDER:$2|pašalintas}} $1",
 	"notification-bs-pageassignments-page-move-summary": "$3 buvo {{GENDER:$2|perkeltas|perkelta}} $1",
 	"notification-bs-pageassignments-page-move-subject": "$2 buvo perkeltas",
-	"notification-bs-pageassignments-page-move-body": "$1 {{GENDER:$2|perkėlė}} puslapį $2",
+	"notification-bs-pageassignments-page-move-body": "$1 {{GENDER:$2|pervadino}} puslapį $2.",
 	"notification-bs-pageassignments-page-edit-summary": "$3 buvo {{GENDER:$2|pakeistas}} $1",
 	"notification-bs-pageassignments-page-edit-subject": "$2 buvo redaguotas",
-	"notification-bs-pageassignments-page-edit-body": "$1 {{GENDER:$2|pakeitė}} puslapį $2",
+	"notification-bs-pageassignments-page-edit-body": "$1 {{GENDER:$2|redagavo}} puslapį $2.",
 	"notification-bs-pageassignments-page-delete-summary": "$3 buvo {{GENDER:$2|ištrintas}} $1",
 	"notification-bs-pageassignments-page-delete-subject": "$2 buvo ištrintas",
-	"notification-bs-pageassignments-page-delete-body": "$1 {{GENDER:$2|ištrynė}} puslapį $2",
+	"notification-bs-pageassignments-page-delete-body": "$1 {{GENDER:$2|ištrynė}} puslapį $2.",
 	"notification-bs-pageassignments-user-group-add-summary": "Buvote pridėtas prie grupės $4",
 	"notification-bs-pageassignments-user-group-add-subject": "Pridėtas prie grupės $4",
-	"notification-bs-pageassignments-user-group-add-body": "$1 {{GENDER:$2|pridėjo}} jus prie grupės $4. Prašome patikrinti savo užduotis $3",
+	"notification-bs-pageassignments-user-group-add-body": "$1 {{GENDER:$2|pridėjo}} jus prie grupės $4. Prašome patikrinti savo užduotis $3.",
 	"notification-bs-pageassignments-user-group-remove-summary": "Buvote pašalintas iš {{PLURAL:$5|grupės|grupių}} $4",
 	"notification-bs-pageassignments-user-group-remove-subject": "Pašalintas iš {{PLURAL:$5|grupės|grupių}} $4",
-	"notification-bs-pageassignments-user-group-remove-body": "$1 {{GENDER:$2|pašalino}} jus iš {{PLURAL:$5|grupės|grupių}} $4. Prašome patikrinti savo užduotis $3",
+	"notification-bs-pageassignments-user-group-remove-body": "$1 {{GENDER:$2|pašalino}} jus iš {{PLURAL:$5|grupės|grupių}} $4. Prašome patikrinti savo užduotis $3.",
 	"prefs-pageassignments": "Puslapio užduotys",
 	"bs-pageassignments-pref-permissions": "Pridėti papildomus leidimus priskirtiems vartotojams",
 	"bs-pageassignments-yourassignments": "Jūsų užduotys",
