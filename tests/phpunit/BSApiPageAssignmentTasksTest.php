@@ -41,12 +41,12 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 
 		$this->assertTrue( $oData->success, "API returned failure state" );
 
+		// Check if Assignment was added to database
 		$this->assertSelect(
 			'bs_pageassignments',
 			array( 'pa_assignee_key', 'pa_assignee_type' ),
 			array( 'pa_page_id = 1' ),
-			array(  array( 'John', 'user' ), array( 'sysop', 'group' ) ),
-			"Assignment was not added to database"
+			array(  array( 'John', 'user' ), array( 'sysop', 'group' ) )
 		);
 
 		$oData = $this->executeTask(
@@ -60,12 +60,12 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 
 		$this->assertTrue( $oData->success, "API returned failure state" );
 
+		// Check if Assignment was removed from database
 		$this->assertSelect(
 			'bs_pageassignments',
 			array( 'pa_assignee_key', 'pa_assignee_type' ),
 			array( 'pa_page_id = 1' ),
-			array(),
-			"Assignment was not removed from database"
+			array()
 		);
 	}
 
