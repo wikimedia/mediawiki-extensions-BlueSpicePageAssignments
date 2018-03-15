@@ -11,14 +11,6 @@ class PageAssignments extends BsExtensionMW {
 			'multiselectex'
 		);
 
-		$this->mCore->registerPermission(
-			'pageassignable',
-			array( 'user' )
-		);
-		$this->mCore->registerPermission(
-			'pageassignments',
-			array( 'sysop' )
-		);
 	}
 
 	/**

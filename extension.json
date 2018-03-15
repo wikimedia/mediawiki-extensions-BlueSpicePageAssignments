@@ -5,20 +5,58 @@
 		"Patric Wirth",
 		"Leonid Verhovskij"
 	],
+	"license-name": "GPL-3.0-only",
 	"url": "https://help.bluespice.com/index.php/PageAssignments",
 	"type": "bluespice",
-	"version": "2.27.1-alpha",
+	"version": "3.0.0-alpha",
 	"descriptionmsg": "bs-pageassignments-desc",
-	"bsgExtensions": {
-		"BlueSpicePageAssignments": {
-			"className": "PageAssignments",
-			"extPath": "/BlueSpicePageAssignments"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpicePageAssignments": {
+					"className": "PageAssignments",
+					"extPath": "/BlueSpicePageAssignments"
+				}
+			},
+			"AdminToolRegistry": {
+				"bs-pageassignments-manager": "BS\\PageAssignments\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"pageassignable": {
+					"type": "namespace",
+					"roles": [
+						"editor",
+						"admin"
+					]
+				},
+				"pageassignments": {
+					"type": "namespace",
+					"roles": [
+						"admin"
+					]
+				}
+			}
 		}
 	},
-	"callback": "PageAssignments::onRegistration",
-	"BlueSpiceFoundationAdminToolRegistry": {
-		"bs-pageassignments-manager": "BS\\PageAssignments\\AdminTool"
+	"GroupPermissions": {
+		"*": {
+			"pageassignable": false,
+			"pageassignments": false
+		},
+		"user": {
+			"pageassignable": true,
+			"pageassignments": false
+		},
+		"sysop": {
+			"pageassignable": true,
+			"pageassignments": true
+		}
 	},
+	"AvailableRights": [
+		"pageassignable",
+		"pageassignments"
+	],
+	"callback": "PageAssignments::onRegistration",
 	"DefaultUserOptions": {
 		"echo-subscriptions-web-bs-pageassignments-action-cat": true,
 		"echo-subscriptions-email-bs-pageassignments-action-cat": true
@@ -202,5 +240,5 @@
 		"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }
