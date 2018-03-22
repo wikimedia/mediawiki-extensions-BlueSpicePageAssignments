@@ -9,7 +9,9 @@ Ext.define( 'BS.PageAssignments.panel.Manager', {
 				text: mw.message('bs-pageassignments-column-title').plain(),
 				dataIndex: 'page_prefixedtext',
 				sortable: true,
-				filterable:true,
+				filter: {
+					type: 'string'
+				},
 				renderer: function( value, metaData, record, rowIndex, colIndex, store, view ) {
 					var title = new mw.Title( value );
 					return mw.html.element(
@@ -27,7 +29,9 @@ Ext.define( 'BS.PageAssignments.panel.Manager', {
 				text: mw.message('bs-pageassignments-column-assignments').plain(),
 				dataIndex: 'assignments',
 				sortable: true,
-				filterable:true,
+				filter: {
+					type: 'string'
+				},
 				renderer: function( value, metaData, record, rowIndex, colIndex, store, view ) {
 					var html = [];
 					for( var i = 0; i < value.length; i++ ) {

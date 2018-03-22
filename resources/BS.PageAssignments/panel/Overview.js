@@ -1,6 +1,7 @@
 Ext.define( 'BS.PageAssignments.panel.Overview', {
 	extend: 'Ext.grid.Panel',
-	requires: [ 'BS.store.BSApi', 'Ext.ux.grid.FiltersFeature' ],
+	requires: [ 'BS.store.BSApi' ],
+	plugins: 'gridfilters',
 
 	initComponent: function() {
 		var storeFields = [ 'page_id', 'page_prefixedtext', 'page_link', 'assigned_by'];
@@ -10,7 +11,9 @@ Ext.define( 'BS.PageAssignments.panel.Overview', {
 				text: mw.message('bs-pageassignments-column-title').plain(),
 				dataIndex: 'page_prefixedtext',
 				sortable: true,
-				filterable:true,
+				filter: {
+					type: 'string'
+				},
 				renderer: function( value, metaData, record, rowIndex, colIndex, store, view ) {
 					return record.get('page_link');
 				}
@@ -19,7 +22,9 @@ Ext.define( 'BS.PageAssignments.panel.Overview', {
 				text: mw.message('bs-pageassignments-column-assignedby').plain(),
 				dataIndex: 'assigned_by',
 				sortable: true,
-				filterable:true,
+				filter: {
+					type: 'list'
+				},
 				renderer: function( value, metaData, record, rowIndex, colIndex, store, view ) {
 					var html = [];
 					for( var id in value ) {
@@ -54,12 +59,6 @@ Ext.define( 'BS.PageAssignments.panel.Overview', {
 			store : this.store,
 			displayInfo : true
 		});
-
-		this.features = [
-			new Ext.ux.grid.FiltersFeature({
-				encode: true
-			})
-		];
 
 		this.callParent( arguments );
 	}

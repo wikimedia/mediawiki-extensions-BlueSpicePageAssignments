@@ -3,7 +3,7 @@ Ext.onReady( function() {
 });
 
 (function( mw, $, d, bs, undefined ){
-	$(d).on( 'click', '#ca-pageassignments a', function( e ) {
+	$(d).on( 'click', '#ca-pageassignments a, a#ca-pageassignments', function( e ) {
 		e.preventDefault();
 
 		var curPageId = mw.config.get( 'wgArticleId' );

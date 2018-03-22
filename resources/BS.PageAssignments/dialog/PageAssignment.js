@@ -1,5 +1,5 @@
 Ext.define( 'BS.PageAssignments.dialog.PageAssignment', {
-	extend: 'BS.Window',
+	extend: 'MWExt.Dialog',
 	requires: [ 'BS.form.field.ItemList', 'BS.PageAssignments.action.ApiTaskEdit' ],
 	title: mw.message('bs-pageassignments-dlg-title').plain(),
 
@@ -50,7 +50,7 @@ Ext.define( 'BS.PageAssignments.dialog.PageAssignment', {
 	},
 
 	setData: function( data ) {
+		this.currentData = data;
 		this.itmList.setValue( data.pageAssignments );
-		this.callParent(arguments);
 	}
 } );
