@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\Services;
+
 class PageAssignmentsBookmakerHooks {
 
 	/**
@@ -30,13 +32,17 @@ class PageAssignmentsBookmakerHooks {
 		$aAssignedUserNames = array();
 		$aAssignedGroupNames = array();
 
-		$aAssigments = PageAssignments::getAssignments( $oTitle );
-		foreach ( $aAssigments as $oAsignee ) {
-			if( $oAsignee instanceof BSAssignableUser ) {
-				$aAssignedUserNames[] = $oAsignee->getText();
+		$assignmentFactory = Services::getInstance()->getService(
+			'BSPageAssignmentsAssignmentFactory'
+		);
+		$target = $assignmentFactory->newFromTargetTitle( $oTitle );
+
+		foreach ( $target->getAssignments() as $assignment ) {
+			if( $assignment->getType() === 'user' ) {
+				$aAssignedUserNames[] = $assignment->getText();
 			}
-			if( $oAsignee instanceof BSAssignableGroup ) {
-				$aAssignedGroupNames[] = $oAsignee->getText();
+			if( $assignment->getType() === 'group' ) {
+				$aAssignedGroupNames[] = $assignment->getText();
 			}
 		}
 		if( !empty( $aAssignedUserNames ) ) {
@@ -58,10 +64,14 @@ class PageAssignmentsBookmakerHooks {
 	public static function onBSBookshelfManagerGetBookDataRow( $oBookTitle, $oBookRow ) {
 		$oBookRow->assignments = array();
 		$aTexts = array();
-		$aAssigments = PageAssignments::getAssignments( $oBookTitle );
-		foreach ( $aAssigments as $oAsignee ) {
-			$oBookRow->assignments[] = $oAsignee->toStdClass();
-			$aTexts[] = $oAsignee->getText();
+		$assignmentFactory = Services::getInstance()->getService(
+			'BSPageAssignmentsAssignmentFactory'
+		);
+		$target = $assignmentFactory->newFromTargetTitle( $oBookTitle );
+
+		foreach ( $target->getAssignments() as $assignment ) {
+			$oBookRow->assignments[] = $assignment->toStdClass();
+			$aTexts[] = $assignment->getText();
 		}
 		$oBookRow->flat_assignments = implode( '', $aTexts );
 		return true;

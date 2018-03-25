@@ -13,6 +13,12 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 	 * @return boolean
 	 */
 	public static function onUserCan( &$title, &$user, $action, &$result ) {
+		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+			->makeConfig( 'bsg' );
+		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+			return true;
+		}
+
 		self::addAdditionalPermissions( $title, $user );
 		return true;
 	}
@@ -28,6 +34,12 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 	 * @deprecated since version 1.22
 	 */
 	public static function onRevisionAjaxReviewBeforeParams( $oRevisionReview, &$oTitle, &$aArgs ) {
+		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+			->makeConfig( 'bsg' );
+		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+			return true;
+		}
+
 		//MW BeforeInitialize hook is not present in ajax calls, so apply
 		//possible permissions for responsible editors in this context
 		if( is_null($oTitle) ) {
@@ -62,6 +74,12 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 	 * @return boolean
 	 */
 	public static function onUserGetRights( User $user, &$aRights ) {
+		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+			->makeConfig( 'bsg' );
+		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+			return true;
+		}
+
 		global $wgTitle;
 
 		if ( $wgTitle == null ) {
@@ -83,6 +101,12 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 
 
 	public static function addAdditionalPermissions( $oTitle, $oUser ) {
+		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+			->makeConfig( 'bsg' );
+		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+			return true;
+		}
+
 		$aPermissions = BsConfig::get(
 			'MW::PageAssignments::Permissions'
 		);
@@ -197,6 +221,11 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 	 * @return boolean
 	 */
 	public static function onUserAddGroup( $user, &$group ) {
+		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+			->makeConfig( 'bsg' );
+		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+			return true;
+		}
 		if( self::$sTempGroup !== $group ) {
 			return true;
 		}

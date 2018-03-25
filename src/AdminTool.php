@@ -1,6 +1,6 @@
 <?php
 
-namespace BS\PageAssignments;
+namespace BlueSpice\PageAssignments;
 
 use BlueSpice\IAdminTool;
 

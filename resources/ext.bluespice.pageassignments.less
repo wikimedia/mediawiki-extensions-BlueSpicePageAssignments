@@ -20,3 +20,36 @@ span.bs-icon-specialeveryone:before {
 		}
 	}
 }
+.grapicallist-pageassignments-body {
+	span.section {
+		border-bottom: 1px solid white;
+		margin-top: 10px;
+	}
+	div.bs-pageassignment-assignment-graphicallistitem {
+		min-width: 200px;
+		min-height: 50px;
+		display: flex;
+		.bs-pageassignments-assignment-image {
+			width: 50px;
+			float: left;
+			.bs-userminiprofile {
+				display: inline;
+				img {
+					width: 48px;
+					height: 48px;
+					border-radius: 128px;
+					margin-right: 5px;
+					margin-bottom: 5px;
+				}
+			}
+			span[class^='bs-icon-']:before {
+				font-size: 48px;
+			}
+		}
+		.bs-pageassignments-assignment-content {
+			h3 {
+				font-size: 1.1em;
+			}
+		}
+	}
+}

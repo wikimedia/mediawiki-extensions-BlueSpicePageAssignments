@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\Services;
+
 class BSApiPageAssignmentTasks extends BSApiTasksBase {
 
 	protected $sTaskLogType = 'bs-pageassignments';
@@ -55,7 +57,7 @@ class BSApiPageAssignmentTasks extends BSApiTasksBase {
 		$oResult = $this->makeStandardReturn();
 		$aErrors = [];
 
-		if( is_int( $oTaskData->pageId ) === false ) {
+		if( empty( $oTaskData->pageId ) ) {
 			$oResult->message = wfMessage( 'bs-pageassignments-api-error-no-page' )->plain();
 			return $oResult;
 		}
@@ -68,10 +70,16 @@ class BSApiPageAssignmentTasks extends BSApiTasksBase {
 			return $oResult;
 		}
 
-		$aCurrentAssignments = PageAssignments::getAssignments( $oTitle );
+		$assignmentFactory = Services::getInstance()->getService(
+			'BSPageAssignmentsAssignmentFactory'
+		);
+		$target = $assignmentFactory->newFromTargetTitle(
+			Title::newFromID( $oTaskData->pageId )
+		);
+
 		$aCurrentAssigneeIds = array();
-		foreach( $aCurrentAssignments as $oAsignee ) {
-			$aCurrentAssigneeIds[] = $oAsignee->getId();
+		foreach( $target->getAssignments() as $assignment ) {
+			$aCurrentAssigneeIds[] = $assignment->getId();
 		}
 
 		$aNewAssignmentIds = array_diff( $oTaskData->pageAssignments, $aCurrentAssigneeIds );
@@ -127,16 +135,21 @@ class BSApiPageAssignmentTasks extends BSApiTasksBase {
 	protected function task_getForPage( $oTaskData, $aParams ) {
 		$oResult = $this->makeStandardReturn();
 
-		if( is_int( $oTaskData->pageId ) === false ) {
+		if( empty( $oTaskData->pageId ) ) {
 			$oResult->message = wfMessage( 'bs-pageassignments-api-error-no-page' )->plain();
 			return $oResult;
 		}
 
-		$aAssignees = PageAssignments::getAssignments( Title::newFromID( $oTaskData->pageId ) );
+		$assignmentFactory = Services::getInstance()->getService(
+			'BSPageAssignmentsAssignmentFactory'
+		);
+		$target = $assignmentFactory->newFromTargetTitle(
+			Title::newFromID( $oTaskData->pageId )
+		);
 
 		$aPayload = array();
-		foreach( $aAssignees as $oAssignee ) {
-			$aPayload[] = $oAssignee->toStdClass();
+		foreach( $target->getAssignments() as $assignment ) {
+			$aPayload[] = $assignment->toStdClass();
 		}
 		$oResult->success = true;
 		$oResult->payload = $aPayload;

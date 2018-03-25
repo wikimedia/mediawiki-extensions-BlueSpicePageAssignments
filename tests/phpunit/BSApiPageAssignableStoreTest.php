@@ -1,5 +1,8 @@
 <?php
 
+use BlueSpice\PageAssignments\Data\Schema;
+use BlueSpice\PageAssignments\Data\Record;
+
 /**
  * @group medium
  * @group API
@@ -11,6 +14,8 @@
 class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 9;
 
+	protected $tablesUsed = [ 'page' ];
+
 	protected function skipAssertTotal() {
 		return true;
 	}
@@ -18,23 +23,11 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 	protected function setUp() {
 		parent::setUp();
 		new BSUserFixturesProvider();
+		$this->insertPage( "Test", "Dummy content" );
 	}
 
 	protected function getStoreSchema () {
-		return [
-			'type' => [
-				'type' => 'string'
-			],
-			'id' => [
-				'type' => 'string'
-			],
-			'text' => [
-				'type' => 'string'
-			],
-			'anchor' => [
-				'type' => 'string'
-			]
-		];
+		return new Schema();
 	}
 
 	protected function createStoreFixtureData () {
@@ -60,13 +53,13 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 					[
 						'type' => 'string',
 						'comparison' => 'eq',
-						'field' => 'type',
+						'field' => Record::ASSIGNEE_TYPE,
 						'value' => 'group'
 					],
 					[
 						'type' => 'string',
 						'comparison' => 'ct',
-						'field' => 'id',
+						'field' => Record::ID,
 						'value' => 'bot'
 					]
 				],
@@ -79,6 +72,31 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 		return[
 			'Test user John: text' => [ "text", "John L." ],
 			'Test user Paul: text' => [ "text", "Paul M." ]
+		];
+	}
+
+	/**
+	 * Allows subclasses to add custom parameters
+	 * to the API calls
+	 * @return array
+	 */
+	protected function getAdditionalParams() {
+		return [ 'context' => \FormatJson::encode(
+			$this->makeContextParams()
+		)];
+	}
+
+	protected function makeContextParams() {
+		return (object) [
+			'wgAction' => "view",
+			'wgArticleId' => (int)\Title::newFromText( 'Test' )->getArticleID(),
+			'wgCanonicalNamespace' => "",
+			'wgCanonicalSpecialPageName' => false,
+			'wgNamespaceNumber' => 0,
+			'wgPageName' => "Test",
+			'wgRedirectedFrom' => null,
+			'wgRelevantPageName' => "Test",
+			'wgTitle' => "Test"
 		];
 	}
 }

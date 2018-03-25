@@ -8,7 +8,16 @@ Ext.define( 'BS.PageAssignments.dialog.PageAssignment', {
 			labelAlign: 'top',
 			model: 'BS.PageAssignments.model.Assignable',
 			apiStore: 'bs-pageassignable-store',
-			apiFields: [ 'text', 'type', 'id', 'anchor' ]
+			typeField: 'pa_assignee_type',
+			apiFields: [
+				'text',
+				'id',
+				'anchor',
+				'pa_assignee_type',
+				'pa_assignee_key',
+				'pa_position'
+			],
+			minChars: 1
 		});
 
 		return [

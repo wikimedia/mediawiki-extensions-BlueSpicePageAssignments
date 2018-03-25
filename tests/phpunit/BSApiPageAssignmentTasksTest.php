@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\PageAssignments\Data\Record;
+
 /**
  * @group medium
  * @group Database
@@ -96,12 +98,12 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 
 		$aAssignment = $oData->payload[0];
 
-		$this->assertArrayHasKey( 'type', $aAssignment, "Assignment type is missing" );
-		$this->assertEquals( 'user', $aAssignment['type'], "Assignment type is not 'user'" );
-		$this->assertArrayHasKey( 'id', $aAssignment, "Assignment id is missing" );
-		$this->assertEquals( 'user/John', $aAssignment['id'], "Assignment id is not 'user/John'" );
-		$this->assertArrayHasKey( 'text', $aAssignment, "Assignment text is missing" );
-		$this->assertEquals( 'John L.', $aAssignment['text'], "Assignment text is not 'John L.'" );
-		$this->assertArrayHasKey( 'anchor', $aAssignment, "Assignment anchor is missing" );
+		$this->assertArrayHasKey( Record::ASSIGNEE_TYPE, $aAssignment, "Assignment type is missing" );
+		$this->assertEquals( 'user', $aAssignment[Record::ASSIGNEE_TYPE], "Assignment type is not 'user'" );
+		$this->assertArrayHasKey( Record::ID, $aAssignment, "Assignment id is missing" );
+		$this->assertEquals( 'user/John', $aAssignment[Record::ID], "Assignment id is not 'user/John'" );
+		$this->assertArrayHasKey( Record::TEXT, $aAssignment, "Assignment text is missing" );
+		$this->assertEquals( 'John L.', $aAssignment[Record::TEXT], "Assignment text is not 'John L.'" );
+		$this->assertArrayHasKey( Record::ANCHOR, $aAssignment, "Assignment anchor is missing" );
 	}
 }

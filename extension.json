@@ -19,7 +19,7 @@
 				}
 			},
 			"AdminToolRegistry": {
-				"bs-pageassignments-manager": "BS\\PageAssignments\\AdminTool"
+				"bs-pageassignments-manager": "BlueSpice\\PageAssignments\\AdminTool"
 			},
 			"PermissionRegistry": {
 				"pageassignable": {
@@ -35,6 +35,20 @@
 						"admin"
 					]
 				}
+			},
+			"GraphicalListRegistry": {
+				"pageassignments-list": "bs.pageassignments.GraphicalListFactory"
+			},
+			"RendererRegistry": {
+				"assignment": "\\BlueSpice\\PageAssignments\\Renderer\\Assignment",
+				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User"
+			}
+		},
+		"BlueSpicePageAssignments": {
+			"TypeRegistry": {
+				"group": "\\BlueSpice\\PageAssignments\\Assignable\\Group",
+				"user": "\\BlueSpice\\PageAssignments\\Assignable\\User",
+				"specialeveryone": "\\BlueSpice\\PageAssignments\\Assignable\\Everyone"
 			}
 		}
 	},
@@ -79,8 +93,11 @@
 			"i18n"
 		]
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"APIModules": {
-		"bs-pageassignable-store": "BSApiPageAssignableStore",
+		"bs-pageassignable-store": "\\BlueSpice\\PageAssignments\\Api\\Store\\Assignable",
 		"bs-pageassignment-store": "BSApiPageAssignmentStore",
 		"bs-mypageassignment-store": "BSApiMyPageAssignmentStore",
 		"bs-pageassignment-tasks": "BSApiPageAssignmentTasks"
@@ -88,15 +105,17 @@
 	"ExtensionMessagesFiles": {
 		"PageAssignmentsAlias": "PageAssignments.alias.php"
 	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\PageAssignments\\": "src/",
+		"BlueSpice\\PageAssignments\\Tests\\": "tests/phpunit/"
+	},
 	"AutoloadClasses": {
 		"PageAssignments": "PageAssignments.class.php",
-		"BSApiPageAssignableStore": "includes/api/BSApiPageAssignableStore.php",
 		"BSApiPageAssignmentStore": "includes/api/BSApiPageAssignmentStore.php",
 		"BSApiMyPageAssignmentStore": "includes/api/BSApiMyPageAssignmentStore.php",
 		"BSApiPageAssignmentTasks": "includes/api/BSApiPageAssignmentTasks.php",
 		"PageAssignmentsHooks": "includes/PageAssignmentsHooks.php",
 		"PageAssignmentsNotificationHooks": "includes/PageAssignmentsNotificationHooks.php",
-		"PageAssignmentsStateBarHooks": "includes/PageAssignmentsStateBarHooks.php",
 		"PageAssignmentsUsersAdditionalPermissionsHooks": "includes/PageAssignmentsUsersAdditionalPermissionsHooks.php",
 		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
 		"PageAssignmentsWikiExplorerHooks": "includes/PageAssignmentsWikiExplorerHooks.php",
@@ -107,7 +126,6 @@
 		"BSAssignableGroup": "includes/BSAssignableGroup.php",
 		"SpecialPageAssignments": "includes/specials/SpecialPageAssignments.php",
 		"SpecialManagePageAssignments": "includes/specials/SpecialManagePageAssignments.php",
-		"ViewPAStateBarBodyElement": "includes/views/ViewPAStateBarBodyElement.php",
 		"PageAssignmentsNotificationFormatter": "includes/notifications/PageAssignmentsNotificationFormatter.php",
 		"PageAssignmentsEmailSingle": "includes/notifications/PageAssignmentsEmailSingle.php",
 		"BSPageAssignmentsMigrateRespEditors": "maintenance/BSPageAssignmentsMigrateRespEditors.php"
@@ -134,7 +152,6 @@
 			"scripts": [
 				"ext.bluespice.pageassignments.manager.js"
 			],
-			"styles": [],
 			"messages": [
 				"bs-pageassignments-column-title",
 				"bs-pageassignments-column-assignments",
@@ -150,7 +167,6 @@
 			"scripts": [
 				"ext.bluespice.pageassignments.overview.js"
 			],
-			"styles": [],
 			"messages": [
 				"bs-pageassignments-column-title",
 				"bs-pageassignments-column-assignedby",
@@ -177,8 +193,6 @@
 			"scripts": [
 				"ext.bluespice.pageassignments.wikiexplorer.js"
 			],
-			"styles": [],
-			"messages": [],
 			"dependencies": [
 				"ext.bluespice.extjs"
 			]
@@ -189,11 +203,34 @@
 				"bs-pageassignments-column-assignedby",
 				"bs-pageassignments-directly-assigned"
 			]
+		},
+		"ext.bluespice.pageassignments.graphicallist": {
+			"scripts": [
+				"ext.bluespice.pageassignments.GraphicalList.js"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			],
+			"target": [
+				"deskop", "mobile"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpicePageAssignments/resources"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"PageAssignmentsActivatedTypes": {
+			"value": [
+				"user",
+				"group"
+			]
+		},
+		"PageAssignmentsUseAdditionalPermissions": {
+			"value": false
+		}
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "PageAssignmentsHooks::onLoadExtensionSchemaUpdates",
@@ -202,8 +239,10 @@
 		"BeforePageDisplay": [
 			"PageAssignmentsWikiExplorerHooks::onBeforePageDisplay",
 			"PageAssignmentsDashboardHooks::onBeforePageDisplay",
-			"PageAssignmentsHooks::onBeforePageDisplay"
+			"PageAssignmentsHooks::onBeforePageDisplay",
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\FetchPageAssignments::callback"
 		],
+		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateOutputPageBeforeExec\\AddAssignees::callback",
 		"TitleMoveComplete": [
 			"PageAssignmentsHooks::onTitleMoveComplete",
 			"PageAssignmentsNotificationHooks::onTitleMoveComplete"
@@ -212,10 +251,6 @@
 			"PageAssignmentsHooks::onArticleDeleteComplete",
 			"PageAssignmentsNotificationHooks::onArticleDeleteComplete"
 		],
-		"BSStateBarBeforeTopViewAdd": "PageAssignmentsStateBarHooks::onStateBarBeforeTopViewAdd",
-		"BSStateBarBeforeBodyViewAdd": "PageAssignmentsStateBarHooks::onStateBarBeforeBodyViewAdd",
-		"BSStatebarAddSortTopVars": "PageAssignmentsStateBarHooks::onStatebarAddSortTopVars",
-		"BSStatebarAddSortBodyVars": "PageAssignmentsStateBarHooks::onStatebarAddSortBodyVars",
 		"PageContentSaveComplete": "PageAssignmentsNotificationHooks::onPageContentSaveComplete",
 		"BSUserManagerAfterSetGroups": "PageAssignmentsNotificationHooks::onBSUserManagerAfterSetGroups",
 		"UserAddGroup": "PageAssignmentsUsersAdditionalPermissionsHooks::onUserAddGroup",
@@ -239,6 +274,5 @@
 	"ResourceLoaderLESSVars" : {
 		"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
 	},
-	"load_composer_autoloader": true,
 	"manifest_version": 2
 }
