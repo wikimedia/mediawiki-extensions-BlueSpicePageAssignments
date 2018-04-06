@@ -8,11 +8,14 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 
 	protected function makeData($sQuery = '') {
 
-		$aAssignments = $this->getPageAssignments();
+		$assignmentsPerPage = $this->getPageAssignments();
 
-		$aResult = [];
-		foreach( $aAssignments as $pageId => $pageAssignmentRelations ) {
-			foreach( $pageAssignmentRelations as $assignment ) {
+		$aResult = $assignedBy = [];
+		foreach( $assignmentsPerPage as $pageId => $pageAssignments ) {
+			if( !\Title::newFromID( $pageId ) ) {
+				continue;
+			}
+			foreach( $pageAssignments as $assignment ) {
 				$assigned = in_array(
 					$this->getUser()->getId(),
 					$assignment->getUserIds()
@@ -20,18 +23,26 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 				if( !$assigned ) {
 					continue;
 				}
-
-				$link = Services::getInstance()->getLinkRenderer()->makeLink(
-					$assignment->getTitle()
-				);
-				$oDataSet = (object)array(
-					'page_id' => $assignment->getTitle()->getArticleID(),
-					'page_prefixedtext' => $assignment->getTitle()->getPrefixedText(),
-					'page_link' => $link,
-					'assigned_by' => $assignment->toStdClass(),
-				);
-				$aResult[] = $oDataSet;
+				$assignedBy[ $pageId ][] = $assignment;
 			}
+		}
+		foreach( $assignedBy as $pageId => $relatedAssignments ) {
+			$title = \Title::newFromID( $pageId );
+			$link = Services::getInstance()->getLinkRenderer()->makeLink(
+				$title
+			);
+			$oDataSet = (object) [
+				'page_id' => $title->getArticleID(),
+				'page_prefixedtext' => $title->getPrefixedText(),
+				'page_link' => $link,
+				'assigned_by' => [],
+				'assignment' => [],
+			];
+			foreach( $relatedAssignments as $assignment ) {
+				$oDataSet->assigned_by[] = $assignment->getType();
+				$oDataSet->assignment[] = $assignment->toStdClass();
+			}
+			$aResult[] = $oDataSet;
 		}
 		return $aResult;
 	}
@@ -43,12 +54,7 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 
 		$sFieldValue = '';
 		foreach( $aDataSet->assigned_by as $oAsignee ) {
-			if( $oAsignee->{Record::ASSIGNEE_TYPE} == 'user' ) {
-				$sFieldValue .= wfMessage( 'bs-pageassignments-directly-assigned' )->plain();
-			}
-			else {
-				$sFieldValue .= $oAsignee->text;
-			}
+			$sFieldValue .= $oAsignee->text;
 		}
 
 		return BsStringHelper::filter( $oFilter->comparison, $sFieldValue, $oFilter->value );

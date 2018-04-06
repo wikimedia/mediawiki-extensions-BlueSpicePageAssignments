@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\PageAssignments\Assignment\User;
+use BlueSpice\PageAssignments\Assignment\Group;
 class PageAssignmentsEmailSingle extends BsEchoEmailSingle {
 	/**
 	 * Adds information about "why" the user receives this notification
@@ -14,10 +16,10 @@ class PageAssignmentsEmailSingle extends BsEchoEmailSingle {
 		if( isset( $aAssignments[$this->user->getId()] ) ) {
 			$aUserAssignments = $aAssignments[$this->user->getId()];
 			foreach( $aUserAssignments as $oAssignable ) {
-				if( $oAssignable instanceof BSAssignableUser ) {
+				if( $oAssignable instanceof User ) {
 					$bIsDirectlyAssigned = true;
 				}
-				if( $oAssignable instanceof BSAssignableGroup ) {
+				if( $oAssignable instanceof Group ) {
 					$aAssignedByGroups[] = $oAssignable->getText();
 				}
 			}

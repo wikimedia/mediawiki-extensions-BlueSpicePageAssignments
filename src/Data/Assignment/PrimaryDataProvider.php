@@ -7,6 +7,7 @@ use BlueSpice\Data\FilterFinder;
 use BlueSpice\Data\Filter;
 use BlueSpice\PageAssignments\Data\Schema;
 use BlueSpice\PageAssignments\Data\Record;
+use BlueSpice\Services;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
@@ -39,7 +40,10 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 		$res = $this->db->select(
 			'bs_pageassignments',
-			'*'
+			'*',
+			$this->makePreFilterConds( $params ),
+			__METHOD__,
+			$this->makePreOptionConds( $params )
 		);
 		foreach( $res as $row ) {
 			$this->appendRowToData( $row );
@@ -55,5 +59,112 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 			Record::ASSIGNEE_TYPE => $row->{Record::ASSIGNEE_TYPE},
 			Record::POSITION => $row->{Record::POSITION},
 		] );
+	}
+
+	/**
+	 *
+	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @return array
+	 */
+	protected function makePreFilterConds( $params ) {
+		$factory = Services::getInstance()->getService(
+			'BSPageAssignmentsAssignableFactory'
+		);
+		$conds = [
+			Record::ASSIGNEE_TYPE => $factory->getRegisteredTypes(),
+		];
+		$schema = new Schema();
+		$fields = array_values( $schema->getFilterableFields() );
+		$filterFinder = new FilterFinder( $params->getFilter() );
+		foreach( $fields as $fieldName ) {
+			$filter = $filterFinder->findByField( $fieldName );
+			if( !$filter instanceof Filter ) {
+				continue;
+			}
+			if( $fieldName === Record::TEXT ) {
+				continue;
+			}
+			if( $fieldName === Record::ANCHOR ) {
+				continue;
+			}
+			if( $fieldName === Record::ID ) {
+				continue;
+			}
+			switch( $filter->getComparison() ) {
+				case Filter::COMPARISON_EQUALS:
+					$conds[$fieldName] = $filter->getValue();
+					$filter->setAppied();
+					break;
+				case Filter::COMPARISON_NOT_EQUALS:
+					$conds[] = "{$filter->getValue()} != $fieldName";
+					$filter->setAppied();
+					break;
+				case StringValue::COMPARISON_CONTAINS:
+					$conds[] = "$fieldName ".$this->db->buildLike(
+						$this->db->anyString(),
+						$filter->getValue(),
+						$this->db->anyString()
+					);
+					$filter->setAppied();
+					break;
+				case StringValue::COMPARISON_NOT_CONTAINS:
+					$conds[] = "$fieldName NOT ".$this->db->buildLike(
+						$this->db->anyString(),
+						$filter->getValue(),
+						$this->db->anyString()
+					);
+					$filter->setAppied();
+					break;
+				case StringValue::COMPARISON_STARTS_WITH:
+					$conds[] = "$fieldName ".$this->db->buildLike(
+						$filter->getValue(),
+						$this->db->anyString()
+					);
+					$filter->setAppied();
+					break;
+				case StringValue::COMPARISON_ENDS_WITH:
+					$conds[] = "$fieldName ".$this->db->buildLike(
+						$this->db->anyString(),
+						$filter->getValue()
+					);
+					$filter->setAppied();
+					break;
+				case Numeric::COMPARISON_GREATER_THAN:
+					$conds[] = "{$filter->getValue()} > $fieldName";
+					$filter->setAppied();
+					break;
+				case Numeric::COMPARISON_LOWER_THAN:
+					$conds[] = "{$filter->getValue()} < $fieldName";
+					$filter->setAppied();
+					break;
+			}
+		}
+		return $conds;
+	}
+
+	/**
+	 *
+	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @return array
+	 */
+	protected function makePreOptionConds( $params ) {
+		$conds = [];
+
+		$schema = new Schema();
+		$fields = array_values( $schema->getSortableFields() );
+
+		foreach( $params->getSort() as $sort ) {
+			if( !in_array( $sort->getProperty(), $fields ) ) {
+				continue;
+			}
+			if( !isset( $conds['ORDER BY'] ) ) {
+				$conds['ORDER BY'] = "";
+			} else {
+				$conds['ORDER BY'] .= ",";
+			}
+			$conds['ORDER BY'] .=
+				"{$sort->getProperty()} {$sort->getDirection()}";
+		}
+		return $conds;
 	}
 }

@@ -22,7 +22,6 @@
 	"bs-pageassignments-column-assignedby": "Extjs grid calumn label for assigned by\n{{Identical|Assigned by}}",
 	"bs-pageassignments-no-assignments": "Text, when no assignments could be found",
 	"bs-pageassignments-action-log": "Tooltip text to the link to the assignments log",
-	"bs-pageassignments-directly-assigned": "Text of the type of the assignment\n{{Identical|Directly}}",
 	"bs-pageassignments-action-delete-confirm": "Remove assignment?",
 	"bs-pageassignments-api-error": "Text, that an error has occurred",
 	"bs-pageassignments-api-error-no-page": "Error message, that the given parameter pageId was not a valid page",
@@ -75,5 +74,8 @@
 	"apihelp-bs-mypageassignment-store-summary": "{{doc-apihelp-summary|bs-mypageassignment-store}}",
 	"apihelp-bs-pageassignment-tasks-description": "{{doc-apihelp-description|bs-pageassignment-tasks}}",
 	"apihelp-bs-pageassignment-tasks-summary": "{{doc-apihelp-summary|bs-pageassignment-tasks}}",
-	"bs-pageassignments-assignee-special-everyone-label": "Label for combobox list entry that assignes all users to a certain page\n{{Identical|Everyone}}"
+	"bs-pageassignments-assignee-special-everyone-label": "Label for combobox list entry that assignes all users to a certain page\n{{Identical|Everyone}}",
+	"bs-pageassignments-assignee-type-everyone": "Label for the assignee type everyone\n{{Identical|Everyone}}",
+	"bs-pageassignments-assignee-type-user": "Label for the assignee type user\n{{Identical|User}}",
+	"bs-pageassignments-assignee-type-group": "Label for the assignee type group\n{{Identical|Group}}"
 }

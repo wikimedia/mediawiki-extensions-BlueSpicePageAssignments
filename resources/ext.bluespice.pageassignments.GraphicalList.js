@@ -10,6 +10,7 @@ bs.pageassignments.GraphicalList.prototype.getActions = function() {
 };
 
 bs.pageassignments.GraphicalList.prototype.getBody = function() {
+	var me = this;
 	var dfd = $.Deferred();
 
 	var htmlForSitetools = mw.config.get( 'bsgPageAssignmentsSitetools' );
@@ -17,7 +18,9 @@ bs.pageassignments.GraphicalList.prototype.getBody = function() {
 	dfd.resolve( function() {
 		var html = '<div class="grapicallist-pageassignments-body">';
 		for( var type in htmlForSitetools ) {
-			html += '<div><span class="bs-icon-' + type + ' section">' + type + '</span>';
+			html += '<div><span class="bs-icon-' + type + ' section">'
+				+ me.getTypeMessage( type )
+				+ '</span>';
 			for( var i = 0; i < htmlForSitetools[type].length; i++ ) {
 				html += htmlForSitetools[type][i]['html'];
 			}
@@ -30,6 +33,11 @@ bs.pageassignments.GraphicalList.prototype.getBody = function() {
 
 
 	return dfd;
+};
+
+bs.pageassignments.GraphicalList.prototype.getTypeMessage = function( type ) {
+	var msg = mw.message( 'bs-pageassignments-assignee-type-' + type );
+	return msg.exists() ? msg : type;
 };
 
 bs.pageassignments.GraphicalListFactory = function() {

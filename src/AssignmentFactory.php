@@ -102,11 +102,15 @@ class AssignmentFactory {
 
 		$assignments = [];
 		foreach( $recordSet->getRecords() as $record ) {
-			$assignments[] = $this->factory(
+			$assignment = $this->factory(
 				$record->get( Record::ASSIGNEE_TYPE ),
 				$record->get( Record::ASSIGNEE_KEY ),
 				$title
 			);
+			if( !$assignment ) {
+				continue;
+			}
+			$assignments[] = $assignment;
 		}
 		return $assignments;
 	}
@@ -118,13 +122,22 @@ class AssignmentFactory {
 		);
 	}
 
+	public function invalidate( Target $target ) {
+		if( isset( $this->targetCache[$target->getTitle()->getArticleID()] ) ) {
+			unset( $this->targetCache[$target->getTitle()->getArticleID()] );
+		}
+		return true;
+	}
+
 	/**
 	 *
 	 * @param string $type
-	 * @return IAssignment
+	 * @return IAssignment | null
 	 */
 	public function factory( $type, $key, \Title $title ) {
-		$assignable = $this->assignableFactory->factory( $type );
+		if( !$assignable = $this->assignableFactory->factory( $type ) ) {
+			return null;
+		}
 		$class = $assignable->getAssignmentClass();
 
 		return new $class(
