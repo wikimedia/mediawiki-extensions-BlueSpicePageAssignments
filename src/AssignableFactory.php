@@ -30,7 +30,7 @@ class AssignableFactory {
 	 *
 	 * @param string $type
 	 * @param \IContextSource %context
-	 * @return IAssignable
+	 * @return IAssignable | null
 	 */
 	public function factory( $type, \IContextSource $context = null ) {
 		if( !$context ) {
@@ -41,7 +41,7 @@ class AssignableFactory {
 			false
 		);
 		if( !$class ) {
-			throw new \MWException( "Assignee type '$type' not registered" );
+			return null;
 		}
 		return new $class(
 			$context,

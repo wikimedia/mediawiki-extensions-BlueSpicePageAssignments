@@ -3,7 +3,6 @@
 namespace BlueSpice\PageAssignments\Assignable;
 
 use BlueSpice\PageAssignments\Data\Assignable\Group\Store;
-use BlueSpice\Context;
 use BlueSpice\Services;
 
 class Group extends \BlueSpice\PageAssignments\Assignable {
@@ -17,5 +16,9 @@ class Group extends \BlueSpice\PageAssignments\Assignable {
 
 	public function getAssignmentClass() {
 		return "\\BlueSpice\\PageAssignments\\Assignment\\Group";
+	}
+
+	public function getTypeMessageKey() {
+		return "bs-pageassignments-assignee-type-group";
 	}
 }

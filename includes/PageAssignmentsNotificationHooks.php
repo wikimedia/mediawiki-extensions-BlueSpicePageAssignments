@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\Services;
+
 class PageAssignmentsNotificationHooks {
 
 	/**
@@ -118,17 +120,24 @@ class PageAssignmentsNotificationHooks {
 	 * @param array $aExtraParams
 	 */
 	public static function notify( $sKey, $oAgent = null, $oTitle = null, $aExtraParams = array() ) {
-		$aAssignedUserIds = PageAssignments::resolveAssignmentsToUserIdsWithSource( $oTitle );
-		$aAffectedUsers = array();
-		foreach( $aAssignedUserIds as $iUserId => $oAssignable ) {
-			$aAffectedUsers[] = $iUserId;
+		$factory = Services::getInstance()->getService(
+			'BSPageAssignmentsAssignmentFactory'
+		);
+		if( !$target = $factory->newFromTargetTitle( $oTitle ) ) {
+			return;
 		}
 
+		$affectedUsers = [];
+		foreach( $target->getAssignedUserIDs() as $id ) {
+			$affectedUsers[$id] = $target->getAssignmentsForUser(
+				\User::newFromId( $id )
+			);
+		}
 		$aExtraParams += array(
-			'affected-users' => $aAffectedUsers,
+			'affected-users' => array_keys( $affectedUsers ),
 			//This is required to have personalized messages that tell the
 			//recipient _why_ he/she receives the notification
-			'assignment-sources' => $aAssignedUserIds,
+			'assignment-sources' => $affectedUsers,
 			'formatter-class' => 'PageAssignmentsNotificationFormatter'
 		);
 

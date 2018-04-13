@@ -18,7 +18,6 @@
 	"bs-pageassignments-column-assignedby": "Assigned by",
 	"bs-pageassignments-no-assignments": "No assignments",
 	"bs-pageassignments-action-log": "Assignments log",
-	"bs-pageassignments-directly-assigned": "directly",
 	"bs-pageassignments-action-delete-confirm": "Remove assignment?",
 	"bs-pageassignments-api-error": "An error has occurred",
 	"bs-pageassignments-api-error-no-page": "Page not specified",
@@ -71,5 +70,8 @@
 	"apihelp-bs-mypageassignment-store-summary": "Returns pages assigned to current user",
 	"apihelp-bs-pageassignment-tasks-description": "Get or edit the list of assignments for specific page",
 	"apihelp-bs-pageassignment-tasks-summary": "Get or edit the list of assignments for specific page",
-	"bs-pageassignments-assignee-special-everyone-label": "Everyone"
+	"bs-pageassignments-assignee-special-everyone-label": "Everyone",
+	"bs-pageassignments-assignee-type-everyone": "Everyone",
+	"bs-pageassignments-assignee-type-user": "User",
+	"bs-pageassignments-assignee-type-group": "Group"
 }

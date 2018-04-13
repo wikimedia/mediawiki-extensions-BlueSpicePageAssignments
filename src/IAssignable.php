@@ -22,4 +22,9 @@ Interface IAssignable {
 	 * @return string
 	 */
 	public function getRendererKey();
+
+	/**
+	 * @return string
+	 */
+	public function getTypeMessageKey();
 }

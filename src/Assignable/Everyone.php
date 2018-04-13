@@ -3,7 +3,6 @@
 namespace BlueSpice\PageAssignments\Assignable;
 
 use BlueSpice\PageAssignments\Data\Assignable\Everyone\Store;
-use BlueSpice\Context;
 use BlueSpice\Services;
 
 class Everyone extends \BlueSpice\PageAssignments\Assignable {
@@ -17,5 +16,9 @@ class Everyone extends \BlueSpice\PageAssignments\Assignable {
 
 	public function getAssignmentClass() {
 		return "\\BlueSpice\\PageAssignments\\Assignment\\Everyone";
+	}
+
+	public function getTypeMessageKey() {
+		return "bs-pageassignments-assignee-type-everyone";
 	}
 }

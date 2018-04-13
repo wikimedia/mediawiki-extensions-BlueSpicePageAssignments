@@ -4,7 +4,13 @@ Ext.define( 'BS.PageAssignments.panel.Overview', {
 	plugins: 'gridfilters',
 
 	initComponent: function() {
-		var storeFields = [ 'page_id', 'page_prefixedtext', 'page_link', 'assigned_by'];
+		var storeFields = [
+			'page_id',
+			'page_prefixedtext',
+			'page_link',
+			'assigned_by',
+			'assignment'
+		];
 
 		var cols = [
 			{
@@ -26,17 +32,17 @@ Ext.define( 'BS.PageAssignments.panel.Overview', {
 					type: 'list'
 				},
 				renderer: function( value, metaData, record, rowIndex, colIndex, store, view ) {
-					var html = [];
-					for( var id in value ) {
-						if( value[id].type === 'user' ) {
-							html.push( '<em>' +  mw.message('bs-pageassignments-directly-assigned').plain() + '</em>' );
+					var html = '';
+					for( var i = 0; i < record.get( 'assignment' ).length; i++ ) {
+						var item = record.get( 'assignment' )[i];
+						html += "<span class=\'bs-icon-" + item.pa_assignee_type + " bs-typeicon\'></span>";
+						html += item.anchor;
+						if( i !== record.get( 'assignment' ).length -1 ) {
+							html += ',<br />';
 						}
-						else {
-							html.push( "<span class=\'bs-icon-"+value[id].type+" bs-typeicon\'></span>" + value[id].anchor );
-						}
-					}
+					};
 
-					return html.join(', ');
+					return html;
 				}
 			}
 		];

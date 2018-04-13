@@ -17,7 +17,7 @@ class Schema extends \BlueSpice\Data\Schema {
 				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
-			Record::ASSIGNEE_TYPE => [
+			Record::ASSIGNEE_KEY => [
 				self::FILTERABLE => true,
 				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING

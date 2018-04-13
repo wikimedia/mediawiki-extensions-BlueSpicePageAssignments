@@ -1,11 +1,9 @@
 <?php
 
 namespace BlueSpice\PageAssignments\Data\Assignment;
-use BlueSpice\Data\FieldType;
-use BlueSpice\Data\Filter;
+use BlueSpice\PageAssignments\Data\Record;
 
 class Writer extends \BlueSpice\Data\DatabaseWriter {
-
 	/**
 	 *
 	 * @param \BlueSpice\Data\IReader $reader
@@ -30,5 +28,37 @@ class Writer extends \BlueSpice\Data\DatabaseWriter {
 
 	protected function getIdentifierFields() {
 		return [ Record::PAGE_ID, Record::ASSIGNEE_KEY, Record::ASSIGNEE_TYPE ];
+	}
+
+	/**
+	 *
+	 * @param \BlueSpice\Data\IRecord $record
+	 */
+	protected function makeInsertFields( $record ) {
+		return array_intersect_key(
+			parent::makeInsertFields( $record ),
+			array_flip( $this->getDataBaseFieldWhitelist() )
+		);
+	}
+
+	protected function getDataBaseFieldWhitelist() {
+		return [
+			Record::ASSIGNEE_KEY,
+			Record::ASSIGNEE_TYPE,
+			Record::PAGE_ID,
+			Record::POSITION,
+		];
+	}
+
+	/**
+	 *
+	 * @param \BlueSpice\Data\IRecord $existingRecord
+	 * @param \BlueSpice\Data\IRecord $record
+	 */
+	protected function makeUpdateFields( $existingRecord, $record ) {
+		return array_intersect_key(
+			parent::makeUpdateFields( $existingRecord, $record ),
+			array_flip( $this->getDataBaseFieldWhitelist() )
+		);
 	}
 }

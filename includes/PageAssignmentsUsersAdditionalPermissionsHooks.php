@@ -86,14 +86,18 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 			return true;
 		}
 
-		//check pageassignment for current user
-		$aPermissions = BsConfig::get(
-			'MW::PageAssignments::Permissions'
+		$factory = Services::getInstance()->getService(
+			'BSPageAssignmentsAssignmentFactory'
 		);
+		if( !$target = $factory->newFromTargetTitle( $wgTitle ) ) {
+			return;
+		}
 
-		$arrUsers = PageAssignments::resolveAssignmentsToUserIds( $wgTitle );
-		if ( in_array( $user->getId(), $arrUsers ) ) {
-			$aRights = array_merge( $aRights, $aPermissions );
+		if( $target->isUserAssigned( $user ) ) {
+			$aRights = array_merge(
+				$aRights,
+				$config->get( "PageAssignmentsPermissions" )
+			);
 		}
 
 		return true;
@@ -107,11 +111,7 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 			return true;
 		}
 
-		$aPermissions = BsConfig::get(
-			'MW::PageAssignments::Permissions'
-		);
-
-		if( empty($aPermissions) ) {
+		if( empty( $config->get( "PageAssignmentsPermissions" ) ) ) {
 			return true;
 		}
 		if( !self::isAssignableUser($oUser) ) {
@@ -129,7 +129,7 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 
 		BsGroupHelper::addPermissionsToGroup(
 			self::$sTempGroup,
-			$aPermissions,
+			$config->get( "PageAssignmentsPermissions" ),
 			array( $oTitle->getNamespace() )
 		);
 

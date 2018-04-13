@@ -3,7 +3,6 @@
 namespace BlueSpice\PageAssignments\Assignable;
 
 use BlueSpice\PageAssignments\Data\Assignable\User\Store;
-use BlueSpice\Context;
 use BlueSpice\Services;
 
 class User extends \BlueSpice\PageAssignments\Assignable {
@@ -22,4 +21,9 @@ class User extends \BlueSpice\PageAssignments\Assignable {
 	public function getRendererKey() {
 		return "assignment-user";
 	}
+
+	public function getTypeMessageKey() {
+		return "bs-pageassignments-assignee-type-user";
+	}
+
 }

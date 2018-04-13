@@ -14,8 +14,11 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpicePageAssignments": {
-					"className": "PageAssignments",
-					"extPath": "/BlueSpicePageAssignments"
+					"className": "\\BlueSpice\\PageAssignments\\Extension",
+					"extPath": "/BlueSpicePageAssignments",
+					"configDefinitions": {
+						"PageAssignmentsPermissions": "\\BlueSpice\\PageAssignments\\ConfigDefinition\\Permissions::getInstance"
+					}
 				}
 			},
 			"AdminToolRegistry": {
@@ -70,7 +73,7 @@
 		"pageassignable",
 		"pageassignments"
 	],
-	"callback": "PageAssignments::onRegistration",
+	"callback": "\\BlueSpice\\PageAssignments\\Extension::onRegistration",
 	"DefaultUserOptions": {
 		"echo-subscriptions-web-bs-pageassignments-action-cat": true,
 		"echo-subscriptions-email-bs-pageassignments-action-cat": true
@@ -100,30 +103,24 @@
 		"bs-pageassignable-store": "\\BlueSpice\\PageAssignments\\Api\\Store\\Assignable",
 		"bs-pageassignment-store": "BSApiPageAssignmentStore",
 		"bs-mypageassignment-store": "BSApiMyPageAssignmentStore",
-		"bs-pageassignment-tasks": "BSApiPageAssignmentTasks"
+		"bs-pageassignment-tasks": "\\BlueSpice\\PageAssignments\\Api\\Task\\PageAssignments"
 	},
 	"ExtensionMessagesFiles": {
-		"PageAssignmentsAlias": "PageAssignments.alias.php"
+		"PageAssignmentsAlias": "languages/PageAssignments.alias.php"
 	},
 	"AutoloadNamespaces": {
 		"BlueSpice\\PageAssignments\\": "src/",
 		"BlueSpice\\PageAssignments\\Tests\\": "tests/phpunit/"
 	},
 	"AutoloadClasses": {
-		"PageAssignments": "PageAssignments.class.php",
 		"BSApiPageAssignmentStore": "includes/api/BSApiPageAssignmentStore.php",
 		"BSApiMyPageAssignmentStore": "includes/api/BSApiMyPageAssignmentStore.php",
-		"BSApiPageAssignmentTasks": "includes/api/BSApiPageAssignmentTasks.php",
 		"PageAssignmentsHooks": "includes/PageAssignmentsHooks.php",
 		"PageAssignmentsNotificationHooks": "includes/PageAssignmentsNotificationHooks.php",
 		"PageAssignmentsUsersAdditionalPermissionsHooks": "includes/PageAssignmentsUsersAdditionalPermissionsHooks.php",
 		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
 		"PageAssignmentsWikiExplorerHooks": "includes/PageAssignmentsWikiExplorerHooks.php",
 		"PageAssignmentsDashboardHooks": "includes/PageAssignmentsDashboardHooks.php",
-		"BSAssignableBase": "includes/BSAssignableBase.php",
-		"BSAssignableEveryone": "includes/BSAssignableEveryone.php",
-		"BSAssignableUser": "includes/BSAssignableUser.php",
-		"BSAssignableGroup": "includes/BSAssignableGroup.php",
 		"SpecialPageAssignments": "includes/specials/SpecialPageAssignments.php",
 		"SpecialManagePageAssignments": "includes/specials/SpecialManagePageAssignments.php",
 		"PageAssignmentsNotificationFormatter": "includes/notifications/PageAssignmentsNotificationFormatter.php",
@@ -132,7 +129,10 @@
 	},
 	"ResourceModules": {
 		"ext.pageassignments.styles": {
-			"styles": "ext.bluespice.pageassignments.less"
+			"styles": "ext.bluespice.pageassignments.less",
+			"targets": [
+				"desktop", "mobile"
+			]
 		},
 		"ext.pageassignments.scripts": {
 			"scripts": [
@@ -145,7 +145,11 @@
 				"bs-pageassignments-action-apiedit-description"
 			],
 			"dependencies": [
+				"ext.bluespice.pageassignments.assignable.messages",
 				"ext.bluespice.extjs"
+			],
+			"targets": [
+				"desktop", "mobile"
 			]
 		},
 		"ext.pageassignments.manager": {
@@ -161,6 +165,9 @@
 			],
 			"dependencies": [
 				"ext.pageassignments.scripts"
+			],
+			"targets": [
+				"desktop", "mobile"
 			]
 		},
 		"ext.pageassignments.overview": {
@@ -169,11 +176,13 @@
 			],
 			"messages": [
 				"bs-pageassignments-column-title",
-				"bs-pageassignments-column-assignedby",
-				"bs-pageassignments-directly-assigned"
+				"bs-pageassignments-column-assignedby"
 			],
 			"dependencies": [
 				"ext.pageassignments.scripts"
+			],
+			"targets": [
+				"desktop", "mobile"
 			]
 		},
 		"ext.bluespice.pageassignments.bookshelfPlugin": {
@@ -187,6 +196,12 @@
 				"bs-pageassignments-dlg-fldlabel",
 				"bs-pageassignments-action-apiedit-description",
 				"bs-pageassignments-no-assignments"
+			],
+			"dependencies": [
+				"ext.bluespice.pageassignments.assignable.messages"
+			],
+			"targets": [
+				"desktop", "mobile"
 			]
 		},
 		"ext.bluespice.pageassignments.wikiexplorer": {
@@ -194,14 +209,23 @@
 				"ext.bluespice.pageassignments.wikiexplorer.js"
 			],
 			"dependencies": [
+				"ext.bluespice.pageassignments.assignable.messages",
 				"ext.bluespice.extjs"
+			],
+			"targets": [
+				"desktop", "mobile"
 			]
 		},
 		"ext.bluespice.pageassignments.portlet": {
 			"messages": [
 				"bs-pageassignments-column-title",
-				"bs-pageassignments-column-assignedby",
-				"bs-pageassignments-directly-assigned"
+				"bs-pageassignments-column-assignedby"
+			],
+			"dependencies": [
+				"ext.bluespice.pageassignments.assignable.messages"
+			],
+			"targets": [
+				"desktop", "mobile"
 			]
 		},
 		"ext.bluespice.pageassignments.graphicallist": {
@@ -209,11 +233,14 @@
 				"ext.bluespice.pageassignments.GraphicalList.js"
 			],
 			"dependencies": [
-				"ext.bluespice"
+				"ext.pageassignments.scripts"
 			],
-			"target": [
-				"deskop", "mobile"
+			"targets": [
+				"desktop", "mobile"
 			]
+		},
+		"ext.bluespice.pageassignments.assignable.messages": {
+			"class": "\\BlueSpice\\PageAssignments\\ResourceLoader\\Messages"
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -222,6 +249,11 @@
 	},
 	"config_prefix": "bsg",
 	"config": {
+		"PageAssignmentsPermissions": {
+			"value": [
+				"read"
+			]
+		},
 		"PageAssignmentsActivatedTypes": {
 			"value": [
 				"user",
