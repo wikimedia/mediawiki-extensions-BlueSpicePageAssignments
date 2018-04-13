@@ -18,7 +18,6 @@
 	"bs-pageassignments-column-assignedby": "Призначено користувачем",
 	"bs-pageassignments-no-assignments": "Жодних призначень",
 	"bs-pageassignments-action-log": "Журнал призначень",
-	"bs-pageassignments-directly-assigned": "безпосередньо",
 	"bs-pageassignments-action-delete-confirm": "Вилучити призначення?",
 	"bs-pageassignments-api-error": "Сталася помилка",
 	"bs-pageassignments-api-error-no-page": "Сторінку не вказано",

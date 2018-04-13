@@ -4,7 +4,6 @@
 			"Chrumps"
 		]
 	},
-	"bs-pageassignments-directly-assigned": "bezpośrednio",
 	"bs-pageassignments-api-error": "Wystąpił błąd",
 	"bs-pageassignments-api-error-no-page": "Nie określono strony",
 	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|przypisał|przypisała}} stronę „$3” do {{GENDER:$4|użytkownika|użytkowniczki}} „$4”",

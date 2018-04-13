@@ -20,7 +20,6 @@
 	"bs-pageassignments-column-assignedby": "Zugewiesen durch",
 	"bs-pageassignments-no-assignments": "Keine Zuweisungen",
 	"bs-pageassignments-action-log": "Zuweisungs-Logbuch",
-	"bs-pageassignments-directly-assigned": "direkt",
 	"bs-pageassignments-action-delete-confirm": "Zuweisung entfernen?",
 	"bs-pageassignments-api-error": "Es ist ein Fehler aufgetreten",
 	"bs-pageassignments-api-error-no-page": "Es wurde keine Seite angegeben",
@@ -72,5 +71,8 @@
 	"apihelp-bs-mypageassignment-store-description": "Gibt Seiten zurück, die dem aktuellen Benutzer zugewiesen sind.",
 	"apihelp-bs-pageassignment-tasks-description": "Ruft die Liste der Zuweisungen für eine angegebene Seite ab oder bearbeitet sie",
 	"apihelp-bs-pageassignment-tasks-summary": "Ruft die Liste der Zuweisungen für eine angegebene Seite ab oder bearbeitet sie",
-	"bs-pageassignments-assignee-special-everyone-label": "Jeder"
+	"bs-pageassignments-assignee-special-everyone-label": "Jeder",
+	"bs-pageassignments-assignee-type-everyone": "Jeder",
+	"bs-pageassignments-assignee-type-user": "Benutzer",
+	"bs-pageassignments-assignee-type-group": "Gruppe"
 }

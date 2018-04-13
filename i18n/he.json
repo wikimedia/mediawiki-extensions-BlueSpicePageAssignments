@@ -18,7 +18,6 @@
 	"bs-pageassignments-column-assignedby": "שויך על־ידי",
 	"bs-pageassignments-no-assignments": "אין שיוכים",
 	"bs-pageassignments-action-log": "יומן שיוכים",
-	"bs-pageassignments-directly-assigned": "באופן ישיר",
 	"bs-pageassignments-action-delete-confirm": "להסיר את השיוך?",
 	"bs-pageassignments-api-error": "אירעה שגיאה",
 	"bs-pageassignments-api-error-no-page": "לא צוין דף",
@@ -71,5 +70,8 @@
 	"apihelp-bs-mypageassignment-store-summary": "החזרת הדפים המשויכים למשתמש הנוכחי",
 	"apihelp-bs-pageassignment-tasks-description": "קבלת או עריכת רשימת השיוכים עבור דף מסוים",
 	"apihelp-bs-pageassignment-tasks-summary": "קבלת או עריכת רשימת השיוכים עבור דף מסוים",
-	"bs-pageassignments-assignee-special-everyone-label": "כולם"
+	"bs-pageassignments-assignee-special-everyone-label": "כולם",
+	"bs-pageassignments-assignee-type-everyone": "כולם",
+	"bs-pageassignments-assignee-type-user": "משתמש",
+	"bs-pageassignments-assignee-type-group": "קבוצה"
 }

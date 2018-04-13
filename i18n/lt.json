@@ -20,7 +20,6 @@
 	"bs-pageassignments-column-assignedby": "Priskirė",
 	"bs-pageassignments-no-assignments": "Nėra užduočių",
 	"bs-pageassignments-action-log": "Užduočių žurnalas",
-	"bs-pageassignments-directly-assigned": "tiesiogiai",
 	"bs-pageassignments-action-delete-confirm": "Pašalinti užduotį",
 	"bs-pageassignments-api-error": "Įvyko klaida",
 	"bs-pageassignments-api-error-no-page": "Puslapis nenurodytas",

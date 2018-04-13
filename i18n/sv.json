@@ -18,7 +18,6 @@
 	"bs-pageassignments-column-assignedby": "Tilldelad av",
 	"bs-pageassignments-no-assignments": "Inga tilldelningar",
 	"bs-pageassignments-action-log": "Tilldelningslogg",
-	"bs-pageassignments-directly-assigned": "direkt",
 	"bs-pageassignments-action-delete-confirm": "Ta bort tilldelning?",
 	"bs-pageassignments-api-error": "Ett fel har uppstått",
 	"bs-pageassignments-api-error-no-page": "Sida har inte angetts",

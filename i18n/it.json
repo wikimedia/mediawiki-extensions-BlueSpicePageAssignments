@@ -16,7 +16,6 @@
 	"bs-pageassignments-column-assignedby": "Assegnato da",
 	"bs-pageassignments-no-assignments": "Nessuna assegnazione",
 	"bs-pageassignments-action-log": "Registro di assegnazioni",
-	"bs-pageassignments-directly-assigned": "direttamente",
 	"bs-pageassignments-action-delete-confirm": "Rimuovere assegnazione?",
 	"bs-pageassignments-api-error": "Si è verificato un errore",
 	"bs-pageassignments-api-error-no-page": "Pagina non specificata",

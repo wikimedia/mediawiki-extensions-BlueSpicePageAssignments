@@ -14,7 +14,6 @@
 	"bs-pageassignments-column-title": "عنوان الصفحة",
 	"bs-pageassignments-column-assignments": "التعيينات",
 	"bs-pageassignments-no-assignments": "لا يوجد تعيينات",
-	"bs-pageassignments-directly-assigned": "مباشرةً",
 	"bs-pageassignments-action-delete-confirm": "إزالة التعيين؟",
 	"echo-category-title-bs-pageassignments-action-cat": "صفحة التعيينات",
 	"notification-bs-pageassignments-page-move-subject": "تم نقل $2",

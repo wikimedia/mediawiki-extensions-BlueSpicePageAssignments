@@ -18,7 +18,6 @@
 	"bs-pageassignments-column-assignedby": "分配自",
 	"bs-pageassignments-no-assignments": "无分配",
 	"bs-pageassignments-action-log": "分配日志",
-	"bs-pageassignments-directly-assigned": "直接",
 	"bs-pageassignments-action-delete-confirm": "移除分配？",
 	"bs-pageassignments-api-error": "发生错误",
 	"bs-pageassignments-api-error-no-page": "未指定页面",

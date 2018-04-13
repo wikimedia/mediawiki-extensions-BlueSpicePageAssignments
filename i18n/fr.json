@@ -22,7 +22,6 @@
 	"bs-pageassignments-column-assignedby": "Assigné par",
 	"bs-pageassignments-no-assignments": "Pas d'affectation",
 	"bs-pageassignments-action-log": "Journal des affectations",
-	"bs-pageassignments-directly-assigned": "directement",
 	"bs-pageassignments-action-delete-confirm": "Supprimer l'affectation ?",
 	"bs-pageassignments-api-error": "Une erreur s’est produite",
 	"bs-pageassignments-api-error-no-page": "Page non spécifiée",

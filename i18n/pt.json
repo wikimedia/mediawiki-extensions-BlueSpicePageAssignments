@@ -20,7 +20,6 @@
 	"bs-pageassignments-column-assignedby": "Atribuída por",
 	"bs-pageassignments-no-assignments": "Sem atribuições",
 	"bs-pageassignments-action-log": "Registo de atribuições de páginas",
-	"bs-pageassignments-directly-assigned": "diretamente",
 	"bs-pageassignments-action-delete-confirm": "Remover atribuição?",
 	"bs-pageassignments-api-error": "Ocorreu um erro",
 	"bs-pageassignments-api-error-no-page": "Página não especificada",
@@ -73,5 +72,8 @@
 	"apihelp-bs-mypageassignment-store-summary": "Devolve as páginas atribuídas ao utilizador atual",
 	"apihelp-bs-pageassignment-tasks-description": "Obter ou editar a lista de atribuições para uma página específica",
 	"apihelp-bs-pageassignment-tasks-summary": "Obter ou editar a lista de atribuições para uma página específica",
-	"bs-pageassignments-assignee-special-everyone-label": "Todos"
+	"bs-pageassignments-assignee-special-everyone-label": "Todos",
+	"bs-pageassignments-assignee-type-everyone": "Todos",
+	"bs-pageassignments-assignee-type-user": "Utilizador",
+	"bs-pageassignments-assignee-type-group": "Grupo"
 }
