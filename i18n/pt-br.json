@@ -72,5 +72,8 @@
 	"apihelp-bs-mypageassignment-store-summary": "Retorna páginas atribuídas ao usuário atual",
 	"apihelp-bs-pageassignment-tasks-description": "Obter ou editar a lista de atribuições para uma página específica",
 	"apihelp-bs-pageassignment-tasks-summary": "Obter ou editar a lista de atribuições para uma página específica",
-	"bs-pageassignments-assignee-special-everyone-label": "Todos"
+	"bs-pageassignments-assignee-special-everyone-label": "Todos",
+	"bs-pageassignments-assignee-type-everyone": "Todos",
+	"bs-pageassignments-assignee-type-user": "Usuário",
+	"bs-pageassignments-assignee-type-group": "Grupo"
 }

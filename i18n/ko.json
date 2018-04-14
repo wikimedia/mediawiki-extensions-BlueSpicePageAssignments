@@ -30,5 +30,8 @@
 	"prefs-pageassign": "과제",
 	"apihelp-bs-pageassignable-store-summary": "할당된 사용자의 목록을 반환합니다",
 	"apihelp-bs-mypageassignment-store-summary": "현재 사용자에 할당된 문서를 반환합니다",
-	"bs-pageassignments-assignee-special-everyone-label": "모두"
+	"bs-pageassignments-assignee-special-everyone-label": "모두",
+	"bs-pageassignments-assignee-type-everyone": "모두",
+	"bs-pageassignments-assignee-type-user": "사용자",
+	"bs-pageassignments-assignee-type-group": "그룹"
 }

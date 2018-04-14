@@ -12,6 +12,7 @@
 	"notification-bs-pageassignments-page-delete-subject": "το $2 διαγράφηκε",
 	"notification-bs-pageassignments-user-group-add-subject": "Προστέθηκε στην ομάδα $4",
 	"bs-pageassignments-assignee-special-everyone-label": "ο καθένας",
+	"bs-pageassignments-assignee-type-everyone": "ο καθένας",
 	"bs-pageassignments-assignee-type-user": "Χρήστης",
 	"bs-pageassignments-assignee-type-group": "Ομάδα"
 }

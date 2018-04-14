@@ -70,5 +70,8 @@
 	"apihelp-bs-mypageassignment-store-summary": "返回分配给当前用户的页面",
 	"apihelp-bs-pageassignment-tasks-description": "获取或编辑指定页面的分配列表",
 	"apihelp-bs-pageassignment-tasks-summary": "获取或编辑指定页面的分配列表",
-	"bs-pageassignments-assignee-special-everyone-label": "大家"
+	"bs-pageassignments-assignee-special-everyone-label": "大家",
+	"bs-pageassignments-assignee-type-everyone": "大家",
+	"bs-pageassignments-assignee-type-user": "用户",
+	"bs-pageassignments-assignee-type-group": "组"
 }
