@@ -68,5 +68,8 @@
 	"apihelp-bs-mypageassignment-store-description": "Returnerar sidor tilldelade till nuvarande användare",
 	"apihelp-bs-mypageassignment-store-summary": "Returnerar sidor tilldelade till nuvarande användare",
 	"apihelp-bs-pageassignment-tasks-description": "Hämta eller redigera listan över tilldelningar för specifik sida",
-	"bs-pageassignments-assignee-special-everyone-label": "Alla"
+	"bs-pageassignments-assignee-special-everyone-label": "Alla",
+	"bs-pageassignments-assignee-type-everyone": "Alla",
+	"bs-pageassignments-assignee-type-user": "Användare",
+	"bs-pageassignments-assignee-type-group": "Grupp"
 }
