@@ -67,5 +67,7 @@
 	"bs-usagetracker-pageassignments": "paginas con asignaciones",
 	"apihelp-bs-pageassignable-store-description": "Devuelve la lista de asignados",
 	"apihelp-bs-mypageassignment-store-description": "Devuelve las páginas asignadas al usuario actual",
-	"bs-pageassignments-assignee-special-everyone-label": "Cualquiera"
+	"bs-pageassignments-assignee-special-everyone-label": "Cualquiera",
+	"bs-pageassignments-assignee-type-user": "Usuario",
+	"bs-pageassignments-assignee-type-group": "Grupo"
 }
