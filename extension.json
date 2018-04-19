@@ -300,8 +300,7 @@
 		"BSUsageTrackerRegisterCollectors": "PageAssignmentsHooks::onBSUsageTrackerRegisterCollectors",
 		"BSUserManagerAfterDeleteUser": "PageAssignmentsHooks::onBSUserManagerAfterDeleteUser",
 		"BSGroupManagerGroupNameChanged": "PageAssignmentsHooks::onBSGroupManagerGroupNameChanged",
-		"BSGroupManagerGroupDeleted": "PageAssignmentsHooks::onBSGroupManagerGroupDeleted",
-		"UnitTestsList": "PageAssignmentsHooks::onUnitTestsList"
+		"BSGroupManagerGroupDeleted": "PageAssignmentsHooks::onBSGroupManagerGroupDeleted"
 	},
 	"ResourceLoaderLESSVars" : {
 		"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
