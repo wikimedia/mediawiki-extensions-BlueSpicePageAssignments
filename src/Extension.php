@@ -45,7 +45,7 @@ class Extension extends \BlueSpice\Extension {
 			}
 			$oSemanticData->addPropertyObjectValue(
 				$oProperty,
-				\SMWDIWikiPage::newFromTitle( $user )
+				\SMWDIWikiPage::newFromTitle( $user->getUserPage() )
 			);
 		}
 	}

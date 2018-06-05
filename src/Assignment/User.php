@@ -1,5 +1,8 @@
 <?php
+
 namespace BlueSpice\PageAssignments\Assignment;
+
+use BlueSpice\Services;
 
 class User extends \BlueSpice\PageAssignments\Assignment {
 
@@ -11,7 +14,8 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	}
 
 	public function getText() {
-		return \BsUserHelper::getUserDisplayName( $this->getUser() );
+		$utilities = Services::getInstance()->getBSUtilityFactory();
+		return $utilities->getUserHelper( $this->getUser() )->getDisplayName();
 	}
 
 	public function getUserIds() {

@@ -1,5 +1,9 @@
 <?php
 
+namespace BlueSpice\PageAssignments\Tests;
+
+use BlueSpice\Tests\BSApiExtJSStoreTestBase;
+
 /**
  * @group medium
  * @group API

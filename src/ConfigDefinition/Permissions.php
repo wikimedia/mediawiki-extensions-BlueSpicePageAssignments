@@ -21,6 +21,6 @@ class Permissions extends \BlueSpice\ConfigDefinition\ArraySetting {
 	}
 
 	public function getLabelMessageKey() {
-		return 'bs-authors-pref-limit';
+		return 'bs-pageassignments-pref-permissions';
 	}
 }
