@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Kly"
 		]
 	},
 	"bs-pageassignments-column-title": "頁面標題",
-	"bs-pageassignments-assignee-special-everyone-label": "所有人"
+	"bs-pageassignments-assignee-special-everyone-label": "所有人",
+	"bs-pageassignments-assignee-type-group": "群組"
 }
