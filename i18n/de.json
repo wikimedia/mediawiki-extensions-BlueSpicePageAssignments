@@ -74,5 +74,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Jeder",
 	"bs-pageassignments-assignee-type-everyone": "Jeder",
 	"bs-pageassignments-assignee-type-user": "Benutzer",
-	"bs-pageassignments-assignee-type-group": "Gruppe"
+	"bs-pageassignments-assignee-type-group": "Gruppe",
+	"bs-pageassignments-secure-nsm-label": "Abgesicherte Zuweisungen"
 }

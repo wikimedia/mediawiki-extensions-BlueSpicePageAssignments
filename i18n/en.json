@@ -73,5 +73,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Everyone",
 	"bs-pageassignments-assignee-type-everyone": "Everyone",
 	"bs-pageassignments-assignee-type-user": "User",
-	"bs-pageassignments-assignee-type-group": "Group"
+	"bs-pageassignments-assignee-type-group": "Group",
+	"bs-pageassignments-secure-nsm-label": "Secured pageassignments"
 }

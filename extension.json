@@ -265,6 +265,14 @@
 		},
 		"PageAssignmentsUseAdditionalPermissions": {
 			"value": false
+		},
+		"PageAssignmentsSecureEnabledNamespaces": {
+			"value": []
+		},
+		"PageAssignmentsSecureRemoveRightList": {
+			"value": [
+				"edit"
+			]
 		}
 	},
 	"Hooks": {
@@ -303,7 +311,12 @@
 		"BSUsageTrackerRegisterCollectors": "PageAssignmentsHooks::onBSUsageTrackerRegisterCollectors",
 		"BSUserManagerAfterDeleteUser": "PageAssignmentsHooks::onBSUserManagerAfterDeleteUser",
 		"BSGroupManagerGroupNameChanged": "PageAssignmentsHooks::onBSGroupManagerGroupNameChanged",
-		"BSGroupManagerGroupDeleted": "PageAssignmentsHooks::onBSGroupManagerGroupDeleted"
+		"BSGroupManagerGroupDeleted": "PageAssignmentsHooks::onBSGroupManagerGroupDeleted",
+		"NamespaceManager::getMetaFields": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaFields::callback",
+		"BSApiNamespaceStoreMakeData": "\\BlueSpice\\PageAssignments\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
+		"NamespaceManager::editNamespace": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerEditNamespace\\SetValues::callback",
+		"NamespaceManager::writeNamespaceConfiguration": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback",
+		"userCan": "\\BlueSpice\\PageAssignments\\Hook\\UserCan\\RemoveEditPermissionsOnSecure::callback"
 	},
 	"ResourceLoaderLESSVars" : {
 		"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
