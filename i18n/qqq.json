@@ -78,5 +78,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Label for combobox list entry that assignes all users to a certain page\n{{Identical|Everyone}}",
 	"bs-pageassignments-assignee-type-everyone": "Label for the assignee type everyone\n{{Identical|Everyone}}",
 	"bs-pageassignments-assignee-type-user": "Label for the assignee type user\n{{Identical|User}}",
-	"bs-pageassignments-assignee-type-group": "Label for the assignee type group\n{{Identical|Group}}"
+	"bs-pageassignments-assignee-type-group": "Label for the assignee type group\n{{Identical|Group}}",
+	"bs-pageassignments-secure-nsm-label": "Used in [[Special:NamespaceManager]] of extension BlueSpiceNamespaceManager.\nLabel for column header in ExtJS grid panel.\n{{Identical|Secured pageassignments}}"
 }
