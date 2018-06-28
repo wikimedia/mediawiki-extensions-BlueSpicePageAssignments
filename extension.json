@@ -231,6 +231,21 @@
 				"desktop", "mobile"
 			]
 		},
+		"ext.bluespice.pageassignments.flyout": {
+			"scripts": "bluespice.pageassignments.flyout.js",
+			"messages": [
+				"bs-pageassignments-nav-link-title-pageassignments",
+				"bs-pageassignments-flyout-title",
+				"bs-pageassignments-flyout-intro",
+				"bs-pageassignments-flyout-form-title",
+				"bs-pageassignments-flyout-grid-title",
+				"bs-pageassignments-flyout-manager-btn-label"
+			],
+			"dependencies": [
+				"ext.bluespice.extjs",
+				"ext.bluespice"
+			]
+		},
 		"ext.bluespice.pageassignments.graphicallist": {
 			"scripts": [
 				"ext.bluespice.pageassignments.GraphicalList.js"
@@ -285,7 +300,10 @@
 			"PageAssignmentsHooks::onBeforePageDisplay",
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\FetchPageAssignments::callback"
 		],
-		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateOutputPageBeforeExec\\AddAssignees::callback",
+		"SkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateOutputPageBeforeExec\\AddAssignees::callback",
+			"\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
+		],
 		"TitleMoveComplete": [
 			"PageAssignmentsHooks::onTitleMoveComplete",
 			"PageAssignmentsNotificationHooks::onTitleMoveComplete"

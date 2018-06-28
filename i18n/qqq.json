@@ -79,5 +79,11 @@
 	"bs-pageassignments-assignee-type-everyone": "Label for the assignee type everyone\n{{Identical|Everyone}}",
 	"bs-pageassignments-assignee-type-user": "Label for the assignee type user\n{{Identical|User}}",
 	"bs-pageassignments-assignee-type-group": "Label for the assignee type group\n{{Identical|Group}}",
-	"bs-pageassignments-secure-nsm-label": "Used in [[Special:NamespaceManager]] of extension BlueSpiceNamespaceManager.\nLabel for column header in ExtJS grid panel.\n{{Identical|Secured pageassignments}}"
+	"bs-pageassignments-secure-nsm-label": "Used in [[Special:NamespaceManager]] of extension BlueSpiceNamespaceManager.\nLabel for column header in ExtJS grid panel.\n{{Identical|Secured pageassignments}}",
+	"bs-pageassignments-nav-link-title-pageassignments": "Text for the button that opens the flyout in right menu",
+	"bs-pageassignments-flyout-title": "Title text of the flyout",
+	"bs-pageassignments-flyout-intro": "Subtitle of the flyout",
+	"bs-pageassignments-flyout-form-title": "Title text for the form used to assign new users or groups to the page",
+	"bs-pageassignments-flyout-grid-title": "Title text of the grid showing all assigned users and groups to the page",
+	"bs-pageassignments-flyout-manager-btn-label": "Label for the button leading to the PageAssignments specialpage"
 }

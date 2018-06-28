@@ -139,11 +139,32 @@ class PageAssignments extends \BSApiTasksBase {
 
 		$result->payload = [];
 		foreach( $target->getAssignments() as $assignment ) {
-			$result->payload[] = $assignment->toStdClass();
+			$assignment = $assignment->toStdClass();
+			$assignment->assignee_image_html = $this->getRenderedUserImage( $assignment );
+			$result->payload[] = $assignment;
 		}
 		$result->success = true;
 
 		return $result;
+	}
+
+	protected function getRenderedUserImage( $assignment ) {
+		$factory = \BlueSpice\Services::getInstance()->getBSRendererFactory();
+		if( $assignment->pa_assignee_type == 'group' ) {
+			return '';
+		}
+		$user = \User::newFromName( $assignment->pa_assignee_key );
+		if( $user instanceof \User === false ) {
+			return '';
+		}
+
+		$image = $factory->get( 'userimage', new \BlueSpice\Renderer\Params( [
+			'user' => $user,
+			'width' => "32",
+			'height' => "32",
+		]));
+
+		return $image->render();
 	}
 
 	/**
