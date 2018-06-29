@@ -77,5 +77,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Tout le monde",
 	"bs-pageassignments-assignee-type-everyone": "Tout le monde",
 	"bs-pageassignments-assignee-type-user": "Utilisateur",
-	"bs-pageassignments-assignee-type-group": "Groupe"
+	"bs-pageassignments-assignee-type-group": "Groupe",
+	"bs-pageassignments-secure-nsm-label": "Affectations de pages sécurisées"
 }

@@ -73,5 +73,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "כולם",
 	"bs-pageassignments-assignee-type-everyone": "כולם",
 	"bs-pageassignments-assignee-type-user": "משתמש",
-	"bs-pageassignments-assignee-type-group": "קבוצה"
+	"bs-pageassignments-assignee-type-group": "קבוצה",
+	"bs-pageassignments-secure-nsm-label": "שיוכי דפים מאובטחים"
 }

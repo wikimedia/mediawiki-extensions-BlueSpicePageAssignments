@@ -75,5 +75,11 @@
 	"bs-pageassignments-assignee-type-everyone": "Jeder",
 	"bs-pageassignments-assignee-type-user": "Benutzer",
 	"bs-pageassignments-assignee-type-group": "Gruppe",
-	"bs-pageassignments-secure-nsm-label": "Abgesicherte Zuweisungen"
+	"bs-pageassignments-secure-nsm-label": "Abgesicherte Zuweisungen",
+	"bs-pageassignments-nav-link-title-pageassignments": "Seitenzuweisungen",
+	"bs-pageassignments-flyout-title": "Seitenzuweisungen",
+	"bs-pageassignments-flyout-intro": "Benutzer und Gruppen verwalten, die dieser Seite zugewiesen sind.",
+	"bs-pageassignments-flyout-form-title": "Zuweisung hinzufügen",
+	"bs-pageassignments-flyout-grid-title": "Benutzer und Gruppen, die dieser Seite zugewiesen sind.",
+	"bs-pageassignments-flyout-manager-btn-label": "Verwaltung von Seitenzuweisungen"
 }
