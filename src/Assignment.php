@@ -96,7 +96,7 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 			Record::ID => $this->getId(),
 			Record::POSITION => $this->getPosition(),
 			Record::ANCHOR => $this->getAnchor(),
-			Record::PAGE_ID => $this->getTitle()->getArticleID(),
+			Record::PAGE_ID => $this->getTitle()->getArticleID()
 		]);
 	}
 
