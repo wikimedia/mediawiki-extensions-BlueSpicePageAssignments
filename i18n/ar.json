@@ -75,5 +75,12 @@
 	"bs-pageassignments-assignee-special-everyone-label": "الجميع",
 	"bs-pageassignments-assignee-type-everyone": "الجميع",
 	"bs-pageassignments-assignee-type-user": "مستخدم",
-	"bs-pageassignments-assignee-type-group": "مجموعة"
+	"bs-pageassignments-assignee-type-group": "مجموعة",
+	"bs-pageassignments-secure-nsm-label": "تعيينات الصفحة المؤمنة",
+	"bs-pageassignments-nav-link-title-pageassignments": "تعيينات الصفحة",
+	"bs-pageassignments-flyout-title": "تعيينات الصفحة",
+	"bs-pageassignments-flyout-intro": "إدارة المستخدمين والمجموعات المعينة لهذه الصفحة.",
+	"bs-pageassignments-flyout-form-title": "إضافة تعيين",
+	"bs-pageassignments-flyout-grid-title": "المستخدمون والمجموعات المعينون لهذه الصفحة",
+	"bs-pageassignments-flyout-manager-btn-label": "مدير مهام الصفحة"
 }

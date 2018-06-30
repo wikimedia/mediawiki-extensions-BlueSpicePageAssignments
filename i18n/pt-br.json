@@ -75,5 +75,12 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Todos",
 	"bs-pageassignments-assignee-type-everyone": "Todos",
 	"bs-pageassignments-assignee-type-user": "Usuário",
-	"bs-pageassignments-assignee-type-group": "Grupo"
+	"bs-pageassignments-assignee-type-group": "Grupo",
+	"bs-pageassignments-secure-nsm-label": "Atribuições seguras de páginas",
+	"bs-pageassignments-nav-link-title-pageassignments": "Atribuições de páginas",
+	"bs-pageassignments-flyout-title": "Atribuições de páginas",
+	"bs-pageassignments-flyout-intro": "Gerenciar os usuários e grupos a quem esta página foi atribuída.",
+	"bs-pageassignments-flyout-form-title": "Adicionar atribuição",
+	"bs-pageassignments-flyout-grid-title": "Usuários e grupos para quem esta página foi atribuída",
+	"bs-pageassignments-flyout-manager-btn-label": "Gerenciar as atribuições de páginas"
 }

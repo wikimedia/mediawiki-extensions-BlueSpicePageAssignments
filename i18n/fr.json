@@ -78,5 +78,11 @@
 	"bs-pageassignments-assignee-type-everyone": "Tout le monde",
 	"bs-pageassignments-assignee-type-user": "Utilisateur",
 	"bs-pageassignments-assignee-type-group": "Groupe",
-	"bs-pageassignments-secure-nsm-label": "Affectations de pages sécurisées"
+	"bs-pageassignments-secure-nsm-label": "Affectations de pages sécurisées",
+	"bs-pageassignments-nav-link-title-pageassignments": "Assignations de pages",
+	"bs-pageassignments-flyout-title": "Assignation de pages",
+	"bs-pageassignments-flyout-intro": "Gérer les utilisateurs et les groupes assignés à cette page.",
+	"bs-pageassignments-flyout-form-title": "Ajouter une assignation",
+	"bs-pageassignments-flyout-grid-title": "Utilisateurs et groupes assignés à cette page",
+	"bs-pageassignments-flyout-manager-btn-label": "Gestionnaire des assignations de pages"
 }
