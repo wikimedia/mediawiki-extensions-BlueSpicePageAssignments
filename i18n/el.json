@@ -14,5 +14,10 @@
 	"bs-pageassignments-assignee-special-everyone-label": "ο καθένας",
 	"bs-pageassignments-assignee-type-everyone": "ο καθένας",
 	"bs-pageassignments-assignee-type-user": "Χρήστης",
-	"bs-pageassignments-assignee-type-group": "Ομάδα"
+	"bs-pageassignments-assignee-type-group": "Ομάδα",
+	"bs-pageassignments-nav-link-title-pageassignments": "Αναθέσεις σελίδας",
+	"bs-pageassignments-flyout-title": "Αναθέσεις σελίδας",
+	"bs-pageassignments-flyout-form-title": "Προσθήκη ανάθεσης",
+	"bs-pageassignments-flyout-grid-title": "Χρήστες και ομάδες ανατεθειμένες σε αυτή τη σελίδα",
+	"bs-pageassignments-flyout-manager-btn-label": "Διαχειριστής αναθέσεων σελίδας"
 }
