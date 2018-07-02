@@ -33,5 +33,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "모두",
 	"bs-pageassignments-assignee-type-everyone": "모두",
 	"bs-pageassignments-assignee-type-user": "사용자",
-	"bs-pageassignments-assignee-type-group": "그룹"
+	"bs-pageassignments-assignee-type-group": "그룹",
+	"bs-pageassignments-flyout-intro": "이 문서에 할당된 사용자와 그룹을 관리합니다."
 }
