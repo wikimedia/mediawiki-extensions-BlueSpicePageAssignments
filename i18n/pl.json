@@ -19,5 +19,8 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Wszyscy",
 	"bs-pageassignments-assignee-type-everyone": "Wszyscy",
 	"bs-pageassignments-assignee-type-user": "Użytkownik",
-	"bs-pageassignments-assignee-type-group": "Grupa"
+	"bs-pageassignments-assignee-type-group": "Grupa",
+	"bs-pageassignments-flyout-intro": "Zarządzaj użytkownikami i grupami przypisanymi do tej strony.",
+	"bs-pageassignments-flyout-form-title": "Dodaj przypisanie",
+	"bs-pageassignments-flyout-grid-title": "Użytkownicy i grupy przypisane do tej strony."
 }
