@@ -42,9 +42,6 @@
 					]
 				}
 			},
-			"GraphicalListRegistry": {
-				"pageassignments-list": "bs.pageassignments.GraphicalListFactory"
-			},
 			"RendererRegistry": {
 				"assignment": "\\BlueSpice\\PageAssignments\\Renderer\\Assignment",
 				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User"
@@ -301,7 +298,6 @@
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\FetchPageAssignments::callback"
 		],
 		"SkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateOutputPageBeforeExec\\AddAssignees::callback",
 			"\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
 		"TitleMoveComplete": [

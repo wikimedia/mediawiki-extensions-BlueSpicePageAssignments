@@ -28,8 +28,6 @@ class FetchPageAssignments extends \BlueSpice\Hook\BeforePageDisplay {
 	}
 
 	protected function doProcess() {
-		$this->out->addModules( 'ext.bluespice.pageassignments.graphicallist' );
-
 		$factory = $this->getServices()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
