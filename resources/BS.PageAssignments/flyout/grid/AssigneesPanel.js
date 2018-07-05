@@ -3,6 +3,7 @@ Ext.define( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {
 	requires: [ 'BS.PageAssignments.flyout.model.AssigneeModel' ],
 	title: mw.message( 'bs-pageassignments-flyout-grid-title' ).plain(),
 	cls: 'bs-pageassignments-flyout-grid',
+	maxWidth: 600,
 	pageSize : 5,
 	hideHeaders: true,
 	articleId: mw.config.get( 'wgArticleId' ),

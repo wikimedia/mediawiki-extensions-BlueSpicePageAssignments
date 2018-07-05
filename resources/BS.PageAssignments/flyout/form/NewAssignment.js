@@ -4,6 +4,7 @@ Ext.define( 'BS.PageAssignments.flyout.form.NewAssignment', {
 	cls: 'bs-pageassignments-flyout-form',
 	title: mw.message('bs-pageassignments-flyout-form-title').plain(),
 	articleId: mw.config.get('wgArticleId'),
+	maxWidth: 400,
 	initComponent: function () {
 		this.currentData = null;
 
