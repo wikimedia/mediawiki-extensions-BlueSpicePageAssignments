@@ -31,7 +31,7 @@ Ext.define( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {
 
 		this.colUnAssign = Ext.create( 'Ext.grid.column.Action', {
 			flex:0,
-			width: 20,
+			width: 30,
 			items: [{
 				iconCls: 'bs-extjs-actioncolumn-icon bs-icon-cross destructive',
 				glyph: true,
