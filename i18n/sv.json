@@ -72,5 +72,6 @@
 	"bs-pageassignments-assignee-type-everyone": "Alla",
 	"bs-pageassignments-assignee-type-user": "Användare",
 	"bs-pageassignments-assignee-type-group": "Grupp",
-	"bs-pageassignments-flyout-form-title": "Lägg till tilldelning"
+	"bs-pageassignments-flyout-form-title": "Lägg till tilldelning",
+	"bs-pageassignments-flyout-grid-title": "Användare och grupper som är tilldelade till denna sida"
 }
