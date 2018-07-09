@@ -75,9 +75,11 @@
 	"bs-pageassignments-assignee-type-everyone": "大家",
 	"bs-pageassignments-assignee-type-user": "用户",
 	"bs-pageassignments-assignee-type-group": "组",
+	"bs-pageassignments-secure-nsm-label": "担保页面分配",
 	"bs-pageassignments-nav-link-title-pageassignments": "页面分配",
 	"bs-pageassignments-flyout-title": "页面分配",
+	"bs-pageassignments-flyout-intro": "管理分配至此页面的用户和用户组。",
 	"bs-pageassignments-flyout-form-title": "添加分配",
-	"bs-pageassignments-flyout-grid-title": "分配至这一页面的用户与用户组",
+	"bs-pageassignments-flyout-grid-title": "分配至此页面的用户和用户组",
 	"bs-pageassignments-flyout-manager-btn-label": "页面分配管理器"
 }
