@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Irus"
+			"Irus",
+			"Vlad5250"
 		]
 	},
-	"bs-usagetracker-pageassignments": "страницы с заданиями"
+	"bs-usagetracker-pageassignments": "страницы с заданиями",
+	"bs-pageassignments-flyout-intro": "Управление участниками и группами для этой страницы.",
+	"bs-pageassignments-flyout-grid-title": "Участники и группы, назначенные для этой страницы."
 }
