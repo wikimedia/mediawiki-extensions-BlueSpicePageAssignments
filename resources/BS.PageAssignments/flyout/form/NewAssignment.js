@@ -5,6 +5,10 @@ Ext.define( 'BS.PageAssignments.flyout.form.NewAssignment', {
 	title: mw.message('bs-pageassignments-flyout-form-title').plain(),
 	articleId: mw.config.get('wgArticleId'),
 	maxWidth: 400,
+	layout: 'anchor',
+	fieldDefaults: {
+		anchor: '100%'
+	},
 	initComponent: function () {
 		this.currentData = null;
 
