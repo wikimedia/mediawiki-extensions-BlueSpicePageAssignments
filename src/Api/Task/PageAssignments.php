@@ -2,8 +2,10 @@
 
 namespace BlueSpice\PageAssignments\Api\Task;
 
+use BlueSpice\EchoConnector\PresentationModel\AssignmentChangeAdd;
 use BlueSpice\Services;
 use BlueSpice\PageAssignments\IAssignment;
+use BlueSpice\PageAssignments\Notifications;
 
 class PageAssignments extends \BSApiTasksBase {
 
@@ -194,6 +196,14 @@ class PageAssignments extends \BSApiTasksBase {
 		$newUsers = [];
 		$removedUsers = [];
 
+		$notificationsManager = \BlueSpice\Services::getInstance()->getBSNotificationManager();
+
+		$notifier = $notificationsManager->getNotifier();
+
+		if( !$notifier ) {
+			return true;
+		}
+
 		foreach( $addedAssignments as $assignment ) {
 			$newUsers = array_merge(
 				$newUsers,
@@ -209,25 +219,13 @@ class PageAssignments extends \BSApiTasksBase {
 		}
 
 		if( !empty( $newUsers ) ) {
-			\BSNotifications::notify(
-				"notification-bs-pageassignments-assignment-change-add",
-				$this->getUser(),
-				$title,
-				array(
-					'affected-users' => $newUsers
-				)
-			);
+			$notification = new Notifications\AssignmentChangeAdd( $this->getUser(), $title, $newUsers );
+			$notifier->notify( $notification );
 		}
 
 		if( !empty( $removedUsers ) ) {
-			\BSNotifications::notify(
-				"notification-bs-pageassignments-assignment-change-remove",
-				$this->getUser(),
-				$title,
-				array(
-					'affected-users' => $removedUsers
-				)
-			);
+			$notification = new Notifications\AssignmentChangeRemove( $this->getUser(), $title, $removedUsers );
+			$notifier->notify( $notification );
 		}
 	}
 

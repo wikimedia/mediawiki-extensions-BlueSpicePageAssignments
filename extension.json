@@ -45,7 +45,10 @@
 			"RendererRegistry": {
 				"assignment": "\\BlueSpice\\PageAssignments\\Renderer\\Assignment",
 				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User"
-			}
+			},
+			"NotificationRegistrationFunctions": [
+				"\\BlueSpice\\PageAssignments\\Notifications\\Registrator::registerNotifications"
+			]
 		},
 		"BlueSpicePageAssignments": {
 			"TypeRegistry": {
@@ -116,7 +119,6 @@
 		"BSApiPageAssignmentStore": "includes/api/BSApiPageAssignmentStore.php",
 		"BSApiMyPageAssignmentStore": "includes/api/BSApiMyPageAssignmentStore.php",
 		"PageAssignmentsHooks": "includes/PageAssignmentsHooks.php",
-		"PageAssignmentsNotificationHooks": "includes/PageAssignmentsNotificationHooks.php",
 		"PageAssignmentsUsersAdditionalPermissionsHooks": "includes/PageAssignmentsUsersAdditionalPermissionsHooks.php",
 		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
 		"PageAssignmentsWikiExplorerHooks": "includes/PageAssignmentsWikiExplorerHooks.php",
@@ -301,15 +303,12 @@
 			"\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
 		"TitleMoveComplete": [
-			"PageAssignmentsHooks::onTitleMoveComplete",
-			"PageAssignmentsNotificationHooks::onTitleMoveComplete"
+			"PageAssignmentsHooks::onTitleMoveComplete"
 		],
 		"ArticleDeleteComplete": [
-			"PageAssignmentsHooks::onArticleDeleteComplete",
-			"PageAssignmentsNotificationHooks::onArticleDeleteComplete"
+			"PageAssignmentsHooks::onArticleDeleteComplete"
 		],
-		"PageContentSaveComplete": "PageAssignmentsNotificationHooks::onPageContentSaveComplete",
-		"BSUserManagerAfterSetGroups": "PageAssignmentsNotificationHooks::onBSUserManagerAfterSetGroups",
+		"BSUserManagerAfterSetGroups": "\\BlueSpice\\PageAssignments\\Hook\\BSUserManagerAfterSetGroups\\NotifyUsers::callback",
 		"UserAddGroup": "PageAssignmentsUsersAdditionalPermissionsHooks::onUserAddGroup",
 		"UserGetRights": "PageAssignmentsUsersAdditionalPermissionsHooks::onUserGetRights",
 		"RevisionAjaxReviewBeforeParams": "PageAssignmentsUsersAdditionalPermissionsHooks::onRevisionAjaxReviewBeforeParams",
@@ -330,7 +329,8 @@
 		"BSApiNamespaceStoreMakeData": "\\BlueSpice\\PageAssignments\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
 		"NamespaceManager::editNamespace": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerEditNamespace\\SetValues::callback",
 		"NamespaceManager::writeNamespaceConfiguration": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback",
-		"userCan": "\\BlueSpice\\PageAssignments\\Hook\\UserCan\\RemoveEditPermissionsOnSecure::callback"
+		"userCan": "\\BlueSpice\\PageAssignments\\Hook\\UserCan\\RemoveEditPermissionsOnSecure::callback",
+		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers"
 	},
 	"ResourceLoaderLESSVars" : {
 		"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"

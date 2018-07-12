@@ -67,7 +67,7 @@ Ext.define( 'BS.PageAssignments.flyout.Base', {
 				bs.util.alert(
 					'bs-pa-error',
 					{
-						text: resp.message
+						text: resp.message || ''
 					}
 				);
 			})
