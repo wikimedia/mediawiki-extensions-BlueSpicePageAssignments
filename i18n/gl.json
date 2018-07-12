@@ -69,5 +69,8 @@
 	"apihelp-bs-mypageassignment-store-summary": "Devolve as páxinas asignadas ó usuario actual",
 	"apihelp-bs-pageassignment-tasks-description": "Obter ou editar a lista de asignacións para a páxina especificada",
 	"apihelp-bs-pageassignment-tasks-summary": "Obter ou editar a lista de asignacións para a páxina especificada",
-	"bs-pageassignments-assignee-special-everyone-label": "Todos"
+	"bs-pageassignments-assignee-special-everyone-label": "Todos",
+	"bs-pageassignments-assignee-type-everyone": "Todos",
+	"bs-pageassignments-assignee-type-user": "Usuario",
+	"bs-pageassignments-assignee-type-group": "Grupo"
 }
