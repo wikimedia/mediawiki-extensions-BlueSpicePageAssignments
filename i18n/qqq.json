@@ -30,6 +30,7 @@
 	"log-name-bs-pageassignments": "Used in [[Special:Log]], label for page assignments log",
 	"log-description-bs-pageassignments": "Used in [[Special:Log]], log description for page assignments.",
 	"log-show-hide-bs-pageassignments": "Used in [[Special:Log]]. Parameters:\n* $1 - link text; one of {{msg-mw|Show}} or {{msg-mw|Hide}}\n{{Related|Log-show-hide}}",
+	"logeventslist-bs-pageassignments-log": "Assignments log option label on [[Special:Log]]",
 	"logentry-bs-pageassignments-add-user": "Log message, that someone assigned a page to a user. Parameter:\n*$1 - Real name of the user, that assigned the page\n*$2 - Name of the user, that assigned the page\n*$3 - Page title\n*$4 - the name of the user, that got assigned to the page",
 	"logentry-bs-pageassignments-remove-user": "Log message, that someone removed the assignment for a page from a user. Parameters:\n*$1 - Real name of the user, that removed the assignment\n*$2 - Name of the user, that removed the assignment of the page\n*$3 - Page title\n*$4 - the name of the user, the assigmnet got removed from",
 	"logentry-bs-pageassignments-add-group": "Log message, that someone assigned a group to a page. Parameter:\n*$1 - Real name of the user, that assigned the page\n*$2 - Name of the user, that assigned the page\n*$3 - Page name\n*$4 - Group name",
