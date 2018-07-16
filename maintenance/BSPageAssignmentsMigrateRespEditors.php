@@ -1,4 +1,7 @@
 <?php
+$extDir = dirname( dirname( __DIR__ ) );
+
+require_once( "$extDir/BlueSpiceFoundation/maintenance/BSMaintenance.php" );
 
 class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 	protected function doDBUpdates() {
@@ -14,8 +17,6 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 		foreach( $aRespEditors as $aRespEditor ) {
 			$this->insertAssignment( $aRespEditor );
 		}
-
-		$this->dropRespEditorsTable();
 
 		$this->output( "OK\n" );
 	}
@@ -39,11 +40,21 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 			if( !$oUser = User::newFromId( $oRow->re_user_id ) ) {
 				continue;
 			}
-			$aReturn[] = array(
+			if( !$title = \Title::newFromId( (int)$oRow->re_user_id ) ) {
+				continue;
+			}
+			if( !$title->exists() ) {
+				continue;
+			}
+			$assignment = [
 				'pa_assignee_key' => $oUser->getName(),
-				'pa_page_id' => $oRow->re_page_id,
+				'pa_page_id' => (int) $oRow->re_page_id,
 				'pa_assignee_type' => 'user',
-			);
+			];
+			if( $this->assignmentExists( $assignment ) !== false ) {
+				continue;
+			}
+			$aReturn[] = $assignment;
 		}
 		return $aReturn;
 	}
@@ -56,7 +67,13 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 		);
 	}
 
-	protected function dropRespEditorsTable() {
-		return $this->getDB( DB_MASTER )->dropTable( 'bs_responsible_editors' );
+	protected function assignmentExists( $conds ) {
+		return $this->getDB( DB_MASTER )->selectRow(
+			'bs_pageassignments',
+			'*',
+			$conds,
+			__METHOD__
+		);
 	}
+
 }
