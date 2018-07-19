@@ -66,7 +66,8 @@ class PageAssignmentsHooks {
 			'text' => wfMessage( 'bs-pageassignments-menu-label' )->text(),
 			'href' => '#',
 			'class' => false,
-			'id' => 'ca-pageassignments'
+			'id' => 'ca-pageassignments',
+			'bs-group' => 'hidden'
 		);
 
 		return true;
