@@ -42,4 +42,13 @@ class Flyout extends BasePanel implements IFlyout {
 	public function getTriggerRLDependencies() {
 		return [ 'ext.bluespice.pageassignments.flyout' ];
 	}
+
+	/**
+	 *
+	 * @param \IContextSource $context
+	 * @return boolean
+	 */
+	public function shouldRender( $context ) {
+		return $context->getUser()->isLoggedIn();
+	}
 }
