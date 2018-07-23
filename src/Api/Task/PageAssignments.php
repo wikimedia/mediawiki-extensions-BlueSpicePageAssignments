@@ -111,7 +111,7 @@ class PageAssignments extends \BSApiTasksBase {
 			$added,
 			$removed
 		);
-		$this->runUpdates();
+		$this->runUpdates( $target->getTitle() );
 
 		return $result;
 	}
