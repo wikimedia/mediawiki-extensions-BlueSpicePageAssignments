@@ -25,6 +25,7 @@
 	"log-name-bs-pageassignments": "Assignments log",
 	"log-description-bs-pageassignments": "Log of the changes on the page assignments",
 	"log-show-hide-bs-pageassignments": "$1 Assignments log",
+	"logeventslist-bs-pageassignments-log": "Assignments log",
 	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|assigned}} the page \"$3\" to {{GENDER:$4|the user}} \"$4\"",
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|removed}} the assignment of the page \"$3\" for {{GENDER:$4|the user}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|assigned}} the group \"$4\" to the page \"$3\"",
