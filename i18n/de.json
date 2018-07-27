@@ -27,6 +27,7 @@
 	"log-name-bs-pageassignments": "Zuweisungs-Logbuch",
 	"log-description-bs-pageassignments": "Logbuch über die Änderungen von Seitenzuweisungen",
 	"log-show-hide-bs-pageassignments": "$1 Zuweisungs-Logbuch",
+	"logeventslist-bs-pageassignments-log": "Zuweisungs-Logbuch",
 	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|hat}} {{GENDER:$4|dem Benutzer|der Benutzerin}} \"$4\" die Seite \"$3\" zugewiesen",
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|hat}} {{GENDER:$4|den Benutzer|die Benutzerin}} \"$4\" aus den Zuweisungen der Seite \"$3\" entfernt",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|hat}} die Gruppe \"$4\" die Seite \"$3\" zugewiesen",
