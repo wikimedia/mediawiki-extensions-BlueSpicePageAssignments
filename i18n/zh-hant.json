@@ -26,6 +26,7 @@
 	"log-name-bs-pageassignments": "分配日誌",
 	"log-description-bs-pageassignments": "更改頁面分配的日誌",
 	"log-show-hide-bs-pageassignments": "$1分配日誌",
+	"logeventslist-bs-pageassignments-log": "分配日誌",
 	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|已分配}}頁面「$3」給{{GENDER:$4|使用者}}「$4」",
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|已移除}}{{GENDER:$4|使用者}}「$4」對於頁面「$3」的分配",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|已分配}}群組「$4」至頁面「$3」",
