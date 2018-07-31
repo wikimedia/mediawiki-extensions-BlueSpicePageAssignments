@@ -11,7 +11,9 @@ class Extension extends \BlueSpice\Extension {
 	 */
 	public static function onRegistration() {
 		$GLOBALS['wgExtensionFunctions'][] = function() {
-			\PageAssignmentsNotificationHooks::setup();
+			array_unshift(
+				$GLOBALS[ 'wgHooks' ]['userCan'], "PageAssignmentsUsersAdditionalPermissionsHooks::onUserCan"
+			);
 		};
 
 		$GLOBALS["bssDefinitions"]["_PAGEASSIGN"] = array(
