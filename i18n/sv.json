@@ -25,6 +25,7 @@
 	"log-name-bs-pageassignments": "Tilldelningslogg",
 	"log-description-bs-pageassignments": "Logg över ändringar på sidtilldelningar",
 	"log-show-hide-bs-pageassignments": "$1 tilldelningslogg",
+	"logeventslist-bs-pageassignments-log": "Tilldelningslogg",
 	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|tilldelade}} sidan \"$3\" till {{GENDER:$4|användaren}} \"$4\"",
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|tar bort}} tilldelningen av sidan \"$3\" för {{GENDER:$4|användaren}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|tilldelade}} gruppen \"$4\" till sidan \"$3\"",

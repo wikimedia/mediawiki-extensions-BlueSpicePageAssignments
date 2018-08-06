@@ -7,6 +7,7 @@
 	"bs-pageassignments-column-title": "Τίτλος σελίδας",
 	"bs-pageassignments-api-error": "Ενα σφάλμα συνέβη",
 	"bs-pageassignments-api-error-no-page": "Η σελίδα δεν ορίστηκε",
+	"logeventslist-bs-pageassignments-log": "Μητρώο αναθέσεων",
 	"notification-bs-pageassignments-page-move-subject": "Το $2 μετακινήθηκε",
 	"notification-bs-pageassignments-page-edit-subject": "Το $2 τροποποιήθηκε",
 	"notification-bs-pageassignments-page-delete-subject": "το $2 διαγράφηκε",
