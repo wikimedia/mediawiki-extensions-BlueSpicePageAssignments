@@ -27,6 +27,7 @@
 	"log-name-bs-pageassignments": "سجل المهام",
 	"log-description-bs-pageassignments": "سجل تغييرات تعيينات الصفحة",
 	"log-show-hide-bs-pageassignments": "$1 سجل المهام",
+	"logeventslist-bs-pageassignments-log": "سجل المهام",
 	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|عين|عينت}} الصفحة \"$3\" {{GENDER:$4|للمستخدم|للمستخدمة}} \"$4\"",
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|أزال|أزالت}} تعيين الصفحة \"$3\" {{GENDER:$4|للمستخدم|للمستخدمة}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|عين|عينت}} المجموعة \"$4\" للصفحة \"$3\"",
