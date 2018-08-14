@@ -9,7 +9,7 @@ Interface IAssignable {
 	public function getType();
 
 	/**
-	 * @retrun \BlueSpice\Data\IStore
+	 * @return \BlueSpice\Data\IStore
 	 */
 	public function getStore();
 
