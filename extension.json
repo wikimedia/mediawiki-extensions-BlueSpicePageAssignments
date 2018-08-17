@@ -48,7 +48,10 @@
 			},
 			"NotificationRegistrationFunctions": [
 				"\\BlueSpice\\PageAssignments\\Notifications\\Registrator::registerNotifications"
-			]
+			],
+			"LessVarsRegistry": {
+				"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
+			}
 		},
 		"BlueSpicePageAssignments": {
 			"TypeRegistry": {
@@ -134,7 +137,8 @@
 			"styles": "ext.bluespice.pageassignments.less",
 			"targets": [
 				"desktop", "mobile"
-			]
+			],
+			"class": "\\BlueSpice\\ResourceModule\\LessVars"
 		},
 		"ext.pageassignments.scripts": {
 			"scripts": [
@@ -331,9 +335,6 @@
 		"NamespaceManager::writeNamespaceConfiguration": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback",
 		"userCan": "\\BlueSpice\\PageAssignments\\Hook\\UserCan\\RemoveEditPermissionsOnSecure::callback",
 		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers"
-	},
-	"ResourceLoaderLESSVars" : {
-		"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
 	},
 	"manifest_version": 2
 }
