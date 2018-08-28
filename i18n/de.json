@@ -3,7 +3,8 @@
 		"authors": [
 			"Robert Vogel",
 			"Metalhead64",
-			"TMg"
+			"TMg",
+			"Hwboehm"
 		]
 	},
 	"bs-pageassignments-desc": "Erlaubt die Zuweisung von Zielgruppen zu einer Seite",
@@ -22,7 +23,7 @@
 	"bs-pageassignments-action-delete-confirm": "Zuweisung entfernen?",
 	"bs-pageassignments-api-error": "Es ist ein Fehler aufgetreten",
 	"bs-pageassignments-api-error-no-page": "Es wurde keine Seite angegeben",
-	"bs-pageassignments-api-error-insert": "Zuweisung \"$1\" fpr \"$2\" konnte nicht gespeichert werden",
+	"bs-pageassignments-api-error-insert": "Zuweisung \"$1\" für \"$2\" konnte nicht gespeichert werden",
 	"log-name-bs-pageassignments": "Zuweisungs-Logbuch",
 	"log-description-bs-pageassignments": "Logbuch über die Änderungen von Seitenzuweisungen",
 	"log-show-hide-bs-pageassignments": "$1 Zuweisungs-Logbuch",
@@ -69,6 +70,7 @@
 	"apihelp-bs-pageassignment-store-description": "Gibt Zuweisungen für die angegebene Seite zurück",
 	"apihelp-bs-pageassignment-store-summary": "Gibt Zuweisungen für die angegebene Seite zurück",
 	"apihelp-bs-mypageassignment-store-description": "Gibt Seiten zurück, die dem aktuellen Benutzer zugewiesen sind.",
+	"apihelp-bs-mypageassignment-store-summary": "Gibt Seiten zurück, die dem aktuellen Benutzer zugewiesen sind.",
 	"apihelp-bs-pageassignment-tasks-description": "Ruft die Liste der Zuweisungen für eine angegebene Seite ab oder bearbeitet sie",
 	"apihelp-bs-pageassignment-tasks-summary": "Ruft die Liste der Zuweisungen für eine angegebene Seite ab oder bearbeitet sie",
 	"bs-pageassignments-assignee-special-everyone-label": "Jeder",
