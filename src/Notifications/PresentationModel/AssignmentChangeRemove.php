@@ -16,11 +16,11 @@ class AssignmentChangeRemove extends EchoEventPresentationModel {
 		$bundleParams = [];
 
 		$headerKey = 'notification-bs-pageassignments-assignment-change-remove-summary';
-		$headerParams = ['agent', 'title', 'titlelink'];
+		$headerParams = ['agent', 'title', 'title'];
 
 		if( $this->distributionType == 'email' ) {
 			$headerKey = 'notification-bs-pageassignments-assignment-change-remove-subject';
-			$headerParams = ['agent', 'title', 'titlelink'];
+			$headerParams = ['agent', 'title', 'title'];
 		}
 
 
@@ -40,11 +40,11 @@ class AssignmentChangeRemove extends EchoEventPresentationModel {
 	 */
 	public function getBodyMessageContent() {
 		$bodyKey = 'notification-bs-pageassignments-assignment-change-remove-body';
-		$bodyParams = ['agent', 'title', 'titlelink'];
+		$bodyParams = ['agent', 'title', 'title'];
 
 		if( $this->distributionType == 'email' ) {
 			$bodyKey = 'notification-bs-pageassignments-assignment-change-remove-body';
-			$bodyParams = ['agent', 'title', 'titlelink'];
+			$bodyParams = ['agent', 'title', 'title'];
 		}
 
 		return [

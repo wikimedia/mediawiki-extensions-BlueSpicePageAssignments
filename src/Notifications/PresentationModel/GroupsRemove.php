@@ -16,11 +16,11 @@ class GroupsRemove extends EchoEventPresentationModel {
 		$bundleParams = [];
 
 		$headerKey = 'notification-bs-pageassignments-user-group-remove-summary';
-		$headerParams = ['agent', 'title', 'titlelink', 'group', 'groupcount'];
+		$headerParams = ['agent', 'title', 'title', 'group', 'groupcount'];
 
 		if( $this->distributionType == 'email' ) {
 			$headerKey = 'notification-bs-pageassignments-user-group-remove-subject';
-			$headerParams = ['agent', 'title', 'titlelink', 'group', 'groupcount'];
+			$headerParams = ['agent', 'title', 'title', 'group', 'groupcount'];
 		}
 
 
@@ -40,11 +40,11 @@ class GroupsRemove extends EchoEventPresentationModel {
 	 */
 	public function getBodyMessageContent() {
 		$bodyKey = 'notification-bs-pageassignments-user-group-remove-body';
-		$bodyParams = ['agent', 'title', 'titlelink', 'group', 'groupcount'];
+		$bodyParams = ['agent', 'title', 'title', 'group', 'groupcount'];
 
 		if( $this->distributionType == 'email' ) {
 			$bodyKey = 'notification-bs-pageassignments-user-group-remove-body';
-			$bodyParams = ['agent', 'title', 'titlelink', 'group', 'groupcount'];
+			$bodyParams = ['agent', 'title', 'title', 'group', 'groupcount'];
 		}
 
 		return [

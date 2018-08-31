@@ -16,11 +16,11 @@ class AssignmentChangeAdd extends EchoEventPresentationModel {
 		$bundleParams = [];
 
 		$headerKey = 'notification-bs-pageassignments-assignment-change-add-summary';
-		$headerParams = ['agent', 'title', 'titlelink'];
+		$headerParams = [ 'agent', 'title', 'title' ];
 
 		if( $this->distributionType == 'email' ) {
 			$headerKey = 'notification-bs-pageassignments-assignment-change-add-subject';
-			$headerParams = ['agent', 'title', 'titlelink'];
+			$headerParams = [ 'agent', 'title', 'title' ];
 		}
 
 		return [
@@ -39,11 +39,11 @@ class AssignmentChangeAdd extends EchoEventPresentationModel {
 	 */
 	public function getBodyMessageContent() {
 		$bodyKey = 'notification-bs-pageassignments-assignment-change-add-body';
-		$bodyParams = ['agent', 'title', 'titlelink'];
+		$bodyParams = ['agent', 'title', 'title'];
 
 		if( $this->distributionType == 'email' ) {
 			$bodyKey = 'notification-bs-pageassignments-assignment-change-add-body';
-			$bodyParams = ['agent', 'title', 'titlelink'];
+			$bodyParams = ['agent', 'title', 'title'];
 		}
 
 		return [
