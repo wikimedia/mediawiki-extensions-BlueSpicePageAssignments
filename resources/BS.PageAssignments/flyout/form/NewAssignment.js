@@ -40,12 +40,12 @@ Ext.define( 'BS.PageAssignments.flyout.form.NewAssignment', {
 
 		this.cbAssignables = new Ext.form.field.ComboBox({
 			emptyText:  mw.message( "bs-extjs-combo-box-default-placeholder" ).plain(),
-			displayField: 'pa_assignee_key',
+			displayField: 'text',
 			valueField: 'id',
 			minChars: 1,
 			listConfig: {
 				getInnerTpl: function() {
-					return '{["<span class=\'bs-icon-" + values.pa_assignee_type + " bs-typeicon\'></span>"+values.pa_assignee_key]}';
+					return '{["<span class=\'bs-icon-" + values.pa_assignee_type + " bs-typeicon\'></span>"+values.text]}';
 				}
 			},
 			store: this.assignableStore

@@ -67,20 +67,15 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 			return; //:(
 		}
 		if( $this->params->getQuery() !== '' ) {
-			$query = strtolower( $this->params->getQuery() );
-			$bApply =
-				strpos(
-					strtolower( $assignment->getKey() ),
-					$query
-				) !== false
-				|| strpos(
-					strtolower( $assignment->getText() ),
-					$query
-				) !== false;
-
-			if( !$bApply ) {
-				return;
-			}
+			$bApply = \BsStringHelper::filter(
+				\BsStringHelper::FILTER_CONTAINS,
+				$assignment->getKey(),
+				$this->params->getQuery()
+			) || \BsStringHelper::filter(
+				\BsStringHelper::FILTER_CONTAINS,
+				$assignment->getText(),
+				$this->params->getQuery()
+			);
 		}
 
 		$this->data[] = $assignment->getRecord();

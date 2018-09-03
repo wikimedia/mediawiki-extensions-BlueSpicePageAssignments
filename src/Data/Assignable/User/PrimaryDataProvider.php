@@ -24,6 +24,21 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 	}
 
 	protected function appendRowToData( $row ) {
+		if( $this->params->getQuery() !== '' ) {
+			$bApply = \BsStringHelper::filter(
+				\BsStringHelper::FILTER_CONTAINS,
+				$row->{Record::USER_NAME},
+				$this->params->getQuery()
+			) || \BsStringHelper::filter(
+				\BsStringHelper::FILTER_CONTAINS,
+				$row->{Record::USER_REAL_NAME},
+				$this->params->getQuery()
+			);
+			if( !$bApply ) {
+				return;
+			}
+		}
+
 		if( !$user = \User::newFromId( $row->{Record::ID} ) ) {
 			return;
 		}
