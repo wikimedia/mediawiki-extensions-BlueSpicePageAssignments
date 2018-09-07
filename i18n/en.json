@@ -74,7 +74,7 @@
 	"bs-pageassignments-assignee-type-everyone": "Everyone",
 	"bs-pageassignments-assignee-type-user": "User",
 	"bs-pageassignments-assignee-type-group": "Group",
-	"bs-pageassignments-secure-nsm-label": "Secured pageassignments",
+	"bs-pageassignments-secure-nsm-label": "Secured page assignments",
 	"bs-pageassignments-nav-link-title-pageassignments": "Page assignments",
 	"bs-pageassignments-flyout-title": "Page assignments",
 	"bs-pageassignments-flyout-intro": "Manage users and groups assigned to this page.",
