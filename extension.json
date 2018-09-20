@@ -31,14 +31,20 @@
 				"pageassignable": {
 					"type": "namespace",
 					"roles": [
+						"admin",
+						"author",
 						"editor",
-						"admin"
+						"maintenanceadmin",
+						"reviewer"
 					]
 				},
 				"pageassignments": {
 					"type": "namespace",
 					"roles": [
-						"admin"
+						"admin",
+						"editor",
+						"maintenanceadmin",
+						"reviewer"
 					]
 				}
 			},
