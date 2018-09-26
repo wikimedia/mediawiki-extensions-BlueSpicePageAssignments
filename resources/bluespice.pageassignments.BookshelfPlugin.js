@@ -15,7 +15,7 @@ $(document).bind('BSBookshelfUIManagerPanelInit', function( event, sender, oConf
 			}
 			var sOut = "<table>\n";
 			for(var i = 0; i < assignments.length; i++) {
-				sOut = sOut + "<tr><td><span class=\"bs-icon-" + assignments[i]['type'] +"\"></span></td><td>" + assignments[i]['anchor'] + "</td></tr>\n";
+				sOut = sOut + "<tr><td><span class=\"bs-icon-" + assignments[i]['pa_assignee_type'] +"\"></span></td><td>" + assignments[i]['anchor'] + "</td></tr>\n";
 			}
 			sOut = sOut + "</table>\n";
 			return sOut;
@@ -29,14 +29,13 @@ $(document).bind('BSBookshelfUIManagerPanelInit', function( event, sender, oConf
 			tooltip: mw.message( 'bs-pageassignments-menu-label' ).plain(),
 			handler: function( grid, rowIndex, colIndex, btn, event, record, rowElement ) {
 				Ext.require( 'BS.PageAssignments.dialog.PageAssignment', function() {
-					var dlg = new BS.PageAssignments.dialog.PageAssignment();
+					var dlg = new BS.PageAssignments.dialog.PageAssignment( {
+						pageId: +record.get( 'page_id' ),
+						pageAssignments: record.get( 'assignments' )
+					} );
 					dlg.on( 'ok', function() {
 						grid.getStore().reload();
 					} );
-					dlg.setData({
-						pageId: +record.get( 'page_id' ),
-						pageAssignments: record.get( 'assignments' )
-					});
 					dlg.show();
 				});
 			}

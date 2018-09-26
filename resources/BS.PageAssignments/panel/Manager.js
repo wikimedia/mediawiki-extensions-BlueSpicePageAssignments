@@ -35,7 +35,12 @@ Ext.define( 'BS.PageAssignments.panel.Manager', {
 				renderer: function( value, metaData, record, rowIndex, colIndex, store, view ) {
 					var html = [];
 					for( var i = 0; i < value.length; i++ ) {
-						html.push( "<span class=\'bs-icon-"+value[i].type+" bs-typeicon\'></span>" + value[i].anchor );
+						html.push(
+							"<span class=\'bs-icon-"
+							+ value[i].pa_assignee_type
+							+ " bs-typeicon\'></span>"
+							+ value[i].anchor
+						);
 					}
 					if( html.length === 0 ) {
 						html.push( '<em>' + mw.message('bs-pageassignments-no-assignments').plain() + '</em>' );
@@ -107,14 +112,13 @@ Ext.define( 'BS.PageAssignments.panel.Manager', {
 	onBtnEditClick: function( oButton, oEvent ) {
 		var records = this.grdMain.getSelectionModel().getSelection();
 		var record = records[0]; //ATM there is no MULTI selection model
-		var dlg = Ext.create( 'BS.PageAssignments.dialog.PageAssignment' );
+		var dlg = Ext.create( 'BS.PageAssignments.dialog.PageAssignment', {
+			pageId: record.get( 'page_id' ),
+			pageAssignments: record.get( 'assignments' )
+		} );
 		dlg.on( 'ok', function() {
 			this.strMain.reload();
 		}, this );
-		dlg.setData({
-			pageId: record.get( 'page_id' ),
-			pageAssignments: record.get( 'assignments' )
-		});
 		dlg.show();
 		this.callParent( arguments );
 	},
