@@ -142,7 +142,7 @@ class PageAssignments extends \BSApiTasksBase {
 		$result->payload = [];
 		foreach( $target->getAssignments() as $assignment ) {
 			$assignment = $assignment->toStdClass();
-			$assignment->assignee_image_html = $this->getRenderedUserImage( $assignment );
+			$assignment->assignee_image_html = $this->getAssigneeThumb( $assignment );
 			$result->payload[] = $assignment;
 		}
 		$result->success = true;
@@ -150,21 +150,30 @@ class PageAssignments extends \BSApiTasksBase {
 		return $result;
 	}
 
-	protected function getRenderedUserImage( $assignment ) {
+	/**
+	 *
+	 * @param \stdClass $assignment
+	 * @return string
+	 */
+	protected function getAssigneeThumb( $assignment ) {
 		$factory = \BlueSpice\Services::getInstance()->getBSRendererFactory();
+		$thumbParams = [ 'width' => '32', 'height' => '32' ];
+
 		if( $assignment->pa_assignee_type == 'group' ) {
-			return '';
+			$image = $factory->get( 'groupimage', new \BlueSpice\Renderer\Params( [
+				'group' => $assignment->pa_assignee_key
+			] + $thumbParams ) );
+			return $image->render();
 		}
+
 		$user = \User::newFromName( $assignment->pa_assignee_key );
 		if( $user instanceof \User === false ) {
 			return '';
 		}
 
 		$image = $factory->get( 'userimage', new \BlueSpice\Renderer\Params( [
-			'user' => $user,
-			'width' => "32",
-			'height' => "32",
-		]));
+			'user' => $user
+		] + $thumbParams ) );
 
 		return $image->render();
 	}
