@@ -3,6 +3,9 @@ Ext.define( 'BS.PageAssignments.dialog.PageAssignment', {
 	requires: [ 'BS.form.field.ItemList', 'BS.PageAssignments.action.ApiTaskEdit' ],
 	title: mw.message('bs-pageassignments-dlg-title').plain(),
 
+	pageId: -1,
+	pageAssignments: [],
+
 	makeItems: function() {
 		this.itmList = new BS.form.field.ItemList({
 			labelAlign: 'top',
@@ -17,8 +20,19 @@ Ext.define( 'BS.PageAssignments.dialog.PageAssignment', {
 				'pa_assignee_key',
 				'pa_position'
 			],
+			apiStoreConfig: {
+				proxy: {
+					extraParams: {
+						context: JSON.stringify( {
+							wgArticleId: this.pageId
+						} )
+					}
+				}
+			},
 			minChars: 1
 		});
+
+		this.itmList.setValue( this.pageAssignments );
 
 		return [
 			this.itmList
@@ -36,30 +50,25 @@ Ext.define( 'BS.PageAssignments.dialog.PageAssignment', {
 		}
 
 		var action = new BS.PageAssignments.action.ApiTaskEdit({
-			pageId: this.currentData.pageId,
+			pageId: this.pageId,
 			pageAssignments: assigneeIds
 		});
 
 		var $dfd = action.execute();
 		$dfd.fail(function( sender, data, resp ){
-				bs.util.alert(
-					'bs-pa-error',
-					{
-						text: resp.message
-					}
-				);
-				me.setLoading( false );
-			})
-			.done(function( sender ){
-				me.setLoading( false );
-				if ( me.fireEvent( 'ok', me, action ) ) {
-					me.close();
+			bs.util.alert(
+				'bs-pa-error',
+				{
+					text: resp.message
 				}
-			});
-	},
-
-	setData: function( data ) {
-		this.currentData = data;
-		this.itmList.setValue( data.pageAssignments );
+			);
+			me.setLoading( false );
+		})
+		.done(function( sender ){
+			me.setLoading( false );
+			if ( me.fireEvent( 'ok', me, action ) ) {
+				me.close();
+			}
+		});
 	}
 } );

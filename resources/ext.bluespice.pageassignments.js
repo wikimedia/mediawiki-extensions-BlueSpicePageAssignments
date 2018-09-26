@@ -19,15 +19,13 @@ Ext.onReady( function() {
 			} )
 		}).done(function( response, xhr ){
 			if( response.success ) {
-				var dlg = Ext.create( 'BS.PageAssignments.dialog.PageAssignment');
-				dlg.setData({
+				var dlg = Ext.create( 'BS.PageAssignments.dialog.PageAssignment', {
 					pageId: curPageId,
 					pageAssignments: response.payload
-				});
+				} );
 				dlg.show( me );
 			}
 		});
-
 
 		return false;
 	} );

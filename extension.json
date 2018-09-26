@@ -148,7 +148,6 @@
 		},
 		"ext.pageassignments.scripts": {
 			"scripts": [
-				"BS/override/grid/column/Action.js",
 				"ext.bluespice.pageassignments.js"
 			],
 			"messages": [
