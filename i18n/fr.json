@@ -5,7 +5,8 @@
 			"Gomoko",
 			"Samihuc",
 			"Verdy p",
-			"Urhixidur"
+			"Urhixidur",
+			"Tartare"
 		]
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d'affecter des utilisateurs ou groupes à une page",
@@ -81,7 +82,7 @@
 	"bs-pageassignments-secure-nsm-label": "Affectations de pages sécurisées",
 	"bs-pageassignments-nav-link-title-pageassignments": "Assignations de pages",
 	"bs-pageassignments-flyout-title": "Assignation de pages",
-	"bs-pageassignments-flyout-intro": "Gérer les utilisateurs et les groupes assignés à cette page.",
+	"bs-pageassignments-flyout-intro": "Vous pouvez assigner des utilisateurs ou des groupes à cette page ici. Ils seront informés des modifications et pourront obtenir des droits supplémentaires. Si activé, vous pouvez également leur demander de confirmer qu'ils ont lu la page.",
 	"bs-pageassignments-flyout-form-title": "Ajouter une assignation",
 	"bs-pageassignments-flyout-grid-title": "Utilisateurs et groupes assignés à cette page",
 	"bs-pageassignments-flyout-manager-btn-label": "Gestionnaire des assignations de pages"

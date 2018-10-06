@@ -80,7 +80,7 @@
 	"bs-pageassignments-secure-nsm-label": "Abgesicherte Zuweisungen",
 	"bs-pageassignments-nav-link-title-pageassignments": "Seitenzuweisungen",
 	"bs-pageassignments-flyout-title": "Seitenzuweisungen",
-	"bs-pageassignments-flyout-intro": "Benutzer und Gruppen verwalten, die dieser Seite zugewiesen sind.",
+	"bs-pageassignments-flyout-intro": "Du kannst hier Benutzer oder Gruppen dieser Seite zuordnen. Sie werden über Änderungen informiert und können zusätzliche Berechtigungen erhalten. Falls aktiviert, kannst du sie auch darum bitten, zu bestätigen, wenn sie die Seite gelesen haben.",
 	"bs-pageassignments-flyout-form-title": "Zuweisung hinzufügen",
 	"bs-pageassignments-flyout-grid-title": "Benutzer und Gruppen, die dieser Seite zugewiesen sind.",
 	"bs-pageassignments-flyout-manager-btn-label": "Verwaltung von Seitenzuweisungen"

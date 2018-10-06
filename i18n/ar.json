@@ -79,7 +79,7 @@
 	"bs-pageassignments-secure-nsm-label": "تعيينات الصفحة المؤمنة",
 	"bs-pageassignments-nav-link-title-pageassignments": "تعيينات الصفحة",
 	"bs-pageassignments-flyout-title": "تعيينات الصفحة",
-	"bs-pageassignments-flyout-intro": "إدارة المستخدمين والمجموعات المعينة لهذه الصفحة.",
+	"bs-pageassignments-flyout-intro": "يمكنك تعيين مستخدمين أو مجموعات لهذه الصفحة هنا، سيتم إبلاغهم بالتغييرات ويمكنهم الحصول على صلاحيات إضافية، في حالة التنشيط، يمكنك أيضا مطالبتهم بتأكيد قراءة الصفحة.",
 	"bs-pageassignments-flyout-form-title": "إضافة تعيين",
 	"bs-pageassignments-flyout-grid-title": "المستخدمون والمجموعات المعينون لهذه الصفحة",
 	"bs-pageassignments-flyout-manager-btn-label": "مدير مهام الصفحة"
