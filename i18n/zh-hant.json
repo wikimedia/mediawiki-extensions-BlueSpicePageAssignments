@@ -78,7 +78,7 @@
 	"bs-pageassignments-secure-nsm-label": "安全頁面分配",
 	"bs-pageassignments-nav-link-title-pageassignments": "頁面分配",
 	"bs-pageassignments-flyout-title": "頁面分配",
-	"bs-pageassignments-flyout-intro": "管理使用者和群組來分配到此頁面。",
+	"bs-pageassignments-flyout-intro": "您可以分配使用者或群組至此頁面。他們會被告知並取得額外權限。如有啟用，您還可以要求他們確認已讀過頁面。",
 	"bs-pageassignments-flyout-form-title": "添加分配",
 	"bs-pageassignments-flyout-grid-title": "分配到此頁面的使用者和群組",
 	"bs-pageassignments-flyout-manager-btn-label": "頁面分配管理"
