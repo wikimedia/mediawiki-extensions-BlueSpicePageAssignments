@@ -21,6 +21,7 @@ class AddFlyout extends SkinTemplateOutputPageBeforeExec {
 			SkinData::PAGE_DOCUMENTS_PANEL,
 			[
 				'pageassignments' => [
+					'position' => 20,
 					'callback' => function( $sktemplate ) {
 						return new Flyout( $sktemplate );
 					}
