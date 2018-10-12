@@ -28,6 +28,9 @@ class AddFlyout extends SkinTemplateOutputPageBeforeExec {
 				]
 			]
 		);
+
+		$this->appendSkinDataArray( SkinData::EDIT_MENU_BLACKLIST, 'pageassignments' );
+
 		return true;
 	}
 }
