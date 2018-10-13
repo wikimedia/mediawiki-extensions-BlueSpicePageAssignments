@@ -14,5 +14,7 @@
 	"notification-bs-pageassignments-user-group-add-summary": "Sie wurden der Gruppe $4 hinzugefügt",
 	"notification-bs-pageassignments-user-group-add-body": "$1 hat Sie der Gruppe $4 {{GENDER:$2|hinzugefügt}}. Bitte überprüfen Sie Ihre Zuweisungen auf $3.",
 	"notification-bs-pageassignments-user-group-remove-summary": "Sie wurden aus {{PLURAL:$5|der Gruppe|den Gruppen}} $4 entfernt",
-	"notification-bs-pageassignments-user-group-remove-body": "$1 hat Sie aus aus {{PLURAL:$5|der Gruppe|den Gruppen}} $4 {{GENDER:$2|entfernt}}. Bitte überprüfen Sie Ihre Zuweisungen auf $3."
+	"notification-bs-pageassignments-user-group-remove-body": "$1 hat Sie aus aus {{PLURAL:$5|der Gruppe|den Gruppen}} $4 {{GENDER:$2|entfernt}}. Bitte überprüfen Sie Ihre Zuweisungen auf $3.",
+	"bs-pageassignments-yourassignmentsdesc": "Liste der Seiten, denen Sie zugewiesen sind.",
+	"bs-pageassignments-flyout-intro": "Sie können hier Benutzer oder Gruppen dieser Seite zuordnen. Diese werden über Änderungen informiert und können zusätzliche Berechtigungen erhalten. Falls aktiviert, können Sie sie auch darum bitten, zu bestätigen, wenn sie die Seite gelesen haben."
 }
