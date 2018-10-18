@@ -1,6 +1,6 @@
 <?php
 
-class SpecialManagePageAssignments extends BsSpecialPage {
+class SpecialManagePageAssignments extends \BlueSpice\SpecialPage {
 	public function __construct($name = '', $restriction = '', $listed = true, $function = false, $file = 'default', $includable = false) {
 		parent::__construct( 'ManagePageAssignments', 'pageassignments', $listed, $function, $file, $includable );
 	}
@@ -17,7 +17,4 @@ class SpecialManagePageAssignments extends BsSpecialPage {
 		);
 	}
 
-	protected function getGroupName() {
-		return 'bluespice';
-	}
 }
