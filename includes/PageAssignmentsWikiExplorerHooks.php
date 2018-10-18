@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\Services;
+
 class PageAssignmentsWikiExplorerHooks {
 
 	public static function onBeforePageDisplay( $out, $skin ) {
@@ -104,6 +106,8 @@ class PageAssignmentsWikiExplorerHooks {
 		$aData = array();
 		$aUserIds = array();
 		$aGroups = array();
+		$util = Services::getInstance()->getBSUtilityFactory();
+
 		foreach($oRes as $oRow ) {
 			if( $oRow->pa_assignee_type == 'group' ) {
 				$aGroups[$oRow->pa_page_id] = $oRow->pa_assignee_key;
@@ -124,7 +128,7 @@ class PageAssignmentsWikiExplorerHooks {
 			$aData[$oRow->pa_page_id][] =
 				'<li>'.
 					'<a class="bs-pa-wikiexplorer-users" href="#">'.
-						BsUserHelper::getUserDisplayName( $oUser ).
+						$util->getUserHelper( $oUser )->getDisplayName().
 					'</a>'.
 				'</li>'
 			;
