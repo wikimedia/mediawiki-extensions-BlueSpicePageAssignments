@@ -306,9 +306,9 @@
 		"PersonalUrls": "PageAssignmentsHooks::onPersonalUrls",
 		"SkinTemplateNavigation": "PageAssignmentsHooks::onSkinTemplateNavigation",
 		"BeforePageDisplay": [
-			"PageAssignmentsWikiExplorerHooks::onBeforePageDisplay",
-			"PageAssignmentsDashboardHooks::onBeforePageDisplay",
-			"PageAssignmentsHooks::onBeforePageDisplay",
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddResources::callback",
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddDashboardResources::callback",
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddWikiExplorerResources::callback",
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\FetchPageAssignments::callback"
 		],
 		"SkinTemplateOutputPageBeforeExec": [
