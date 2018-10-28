@@ -60,11 +60,13 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 	}
 
 	protected function insertAssignment( $aRespEditor ) {
-		return $this->getDB( DB_MASTER )->insert(
+		$this->getDB( DB_MASTER )->insert(
 			'bs_pageassignments',
 			$aRespEditor,
 			__METHOD__
 		);
+
+		return true;
 	}
 
 	protected function assignmentExists( $conds ) {
