@@ -2,24 +2,6 @@
 
 class PageAssignmentsHooks {
 
-	/**
-	 *
-	 * @param OutputPage $out
-	 * @param Skin $skin
-	 * @return boolean
-	 */
-	public static function onBeforePageDisplay( &$out, &$skin ) {
-		$out->addModuleStyles( 'ext.pageassignments.styles' );
-
-		if ( $out->getRequest()->getVal( 'action', 'view') !== 'view' || $out->getTitle()->isSpecialPage() ) {
-			return true;
-		}
-
-		$out->addModules( 'ext.pageassignments.scripts' );
-
-		return true;
-	}
-
 	public static function onPersonalUrls( &$aPersonal_urls, &$oTitle ) {
 		$oUser = RequestContext::getMain()->getUser();
 		if ( $oUser->isLoggedIn() ) {

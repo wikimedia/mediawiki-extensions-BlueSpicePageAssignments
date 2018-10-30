@@ -2,17 +2,6 @@
 
 class PageAssignmentsWikiExplorerHooks {
 
-	public static function onBeforePageDisplay( $out, $skin ) {
-		//Attach WikiExplorer plugin if in context
-		$oWikiExplorer = SpecialPage::getTitleFor( 'WikiExplorer' );
-		if( !$oWikiExplorer->equals( $out->getTitle() ) ) {
-			return true;
-		}
-		$out->addModules( 'ext.bluespice.pageassignments.wikiexplorer' );
-
-		return true;
-	}
-
 	public static function onWikiExplorerGetFieldDefinitions(&$aFields) {
 		$aFields[] = array(
 			'name' => 'page_assignments',

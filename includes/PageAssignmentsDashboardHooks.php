@@ -3,25 +3,6 @@
 class PageAssignmentsDashboardHooks {
 
 	/**
-	 * @param OutputPage $out
-	 * @param Skin $skin
-	 * @return boolean
-	 */
-	public static function onBeforePageDisplay( $out, $skin ) {
-		$oTitle = $out->getTitle();
-		$aTitles = array(
-			$oTitle->equals( SpecialPage::getTitleFor("AdminDashboard") ),
-			$oTitle->equals( SpecialPage::getTitleFor("UserDashboard") ),
-		);
-		if( !in_array(true, $aTitles) ) {
-			return true;
-		}
-		$out->addModules( 'ext.bluespice.pageassignments.portlet' );
-
-		return true;
-	}
-
-	/**
 	 * Hook Handler for BSDashboardsUserDashboardPortalPortlets
 	 *
 	 * @param array &$aPortlets reference to array portlets
