@@ -65,6 +65,11 @@
 				"user": "\\BlueSpice\\PageAssignments\\Assignable\\User",
 				"specialeveryone": "\\BlueSpice\\PageAssignments\\Assignable\\Everyone"
 			}
+		},
+		"BlueSpicePrivacy": {
+			"Handlers": [
+				"\\BlueSpice\\PageAssignments\\Privacy\\Handler"
+			]
 		}
 	},
 	"GroupPermissions": {
