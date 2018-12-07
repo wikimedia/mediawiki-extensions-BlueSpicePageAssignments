@@ -82,5 +82,6 @@
 	"bs-pageassignments-flyout-intro": "Você pode atribuir usuários ou grupos a esta página aqui. Eles serão informados sobre mudanças e podem obter direitos adicionais. Se ativado, você também pode pedir para confirmar que leu a página.",
 	"bs-pageassignments-flyout-form-title": "Adicionar atribuição",
 	"bs-pageassignments-flyout-grid-title": "Usuários e grupos para quem esta página foi atribuída",
-	"bs-pageassignments-flyout-manager-btn-label": "Gerenciar as atribuições de páginas"
+	"bs-pageassignments-flyout-manager-btn-label": "Gerenciar as atribuições de páginas",
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao usuário: $1"
 }
