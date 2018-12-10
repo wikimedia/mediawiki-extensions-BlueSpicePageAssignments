@@ -145,9 +145,8 @@
 	},
 	"ResourceModules": {
 		"ext.pageassignments.styles": {
-			"styles": "ext.bluespice.pageassignments.less",
-			"targets": [
-				"desktop", "mobile"
+			"styles": [
+				"ext.bluespice.pageassignments.less"
 			],
 			"class": "\\BlueSpice\\ResourceModule\\LessVars"
 		},
@@ -163,9 +162,6 @@
 			"dependencies": [
 				"ext.bluespice.pageassignments.assignable.messages",
 				"ext.bluespice.extjs"
-			],
-			"targets": [
-				"desktop", "mobile"
 			]
 		},
 		"ext.pageassignments.manager": {
@@ -181,9 +177,6 @@
 			],
 			"dependencies": [
 				"ext.pageassignments.scripts"
-			],
-			"targets": [
-				"desktop", "mobile"
 			]
 		},
 		"ext.pageassignments.overview": {
@@ -196,9 +189,6 @@
 			],
 			"dependencies": [
 				"ext.pageassignments.scripts"
-			],
-			"targets": [
-				"desktop", "mobile"
 			]
 		},
 		"ext.bluespice.pageassignments.bookshelfPlugin": {
@@ -215,9 +205,6 @@
 			],
 			"dependencies": [
 				"ext.bluespice.pageassignments.assignable.messages"
-			],
-			"targets": [
-				"desktop", "mobile"
 			]
 		},
 		"ext.bluespice.pageassignments.wikiexplorer": {
@@ -227,9 +214,6 @@
 			"dependencies": [
 				"ext.bluespice.pageassignments.assignable.messages",
 				"ext.bluespice.extjs"
-			],
-			"targets": [
-				"desktop", "mobile"
 			]
 		},
 		"ext.bluespice.pageassignments.portlet": {
@@ -239,13 +223,12 @@
 			],
 			"dependencies": [
 				"ext.bluespice.pageassignments.assignable.messages"
-			],
-			"targets": [
-				"desktop", "mobile"
 			]
 		},
 		"ext.bluespice.pageassignments.flyout": {
-			"scripts": "bluespice.pageassignments.flyout.js",
+			"scripts": [
+				"bluespice.pageassignments.flyout.js"
+			],
 			"messages": [
 				"bs-pageassignments-nav-link-title-pageassignments",
 				"bs-pageassignments-flyout-title",
@@ -265,9 +248,6 @@
 			],
 			"dependencies": [
 				"ext.pageassignments.scripts"
-			],
-			"targets": [
-				"desktop", "mobile"
 			]
 		},
 		"ext.bluespice.pageassignments.assignable.messages": {
