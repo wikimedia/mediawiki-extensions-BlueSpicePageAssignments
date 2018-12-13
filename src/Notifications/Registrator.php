@@ -74,14 +74,14 @@ class Registrator {
 	 * Gets all users assigned to given title
 	 *
 	 * @param \Title $title
-	 * @return array|void
+	 * @return array
 	 */
 	protected static function getAssignedUsers( $title ) {
 		$factory = \BlueSpice\Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 		if( !$target = $factory->newFromTargetTitle( $title) ) {
-			return;
+			return [];
 		}
 
 		$affectedUsers = [];
