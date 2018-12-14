@@ -85,5 +85,6 @@
 	"bs-pageassignments-flyout-intro": "Vous pouvez assigner des utilisateurs ou des groupes à cette page ici. Ils seront informés des modifications et pourront obtenir des droits supplémentaires. Si activé, vous pouvez également leur demander de confirmer qu'ils ont lu la page.",
 	"bs-pageassignments-flyout-form-title": "Ajouter une assignation",
 	"bs-pageassignments-flyout-grid-title": "Utilisateurs et groupes assignés à cette page",
-	"bs-pageassignments-flyout-manager-btn-label": "Gestionnaire des assignations de pages"
+	"bs-pageassignments-flyout-manager-btn-label": "Gestionnaire des assignations de pages",
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Affecté {{PLURAL:$2|à la page|aux pages}} : $1"
 }

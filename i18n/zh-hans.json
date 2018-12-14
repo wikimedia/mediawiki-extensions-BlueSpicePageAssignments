@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"Endermoon"
+			"Endermoon",
+			"A Chinese Wikipedian"
 		]
 	},
 	"bs-pageassignments-desc": "使您可以将用户或用户组分配给页面",
@@ -77,7 +78,7 @@
 	"bs-pageassignments-secure-nsm-label": "担保页面分配",
 	"bs-pageassignments-nav-link-title-pageassignments": "页面分配",
 	"bs-pageassignments-flyout-title": "页面分配",
-	"bs-pageassignments-flyout-intro": "管理分配至此页面的用户和用户组。",
+	"bs-pageassignments-flyout-intro": "您可以在此处将用户或用户组分配到此页。他们将被告知更改，并可以获得额外的权利。如果被激活，阁下也可以要求他们确认他们已经阅读了页面。",
 	"bs-pageassignments-flyout-form-title": "添加分配",
 	"bs-pageassignments-flyout-grid-title": "分配至此页面的用户和用户组",
 	"bs-pageassignments-flyout-manager-btn-label": "页面分配管理器"

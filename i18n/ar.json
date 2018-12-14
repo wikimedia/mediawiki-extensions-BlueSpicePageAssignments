@@ -3,7 +3,8 @@
 		"authors": [
 			"Moud hosny",
 			"Mido",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"bs-pageassignments-desc": "يمكنك من تعيين مستخدمين أو مجموعات لصفحة",
@@ -82,5 +83,6 @@
 	"bs-pageassignments-flyout-intro": "يمكنك تعيين مستخدمين أو مجموعات لهذه الصفحة هنا، سيتم إبلاغهم بالتغييرات ويمكنهم الحصول على صلاحيات إضافية، في حالة التنشيط، يمكنك أيضا مطالبتهم بتأكيد قراءة الصفحة.",
 	"bs-pageassignments-flyout-form-title": "إضافة تعيين",
 	"bs-pageassignments-flyout-grid-title": "المستخدمون والمجموعات المعينون لهذه الصفحة",
-	"bs-pageassignments-flyout-manager-btn-label": "مدير مهام الصفحة"
+	"bs-pageassignments-flyout-manager-btn-label": "مدير مهام الصفحة",
+	"bs-pageassignments-privacy-transparency-working-assignments": "مهام صفحة بلو سبيس - موكل إلى {{PLURAL:$2|الصفحة|الصفحات}}: $1"
 }
