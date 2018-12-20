@@ -77,6 +77,13 @@ class Registrator {
 	 * @return array
 	 */
 	protected static function getAssignedUsers( $title ) {
+		if ( $title->isTalkPage() ) {
+			$title = $title->getSubjectPage();
+			if ( $title instanceof \Title === false ) {
+				return [];
+			}
+		}
+
 		$factory = \BlueSpice\Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);

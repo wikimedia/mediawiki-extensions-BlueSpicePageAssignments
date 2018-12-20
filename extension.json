@@ -139,8 +139,6 @@
 		"PageAssignmentsDashboardHooks": "includes/PageAssignmentsDashboardHooks.php",
 		"SpecialPageAssignments": "includes/specials/SpecialPageAssignments.php",
 		"SpecialManagePageAssignments": "includes/specials/SpecialManagePageAssignments.php",
-		"PageAssignmentsNotificationFormatter": "includes/notifications/PageAssignmentsNotificationFormatter.php",
-		"PageAssignmentsEmailSingle": "includes/notifications/PageAssignmentsEmailSingle.php",
 		"BSPageAssignmentsMigrateRespEditors": "maintenance/BSPageAssignmentsMigrateRespEditors.php"
 	},
 	"ResourceModules": {
