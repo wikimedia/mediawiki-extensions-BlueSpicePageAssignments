@@ -4,7 +4,7 @@ namespace BlueSpice\PageAssignments\Api\Store;
 use BlueSpice\PageAssignments\Data\Assignable\Store;
 use BlueSpice\Context;
 
-class Assignable extends \BlueSpice\StoreApiBase {
+class Assignable extends \BlueSpice\Api\Store {
 
 	protected function makeDataStore() {
 		return new Store(
