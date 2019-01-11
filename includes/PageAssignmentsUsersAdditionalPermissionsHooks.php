@@ -86,7 +86,7 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 			return true;
 		}
 
-		$factory = Services::getInstance()->getService(
+		$factory = \BlueSpice\Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 		if( !$target = $factory->newFromTargetTitle( $wgTitle ) ) {
