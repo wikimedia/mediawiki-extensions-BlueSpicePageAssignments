@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\ConfigDefinition;
 
-class Permissions extends \BlueSpice\ConfigDefinition\ArraySetting {
+class Permissions extends \BlueSpice\ConfigDefinition\PermissionsList {
 
 	public function getPaths() {
 		return [
@@ -12,15 +12,11 @@ class Permissions extends \BlueSpice\ConfigDefinition\ArraySetting {
 		];
 	}
 
-	public function getOptions() {
-		$permissions = array_diff(
-			\User::getAllRights(),
-			$this->getConfig()->get( 'UIPermissionBlacklist' )
-		);
-		return array_combine( $permissions, $permissions );
-	}
-
 	public function getLabelMessageKey() {
 		return 'bs-pageassignments-pref-permissions';
+	}
+
+	public function isHidden() {
+		return !$this->config->get( 'PageAssignmentsUseAdditionalPermissions' );
 	}
 }
