@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"bs-pageassignments-assignee-special-everyone-label": "Iedereen",
+	"bs-pageassignments-assignee-type-everyone": "Iedereen",
+	"bs-pageassignments-assignee-type-user": "Gebruiker",
+	"bs-pageassignments-assignee-type-group": "Groep"
+}
