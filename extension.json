@@ -159,7 +159,7 @@
 			],
 			"dependencies": [
 				"ext.bluespice.pageassignments.assignable.messages",
-				"ext.bluespice.extjs"
+				"mediawiki.api"
 			]
 		},
 		"ext.pageassignments.manager": {
@@ -174,7 +174,8 @@
 				"bs-pageassignments-action-delete-confirm"
 			],
 			"dependencies": [
-				"ext.pageassignments.scripts"
+				"ext.pageassignments.scripts",
+				"ext.bluespice.extjs"
 			]
 		},
 		"ext.pageassignments.overview": {
