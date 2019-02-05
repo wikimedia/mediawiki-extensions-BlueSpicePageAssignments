@@ -1,8 +1,4 @@
-Ext.onReady( function() {
-	Ext.Loader.setPath( 'BS.PageAssignments', mw.config.get('wgScriptPath') + '/extensions/BlueSpicePageAssignments/resources/BS.PageAssignments' );
-});
-
-(function( mw, $, d, bs, undefined ){
+(function( mw, $, d, undefined ){
 	$(d).on( 'click', '#ca-pageassignments a, a#ca-pageassignments', function( e ) {
 		e.preventDefault();
 
@@ -19,14 +15,18 @@ Ext.onReady( function() {
 			} )
 		}).done(function( response, xhr ){
 			if( response.success ) {
-				var dlg = Ext.create( 'BS.PageAssignments.dialog.PageAssignment', {
-					pageId: curPageId,
-					pageAssignments: response.payload
+				mw.loader.using( 'ext.bluespice.extjs' ).done( function() {
+					Ext.onReady( function() {
+						var dlg = Ext.create( 'BS.PageAssignments.dialog.PageAssignment', {
+							pageId: curPageId,
+							pageAssignments: response.payload
+						} );
+						dlg.show( me );
+					});
 				} );
-				dlg.show( me );
 			}
 		});
 
 		return false;
 	} );
-})( mediaWiki, jQuery, document, blueSpice );
+})( mediaWiki, jQuery, document );
