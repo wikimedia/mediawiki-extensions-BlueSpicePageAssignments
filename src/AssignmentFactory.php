@@ -55,6 +55,11 @@ class AssignmentFactory {
 		if( $title->getArticleID() < 1 ) {
 			return false;
 		}
+		$instance = $this->fromCache( $title );
+		if ( $instance ) {
+			return $instance;
+		}
+
 		$assignments = $this->getAssignments( $title );
 		//may support other targets than title in the future
 		$instance = new Target(
@@ -67,11 +72,20 @@ class AssignmentFactory {
 		return $instance;
 	}
 
+	/**
+	 *
+	 * @param Target $instance
+	 */
 	protected function appendCache( Target $instance ) {
 		$this->targetCache[ $instance->getTitle()->getArticleId() ]
 			= $instance;
 	}
 
+	/**
+	 *
+	 * @param \Title $title
+	 * @return Target|false
+	 */
 	protected function fromCache( \Title $title ) {
 		if( isset( $this->targetCache[$title->getArticleID()] ) ) {
 			return $this->targetCache[$title->getArticleID()];
@@ -122,6 +136,11 @@ class AssignmentFactory {
 		);
 	}
 
+	/**
+	 *
+	 * @param Target $target
+	 * @return true
+	 */
 	public function invalidate( Target $target ) {
 		if( isset( $this->targetCache[$target->getTitle()->getArticleID()] ) ) {
 			unset( $this->targetCache[$target->getTitle()->getArticleID()] );
