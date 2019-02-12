@@ -187,7 +187,8 @@
 				"bs-pageassignments-column-assignedby"
 			],
 			"dependencies": [
-				"ext.pageassignments.scripts"
+				"ext.pageassignments.scripts",
+				"ext.bluespice.extjs"
 			]
 		},
 		"ext.bluespice.pageassignments.bookshelfPlugin": {
