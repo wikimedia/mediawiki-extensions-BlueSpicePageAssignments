@@ -8,6 +8,8 @@ use BlueSpice\Data\Filter;
 use BlueSpice\Data\ReaderParams;
 use BlueSpice\Context;
 use BlueSpice\Services;
+use BlueSpice\TargetCacheHandler;
+use BlueSpice\TargetCache\Title\Target as CacheTarget;
 
 class AssignmentFactory {
 
@@ -79,6 +81,7 @@ class AssignmentFactory {
 	protected function appendCache( Target $instance ) {
 		$this->targetCache[ $instance->getTitle()->getArticleId() ]
 			= $instance;
+		$this->getCache( $instance->getTitle() )->set( $instance );
 	}
 
 	/**
@@ -90,7 +93,20 @@ class AssignmentFactory {
 		if( isset( $this->targetCache[$title->getArticleID()] ) ) {
 			return $this->targetCache[$title->getArticleID()];
 		}
-		return false;
+
+		$this->targetCache[$title->getArticleID()] = $this->getCache( $title )->get();
+		return $this->targetCache[$title->getArticleID()];
+	}
+
+	/**
+	 *
+	 * @return TargetCacheHandler
+	 */
+	private function getCache( \Title $title ) {
+		return Services::getInstance()->getBSTargetCacheTitle()->getHandler(
+			'pageassignments',
+			new CacheTarget( $title )
+		);
 	}
 
 	/**
@@ -145,6 +161,8 @@ class AssignmentFactory {
 		if( isset( $this->targetCache[$target->getTitle()->getArticleID()] ) ) {
 			unset( $this->targetCache[$target->getTitle()->getArticleID()] );
 		}
+
+		$this->getCache( $target->getTitle() )->invalidate();
 		return true;
 	}
 
