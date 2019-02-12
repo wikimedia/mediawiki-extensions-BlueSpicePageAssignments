@@ -57,9 +57,6 @@
 			],
 			"LessVarsRegistry": {
 				"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
-			},
-			"TargetCacheTitleRegistry": {
-				"pageassignments": "\\BlueSpice\\TargetCacheHandler"
 			}
 		},
 		"BlueSpicePageAssignments": {
