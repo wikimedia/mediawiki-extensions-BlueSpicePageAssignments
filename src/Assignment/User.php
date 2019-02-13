@@ -19,6 +19,9 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	}
 
 	public function getUserIds() {
+		if ( $this->getUser()->getId() < 1 ) {
+			return [];
+		}
 		return [ $this->getUser()->getId() ];
 	}
 
@@ -27,7 +30,11 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	 * @return \User
 	 */
 	protected function getUser() {
-		return \User::newFromName( $this->getKey() );
+		$user = \User::newFromName( $this->getKey() );
+		if ( !$user ) {
+			return new \User;
+		}
+		return $user;
 	}
 
 }
