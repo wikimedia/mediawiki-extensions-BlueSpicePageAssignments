@@ -17,7 +17,8 @@ class BSApiPageAssignmentStore extends BSApiExtJSStoreBase {
 			$oDataSet = (object)array(
 				'page_id' => $oTitle->getArticleID(),
 				'page_prefixedtext' => $oTitle->getPrefixedText(),
-				'assignments' => array()
+				'assignments' => [],
+				'page_namespace' => $oTitle->getNamespace()
 			);
 
 			//This is for better performance. For some reason PHP is very slow then accessing
