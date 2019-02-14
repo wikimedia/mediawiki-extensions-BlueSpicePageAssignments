@@ -59,7 +59,9 @@ class BSApiPageAssignmentStore extends BSApiExtJSStoreBase {
 			'BSPageAssignmentsAssignmentFactory'
 		);
 		$recordSet = $assignmentFactory->getStore()->getReader()->read(
-			new ReaderParams( [] )
+			new ReaderParams( [
+				ReaderParams::PARAM_LIMIT => ReaderParams::LIMIT_INFINITE
+			] )
 		);
 		$assignments = [];
 		foreach( $recordSet->getRecords() as $record ) {
