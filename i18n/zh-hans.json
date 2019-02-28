@@ -3,7 +3,8 @@
 		"authors": [
 			"Liuxinyu970226",
 			"Endermoon",
-			"A Chinese Wikipedian"
+			"A Chinese Wikipedian",
+			"WQL"
 		]
 	},
 	"bs-pageassignments-desc": "使您可以将用户或用户组分配给页面",
@@ -26,6 +27,7 @@
 	"log-name-bs-pageassignments": "分配日志",
 	"log-description-bs-pageassignments": "页面分配更改的日志",
 	"log-show-hide-bs-pageassignments": "$1分配日志",
+	"logeventslist-bs-pageassignments-log": "分配日志",
 	"logentry-bs-pageassignments-add-user": "$1将页面“$3”{{GENDER:$2|分配}}给{{GENDER:$4|用户}}“$4”",
 	"logentry-bs-pageassignments-remove-user": "$1{{GENDER:$2|移除}}了{{GENDER:$4|用户}}“$4”的页面“$3”分配",
 	"logentry-bs-pageassignments-add-group": "$1将页面“$3”{{GENDER:$2|分配}}给用户组“$4”",

@@ -28,6 +28,7 @@
 	"log-name-bs-pageassignments": "Registro de asignaciones",
 	"log-description-bs-pageassignments": "Registro de los cambios en las asignaciones de páginas",
 	"log-show-hide-bs-pageassignments": "$1 el registro de asignaciones",
+	"logeventslist-bs-pageassignments-log": "Registro de asignaciones",
 	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|asignó}} la página \"$3\" {{GENDER:$4|al usuario|a la usuaria}} \"$4\"",
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|eliminó}} la asignación de la página \"$3\" {{GENDER:$4|al usuario|a la usuaria}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|asignó}} el grupo \"$4\" a la página \"$3\"",
@@ -63,10 +64,12 @@
 	"bs-pageassignments-yourassignmentsdesc": "Lista de páginas a las que se te asignó.",
 	"right-pageassignable": "Aparecer en la lista de usuarios asignables",
 	"right-pageassignments": "Editar las asignaciones de una página",
+	"prefs-pageassign": "Asignación",
 	"bs-usagetracker-pageassignments": "paginas con asignaciones",
 	"apihelp-bs-pageassignable-store-description": "Devuelve la lista de asignados",
 	"apihelp-bs-mypageassignment-store-description": "Devuelve las páginas asignadas al usuario actual",
 	"bs-pageassignments-assignee-special-everyone-label": "Cualquiera",
+	"bs-pageassignments-assignee-type-everyone": "Todos",
 	"bs-pageassignments-assignee-type-user": "Usuario",
 	"bs-pageassignments-assignee-type-group": "Grupo"
 }
