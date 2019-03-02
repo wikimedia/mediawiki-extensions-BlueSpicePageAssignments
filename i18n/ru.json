@@ -2,11 +2,21 @@
 	"@metadata": {
 		"authors": [
 			"Irus",
-			"Vlad5250"
+			"Vlad5250",
+			"Romanko Mikhail"
 		]
 	},
+	"pageassignments": "Назначения",
+	"managepageassignments": "Управление назначениями",
+	"bs-pageassignments-dlg-title": "Назначения",
+	"bs-pageassignments-dlg-fldlabel": "Назначения",
+	"bs-pageassignments-menu-label": "Изменить назначение",
+	"bs-pageassignments-column-assignments": "Назначения",
+	"bs-pageassignments-api-error": "Произошла ошибка",
 	"logeventslist-bs-pageassignments-log": "Журнал назначений",
 	"bs-usagetracker-pageassignments": "страницы с заданиями",
+	"bs-pageassignments-assignee-type-user": "Участник",
+	"bs-pageassignments-assignee-type-group": "Группа",
 	"bs-pageassignments-nav-link-title-pageassignments": "Назначения для страницы",
 	"bs-pageassignments-flyout-title": "Назначения для страницы",
 	"bs-pageassignments-flyout-intro": "Управление участниками и группами для этой страницы.",
