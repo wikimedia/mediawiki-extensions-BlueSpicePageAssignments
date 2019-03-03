@@ -4,7 +4,8 @@
 			"Liuxinyu970226",
 			"Endermoon",
 			"A Chinese Wikipedian",
-			"WQL"
+			"WQL",
+			"佛壁灯"
 		]
 	},
 	"bs-pageassignments-desc": "使您可以将用户或用户组分配给页面",
@@ -83,5 +84,6 @@
 	"bs-pageassignments-flyout-intro": "您可以在此处将用户或用户组分配到此页。他们将被告知更改，并可以获得额外的权利。如果被激活，阁下也可以要求他们确认他们已经阅读了页面。",
 	"bs-pageassignments-flyout-form-title": "添加分配",
 	"bs-pageassignments-flyout-grid-title": "分配至此页面的用户和用户组",
-	"bs-pageassignments-flyout-manager-btn-label": "页面分配管理器"
+	"bs-pageassignments-flyout-manager-btn-label": "页面分配管理器",
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - 已分配{{PLURAL:$2|页面|页面}}至: $1"
 }
