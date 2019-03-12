@@ -10,10 +10,15 @@ return [
 			'BSPageAssignmentsAssignableFactory'
 		);
 
+		$targetRegistry = new ExtensionAttributeBasedRegistry(
+			'BlueSpicePageAssignmentsTargetRegistry'
+		);
+
 		return new \BlueSpice\PageAssignments\AssignmentFactory(
 			$assignable,
 			$services->getLinkRenderer(),
-			$services->getConfigFactory()->makeConfig( 'bsg' )
+			$services->getConfigFactory()->makeConfig( 'bsg' ),
+			$targetRegistry
 		);
 	},
 

@@ -60,6 +60,9 @@
 			}
 		},
 		"BlueSpicePageAssignments": {
+			"TargetRegistry": {
+				"title": "\\BlueSpice\\PageAssignments\\TitleTarget"
+			},
 			"TypeRegistry": {
 				"group": "\\BlueSpice\\PageAssignments\\Assignable\\Group",
 				"user": "\\BlueSpice\\PageAssignments\\Assignable\\User",
@@ -281,6 +284,9 @@
 			"value": [
 				"edit"
 			]
+		},
+		"PageAssignmentsTarget": {
+			"value": "title"
 		}
 	},
 	"Hooks": {
