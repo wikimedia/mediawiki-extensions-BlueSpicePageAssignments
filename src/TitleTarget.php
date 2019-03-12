@@ -4,7 +4,7 @@ namespace BlueSpice\PageAssignments;
 use BlueSpice\Data\RecordSet;
 use BlueSpice\Services;
 
-class Target {
+class TitleTarget implements ITarget {
 
 	/**
 	 *
@@ -30,17 +30,21 @@ class Target {
 	 * @param array $assignments
 	 * @param \Title $title
 	 */
-	public function __construct( \Config $config, array $assignments, \Title $title ) {
+	protected function __construct( \Config $config, array $assignments, \Title $title ) {
 		$this->config = $config;
 		$this->assignments = $assignments;
 		$this->title = $title;
+	}
+
+	public static function factory( \Config $config, array $assignments, \Title $title ) {
+		return new static( $config, $assignments, $title );
 	}
 
 	/**
 	 *
 	 * @return \BlueSpice\PageAssignments\AssignmentFactory
 	 */
-	protected function getFactory() {
+	public function getFactory() {
 		return Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);

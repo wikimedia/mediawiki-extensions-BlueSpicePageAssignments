@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\PageAssignments;
+use BlueSpice\ExtensionAttributeBasedRegistry;
 use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\PageAssignments\Data\Record;
 use BlueSpice\PageAssignments\Data\Assignment\Store;
@@ -36,20 +37,30 @@ class AssignmentFactory {
 	protected $config = null;
 
 	/**
+	 * @var ExtensionAttributeBasedRegistry
+	 */
+	protected $targetRegistry;
+
+	/**
 	 *
 	 * @param AssignableFactory $assignableFactory
 	 * @param LinkRenderer $linkRenderer
+	 * @param \Config bsgConfig
+	 * @param ExtensionAttributeBasedRegistry $targetRegistry
+	 *
 	 */
-	public function __construct( AssignableFactory $assignableFactory, LinkRenderer $linkRenderer, $config ) {
+	public function __construct( AssignableFactory $assignableFactory, LinkRenderer $linkRenderer, $config, $targetRegistry ) {
 		$this->assignableFactory = $assignableFactory;
 		$this->linkRenderer = $linkRenderer;
 		$this->config = $config;
+		$this->targetRegistry = $targetRegistry;
 	}
 
 	/**
 	 *
 	 * @param \Title $title
 	 * @return boolean|Target
+	 * @throws \MWException
 	 */
 	public function newFromTargetTitle( \Title $title ) {
 		if( $title->getArticleID() < 1 ) {
@@ -61,22 +72,36 @@ class AssignmentFactory {
 		}
 
 		$assignments = $this->getAssignments( $title );
-		//may support other targets than title in the future
-		$instance = new Target(
+		$targetClass = $this->getTargetClass();
+		if ( $targetClass === null ) {
+			throw new \MWException( 'No target specified' );
+		}
+
+		$instance = call_user_func_array( "$targetClass::factory", [
 			$this->config,
 			$assignments,
 			$title
-		);
+		] );
 
 		$this->appendCache( $instance );
 		return $instance;
+	}
+
+	protected function getTargetClass() {
+		$targets = $this->targetRegistry->getAllKeys();
+		$targetToUse = $this->config->get( 'PageAssignmentsTarget' );
+
+		if ( $targetToUse && in_array( $targetToUse, $targets ) ) {
+			return $this->targetRegistry->getValue( $targetToUse );
+		}
+		return null;
 	}
 
 	/**
 	 *
 	 * @param Target $instance
 	 */
-	protected function appendCache( Target $instance ) {
+	protected function appendCache( ITarget $instance ) {
 		$this->targetCache[ $instance->getTitle()->getArticleId() ]
 			= $instance;
 	}
@@ -141,7 +166,7 @@ class AssignmentFactory {
 	 * @param Target $target
 	 * @return true
 	 */
-	public function invalidate( Target $target ) {
+	public function invalidate( ITarget $target ) {
 		if( isset( $this->targetCache[$target->getTitle()->getArticleID()] ) ) {
 			unset( $this->targetCache[$target->getTitle()->getArticleID()] );
 		}
