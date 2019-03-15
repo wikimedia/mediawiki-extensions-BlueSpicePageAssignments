@@ -82,6 +82,7 @@
 	"bs-pageassignments-assignee-type-user": "Label for the assignee type user\n{{Identical|User}}",
 	"bs-pageassignments-assignee-type-group": "Label for the assignee type group\n{{Identical|Group}}",
 	"bs-pageassignments-secure-nsm-label": "Used in [[Special:NamespaceManager]] of extension BlueSpiceNamespaceManager.\nLabel for column header in ExtJS grid panel.\n{{Identical|Secured pageassignments}}",
+	"bs-pageassignments-secure-lockdown-reason": "Used to describe that the requested permission for this page is only available for assignees.\n* $1 - Name of the requested action\n* $2 - Number of assignees\n* $3 - Comma separated list of assignees, that are assigned to this page",
 	"bs-pageassignments-nav-link-title-pageassignments": "Text for the button that opens the flyout in right menu",
 	"bs-pageassignments-flyout-title": "Title text of the flyout",
 	"bs-pageassignments-flyout-intro": "Subtitle of the flyout",
