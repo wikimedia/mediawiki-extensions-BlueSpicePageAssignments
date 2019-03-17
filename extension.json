@@ -20,7 +20,7 @@
 					"className": "\\BlueSpice\\PageAssignments\\Extension",
 					"extPath": "/BlueSpicePageAssignments",
 					"configDefinitions": {
-						"PageAssignmentsPermissions": "\\BlueSpice\\PageAssignments\\ConfigDefinition\\Permissions::getInstance"
+						"PageAssignmentsLockdownGroups": "\\BlueSpice\\PageAssignments\\ConfigDefinition\\LockdownGroups::getInstance"
 					}
 				}
 			},
@@ -60,6 +60,9 @@
 			},
 			"PermissionLockdownRegistry": {
 				"pageassignments-secure": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Secure::getInstance"
+			},
+			"PermissionLockdownGroupModuleRegistry": {
+				"pageassignments": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Groups\\PageAssignment::getInstance"
 			}
 		},
 		"BlueSpicePageAssignments": {
@@ -139,7 +142,6 @@
 		"BSApiPageAssignmentStore": "includes/api/BSApiPageAssignmentStore.php",
 		"BSApiMyPageAssignmentStore": "includes/api/BSApiMyPageAssignmentStore.php",
 		"PageAssignmentsHooks": "includes/PageAssignmentsHooks.php",
-		"PageAssignmentsUsersAdditionalPermissionsHooks": "includes/PageAssignmentsUsersAdditionalPermissionsHooks.php",
 		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
 		"PageAssignmentsWikiExplorerHooks": "includes/PageAssignmentsWikiExplorerHooks.php",
 		"PageAssignmentsDashboardHooks": "includes/PageAssignmentsDashboardHooks.php",
@@ -266,10 +268,12 @@
 	},
 	"config_prefix": "bsg",
 	"config": {
-		"PageAssignmentsPermissions": {
+		"PageAssignmentsLockdownGroups": {
 			"value": [
-				"read"
-			]
+				"user"
+			],
+			"descriptionmsg": "bs-pageassignments-pref-lockdowngroups",
+			"public": true
 		},
 		"PageAssignmentsActivatedTypes": {
 			"value": [
@@ -315,9 +319,6 @@
 			"PageAssignmentsHooks::onArticleDeleteComplete"
 		],
 		"BSUserManagerAfterSetGroups": "\\BlueSpice\\PageAssignments\\Hook\\BSUserManagerAfterSetGroups\\NotifyUsers::callback",
-		"UserAddGroup": "PageAssignmentsUsersAdditionalPermissionsHooks::onUserAddGroup",
-		"UserGetRights": "PageAssignmentsUsersAdditionalPermissionsHooks::onUserGetRights",
-		"RevisionAjaxReviewBeforeParams": "PageAssignmentsUsersAdditionalPermissionsHooks::onRevisionAjaxReviewBeforeParams",
 		"BSBookshelfBookManager": "PageAssignmentsBookmakerHooks::onBSBookshelfBookManager",
 		"BSBookshelfManagerGetBookDataRow": "PageAssignmentsBookmakerHooks::onBSBookshelfManagerGetBookDataRow",
 		"BSUEModulePDFcollectMetaData": "PageAssignmentsBookmakerHooks::onBSUEModulePDFcollectMetaData",

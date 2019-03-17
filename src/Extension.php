@@ -10,15 +10,6 @@ class Extension extends \BlueSpice\Extension {
 	 * extension.json callback
 	 */
 	public static function onRegistration() {
-		$GLOBALS['wgExtensionFunctions'][] = function () {
-			if ( !isset( $GLOBALS[ 'wgHooks' ]['userCan'] ) ) {
-				$GLOBALS[ 'wgHooks' ]['userCan'] = [];
-			}
-			array_unshift(
-				$GLOBALS[ 'wgHooks' ]['userCan'], "PageAssignmentsUsersAdditionalPermissionsHooks::onUserCan"
-			);
-		};
-
 		$GLOBALS["bssDefinitions"]["_PAGEASSIGN"] = [
 			"id" => "___PAGEASSIGN",
 			"type" => 9,
