@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\ConfigDefinition;
 
-class Permissions extends \BlueSpice\ConfigDefinition\PermissionsList {
+class LockdownGroups extends \BlueSpice\ConfigDefinition\GroupList {
 
 	public function getPaths() {
 		return [
@@ -13,7 +13,7 @@ class Permissions extends \BlueSpice\ConfigDefinition\PermissionsList {
 	}
 
 	public function getLabelMessageKey() {
-		return 'bs-pageassignments-pref-permissions';
+		return 'bs-pageassignments-pref-lockdowngroups';
 	}
 
 	public function isHidden() {
