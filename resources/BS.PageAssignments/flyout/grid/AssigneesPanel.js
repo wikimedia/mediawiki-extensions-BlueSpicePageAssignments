@@ -21,7 +21,7 @@ Ext.define( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {
 
 
 		this.colAggregatedInfo = Ext.create( 'Ext.grid.column.Template', {
-			id: 'aggregated',
+			id: 'assignees-aggregated',
 			sortable: false,
 			width: 400,
 			tpl: "<div class='bs-pageassignments-flyout-grid-item item-type-{pa_assignee_type}'>" +
