@@ -89,7 +89,7 @@ Ext.define( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {
 
 	getApiData: function() {
 		var api = new mw.Api();
-		return api.postWithToken( 'edit', {
+		return api.postWithToken( 'csrf', {
 			'action': 'bs-pageassignment-tasks',
 			'task': 'getForPage',
 			'taskData': JSON.stringify( {

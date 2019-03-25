@@ -22,7 +22,7 @@ Ext.define('BS.PageAssignments.action.ApiTaskEdit', {
 		var me = this;
 
 		var api = new mw.Api();
-		api.postWithToken( 'edit', {
+		api.postWithToken( 'csrf', {
 			'action': 'bs-pageassignment-tasks',
 			'task': 'edit',
 			'taskData': Ext.encode( data )
