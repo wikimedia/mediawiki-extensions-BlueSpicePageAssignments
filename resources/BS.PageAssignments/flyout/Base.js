@@ -85,18 +85,17 @@ Ext.define( 'BS.PageAssignments.flyout.Base', {
 		var me = this;
 
 		this.getCurrentAssigneeIds().done( function( assigneeIds ) {
-			assigneeIds.splice(  assigneeIds.indexOf( assigneeToRemove ), 1 );
+			assigneeIds.splice( assigneeIds.indexOf( assigneeToRemove ), 1 );
 
 			var $dfd = me.doSaveAssignments( pageId, assigneeIds );
-			$dfd.fail(function( sender, data, resp ){
+			$dfd.fail( function( sender, data, resp ){
 				bs.util.alert(
 					'bs-pa-error',
 					{
 						text: resp.message
 					}
 				);
-			})
-				.done(function( sender ){
+			} ).done(function( sender ){
 					me.assigneesGrid.updateStoreData();
 				});
 		} );

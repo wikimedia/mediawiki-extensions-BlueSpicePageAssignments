@@ -76,16 +76,15 @@ Ext.define( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {
 	},
 
 	updateStoreData: function() {
-		var me = this;
-
-		this.getApiData().done(function( response, xhr ){
+		this.getApiData().done( function( response, xhr ){
 			var data = [];
 			if( response.success === true ) {
 				data = response.payload;
 			}
-			me.store.getProxy().setData( data );
-			me.store.load();
-		});
+
+			this.store.getProxy().setData( data );
+			this.store.loadPage( 1 );
+		}.bind( this ) );
 	},
 
 	getApiData: function() {
