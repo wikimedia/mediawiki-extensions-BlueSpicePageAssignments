@@ -4,7 +4,7 @@ $(document).on('click', '.bs-pa-wikiexplorer-users, .bs-pa-wikiexplorer-groups',
 	e.preventDefault();
 
 	var api = new mw.Api();
-	api.postWithToken( 'edit', {
+	api.postWithToken( 'csrf', {
 		'action': 'bs-pageassignment-tasks',
 		'formatversion': 2,
 		'task': 'getForPage',
