@@ -18,7 +18,7 @@ Ext.define( 'BS.PageAssignments.flyout.form.NewAssignment', {
 				url: mw.util.wikiScript( 'api' ),
 				reader: {
 					type: 'json',
-					root: 'results'
+					rootProperty: 'results'
 				},
 				extraParams: {
 					action: 'bs-pageassignable-store',
