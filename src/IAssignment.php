@@ -1,7 +1,7 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
-Interface IAssignment {
+interface IAssignment {
 
 	/**
 	 * @return \BlueSpice\PageAssignments\Data\Record

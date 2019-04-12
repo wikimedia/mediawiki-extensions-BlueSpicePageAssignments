@@ -10,13 +10,13 @@ class Extension extends \BlueSpice\Extension {
 	 * extension.json callback
 	 */
 	public static function onRegistration() {
-		$GLOBALS['wgExtensionFunctions'][] = function() {
+		$GLOBALS['wgExtensionFunctions'][] = function () {
 			array_unshift(
 				$GLOBALS[ 'wgHooks' ]['userCan'], "PageAssignmentsUsersAdditionalPermissionsHooks::onUserCan"
 			);
 		};
 
-		$GLOBALS["bssDefinitions"]["_PAGEASSIGN"] = array(
+		$GLOBALS["bssDefinitions"]["_PAGEASSIGN"] = [
 			"id" => "___PAGEASSIGN",
 			"type" => 9,
 			"show" => false,
@@ -24,7 +24,7 @@ class Extension extends \BlueSpice\Extension {
 			"alias" => "prefs-pageassign",
 			"label" => "Pageassign",
 			"mapping" => "\\BlueSpice\\PageAssignments\\Extension::smwDataMapping"
-		);
+		];
 	}
 
 	/**
@@ -37,12 +37,12 @@ class Extension extends \BlueSpice\Extension {
 		$factory = Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
-		if( !$target = $factory->newFromTargetTitle( $oWikiPage->getTitle() ) ) {
+		if ( !$target = $factory->newFromTargetTitle( $oWikiPage->getTitle() ) ) {
 			return;
 		}
 
-		foreach( $target->getAssignedUserIDs() as $id ) {
-			if( !$user = \User::newFromId( $id ) ) {
+		foreach ( $target->getAssignedUserIDs() as $id ) {
+			if ( !$user = \User::newFromId( $id ) ) {
 				continue;
 			}
 			$oSemanticData->addPropertyObjectValue(

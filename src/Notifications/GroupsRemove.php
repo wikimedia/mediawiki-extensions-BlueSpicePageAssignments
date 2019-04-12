@@ -16,7 +16,7 @@ class GroupsRemove extends BaseNotification {
 
 		$this->addAffectedUsers( [ $user ] );
 		$this->groupsRemoved = $groupsRemoved;
-		if( $user->getId() == $agent->getId() ) {
+		if ( $user->getId() == $agent->getId() ) {
 			$this->setNotifyAgent( true );
 		}
 	}

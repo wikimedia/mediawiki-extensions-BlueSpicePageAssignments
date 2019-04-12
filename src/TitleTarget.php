@@ -69,10 +69,10 @@ class TitleTarget implements ITarget {
 	/**
 	 *
 	 * @param \User $user
-	 * @return boolean
+	 * @return bool
 	 */
 	public function isUserAssigned( \User $user ) {
-		if( $user->isAnon() ) {
+		if ( $user->isAnon() ) {
 			return false;
 		}
 		return in_array( $user->getId(), $this->getAssignedUserIDs() );
@@ -84,7 +84,7 @@ class TitleTarget implements ITarget {
 	 */
 	public function getAssignedUserIDs() {
 		$ids = [];
-		foreach( $this->getAssignments() as $assignment ) {
+		foreach ( $this->getAssignments() as $assignment ) {
 			$ids = array_merge_recursive( $ids, $assignment->getUserIds() );
 		}
 		return $ids;
@@ -96,14 +96,14 @@ class TitleTarget implements ITarget {
 	 * @return IAssignment[]
 	 */
 	public function getAssignmentsForUser( \User $user ) {
-		if( $user->isAnon() ) {
+		if ( $user->isAnon() ) {
 			return [];
 		}
 		return array_filter(
 			$this->getAssignments(),
-			function( IAssignment $e ) use( $user ) {
+			function ( IAssignment $e ) use( $user ) {
 			return in_array( $user->getId(), $e->getUserIds() );
-		});
+		 } );
 	}
 
 	/**
@@ -114,47 +114,48 @@ class TitleTarget implements ITarget {
 	 */
 	public function diff( array $assignments1 = [], array $assignments2 = [] ) {
 		return array_filter( $assignments1,
-			function( IAssignment $e ) use( $assignments2 ) {
-			foreach( $assignments2 as $assignment ) {
-				if( $e->getId() !== $assignment->getId() ) {
+			function ( IAssignment $e ) use( $assignments2 ) {
+			foreach ( $assignments2 as $assignment ) {
+				if ( $e->getId() !== $assignment->getId() ) {
 					continue;
 				}
 				return false;
 			}
 			return true;
-		});
+		 } );
 	}
 
 	/**
 	 *
 	 * @param IAssignment[] $assignments
+	 * @return \Status
 	 */
 	public function save( array $assignments = [] ) {
 		$status = \Status::newGood();
 		$removeRecords = $writeRecords = [];
-		foreach( $this->diff( $this->getAssignments(), $assignments ) as $assignment ) {
+		foreach ( $this->diff( $this->getAssignments(), $assignments ) as $assignment ) {
 			$removeRecords[] = $assignment->getRecord();
 		}
-		foreach( $this->diff( $assignments, $this->getAssignments() ) as $assignment ) {
+		foreach ( $this->diff( $assignments, $this->getAssignments() ) as $assignment ) {
 			$writeRecords[] = $assignment->getRecord();
 		}
-		if( !empty( $removeRecords ) ) {
+		if ( !empty( $removeRecords ) ) {
 			$res = $this->getFactory()->getStore()->getWriter()->remove(
 				new RecordSet( $removeRecords )
 			);
-			foreach( $res->getRecords() as $record ) {
-				if( $record->getStatus()->isOK() ) {
+			foreach ( $res->getRecords() as $record ) {
+				if ( $record->getStatus()->isOK() ) {
 					continue;
 				}
 				$status->warning( $record->getStatus()->getMessage() );
 			}
 		}
-		if( !empty( $writeRecords ) ) {
+		if ( !empty( $writeRecords ) ) {
 			$res = $this->getFactory()->getStore()->getWriter()->write(
 				new RecordSet( $writeRecords )
 			);
-			foreach( $res->getRecords() as $record ) {
-				if( $record->getStatus()->isOK() ) {
+			foreach ( $res->getRecords() as $record ) {
+				if ( $record->getStatus()->isOK() ) {
 					continue;
 				}
 				$status->warning( $record->getStatus()->getMessage() );
@@ -162,7 +163,7 @@ class TitleTarget implements ITarget {
 		}
 		$this->invalidate();
 
-		if( !$status->isOK() ) {
+		if ( !$status->isOK() ) {
 			return $status;
 		}
 		$status->setResult(
@@ -174,7 +175,7 @@ class TitleTarget implements ITarget {
 
 	/**
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function invalidate() {
 		return $this->getFactory()->invalidate( $this );

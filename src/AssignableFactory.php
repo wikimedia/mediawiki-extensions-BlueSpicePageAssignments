@@ -29,18 +29,18 @@ class AssignableFactory {
 	/**
 	 *
 	 * @param string $type
-	 * @param \IContextSource %context
-	 * @return IAssignable | null
+	 * @param \IContextSource|null $context
+	 * @return IAssignable|null
 	 */
 	public function factory( $type, \IContextSource $context = null ) {
-		if( !$context ) {
+		if ( !$context ) {
 			$context = \RequestContext::getMain();
 		}
 		$class = $this->registry->getValue(
 			$type,
 			false
 		);
-		if( !$class ) {
+		if ( !$class ) {
 			return null;
 		}
 		return new $class(
@@ -52,7 +52,6 @@ class AssignableFactory {
 
 	/**
 	 *
-	 * @param string $key
 	 * @return array
 	 */
 	public function getRegisteredTypes() {

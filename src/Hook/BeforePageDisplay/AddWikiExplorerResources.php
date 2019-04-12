@@ -6,7 +6,7 @@ class AddWikiExplorerResources extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function skipProcessing() {
 		$wikiExplorer = \SpecialPage::getTitleFor( 'WikiExplorer' );
-		if( !$wikiExplorer->equals( $this->out->getTitle() ) ) {
+		if ( !$wikiExplorer->equals( $this->out->getTitle() ) ) {
 			return true;
 		}
 		return false;

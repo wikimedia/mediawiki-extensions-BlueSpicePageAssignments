@@ -16,7 +16,7 @@ class GroupsAdd extends BaseNotification {
 
 		$this->addAffectedUsers( [ $user ] );
 		$this->groupsAdded = $groupsAdded;
-		if( $user->getId() == $agent->getId() ) {
+		if ( $user->getId() == $agent->getId() ) {
 			$this->setNotifyAgent( true );
 		}
 	}
