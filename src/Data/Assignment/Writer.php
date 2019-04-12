@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\PageAssignments\Data\Assignment;
+
 use BlueSpice\PageAssignments\Data\Record;
 
 class Writer extends \BlueSpice\Data\DatabaseWriter {
@@ -8,7 +9,7 @@ class Writer extends \BlueSpice\Data\DatabaseWriter {
 	 *
 	 * @param \BlueSpice\Data\IReader $reader
 	 * @param \LoadBalancer $loadBalancer
-	 * @param \IContextSource $context
+	 * @param \IContextSource|null $context
 	 */
 	public function __construct( \BlueSpice\Data\IReader $reader, $loadBalancer, \IContextSource $context = null ) {
 		parent::__construct( $reader, $loadBalancer, $context, $context->getConfig() );
@@ -33,6 +34,7 @@ class Writer extends \BlueSpice\Data\DatabaseWriter {
 	/**
 	 *
 	 * @param \BlueSpice\Data\IRecord $record
+	 * @return array
 	 */
 	protected function makeInsertFields( $record ) {
 		return array_intersect_key(
@@ -54,6 +56,7 @@ class Writer extends \BlueSpice\Data\DatabaseWriter {
 	 *
 	 * @param \BlueSpice\Data\IRecord $existingRecord
 	 * @param \BlueSpice\Data\IRecord $record
+	 * @return array
 	 */
 	protected function makeUpdateFields( $existingRecord, $record ) {
 		return array_intersect_key(

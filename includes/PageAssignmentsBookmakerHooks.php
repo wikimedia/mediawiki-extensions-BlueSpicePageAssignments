@@ -9,7 +9,7 @@ class PageAssignmentsBookmakerHooks {
 	 * @param SpecialBookshelfBookManager $oSender
 	 * @param OutputPage $oOutput
 	 * @param stdClass $oConfig
-	 * @return boolean
+	 * @return bool
 	 */
 	public static function onBSBookshelfBookManager( $oSender, $oOutput, $oConfig ) {
 		$oConfig->dependencies[] = 'ext.bluespice.pageassignments.bookshelfPlugin';
@@ -20,17 +20,17 @@ class PageAssignmentsBookmakerHooks {
 	 * Adds information about assignments to PDF export
 	 * @param Title $oTitle
 	 * @param DOMDocument $oPageDOM
-	 * @param array $aParams
+	 * @param array &$aParams
 	 * @param DOMXPath $oDOMXPath
-	 * @param array $aMeta
-	 * @return boolean
+	 * @param array &$aMeta
+	 * @return bool
 	 */
 	public static function onBSUEModulePDFcollectMetaData( $oTitle, $oPageDOM, &$aParams, $oDOMXPath, &$aMeta ) {
 		$aMeta['assigned_users'] = '';
 		$aMeta['assigned_groups'] = '';
 
-		$aAssignedUserNames = array();
-		$aAssignedGroupNames = array();
+		$aAssignedUserNames = [];
+		$aAssignedGroupNames = [];
 
 		$assignmentFactory = Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
@@ -38,17 +38,17 @@ class PageAssignmentsBookmakerHooks {
 		$target = $assignmentFactory->newFromTargetTitle( $oTitle );
 
 		foreach ( $target->getAssignments() as $assignment ) {
-			if( $assignment->getType() === 'user' ) {
+			if ( $assignment->getType() === 'user' ) {
 				$aAssignedUserNames[] = $assignment->getText();
 			}
-			if( $assignment->getType() === 'group' ) {
+			if ( $assignment->getType() === 'group' ) {
 				$aAssignedGroupNames[] = $assignment->getText();
 			}
 		}
-		if( !empty( $aAssignedUserNames ) ) {
+		if ( !empty( $aAssignedUserNames ) ) {
 			$aMeta['assigned_users'] = implode( ', ', $aAssignedUserNames );
 		}
-		if( !empty( $aAssignedGroupNames ) ) {
+		if ( !empty( $aAssignedGroupNames ) ) {
 			$aMeta['assigned_groups'] = implode( ', ', $aAssignedGroupNames );
 		}
 
@@ -59,11 +59,11 @@ class PageAssignmentsBookmakerHooks {
 	 * Adds information about assignments to the Bookshelf BookManager grid
 	 * @param Title $oBookTitle
 	 * @param stdClass $oBookRow
-	 * @return boolean
+	 * @return bool
 	 */
 	public static function onBSBookshelfManagerGetBookDataRow( $oBookTitle, $oBookRow ) {
-		$oBookRow->assignments = array();
-		$aTexts = array();
+		$oBookRow->assignments = [];
+		$aTexts = [];
 		$assignmentFactory = Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);

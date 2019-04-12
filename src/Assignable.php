@@ -23,9 +23,9 @@ abstract class Assignable implements IAssignable {
 
 	/**
 	 *
-	 * @param \IContextSource
+	 * @param \IContextSource $context
 	 * @param \Config $config
-	 * @param stirng $type
+	 * @param string $type
 	 */
 	public function __construct( $context, $config, $type ) {
 		$this->config = $config;

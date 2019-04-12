@@ -28,6 +28,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
+	 * @param \IContextSource $context
 	 */
 	public function __construct( $db, $context ) {
 		$this->db = $db;
@@ -37,14 +38,15 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @return array
 	 */
 	public function makeData( $params ) {
 		$this->data = [];
 
-		if( !$title = $this->context->getTitle() ) {
+		if ( !$title = $this->context->getTitle() ) {
 			throw new \MWException( "Missing assignable title" );
 		}
-		if( $title->getArticleID() < 1 ) {
+		if ( $title->getArticleID() < 1 ) {
 			throw new \MWException(
 				"Not an assignable title: '{$title->getFullText()}'"
 			);
@@ -57,8 +59,8 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 			'PageAssignmentsActivatedTypes'
 		);
 
-		foreach( $assignableFactory->getRegisteredTypes() as $type ) {
-			if( !in_array( $type, $activatedTypes ) ) {
+		foreach ( $assignableFactory->getRegisteredTypes() as $type ) {
+			if ( !in_array( $type, $activatedTypes ) ) {
 				continue;
 			}
 			$assignable = $assignableFactory->factory(
@@ -66,7 +68,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 				$this->context
 			);
 			$recordSet = $assignable->getStore()->getReader()->read( $params );
-			foreach( $recordSet->getRecords() as $record ) {
+			foreach ( $recordSet->getRecords() as $record ) {
 				$this->appendRowToData( $record );
 			}
 		}

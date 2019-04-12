@@ -2,7 +2,6 @@
 
 namespace BlueSpice\PageAssignments\Api\Task;
 
-use BlueSpice\EchoConnector\PresentationModel\AssignmentChangeAdd;
 use BlueSpice\Services;
 use BlueSpice\PageAssignments\IAssignment;
 use BlueSpice\PageAssignments\Notifications;
@@ -61,21 +60,21 @@ class PageAssignments extends \BSApiTasksBase {
 	protected function task_edit( $taskData, $params ) {
 		$result = $this->makeStandardReturn();
 
-		if( empty( $taskData->pageId ) ) {
+		if ( empty( $taskData->pageId ) ) {
 			$taskData->pageId = 0;
 		}
 		$status = $this->getTargetFromID( $taskData->pageId );
-		if( !$status->isOK() ) {
+		if ( !$status->isOK() ) {
 			$result->message = $status->getMessage()->parse();
 			return $result;
 		}
 		$target = $status->getValue();
 
 		$assignments = [];
-		foreach( $taskData->pageAssignments as $id ) {
-			//'user/WikiSysop' or 'group/bureaucrats'
+		foreach ( $taskData->pageAssignments as $id ) {
+			// 'user/WikiSysop' or 'group/bureaucrats'
 			list( $type, $key ) = explode( '/', $id );
-			if( empty( $type ) || empty( $key ) ) {
+			if ( empty( $type ) || empty( $key ) ) {
 				continue;
 			}
 			$assignment = $this->getFactory()->factory(
@@ -83,13 +82,13 @@ class PageAssignments extends \BSApiTasksBase {
 				$key,
 				$target->getTitle()
 			);
-			if( !$assignment ) {
+			if ( !$assignment ) {
 				continue;
 			}
 			$assignments[] = $assignment;
 		}
 		$status = $target->save( $assignments );
-		if( !$status->isOK() ) {
+		if ( !$status->isOK() ) {
 			$result->message = $status->getMessage()->parse();
 			return $result;
 		}
@@ -129,18 +128,18 @@ class PageAssignments extends \BSApiTasksBase {
 	protected function task_getForPage( $taskData, $params ) {
 		$result = $this->makeStandardReturn();
 
-		if( empty( $taskData->pageId ) ) {
+		if ( empty( $taskData->pageId ) ) {
 			$taskData->pageId = 0;
 		}
 		$status = $this->getTargetFromID( $taskData->pageId );
-		if( !$status->isOK() ) {
+		if ( !$status->isOK() ) {
 			$result->message = $status->getMessage();
 			return $result;
 		}
 		$target = $status->getValue();
 
 		$result->payload = [];
-		foreach( $target->getAssignments() as $assignment ) {
+		foreach ( $target->getAssignments() as $assignment ) {
 			$assignment = $assignment->toStdClass();
 			$assignment->assignee_image_html = $this->getAssigneeThumb( $assignment );
 			$result->payload[] = $assignment;
@@ -159,7 +158,7 @@ class PageAssignments extends \BSApiTasksBase {
 		$factory = \BlueSpice\Services::getInstance()->getBSRendererFactory();
 		$thumbParams = [ 'width' => '32', 'height' => '32' ];
 
-		if( $assignment->pa_assignee_type == 'group' ) {
+		if ( $assignment->pa_assignee_type == 'group' ) {
 			$image = $factory->get( 'groupimage', new \BlueSpice\Renderer\Params( [
 				'group' => $assignment->pa_assignee_key
 			] + $thumbParams ) );
@@ -167,7 +166,7 @@ class PageAssignments extends \BSApiTasksBase {
 		}
 
 		$user = \User::newFromName( $assignment->pa_assignee_key );
-		if( $user instanceof \User === false ) {
+		if ( $user instanceof \User === false ) {
 			return '';
 		}
 
@@ -185,14 +184,14 @@ class PageAssignments extends \BSApiTasksBase {
 	 * @param IAssignment[] $removedAssignments
 	 */
 	public function logAssignmentChange( $title, $addedAssignments, $removedAssignments ) {
-		foreach( $addedAssignments as $assignment ) {
+		foreach ( $addedAssignments as $assignment ) {
 			$this->logTaskAction(
 				"add-{$assignment->getType()}",
 				[ '4::editor' => $assignment->getKey() ],
 				[ 'target' => $title ]
 			);
 		}
-		foreach( $removedAssignments as $assignment ) {
+		foreach ( $removedAssignments as $assignment ) {
 			$this->logTaskAction(
 				"remove-{$assignment->getType()}",
 				[ '4::editor' => $assignment->getKey() ],
@@ -209,30 +208,30 @@ class PageAssignments extends \BSApiTasksBase {
 
 		$notifier = $notificationsManager->getNotifier();
 
-		if( !$notifier ) {
+		if ( !$notifier ) {
 			return true;
 		}
 
-		foreach( $addedAssignments as $assignment ) {
+		foreach ( $addedAssignments as $assignment ) {
 			$newUsers = array_merge(
 				$newUsers,
 				$assignment->getUserIds()
 			);
 		}
 
-		foreach( $removedAssignments as $assignment ) {
+		foreach ( $removedAssignments as $assignment ) {
 			$removedUsers = array_merge(
 				$removedUsers,
 				$assignment->getUserIds()
 			);
 		}
 
-		if( !empty( $newUsers ) ) {
+		if ( !empty( $newUsers ) ) {
 			$notification = new Notifications\AssignmentChangeAdd( $this->getUser(), $title, $newUsers );
 			$notifier->notify( $notification );
 		}
 
-		if( !empty( $removedUsers ) ) {
+		if ( !empty( $removedUsers ) ) {
 			$notification = new Notifications\AssignmentChangeRemove( $this->getUser(), $title, $removedUsers );
 			$notifier->notify( $notification );
 		}
@@ -250,12 +249,12 @@ class PageAssignments extends \BSApiTasksBase {
 
 	/**
 	 *
-	 * @param integer $pageId
+	 * @param int $pageId
 	 * @return \Status
 	 */
 	protected function getTargetFromID( $pageId ) {
 		$title = \Title::newFromID( $pageId );
-		if( !$title || !$title->exists() ) {
+		if ( !$title || !$title->exists() ) {
 			return \Status::newFatal( 'bs-pageassignments-api-error-no-page' );
 		}
 		return $this->getTargetFromTitle( $title );
@@ -267,7 +266,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 * @return \Status
 	 */
 	protected function getTargetFromTitle( \Title $title ) {
-		if( !$target = $this->getFactory()->newFromTargetTitle( $title ) ) {
+		if ( !$target = $this->getFactory()->newFromTargetTitle( $title ) ) {
 			return \Status::newFatal( 'bs-pageassignments-api-error-no-page' );
 		}
 		return \Status::newGood( $target );

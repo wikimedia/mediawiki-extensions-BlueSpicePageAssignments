@@ -16,13 +16,12 @@ class GroupsAdd extends EchoEventPresentationModel {
 		$bundleParams = [];
 
 		$headerKey = 'notification-bs-pageassignments-user-group-add-summary';
-		$headerParams = ['agent', 'title', 'title', 'group', 'groupcount'];
+		$headerParams = [ 'agent', 'title', 'title', 'group', 'groupcount' ];
 
-		if( $this->distributionType == 'email' ) {
+		if ( $this->distributionType == 'email' ) {
 			$headerKey = 'notification-bs-pageassignments-user-group-add-subject';
-			$headerParams = ['agent', 'title', 'title', 'group', 'groupcount'];
+			$headerParams = [ 'agent', 'title', 'title', 'group', 'groupcount' ];
 		}
-
 
 		return [
 			'key' => $headerKey,
@@ -40,11 +39,11 @@ class GroupsAdd extends EchoEventPresentationModel {
 	 */
 	public function getBodyMessageContent() {
 		$bodyKey = 'notification-bs-pageassignments-user-group-add-body';
-		$bodyParams = ['agent', 'title', 'title', 'group', 'groupcount'];
+		$bodyParams = [ 'agent', 'title', 'title', 'group', 'groupcount' ];
 
-		if( $this->distributionType == 'email' ) {
+		if ( $this->distributionType == 'email' ) {
 			$bodyKey = 'notification-bs-pageassignments-user-group-add-body';
-			$bodyParams = ['agent', 'title', 'title', 'group', 'groupcount'];
+			$bodyParams = [ 'agent', 'title', 'title', 'group', 'groupcount' ];
 		}
 
 		return [
@@ -59,6 +58,6 @@ class GroupsAdd extends EchoEventPresentationModel {
 			return [];
 		}
 
-		return [$this->getAgentLink()];
+		return [ $this->getAgentLink() ];
 	}
 }

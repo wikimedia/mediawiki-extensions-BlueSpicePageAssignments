@@ -3,8 +3,6 @@ namespace BlueSpice\PageAssignments\Renderer;
 
 use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\Renderer\Params;
-use BlueSpice\DynamicFileDispatcher\Params as DFDParams;
-use BlueSpice\DynamicFileDispatcher\UserProfileImage;
 use BlueSpice\Services;
 
 class User extends Assignment {
@@ -18,6 +16,9 @@ class User extends Assignment {
 
 	/**
 	 * Constructor
+	 * @param \Config $config
+	 * @param Params $params
+	 * @param LinkRenderer|null $linkRenderer
 	 */
 	public function __construct( \Config $config, Params $params, LinkRenderer $linkRenderer = null ) {
 		parent::__construct( $config, $params, $linkRenderer );
@@ -28,7 +29,7 @@ class User extends Assignment {
 			'userimage',
 			new \BlueSpice\Renderer\Params( [
 				'user' => \User::newFromName( $this->assignment->getKey() )
-			])
+			] )
 		);
 		return $renderer->render();
 	}

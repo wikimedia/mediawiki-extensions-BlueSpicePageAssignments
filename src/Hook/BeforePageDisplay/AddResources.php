@@ -7,7 +7,7 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 	protected function doProcess() {
 		$this->out->addModuleStyles( 'ext.pageassignments.styles' );
 
-		if ( $this->out->getRequest()->getVal( 'action', 'view') !== 'view' ) {
+		if ( $this->out->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
 			return true;
 		}
 		if ( $this->out->getTitle()->isSpecialPage() ) {

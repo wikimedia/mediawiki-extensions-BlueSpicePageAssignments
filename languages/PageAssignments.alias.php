@@ -1,14 +1,14 @@
 <?php
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'PageAssignments' => array( 'PageAssignments', 'Page Assignments' ),
-	'ManagePageAssignments' => array( 'ManagePageAssignments', 'Manage Page Assignments' ),
-);
+$specialPageAliases['en'] = [
+	'PageAssignments' => [ 'PageAssignments', 'Page Assignments' ],
+	'ManagePageAssignments' => [ 'ManagePageAssignments', 'Manage Page Assignments' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'PageAssignments' => array( 'Zuweisungen', 'Seitenzuweisungen' ),
-	'ManagePageAssignments' => array( 'Zuweisungsverwaltung' ),
-);
+$specialPageAliases['de'] = [
+	'PageAssignments' => [ 'Zuweisungen', 'Seitenzuweisungen' ],
+	'ManagePageAssignments' => [ 'Zuweisungsverwaltung' ],
+];
