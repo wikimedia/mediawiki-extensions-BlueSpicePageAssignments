@@ -8,7 +8,7 @@ use BlueSpice\UserManager\Hook\BSUserManagerAfterSetGroups;
 
 class NotifyUsers extends BSUserManagerAfterSetGroups {
 	protected function skipProcessing() {
-		if( empty( $this->removeGroups ) && empty( $this->addGroups ) ) {
+		if ( empty( $this->removeGroups ) && empty( $this->addGroups ) ) {
 			return true;
 		}
 		return false;
@@ -20,10 +20,10 @@ class NotifyUsers extends BSUserManagerAfterSetGroups {
 
 		$agent = $this->getContext()->getUser();
 
-		if( !empty( $this->removeGroups ) ) {
+		if ( !empty( $this->removeGroups ) ) {
 			$notification = new GroupsRemove( $agent, $this->user, $this->removeGroups );
 		}
-		if( !empty( $this->addGroups ) ) {
+		if ( !empty( $this->addGroups ) ) {
 			$notification = new GroupsAdd( $agent, $this->user, $this->addGroups );
 		}
 

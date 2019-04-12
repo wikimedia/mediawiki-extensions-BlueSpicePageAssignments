@@ -62,9 +62,9 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 		return $this->getRecord()->jsonSerialize();
 	}
 
-	//Needed for ExtJSStoreBase implementation
+	// Needed for ExtJSStoreBase implementation
 	public function toStdClass() {
-		return (object) $this->jsonSerialize();
+		return (object)$this->jsonSerialize();
 	}
 
 	/**
@@ -81,7 +81,7 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	}
 
 	public function getAnchor() {
-		if( $this->anchor ) {
+		if ( $this->anchor ) {
 			return $this->anchor;
 		}
 		$this->anchor = $this->makeAnchor();
@@ -97,7 +97,7 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 			Record::POSITION => $this->getPosition(),
 			Record::ANCHOR => $this->getAnchor(),
 			Record::PAGE_ID => $this->getTitle()->getArticleID()
-		]);
+		] );
 	}
 
 	/**

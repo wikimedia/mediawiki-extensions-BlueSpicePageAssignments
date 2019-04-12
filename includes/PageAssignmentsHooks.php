@@ -4,14 +4,14 @@ class PageAssignmentsHooks {
 
 	/**
 	 *
-	 * @param OutputPage $out
-	 * @param Skin $skin
-	 * @return boolean
+	 * @param OutputPage &$out
+	 * @param Skin &$skin
+	 * @return bool
 	 */
 	public static function onBeforePageDisplay( &$out, &$skin ) {
 		$out->addModuleStyles( 'ext.pageassignments.styles' );
 
-		if ( $out->getRequest()->getVal( 'action', 'view') !== 'view' || $out->getTitle()->isSpecialPage() ) {
+		if ( $out->getRequest()->getVal( 'action', 'view' ) !== 'view' || $out->getTitle()->isSpecialPage() ) {
 			return true;
 		}
 
@@ -23,10 +23,10 @@ class PageAssignmentsHooks {
 	public static function onPersonalUrls( &$aPersonal_urls, &$oTitle ) {
 		$oUser = RequestContext::getMain()->getUser();
 		if ( $oUser->isLoggedIn() ) {
-			$aPersonal_urls['pageassignments'] = array(
+			$aPersonal_urls['pageassignments'] = [
 				'href' => SpecialPage::getTitleFor( 'PageAssignments' )->getLocalURL(),
 				'text' => SpecialPageFactory::getPage( 'PageAssignments' )->getDescription()
-			);
+			];
 		}
 
 		return true;
@@ -34,32 +34,32 @@ class PageAssignmentsHooks {
 
 	/**
 	 * Adds the "Assignments" menu entry in view mode
-	 * @param SkinTemplate $sktemplate
-	 * @param array $links
-	 * @return boolean Always true to keep hook running
+	 * @param SkinTemplate &$sktemplate
+	 * @param array &$links
+	 * @return bool Always true to keep hook running
 	 */
 	public static function onSkinTemplateNavigation( &$sktemplate, &$links ) {
-		if ( $sktemplate->getRequest()->getVal( 'action', 'view') != 'view' ) {
+		if ( $sktemplate->getRequest()->getVal( 'action', 'view' ) != 'view' ) {
 			return true;
 		}
 		if ( !$sktemplate->getTitle()->userCan( 'pageassignments' ) ) {
 			return true;
 		}
-		$links['actions']['pageassignments'] = array(
+		$links['actions']['pageassignments'] = [
 			'text' => wfMessage( 'bs-pageassignments-menu-label' )->text(),
 			'href' => '#',
 			'class' => false,
 			'id' => 'ca-pageassignments',
 			'bs-group' => 'hidden'
-		);
+		];
 
 		return true;
 	}
 
 	/**
 	 * Hook handler for MediaWiki 'TitleMoveComplete' hook. Adapts assignments in case of article move.
-	 * @param Title $old
-	 * @param Title $nt
+	 * @param Title &$old
+	 * @param Title &$nt
 	 * @param User $user
 	 * @param int $pageid
 	 * @param int $redirid
@@ -70,52 +70,52 @@ class PageAssignmentsHooks {
 		$dbr = wfGetDB( DB_MASTER );
 		$dbr->update(
 			'bs_pageassignments',
-			array(
+			[
 				'pa_page_id' => $nt->getArticleID()
-			),
-			array(
+			],
+			[
 				'pa_page_id' => $old->getArticleID()
-			)
+			]
 		);
 		return true;
 	}
 
 	/**
 	 * Clears assignments
-	 * @param WikiPage $wikiPage
-	 * @param user $user
+	 * @param WikiPage &$wikiPage
+	 * @param User &$user
 	 * @param string $reason
 	 * @param int $id
 	 * @param Content $content
 	 * @param ManualLogEntry $logEntry
-	 * @return boolean
+	 * @return bool
 	 */
 	public static function onArticleDeleteComplete( &$wikiPage, &$user, $reason, $id, $content, $logEntry ) {
 		$dbr = wfGetDB( DB_MASTER );
 		$dbr->delete(
 			'bs_pageassignments',
-			array(
+			[
 				'pa_page_id' => $wikiPage->getId()
-			)
+			]
 		);
 		return true;
 	}
 
 	/**
 	 * Register tag with UsageTracker extension
-	 * @param array $aCollectorsConfig
+	 * @param array &$aCollectorsConfig
 	 * @return Always true to keep hook running
 	 */
 	public static function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
-		$aCollectorsConfig['pageassignments:pages'] = array(
+		$aCollectorsConfig['pageassignments:pages'] = [
 			'class' => 'Database',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-usagetracker-pageassignments',
 				'descriptionKey' => 'bs-usagetracker-pageassignments',
 				'table' => 'bs_pageassignments',
-				'uniqueColumns' => array( 'pa_page_id' )
-			)
-		);
+				'uniqueColumns' => [ 'pa_page_id' ]
+			]
+		];
 		return true;
 	}
 
@@ -123,17 +123,18 @@ class PageAssignmentsHooks {
 	 * Deletes all page assignments on user deleted.
 	 * @param UserManager $oUserManager
 	 * @param User $oUser
-	 * @param &$oStatus
+	 * @param Status &$oStatus
+	 * @param User $oPerformer
 	 * @return bool
 	 */
 	public static function onBSUserManagerAfterDeleteUser( $oUserManager, $oUser, &$oStatus, $oPerformer ) {
 		$dbr = wfGetDB( DB_MASTER );
 		$dbr->delete(
 			'bs_pageassignments',
-			array(
+			[
 				'pa_assignee_key' => $oUser->getName(),
 				'pa_assignee_type' => 'user'
-			)
+			]
 		);
 		return true;
 	}
@@ -148,13 +149,13 @@ class PageAssignmentsHooks {
 		$dbr = wfGetDB( DB_MASTER );
 		$dbr->update(
 			'bs_pageassignments',
-			array(
+			[
 				'pa_assignee_key' => $sNewGroup,
-			),
-			array(
+			],
+			[
 				'pa_assignee_key' => $sGroup,
 				'pa_assignee_type' => 'group'
-			)
+			]
 		);
 		return true;
 	}
@@ -164,14 +165,14 @@ class PageAssignmentsHooks {
 	 * @param string $sGroup
 	 * @return bool
 	 */
-	public static function onBSGroupManagerGroupDeleted( $sGroup) {
+	public static function onBSGroupManagerGroupDeleted( $sGroup ) {
 		$dbr = wfGetDB( DB_MASTER );
 		$dbr->delete(
 			'bs_pageassignments',
-			array(
+			[
 				'pa_assignee_key' => $sGroup,
 				'pa_assignee_type' => 'group'
-			)
+			]
 		);
 		return true;
 	}

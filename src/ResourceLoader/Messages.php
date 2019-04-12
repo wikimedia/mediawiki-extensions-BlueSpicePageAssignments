@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\PageAssignments\ResourceLoader;
+
 use BlueSpice\Services;
 
 class Messages extends \ResourceLoaderModule {
@@ -16,8 +17,8 @@ class Messages extends \ResourceLoaderModule {
 		$factory = Services::getInstance()->getService(
 			'BSPageAssignmentsAssignableFactory'
 		);
-		foreach( $factory->getRegisteredTypes() as $type ) {
-			if( !$assignable = $factory->factory( $type ) ) {
+		foreach ( $factory->getRegisteredTypes() as $type ) {
+			if ( !$assignable = $factory->factory( $type ) ) {
 				continue;
 			}
 			$messages[] = $assignable->getTypeMessageKey();

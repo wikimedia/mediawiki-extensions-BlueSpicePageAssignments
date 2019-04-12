@@ -6,39 +6,38 @@ use BlueSpice\PageAssignments\Data\Record;
 
 class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 
-	protected function makeData($sQuery = '') {
-
+	protected function makeData( $sQuery = '' ) {
 		$assignmentsPerPage = $this->getPageAssignments();
 
 		$aResult = $assignedBy = [];
-		foreach( $assignmentsPerPage as $pageId => $pageAssignments ) {
-			if( !\Title::newFromID( $pageId ) ) {
+		foreach ( $assignmentsPerPage as $pageId => $pageAssignments ) {
+			if ( !\Title::newFromID( $pageId ) ) {
 				continue;
 			}
-			foreach( $pageAssignments as $assignment ) {
+			foreach ( $pageAssignments as $assignment ) {
 				$assigned = in_array(
 					$this->getUser()->getId(),
 					$assignment->getUserIds()
 				);
-				if( !$assigned ) {
+				if ( !$assigned ) {
 					continue;
 				}
 				$assignedBy[ $pageId ][] = $assignment;
 			}
 		}
-		foreach( $assignedBy as $pageId => $relatedAssignments ) {
+		foreach ( $assignedBy as $pageId => $relatedAssignments ) {
 			$title = \Title::newFromID( $pageId );
 			$link = Services::getInstance()->getLinkRenderer()->makeLink(
 				$title
 			);
-			$oDataSet = (object) [
+			$oDataSet = (object)[
 				'page_id' => $title->getArticleID(),
 				'page_prefixedtext' => $title->getPrefixedText(),
 				'page_link' => $link,
 				'assigned_by' => [],
 				'assignment' => [],
 			];
-			foreach( $relatedAssignments as $assignment ) {
+			foreach ( $relatedAssignments as $assignment ) {
 				$oDataSet->assigned_by[] = $assignment->getType();
 				$oDataSet->assignment[] = $assignment->toStdClass();
 			}
@@ -47,13 +46,13 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 		return $aResult;
 	}
 
-	public function filterString($oFilter, $aDataSet) {
-		if( $oFilter->field !== 'assigned_by') {
-			return parent::filterString($oFilter, $aDataSet);
+	public function filterString( $oFilter, $aDataSet ) {
+		if ( $oFilter->field !== 'assigned_by' ) {
+			return parent::filterString( $oFilter, $aDataSet );
 		}
 
 		$sFieldValue = '';
-		foreach( $aDataSet->assigned_by as $oAsignee ) {
+		foreach ( $aDataSet->assigned_by as $oAsignee ) {
 			$sFieldValue .= $oAsignee->text;
 		}
 
@@ -74,7 +73,7 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 			] )
 		);
 		$assignments = [];
-		foreach( $recordSet->getRecords() as $record ) {
+		foreach ( $recordSet->getRecords() as $record ) {
 			$id = $record->get( Record::PAGE_ID );
 			$title = \Title::newFromID( $id );
 			if ( !$title ) {

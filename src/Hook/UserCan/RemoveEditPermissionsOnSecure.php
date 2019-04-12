@@ -4,29 +4,29 @@ namespace BlueSpice\PageAssignments\Hook\UserCan;
 
 class RemoveEditPermissionsOnSecure extends \BlueSpice\Hook\UserCan {
 	protected function skipProcessing() {
-		if( $this->title->getNamespace() < 0 ) {
+		if ( $this->title->getNamespace() < 0 ) {
 			return true;
 		}
 
-		if( $this->title->isTalkPage() ) {
+		if ( $this->title->isTalkPage() ) {
 			return true;
 		}
 
-		if( !$this->title->exists() ) {
+		if ( !$this->title->exists() ) {
 			return true;
 		}
 
 		$rightList = $this->getConfig()->get(
 			'PageAssignmentsSecureRemoveRightList'
 		);
-		if( !in_array( $this->action, $rightList )  ) {
+		if ( !in_array( $this->action, $rightList ) ) {
 			return true;
 		}
 
 		$enabledNs = $this->getConfig()->get(
 			'PageAssignmentsSecureEnabledNamespaces'
 		);
-		if( !in_array( $this->title->getNamespace(), $enabledNs ) ) {
+		if ( !in_array( $this->title->getNamespace(), $enabledNs ) ) {
 			return true;
 		}
 
@@ -34,12 +34,12 @@ class RemoveEditPermissionsOnSecure extends \BlueSpice\Hook\UserCan {
 			'BSPageAssignmentsAssignmentFactory'
 		);
 		$factory instanceof \BlueSpice\PageAssignments\AssignmentFactory;
-		if( !$target = $factory->newFromTargetTitle( $this->title ) ) {
+		if ( !$target = $factory->newFromTargetTitle( $this->title ) ) {
 			return true;
 		}
 
 		$userId = $this->getContext()->getUser()->getId();
-		if( in_array( $userId, $target->getAssignedUserIDs() ) ) {
+		if ( in_array( $userId, $target->getAssignedUserIDs() ) ) {
 			return true;
 		}
 

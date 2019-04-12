@@ -16,7 +16,7 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 	/**
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
-	 * @param \IContextSource
+	 * @param \IContextSource $context
 	 */
 	public function __construct( $db, $context ) {
 		$this->context = $context;
@@ -24,7 +24,7 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 	}
 
 	protected function appendRowToData( $row ) {
-		if( $this->params->getQuery() !== '' ) {
+		if ( $this->params->getQuery() !== '' ) {
 			$bApply = \BsStringHelper::filter(
 				\BsStringHelper::FILTER_CONTAINS,
 				$row->{Record::USER_NAME},
@@ -34,16 +34,16 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 				$row->{Record::USER_REAL_NAME},
 				$this->params->getQuery()
 			);
-			if( !$bApply ) {
+			if ( !$bApply ) {
 				return;
 			}
 		}
 
-		if( !$user = \User::newFromId( $row->{Record::ID} ) ) {
+		if ( !$user = \User::newFromId( $row->{Record::ID} ) ) {
 			return;
 		}
 
-		if( !$this->context->getTitle()->userCan( 'pageassignable', $user ) ) {
+		if ( !$this->context->getTitle()->userCan( 'pageassignable', $user ) ) {
 			return;
 		}
 		$assignmentFactory = Services::getInstance()->getService(
@@ -54,8 +54,8 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 			$row->{Record::USER_NAME},
 			$this->context->getTitle()
 		);
-		if( !$assignment instanceof \BlueSpice\PageAssignments\IAssignment ) {
-			return; //:(
+		if ( !$assignment instanceof \BlueSpice\PageAssignments\IAssignment ) {
+			return; // :(
 		}
 
 		$this->data[] = $assignment->getRecord();

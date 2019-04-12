@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\PageAssignments;
+
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\PageAssignments\Data\Record;
@@ -45,7 +46,7 @@ class AssignmentFactory {
 	 *
 	 * @param AssignableFactory $assignableFactory
 	 * @param LinkRenderer $linkRenderer
-	 * @param \Config bsgConfig
+	 * @param \Config $config
 	 * @param ExtensionAttributeBasedRegistry $targetRegistry
 	 *
 	 */
@@ -59,11 +60,11 @@ class AssignmentFactory {
 	/**
 	 *
 	 * @param \Title $title
-	 * @return boolean|Target
+	 * @return bool|Target
 	 * @throws \MWException
 	 */
 	public function newFromTargetTitle( \Title $title ) {
-		if( $title->getArticleID() < 1 ) {
+		if ( $title->getArticleID() < 1 ) {
 			return false;
 		}
 		$instance = $this->fromCache( $title );
@@ -112,7 +113,7 @@ class AssignmentFactory {
 	 * @return Target|false
 	 */
 	protected function fromCache( \Title $title ) {
-		if( isset( $this->targetCache[$title->getArticleID()] ) ) {
+		if ( isset( $this->targetCache[$title->getArticleID()] ) ) {
 			return $this->targetCache[$title->getArticleID()];
 		}
 		return false;
@@ -120,11 +121,11 @@ class AssignmentFactory {
 
 	/**
 	 *
-	 * @param \Title $title
+	 * @param \Title|null $title
 	 * @return IAssignment[]
 	 */
 	protected function getAssignments( \Title $title = null ) {
-		if( !$title || $title->getArticleID() < 1 ) {
+		if ( !$title || $title->getArticleID() < 1 ) {
 			return [];
 		}
 
@@ -132,21 +133,21 @@ class AssignmentFactory {
 			new ReaderParams( [ 'filter' => [
 				[
 					Filter::KEY_FIELD => Record::PAGE_ID,
-					Filter::KEY_VALUE => (int) $title->getArticleID(),
+					Filter::KEY_VALUE => (int)$title->getArticleID(),
 					Filter::KEY_TYPE => 'numeric',
 					Filter::KEY_COMPARISON => Filter::COMPARISON_EQUALS,
 				]
-			]] )
+			] ] )
 		);
 
 		$assignments = [];
-		foreach( $recordSet->getRecords() as $record ) {
+		foreach ( $recordSet->getRecords() as $record ) {
 			$assignment = $this->factory(
 				$record->get( Record::ASSIGNEE_TYPE ),
 				$record->get( Record::ASSIGNEE_KEY ),
 				$title
 			);
-			if( !$assignment ) {
+			if ( !$assignment ) {
 				continue;
 			}
 			$assignments[] = $assignment;
@@ -167,7 +168,7 @@ class AssignmentFactory {
 	 * @return true
 	 */
 	public function invalidate( ITarget $target ) {
-		if( isset( $this->targetCache[$target->getTitle()->getArticleID()] ) ) {
+		if ( isset( $this->targetCache[$target->getTitle()->getArticleID()] ) ) {
 			unset( $this->targetCache[$target->getTitle()->getArticleID()] );
 		}
 		return true;
@@ -176,10 +177,12 @@ class AssignmentFactory {
 	/**
 	 *
 	 * @param string $type
-	 * @return IAssignment | null
+	 * @param string $key
+	 * @param \Title $title
+	 * @return IAssignment|null
 	 */
 	public function factory( $type, $key, \Title $title ) {
-		if( !$assignable = $this->assignableFactory->factory( $type ) ) {
+		if ( !$assignable = $this->assignableFactory->factory( $type ) ) {
 			return null;
 		}
 		$class = $assignable->getAssignmentClass();
@@ -195,7 +198,6 @@ class AssignmentFactory {
 
 	/**
 	 *
-	 * @param string $key
 	 * @return array
 	 */
 	public function getRegisteredTypes() {

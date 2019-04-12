@@ -20,7 +20,7 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 	}
 
 	public function getUserIds() {
-		if( isset( static::$userIdCache ) ) {
+		if ( isset( static::$userIdCache ) ) {
 			return static::$userIdCache;
 		}
 		static::$userIdCache = [];
@@ -35,7 +35,7 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 				'pageassignable',
 				\User::newFromId( (int)$row->user_id )
 			);
-			if( !$allowed ) {
+			if ( !$allowed ) {
 				continue;
 			}
 			static::$userIdCache[] = (int)$row->user_id;
