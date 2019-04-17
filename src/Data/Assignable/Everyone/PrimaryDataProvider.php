@@ -43,6 +43,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @return array
 	 */
 	public function makeData( $params ) {
 		$this->params = $params;
@@ -63,10 +64,10 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 			'everyone',
 			$this->context->getTitle()
 		);
-		if( !$assignment instanceof \BlueSpice\PageAssignments\IAssignment ) {
-			return; //:(
+		if ( !$assignment instanceof \BlueSpice\PageAssignments\IAssignment ) {
+			return; // :(
 		}
-		if( $this->params->getQuery() !== '' ) {
+		if ( $this->params->getQuery() !== '' ) {
 			$bApply = \BsStringHelper::filter(
 				\BsStringHelper::FILTER_CONTAINS,
 				$assignment->getKey(),
@@ -81,4 +82,3 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 		$this->data[] = $assignment->getRecord();
 	}
 }
-

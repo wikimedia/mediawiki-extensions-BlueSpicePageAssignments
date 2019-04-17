@@ -16,13 +16,12 @@ class AssignmentChangeRemove extends EchoEventPresentationModel {
 		$bundleParams = [];
 
 		$headerKey = 'notification-bs-pageassignments-assignment-change-remove-summary';
-		$headerParams = ['agent', 'title', 'title'];
+		$headerParams = [ 'agent', 'title', 'title' ];
 
-		if( $this->distributionType == 'email' ) {
+		if ( $this->distributionType == 'email' ) {
 			$headerKey = 'notification-bs-pageassignments-assignment-change-remove-subject';
-			$headerParams = ['agent', 'title', 'title'];
+			$headerParams = [ 'agent', 'title', 'title' ];
 		}
-
 
 		return [
 			'key' => $headerKey,
@@ -40,11 +39,11 @@ class AssignmentChangeRemove extends EchoEventPresentationModel {
 	 */
 	public function getBodyMessageContent() {
 		$bodyKey = 'notification-bs-pageassignments-assignment-change-remove-body';
-		$bodyParams = ['agent', 'title', 'title'];
+		$bodyParams = [ 'agent', 'title', 'title' ];
 
-		if( $this->distributionType == 'email' ) {
+		if ( $this->distributionType == 'email' ) {
 			$bodyKey = 'notification-bs-pageassignments-assignment-change-remove-body';
-			$bodyParams = ['agent', 'title', 'title'];
+			$bodyParams = [ 'agent', 'title', 'title' ];
 		}
 
 		return [
@@ -59,6 +58,6 @@ class AssignmentChangeRemove extends EchoEventPresentationModel {
 			return [];
 		}
 
-		return [$this->getAgentLink()];
+		return [ $this->getAgentLink() ];
 	}
 }

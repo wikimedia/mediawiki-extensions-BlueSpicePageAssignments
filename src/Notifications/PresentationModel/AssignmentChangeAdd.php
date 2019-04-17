@@ -18,7 +18,7 @@ class AssignmentChangeAdd extends EchoEventPresentationModel {
 		$headerKey = 'notification-bs-pageassignments-assignment-change-add-summary';
 		$headerParams = [ 'agent', 'title', 'title' ];
 
-		if( $this->distributionType == 'email' ) {
+		if ( $this->distributionType == 'email' ) {
 			$headerKey = 'notification-bs-pageassignments-assignment-change-add-subject';
 			$headerParams = [ 'agent', 'title', 'title' ];
 		}
@@ -39,11 +39,11 @@ class AssignmentChangeAdd extends EchoEventPresentationModel {
 	 */
 	public function getBodyMessageContent() {
 		$bodyKey = 'notification-bs-pageassignments-assignment-change-add-body';
-		$bodyParams = ['agent', 'title', 'title'];
+		$bodyParams = [ 'agent', 'title', 'title' ];
 
-		if( $this->distributionType == 'email' ) {
+		if ( $this->distributionType == 'email' ) {
 			$bodyKey = 'notification-bs-pageassignments-assignment-change-add-body';
-			$bodyParams = ['agent', 'title', 'title'];
+			$bodyParams = [ 'agent', 'title', 'title' ];
 		}
 
 		return [
@@ -55,11 +55,11 @@ class AssignmentChangeAdd extends EchoEventPresentationModel {
 	public function getBodyMessage() {
 		$content = $this->getBodyMessageContent();
 		$msg = $this->msg( $content['key'] );
-		if( empty( $content['params'] ) ) {
+		if ( empty( $content['params'] ) ) {
 			return $msg;
 		}
 
-		foreach( $content['params'] as $param ) {
+		foreach ( $content['params'] as $param ) {
 			$this->paramParser->parseParam( $msg, $param );
 		}
 
@@ -72,6 +72,6 @@ class AssignmentChangeAdd extends EchoEventPresentationModel {
 			return [];
 		}
 
-		return [$this->getAgentLink()];
+		return [ $this->getAgentLink() ];
 	}
 }

@@ -46,7 +46,7 @@ class Flyout extends BasePanel implements IFlyout {
 	/**
 	 *
 	 * @param \IContextSource $context
-	 * @return boolean
+	 * @return bool
 	 */
 	public function shouldRender( $context ) {
 		return $context->getUser()->isLoggedIn();

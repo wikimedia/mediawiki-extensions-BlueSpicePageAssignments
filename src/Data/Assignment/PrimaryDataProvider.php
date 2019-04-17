@@ -24,7 +24,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	protected $db = null;
 
 	/**
-	 *
+	 * @param \BlueSpice\Data\ReaderParams $params
 	 * @param \Wikimedia\Rdbms\IDatabase $db
 	 */
 	public function __construct( $params, $db ) {
@@ -34,6 +34,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @return array
 	 */
 	public function makeData( $params ) {
 		$this->data = [];
@@ -45,7 +46,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 			__METHOD__,
 			$this->makePreOptionConds( $params )
 		);
-		foreach( $res as $row ) {
+		foreach ( $res as $row ) {
 			$this->appendRowToData( $row );
 		}
 
@@ -53,7 +54,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	}
 
 	protected function appendRowToData( $row ) {
-		$this->data[] = new Record( (object) [
+		$this->data[] = new Record( (object)[
 			Record::PAGE_ID => $row->{Record::PAGE_ID},
 			Record::ASSIGNEE_KEY => $row->{Record::ASSIGNEE_KEY},
 			Record::ASSIGNEE_TYPE => $row->{Record::ASSIGNEE_TYPE},
@@ -76,21 +77,21 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 		$schema = new Schema();
 		$fields = array_values( $schema->getFilterableFields() );
 		$filterFinder = new FilterFinder( $params->getFilter() );
-		foreach( $fields as $fieldName ) {
+		foreach ( $fields as $fieldName ) {
 			$filter = $filterFinder->findByField( $fieldName );
-			if( !$filter instanceof Filter ) {
+			if ( !$filter instanceof Filter ) {
 				continue;
 			}
-			if( $fieldName === Record::TEXT ) {
+			if ( $fieldName === Record::TEXT ) {
 				continue;
 			}
-			if( $fieldName === Record::ANCHOR ) {
+			if ( $fieldName === Record::ANCHOR ) {
 				continue;
 			}
-			if( $fieldName === Record::ID ) {
+			if ( $fieldName === Record::ID ) {
 				continue;
 			}
-			switch( $filter->getComparison() ) {
+			switch ( $filter->getComparison() ) {
 				case Filter::COMPARISON_EQUALS:
 					$conds[$fieldName] = $filter->getValue();
 					$filter->setAppied();
@@ -100,7 +101,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 					$filter->setAppied();
 					break;
 				case StringValue::COMPARISON_CONTAINS:
-					$conds[] = "$fieldName ".$this->db->buildLike(
+					$conds[] = "$fieldName " . $this->db->buildLike(
 						$this->db->anyString(),
 						$filter->getValue(),
 						$this->db->anyString()
@@ -108,7 +109,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 					$filter->setAppied();
 					break;
 				case StringValue::COMPARISON_NOT_CONTAINS:
-					$conds[] = "$fieldName NOT ".$this->db->buildLike(
+					$conds[] = "$fieldName NOT " . $this->db->buildLike(
 						$this->db->anyString(),
 						$filter->getValue(),
 						$this->db->anyString()
@@ -116,14 +117,14 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 					$filter->setAppied();
 					break;
 				case StringValue::COMPARISON_STARTS_WITH:
-					$conds[] = "$fieldName ".$this->db->buildLike(
+					$conds[] = "$fieldName " . $this->db->buildLike(
 						$filter->getValue(),
 						$this->db->anyString()
 					);
 					$filter->setAppied();
 					break;
 				case StringValue::COMPARISON_ENDS_WITH:
-					$conds[] = "$fieldName ".$this->db->buildLike(
+					$conds[] = "$fieldName " . $this->db->buildLike(
 						$this->db->anyString(),
 						$filter->getValue()
 					);
@@ -153,11 +154,11 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 		$schema = new Schema();
 		$fields = array_values( $schema->getSortableFields() );
 
-		foreach( $params->getSort() as $sort ) {
-			if( !in_array( $sort->getProperty(), $fields ) ) {
+		foreach ( $params->getSort() as $sort ) {
+			if ( !in_array( $sort->getProperty(), $fields ) ) {
 				continue;
 			}
-			if( !isset( $conds['ORDER BY'] ) ) {
+			if ( !isset( $conds['ORDER BY'] ) ) {
 				$conds['ORDER BY'] = "";
 			} else {
 				$conds['ORDER BY'] .= ",";

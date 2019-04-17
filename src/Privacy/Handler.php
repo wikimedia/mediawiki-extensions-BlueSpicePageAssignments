@@ -25,7 +25,7 @@ class Handler implements IPrivacyHandler {
 		return \Status::newGood();
 	}
 
-	public function delete( \User $userToDelete, \User $deletedUser) {
+	public function delete( \User $userToDelete, \User $deletedUser ) {
 		$this->db->delete(
 			'bs_pageassignments',
 			[ 'pa_assignee_key' => $userToDelete->getName() ]
@@ -33,7 +33,7 @@ class Handler implements IPrivacyHandler {
 		return \Status::newGood();
 	}
 
-	public function exportData( array $types, $format, \User $user ){
+	public function exportData( array $types, $format, \User $user ) {
 		if ( !in_array( Transparency::DATA_TYPE_WORKING, $types ) ) {
 			return \Status::newGood( [] );
 		}
@@ -44,7 +44,7 @@ class Handler implements IPrivacyHandler {
 		);
 
 		$titles = [];
-		foreach( $res as $row ) {
+		foreach ( $res as $row ) {
 			$title = \Title::newFromID( $row->pa_page_id );
 			if ( $title instanceof \Title === false ) {
 				continue;

@@ -2,20 +2,20 @@
 
 class PageAssignmentsUsersAdditionalPermissionsHooks {
 	private static $sTempGroup = 'oOAsSiGnEdUsErOo';
-	protected static $aAssignedUserForTitle = array();
+	protected static $aAssignedUserForTitle = [];
 
 	/**
 	 *
-	 * @param Title $title
-	 * @param User $user
+	 * @param Title &$title
+	 * @param User &$user
 	 * @param string $action
-	 * @param boolean $result
-	 * @return boolean
+	 * @param bool &$result
+	 * @return bool
 	 */
 	public static function onUserCan( &$title, &$user, $action, &$result ) {
 		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
 			->makeConfig( 'bsg' );
-		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+		if ( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
 			return true;
 		}
 
@@ -36,21 +36,21 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 	public static function onRevisionAjaxReviewBeforeParams( $oRevisionReview, &$oTitle, &$aArgs ) {
 		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
 			->makeConfig( 'bsg' );
-		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+		if ( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
 			return true;
 		}
 
-		//MW BeforeInitialize hook is not present in ajax calls, so apply
-		//possible permissions for responsible editors in this context
-		if( is_null($oTitle) ) {
-			foreach( $aArgs as $sArg ) {
+		// MW BeforeInitialize hook is not present in ajax calls, so apply
+		// possible permissions for responsible editors in this context
+		if ( is_null( $oTitle ) ) {
+			foreach ( $aArgs as $sArg ) {
 				$set = explode( '|', $sArg, 2 );
-				if( count( $set ) != 2 ) {
+				if ( count( $set ) != 2 ) {
 					continue;
 				}
 
 				list( $sKey, $vVal ) = $set;
-				if( $sKey != 'target' ) {
+				if ( $sKey != 'target' ) {
 					continue;
 				}
 
@@ -70,13 +70,13 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 	 * Add edit right permission for current logged in user if review process
 	 * add edit permission
 	 * @param User $user
-	 * @param type $rights
-	 * @return boolean
+	 * @param array &$aRights
+	 * @return bool
 	 */
 	public static function onUserGetRights( User $user, &$aRights ) {
 		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
 			->makeConfig( 'bsg' );
-		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+		if ( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
 			return true;
 		}
 
@@ -89,11 +89,11 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 		$factory = \BlueSpice\Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
-		if( !$target = $factory->newFromTargetTitle( $wgTitle ) ) {
+		if ( !$target = $factory->newFromTargetTitle( $wgTitle ) ) {
 			return;
 		}
 
-		if( $target->isUserAssigned( $user ) ) {
+		if ( $target->isUserAssigned( $user ) ) {
 			$aRights = array_merge(
 				$aRights,
 				$config->get( "PageAssignmentsPermissions" )
@@ -103,34 +103,33 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 		return true;
 	}
 
-
 	public static function addAdditionalPermissions( $oTitle, $oUser ) {
 		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
 			->makeConfig( 'bsg' );
-		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+		if ( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
 			return true;
 		}
 
-		if( empty( $config->get( "PageAssignmentsPermissions" ) ) ) {
+		if ( empty( $config->get( "PageAssignmentsPermissions" ) ) ) {
 			return true;
 		}
-		if( !self::isAssignableUser($oUser) ) {
+		if ( !self::isAssignableUser( $oUser ) ) {
 			return false;
 		}
-		if( !self::isAssignableTitle($oTitle) ) {
+		if ( !self::isAssignableTitle( $oTitle ) ) {
 			return false;
 		}
-		if( self::isTempGroupAppliedToUser($oUser) ) {
+		if ( self::isTempGroupAppliedToUser( $oUser ) ) {
 			return true;
 		}
-		if( !self::isUserAssigned($oTitle, $oUser) ) {
+		if ( !self::isUserAssigned( $oTitle, $oUser ) ) {
 			return true;
 		}
 
 		BsGroupHelper::addPermissionsToGroup(
 			self::$sTempGroup,
 			$config->get( "PageAssignmentsPermissions" ),
-			array( $oTitle->getNamespace() )
+			[ $oTitle->getNamespace() ]
 		);
 
 		BsGroupHelper::addTempGroupToUser( $oUser, self::$sTempGroup );
@@ -139,42 +138,42 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 	}
 
 	protected static function isUserAssigned( Title $oTitle, User $oUser ) {
-		if( array_key_exists($oUser->getId(), self::$aAssignedUserForTitle) ) {
-			if( array_key_exists($oTitle->getArticleID(), self::$aAssignedUserForTitle[$oUser->getId()]) ) {
+		if ( array_key_exists( $oUser->getId(), self::$aAssignedUserForTitle ) ) {
+			if ( array_key_exists( $oTitle->getArticleID(), self::$aAssignedUserForTitle[$oUser->getId()] ) ) {
 				return self::$aAssignedUserForTitle[$oUser->getId()][$oTitle->getArticleID()];
 			}
 		}
 		$oRes = wfGetDB( DB_REPLICA )->selectRow(
 			'bs_pageassignments',
 			'*',
-			array(
+			[
 				'pa_page_id' => $oTitle->getArticleID(),
 				'pa_assignee_type' => 'user',
 				'pa_assignee_key' => $oUser->getName(),
-			),
+			],
 			__METHOD__
 		);
-		if( $oRes ) {
+		if ( $oRes ) {
 			self::$aAssignedUserForTitle[$oUser->getId()][$oTitle->getArticleID()] = true;
 			return true;
 		}
 
-		if( empty( $oUser->getEffectiveGroups() ) ) {
+		if ( empty( $oUser->getEffectiveGroups() ) ) {
 			return false;
 		}
 
 		$oRes = wfGetDB( DB_REPLICA )->selectRow(
 			'bs_pageassignments',
 			'*',
-			array(
+			[
 				'pa_page_id' => $oTitle->getArticleID(),
 				'pa_assignee_type' => 'group',
 				'pa_assignee_key' => $oUser->getEffectiveGroups(),
-			),
+			],
 			__METHOD__
 		);
 
-		if( $oRes ) {
+		if ( $oRes ) {
 			self::$aAssignedUserForTitle[$oUser->getId()][$oTitle->getArticleID()] = true;
 			return true;
 		}
@@ -184,31 +183,31 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 	}
 
 	protected static function isAssignableUser( $oUser ) {
-		if( !$oUser instanceof User ) {
+		if ( !$oUser instanceof User ) {
 			return false;
 		}
-		if( $oUser->isAnon() ) {
+		if ( $oUser->isAnon() ) {
 			return false;
 		}
-		//for now, we only care about the current user
-		if( $oUser->getId() != RequestContext::getMain()->getUser()->getId() ) {
+		// for now, we only care about the current user
+		if ( $oUser->getId() != RequestContext::getMain()->getUser()->getId() ) {
 			return false;
 		}
 		return true;
 	}
 
 	protected static function isTempGroupAppliedToUser( User $oUser ) {
-		if( in_array(self::$sTempGroup, $oUser->getGroups()) ) {
+		if ( in_array( self::$sTempGroup, $oUser->getGroups() ) ) {
 			return true;
 		}
 		return false;
 	}
 
 	protected static function isAssignableTitle( $oTitle ) {
-		if( !$oTitle instanceof Title ) {
+		if ( !$oTitle instanceof Title ) {
 			return false;
 		}
-		if( $oTitle->isSpecialPage() ) {
+		if ( $oTitle->isSpecialPage() ) {
 			return false;
 		}
 		return true;
@@ -217,16 +216,16 @@ class PageAssignmentsUsersAdditionalPermissionsHooks {
 	/**
 	 * Never ever save this group to any user!
 	 * @param User $user
-	 * @param string $group
-	 * @return boolean
+	 * @param string &$group
+	 * @return bool
 	 */
 	public static function onUserAddGroup( $user, &$group ) {
 		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
 			->makeConfig( 'bsg' );
-		if( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
+		if ( !$config->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
 			return true;
 		}
-		if( self::$sTempGroup !== $group ) {
+		if ( self::$sTempGroup !== $group ) {
 			return true;
 		}
 		return false;

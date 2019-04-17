@@ -26,24 +26,24 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 		self::$userFixtures = new BSUserFixtures( $this );
 	}
 
-	protected function getModuleName () {
+	protected function getModuleName() {
 		return 'bs-pageassignment-tasks';
 	}
 
-	function getTokens () {
-		return $this->getTokenList ( self::$users[ 'sysop' ] );
+	function getTokens() {
+		return $this->getTokenList( self::$users[ 'sysop' ] );
 	}
 
 	public function testEdit() {
 		$oData = $this->executeTask(
 			'edit',
-			array(
+			[
 				'pageId' => 1,
-				'pageAssignments' => array(
+				'pageAssignments' => [
 					'user/John',
 					'group/sysop'
-				)
-			)
+				]
+			]
 		);
 
 		$this->assertTrue( $oData->success, "API returned failure state" );
@@ -51,18 +51,18 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 		// Check if Assignment was added to database
 		$this->assertSelect(
 			'bs_pageassignments',
-			array( 'pa_assignee_key', 'pa_assignee_type' ),
-			array( 'pa_page_id = 1' ),
-			array(  array( 'John', 'user' ), array( 'sysop', 'group' ) )
+			[ 'pa_assignee_key', 'pa_assignee_type' ],
+			[ 'pa_page_id = 1' ],
+			[ [ 'John', 'user' ], [ 'sysop', 'group' ] ]
 		);
 
 		$oData = $this->executeTask(
 			'edit',
-			array(
+			[
 				'pageId' => 1,
-				'pageAssignments' => array(
-				)
-			)
+				'pageAssignments' => [
+				]
+			]
 		);
 
 		$this->assertTrue( $oData->success, "API returned failure state" );
@@ -70,31 +70,31 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 		// Check if Assignment was removed from database
 		$this->assertSelect(
 			'bs_pageassignments',
-			array( 'pa_assignee_key', 'pa_assignee_type' ),
-			array( 'pa_page_id = 1' ),
-			array()
+			[ 'pa_assignee_key', 'pa_assignee_type' ],
+			[ 'pa_page_id = 1' ],
+			[]
 		);
 	}
 
 	public function testGetForPage() {
 		$oData = $this->executeTask(
 			'edit',
-			array(
+			[
 				'pageId' => 1,
-				'pageAssignments' => array(
+				'pageAssignments' => [
 					'user/John',
 					'group/sysop'
-				)
-			)
+				]
+			]
 		);
 
 		$this->assertTrue( $oData->success, "API returned failure state" );
 
 		$oData = $this->executeTask(
 			'getForPage',
-			array(
+			[
 				'pageId' => 1
-			)
+			]
 		);
 
 		$this->assertTrue( $oData->success, "API returned failure state" );

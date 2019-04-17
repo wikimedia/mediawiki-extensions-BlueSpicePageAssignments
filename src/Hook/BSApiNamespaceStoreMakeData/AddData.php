@@ -10,7 +10,7 @@ class AddData extends BSApiNamespaceStoreMakeData {
 		$enabledNamespaces = $this->getConfig()->get(
 			'PageAssignmentsSecureEnabledNamespaces'
 		);
-		foreach( $this->results as &$result ) {
+		foreach ( $this->results as &$result ) {
 
 			$result['pageassignments-secure'] = [
 				'value' => in_array( $result[ 'id' ], $enabledNamespaces ),

@@ -1,7 +1,7 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
-Interface IAssignable {
+interface IAssignable {
 
 	/**
 	 * @return string

@@ -8,20 +8,20 @@ use BlueSpice\PageAssignments\Renderer\Assignment;
 class FetchPageAssignments extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function skipProcessing() {
-		if( $this->out->getTitle()->getArticleID() < 1 ) {
+		if ( $this->out->getTitle()->getArticleID() < 1 ) {
 			return true;
 		}
 
 		$factory = $this->getServices()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
-		if( !$factory->newFromTargetTitle( $this->out->getTitle() ) ) {
+		if ( !$factory->newFromTargetTitle( $this->out->getTitle() ) ) {
 			return true;
 		}
 		$assignments = $factory->newFromTargetTitle(
 			$this->out->getTitle()
 		)->getAssignments();
-		if( count( $assignments ) < 1 ) {
+		if ( count( $assignments ) < 1 ) {
 			return true;
 		}
 		return false;
@@ -35,7 +35,7 @@ class FetchPageAssignments extends \BlueSpice\Hook\BeforePageDisplay {
 
 		$assignments = [];
 		foreach ( $target->getAssignments() as $assignment ) {
-			if( !isset( $assignments[$assignment->getType()] ) ) {
+			if ( !isset( $assignments[$assignment->getType()] ) ) {
 				$assignments[$assignment->getType()] = [];
 			}
 			$assignments[$assignment->getType()][] = $this->makeEntry(
@@ -53,6 +53,7 @@ class FetchPageAssignments extends \BlueSpice\Hook\BeforePageDisplay {
 	/**
 	 *
 	 * @param IAssignment $assignment
+	 * @return \stdClass
 	 */
 	protected function makeEntry( IAssignment $assignment ) {
 		$stdClass = $assignment->toStdClass();
@@ -65,7 +66,7 @@ class FetchPageAssignments extends \BlueSpice\Hook\BeforePageDisplay {
 			$assignable->getRendererKey(),
 			new \BlueSpice\Renderer\Params( [
 				Assignment::PARAM_ASSIGNMENT => $assignment
-			])
+			] )
 		);
 		$stdClass->html = $renderer->render();
 		return $stdClass;

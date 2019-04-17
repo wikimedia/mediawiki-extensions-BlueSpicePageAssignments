@@ -4,9 +4,6 @@ namespace BlueSpice\PageAssignments\Renderer;
 use BlueSpice\PageAssignments\IAssignment;
 use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\Renderer\Params;
-use BlueSpice\DynamicFileDispatcher\Params as DFDParams;
-use BlueSpice\DynamicFileDispatcher\UserProfileImage;
-use BlueSpice\Services;
 
 class Assignment extends \BlueSpice\TemplateRenderer {
 	const PARAM_ASSIGNMENT = 'assignment';
@@ -19,6 +16,9 @@ class Assignment extends \BlueSpice\TemplateRenderer {
 
 	/**
 	 * Constructor
+	 * @param \Config $config
+	 * @param Params $params
+	 * @param LinkRenderer|null $linkRenderer
 	 */
 	public function __construct( \Config $config, Params $params, LinkRenderer $linkRenderer = null ) {
 		parent::__construct( $config, $params, $linkRenderer );
@@ -35,7 +35,7 @@ class Assignment extends \BlueSpice\TemplateRenderer {
 
 	protected function render_image( $val ) {
 		return \Html::element( 'span', [
-			'class' => "bs-icon-".$this->assignment->getType(),
+			'class' => "bs-icon-" . $this->assignment->getType(),
 		] );
 	}
 

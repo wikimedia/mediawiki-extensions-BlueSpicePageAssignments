@@ -6,23 +6,23 @@ class PageAssignmentsDashboardHooks {
 	 * Hook Handler for BSDashboardsUserDashboardPortalPortlets
 	 *
 	 * @param array &$aPortlets reference to array portlets
-	 * @return boolean always true to keep hook alive
+	 * @return bool always true to keep hook alive
 	 */
 	public static function onBSDashboardsUserDashboardPortalPortlets( &$aPortlets ) {
-		$aPortlets[] = array(
+		$aPortlets[] = [
 			'type'  => 'BS.PageAssignments.portlets.PageAssignmentsPortlet',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage(
 					'bs-pageassignments-yourassignments'
 				)->plain(),
-			),
+			],
 			'title' => wfMessage(
 				'bs-pageassignments-yourassignments'
 			)->plain(),
 			'description' => wfMessage(
 				'bs-pageassignments-yourassignmentsdesc'
 			)->plain(),
-		);
+		];
 
 		return true;
 	}
@@ -32,18 +32,18 @@ class PageAssignmentsDashboardHooks {
 	 *
 	 * @param object $oCaller caller instance
 	 * @param array &$aPortalConfig reference to array portlet configs
-	 * @param boolean $bIsDefault default
-	 * @return boolean always true to keep hook alive
+	 * @param bool $bIsDefault default
+	 * @return bool always true to keep hook alive
 	 */
 	public static function onBSDashboardsUserDashboardPortalConfig( $oCaller, &$aPortalConfig, $bIsDefault ) {
-		$aPortalConfig[0][] = array(
+		$aPortalConfig[0][] = [
 			'type' => 'BS.PageAssignments.portlets.PageAssignmentsPortlet',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage(
 					'bs-pageassignments-yourassignments'
 				)->plain(),
-			),
-		);
+			],
+		];
 
 		return true;
 	}

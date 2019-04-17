@@ -31,27 +31,27 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 		$this->insertPage( "Test", "Dummy content" );
 	}
 
-	protected function getStoreSchema () {
+	protected function getStoreSchema() {
 		return new Schema();
 	}
 
-	protected function createStoreFixtureData () {
+	protected function createStoreFixtureData() {
 		self::$userFixtures = new BSUserFixtures( $this );
 		return true;
 	}
 
-	protected function getModuleName () {
+	protected function getModuleName() {
 		return 'bs-pageassignable-store';
 	}
 
-	public function provideSingleFilterData () {
+	public function provideSingleFilterData() {
 		return [
 			'Filter by id' => [ 'string', 'ct', 'id', 'John', 1 ],
 			'Filter by text' => [ 'string', 'eq', 'text', 'Ringo S.', 1 ]
 		];
 	}
 
-	public function provideMultipleFilterData () {
+	public function provideMultipleFilterData() {
 		return [
 			'Filter by type and id' => [
 				[
@@ -74,7 +74,7 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	public function provideKeyItemData() {
-		return[
+		return [
 			'Test user John: text' => [ "text", "John L." ],
 			'Test user Paul: text' => [ "text", "Paul M." ]
 		];
@@ -88,11 +88,11 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 	protected function getAdditionalParams() {
 		return [ 'context' => \FormatJson::encode(
 			$this->makeContextParams()
-		)];
+		) ];
 	}
 
 	protected function makeContextParams() {
-		return (object) [
+		return (object)[
 			'wgAction' => "view",
 			'wgArticleId' => (int)\Title::newFromText( 'Test' )->getArticleID(),
 			'wgCanonicalNamespace' => "",

@@ -9,20 +9,19 @@ use BlueSpice\PageAssignments\Panel\Flyout;
 class AddFlyout extends SkinTemplateOutputPageBeforeExec {
 
 	protected function skipProcessing() {
-		if( $this->skin->getTitle()->exists() === false ) {
+		if ( $this->skin->getTitle()->exists() === false ) {
 			return true;
 		}
 		return false;
 	}
 
 	protected function doProcess() {
-
 		$this->mergeSkinDataArray(
 			SkinData::PAGE_DOCUMENTS_PANEL,
 			[
 				'pageassignments' => [
 					'position' => 20,
-					'callback' => function( $sktemplate ) {
+					'callback' => function ( $sktemplate ) {
 						return new Flyout( $sktemplate );
 					}
 				]

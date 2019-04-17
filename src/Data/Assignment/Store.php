@@ -13,6 +13,7 @@ class Store implements \BlueSpice\Data\IStore {
 	/**
 	 *
 	 * @param \IContextSource $context
+	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
 	 */
 	public function __construct( $context, $loadBalancer ) {
 		$this->context = $context;

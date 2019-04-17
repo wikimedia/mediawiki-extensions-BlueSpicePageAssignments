@@ -2,8 +2,6 @@
 
 namespace BlueSpice\PageAssignments\Notifications;
 
-use BlueSpice\PageAssignments\Notifications\PresentationModel;
-
 class Registrator {
 	public static function registerNotifications( \BlueSpice\NotificationManager $notificationsManager ) {
 		$notificationsManager->registerNotificationCategory( 'bs-pageassignments-action-cat' );
@@ -48,22 +46,22 @@ class Registrator {
 	 * That way users would get 2 mails for same event, but if not, then
 	 * we depend on EchoConnector
 	 *
-	 * @param $event
-	 * @param $users
+	 * @param \EchoEvent $event
+	 * @param array &$users
 	 */
 	public static function onEchoGetDefaultNotifiedUsers( $event, &$users ) {
-		switch ( $event->getType () ) {
+		switch ( $event->getType() ) {
 			case 'bs-edit':
 			case 'bs-move':
-				foreach( self::getAssignedUsers( $event->getTitle() ) as $id => $user ) {
+				foreach ( self::getAssignedUsers( $event->getTitle() ) as $id => $user ) {
 					$users[$id] = $user;
 				}
 				break;
 			case 'bs-delete':
 				$extra = $event->getExtra();
-				if( isset( $extra['title'] ) && $extra['title'] instanceof \Title ) {
+				if ( isset( $extra['title'] ) && $extra['title'] instanceof \Title ) {
 					$title = $extra['title'];
-					foreach( self::getAssignedUsers( $title ) as $id => $user ) {
+					foreach ( self::getAssignedUsers( $title ) as $id => $user ) {
 						$users[$id] = $user;
 					}
 				}
@@ -87,12 +85,12 @@ class Registrator {
 		$factory = \BlueSpice\Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
-		if( !$target = $factory->newFromTargetTitle( $title) ) {
+		if ( !$target = $factory->newFromTargetTitle( $title ) ) {
 			return [];
 		}
 
 		$affectedUsers = [];
-		foreach( $target->getAssignedUserIDs() as $id ) {
+		foreach ( $target->getAssignedUserIDs() as $id ) {
 			$affectedUsers[$id] = $target->getAssignmentsForUser(
 				\User::newFromId( $id )
 			);

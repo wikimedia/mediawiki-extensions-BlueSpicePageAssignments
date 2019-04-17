@@ -9,10 +9,10 @@ class SetValues extends NamespaceManagerEditNamespace {
 	protected function doProcess() {
 		$this->namespaceDefinition[$this->nsId]['pageassignments-secure']
 			= false;
-		if( $this->useInternalDefaults ) {
+		if ( $this->useInternalDefaults ) {
 			return true;
 		}
-		if( isset( $this->additionalSettings['pageassignments-secure'] ) ) {
+		if ( isset( $this->additionalSettings['pageassignments-secure'] ) ) {
 			$this->namespaceDefinition[$this->nsId]['pageassignments-secure']
 				= $this->additionalSettings['pageassignments-secure'];
 		}
