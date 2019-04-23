@@ -59,6 +59,7 @@
 	"bs-pageassignments-yourassignments": "Dina tilldelningar",
 	"bs-pageassignments-yourassignmentsdesc": "Lista över sidor du är tilldelad till.",
 	"right-pageassignable": "Syns i listan över användare som kan tilldelas",
+	"action-pageassignments": "redigera tilldelningarna för en sida",
 	"right-pageassignments": "Redigera tilldelningar för en sida",
 	"prefs-pageassign": "Tilldelning",
 	"bs-usagetracker-pageassignments": "sidor med tilldelningar",
