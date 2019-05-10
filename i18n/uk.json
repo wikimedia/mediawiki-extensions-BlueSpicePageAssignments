@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Piramidion"
+			"Piramidion",
+			"Ата"
 		]
 	},
 	"bs-pageassignments-desc": "Дозволяє Вам призначати користувачів або групи до певної сторінки",
@@ -58,7 +59,9 @@
 	"bs-pageassignments-pref-permissions": "Додати додаткові права для призначених користувачів",
 	"bs-pageassignments-yourassignments": "Ваші призначення",
 	"bs-pageassignments-yourassignmentsdesc": "Список сторінок, до яких Вас призначено.",
+	"action-pageassignable": "з'являється у списку призначуваних користувачів",
 	"right-pageassignable": "поява у списку користувачів, яких можна призначати",
+	"action-pageassignments": "редагування призначень сторінки",
 	"right-pageassignments": "редагування призначень сторінки",
 	"prefs-pageassign": "Призначення",
 	"bs-usagetracker-pageassignments": "сторінки з призначеннями",
