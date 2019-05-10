@@ -60,6 +60,9 @@
 			],
 			"LessVarsRegistry": {
 				"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
+			},
+			"PermissionLockdownRegistry": {
+				"pageassignments-secure": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Secure::getInstance"
 			}
 		},
 		"BlueSpicePageAssignments": {
@@ -335,7 +338,6 @@
 		"BSApiNamespaceStoreMakeData": "\\BlueSpice\\PageAssignments\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
 		"NamespaceManager::editNamespace": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerEditNamespace\\SetValues::callback",
 		"NamespaceManager::writeNamespaceConfiguration": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback",
-		"userCan": "\\BlueSpice\\PageAssignments\\Hook\\UserCan\\RemoveEditPermissionsOnSecure::callback",
 		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers"
 	},
 	"manifest_version": 2
