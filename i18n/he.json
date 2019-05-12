@@ -54,7 +54,6 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "הוסרת {{PLURAL:$5|מהקבוצה|מהקבוצות}} $4",
 	"notification-bs-pageassignments-user-group-remove-body": "$1 {{GENDER:$2|הסיר|הסירה}} אותך {{PLURAL:$5|מהקבוצה|מהקבוצות}} $4. נא לבדוק את השיוכים שלך בדף $3.",
 	"prefs-pageassignments": "שיוכי דפים",
-	"bs-pageassignments-pref-permissions": "הוספת הרשאות נוספות עבור משתמשים משויכים",
 	"bs-pageassignments-yourassignments": "השיוכים שלך",
 	"bs-pageassignments-yourassignmentsdesc": "רשימת הדפים {{GENDER:|שאתה משויך|שאת משויכת|שאתם משויכים}} אליהם.",
 	"right-pageassignable": "הופעה ברשימת המשתמשים שניתן לשייך",

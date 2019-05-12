@@ -59,7 +59,6 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "从{{PLURAL:$5|用户组}}$4中被移除",
 	"notification-bs-pageassignments-user-group-remove-body": "$1将您从{{PLURAL:$5|用户组}}$4中{{GENDER:$2|移除}}。请检查您在$3的分配。",
 	"prefs-pageassignments": "页面分配",
-	"bs-pageassignments-pref-permissions": "添加额外权限至被分配的用户",
 	"bs-pageassignments-yourassignments": "您的分配",
 	"bs-pageassignments-yourassignmentsdesc": "分配给您的页面列表。",
 	"action-pageassignable": "出现在可分配用户列表中",

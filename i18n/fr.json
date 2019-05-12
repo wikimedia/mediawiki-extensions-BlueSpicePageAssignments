@@ -6,7 +6,8 @@
 			"Samihuc",
 			"Verdy p",
 			"Urhixidur",
-			"Tartare"
+			"Tartare",
+			"Epok"
 		]
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d'affecter des utilisateurs ou groupes à une page",
@@ -60,7 +61,7 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "Retiré des membres {{PLURAL:$5|du groupe|des groupes}} $4",
 	"notification-bs-pageassignments-user-group-remove-body": "$1{{GENDER:$2||}} vous a retiré{{GENDER:||e}} d{{PLURAL:$5|u groupe|es groupes}} $4. Veuillez vérifier votre affectation sur $3.",
 	"prefs-pageassignments": "Affectations de pages",
-	"bs-pageassignments-pref-permissions": "Ajouter des permissions supplémentaires aux utilisateurs affectés",
+	"bs-pageassignments-pref-lockdowngroups": "Groupes verrouillés pour une page lorsque l'utilisateur n'est pas défini",
 	"bs-pageassignments-yourassignments": "Vos affectations",
 	"bs-pageassignments-yourassignmentsdesc": "Liste des pages auxquelles vous êtes affecté.",
 	"action-pageassignable": "apparaître dans la liste des utilisateurs assignables",
@@ -82,6 +83,8 @@
 	"bs-pageassignments-assignee-type-user": "Utilisateur",
 	"bs-pageassignments-assignee-type-group": "Groupe",
 	"bs-pageassignments-secure-nsm-label": "Affectations de pages sécurisées",
+	"bs-pageassignments-secure-lockdown-reason": "L'action \"$1\" n'est disponible que pour {{PLURAL:$2|l'utilisateur assigné|les utilisateurs assignés}} $3",
+	"bs-pageassignments-group-lockdown-reason": "Vous n'êtes pas assigné à la page $1",
 	"bs-pageassignments-nav-link-title-pageassignments": "Assignations de pages",
 	"bs-pageassignments-flyout-title": "Assignation de pages",
 	"bs-pageassignments-flyout-intro": "Vous pouvez assigner des utilisateurs ou des groupes à cette page ici. Ils seront informés des modifications et pourront obtenir des droits supplémentaires. Si activé, vous pouvez également leur demander de confirmer qu'ils ont lu la page.",

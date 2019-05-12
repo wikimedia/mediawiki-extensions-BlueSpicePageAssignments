@@ -55,7 +55,6 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "Togs bort från {{PLURAL:$5|gruppen|grupperna}} $4",
 	"notification-bs-pageassignments-user-group-remove-body": "$1 {{GENDER:$2|tog bort}} dig från {{PLURAL:$5|gruppen|grupperna}} $4. Se din tilldelning på $3.",
 	"prefs-pageassignments": "Sidtilldelningar",
-	"bs-pageassignments-pref-permissions": "Lägg till ytterligare behörigheter till tilldelade användare",
 	"bs-pageassignments-yourassignments": "Dina tilldelningar",
 	"bs-pageassignments-yourassignmentsdesc": "Lista över sidor du är tilldelad till.",
 	"right-pageassignable": "Syns i listan över användare som kan tilldelas",

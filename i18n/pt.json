@@ -57,7 +57,6 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "Removido {{PLURAL:$5|do grupo|dos grupos}} $4",
 	"notification-bs-pageassignments-user-group-remove-body": "$1 {{GENDER:$2|removeu}}-o {{PLURAL:$5|do grupo|dos grupos}} $4. Verifique as atribuições que lhe foram feitas em $3, por favor.",
 	"prefs-pageassignments": "Atribuições de páginas",
-	"bs-pageassignments-pref-permissions": "Dar permissões adicionais a utilizadores com atribuições de páginas",
 	"bs-pageassignments-yourassignments": "As suas atribuições de páginas",
 	"bs-pageassignments-yourassignmentsdesc": "Lista das páginas que lhe foram atribuídas.",
 	"action-pageassignable": "aparecer na lista de utilizadores atribuíveis",

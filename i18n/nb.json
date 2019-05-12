@@ -54,7 +54,6 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "Fjernet fra {{PLURAL:$5|gruppa|gruppene}} $4",
 	"notification-bs-pageassignments-user-group-remove-body": "$1 {{GENDER:$2|fjernet}} deg fra {{PLURAL:$5|gruppa|gruppene}} $4. Sjekk tildelingen din på $3.",
 	"prefs-pageassignments": "Sidetildelinger",
-	"bs-pageassignments-pref-permissions": "Legg til ekstra tillatelser til tildelte brukere",
 	"bs-pageassignments-yourassignments": "Dine tildelinger",
 	"bs-pageassignments-yourassignmentsdesc": "Liste over sider du er tildelt."
 }

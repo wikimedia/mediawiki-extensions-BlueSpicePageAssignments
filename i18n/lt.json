@@ -56,7 +56,6 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "Pašalintas iš {{PLURAL:$5|grupės|grupių}} $4",
 	"notification-bs-pageassignments-user-group-remove-body": "$1 {{GENDER:$2|pašalino}} jus iš {{PLURAL:$5|grupės|grupių}} $4. Prašome patikrinti savo užduotis $3.",
 	"prefs-pageassignments": "Puslapio užduotys",
-	"bs-pageassignments-pref-permissions": "Pridėti papildomus leidimus priskirtiems vartotojams",
 	"bs-pageassignments-yourassignments": "Jūsų užduotys",
 	"bs-pageassignments-yourassignmentsdesc": "Puslapių, prie kurių esate priskirtas, sąrašas.",
 	"right-pageassignable": "Rodyti priskiriamų vartotojų sąraše",

@@ -56,7 +56,6 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "Вилучено з {{PLURAL:$5|групи|груп}} $4",
 	"notification-bs-pageassignments-user-group-remove-body": "$1 {{GENDER:$2|вилучив|вилучила}} Вас із {{PLURAL:$5|групи|груп}} $4. Будь ласка, перевірте своє призначення на $3.",
 	"prefs-pageassignments": "Призначення до сторінок",
-	"bs-pageassignments-pref-permissions": "Додати додаткові права для призначених користувачів",
 	"bs-pageassignments-yourassignments": "Ваші призначення",
 	"bs-pageassignments-yourassignmentsdesc": "Список сторінок, до яких Вас призначено.",
 	"action-pageassignable": "з'являється у списку призначуваних користувачів",
