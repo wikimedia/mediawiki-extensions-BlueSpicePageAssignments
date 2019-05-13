@@ -1,4 +1,4 @@
-(function( mw, $, bs, d, undefined ){
+(function( mw, $, d, undefined ){
 	function _renderGrid() {
 		Ext.onReady(function(){
 			Ext.create( 'BS.PageAssignments.panel.Overview', {
@@ -15,4 +15,4 @@
 		_renderGrid();
 	}
 
-})( mediaWiki, jQuery, blueSpice, document );
+})( mediaWiki, jQuery, document );
