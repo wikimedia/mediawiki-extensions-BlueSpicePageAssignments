@@ -32,10 +32,10 @@ class PageAssignmentsBookmakerHooks {
 		$aAssignedUserNames = [];
 		$aAssignedGroupNames = [];
 
-		$assignmentFactory = Services::getInstance()->getService(
-			'BSPageAssignmentsAssignmentFactory'
-		);
-		$target = $assignmentFactory->newFromTargetTitle( $oTitle );
+		$target = static::getFactory()->newFromTargetTitle( $oTitle );
+		if ( $target instanceof \BlueSpice\PageAssignments\ITarget === false ) {
+			return true;
+		}
 
 		foreach ( $target->getAssignments() as $assignment ) {
 			if ( $assignment->getType() === 'user' ) {
@@ -64,10 +64,11 @@ class PageAssignmentsBookmakerHooks {
 	public static function onBSBookshelfManagerGetBookDataRow( $oBookTitle, $oBookRow ) {
 		$oBookRow->assignments = [];
 		$aTexts = [];
-		$assignmentFactory = Services::getInstance()->getService(
-			'BSPageAssignmentsAssignmentFactory'
-		);
-		$target = $assignmentFactory->newFromTargetTitle( $oBookTitle );
+
+		$target = static::getFactory()->newFromTargetTitle( $oBookTitle );
+		if ( $target instanceof \BlueSpice\PageAssignments\ITarget === false ) {
+			return true;
+		}
 
 		foreach ( $target->getAssignments() as $assignment ) {
 			$oBookRow->assignments[] = $assignment->toStdClass();
@@ -75,5 +76,15 @@ class PageAssignmentsBookmakerHooks {
 		}
 		$oBookRow->flat_assignments = implode( '', $aTexts );
 		return true;
+	}
+
+	/**
+	 *
+	 * @return BlueSpice\PageAssignments\AssignmentFactory
+	 */
+	private static function getFactory() {
+		return Services::getInstance()->getService(
+			'BSPageAssignmentsAssignmentFactory'
+		);
 	}
 }
