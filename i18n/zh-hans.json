@@ -5,7 +5,8 @@
 			"Endermoon",
 			"A Chinese Wikipedian",
 			"WQL",
-			"佛壁灯"
+			"佛壁灯",
+			"科劳"
 		]
 	},
 	"bs-pageassignments-desc": "使您可以将用户或用户组分配给页面",
@@ -80,6 +81,8 @@
 	"bs-pageassignments-assignee-type-user": "用户",
 	"bs-pageassignments-assignee-type-group": "组",
 	"bs-pageassignments-secure-nsm-label": "担保页面分配",
+	"bs-pageassignments-secure-lockdown-reason": "仅{{PLURAL:$2|assignee|assignees}} $3有权限进行此操作",
+	"bs-pageassignments-group-lockdown-reason": "您没有查看页面$1的权限",
 	"bs-pageassignments-nav-link-title-pageassignments": "页面分配",
 	"bs-pageassignments-flyout-title": "页面分配",
 	"bs-pageassignments-flyout-intro": "您可以在此处将用户或用户组分配到此页。他们将被告知更改，并可以获得额外的权利。如果被激活，阁下也可以要求他们确认他们已经阅读了页面。",

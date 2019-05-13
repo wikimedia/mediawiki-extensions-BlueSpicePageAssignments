@@ -77,6 +77,7 @@
 	"bs-pageassignments-assignee-type-user": "使用者",
 	"bs-pageassignments-assignee-type-group": "群組",
 	"bs-pageassignments-secure-nsm-label": "安全頁面分配",
+	"bs-pageassignments-group-lockdown-reason": "您未分配到頁面$1",
 	"bs-pageassignments-nav-link-title-pageassignments": "頁面分配",
 	"bs-pageassignments-flyout-title": "頁面分配",
 	"bs-pageassignments-flyout-intro": "您可以分配使用者或群組至此頁面。他們會被告知並取得額外權限。如有啟用，您還可以要求他們確認已讀過頁面。",

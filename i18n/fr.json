@@ -83,7 +83,7 @@
 	"bs-pageassignments-assignee-type-user": "Utilisateur",
 	"bs-pageassignments-assignee-type-group": "Groupe",
 	"bs-pageassignments-secure-nsm-label": "Affectations de pages sécurisées",
-	"bs-pageassignments-secure-lockdown-reason": "L'action \"$1\" n'est disponible que pour {{PLURAL:$2|l'utilisateur assigné|les utilisateurs assignés}} $3",
+	"bs-pageassignments-secure-lockdown-reason": "L'action « $1 » n'est disponible que pour {{PLURAL:$2|l'utilisateur assigné|les utilisateurs assignés}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Vous n'êtes pas assigné à la page $1",
 	"bs-pageassignments-nav-link-title-pageassignments": "Assignations de pages",
 	"bs-pageassignments-flyout-title": "Assignation de pages",
