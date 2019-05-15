@@ -49,8 +49,8 @@
 				}
 			},
 			"RendererRegistry": {
-				"assignment": "\\BlueSpice\\PageAssignments\\Renderer\\Assignment",
-				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User"
+				"assignment": "\\BlueSpice\\PageAssignments\\Renderer\\Assignment::factory",
+				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User::factory"
 			},
 			"NotificationRegistrationFunctions": [
 				"\\BlueSpice\\PageAssignments\\Notifications\\Registrator::registerNotifications"
