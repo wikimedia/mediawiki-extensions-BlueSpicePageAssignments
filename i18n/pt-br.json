@@ -79,6 +79,7 @@
 	"bs-pageassignments-assignee-type-user": "Usuário",
 	"bs-pageassignments-assignee-type-group": "Grupo",
 	"bs-pageassignments-secure-nsm-label": "Atribuições seguras de páginas",
+	"bs-pageassignments-secure-lockdown-reason": "A operação \"$1\" só está disponível para {{PLURAL:$2|o usuário atribuído|os usuários atribuídos}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Você não está atribuído à página $1",
 	"bs-pageassignments-nav-link-title-pageassignments": "Atribuições de páginas",
 	"bs-pageassignments-flyout-title": "Atribuições de páginas",
