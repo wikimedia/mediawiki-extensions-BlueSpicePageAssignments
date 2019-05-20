@@ -3,7 +3,8 @@
 		"authors": [
 			"Irus",
 			"Vlad5250",
-			"Romanko Mikhail"
+			"Romanko Mikhail",
+			"1233qwer1234qwer4"
 		]
 	},
 	"pageassignments": "Назначения",
@@ -15,6 +16,8 @@
 	"bs-pageassignments-api-error": "Произошла ошибка",
 	"logeventslist-bs-pageassignments-log": "Журнал назначений",
 	"bs-usagetracker-pageassignments": "страницы с заданиями",
+	"bs-pageassignments-assignee-special-everyone-label": "Каждый",
+	"bs-pageassignments-assignee-type-everyone": "Каждый",
 	"bs-pageassignments-assignee-type-user": "Участник",
 	"bs-pageassignments-assignee-type-group": "Группа",
 	"bs-pageassignments-nav-link-title-pageassignments": "Назначения для страницы",

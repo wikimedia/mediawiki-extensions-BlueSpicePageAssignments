@@ -9,6 +9,9 @@
 	"bs-pageassignments-dlg-title": "Assegnaziune",
 	"bs-pageassignments-dlg-fldlabel": "Assegnaziune",
 	"bs-pageassignments-column-assignments": "Assegnaziune",
+	"notification-bs-pageassignments-page-move-subject": "$2 ha state spustate",
+	"notification-bs-pageassignments-page-edit-subject": "$2 ha state cangiate",
+	"notification-bs-pageassignments-page-delete-subject": "$2 ha state scangellate",
 	"prefs-pageassign": "Assegnazione",
 	"bs-pageassignments-assignee-special-everyone-label": "Tutte"
 }
