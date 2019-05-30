@@ -82,6 +82,11 @@
 			"Handlers": [
 				"\\BlueSpice\\PageAssignments\\Privacy\\Handler"
 			]
+		},
+		"BlueSpiceSMWConnector": {
+			"ExtraPropertyRegistry": {
+				"pageassignment": "\\BlueSpice\\PageAssignments\\PageAssignmentsPropertyValueProvider::factory"
+			}
 		}
 	},
 	"GroupPermissions": {
@@ -102,7 +107,6 @@
 		"pageassignable",
 		"pageassignments"
 	],
-	"callback": "\\BlueSpice\\PageAssignments\\Extension::onRegistration",
 	"DefaultUserOptions": {
 		"echo-subscriptions-web-bs-pageassignments-action-cat": true,
 		"echo-subscriptions-email-bs-pageassignments-action-cat": true
