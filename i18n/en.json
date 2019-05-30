@@ -63,6 +63,8 @@
 	"action-pageassignments": "edit the assignments of a page",
 	"right-pageassignments": "Edit the assignments of a page",
 	"prefs-pageassign": "Assignment",
+	"bs-pageassignments-sesp-pageassignments-alias": "Assignment",
+	"bs-pageassignments-sesp-pageassignments-desc": "Assignment",
 	"bs-usagetracker-pageassignments": "pages with assignments",
 	"apihelp-bs-pageassignable-store-description": "Returns the list of assignees",
 	"apihelp-bs-pageassignable-store-summary": "Returns the list of assignees",
