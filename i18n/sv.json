@@ -61,6 +61,8 @@
 	"action-pageassignments": "redigera tilldelningarna för en sida",
 	"right-pageassignments": "Redigera tilldelningar för en sida",
 	"prefs-pageassign": "Tilldelning",
+	"bs-pageassignments-sesp-pageassignments-alias": "Tilldelning",
+	"bs-pageassignments-sesp-pageassignments-desc": "Tilldelning",
 	"bs-usagetracker-pageassignments": "sidor med tilldelningar",
 	"apihelp-bs-pageassignable-store-description": "Returnerar listan över tilldelade användare",
 	"apihelp-bs-pageassignable-store-summary": "Returnerar listan över tilldelade användare",

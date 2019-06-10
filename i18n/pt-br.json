@@ -65,6 +65,8 @@
 	"action-pageassignments": "editar as atribuições de uma página",
 	"right-pageassignments": "Editar as atribuições de uma página",
 	"prefs-pageassign": "Atribuição",
+	"bs-pageassignments-sesp-pageassignments-alias": "Tarefa",
+	"bs-pageassignments-sesp-pageassignments-desc": "Tarefa",
 	"bs-usagetracker-pageassignments": "páginas atribuídas",
 	"apihelp-bs-pageassignable-store-description": "Devolve a lista daqueles a quem foram atribuídas páginas",
 	"apihelp-bs-pageassignable-store-summary": "Devolve a lista daqueles a quem foram atribuídas páginas",

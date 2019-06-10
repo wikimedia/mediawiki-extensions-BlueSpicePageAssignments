@@ -69,6 +69,8 @@
 	"action-pageassignments": "modifier l'assignation d'une page",
 	"right-pageassignments": "Modifier les affectations d'une page",
 	"prefs-pageassign": "Affectation",
+	"bs-pageassignments-sesp-pageassignments-alias": "Affectation",
+	"bs-pageassignments-sesp-pageassignments-desc": "Affectation",
 	"bs-usagetracker-pageassignments": "pages avec des affectations",
 	"apihelp-bs-pageassignable-store-description": "Retourne la liste des ayants droit",
 	"apihelp-bs-pageassignable-store-summary": "Retourne la liste des ayants droit",

@@ -66,6 +66,8 @@
 	"action-pageassignments": "تحرير مهام صفحة",
 	"right-pageassignments": "تحرير التعيينات للصفحة",
 	"prefs-pageassign": "مهمة",
+	"bs-pageassignments-sesp-pageassignments-alias": "تعيين",
+	"bs-pageassignments-sesp-pageassignments-desc": "تعيين",
 	"bs-usagetracker-pageassignments": "صفحات بتعيينات",
 	"apihelp-bs-pageassignable-store-description": "إرجاع قائمة التعيينات",
 	"apihelp-bs-pageassignable-store-summary": "إرجاع قائمة التعيينات",
