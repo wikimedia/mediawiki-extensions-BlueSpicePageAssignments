@@ -2,6 +2,12 @@
 
 class PageAssignmentsHooks {
 
+	/**
+	 *
+	 * @param array &$aPersonal_urls
+	 * @param \Title &$oTitle
+	 * @return bool
+	 */
 	public static function onPersonalUrls( &$aPersonal_urls, &$oTitle ) {
 		$oUser = RequestContext::getMain()->getUser();
 		if ( $oUser->isLoggedIn() ) {
@@ -72,7 +78,8 @@ class PageAssignmentsHooks {
 	 * @param ManualLogEntry $logEntry
 	 * @return bool
 	 */
-	public static function onArticleDeleteComplete( &$wikiPage, &$user, $reason, $id, $content, $logEntry ) {
+	public static function onArticleDeleteComplete( &$wikiPage, &$user, $reason,
+		$id, $content, $logEntry ) {
 		$dbr = wfGetDB( DB_MASTER );
 		$dbr->delete(
 			'bs_pageassignments',
@@ -109,7 +116,8 @@ class PageAssignmentsHooks {
 	 * @param User $oPerformer
 	 * @return bool
 	 */
-	public static function onBSUserManagerAfterDeleteUser( $oUserManager, $oUser, &$oStatus, $oPerformer ) {
+	public static function onBSUserManagerAfterDeleteUser( $oUserManager, $oUser,
+		&$oStatus, $oPerformer ) {
 		$dbr = wfGetDB( DB_MASTER );
 		$dbr->delete(
 			'bs_pageassignments',

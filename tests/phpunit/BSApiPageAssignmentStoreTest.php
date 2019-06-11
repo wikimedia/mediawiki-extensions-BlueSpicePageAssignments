@@ -13,8 +13,16 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  * @group BlueSpicePageAssignments
  */
 class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
+	/**
+	 *
+	 * @var int
+	 */
 	protected $iFixtureTotal = 7;
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $aPages = [
 		'UT_PageAssignmentStore_Test' => [ 'key' => 'sysop', 'type' => 'group' ],
 		'UT_PageAssignmentStore_Test2' => [ 'key' => 'bureaucrat', 'type' => 'group' ],
@@ -24,10 +32,18 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 		'UT_PageAssignmentStore_Test6' => [ 'key' => 'sysop', 'type' => 'group' ]
 	];
 
+	/**
+	 *
+	 * @return true
+	 */
 	protected function skipAssertTotal() {
 		return true;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getStoreSchema() {
 		return [
 			'page_id' => [
@@ -42,6 +58,10 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 		];
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function createStoreFixtureData() {
 		$dbw = $this->db;
 
@@ -50,26 +70,53 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 			$aRes = $this->insertPage( $sPage );
 			$iPageId = $aRes['id'];
 			$this->assertGreaterThan( 0, $iPageId );
-			$dbw->insert( 'bs_pageassignments',
-				[ 'pa_page_id' => $iPageId, 'pa_assignee_key' => $aData['key'], 'pa_assignee_type' => $aData['type'], 'pa_position' => $iCount ]
-			);
+			$dbw->insert( 'bs_pageassignments', [
+				'pa_page_id' => $iPageId,
+				'pa_assignee_key' => $aData['key'],
+				'pa_assignee_type' => $aData['type'],
+				'pa_position' => $iCount
+			] );
 
 			$iCount++;
 		}
 		return true;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getModuleName() {
 		return 'bs-pageassignment-store';
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function provideSingleFilterData() {
 		return [
-			'Filter by page_prefixedtext' => [ 'string', 'ct', 'page_prefixedtext', "UT PageAssignmentStore Test" , 4 ],
-			'Filter by page_prefixedtext' => [ 'string', 'ct', 'page_prefixedtext', "UT PageAssignmentStore Test3" , 1 ]
+			'Filter by page_prefixedtext' => [
+				'string',
+				'ct',
+				'page_prefixedtext',
+				"UT PageAssignmentStore Test",
+				4
+			],
+			'Filter by page_prefixedtext' => [
+				'string',
+				'ct',
+				'page_prefixedtext',
+				"UT PageAssignmentStore Test3",
+				1
+			]
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function provideMultipleFilterData() {
 		return [
 			'Filter by page_prefixedtext and assignment' => [

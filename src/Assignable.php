@@ -33,10 +33,18 @@ abstract class Assignable implements IAssignable {
 		$this->context = $context;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getType() {
 		return $this->type;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getRendererKey() {
 		return "assignment";
 	}

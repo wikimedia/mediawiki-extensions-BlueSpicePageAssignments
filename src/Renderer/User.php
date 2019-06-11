@@ -13,6 +13,11 @@ class User extends Assignment {
 	 */
 	protected $assignment = null;
 
+	/**
+	 *
+	 * @param mixed $val
+	 * @return mixed
+	 */
 	protected function render_image( $val ) {
 		$renderer = Services::getInstance()->getBSRendererFactory()->get(
 			'userimage',

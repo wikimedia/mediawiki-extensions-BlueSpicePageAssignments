@@ -1,6 +1,10 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
+use Config;
+use Status;
+use Title;
+use User;
 use BlueSpice\Data\RecordSet;
 use BlueSpice\Services;
 
@@ -8,7 +12,7 @@ class TitleTarget implements ITarget {
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
@@ -26,23 +30,30 @@ class TitleTarget implements ITarget {
 
 	/**
 	 *
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param array $assignments
-	 * @param \Title $title
+	 * @param Title $title
 	 */
-	protected function __construct( \Config $config, array $assignments, \Title $title ) {
+	protected function __construct( Config $config, array $assignments, Title $title ) {
 		$this->config = $config;
 		$this->assignments = $assignments;
 		$this->title = $title;
 	}
 
-	public static function factory( \Config $config, array $assignments, \Title $title ) {
+	/**
+	 *
+	 * @param Config $config
+	 * @param array $assignments
+	 * @param Title $title
+	 * @return \static
+	 */
+	public static function factory( Config $config, array $assignments, Title $title ) {
 		return new static( $config, $assignments, $title );
 	}
 
 	/**
 	 *
-	 * @return \BlueSpice\PageAssignments\AssignmentFactory
+	 * @return AssignmentFactory
 	 */
 	public function getFactory() {
 		return Services::getInstance()->getService(
@@ -60,7 +71,7 @@ class TitleTarget implements ITarget {
 
 	/**
 	 *
-	 * @return \Title
+	 * @return Title
 	 */
 	public function getTitle() {
 		return $this->title;
@@ -68,10 +79,10 @@ class TitleTarget implements ITarget {
 
 	/**
 	 *
-	 * @param \User $user
+	 * @param User $user
 	 * @return bool
 	 */
-	public function isUserAssigned( \User $user ) {
+	public function isUserAssigned( User $user ) {
 		if ( $user->isAnon() ) {
 			return false;
 		}
@@ -92,10 +103,10 @@ class TitleTarget implements ITarget {
 
 	/**
 	 *
-	 * @param \User $user
+	 * @param User $user
 	 * @return IAssignment[]
 	 */
-	public function getAssignmentsForUser( \User $user ) {
+	public function getAssignmentsForUser( User $user ) {
 		if ( $user->isAnon() ) {
 			return [];
 		}
@@ -128,10 +139,10 @@ class TitleTarget implements ITarget {
 	/**
 	 *
 	 * @param IAssignment[] $assignments
-	 * @return \Status
+	 * @return Status
 	 */
 	public function save( array $assignments = [] ) {
-		$status = \Status::newGood();
+		$status = Status::newGood();
 		$removeRecords = $writeRecords = [];
 		foreach ( $this->diff( $this->getAssignments(), $assignments ) as $assignment ) {
 			$removeRecords[] = $assignment->getRecord();

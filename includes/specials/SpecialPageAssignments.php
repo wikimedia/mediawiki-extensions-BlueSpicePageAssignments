@@ -3,8 +3,25 @@
 use BlueSpice\Special\ManagerBase;
 
 class SpecialPageAssignments extends ManagerBase {
-	public function __construct( $name = '', $restriction = '', $listed = true, $function = false, $file = 'default', $includable = false ) {
-		parent::__construct( 'PageAssignments', $restriction, $listed, $function, $file, $includable );
+	/**
+	 *
+	 * @param string $name
+	 * @param string $restriction
+	 * @param bool $listed
+	 * @param bool $function
+	 * @param string $file
+	 * @param bool $includable
+	 */
+	public function __construct( $name = '', $restriction = '', $listed = true,
+		$function = false, $file = 'default', $includable = false ) {
+		parent::__construct(
+			'PageAssignments',
+			$restriction,
+			$listed,
+			$function,
+			$file,
+			$includable
+		);
 	}
 
 	/**
@@ -23,6 +40,10 @@ class SpecialPageAssignments extends ManagerBase {
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getJSVars() {
 		$aDeps = [];
 		Hooks::run( 'BSPageAssignmentsOverview', [ $this, &$aDeps ] );

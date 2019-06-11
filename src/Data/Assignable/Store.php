@@ -2,6 +2,8 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable;
 
+use Exception;
+
 class Store implements \BlueSpice\Data\IStore {
 	/**
 	 *
@@ -19,10 +21,18 @@ class Store implements \BlueSpice\Data\IStore {
 		$this->loadBalancer = $loadBalancer;
 	}
 
+	/**
+	 *
+	 * @return Reader
+	 */
 	public function getReader() {
 		return new Reader( $this->loadBalancer, $this->context );
 	}
 
+	/**
+	 *
+	 * @throws Exception
+	 */
 	public function getWriter() {
 		throw new Exception( 'This store does not support writing!' );
 	}
