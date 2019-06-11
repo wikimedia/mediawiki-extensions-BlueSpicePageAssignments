@@ -52,6 +52,10 @@ class AssignmentChangeAdd extends EchoEventPresentationModel {
 		];
 	}
 
+	/**
+	 *
+	 * @return \Message
+	 */
 	public function getBodyMessage() {
 		$content = $this->getBodyMessageContent();
 		$msg = $this->msg( $content['key'] );
@@ -66,6 +70,10 @@ class AssignmentChangeAdd extends EchoEventPresentationModel {
 		return $msg;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getSecondaryLinks() {
 		if ( $this->isBundled() ) {
 			// For the bundle, we don't need secondary actions

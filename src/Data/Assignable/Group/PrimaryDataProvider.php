@@ -58,6 +58,11 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 		return $this->data;
 	}
 
+	/**
+	 *
+	 * @param string $groupname
+	 * @return null
+	 */
 	protected function appendRowToData( $groupname ) {
 		$assignmentFactory = Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
@@ -69,7 +74,8 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 			$this->context->getTitle()
 		);
 		if ( !$assignment instanceof \BlueSpice\PageAssignments\IAssignment ) {
-			return; // :(
+			// :(
+			return;
 		}
 
 		if ( $this->params->getQuery() !== '' ) {

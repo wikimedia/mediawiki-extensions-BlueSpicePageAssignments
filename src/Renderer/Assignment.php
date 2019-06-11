@@ -49,6 +49,11 @@ class Assignment extends \BlueSpice\TemplateRenderer {
 		);
 	}
 
+	/**
+	 *
+	 * @param mixed $val
+	 * @return mixed
+	 */
 	protected function render_image( $val ) {
 		return \Html::element( 'span', [
 			'class' => "bs-icon-" . $this->assignment->getType(),

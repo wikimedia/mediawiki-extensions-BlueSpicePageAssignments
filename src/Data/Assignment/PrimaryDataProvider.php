@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignment;
 
-use \BlueSpice\Data\IPrimaryDataProvider;
+use BlueSpice\Data\IPrimaryDataProvider;
 use BlueSpice\Data\FilterFinder;
 use BlueSpice\Data\Filter;
 use BlueSpice\PageAssignments\Data\Schema;
@@ -53,6 +53,10 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 		return $this->data;
 	}
 
+	/**
+	 *
+	 * @param \stdClass $row
+	 */
 	protected function appendRowToData( $row ) {
 		$this->data[] = new Record( (object)[
 			Record::PAGE_ID => $row->{Record::PAGE_ID},

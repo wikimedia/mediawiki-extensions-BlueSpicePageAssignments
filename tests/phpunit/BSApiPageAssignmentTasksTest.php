@@ -30,10 +30,13 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 		return 'bs-pageassignment-tasks';
 	}
 
-	function getTokens() {
+	public function getTokens() {
 		return $this->getTokenList( self::$users[ 'sysop' ] );
 	}
 
+	/**
+	 * @covers \BlueSpice\PageAssignments\Api\Task\PageAssignments::task_edit
+	 */
 	public function testEdit() {
 		$oData = $this->executeTask(
 			'edit',
@@ -76,6 +79,9 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 		);
 	}
 
+	/**
+	 * @covers \BlueSpice\PageAssignments\Api\Task\PageAssignments::task_getForPage
+	 */
 	public function testGetForPage() {
 		$oData = $this->executeTask(
 			'edit',
@@ -103,12 +109,40 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 
 		$aAssignment = $oData->payload[0];
 
-		$this->assertArrayHasKey( Record::ASSIGNEE_TYPE, $aAssignment, "Assignment type is missing" );
-		$this->assertEquals( 'user', $aAssignment[Record::ASSIGNEE_TYPE], "Assignment type is not 'user'" );
-		$this->assertArrayHasKey( Record::ID, $aAssignment, "Assignment id is missing" );
-		$this->assertEquals( 'user/John', $aAssignment[Record::ID], "Assignment id is not 'user/John'" );
-		$this->assertArrayHasKey( Record::TEXT, $aAssignment, "Assignment text is missing" );
-		$this->assertEquals( 'John L.', $aAssignment[Record::TEXT], "Assignment text is not 'John L.'" );
-		$this->assertArrayHasKey( Record::ANCHOR, $aAssignment, "Assignment anchor is missing" );
+		$this->assertArrayHasKey(
+			Record::ASSIGNEE_TYPE,
+			$aAssignment,
+			"Assignment type is missing"
+		);
+		$this->assertEquals(
+			'user',
+			$aAssignment[Record::ASSIGNEE_TYPE],
+			"Assignment type is not 'user'"
+		);
+		$this->assertArrayHasKey(
+			Record::ID,
+			$aAssignment,
+			"Assignment id is missing"
+		);
+		$this->assertEquals(
+			'user/John',
+			$aAssignment[Record::ID],
+			"Assignment id is not 'user/John'"
+		);
+		$this->assertArrayHasKey(
+			Record::TEXT,
+			$aAssignment,
+			"Assignment text is missing"
+		);
+		$this->assertEquals(
+			'John L.',
+			$aAssignment[Record::TEXT],
+			"Assignment text is not 'John L.'"
+		);
+		$this->assertArrayHasKey(
+			Record::ANCHOR,
+			$aAssignment,
+			"Assignment anchor is missing"
+		);
 	}
 }

@@ -2,27 +2,28 @@
 
 namespace BlueSpice\PageAssignments\Panel;
 
+use Message;
 use BlueSpice\Calumma\Panel\BasePanel;
 use BlueSpice\Calumma\IFlyout;
 
 class Flyout extends BasePanel implements IFlyout {
 
 	/**
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getFlyoutTitleMessage() {
 		return wfMessage( 'bs-pageassignments-flyout-title' );
 	}
 
 	/**
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getFlyoutIntroMessage() {
 		return wfMessage( 'bs-pageassignments-flyout-intro' );
 	}
 
 	/**
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getTitleMessage() {
 		return wfMessage( 'bs-pageassignments-nav-link-title-pageassignments' );
@@ -35,10 +36,18 @@ class Flyout extends BasePanel implements IFlyout {
 		return '';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getTriggerCallbackFunctionName() {
 		return 'bs.pageassignments.flyoutCallback';
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getTriggerRLDependencies() {
 		return [ 'ext.bluespice.pageassignments.flyout' ];
 	}

@@ -52,6 +52,10 @@ class GroupsRemove extends EchoEventPresentationModel {
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getSecondaryLinks() {
 		if ( $this->isBundled() ) {
 			// For the bundle, we don't need secondary actions

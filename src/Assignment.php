@@ -1,6 +1,8 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
+use Config;
+use Title;
 use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\PageAssignments\Data\Record;
 
@@ -8,7 +10,7 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
@@ -44,13 +46,14 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 
 	/**
 	 *
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param LinkRenderer $linkRenderer
-	 * @param \Title $title
+	 * @param Title $title
 	 * @param string $type
 	 * @param string $key
 	 */
-	public function __construct( \Config $config, LinkRenderer $linkRenderer, \Title $title, $type, $key ) {
+	public function __construct( Config $config, LinkRenderer $linkRenderer,
+		Title $title, $type, $key ) {
 		$this->config = $config;
 		$this->title = $title;
 		$this->linkRenderer = $linkRenderer;
@@ -58,12 +61,20 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 		$this->type = $type;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function jsonSerialize() {
 		return $this->getRecord()->jsonSerialize();
 	}
 
-	// Needed for ExtJSStoreBase implementation
+	/**
+	 *
+	 * @return \stdClass
+	 */
 	public function toStdClass() {
+		// Needed for ExtJSStoreBase implementation
 		return (object)$this->jsonSerialize();
 	}
 
@@ -72,14 +83,26 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	 */
 	abstract protected function makeAnchor();
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getType() {
 		return $this->type;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getKey() {
 		return $this->key;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getAnchor() {
 		if ( $this->anchor ) {
 			return $this->anchor;
@@ -88,6 +111,10 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 		return $this->anchor;
 	}
 
+	/**
+	 *
+	 * @return Record
+	 */
 	public function getRecord() {
 		return new Record( (object)[
 			Record::TEXT => $this->getText(),
@@ -102,16 +129,24 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 
 	/**
 	 *
-	 * @return \Title
+	 * @return Title
 	 */
 	public function getTitle() {
 		return $this->title;
 	}
 
+	/**
+	 *
+	 * @return int
+	 */
 	public function getPosition() {
 		return 0;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getId() {
 		return "{$this->getType()}/{$this->getKey()}";
 	}

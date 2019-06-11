@@ -23,6 +23,11 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 		parent::__construct( $db );
 	}
 
+	/**
+	 *
+	 * @param \stdClass $row
+	 * @return null
+	 */
 	protected function appendRowToData( $row ) {
 		if ( $this->params->getQuery() !== '' ) {
 			$bApply = \BsStringHelper::filter(
@@ -39,7 +44,8 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 			}
 		}
 
-		if ( !$user = \User::newFromId( $row->{Record::ID} ) ) {
+		$user = \User::newFromId( $row->{Record::ID} );
+		if ( !$user ) {
 			return;
 		}
 
@@ -55,7 +61,8 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 			$this->context->getTitle()
 		);
 		if ( !$assignment instanceof \BlueSpice\PageAssignments\IAssignment ) {
-			return; // :(
+			// :(
+			return;
 		}
 
 		$this->data[] = $assignment->getRecord();

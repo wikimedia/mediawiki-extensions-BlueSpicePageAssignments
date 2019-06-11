@@ -1,39 +1,43 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
+use Config;
+use Title;
+use User;
+
 interface ITarget {
 	/**
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param array $assignments
-	 * @param \Title $title
+	 * @param Title $title
 	 * @return ITarget
 	 */
-	static function factory( \Config $config, array $assignments, \Title $title );
+	public static function factory( Config $config, array $assignments, Title $title );
 
 	/**
 	 *
-	 * @return \BlueSpice\PageAssignments\AssignmentFactory
+	 * @return AssignmentFactory
 	 */
-	function getFactory();
+	public function getFactory();
 
 	/**
 	 *
 	 * @return IAssignment[]
 	 */
-	function getAssignments();
+	public function getAssignments();
 
 	/**
 	 *
-	 * @return \Title
+	 * @return Title
 	 */
-	function getTitle();
+	public function getTitle();
 
 	/**
 	 *
-	 * @param \User $user
-	 * @return boolean
+	 * @param User $user
+	 * @return bool
 	 */
-	public function isUserAssigned( \User $user );
+	public function isUserAssigned( User $user );
 
 	/**
 	 *
@@ -43,10 +47,10 @@ interface ITarget {
 
 	/**
 	 *
-	 * @param \User $user
+	 * @param User $user
 	 * @return IAssignment[]
 	 */
-	public function getAssignmentsForUser( \User $user );
+	public function getAssignmentsForUser( User $user );
 
 	/**
 	 *
