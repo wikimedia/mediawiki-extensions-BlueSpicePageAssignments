@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2"
+			"Guycn2",
+			"Steeve815"
 		]
 	},
 	"bs-pageassignments-desc": "מתן אפשרות לשיוך משתמשים או קבוצות לדפים",
@@ -24,6 +25,7 @@
 	"log-name-bs-pageassignments": "יומן שיוכים",
 	"log-description-bs-pageassignments": "יומן זה מציג את השינויים בשיוכים שבדפים.",
 	"log-show-hide-bs-pageassignments": "$1 יומן שיוכים",
+	"logeventslist-bs-pageassignments-log": "יומן שיוכים",
 	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|שייך|שייכה}} את הדף \"$3\" {{GENDER:$4|למשתמש|למשתמשת}} \"$4\"",
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|הסיר|הסירה}} את השיוך של הדף \"$3\" {{GENDER:$4|למשתמש|למשתמשת}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|שייך|שייכה}} את הקבוצה \"$4\" לדף \"$3\"",
