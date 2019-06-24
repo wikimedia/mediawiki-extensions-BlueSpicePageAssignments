@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"pageassignments": "Доделувања",
+	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Дополнителни дозволи за доделени корисници",
+	"bs-pageassignments-dlg-title": "Доделувања",
+	"bs-pageassignments-dlg-fldlabel": "Доделувања",
+	"bs-pageassignments-menu-label": "Уреди доделување",
+	"bs-pageassignments-action-apiedit-description": "Уреди доделувања на $1",
+	"bs-pageassignments-column-assignments": "Доделувања",
+	"bs-pageassignments-no-assignments": "Нема доделувања",
+	"bs-pageassignments-action-log": "Дневник на доделувања",
+	"bs-pageassignments-api-error": "Се појави грешка",
+	"log-name-bs-pageassignments": "Дневник на доделувања",
+	"log-description-bs-pageassignments": "Дневник на измените во доделувањата на страници",
+	"log-show-hide-bs-pageassignments": "$1 Дневник на доделувања",
+	"logeventslist-bs-pageassignments-log": "Дневник на доделувања",
+	"notification-bs-pageassignments-assignment-change-remove-subject": "Отстранување на доделувањето до $2"
+}
