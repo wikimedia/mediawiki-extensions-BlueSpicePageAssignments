@@ -3,8 +3,16 @@ namespace BlueSpice\PageAssignments\Assignment;
 
 class Everyone extends \BlueSpice\PageAssignments\Assignment {
 
+	/**
+	 *
+	 * @var int[]
+	 */
 	protected static $userIdCache = null;
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function makeAnchor() {
 		return \Html::element(
 			'span',
@@ -13,12 +21,20 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 		);
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getText() {
 		return \Message::newFromKey(
 			'bs-pageassignments-assignee-special-everyone-label'
 		)->plain();
 	}
 
+	/**
+	 *
+	 * @return int[]
+	 */
 	public function getUserIds() {
 		if ( isset( static::$userIdCache ) ) {
 			return static::$userIdCache;

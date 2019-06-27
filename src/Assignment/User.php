@@ -6,6 +6,10 @@ use BlueSpice\Services;
 
 class User extends \BlueSpice\PageAssignments\Assignment {
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function makeAnchor() {
 		return $this->linkRenderer->makeLink(
 			$this->getUser()->getUserPage(),
@@ -13,11 +17,19 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 		);
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getText() {
 		$utilities = Services::getInstance()->getBSUtilityFactory();
 		return $utilities->getUserHelper( $this->getUser() )->getDisplayName();
 	}
 
+	/**
+	 *
+	 * @return int[]
+	 */
 	public function getUserIds() {
 		if ( $this->getUser()->getId() < 1 ) {
 			return [];

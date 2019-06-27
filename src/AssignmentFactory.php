@@ -48,9 +48,9 @@ class AssignmentFactory {
 	 * @param LinkRenderer $linkRenderer
 	 * @param \Config $config
 	 * @param ExtensionAttributeBasedRegistry $targetRegistry
-	 *
 	 */
-	public function __construct( AssignableFactory $assignableFactory, LinkRenderer $linkRenderer, $config, $targetRegistry ) {
+	public function __construct( AssignableFactory $assignableFactory,
+		LinkRenderer $linkRenderer, $config, $targetRegistry ) {
 		$this->assignableFactory = $assignableFactory;
 		$this->linkRenderer = $linkRenderer;
 		$this->config = $config;
@@ -88,6 +88,10 @@ class AssignmentFactory {
 		return $instance;
 	}
 
+	/**
+	 *
+	 * @return string|null
+	 */
 	protected function getTargetClass() {
 		$targets = $this->targetRegistry->getAllKeys();
 		$targetToUse = $this->config->get( 'PageAssignmentsTarget' );
@@ -155,6 +159,10 @@ class AssignmentFactory {
 		return $assignments;
 	}
 
+	/**
+	 *
+	 * @return Store
+	 */
 	public function getStore() {
 		return new Store(
 			new Context( \RequestContext::getMain(), $this->config ),
@@ -182,7 +190,8 @@ class AssignmentFactory {
 	 * @return IAssignment|null
 	 */
 	public function factory( $type, $key, \Title $title ) {
-		if ( !$assignable = $this->assignableFactory->factory( $type ) ) {
+		$assignable = $this->assignableFactory->factory( $type );
+		if ( !$assignable ) {
 			return null;
 		}
 		$class = $assignable->getAssignmentClass();

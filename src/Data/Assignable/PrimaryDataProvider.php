@@ -43,7 +43,8 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	public function makeData( $params ) {
 		$this->data = [];
 
-		if ( !$title = $this->context->getTitle() ) {
+		$title = $this->context->getTitle();
+		if ( !$title ) {
 			throw new \MWException( "Missing assignable title" );
 		}
 		if ( $title->getArticleID() < 1 ) {
@@ -76,6 +77,10 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 		return $this->data;
 	}
 
+	/**
+	 *
+	 * @param Record $record
+	 */
 	protected function appendRowToData( Record $record ) {
 		$this->data[] = $record;
 	}

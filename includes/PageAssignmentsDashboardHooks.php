@@ -35,7 +35,8 @@ class PageAssignmentsDashboardHooks {
 	 * @param bool $bIsDefault default
 	 * @return bool always true to keep hook alive
 	 */
-	public static function onBSDashboardsUserDashboardPortalConfig( $oCaller, &$aPortalConfig, $bIsDefault ) {
+	public static function onBSDashboardsUserDashboardPortalConfig( $oCaller,
+		&$aPortalConfig, $bIsDefault ) {
 		$aPortalConfig[0][] = [
 			'type' => 'BS.PageAssignments.portlets.PageAssignmentsPortlet',
 			'config' => [

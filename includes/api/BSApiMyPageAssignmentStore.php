@@ -6,6 +6,11 @@ use BlueSpice\PageAssignments\Data\Record;
 
 class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return array
+	 */
 	protected function makeData( $sQuery = '' ) {
 		$assignmentsPerPage = $this->getPageAssignments();
 
@@ -46,6 +51,12 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 		return $aResult;
 	}
 
+	/**
+	 *
+	 * @param \stdClass $oFilter
+	 * @param array $aDataSet
+	 * @return bool
+	 */
 	public function filterString( $oFilter, $aDataSet ) {
 		if ( $oFilter->field !== 'assigned_by' ) {
 			return parent::filterString( $oFilter, $aDataSet );
