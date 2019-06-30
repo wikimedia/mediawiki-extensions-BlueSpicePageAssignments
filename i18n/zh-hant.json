@@ -64,6 +64,8 @@
 	"action-pageassignments": "編輯頁面分配",
 	"right-pageassignments": "編輯頁面分配",
 	"prefs-pageassign": "分配",
+	"bs-pageassignments-sesp-pageassignments-alias": "分配",
+	"bs-pageassignments-sesp-pageassignments-desc": "分配",
 	"bs-usagetracker-pageassignments": "帶分配的頁面",
 	"apihelp-bs-pageassignable-store-description": "返回代理清單",
 	"apihelp-bs-pageassignable-store-summary": "返回分配清單",
