@@ -9,9 +9,18 @@
 	"bs-pageassignments-dlg-title": "Assegnaziune",
 	"bs-pageassignments-dlg-fldlabel": "Assegnaziune",
 	"bs-pageassignments-column-assignments": "Assegnaziune",
+	"bs-pageassignments-column-assignedby": "Assegnate a",
+	"bs-pageassignments-no-assignments": "Nisciune assegnazione",
+	"bs-pageassignments-action-log": "Archivije de le assegnaziune",
+	"bs-pageassignments-action-delete-confirm": "Lìve l'assegnazione?",
+	"bs-pageassignments-api-error": "Ave assute 'n'errore",
+	"bs-pageassignments-api-error-no-page": "Pàgene none specificate",
 	"notification-bs-pageassignments-page-move-subject": "$2 ha state spustate",
 	"notification-bs-pageassignments-page-edit-subject": "$2 ha state cangiate",
 	"notification-bs-pageassignments-page-delete-subject": "$2 ha state scangellate",
 	"prefs-pageassign": "Assegnazione",
+	"bs-pageassignments-sesp-pageassignments-alias": "Assegnazione",
+	"bs-pageassignments-sesp-pageassignments-desc": "Assegnazione",
+	"bs-usagetracker-pageassignments": "pàggene cu assegnaziune",
 	"bs-pageassignments-assignee-special-everyone-label": "Tutte"
 }
