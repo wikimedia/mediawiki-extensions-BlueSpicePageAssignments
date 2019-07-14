@@ -68,6 +68,7 @@ class Registrator {
 				break;
 		}
 	}
+
 	/**
 	 * Gets all users assigned to given title
 	 *
