@@ -24,6 +24,8 @@
 	"bs-pageassignments-notification-reason": "Причини за ова известување:",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "Отстранување на доделувањето до $2",
 	"notification-bs-pageassignments-page-move-summary": "$3 е {{GENDER:$2|преместена}} од $1",
+	"notification-bs-pageassignments-page-move-subject": "$2 е преместена",
+	"notification-bs-pageassignments-page-move-body": "$1 ја {{GENDER:$2|премести}} страницата $2.",
 	"notification-bs-pageassignments-page-edit-summary": "$3 е {{GENDER:$2|изменета}} од $1",
 	"notification-bs-pageassignments-page-edit-subject": "$2 е изменета",
 	"notification-bs-pageassignments-page-edit-body": "$1 ја {{GENDER:$2|измени}} страницата $2.",
