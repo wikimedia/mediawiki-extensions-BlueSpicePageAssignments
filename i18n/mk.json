@@ -16,6 +16,7 @@
 	"bs-pageassignments-no-assignments": "Нема доделувања",
 	"bs-pageassignments-action-log": "Дневник на доделувања",
 	"bs-pageassignments-api-error": "Се појави грешка",
+	"bs-pageassignments-api-error-no-page": "Не е укажана страница",
 	"log-name-bs-pageassignments": "Дневник на доделувања",
 	"log-description-bs-pageassignments": "Дневник на измените во доделувањата на страници",
 	"log-show-hide-bs-pageassignments": "$1 Дневник на доделувања",
