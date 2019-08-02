@@ -38,7 +38,8 @@
 						"author",
 						"editor",
 						"maintenanceadmin",
-						"reviewer"
+						"reviewer",
+						"reader"
 					]
 				},
 				"pageassignments": {
