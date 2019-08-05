@@ -58,6 +58,14 @@ class Flyout extends BasePanel implements IFlyout {
 	 * @return bool
 	 */
 	public function shouldRender( $context ) {
-		return $context->getUser()->isLoggedIn();
+		$title = $context->getTitle();
+		if ( !$title || !$title->exists() ) {
+			return false;
+		}
+		if ( !$title->userCan( 'read' ) ) {
+			return false;
+		}
+
+		return true;
 	}
 }

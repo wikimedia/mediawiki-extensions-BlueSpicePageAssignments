@@ -82,12 +82,21 @@ class PageAssignments extends \BSApiTasksBase {
 		if ( empty( $taskData->pageId ) ) {
 			$taskData->pageId = 0;
 		}
+
 		$status = $this->getTargetFromID( $taskData->pageId );
 		if ( !$status->isOK() ) {
 			$result->message = $status->getMessage()->parse();
 			return $result;
 		}
 		$target = $status->getValue();
+		$permissionErrors = $target->getTitle()->getUserPermissionsErrors(
+			'pageassignments',
+			$this->getUser()
+		);
+		if ( !empty( $permissionErrors ) ) {
+			$result->message = implode( "\n", $permissionErrors );
+			return $result;
+		}
 
 		$assignments = [];
 		foreach ( $taskData->pageAssignments as $id ) {

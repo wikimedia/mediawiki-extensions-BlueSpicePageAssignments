@@ -18,7 +18,7 @@ class PageAssignment extends SubModule {
 		if ( !$this->getConfig()->get( 'PageAssignmentsUseAdditionalPermissions' ) ) {
 			return false;
 		}
-		return $title->exists() && $title->getNamespace() >= 0;
+		return $title instanceof Title && $title->getNamespace() >= 0;
 	}
 
 	/**
@@ -38,6 +38,9 @@ class PageAssignment extends SubModule {
 	 * @return bool
 	 */
 	public function mustLockdown( Title $title, User $user, $action ) {
+		if ( $title->exists() === false ) {
+			return true;
+		}
 		$factory = $this->getServices()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
