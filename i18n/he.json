@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2"
+			"Guycn2",
+			"Steeve815"
 		]
 	},
 	"bs-pageassignments-desc": "מתן אפשרות לשיוך משתמשים או קבוצות לדפים",
@@ -73,5 +74,6 @@
 	"bs-pageassignments-assignee-type-everyone": "כולם",
 	"bs-pageassignments-assignee-type-user": "משתמש",
 	"bs-pageassignments-assignee-type-group": "קבוצה",
-	"bs-pageassignments-secure-nsm-label": "שיוכי דפים מאובטחים"
+	"bs-pageassignments-secure-nsm-label": "שיוכי דפים מאובטחים",
+	"logeventslist-bs-pageassignments-log": "יומן שיוכים"
 }

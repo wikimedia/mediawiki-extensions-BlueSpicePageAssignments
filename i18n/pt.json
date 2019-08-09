@@ -62,7 +62,7 @@
 	"bs-pageassignments-yourassignmentsdesc": "Lista das páginas que lhe foram atribuídas.",
 	"right-pageassignable": "Aparecer na lista de utilizadores a quem podem ser atribuídas páginas",
 	"right-pageassignments": "Editar as atribuições de uma página",
-	"prefs-pageassign": "Atribuição",
+	"prefs-pageassign": "Atribuição de página",
 	"bs-usagetracker-pageassignments": "páginas atribuídas",
 	"apihelp-bs-pageassignable-store-description": "Devolve a lista daqueles a quem foram atribuídas páginas",
 	"apihelp-bs-pageassignable-store-summary": "Devolve a lista daqueles a quem foram atribuídas páginas",
@@ -83,5 +83,12 @@
 	"bs-pageassignments-flyout-form-title": "Adicionar atribuição",
 	"bs-pageassignments-flyout-grid-title": "Utilizadores e grupos a quem esta página foi atribuída",
 	"bs-pageassignments-flyout-manager-btn-label": "Gestor de atribuições de páginas",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao utilizador: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao utilizador: $1",
+	"bs-pageassignments-pref-lockdowngroups": "Grupos que são bloqueados para uma página quando o utilizador não está atribuído",
+	"action-pageassignable": "aparecer na lista de utilizadores atribuíveis",
+	"action-pageassignments": "editar as atribuições de uma página",
+	"bs-pageassignments-sesp-pageassignments-alias": "Atribuição de página",
+	"bs-pageassignments-sesp-pageassignments-desc": "Atribuição de página",
+	"bs-pageassignments-secure-lockdown-reason": "A operação \"$1\" só está disponível para {{PLURAL:$2|o utilizador atribuído|os utilizadores atribuídos}} $3",
+	"bs-pageassignments-group-lockdown-reason": "Você não está atribuído à página $1"
 }

@@ -3,7 +3,8 @@
 		"authors": [
 			"Irus",
 			"Vlad5250",
-			"Romanko Mikhail"
+			"Romanko Mikhail",
+			"1233qwer1234qwer4"
 		]
 	},
 	"pageassignments": "Назначения",
@@ -22,5 +23,7 @@
 	"bs-pageassignments-flyout-intro": "Управление участниками и группами для этой страницы.",
 	"bs-pageassignments-flyout-form-title": "Добавить назначение",
 	"bs-pageassignments-flyout-grid-title": "Участники и группы, назначенные для этой страницы.",
-	"bs-pageassignments-flyout-manager-btn-label": "Менеджер назначения страниц"
+	"bs-pageassignments-flyout-manager-btn-label": "Менеджер назначения страниц",
+	"bs-pageassignments-assignee-special-everyone-label": "Каждый",
+	"bs-pageassignments-assignee-type-everyone": "Каждый"
 }

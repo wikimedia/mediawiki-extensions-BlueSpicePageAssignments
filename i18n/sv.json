@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Mjälten"
 		]
 	},
 	"bs-pageassignments-desc": "Låter dig tilldela användare eller grupper till en sida",
@@ -73,5 +74,10 @@
 	"bs-pageassignments-assignee-type-user": "Användare",
 	"bs-pageassignments-assignee-type-group": "Grupp",
 	"bs-pageassignments-flyout-form-title": "Lägg till tilldelning",
-	"bs-pageassignments-flyout-grid-title": "Användare och grupper som är tilldelade till denna sida"
+	"bs-pageassignments-flyout-grid-title": "Användare och grupper som är tilldelade till denna sida",
+	"action-pageassignments": "redigera tilldelningarna för en sida",
+	"bs-pageassignments-sesp-pageassignments-alias": "Tilldelning",
+	"bs-pageassignments-sesp-pageassignments-desc": "Tilldelning",
+	"bs-pageassignments-nav-link-title-pageassignments": "Sidtilldelningar",
+	"bs-pageassignments-flyout-title": "Sidtilldelningar"
 }

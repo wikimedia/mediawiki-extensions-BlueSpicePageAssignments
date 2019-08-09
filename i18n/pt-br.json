@@ -83,5 +83,12 @@
 	"bs-pageassignments-flyout-form-title": "Adicionar atribuição",
 	"bs-pageassignments-flyout-grid-title": "Usuários e grupos para quem esta página foi atribuída",
 	"bs-pageassignments-flyout-manager-btn-label": "Gerenciar as atribuições de páginas",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao usuário: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao usuário: $1",
+	"bs-pageassignments-pref-lockdowngroups": "Grupos que são bloqueados para uma página quando o usuário não está atribuído",
+	"action-pageassignable": "aparecem na lista de usuários atribuíveis",
+	"action-pageassignments": "editar as atribuições de uma página",
+	"bs-pageassignments-sesp-pageassignments-alias": "Tarefa",
+	"bs-pageassignments-sesp-pageassignments-desc": "Tarefa",
+	"bs-pageassignments-secure-lockdown-reason": "A operação \"$1\" só está disponível para {{PLURAL:$2|o usuário atribuído|os usuários atribuídos}} $3",
+	"bs-pageassignments-group-lockdown-reason": "Você não está atribuído à página $1"
 }

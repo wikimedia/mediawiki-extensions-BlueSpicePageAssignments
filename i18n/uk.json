@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Piramidion"
+			"Piramidion",
+			"Ата",
+			"Vlad5250"
 		]
 	},
 	"bs-pageassignments-desc": "Дозволяє Вам призначати користувачів або групи до певної сторінки",
@@ -81,5 +83,12 @@
 	"bs-pageassignments-flyout-form-title": "Додати призначення",
 	"bs-pageassignments-flyout-grid-title": "Користувачі та групи, призначені до цієї сторінки",
 	"bs-pageassignments-flyout-manager-btn-label": "Менеджер призначень до сторінок",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments — призначено до {{PLURAL:$2|сторінки|сторінок}}: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments — призначено до {{PLURAL:$2|сторінки|сторінок}}: $1",
+	"bs-pageassignments-pref-lockdowngroups": "Групи, які замикаються для групи, якщо не зазначено користувача",
+	"action-pageassignable": "з'являється у списку призначуваних користувачів",
+	"action-pageassignments": "редагування призначень сторінки",
+	"bs-pageassignments-sesp-pageassignments-alias": "Призначення",
+	"bs-pageassignments-sesp-pageassignments-desc": "Призначення",
+	"bs-pageassignments-secure-lockdown-reason": "Дія «$1» доступна лише для {{PLURAL:$2|призначенця|призначенців}} $3",
+	"bs-pageassignments-group-lockdown-reason": "Ви не призначені до сторінки $1"
 }
