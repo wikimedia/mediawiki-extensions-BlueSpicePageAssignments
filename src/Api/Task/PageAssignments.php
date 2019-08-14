@@ -69,6 +69,20 @@ class PageAssignments extends \BSApiTasksBase {
 			return $result;
 		}
 		$target = $status->getValue();
+		$permissionErrors = $target->getTitle()->getUserPermissionsErrors(
+			'pageassignments',
+			$this->getUser()
+		);
+		if ( !empty( $permissionErrors ) ) {
+			foreach ( $permissionErrors as $error ) {
+				$result->message .= \ApiMessage::create(
+					$error,
+					null,
+					[ 'title' => $target->getTitle() ]
+				);
+			}
+			return $result;
+		}
 
 		$assignments = [];
 		foreach ( $taskData->pageAssignments as $id ) {
