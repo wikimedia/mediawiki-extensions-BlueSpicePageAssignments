@@ -7,6 +7,7 @@ Ext.define( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {
 	pageSize : 5,
 	hideHeaders: true,
 	articleId: mw.config.get( 'wgArticleId' ),
+	userCanAssign: false,
 	initComponent: function() {
 
 		this.store = Ext.create( 'Ext.data.Store', {
@@ -49,8 +50,10 @@ Ext.define( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {
 
 		this.columns = [
 			this.colAggregatedInfo,
-			this.colUnAssign
 		];
+		if ( this.userCanAssign ) {
+			this.columns.push( this.colUnAssign );
+		}
 
 		this.bbar = new Ext.toolbar.Paging( {
 			store: this.store
