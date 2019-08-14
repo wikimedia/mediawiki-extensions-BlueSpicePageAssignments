@@ -94,7 +94,13 @@ class PageAssignments extends \BSApiTasksBase {
 			$this->getUser()
 		);
 		if ( !empty( $permissionErrors ) ) {
-			$result->message = implode( "\n", $permissionErrors );
+			foreach ( $permissionErrors as $error ) {
+				$result->message .= \ApiMessage::create(
+					$error,
+					null,
+					[ 'title' => $target->getTitle() ]
+				);
+			}
 			return $result;
 		}
 
