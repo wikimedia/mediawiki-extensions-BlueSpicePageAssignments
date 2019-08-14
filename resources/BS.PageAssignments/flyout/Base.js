@@ -3,7 +3,9 @@ Ext.define( 'BS.PageAssignments.flyout.Base', {
 	requires: [ 'BS.PageAssignments.flyout.form.NewAssignment' ],
 	makeCenterTwoItems: function() {
 		if( !this.assigneesGrid ) {
-			this.assigneesGrid = Ext.create( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {} );
+			this.assigneesGrid = Ext.create( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {
+				userCanAssign: this.userCanAssign
+			} );
 			this.assigneesGrid.on( 'delete', this.deleteAssignment, this );
 		}
 
