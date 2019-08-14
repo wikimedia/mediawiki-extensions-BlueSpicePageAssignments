@@ -32,6 +32,12 @@ class FetchPageAssignments extends \BlueSpice\Hook\BeforePageDisplay {
 			'BSPageAssignmentsAssignmentFactory'
 		);
 		$target = $factory->newFromTargetTitle( $this->out->getTitle() );
+		$canAssign = false;
+		$title = $this->getContext()->getTitle();
+		if ( $title && $title->exists() && $title->userCan( 'pageassignments' ) ) {
+			$canAssign = true;
+		}
+		$this->out->addJsConfigVars( 'bsgPageAssignmentsCanAssign', $canAssign );
 
 		$assignments = [];
 		foreach ( $target->getAssignments() as $assignment ) {

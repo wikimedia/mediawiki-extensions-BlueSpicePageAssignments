@@ -11,7 +11,7 @@ Ext.define( 'BS.PageAssignments.flyout.Base', {
 
 		return [
 			this.assigneesGrid
-		]
+		];
 	},
 
 	makeCenterOneItems: function() {
@@ -20,9 +20,11 @@ Ext.define( 'BS.PageAssignments.flyout.Base', {
 			this.assignmentForm.on( 'add', this.addAssignment, this );
 		}
 
-		return [
-			this.assignmentForm
-		]
+		var result = [];
+		if ( this.userCanAssign ) {
+			result.push( this.assignmentForm );
+		}
+		return result;
 	},
 
 	makeTopPanelItems: function() {
