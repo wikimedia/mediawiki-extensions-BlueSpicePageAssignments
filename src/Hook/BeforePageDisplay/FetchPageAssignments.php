@@ -18,12 +18,7 @@ class FetchPageAssignments extends \BlueSpice\Hook\BeforePageDisplay {
 		if ( !$factory->newFromTargetTitle( $this->out->getTitle() ) ) {
 			return true;
 		}
-		$assignments = $factory->newFromTargetTitle(
-			$this->out->getTitle()
-		)->getAssignments();
-		if ( count( $assignments ) < 1 ) {
-			return true;
-		}
+
 		return false;
 	}
 
