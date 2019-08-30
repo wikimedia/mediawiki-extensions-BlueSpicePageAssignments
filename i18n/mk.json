@@ -36,11 +36,14 @@
 	"notification-bs-pageassignments-user-group-add-subject": "Додаден во групата $4",
 	"notification-bs-pageassignments-user-group-remove-subject": "Отстранет од {{PLURAL:$5|групата|групите}} $4",
 	"prefs-pageassignments": "Доделувања на страници",
+	"bs-pageassignments-yourassignments": "Вашите доделувања",
+	"bs-pageassignments-yourassignmentsdesc": "Список на страници за кои сте доделени.",
 	"bs-usagetracker-pageassignments": "страници со доделувања",
 	"bs-pageassignments-assignee-special-everyone-label": "Секому",
 	"bs-pageassignments-assignee-type-everyone": "Секому",
 	"bs-pageassignments-assignee-type-user": "Корисник",
 	"bs-pageassignments-assignee-type-group": "Група",
+	"bs-pageassignments-group-lockdown-reason": "Не сте доделени на страницата $1",
 	"bs-pageassignments-nav-link-title-pageassignments": "Доделувања на страници",
 	"bs-pageassignments-flyout-title": "Доделувања на страници"
 }
