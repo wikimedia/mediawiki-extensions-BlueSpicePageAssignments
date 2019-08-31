@@ -32,6 +32,8 @@
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|أزال|أزالت}} تعيين الصفحة \"$3\" {{GENDER:$4|للمستخدم|للمستخدمة}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|عين|عينت}} المجموعة \"$4\" للصفحة \"$3\"",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2أزال|أزالت}} تعيين المجموعة \"$4\" من الصفحة \"$3\"",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 خصص الصفحة \"$3\" للمجموعة \"الجميع\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 أزال تعيين \"الجميع\" للصفحة \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "صفحة التعيينات",
 	"bs-pageassignments-notification-reason": "أسباب هذا الإخطار:",
 	"bs-pageassignments-notification-reason-user": "تم تعيينك مباشرة على الصفحة",
