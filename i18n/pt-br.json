@@ -31,6 +31,8 @@
 	"logentry-bs-pageassignments-remove-user": "{{GENDER:$2|O usuário|A usuária}} $1 removeu a atribuição da página \"$3\" {{GENDER:$4|ao usuário|à usuária}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|atribuído}} a página \"$3\" ao grupo \"$4\"",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|removeu}} a atribuição da página \"$3\" ao grupo \"$4\"",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 atribuiu a página \"$3\" ao grupo \"Todos\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 removeu a atribuição de \"Todos\" para a página \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "Atribuições de páginas",
 	"bs-pageassignments-notification-reason": "Motivos para esta notificação:",
 	"bs-pageassignments-notification-reason-user": "A página foi-lhe diretamente atribuída",

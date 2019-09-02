@@ -35,6 +35,8 @@
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|}}a retiré l’affectation de la page « $3 » de l’utilisat{{GENDER:$4|eur|rice}} « $4 »",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|a affecté}} le groupe « $4 » à la page « $3 »",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|a retiré}} l’affectation du groupe « $4 » de la page « $3 »",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 a affecté la page « $3 » au groupe « Tous »",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 a supprimé l’affectation de « Tous » pour la page « $3 »",
 	"echo-category-title-bs-pageassignments-action-cat": "Affectations de pages",
 	"bs-pageassignments-notification-reason": "Raisons pour cette notification:",
 	"bs-pageassignments-notification-reason-user": "Vous êtes affecté directement à la page",
