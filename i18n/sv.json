@@ -30,6 +30,8 @@
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|tar bort}} tilldelningen av sidan \"$3\" för {{GENDER:$4|användaren}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|tilldelade}} gruppen \"$4\" till sidan \"$3\"",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|tog bort}} tilldelningen för gruppen \"$4\" från sidan \"$3\"",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 tilldelade sidan \"$3\" till gruppen \"Allihopa\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 tog bort tilldelningen av \"Allihopa\" för sidan \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "Sidtilldelningar",
 	"bs-pageassignments-notification-reason": "Anledningar för denna avisering:",
 	"bs-pageassignments-notification-reason-user": "Du tilldelas direkt till sidan",
