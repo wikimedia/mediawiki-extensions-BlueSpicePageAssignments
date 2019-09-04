@@ -94,5 +94,9 @@
 	"bs-pageassignments-flyout-form-title": "Title text for the form used to assign new users or groups to the page",
 	"bs-pageassignments-flyout-grid-title": "Title text of the grid showing all assigned users and groups to the page",
 	"bs-pageassignments-flyout-manager-btn-label": "Label for the button leading to the PageAssignments specialpage",
-	"bs-pageassignments-privacy-transparency-working-assignments": "Message for item in BlueSpicePrivacy when exporting user assignments on a page. $1 - conflated list of pages user is assigned to, $2 - number of pages user is assigned to"
+	"bs-pageassignments-privacy-transparency-working-assignments": "Message for item in BlueSpicePrivacy when exporting user assignments on a page. $1 - conflated list of pages user is assigned to, $2 - number of pages user is assigned to",
+	"bs-pageassignments-collection-type-assignedpages": "Label for source type \"assignedpages\" in entry field \"type\"\n{{Identical|Assignments}}",
+	"bs-pageassignments-collection-var-namespacename": "Label for entry field \"namespacename\"\n{{Identical|Namespace}}",
+	"bs-pageassignments-collection-var-assignedpages": "Label for entry field \"assignedpages\"\n{{Identical|Assigned pages}}",
+	"bs-pageassignments-collection-var-unassignedpages": "Label for entry field \"unassignedpages\"\n{{Identical|Unassigned pages}}"
 }
