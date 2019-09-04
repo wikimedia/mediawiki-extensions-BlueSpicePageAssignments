@@ -67,6 +67,14 @@
 			},
 			"PermissionLockdownGroupModuleRegistry": {
 				"pageassignments": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Groups\\PageAssignment::getInstance"
+			},
+			"EntityRegistry": {
+				"assignedpages": "\\BlueSpice\\PageAssignments\\EntityConfig\\Collection\\AssignedPages"
+			}
+		},
+		"BlueSpiceExtendedStatistics": {
+			"SnapshotDataCollectorRegistry": {
+				"assignedpages": "\\BlueSpice\\PageAssignments\\DataCollector\\StoreSourced\\AssignedPages::factory"
 			}
 		},
 		"BlueSpicePageAssignments": {
@@ -135,7 +143,7 @@
 	],
 	"APIModules": {
 		"bs-pageassignable-store": "\\BlueSpice\\PageAssignments\\Api\\Store\\Assignable",
-		"bs-pageassignment-store": "BSApiPageAssignmentStore",
+		"bs-pageassignment-store": "\\BlueSpice\\PageAssignments\\Api\\Store\\Page",
 		"bs-mypageassignment-store": "BSApiMyPageAssignmentStore",
 		"bs-pageassignment-tasks": "\\BlueSpice\\PageAssignments\\Api\\Task\\PageAssignments"
 	},
@@ -147,7 +155,6 @@
 		"BlueSpice\\PageAssignments\\Tests\\": "tests/phpunit/"
 	},
 	"AutoloadClasses": {
-		"BSApiPageAssignmentStore": "includes/api/BSApiPageAssignmentStore.php",
 		"BSApiMyPageAssignmentStore": "includes/api/BSApiMyPageAssignmentStore.php",
 		"PageAssignmentsHooks": "includes/PageAssignmentsHooks.php",
 		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
@@ -268,6 +275,14 @@
 		},
 		"ext.bluespice.pageassignments.assignable.messages": {
 			"class": "\\BlueSpice\\PageAssignments\\ResourceLoader\\Messages"
+		},
+		"ext.bluespice.pageassignments.collection.assignedpages": {
+			"messages": [
+				"bs-pageassignments-collection-type-assignedpages",
+				"bs-pageassignments-collection-var-namespacename",
+				"bs-pageassignments-collection-var-assignedpages",
+				"bs-pageassignments-collection-var-unassignedpages"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
