@@ -29,6 +29,8 @@
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|ave luate}} l'assegnazione d'a pàgene \"$3\" pe {{GENDER:$4|l'utende}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|ave assegnate}} 'u gruppe \"$4\" a 'a pàgene \"$3\"",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|ave luate}} l'assegnazione a 'u gruppe \"$4\" da 'a pàgene \"$3\"",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 ave assegnate 'a pàgene \"$3\" a 'u gruppe \"Ognune\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 ave luate l'assegnazione de \"Ognune\" pa pàgene \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "Assegnaziune d'a pàgene",
 	"bs-pageassignments-notification-reason": "Mutive pe sta notifeche:",
 	"bs-pageassignments-notification-reason-user": "Te ste assigne direttamende a sta pàgene",

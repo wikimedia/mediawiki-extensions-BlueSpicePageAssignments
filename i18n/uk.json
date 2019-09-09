@@ -3,7 +3,8 @@
 		"authors": [
 			"Piramidion",
 			"Ата",
-			"Vlad5250"
+			"Vlad5250",
+			"Movses"
 		]
 	},
 	"bs-pageassignments-desc": "Дозволяє Вам призначати користувачів або групи до певної сторінки",
@@ -31,6 +32,8 @@
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|вилучив|вилучила}} призначення сторінки «$3» для {{GENDER:$4|користувача|користувачки}} «$4»",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|призначив|призначила}} групу «$4» для сторінки «$3»",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|вилучив|вилучила}} призначення групи «$4» для сторінки «$3»",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 призначив сторінку \"$3\" до групи \"Усі\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 вилучив призначення \"Дя усіх\" у сторінки \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "Призначення до сторінок",
 	"bs-pageassignments-notification-reason": "Причини для цього сповіщення:",
 	"bs-pageassignments-notification-reason-user": "Вас безпосередньо призначено для сторінки",
