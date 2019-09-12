@@ -42,5 +42,8 @@
 	"bs-pageassignments-assignee-type-user": "Корисник",
 	"bs-pageassignments-assignee-type-group": "Група",
 	"bs-pageassignments-nav-link-title-pageassignments": "Доделувања на страници",
-	"bs-pageassignments-flyout-title": "Доделувања на страници"
+	"bs-pageassignments-flyout-title": "Доделувања на страници",
+	"bs-pageassignments-yourassignments": "Вашите доделувања",
+	"bs-pageassignments-yourassignmentsdesc": "Список на страници за кои сте доделени.",
+	"bs-pageassignments-group-lockdown-reason": "Не сте доделени на страницата $1"
 }

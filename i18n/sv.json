@@ -79,5 +79,7 @@
 	"bs-pageassignments-sesp-pageassignments-alias": "Tilldelning",
 	"bs-pageassignments-sesp-pageassignments-desc": "Tilldelning",
 	"bs-pageassignments-nav-link-title-pageassignments": "Sidtilldelningar",
-	"bs-pageassignments-flyout-title": "Sidtilldelningar"
+	"bs-pageassignments-flyout-title": "Sidtilldelningar",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 tilldelade sidan \"$3\" till gruppen \"Allihopa\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 tog bort tilldelningen av \"Allihopa\" för sidan \"$3\""
 }

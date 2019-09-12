@@ -7,7 +7,8 @@
 			"Verdy p",
 			"Urhixidur",
 			"Tartare",
-			"Epok"
+			"Epok",
+			"Thibaut120094"
 		]
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d'affecter des utilisateurs ou groupes à une page",
@@ -31,10 +32,10 @@
 	"log-description-bs-pageassignments": "Journal des modifications sur les affectations de la page",
 	"log-show-hide-bs-pageassignments": "$1 le journal des affectations",
 	"logeventslist-bs-pageassignments-log": "Journal des affectations",
-	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|}} a affecté la page « $3 » à l’utilisat{{GENDER:$4|eur|rice}} « $4 »",
-	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|}}a retiré l’affectation de la page « $3 » de l’utilisat{{GENDER:$4|eur|rice}} « $4 »",
-	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|a affecté}} le groupe « $4 » à la page « $3 »",
-	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|a retiré}} l’affectation du groupe « $4 » de la page « $3 »",
+	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|}} a affecté la page « $3 » à l’utilisat{{GENDER:$4|eur|rice}} « $4 »",
+	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|}}a retiré l’affectation de la page « $3 » de l’utilisat{{GENDER:$4|eur|rice}} « $4 »",
+	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|a affecté}} le groupe « $4 » à la page « $3 »",
+	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|a retiré}} l’affectation du groupe « $4 » de la page « $3 »",
 	"echo-category-title-bs-pageassignments-action-cat": "Affectations de pages",
 	"bs-pageassignments-notification-reason": "Raisons pour cette notification:",
 	"bs-pageassignments-notification-reason-user": "Vous êtes affecté directement à la page",
@@ -94,5 +95,7 @@
 	"bs-pageassignments-sesp-pageassignments-alias": "Affectation",
 	"bs-pageassignments-sesp-pageassignments-desc": "Affectation",
 	"bs-pageassignments-secure-lockdown-reason": "L'action « $1 » n'est disponible que pour {{PLURAL:$2|l'utilisateur assigné|les utilisateurs assignés}} $3",
-	"bs-pageassignments-group-lockdown-reason": "Vous n'êtes pas assigné à la page $1"
+	"bs-pageassignments-group-lockdown-reason": "Vous n'êtes pas assigné à la page $1",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 a affecté la page « $3 » au groupe « Tout le monde »",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 a supprimé l’affectation de « Tout le monde » pour la page « $3 »"
 }

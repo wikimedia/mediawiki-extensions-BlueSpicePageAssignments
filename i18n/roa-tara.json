@@ -87,5 +87,7 @@
 	"bs-pageassignments-flyout-form-title": "Aggiunge l'assegnazione",
 	"bs-pageassignments-flyout-grid-title": "Utinde e gruppe assegnate a sta pàgene",
 	"bs-pageassignments-flyout-manager-btn-label": "Gestore de l'assegnaziune d'a pàgene",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnate a {{PLURAL:$2|'a pàgene|le pàggene}}: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnate a {{PLURAL:$2|'a pàgene|le pàggene}}: $1",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 ave assegnate 'a pàgene \"$3\" a 'u gruppe \"Ognune\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 ave luate l'assegnazione de \"Ognune\" pa pàgene \"$3\""
 }
