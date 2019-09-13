@@ -21,6 +21,7 @@
 	"log-description-bs-pageassignments": "Дневник на измените во доделувањата на страници",
 	"log-show-hide-bs-pageassignments": "$1 Дневник на доделувања",
 	"logeventslist-bs-pageassignments-log": "Дневник на доделувања",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 го отстрани доделувањето на „Секој“ за страницата „$3“",
 	"echo-category-title-bs-pageassignments-action-cat": "Доделувања на страници",
 	"bs-pageassignments-notification-reason": "Причини за ова известување:",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "Отстранување на доделувањето до $2",
