@@ -71,6 +71,13 @@ class PageAssignments extends \BSApiTasksBase {
 	}
 
 	/**
+	 * Methods that can be executed even when the wiki is in read-mode, as
+	 * they do not alter the state/content of the wiki
+	 * @var array
+	 */
+	protected $aReadTasks = [ 'getForPage' ];
+
+	/**
 	 *
 	 * @param \stdClass $taskData
 	 * @param array $params
