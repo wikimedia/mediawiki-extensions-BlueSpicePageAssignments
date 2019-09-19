@@ -45,5 +45,6 @@
 	"bs-pageassignments-flyout-title": "Доделувања на страници",
 	"bs-pageassignments-yourassignments": "Вашите доделувања",
 	"bs-pageassignments-yourassignmentsdesc": "Список на страници за кои сте доделени.",
-	"bs-pageassignments-group-lockdown-reason": "Не сте доделени на страницата $1"
+	"bs-pageassignments-group-lockdown-reason": "Не сте доделени на страницата $1",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 го отстрани доделувањето на „Секој“ за страницата „$3“"
 }
