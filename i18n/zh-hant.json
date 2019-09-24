@@ -30,6 +30,8 @@
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|已移除}}{{GENDER:$4|使用者}}「$4」對於頁面「$3」的分配",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|已分配}}群組「$4」至頁面「$3」",
 	"logentry-bs-pageassignments-remove-group": "$1 已從頁面「$3」上{{GENDER:$2|移除}}群組「$4」的分配",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1已分配頁面「$3」給「所有人」群組",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1已移除分配給「所有人」的頁面「$3」",
 	"echo-category-title-bs-pageassignments-action-cat": "頁面分配",
 	"bs-pageassignments-notification-reason": "此次通知的原因：",
 	"bs-pageassignments-notification-reason-user": "您直接被分配給頁面",
