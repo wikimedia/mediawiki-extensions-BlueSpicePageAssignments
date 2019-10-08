@@ -92,5 +92,9 @@
 	"bs-pageassignments-flyout-form-title": "إضافة تعيين",
 	"bs-pageassignments-flyout-grid-title": "المستخدمون والمجموعات المعينون لهذه الصفحة",
 	"bs-pageassignments-flyout-manager-btn-label": "مدير مهام الصفحة",
-	"bs-pageassignments-privacy-transparency-working-assignments": "مهام صفحة بلو سبيس - موكل إلى {{PLURAL:$2|الصفحة|الصفحات}}: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "مهام صفحة بلو سبيس - موكل إلى {{PLURAL:$2|الصفحة|الصفحات}}: $1",
+	"bs-pageassignments-collection-type-assignedpages": "التعيينات",
+	"bs-pageassignments-collection-var-namespacename": "النطاق",
+	"bs-pageassignments-collection-var-assignedpages": "الصفحات المخصصة",
+	"bs-pageassignments-collection-var-unassignedpages": "الصفحات غير المخصصة"
 }

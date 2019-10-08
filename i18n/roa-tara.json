@@ -89,5 +89,9 @@
 	"bs-pageassignments-flyout-form-title": "Aggiunge l'assegnazione",
 	"bs-pageassignments-flyout-grid-title": "Utinde e gruppe assegnate a sta pàgene",
 	"bs-pageassignments-flyout-manager-btn-label": "Gestore de l'assegnaziune d'a pàgene",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnate a {{PLURAL:$2|'a pàgene|le pàggene}}: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnate a {{PLURAL:$2|'a pàgene|le pàggene}}: $1",
+	"bs-pageassignments-collection-type-assignedpages": "Assegnaziune",
+	"bs-pageassignments-collection-var-namespacename": "Namespace",
+	"bs-pageassignments-collection-var-assignedpages": "Pàggene assignate",
+	"bs-pageassignments-collection-var-unassignedpages": "Pàggene non assignate"
 }
