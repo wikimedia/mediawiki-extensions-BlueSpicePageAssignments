@@ -2,8 +2,8 @@
 
 namespace BlueSpice\PageAssignments\DataCollector\StoreSourced;
 
+use BlueSpice\PageAssignments\Data\Page\Store;
 use Config;
-use RequestContext;
 use BlueSpice\Services;
 use BlueSpice\Data\IRecord;
 use BlueSpice\Data\RecordSet;
@@ -12,13 +12,12 @@ use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtendedStatistics\DataCollector\StoreSourced;
-use BlueSpice\ExtendedStatistics\Entity\Collection as BaseCollection;
 use BlueSpice\PageAssignments\Data\DataCollector\AssignedPages\Record as CollectorRecord;
-use BlueSpice\PageAssignments\Data\Page\Store;
 use BlueSpice\PageAssignments\Data\Page\Record;
 use BlueSpice\PageAssignments\Entity\Collection\AssignedPages as Collection;
+use MWException;
 
-class AssignedPages extends StoreSourced {
+class AssignedPages extends StoreSourced\NamespaceCollector {
 
 	/**
 	 *
@@ -39,25 +38,6 @@ class AssignedPages extends StoreSourced {
 	protected $lastCollection = null;
 
 	/**
-	 *
-	 * @param string $type
-	 * @param Snapshot $snapshot
-	 * @param Config $config
-	 * @param EntityFactory $factory
-	 * @param IStore $store
-	 * @param SnapshotFactory $snapshotFactory
-	 * @param array $namespaces
-	 */
-	protected function __construct( $type, Snapshot $snapshot, Config $config,
-		EntityFactory $factory, IStore $store, SnapshotFactory $snapshotFactory,
-		array $namespaces ) {
-		parent::__construct( $type, $snapshot, $config, $factory, $store );
-		$this->snapshotFactory = $snapshotFactory;
-		$this->namespaces = $namespaces;
-	}
-
-	/**
-	 *
 	 * @param string $type
 	 * @param Services $services
 	 * @param Snapshot $snapshot
@@ -66,7 +46,8 @@ class AssignedPages extends StoreSourced {
 	 * @param IStore|null $store
 	 * @param SnapshotFactory|null $snapshotFactory
 	 * @param array|null $namespaces
-	 * @return DataCollector
+	 * @return static
+	 * @throws MWException
 	 */
 	public static function factory( $type, Services $services, Snapshot $snapshot,
 		Config $config = null, EntityFactory $factory = null, IStore $store = null,
@@ -78,7 +59,7 @@ class AssignedPages extends StoreSourced {
 			$factory = $services->getBSEntityFactory();
 		}
 		if ( !$store ) {
-			$context = RequestContext::getMain();
+			$context = \RequestContext::getMain();
 			$context->setUser(
 				$services->getBSUtilityFactory()->getMaintenanceUser()->getUser()
 			);
@@ -90,19 +71,9 @@ class AssignedPages extends StoreSourced {
 			);
 		}
 		if ( !$namespaces ) {
-			$version = $snapshot->getConfig()->get( 'Version' );
-			if ( false && version_compare( $version, '1.34', '>=' ) ) {
-				$namespaces = $services->getNamespaceInfo()->getContentNamespaces();
-			} else {
-				$namespaces = \MWNamespace::getCanonicalNamespaces();
-			}
-			foreach ( $namespaces as $idx => $canonical ) {
-				if ( $idx >= 0 ) {
-					continue;
-				}
-				unset( $namespaces[$idx] );
-			}
+			$namespaces = StoreSourced\NamespaceCollector::getNamespaces( $snapshot, $services );
 		}
+
 		return new static(
 			$type,
 			$snapshot,
@@ -201,27 +172,6 @@ class AssignedPages extends StoreSourced {
 
 	/**
 	 *
-	 * @return Collection[]
-	 */
-	protected function getLastCollection() {
-		if ( $this->lastCollection !== null ) {
-			return $this->lastCollection;
-		}
-		$this->lastCollection = [];
-		$snapshot = $this->snapshotFactory->getPrevious( $this->snapshot );
-		if ( !$snapshot ) {
-			return $this->lastCollection;
-		}
-		$this->lastCollection = array_filter(
-			$snapshot->get( Snapshot::ATTR_COLLECTION ),
-			function ( BaseCollection $e ) {
-			return $e instanceof Collection;
-		 } );
-		return $this->lastCollection;
-	}
-
-	/**
-	 *
 	 * @param IRecord $record
 	 * @return \stdClass
 	 */
@@ -263,5 +213,14 @@ class AssignedPages extends StoreSourced {
 			return null;
 		}
 		return $entity;
+	}
+
+	/**
+	 * Class for EntityCollection
+	 *
+	 * @return string
+	 */
+	protected function getCollectionClass() {
+		return Collection::class;
 	}
 }
