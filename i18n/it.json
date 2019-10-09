@@ -44,5 +44,7 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Tutti",
 	"bs-pageassignments-assignee-type-everyone": "Tutti",
 	"bs-pageassignments-assignee-type-user": "Utente",
-	"bs-pageassignments-assignee-type-group": "Gruppo"
+	"bs-pageassignments-assignee-type-group": "Gruppo",
+	"bs-pageassignments-sesp-pageassignments-alias": "Assegnazione",
+	"bs-pageassignments-sesp-pageassignments-desc": "Assegnazione"
 }

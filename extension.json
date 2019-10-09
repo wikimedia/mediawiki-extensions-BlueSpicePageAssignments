@@ -8,10 +8,13 @@
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:PageAssignments",
 	"type": "bluespice",
-	"version": "3.0.1",
+	"version": "3.1.0",
 	"descriptionmsg": "bs-pageassignments-desc",
 	"requires": {
-		"MediaWiki": ">= 1.31.0"
+		"MediaWiki": "~1.31",
+		"extensions": {
+			"BlueSpiceFoundation": "~3.1"
+		}
 	},
 	"attributes": {
 		"BlueSpiceFoundation": {
@@ -20,7 +23,7 @@
 					"className": "\\BlueSpice\\PageAssignments\\Extension",
 					"extPath": "/BlueSpicePageAssignments",
 					"configDefinitions": {
-						"PageAssignmentsPermissions": "\\BlueSpice\\PageAssignments\\ConfigDefinition\\Permissions::getInstance"
+						"PageAssignmentsLockdownGroups": "\\BlueSpice\\PageAssignments\\ConfigDefinition\\LockdownGroups::getInstance"
 					}
 				}
 			},
@@ -35,7 +38,8 @@
 						"author",
 						"editor",
 						"maintenanceadmin",
-						"reviewer"
+						"reviewer",
+						"reader"
 					]
 				},
 				"pageassignments": {
@@ -49,14 +53,20 @@
 				}
 			},
 			"RendererRegistry": {
-				"assignment": "\\BlueSpice\\PageAssignments\\Renderer\\Assignment",
-				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User"
+				"assignment": "\\BlueSpice\\PageAssignments\\Renderer\\Assignment::factory",
+				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User::factory"
 			},
 			"NotificationRegistrationFunctions": [
 				"\\BlueSpice\\PageAssignments\\Notifications\\Registrator::registerNotifications"
 			],
 			"LessVarsRegistry": {
 				"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
+			},
+			"PermissionLockdownRegistry": {
+				"pageassignments-secure": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Secure::getInstance"
+			},
+			"PermissionLockdownGroupModuleRegistry": {
+				"pageassignments": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Groups\\PageAssignment::getInstance"
 			}
 		},
 		"BlueSpicePageAssignments": {
@@ -73,6 +83,11 @@
 			"Handlers": [
 				"\\BlueSpice\\PageAssignments\\Privacy\\Handler"
 			]
+		},
+		"BlueSpiceSMWConnector": {
+			"ExtraPropertyRegistry": {
+				"pageassignment": "\\BlueSpice\\PageAssignments\\PageAssignmentsPropertyValueProvider::factory"
+			}
 		}
 	},
 	"GroupPermissions": {
@@ -93,7 +108,6 @@
 		"pageassignable",
 		"pageassignments"
 	],
-	"callback": "\\BlueSpice\\PageAssignments\\Extension::onRegistration",
 	"DefaultUserOptions": {
 		"echo-subscriptions-web-bs-pageassignments-action-cat": true,
 		"echo-subscriptions-email-bs-pageassignments-action-cat": true
@@ -136,7 +150,6 @@
 		"BSApiPageAssignmentStore": "includes/api/BSApiPageAssignmentStore.php",
 		"BSApiMyPageAssignmentStore": "includes/api/BSApiMyPageAssignmentStore.php",
 		"PageAssignmentsHooks": "includes/PageAssignmentsHooks.php",
-		"PageAssignmentsUsersAdditionalPermissionsHooks": "includes/PageAssignmentsUsersAdditionalPermissionsHooks.php",
 		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
 		"PageAssignmentsWikiExplorerHooks": "includes/PageAssignmentsWikiExplorerHooks.php",
 		"PageAssignmentsDashboardHooks": "includes/PageAssignmentsDashboardHooks.php",
@@ -263,10 +276,12 @@
 	},
 	"config_prefix": "bsg",
 	"config": {
-		"PageAssignmentsPermissions": {
+		"PageAssignmentsLockdownGroups": {
 			"value": [
-				"read"
-			]
+				"user"
+			],
+			"descriptionmsg": "bs-pageassignments-pref-lockdowngroups",
+			"public": true
 		},
 		"PageAssignmentsActivatedTypes": {
 			"value": [
@@ -297,9 +312,9 @@
 		"PersonalUrls": "PageAssignmentsHooks::onPersonalUrls",
 		"SkinTemplateNavigation": "PageAssignmentsHooks::onSkinTemplateNavigation",
 		"BeforePageDisplay": [
-			"PageAssignmentsWikiExplorerHooks::onBeforePageDisplay",
-			"PageAssignmentsDashboardHooks::onBeforePageDisplay",
-			"PageAssignmentsHooks::onBeforePageDisplay",
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddResources::callback",
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddDashboardResources::callback",
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddWikiExplorerResources::callback",
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\FetchPageAssignments::callback"
 		],
 		"SkinTemplateOutputPageBeforeExec": [
@@ -312,9 +327,6 @@
 			"PageAssignmentsHooks::onArticleDeleteComplete"
 		],
 		"BSUserManagerAfterSetGroups": "\\BlueSpice\\PageAssignments\\Hook\\BSUserManagerAfterSetGroups\\NotifyUsers::callback",
-		"UserAddGroup": "PageAssignmentsUsersAdditionalPermissionsHooks::onUserAddGroup",
-		"UserGetRights": "PageAssignmentsUsersAdditionalPermissionsHooks::onUserGetRights",
-		"RevisionAjaxReviewBeforeParams": "PageAssignmentsUsersAdditionalPermissionsHooks::onRevisionAjaxReviewBeforeParams",
 		"BSBookshelfBookManager": "PageAssignmentsBookmakerHooks::onBSBookshelfBookManager",
 		"BSBookshelfManagerGetBookDataRow": "PageAssignmentsBookmakerHooks::onBSBookshelfManagerGetBookDataRow",
 		"BSUEModulePDFcollectMetaData": "PageAssignmentsBookmakerHooks::onBSUEModulePDFcollectMetaData",
@@ -332,7 +344,6 @@
 		"BSApiNamespaceStoreMakeData": "\\BlueSpice\\PageAssignments\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
 		"NamespaceManager::editNamespace": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerEditNamespace\\SetValues::callback",
 		"NamespaceManager::writeNamespaceConfiguration": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback",
-		"userCan": "\\BlueSpice\\PageAssignments\\Hook\\UserCan\\RemoveEditPermissionsOnSecure::callback",
 		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers"
 	},
 	"manifest_version": 2

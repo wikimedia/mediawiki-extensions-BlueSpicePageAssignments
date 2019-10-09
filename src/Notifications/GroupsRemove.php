@@ -10,6 +10,12 @@ class GroupsRemove extends BaseNotification {
 	 */
 	protected $groupsRemoved;
 
+	/**
+	 *
+	 * @param \User $agent
+	 * @param \User $user
+	 * @param array $groupsRemoved
+	 */
 	public function __construct( $agent, $user, $groupsRemoved ) {
 		$pageAssignmentsSpecial = \SpecialPage::getTitleFor( 'PageAssignments' );
 		parent::__construct( 'bs-pageassignments-user-group-remove', $agent, $pageAssignmentsSpecial );
@@ -21,6 +27,10 @@ class GroupsRemove extends BaseNotification {
 		}
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getParams() {
 		return [
 			'group' => implode( ', ', $this->groupsRemoved ),
@@ -28,6 +38,10 @@ class GroupsRemove extends BaseNotification {
 		];
 	}
 
+	/**
+	 *
+	 * @param bool $notify
+	 */
 	protected function setNotifyAgent( $notify ) {
 		$this->extra['notifyAgent'] = $notify;
 	}

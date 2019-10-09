@@ -2,8 +2,12 @@
 
 namespace BlueSpice\PageAssignments\ConfigDefinition;
 
-class Permissions extends \BlueSpice\ConfigDefinition\PermissionsList {
+class LockdownGroups extends \BlueSpice\ConfigDefinition\GroupList {
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getPaths() {
 		return [
 			static::MAIN_PATH_FEATURE . '/' . static::FEATURE_ADMINISTRATION . '/BlueSpicePageAssignments',
@@ -12,8 +16,20 @@ class Permissions extends \BlueSpice\ConfigDefinition\PermissionsList {
 		];
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getLabelMessageKey() {
-		return 'bs-pageassignments-pref-permissions';
+		return 'bs-pageassignments-pref-lockdowngroups';
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	public function isHidden() {
+		return !$this->config->get( 'PageAssignmentsUseAdditionalPermissions' );
 	}
 
 	public function isHidden() {

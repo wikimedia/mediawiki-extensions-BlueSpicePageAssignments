@@ -1,7 +1,6 @@
 <?php
 namespace BlueSpice\PageAssignments\Renderer;
 
-use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Services;
 
@@ -15,19 +14,14 @@ class User extends Assignment {
 	protected $assignment = null;
 
 	/**
-	 * Constructor
-	 * @param \Config $config
-	 * @param Params $params
-	 * @param LinkRenderer|null $linkRenderer
+	 *
+	 * @param mixed $val
+	 * @return mixed
 	 */
-	public function __construct( \Config $config, Params $params, LinkRenderer $linkRenderer = null ) {
-		parent::__construct( $config, $params, $linkRenderer );
-	}
-
 	protected function render_image( $val ) {
 		$renderer = Services::getInstance()->getBSRendererFactory()->get(
 			'userimage',
-			new \BlueSpice\Renderer\Params( [
+			new Params( [
 				'user' => \User::newFromName( $this->assignment->getKey() )
 			] )
 		);

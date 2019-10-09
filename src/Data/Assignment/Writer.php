@@ -8,13 +8,18 @@ class Writer extends \BlueSpice\Data\DatabaseWriter {
 	/**
 	 *
 	 * @param \BlueSpice\Data\IReader $reader
-	 * @param \LoadBalancer $loadBalancer
+	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
 	 * @param \IContextSource|null $context
 	 */
-	public function __construct( \BlueSpice\Data\IReader $reader, $loadBalancer, \IContextSource $context = null ) {
+	public function __construct( \BlueSpice\Data\IReader $reader, $loadBalancer,
+		\IContextSource $context = null ) {
 		parent::__construct( $reader, $loadBalancer, $context, $context->getConfig() );
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getTableName() {
 		return 'bs_pageassignments';
 	}
@@ -27,6 +32,10 @@ class Writer extends \BlueSpice\Data\DatabaseWriter {
 		return new \BlueSpice\PageAssignments\Data\Schema();
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getIdentifierFields() {
 		return [ Record::PAGE_ID, Record::ASSIGNEE_KEY, Record::ASSIGNEE_TYPE ];
 	}
@@ -43,6 +52,10 @@ class Writer extends \BlueSpice\Data\DatabaseWriter {
 		);
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getDataBaseFieldWhitelist() {
 		return [
 			Record::ASSIGNEE_KEY,

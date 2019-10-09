@@ -20,10 +20,18 @@ class Store implements \BlueSpice\Data\IStore {
 		$this->loadBalancer = $loadBalancer;
 	}
 
+	/**
+	 *
+	 * @return Reader
+	 */
 	public function getReader() {
 		return new Reader( $this->loadBalancer, $this->context );
 	}
 
+	/**
+	 *
+	 * @return Writer
+	 */
 	public function getWriter() {
 		return new Writer(
 			$this->getReader(),

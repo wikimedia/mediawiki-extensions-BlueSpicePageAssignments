@@ -3,7 +3,12 @@
 		"authors": [
 			"Liuxinyu970226",
 			"Endermoon",
-			"A Chinese Wikipedian"
+			"A Chinese Wikipedian",
+			"WQL",
+			"佛壁灯",
+			"科劳",
+			"神樂坂秀吉",
+			"予弦"
 		]
 	},
 	"bs-pageassignments-desc": "使您可以将用户或用户组分配给页面",
@@ -26,6 +31,7 @@
 	"log-name-bs-pageassignments": "分配日志",
 	"log-description-bs-pageassignments": "页面分配更改的日志",
 	"log-show-hide-bs-pageassignments": "$1分配日志",
+	"logeventslist-bs-pageassignments-log": "分配日志",
 	"logentry-bs-pageassignments-add-user": "$1将页面“$3”{{GENDER:$2|分配}}给{{GENDER:$4|用户}}“$4”",
 	"logentry-bs-pageassignments-remove-user": "$1{{GENDER:$2|移除}}了{{GENDER:$4|用户}}“$4”的页面“$3”分配",
 	"logentry-bs-pageassignments-add-group": "$1将页面“$3”{{GENDER:$2|分配}}给用户组“$4”",
@@ -81,5 +87,12 @@
 	"bs-pageassignments-flyout-intro": "您可以在此处将用户或用户组分配到此页。他们将被告知更改，并可以获得额外的权利。如果被激活，阁下也可以要求他们确认他们已经阅读了页面。",
 	"bs-pageassignments-flyout-form-title": "添加分配",
 	"bs-pageassignments-flyout-grid-title": "分配至此页面的用户和用户组",
-	"bs-pageassignments-flyout-manager-btn-label": "页面分配管理器"
+	"bs-pageassignments-flyout-manager-btn-label": "页面分配管理器",
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - 已分配{{PLURAL:$2|页面|页面}}至: $1",
+	"action-pageassignable": "出现在可分配用户列表中",
+	"action-pageassignments": "编辑页面分配",
+	"bs-pageassignments-sesp-pageassignments-alias": "分配",
+	"bs-pageassignments-sesp-pageassignments-desc": "分配",
+	"bs-pageassignments-secure-lockdown-reason": "仅{{PLURAL:$2|assignee|assignees}} $3有权限进行此操作",
+	"bs-pageassignments-group-lockdown-reason": "您没有查看页面$1的权限"
 }

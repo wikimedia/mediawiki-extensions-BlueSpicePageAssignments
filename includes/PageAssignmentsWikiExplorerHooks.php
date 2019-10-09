@@ -4,17 +4,11 @@ use BlueSpice\Services;
 
 class PageAssignmentsWikiExplorerHooks {
 
-	public static function onBeforePageDisplay( $out, $skin ) {
-		// Attach WikiExplorer plugin if in context
-		$oWikiExplorer = SpecialPage::getTitleFor( 'WikiExplorer' );
-		if ( !$oWikiExplorer->equals( $out->getTitle() ) ) {
-			return true;
-		}
-		$out->addModules( 'ext.bluespice.pageassignments.wikiexplorer' );
-
-		return true;
-	}
-
+	/**
+	 *
+	 * @param array &$aFields
+	 * @return bool
+	 */
 	public static function onWikiExplorerGetFieldDefinitions( &$aFields ) {
 		$aFields[] = [
 			'name' => 'page_assignments',
@@ -22,6 +16,11 @@ class PageAssignmentsWikiExplorerHooks {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param array &$aColumns
+	 * @return bool
+	 */
 	public static function onWikiExplorerGetColumnDefinitions( &$aColumns ) {
 		$aColumns[] = [
 			'header' => wfMessage( 'pageassignments' )->escaped(),
@@ -36,7 +35,17 @@ class PageAssignmentsWikiExplorerHooks {
 		return true;
 	}
 
-	public static function onWikiExplorerQueryPagesWithFilter( $aFilters, &$aTables, &$aFields, &$aConditions, &$aJoinConditions ) {
+	/**
+	 *
+	 * @param array $aFilters
+	 * @param array &$aTables
+	 * @param array &$aFields
+	 * @param array &$aConditions
+	 * @param array &$aJoinConditions
+	 * @return bool
+	 */
+	public static function onWikiExplorerQueryPagesWithFilter( $aFilters, &$aTables,
+		&$aFields, &$aConditions, &$aJoinConditions ) {
 		$dbr = wfGetDB( DB_REPLICA );
 		$sTablePrefix = $dbr->tablePrefix();
 
@@ -77,6 +86,11 @@ class PageAssignmentsWikiExplorerHooks {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param array &$aRows
+	 * @return bool
+	 */
 	public static function onWikiExplorerBuildDataSets( &$aRows ) {
 		if ( !count( $aRows ) ) {
 			return true;

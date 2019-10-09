@@ -84,5 +84,14 @@
 	"bs-pageassignments-flyout-form-title": "إضافة تعيين",
 	"bs-pageassignments-flyout-grid-title": "المستخدمون والمجموعات المعينون لهذه الصفحة",
 	"bs-pageassignments-flyout-manager-btn-label": "مدير مهام الصفحة",
-	"bs-pageassignments-privacy-transparency-working-assignments": "مهام صفحة بلو سبيس - موكل إلى {{PLURAL:$2|الصفحة|الصفحات}}: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "مهام صفحة بلو سبيس - موكل إلى {{PLURAL:$2|الصفحة|الصفحات}}: $1",
+	"bs-pageassignments-pref-lockdowngroups": "\\المجموعات التي يتم إقفالها لصفحة عندما لا يتم تعيين المستخدم",
+	"action-pageassignable": "يظهر في قائمة المستخدمين القابلين للإحالة",
+	"action-pageassignments": "تحرير مهام صفحة",
+	"bs-pageassignments-sesp-pageassignments-alias": "تعيين",
+	"bs-pageassignments-sesp-pageassignments-desc": "تعيين",
+	"bs-pageassignments-secure-lockdown-reason": "الإجراء  \"$1\"  فقط {{PLURAL:$2|للمعين|للمعينين}} الـ$3",
+	"bs-pageassignments-group-lockdown-reason": "لم يتم تعيينك للصفحة $1",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 خصص الصفحة \"$3\" للمجموعة \"الجميع\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 أزال تعيين \"الجميع\" للصفحة \"$3\""
 }

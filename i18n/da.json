@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-pageassignments-assignee-special-everyone-label": "Alle",
+	"bs-pageassignments-assignee-type-everyone": "Alle",
+	"bs-pageassignments-assignee-type-user": "Bruger",
+	"bs-pageassignments-assignee-type-group": "Gruppe"
+}

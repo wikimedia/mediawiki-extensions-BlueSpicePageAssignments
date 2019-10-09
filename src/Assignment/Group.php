@@ -5,8 +5,16 @@ use BlueSpice\Services;
 
 class Group extends \BlueSpice\PageAssignments\Assignment {
 
+	/**
+	 *
+	 * @var int[]
+	 */
 	protected static $userIdCache = [];
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function makeAnchor() {
 		return $this->linkRenderer->makeLink(
 			\Title::makeTitle( NS_PROJECT, $this->getText() ),
@@ -14,12 +22,20 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 		);
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getText() {
 		return \Message::newFromKey( "group-{$this->getKey()}" )->exists()
 			? \Message::newFromKey( "group-{$this->getKey()}" )->plain()
 			: $this->getKey();
 	}
 
+	/**
+	 *
+	 * @return int[]
+	 */
 	public function getUserIds() {
 		if ( isset( static::$userIdCache[$this->getKey()] ) ) {
 			return static::$userIdCache[$this->getKey()];

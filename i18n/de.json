@@ -4,7 +4,8 @@
 			"Robert Vogel",
 			"Metalhead64",
 			"TMg",
-			"Hwboehm"
+			"Hwboehm",
+			"Luke081515"
 		]
 	},
 	"bs-pageassignments-desc": "Erlaubt die Zuweisung von Zielgruppen zu einer Seite",
@@ -86,5 +87,12 @@
 	"bs-pageassignments-flyout-form-title": "Zuweisung hinzufügen",
 	"bs-pageassignments-flyout-grid-title": "Benutzer und Gruppen, die dieser Seite zugewiesen sind.",
 	"bs-pageassignments-flyout-manager-btn-label": "Verwaltung von Seitenzuweisungen",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – {{PLURAL:$2|Der Seite|Den Seiten}} zugewiesen: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – {{PLURAL:$2|Der Seite|Den Seiten}} zugewiesen: $1",
+	"bs-pageassignments-pref-lockdowngroups": "Gruppen, die für eine Seite geschlossen werden, wenn der Benutzer nicht zugewiesen ist.",
+	"action-pageassignable": "in der Liste der zuweisbaren Benutzer aufzutauchen",
+	"action-pageassignments": "die Zuweisungen einer Seite zu bearbeiten",
+	"bs-pageassignments-sesp-pageassignments-alias": "Zuweisung",
+	"bs-pageassignments-sesp-pageassignments-desc": "Zuweisung",
+	"bs-pageassignments-secure-lockdown-reason": "Die Aktion „$1“ ist nur für {{PLURAL:$2|den|die}} Bevollmächtigten $3 verfügbar",
+	"bs-pageassignments-group-lockdown-reason": "Du bist nicht der Seite $1 zugewiesen"
 }

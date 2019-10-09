@@ -18,7 +18,8 @@ class Messages extends \ResourceLoaderModule {
 			'BSPageAssignmentsAssignableFactory'
 		);
 		foreach ( $factory->getRegisteredTypes() as $type ) {
-			if ( !$assignable = $factory->factory( $type ) ) {
+			$assignable = $factory->factory( $type );
+			if ( !$assignable ) {
 				continue;
 			}
 			$messages[] = $assignable->getTypeMessageKey();

@@ -8,8 +8,16 @@ use BlueSpice\PageAssignments\Notifications;
 
 class PageAssignments extends \BSApiTasksBase {
 
+	/**
+	 *
+	 * @var string
+	 */
 	protected $sTaskLogType = 'bs-pageassignments';
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $aTasks = [
 		'edit' => [
 			'examples' => [
@@ -28,7 +36,8 @@ class PageAssignments extends \BSApiTasksBase {
 						'required' => true
 					],
 					'pageAssignments' => [
-						'desc' => 'Array of strings in form of "key/value", eg. "user/WikiSysop" or "group/sysop", can be empty',
+						'desc' => 'Array of strings in form of "key/value", eg. ' .
+							'"user/WikiSysop" or "group/sysop", can be empty',
 						'type' => 'array',
 						'required' => true
 					]
@@ -50,6 +59,10 @@ class PageAssignments extends \BSApiTasksBase {
 		]
 	];
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getRequiredTaskPermissions() {
 		return [
 			'edit' => [ 'pageassignments' ],
@@ -57,6 +70,19 @@ class PageAssignments extends \BSApiTasksBase {
 		];
 	}
 
+	/**
+	 * Methods that can be executed even when the wiki is in read-mode, as
+	 * they do not alter the state/content of the wiki
+	 * @var array
+	 */
+	protected $aReadTasks = [ 'getForPage' ];
+
+	/**
+	 *
+	 * @param \stdClass $taskData
+	 * @param array $params
+	 * @return \BlueSpice\Api\Response\Standard
+	 */
 	protected function task_edit( $taskData, $params ) {
 		$result = $this->makeStandardReturn();
 
@@ -215,6 +241,13 @@ class PageAssignments extends \BSApiTasksBase {
 		}
 	}
 
+	/**
+	 *
+	 * @param \Title $title
+	 * @param array $addedAssignments
+	 * @param array $removedAssignments
+	 * @return bool
+	 */
 	public function notifyAssignmentChange( $title, $addedAssignments, $removedAssignments ) {
 		$newUsers = [];
 		$removedUsers = [];
@@ -242,12 +275,20 @@ class PageAssignments extends \BSApiTasksBase {
 		}
 
 		if ( !empty( $newUsers ) ) {
-			$notification = new Notifications\AssignmentChangeAdd( $this->getUser(), $title, $newUsers );
+			$notification = new Notifications\AssignmentChangeAdd(
+				$this->getUser(),
+				$title,
+				$newUsers
+			);
 			$notifier->notify( $notification );
 		}
 
 		if ( !empty( $removedUsers ) ) {
-			$notification = new Notifications\AssignmentChangeRemove( $this->getUser(), $title, $removedUsers );
+			$notification = new Notifications\AssignmentChangeRemove(
+				$this->getUser(),
+				$title,
+				$removedUsers
+			);
 			$notifier->notify( $notification );
 		}
 	}
@@ -281,7 +322,8 @@ class PageAssignments extends \BSApiTasksBase {
 	 * @return \Status
 	 */
 	protected function getTargetFromTitle( \Title $title ) {
-		if ( !$target = $this->getFactory()->newFromTargetTitle( $title ) ) {
+		$target = $this->getFactory()->newFromTargetTitle( $title );
+		if ( !$target ) {
 			return \Status::newFatal( 'bs-pageassignments-api-error-no-page' );
 		}
 		return \Status::newGood( $target );

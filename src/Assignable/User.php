@@ -7,6 +7,10 @@ use BlueSpice\Services;
 
 class User extends \BlueSpice\PageAssignments\Assignable {
 
+	/**
+	 *
+	 * @return Store
+	 */
 	public function getStore() {
 		return new Store(
 			$this->context,
@@ -14,14 +18,26 @@ class User extends \BlueSpice\PageAssignments\Assignable {
 		);
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getAssignmentClass() {
 		return "\\BlueSpice\\PageAssignments\\Assignment\\User";
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getRendererKey() {
 		return "assignment-user";
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getTypeMessageKey() {
 		return "bs-pageassignments-assignee-type-user";
 	}

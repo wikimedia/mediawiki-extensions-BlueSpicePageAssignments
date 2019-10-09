@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"notification-bs-pageassignments-page-move-body": "$1 {{GENDER:$2|siirsi}} sivun $2."
+}

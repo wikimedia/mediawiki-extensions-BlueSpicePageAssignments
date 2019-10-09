@@ -2,8 +2,14 @@
 
 namespace BlueSpice\PageAssignments\Notifications;
 
+use BlueSpice\NotificationManager;
+
 class Registrator {
-	public static function registerNotifications( \BlueSpice\NotificationManager $notificationsManager ) {
+	/**
+	 *
+	 * @param NotificationManager $notificationsManager
+	 */
+	public static function registerNotifications( NotificationManager $notificationsManager ) {
 		$notificationsManager->registerNotificationCategory( 'bs-pageassignments-action-cat' );
 
 		$notificationsManager->registerNotification(
@@ -86,7 +92,8 @@ class Registrator {
 		$factory = \BlueSpice\Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
-		if ( !$target = $factory->newFromTargetTitle( $title ) ) {
+		$target = $factory->newFromTargetTitle( $title );
+		if ( !$target ) {
 			return [];
 		}
 

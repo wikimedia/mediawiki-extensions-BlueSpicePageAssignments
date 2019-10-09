@@ -25,7 +25,8 @@ class PageAssignmentsBookmakerHooks {
 	 * @param array &$aMeta
 	 * @return bool
 	 */
-	public static function onBSUEModulePDFcollectMetaData( $oTitle, $oPageDOM, &$aParams, $oDOMXPath, &$aMeta ) {
+	public static function onBSUEModulePDFcollectMetaData( $oTitle, $oPageDOM,
+		&$aParams, $oDOMXPath, &$aMeta ) {
 		$aMeta['assigned_users'] = '';
 		$aMeta['assigned_groups'] = '';
 

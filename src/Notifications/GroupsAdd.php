@@ -10,6 +10,12 @@ class GroupsAdd extends BaseNotification {
 	 */
 	protected $groupsAdded;
 
+	/**
+	 *
+	 * @param \User $agent
+	 * @param \User $user
+	 * @param array $groupsAdded
+	 */
 	public function __construct( $agent, $user, $groupsAdded ) {
 		$pageAssignmentsSpecial = \SpecialPage::getTitleFor( 'PageAssignments' );
 		parent::__construct( 'bs-pageassignments-user-group-add', $agent, $pageAssignmentsSpecial );
@@ -21,6 +27,10 @@ class GroupsAdd extends BaseNotification {
 		}
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getParams() {
 		return [
 			'group' => implode( ', ', $this->groupsAdded ),
@@ -28,6 +38,10 @@ class GroupsAdd extends BaseNotification {
 		];
 	}
 
+	/**
+	 *
+	 * @param bool $notify
+	 */
 	protected function setNotifyAgent( $notify ) {
 		$this->extra['notifyAgent'] = $notify;
 	}
