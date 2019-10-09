@@ -69,7 +69,7 @@
 				"pageassignments": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Groups\\PageAssignment::getInstance"
 			},
 			"EntityRegistry": {
-				"assignedpages": "\\BlueSpice\\PageAssignments\\EntityConfig\\Collection\\AssignedPages"
+				"assignedpages": "\\BlueSpice\\PageAssignments\\EntityConfig\\Collection\\AssignedPages::factory"
 			}
 		},
 		"BlueSpiceExtendedStatistics": {
