@@ -93,5 +93,7 @@
 	"bs-pageassignments-flyout-manager-btn-label": "Gerenciar as atribuições de páginas",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao usuário: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Atribuições",
-	"bs-pageassignments-collection-var-namespacename": "Espaço nominal"
+	"bs-pageassignments-collection-var-namespacename": "Espaço nominal",
+	"bs-pageassignments-collection-var-assignedpages": "Páginas atribuídas",
+	"bs-pageassignments-collection-var-unassignedpages": "Páginas não atribuídas"
 }
