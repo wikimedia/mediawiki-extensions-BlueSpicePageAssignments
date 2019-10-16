@@ -5,7 +5,8 @@
 			"Vlad5250",
 			"Romanko Mikhail",
 			"1233qwer1234qwer4",
-			"Movses"
+			"Movses",
+			"Katunchik"
 		]
 	},
 	"pageassignments": "Назначения",
@@ -26,5 +27,6 @@
 	"bs-pageassignments-flyout-intro": "Вы можете назначать странице участников и группы. Они будут получать оповещения про изменения и смогут получить дополнительные права. Если функция включена, Вы также сможете установить подтверждение прочтения страницы.",
 	"bs-pageassignments-flyout-form-title": "Добавить назначение",
 	"bs-pageassignments-flyout-grid-title": "Участники и группы, назначенные для этой страницы.",
-	"bs-pageassignments-flyout-manager-btn-label": "Менеджер назначения страниц"
+	"bs-pageassignments-flyout-manager-btn-label": "Менеджер назначения страниц",
+	"bs-pageassignments-collection-var-namespacename": "Пространство имён"
 }
