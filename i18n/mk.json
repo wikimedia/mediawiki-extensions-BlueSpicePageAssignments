@@ -47,5 +47,7 @@
 	"bs-pageassignments-assignee-type-group": "Група",
 	"bs-pageassignments-group-lockdown-reason": "Не сте доделени на страницата $1",
 	"bs-pageassignments-nav-link-title-pageassignments": "Доделувања на страници",
-	"bs-pageassignments-flyout-title": "Доделувања на страници"
+	"bs-pageassignments-flyout-title": "Доделувања на страници",
+	"bs-pageassignments-collection-type-assignedpages": "Доделувања",
+	"bs-pageassignments-collection-var-namespacename": "Именски простор"
 }
