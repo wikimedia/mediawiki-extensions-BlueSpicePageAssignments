@@ -126,10 +126,14 @@ class PrimaryDataProvider extends PageDataProvider {
 		$this->pageAssignments = [];
 		foreach ( $recordSet->getRecords() as $record ) {
 			$id = $record->get( AssignmentRecord::PAGE_ID );
+			$title = Title::newFromID( $id );
+			if ( !$title || !$title->exists() ) {
+				continue;
+			}
 			$this->pageAssignments[$id][] = $assignmentFactory->factory(
 				$record->get( AssignmentRecord::ASSIGNEE_TYPE ),
 				$record->get( AssignmentRecord::ASSIGNEE_KEY ),
-				Title::newFromID( $id )
+				$title
 			);
 		}
 
