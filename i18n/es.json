@@ -70,5 +70,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Cualquiera",
 	"bs-pageassignments-assignee-type-everyone": "Todos",
 	"bs-pageassignments-assignee-type-user": "Usuario",
-	"bs-pageassignments-assignee-type-group": "Grupo"
+	"bs-pageassignments-assignee-type-group": "Grupo",
+	"bs-pageassignments-collection-var-namespacename": "Espacio de nombres"
 }
