@@ -89,5 +89,9 @@
 	"bs-pageassignments-flyout-form-title": "Add assignment",
 	"bs-pageassignments-flyout-grid-title": "Users and groups assigned to this page",
 	"bs-pageassignments-flyout-manager-btn-label": "Page assignments manager",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assigned to {{PLURAL:$2|page|pages}}: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assigned to {{PLURAL:$2|page|pages}}: $1",
+	"bs-pageassignments-collection-type-assignedpages": "Assignments",
+	"bs-pageassignments-collection-var-namespacename": "Namespace",
+	"bs-pageassignments-collection-var-assignedpages": "Assigned pages",
+	"bs-pageassignments-collection-var-unassignedpages": "Unassigned pages"
 }

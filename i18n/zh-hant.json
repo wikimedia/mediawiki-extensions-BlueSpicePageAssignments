@@ -89,5 +89,11 @@
 	"bs-pageassignments-sesp-pageassignments-alias": "分配",
 	"bs-pageassignments-sesp-pageassignments-desc": "分配",
 	"bs-pageassignments-secure-lockdown-reason": "操作「$1」僅對{{PLURAL:$2|代理|代理}}$3可用",
-	"bs-pageassignments-group-lockdown-reason": "您未分配到頁面$1"
+	"bs-pageassignments-group-lockdown-reason": "您未分配到頁面$1",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1已分配頁面「$3」給「所有人」群組",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1已移除分配給「所有人」的頁面「$3」",
+	"bs-pageassignments-collection-type-assignedpages": "分配",
+	"bs-pageassignments-collection-var-namespacename": "命名空間",
+	"bs-pageassignments-collection-var-assignedpages": "已分配頁面",
+	"bs-pageassignments-collection-var-unassignedpages": "未分配頁面"
 }

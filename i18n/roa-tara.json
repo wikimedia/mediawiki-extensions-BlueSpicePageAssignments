@@ -89,5 +89,9 @@
 	"bs-pageassignments-flyout-manager-btn-label": "Gestore de l'assegnaziune d'a pàgene",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnate a {{PLURAL:$2|'a pàgene|le pàggene}}: $1",
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 ave assegnate 'a pàgene \"$3\" a 'u gruppe \"Ognune\"",
-	"logentry-bs-pageassignments-remove-specialeveryone": "$1 ave luate l'assegnazione de \"Ognune\" pa pàgene \"$3\""
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 ave luate l'assegnazione de \"Ognune\" pa pàgene \"$3\"",
+	"bs-pageassignments-collection-type-assignedpages": "Assegnaziune",
+	"bs-pageassignments-collection-var-namespacename": "Namespace",
+	"bs-pageassignments-collection-var-assignedpages": "Pàggene assignate",
+	"bs-pageassignments-collection-var-unassignedpages": "Pàggene non assignate"
 }

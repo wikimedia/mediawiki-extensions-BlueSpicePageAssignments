@@ -21,5 +21,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Jiddwereen",
 	"bs-pageassignments-assignee-type-everyone": "Jiddwereen",
 	"bs-pageassignments-assignee-type-user": "Benotzer",
-	"bs-pageassignments-assignee-type-group": "Grupp"
+	"bs-pageassignments-assignee-type-group": "Grupp",
+	"bs-pageassignments-collection-var-namespacename": "Nummraum"
 }
