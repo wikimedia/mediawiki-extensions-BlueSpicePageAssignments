@@ -5,7 +5,8 @@
 			"Vlad5250",
 			"Romanko Mikhail",
 			"1233qwer1234qwer4",
-			"Movses"
+			"Movses",
+			"Katunchik"
 		]
 	},
 	"pageassignments": "Назначения",
@@ -26,5 +27,6 @@
 	"bs-pageassignments-flyout-grid-title": "Участники и группы, назначенные для этой страницы.",
 	"bs-pageassignments-flyout-manager-btn-label": "Менеджер назначения страниц",
 	"bs-pageassignments-assignee-special-everyone-label": "Каждый",
-	"bs-pageassignments-assignee-type-everyone": "Каждый"
+	"bs-pageassignments-assignee-type-everyone": "Каждый",
+	"bs-pageassignments-collection-var-namespacename": "Пространство имён"
 }

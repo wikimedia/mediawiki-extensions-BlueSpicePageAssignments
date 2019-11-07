@@ -93,5 +93,9 @@
 	"bs-pageassignments-secure-lockdown-reason": "الإجراء  \"$1\"  فقط {{PLURAL:$2|للمعين|للمعينين}} الـ$3",
 	"bs-pageassignments-group-lockdown-reason": "لم يتم تعيينك للصفحة $1",
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 خصص الصفحة \"$3\" للمجموعة \"الجميع\"",
-	"logentry-bs-pageassignments-remove-specialeveryone": "$1 أزال تعيين \"الجميع\" للصفحة \"$3\""
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 أزال تعيين \"الجميع\" للصفحة \"$3\"",
+	"bs-pageassignments-collection-type-assignedpages": "التعيينات",
+	"bs-pageassignments-collection-var-namespacename": "النطاق",
+	"bs-pageassignments-collection-var-assignedpages": "الصفحات المخصصة",
+	"bs-pageassignments-collection-var-unassignedpages": "الصفحات غير المخصصة"
 }

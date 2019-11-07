@@ -23,5 +23,7 @@
 	"bs-pageassignments-assignee-type-group": "Grupa",
 	"bs-pageassignments-flyout-intro": "Zarządzaj użytkownikami i grupami przypisanymi do tej strony.",
 	"bs-pageassignments-flyout-form-title": "Dodaj przypisanie",
-	"bs-pageassignments-flyout-grid-title": "Użytkownicy i grupy przypisane do tej strony."
+	"bs-pageassignments-flyout-grid-title": "Użytkownicy i grupy przypisane do tej strony.",
+	"bs-pageassignments-collection-var-assignedpages": "Przypisane strony",
+	"bs-pageassignments-collection-var-unassignedpages": "Nieprzypisane strony"
 }

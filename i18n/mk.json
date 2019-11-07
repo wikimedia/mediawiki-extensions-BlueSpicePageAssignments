@@ -46,5 +46,8 @@
 	"bs-pageassignments-yourassignments": "Вашите доделувања",
 	"bs-pageassignments-yourassignmentsdesc": "Список на страници за кои сте доделени.",
 	"bs-pageassignments-group-lockdown-reason": "Не сте доделени на страницата $1",
-	"logentry-bs-pageassignments-remove-specialeveryone": "$1 го отстрани доделувањето на „Секој“ за страницата „$3“"
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 го отстрани доделувањето на „Секој“ за страницата „$3“",
+	"bs-pageassignments-notification-reason-group": "Вие сте член на {{PLURAL:$1|оваа група|овие групи}}: $2",
+	"bs-pageassignments-collection-type-assignedpages": "Доделувања",
+	"bs-pageassignments-collection-var-namespacename": "Именски простор"
 }

@@ -92,5 +92,9 @@
 	"bs-pageassignments-secure-lockdown-reason": "A operação \"$1\" só está disponível para {{PLURAL:$2|o usuário atribuído|os usuários atribuídos}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Você não está atribuído à página $1",
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 atribuiu a página \"$3\" ao grupo \"Todos\"",
-	"logentry-bs-pageassignments-remove-specialeveryone": "$1 removeu a atribuição de \"Todos\" para a página \"$3\""
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 removeu a atribuição de \"Todos\" para a página \"$3\"",
+	"bs-pageassignments-collection-type-assignedpages": "Atribuições",
+	"bs-pageassignments-collection-var-namespacename": "Espaço nominal",
+	"bs-pageassignments-collection-var-assignedpages": "Páginas atribuídas",
+	"bs-pageassignments-collection-var-unassignedpages": "Páginas não atribuídas"
 }
