@@ -4,6 +4,7 @@ namespace BlueSpice\PageAssignments;
 use Config;
 use Title;
 use MediaWiki\Linker\LinkRenderer;
+use BlueSpice\Services;
 use BlueSpice\PageAssignments\Data\Record;
 
 abstract class Assignment implements IAssignment, \JsonSerializable {
@@ -47,16 +48,16 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	/**
 	 *
 	 * @param Config $config
-	 * @param LinkRenderer $linkRenderer
+	 * @param null $linkRenderer - Deprecated since 3.1.2. LinkRenderer should not
+	 * be initialized that early, rather when it is actually needed
 	 * @param Title $title
 	 * @param string $type
 	 * @param string $key
 	 */
-	public function __construct( Config $config, LinkRenderer $linkRenderer,
+	public function __construct( Config $config, $linkRenderer,
 		Title $title, $type, $key ) {
 		$this->config = $config;
 		$this->title = $title;
-		$this->linkRenderer = $linkRenderer;
 		$this->key = $key;
 		$this->type = $type;
 	}
@@ -106,6 +107,9 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	public function getAnchor() {
 		if ( $this->anchor ) {
 			return $this->anchor;
+		}
+		if ( !$this->linkRenderer ) {
+			$this->linkRenderer = Services::getInstance()->getLinkRenderer();
 		}
 		$this->anchor = $this->makeAnchor();
 		return $this->anchor;
