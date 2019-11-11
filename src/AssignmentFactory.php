@@ -3,7 +3,6 @@
 namespace BlueSpice\PageAssignments;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
-use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\PageAssignments\Data\Record;
 use BlueSpice\PageAssignments\Data\Assignment\Store;
 use BlueSpice\Data\Filter;
@@ -27,12 +26,6 @@ class AssignmentFactory {
 
 	/**
 	 *
-	 * @var LinkRenderer
-	 */
-	protected $linkRenderer = null;
-
-	/**
-	 *
 	 * @var \Config
 	 */
 	protected $config = null;
@@ -45,14 +38,12 @@ class AssignmentFactory {
 	/**
 	 *
 	 * @param AssignableFactory $assignableFactory
-	 * @param LinkRenderer $linkRenderer
 	 * @param \Config $config
 	 * @param ExtensionAttributeBasedRegistry $targetRegistry
 	 */
-	public function __construct( AssignableFactory $assignableFactory,
-		LinkRenderer $linkRenderer, $config, $targetRegistry ) {
+	public function __construct( AssignableFactory $assignableFactory, $config,
+		$targetRegistry ) {
 		$this->assignableFactory = $assignableFactory;
-		$this->linkRenderer = $linkRenderer;
 		$this->config = $config;
 		$this->targetRegistry = $targetRegistry;
 	}
@@ -198,7 +189,7 @@ class AssignmentFactory {
 
 		return new $class(
 			$this->config,
-			$this->linkRenderer,
+			null,
 			$title,
 			$type,
 			$key

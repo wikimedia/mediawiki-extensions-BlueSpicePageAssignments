@@ -16,7 +16,6 @@ return [
 
 		return new \BlueSpice\PageAssignments\AssignmentFactory(
 			$assignable,
-			$services->getLinkRenderer(),
 			$services->getConfigFactory()->makeConfig( 'bsg' ),
 			$targetRegistry
 		);
