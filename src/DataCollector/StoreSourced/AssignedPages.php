@@ -133,6 +133,12 @@ class AssignedPages extends StoreSourced\NamespaceCollector {
 			if ( !isset( $unassignedAgg[$canonicalName] ) ) {
 				$unassignedAgg[$canonicalName] = 0;
 			}
+			if ( !isset( $assigned[$nsName] ) ) {
+				$assigned[$nsName] = 0;
+			}
+			if ( !isset( $unassigned[$nsName] ) ) {
+				$unassigned[$nsName] = 0;
+			}
 			$assigned[$nsName] =
 				$assigned[$nsName]
 				- $collection->get( Collection::ATTR_ASSIGNED_PAGES_AGGREGATED, 0 );
