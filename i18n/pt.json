@@ -3,7 +3,8 @@
 		"authors": [
 			"Vitorvicentevalente",
 			"Mansil",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb"
 		]
 	},
 	"bs-pageassignments-desc": "Permite atribuir uma página a utilizadores ou grupos",
@@ -89,5 +90,8 @@
 	"bs-pageassignments-flyout-form-title": "Adicionar atribuição",
 	"bs-pageassignments-flyout-grid-title": "Utilizadores e grupos a quem esta página foi atribuída",
 	"bs-pageassignments-flyout-manager-btn-label": "Gestor de atribuições de páginas",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao utilizador: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao utilizador: $1",
+	"bs-pageassignments-collection-type-assignedpages": "Atribuições",
+	"bs-pageassignments-collection-var-namespacename": "Espaço nominal",
+	"bs-pageassignments-collection-var-assignedpages": "Páginas atribuídas"
 }
