@@ -4,7 +4,8 @@
 			"Vitorvicentevalente",
 			"Mansil",
 			"Hamilton Abreu",
-			"Mansil alfalb"
+			"Mansil alfalb",
+			"Fúlvio"
 		]
 	},
 	"bs-pageassignments-desc": "Permite atribuir uma página a utilizadores ou grupos",
@@ -32,6 +33,7 @@
 	"logentry-bs-pageassignments-remove-user": "{{GENDER:$2|O utilizador|A utilizadora}} $1 removeu a atribuição da página \"$3\" {{GENDER:$4|ao utilizador|à utilizadora}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "{{GENDER:$2|O utilizador|A utilizadora}} $1 atribuiu a página \"$3\" ao grupo \"$4\"",
 	"logentry-bs-pageassignments-remove-group": "{{GENDER:$2|O utilizador|A utilizadora}} $1 removeu a atribuição da página \"$3\" ao grupo \"$4\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 removeu a atribuição de \"Todos\" para a página \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "Atribuições de páginas",
 	"bs-pageassignments-notification-reason": "Motivos para esta notificação:",
 	"bs-pageassignments-notification-reason-user": "A página foi-lhe diretamente atribuída",
@@ -91,7 +93,7 @@
 	"bs-pageassignments-flyout-grid-title": "Utilizadores e grupos a quem esta página foi atribuída",
 	"bs-pageassignments-flyout-manager-btn-label": "Gestor de atribuições de páginas",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao utilizador: $1",
-	"bs-pageassignments-collection-type-assignedpages": "Atribuições",
+	"bs-pageassignments-collection-type-assignedpages": "Atribuições de páginas",
 	"bs-pageassignments-collection-var-namespacename": "Espaço nominal",
 	"bs-pageassignments-collection-var-assignedpages": "Páginas atribuídas"
 }
