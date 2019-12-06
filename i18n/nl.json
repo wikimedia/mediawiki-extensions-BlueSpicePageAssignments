@@ -27,5 +27,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Iedereen",
 	"bs-pageassignments-assignee-type-everyone": "Iedereen",
 	"bs-pageassignments-assignee-type-user": "Gebruiker",
-	"bs-pageassignments-assignee-type-group": "Groep"
+	"bs-pageassignments-assignee-type-group": "Groep",
+	"bs-pageassignments-collection-var-namespacename": "Naamruimte"
 }
