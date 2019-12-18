@@ -80,7 +80,7 @@
 	"apihelp-bs-pageassignment-store-description": "Renvoie les assignations de la page donnée",
 	"apihelp-bs-pageassignment-store-summary": "Renvoie les assignations de la page donnée",
 	"apihelp-bs-mypageassignment-store-description": "Retourne les pages assignées à l’utilisateur actuel",
-	"apihelp-bs-mypageassignment-store-summary": "Renvoie les pages assignées à l'utilisateur actuel",
+	"apihelp-bs-mypageassignment-store-summary": "Renvoie les pages assignées à l’utilisateur actuel",
 	"apihelp-bs-pageassignment-tasks-description": "Obtenir ou modifier la liste des assignations pour une page spécifique",
 	"apihelp-bs-pageassignment-tasks-summary": "Obtenir ou modifier la liste des assignations pour une page spécifique",
 	"bs-pageassignments-assignee-special-everyone-label": "Tout le monde",
