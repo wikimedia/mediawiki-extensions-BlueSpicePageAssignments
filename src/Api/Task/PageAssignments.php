@@ -164,7 +164,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 * is much easier to access
 	 * @param object $taskData
 	 * @param array $params
-	 * @return BSStandardAPIResponse
+	 * @return \BlueSpice\Api\Response\Standard
 	 */
 	protected function task_getForPage( $taskData, $params ) {
 		$result = $this->makeStandardReturn();
