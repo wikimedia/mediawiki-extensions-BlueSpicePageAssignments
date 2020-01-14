@@ -1,11 +1,11 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
-use Config;
-use Title;
-use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\Services;
 use BlueSpice\PageAssignments\Data\Record;
+use BlueSpice\Services;
+use Config;
+use MediaWiki\Linker\LinkRenderer;
+use Title;
 
 abstract class Assignment implements IAssignment, \JsonSerializable {
 

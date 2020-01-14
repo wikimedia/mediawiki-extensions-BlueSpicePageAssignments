@@ -2,8 +2,8 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable;
 
-use BlueSpice\Services;
 use BlueSpice\PageAssignments\Data\Record;
+use BlueSpice\Services;
 
 class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 

@@ -2,12 +2,12 @@
 
 namespace BlueSpice\PageAssignments;
 
-use BlueSpice\ExtensionAttributeBasedRegistry;
-use BlueSpice\PageAssignments\Data\Record;
-use BlueSpice\PageAssignments\Data\Assignment\Store;
+use BlueSpice\Context;
 use BlueSpice\Data\Filter;
 use BlueSpice\Data\ReaderParams;
-use BlueSpice\Context;
+use BlueSpice\ExtensionAttributeBasedRegistry;
+use BlueSpice\PageAssignments\Data\Assignment\Store;
+use BlueSpice\PageAssignments\Data\Record;
 use BlueSpice\Services;
 
 class AssignmentFactory {

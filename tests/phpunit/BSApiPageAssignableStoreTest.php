@@ -2,11 +2,11 @@
 
 namespace BlueSpice\PageAssignments\Tests;
 
-use BlueSpice\Tests\BSApiExtJSStoreTestBase;
-use BlueSpice\Tests\BSUserFixturesProvider;
-use BlueSpice\Tests\BSUserFixtures;
-use BlueSpice\PageAssignments\Data\Schema;
 use BlueSpice\PageAssignments\Data\Record;
+use BlueSpice\PageAssignments\Data\Schema;
+use BlueSpice\Tests\BSApiExtJSStoreTestBase;
+use BlueSpice\Tests\BSUserFixtures;
+use BlueSpice\Tests\BSUserFixturesProvider;
 
 /**
  * @group medium

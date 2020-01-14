@@ -2,13 +2,13 @@
 
 namespace BlueSpice\PageAssignments\Permission\Lockdown\Module;
 
-use IContextSource;
+use BlueSpice\PageAssignments\AssignmentFactory;
+use BlueSpice\Services;
 use Config;
+use IContextSource;
 use Message;
 use Title;
 use User;
-use BlueSpice\Services;
-use BlueSpice\PageAssignments\AssignmentFactory;
 
 class Secure extends \BlueSpice\Permission\Lockdown\Module {
 

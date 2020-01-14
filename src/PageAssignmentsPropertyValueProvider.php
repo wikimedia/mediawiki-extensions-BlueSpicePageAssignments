@@ -2,10 +2,10 @@
 
 namespace BlueSpice\PageAssignments;
 
-use BlueSpice\SMWConnector\PropertyValueProvider;
 use BlueSpice\Services;
-use User;
+use BlueSpice\SMWConnector\PropertyValueProvider;
 use SMW\DIWikiPage;
+use User;
 
 class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 

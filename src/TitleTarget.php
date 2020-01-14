@@ -1,12 +1,12 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
+use BlueSpice\Data\RecordSet;
+use BlueSpice\Services;
 use Config;
 use Status;
 use Title;
 use User;
-use BlueSpice\Data\RecordSet;
-use BlueSpice\Services;
 
 class TitleTarget implements ITarget {
 

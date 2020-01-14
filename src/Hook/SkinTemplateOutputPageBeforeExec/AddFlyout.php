@@ -3,8 +3,8 @@
 namespace BlueSpice\PageAssignments\Hook\SkinTemplateOutputPageBeforeExec;
 
 use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
-use BlueSpice\SkinData;
 use BlueSpice\PageAssignments\Panel\Flyout;
+use BlueSpice\SkinData;
 
 class AddFlyout extends SkinTemplateOutputPageBeforeExec {
 

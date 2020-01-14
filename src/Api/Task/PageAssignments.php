@@ -2,9 +2,9 @@
 
 namespace BlueSpice\PageAssignments\Api\Task;
 
-use BlueSpice\Services;
 use BlueSpice\PageAssignments\IAssignment;
 use BlueSpice\PageAssignments\Notifications;
+use BlueSpice\Services;
 
 class PageAssignments extends \BSApiTasksBase {
 

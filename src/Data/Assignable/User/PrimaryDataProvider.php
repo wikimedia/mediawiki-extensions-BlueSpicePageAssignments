@@ -2,8 +2,8 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
-use BlueSpice\Services;
 use BlueSpice\Data\User\Record;
+use BlueSpice\Services;
 
 class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 

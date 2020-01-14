@@ -2,11 +2,11 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignment;
 
-use BlueSpice\Data\IPrimaryDataProvider;
-use BlueSpice\Data\FilterFinder;
 use BlueSpice\Data\Filter;
-use BlueSpice\PageAssignments\Data\Schema;
+use BlueSpice\Data\FilterFinder;
+use BlueSpice\Data\IPrimaryDataProvider;
 use BlueSpice\PageAssignments\Data\Record;
+use BlueSpice\PageAssignments\Data\Schema;
 use BlueSpice\Services;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {

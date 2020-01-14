@@ -2,17 +2,17 @@
 
 namespace BlueSpice\PageAssignments\Data\Page;
 
-use Hooks;
-use Title;
-use BsStringHelper;
-use BlueSpice\Services;
 use BlueSpice\Data\Filter;
 use BlueSpice\Data\Filter\StringValue;
 use BlueSpice\Data\FilterFinder;
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\Data\Page\PrimaryDataProvider as PageDataProvider;
+use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Assignment;
 use BlueSpice\PageAssignments\Data\Record as AssignmentRecord;
+use BlueSpice\Services;
+use BsStringHelper;
+use Hooks;
+use Title;
 
 class PrimaryDataProvider extends PageDataProvider {
 

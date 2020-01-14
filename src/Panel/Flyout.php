@@ -2,9 +2,9 @@
 
 namespace BlueSpice\PageAssignments\Panel;
 
-use Message;
-use BlueSpice\Calumma\Panel\BasePanel;
 use BlueSpice\Calumma\IFlyout;
+use BlueSpice\Calumma\Panel\BasePanel;
+use Message;
 
 class Flyout extends BasePanel implements IFlyout {
 

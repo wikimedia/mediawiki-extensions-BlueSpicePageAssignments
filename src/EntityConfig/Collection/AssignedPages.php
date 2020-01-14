@@ -2,13 +2,13 @@
 
 namespace BlueSpice\PageAssignments\EntityConfig\Collection;
 
-use Config;
-use BlueSpice\Services;
-use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Schema;
 use BlueSpice\Data\FieldType;
 use BlueSpice\EntityConfig;
+use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Schema;
 use BlueSpice\ExtendedStatistics\EntityConfig\Collection;
 use BlueSpice\PageAssignments\Entity\Collection\AssignedPages as Entity;
+use BlueSpice\Services;
+use Config;
 
 class AssignedPages extends EntityConfig {
 

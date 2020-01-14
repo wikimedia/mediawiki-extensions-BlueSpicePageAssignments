@@ -2,10 +2,10 @@
 
 namespace BlueSpice\PageAssignments\Tests;
 
-use BlueSpice\Tests\BSApiTasksTestBase;
-use BlueSpice\Tests\BSUserFixturesProvider;
-use BlueSpice\Tests\BSUserFixtures;
 use BlueSpice\PageAssignments\Data\Record;
+use BlueSpice\Tests\BSApiTasksTestBase;
+use BlueSpice\Tests\BSUserFixtures;
+use BlueSpice\Tests\BSUserFixturesProvider;
 
 /**
  * @group medium

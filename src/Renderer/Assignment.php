@@ -1,12 +1,12 @@
 <?php
 namespace BlueSpice\PageAssignments\Renderer;
 
+use BlueSpice\PageAssignments\IAssignment;
+use BlueSpice\Renderer\Params;
+use BlueSpice\Utility\CacheHelper;
 use Config;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\Renderer\Params;
-use BlueSpice\Utility\CacheHelper;
-use BlueSpice\PageAssignments\IAssignment;
 
 class Assignment extends \BlueSpice\TemplateRenderer {
 	const PARAM_ASSIGNMENT = 'assignment';

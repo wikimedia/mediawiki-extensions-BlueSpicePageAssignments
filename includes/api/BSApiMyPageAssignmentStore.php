@@ -1,8 +1,8 @@
 <?php
 
-use BlueSpice\Services;
 use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Data\Record;
+use BlueSpice\Services;
 
 class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 

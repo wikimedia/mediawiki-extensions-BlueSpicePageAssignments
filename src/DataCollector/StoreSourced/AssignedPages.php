@@ -2,19 +2,19 @@
 
 namespace BlueSpice\PageAssignments\DataCollector\StoreSourced;
 
-use BlueSpice\PageAssignments\Data\Page\Store;
-use Config;
-use BlueSpice\Services;
 use BlueSpice\Data\IRecord;
-use BlueSpice\Data\RecordSet;
 use BlueSpice\Data\IStore;
+use BlueSpice\Data\RecordSet;
 use BlueSpice\EntityFactory;
-use BlueSpice\ExtendedStatistics\SnapshotFactory;
-use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtendedStatistics\DataCollector\StoreSourced;
+use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use BlueSpice\PageAssignments\Data\DataCollector\AssignedPages\Record as CollectorRecord;
 use BlueSpice\PageAssignments\Data\Page\Record;
+use BlueSpice\PageAssignments\Data\Page\Store;
 use BlueSpice\PageAssignments\Entity\Collection\AssignedPages as Collection;
+use BlueSpice\Services;
+use Config;
 use MWException;
 
 class AssignedPages extends StoreSourced\NamespaceCollector {

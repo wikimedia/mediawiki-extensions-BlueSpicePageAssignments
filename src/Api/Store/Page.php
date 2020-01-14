@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\PageAssignments\Api\Store;
 
-use BlueSpice\PageAssignments\Data\Page\Store;
 use BlueSpice\Context;
+use BlueSpice\PageAssignments\Data\Page\Store;
 
 class Page extends \BlueSpice\Api\Store {
 
