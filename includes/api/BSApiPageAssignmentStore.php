@@ -78,10 +78,14 @@ class BSApiPageAssignmentStore extends BSApiExtJSStoreBase {
 		$assignments = [];
 		foreach ( $recordSet->getRecords() as $record ) {
 			$id = $record->get( Record::PAGE_ID );
+			$title = \Title::newFromID( $id );
+			if ( !$title ) {
+				continue;
+			}
 			$assignments[$id][] = $assignmentFactory->factory(
 				$record->get( Record::ASSIGNEE_TYPE ),
 				$record->get( Record::ASSIGNEE_KEY ),
-				\Title::newFromID( $id )
+				$title
 			)->toStdClass();
 		}
 
