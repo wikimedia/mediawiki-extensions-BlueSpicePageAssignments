@@ -16,7 +16,12 @@ class BSApiPageAssignmentStore extends BSApiExtJSStoreBase {
 
 		$aPageAssignments = $this->getPageAssignments();
 
-		$res = $this->getDB()->select( 'page', '*', '', __METHOD__ );
+		$res = $this->getDB()->select(
+			'page',
+			'*',
+			[ 'page_content_model' => [ '', 'wikitext' ] ],
+			__METHOD__
+		);
 		foreach ( $res as $row ) {
 			$oTitle = Title::newFromRow( $row );
 			$oDataSet = (object)[
