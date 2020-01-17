@@ -36,6 +36,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 {{GENDER:$2|hat}} der Gruppe \"Jeder\" die Seite \"$3\" zugewiesen",
 	"logentry-bs-pageassignments-remove-specialeveryone": "$1 {{GENDER:$2|hat}} die Gruppe \"Jeder\" aus der Zuweisung der Seite \"$3\" entfernt",
 	"echo-category-title-bs-pageassignments-action-cat": "Seitenzuweisungen",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Benachrichtigung wenn  mir (oder einer Gruppe, zu der ich gehöre) eine Seite zugewiesen wird oder wenn meine Zuweisung entfernt wird",
 	"bs-pageassignments-notification-reason": "Gründe für diese Benachrichtigung:",
 	"bs-pageassignments-notification-reason-user": "Du bist der Seite direkt zugewiesen",
 	"bs-pageassignments-notification-reason-group": "Du bist Mitglied der {{PLURAL:$1|Gruppe|Gruppen}}: $2",

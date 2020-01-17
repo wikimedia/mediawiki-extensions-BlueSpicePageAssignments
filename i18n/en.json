@@ -32,6 +32,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 assigned the page \"$3\" to group \"Everyone\"",
 	"logentry-bs-pageassignments-remove-specialeveryone": "$1 removed the assignment of \"Everyone\" for page \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "Page assignments",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Notify me when I am (or a group I belong to is) assigned to a page, or my assignment is removed",
 	"bs-pageassignments-notification-reason": "Reasons for this notification:",
 	"bs-pageassignments-notification-reason-user": "You are assigned directly to the page",
 	"bs-pageassignments-notification-reason-group": "You are a member of {{PLURAL:$1|the group|the groups}}: $2",
