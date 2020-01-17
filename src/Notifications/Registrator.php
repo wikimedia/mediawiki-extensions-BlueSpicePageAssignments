@@ -10,7 +10,9 @@ class Registrator {
 	 * @param NotificationManager $notificationsManager
 	 */
 	public static function registerNotifications( NotificationManager $notificationsManager ) {
-		$notificationsManager->registerNotificationCategory( 'bs-pageassignments-action-cat' );
+		$notificationsManager->registerNotificationCategory( 'bs-pageassignments-action-cat', [
+			'tooltip' => 'echo-pref-tooltip-bs-pageassignments-action-cat'
+		] );
 
 		$notificationsManager->registerNotification(
 			'bs-pageassignments-assignment-change-add',

@@ -37,6 +37,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "Log message, that someone assigned everyone to a page. Parameter:\n*$1 - Real name of the user, that performed the assignment\n*$2 - Name of the user, that performed the assignment\n*$3 - Page name",
 	"logentry-bs-pageassignments-remove-specialeveryone": "Log message, that someone deleted the assignment of everyone to a page. Parameter:\n*$1 - Real name of the user, that performed the assignment\n*$2 - Name of the user, that performed the assignment\n*$3 - Page name",
 	"echo-category-title-bs-pageassignments-action-cat": "Label for action messages, used in [[Special:Preferences#mw-prefsection-echo]]\n{{Identical|Page assignments}}",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Tooltip for Echo notification category bs-pageassignments-action-cat",
 	"bs-pageassignments-notification-reason": "Text of mail introduction - Label of a following list.",
 	"bs-pageassignments-notification-reason-user": "User is directly assigned to a page. Item in a list of reasons, why the user gets a assignment notification.",
 	"bs-pageassignments-notification-reason-group": "User is a member of on or more groups. Item in a list of reasons, why the user gets a assignment notification. Parameters:\n*$1 - Number of groups\n*$2 - Group name or comma separated list of group names",
