@@ -21,30 +21,6 @@ class PageAssignmentsHooks {
 	}
 
 	/**
-	 * Adds the "Assignments" menu entry in view mode
-	 * @param SkinTemplate &$sktemplate
-	 * @param array &$links
-	 * @return bool Always true to keep hook running
-	 */
-	public static function onSkinTemplateNavigation( &$sktemplate, &$links ) {
-		if ( $sktemplate->getRequest()->getVal( 'action', 'view' ) != 'view' ) {
-			return true;
-		}
-		if ( !$sktemplate->getTitle()->userCan( 'pageassignments' ) ) {
-			return true;
-		}
-		$links['actions']['pageassignments'] = [
-			'text' => wfMessage( 'bs-pageassignments-menu-label' )->text(),
-			'href' => '#',
-			'class' => false,
-			'id' => 'ca-pageassignments',
-			'bs-group' => 'hidden'
-		];
-
-		return true;
-	}
-
-	/**
 	 * Hook handler for MediaWiki 'TitleMoveComplete' hook. Adapts assignments in case of article move.
 	 * @param Title &$old
 	 * @param Title &$nt
