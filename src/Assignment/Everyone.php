@@ -1,6 +1,8 @@
 <?php
 namespace BlueSpice\PageAssignments\Assignment;
 
+use BlueSpice\Services;
+
 class Everyone extends \BlueSpice\PageAssignments\Assignment {
 
 	/**
