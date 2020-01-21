@@ -91,24 +91,6 @@ class PageAssignmentsHooks {
 	}
 
 	/**
-	 * Register tag with UsageTracker extension
-	 * @param array &$aCollectorsConfig
-	 * @return Always true to keep hook running
-	 */
-	public static function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
-		$aCollectorsConfig['pageassignments:pages'] = [
-			'class' => 'Database',
-			'config' => [
-				'identifier' => 'bs-usagetracker-pageassignments',
-				'descriptionKey' => 'bs-usagetracker-pageassignments',
-				'table' => 'bs_pageassignments',
-				'uniqueColumns' => [ 'pa_page_id' ]
-			]
-		];
-		return true;
-	}
-
-	/**
 	 * Deletes all page assignments on user deleted.
 	 * @param UserManager $oUserManager
 	 * @param User $oUser
