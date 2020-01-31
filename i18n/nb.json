@@ -32,6 +32,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 tildelte siden «$3» til gruppa «alle»",
 	"logentry-bs-pageassignments-remove-specialeveryone": "$1 fjernet tildelingen til «alle» for siden «$3»",
 	"echo-category-title-bs-pageassignments-action-cat": "Sidetildelinger",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Varsle meg når jeg (eller ei gruppe jeg tilhører) får tildelt en side, eller en tildeling fjernes",
 	"bs-pageassignments-notification-reason": "Årsaker for dette varselet:",
 	"bs-pageassignments-notification-reason-user": "Du er direkte tildelt siden",
 	"bs-pageassignments-notification-reason-group": "Du er medlem av {{PLURAL:$1|gruppa|gruppene}}: $2",

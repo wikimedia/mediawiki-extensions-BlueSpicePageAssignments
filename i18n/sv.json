@@ -33,6 +33,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 tilldelade sidan \"$3\" till gruppen \"Allihopa\"",
 	"logentry-bs-pageassignments-remove-specialeveryone": "$1 tog bort tilldelningen av \"Allihopa\" för sidan \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "Sidtilldelningar",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Avisera mig när jag (eller en grupp jag tillhör) tilldelas till en sida eller min tilldelning tas bort",
 	"bs-pageassignments-notification-reason": "Anledningar för denna avisering:",
 	"bs-pageassignments-notification-reason-user": "Du tilldelas direkt till sidan",
 	"bs-pageassignments-notification-reason-group": "Du är medlem i {{PLURAL:$1|gruppen|grupperna}}: $2",

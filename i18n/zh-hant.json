@@ -33,6 +33,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1已分配頁面「$3」給「所有人」群組",
 	"logentry-bs-pageassignments-remove-specialeveryone": "$1已移除分配給「所有人」的頁面「$3」",
 	"echo-category-title-bs-pageassignments-action-cat": "頁面分配",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "當我（或是我隸屬的群組）被分配到頁面，或是我的分配被移除時通知我",
 	"bs-pageassignments-notification-reason": "此次通知的原因：",
 	"bs-pageassignments-notification-reason-user": "您直接被分配給頁面",
 	"bs-pageassignments-notification-reason-group": "您是{{PLURAL:$1|此群組|這些群組}}的成員：$2",

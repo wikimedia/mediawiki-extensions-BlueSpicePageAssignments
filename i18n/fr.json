@@ -8,7 +8,8 @@
 			"Urhixidur",
 			"Tartare",
 			"Epok",
-			"Thibaut120094"
+			"Thibaut120094",
+			"Derugon"
 		]
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d’assigner des utilisateurs ou groupes à une page",
@@ -39,6 +40,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 a assigné la page « $3 » au groupe « Tout le monde »",
 	"logentry-bs-pageassignments-remove-specialeveryone": "$1 a supprimé l’assignation de « Tout le monde » pour la page « $3 »",
 	"echo-category-title-bs-pageassignments-action-cat": "Assignations de pages",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "M’avertir lorsque je suis (ou un groupe auquel j’appartiens est) assigné à une page ou que mon assignation est retirée",
 	"bs-pageassignments-notification-reason": "Motifs pour cette notification :",
 	"bs-pageassignments-notification-reason-user": "Vous êtes assigné directement à la page",
 	"bs-pageassignments-notification-reason-group": "Vous êtes membre {{PLURAL:$1|du groupe|des groupes}} : $2",

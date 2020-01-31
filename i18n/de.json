@@ -5,7 +5,8 @@
 			"Metalhead64",
 			"TMg",
 			"Hwboehm",
-			"Luke081515"
+			"Luke081515",
+			"Tiin"
 		]
 	},
 	"bs-pageassignments-desc": "Erlaubt die Zuweisung von Zielgruppen zu einer Seite",
@@ -94,5 +95,6 @@
 	"bs-pageassignments-flyout-form-title": "Zuweisung hinzufügen",
 	"bs-pageassignments-flyout-grid-title": "Benutzer und Gruppen, die dieser Seite zugewiesen sind.",
 	"bs-pageassignments-flyout-manager-btn-label": "Verwaltung von Seitenzuweisungen",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – {{PLURAL:$2|Der Seite|Den Seiten}} zugewiesen: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – {{PLURAL:$2|Der Seite|Den Seiten}} zugewiesen: $1",
+	"bs-pageassignments-collection-var-namespacename": "Namensraum"
 }
