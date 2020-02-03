@@ -6,7 +6,8 @@
 			"TMg",
 			"Hwboehm",
 			"Luke081515",
-			"Tiin"
+			"Tiin",
+			"Mglaser"
 		]
 	},
 	"bs-pageassignments-desc": "Erlaubt die Zuweisung von Zielgruppen zu einer Seite",
@@ -96,5 +97,8 @@
 	"bs-pageassignments-flyout-grid-title": "Benutzer und Gruppen, die dieser Seite zugewiesen sind.",
 	"bs-pageassignments-flyout-manager-btn-label": "Verwaltung von Seitenzuweisungen",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – {{PLURAL:$2|Der Seite|Den Seiten}} zugewiesen: $1",
-	"bs-pageassignments-collection-var-namespacename": "Namensraum"
+	"bs-pageassignments-collection-type-assignedpages": "Zuweisungen",
+	"bs-pageassignments-collection-var-namespacename": "Namensraum",
+	"bs-pageassignments-collection-var-assignedpages": "Zugewiesene Seiten",
+	"bs-pageassignments-collection-var-unassignedpages": "Nicht zugewiesene Seiten"
 }
