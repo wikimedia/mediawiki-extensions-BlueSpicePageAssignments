@@ -81,5 +81,10 @@
 	"bs-pageassignments-nav-link-title-pageassignments": "Sidtilldelningar",
 	"bs-pageassignments-flyout-title": "Sidtilldelningar",
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 tilldelade sidan \"$3\" till gruppen \"Allihopa\"",
-	"logentry-bs-pageassignments-remove-specialeveryone": "$1 tog bort tilldelningen av \"Allihopa\" för sidan \"$3\""
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 tog bort tilldelningen av \"Allihopa\" för sidan \"$3\"",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Avisera mig när jag (eller en grupp jag tillhör) tilldelas till en sida eller min tilldelning tas bort",
+	"bs-pageassignments-collection-type-assignedpages": "Tilldelningar",
+	"bs-pageassignments-collection-var-namespacename": "Namnrymd",
+	"bs-pageassignments-collection-var-assignedpages": "Tilldelade sidor",
+	"bs-pageassignments-collection-var-unassignedpages": "Inte-tilldelade sidor"
 }
