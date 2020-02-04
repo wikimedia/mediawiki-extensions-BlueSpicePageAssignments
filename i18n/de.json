@@ -5,7 +5,9 @@
 			"Metalhead64",
 			"TMg",
 			"Hwboehm",
-			"Luke081515"
+			"Luke081515",
+			"Tiin",
+			"Mglaser"
 		]
 	},
 	"bs-pageassignments-desc": "Erlaubt die Zuweisung von Zielgruppen zu einer Seite",
@@ -95,5 +97,9 @@
 	"bs-pageassignments-sesp-pageassignments-alias": "Zuweisung",
 	"bs-pageassignments-sesp-pageassignments-desc": "Zuweisung",
 	"bs-pageassignments-secure-lockdown-reason": "Die Aktion „$1“ ist nur für {{PLURAL:$2|den|die}} Bevollmächtigten $3 verfügbar",
-	"bs-pageassignments-group-lockdown-reason": "Du bist nicht der Seite $1 zugewiesen"
+	"bs-pageassignments-group-lockdown-reason": "Du bist nicht der Seite $1 zugewiesen",
+	"bs-pageassignments-collection-type-assignedpages": "Zuweisungen",
+	"bs-pageassignments-collection-var-namespacename": "Namensraum",
+	"bs-pageassignments-collection-var-assignedpages": "Zugewiesene Seiten",
+	"bs-pageassignments-collection-var-unassignedpages": "Nicht zugewiesene Seiten"
 }

@@ -3,7 +3,9 @@
 		"authors": [
 			"Vitorvicentevalente",
 			"Mansil",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb",
+			"Fúlvio"
 		]
 	},
 	"bs-pageassignments-desc": "Permite atribuir uma página a utilizadores ou grupos",
@@ -90,5 +92,11 @@
 	"bs-pageassignments-sesp-pageassignments-alias": "Atribuição de página",
 	"bs-pageassignments-sesp-pageassignments-desc": "Atribuição de página",
 	"bs-pageassignments-secure-lockdown-reason": "A operação \"$1\" só está disponível para {{PLURAL:$2|o utilizador atribuído|os utilizadores atribuídos}} $3",
-	"bs-pageassignments-group-lockdown-reason": "Você não está atribuído à página $1"
+	"bs-pageassignments-group-lockdown-reason": "Você não está atribuído à página $1",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 atribuiu a página \"$3\" ao grupo \"Todos\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 removeu a atribuição de \"Todos\" para a página \"$3\"",
+	"bs-pageassignments-collection-type-assignedpages": "Atribuições de páginas",
+	"bs-pageassignments-collection-var-namespacename": "Espaço nominal",
+	"bs-pageassignments-collection-var-assignedpages": "Páginas atribuídas",
+	"bs-pageassignments-collection-var-unassignedpages": "Páginas não atribuídas"
 }

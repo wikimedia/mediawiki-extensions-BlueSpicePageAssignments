@@ -27,5 +27,6 @@
 	"notification-bs-pageassignments-user-group-add-summary": "U bent aan de groep $4 toegevoegd",
 	"notification-bs-pageassignments-user-group-add-subject": "Aan groep $4 toegevoegd",
 	"notification-bs-pageassignments-user-group-remove-summary": "U bent uit de volgende {{PLURAL:$5|groep|groepen}} verwijderd $4",
-	"notification-bs-pageassignments-user-group-remove-subject": "Ui {{PLURAL:$5|groep|groepen}} verwijderd $4"
+	"notification-bs-pageassignments-user-group-remove-subject": "Ui {{PLURAL:$5|groep|groepen}} verwijderd $4",
+	"bs-pageassignments-collection-var-namespacename": "Naamruimte"
 }
