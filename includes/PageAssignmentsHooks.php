@@ -3,24 +3,6 @@
 class PageAssignmentsHooks {
 
 	/**
-	 *
-	 * @param array &$aPersonal_urls
-	 * @param \Title &$oTitle
-	 * @return bool
-	 */
-	public static function onPersonalUrls( &$aPersonal_urls, &$oTitle ) {
-		$oUser = RequestContext::getMain()->getUser();
-		if ( $oUser->isLoggedIn() ) {
-			$aPersonal_urls['pageassignments'] = [
-				'href' => SpecialPage::getTitleFor( 'PageAssignments' )->getLocalURL(),
-				'text' => SpecialPageFactory::getPage( 'PageAssignments' )->getDescription()
-			];
-		}
-
-		return true;
-	}
-
-	/**
 	 * Adds the "Assignments" menu entry in view mode
 	 * @param SkinTemplate &$sktemplate
 	 * @param array &$links
