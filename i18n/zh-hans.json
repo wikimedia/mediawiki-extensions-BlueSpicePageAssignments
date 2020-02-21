@@ -9,7 +9,8 @@
 			"科劳",
 			"神樂坂秀吉",
 			"予弦",
-			"A Retired User"
+			"A Retired User",
+			"VulpesVulpes825"
 		]
 	},
 	"bs-pageassignments-desc": "使您可以将用户或用户组分配给页面",
@@ -86,7 +87,7 @@
 	"bs-pageassignments-assignee-type-user": "用户",
 	"bs-pageassignments-assignee-type-group": "组",
 	"bs-pageassignments-secure-nsm-label": "担保页面分配",
-	"bs-pageassignments-secure-lockdown-reason": "仅{{PLURAL:$2|assignee|assignees}} $3有权限进行此操作",
+	"bs-pageassignments-secure-lockdown-reason": "仅{{PLURAL:$2|assignee|assignees}} $3有权限进行操作“$1”",
 	"bs-pageassignments-group-lockdown-reason": "您没有查看页面$1的权限",
 	"bs-pageassignments-nav-link-title-pageassignments": "页面分配",
 	"bs-pageassignments-flyout-title": "页面分配",
