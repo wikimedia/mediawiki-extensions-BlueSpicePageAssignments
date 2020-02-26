@@ -96,10 +96,13 @@ class PageAssignments extends \BSApiTasksBase {
 			return $result;
 		}
 		$target = $status->getValue();
-		$permissionErrors = $target->getTitle()->getUserPermissionsErrors(
-			'pageassignments',
-			$this->getUser()
-		);
+		$permissionErrors = \MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->getPermissionErrors(
+				'pageassignments',
+				$this->getUser(),
+				$target->getTitle()
+			);
 		if ( !empty( $permissionErrors ) ) {
 			foreach ( $permissionErrors as $error ) {
 				$result->message .= \ApiMessage::create(
