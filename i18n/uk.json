@@ -35,6 +35,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 призначив сторінку \"$3\" до групи \"Усі\"",
 	"logentry-bs-pageassignments-remove-specialeveryone": "$1 вилучив призначення \"Для усіх\" у сторінки \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "Призначення до сторінок",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Сповіщати мене, коли мене (або групу, до якої я належу) призначають до сторінки, або моє призначення вилучають",
 	"bs-pageassignments-notification-reason": "Причини для цього сповіщення:",
 	"bs-pageassignments-notification-reason-user": "Вас безпосередньо призначено для сторінки",
 	"bs-pageassignments-notification-reason-group": "Ви — член {{PLURAL:$1|такої групи|таких груп}}: $2",
