@@ -98,5 +98,6 @@
 	"bs-pageassignments-collection-var-namespacename": "Espaço nominal",
 	"bs-pageassignments-collection-var-assignedpages": "Páginas atribuídas",
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 atribuiu a página \"$3\" ao grupo \"Todos\"",
-	"bs-pageassignments-collection-var-unassignedpages": "Páginas não atribuídas"
+	"bs-pageassignments-collection-var-unassignedpages": "Páginas não atribuídas",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Notificar-me quando uma página me for atribuída (ou a um grupo ao qual pertenço), ou a atribuição de uma página me for removida"
 }
