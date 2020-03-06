@@ -4,7 +4,6 @@ namespace BlueSpice\PageAssignments\Hook\PersonalUrls;
 
 use BlueSpice\Hook\PersonalUrls;
 use SpecialPage;
-use SpecialPageFactory;
 
 class AddMyPageAssignments extends PersonalUrls {
 
@@ -24,7 +23,9 @@ class AddMyPageAssignments extends PersonalUrls {
 	protected function doProcess() {
 		$this->personal_urls['pageassignments'] = [
 			'href' => SpecialPage::getTitleFor( 'PageAssignments' )->getLocalURL(),
-			'text' => SpecialPageFactory::getPage( 'PageAssignments' )->getDescription()
+			'text' => \MediaWiki\MediaWikiServices::getInstance()
+				->getSpecialPageFactory()
+				->getPage( 'PageAssignments' )->getDescription()
 		];
 		return true;
 	}
