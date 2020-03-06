@@ -62,7 +62,7 @@ class FetchPageAssignments extends \BlueSpice\Hook\BeforePageDisplay {
 			'BSPageAssignmentsAssignableFactory'
 		);
 		$assignable = $factory->factory( $assignment->getType() );
-		$renderer = $this->getServices()->getBSRendererFactory()->get(
+		$renderer = $this->getServices()->getService( 'BSRendererFactory' )->get(
 			$assignable->getRendererKey(),
 			new \BlueSpice\Renderer\Params( [
 				Assignment::PARAM_ASSIGNMENT => $assignment
