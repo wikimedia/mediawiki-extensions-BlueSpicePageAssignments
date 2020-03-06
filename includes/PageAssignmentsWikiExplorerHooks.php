@@ -119,7 +119,7 @@ class PageAssignmentsWikiExplorerHooks {
 		$aData = [];
 		$aUserIds = [];
 		$aGroups = [];
-		$util = Services::getInstance()->getBSUtilityFactory();
+		$util = Services::getInstance()->getService( 'BSUtilityFactory' );
 
 		foreach ( $oRes as $oRow ) {
 			if ( $oRow->pa_assignee_type == 'group' ) {

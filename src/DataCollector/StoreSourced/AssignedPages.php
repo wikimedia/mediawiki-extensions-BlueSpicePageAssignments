@@ -56,12 +56,12 @@ class AssignedPages extends StoreSourced\NamespaceCollector {
 			$config = $snapshot->getConfig();
 		}
 		if ( !$factory ) {
-			$factory = $services->getBSEntityFactory();
+			$factory = $services->getService( 'BSEntityFactory' );
 		}
 		if ( !$store ) {
 			$context = \RequestContext::getMain();
 			$context->setUser(
-				$services->getBSUtilityFactory()->getMaintenanceUser()->getUser()
+				$services->getService( 'BSUtilityFactory' )->getMaintenanceUser()->getUser()
 			);
 			$store = new Store( $context, $services->getDBLoadBalancer() );
 		}

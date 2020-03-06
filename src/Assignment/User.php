@@ -22,7 +22,7 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	 * @return string
 	 */
 	public function getText() {
-		$utilities = Services::getInstance()->getBSUtilityFactory();
+		$utilities = Services::getInstance()->getService( 'BSUtilityFactory' );
 		return $utilities->getUserHelper( $this->getUser() )->getDisplayName();
 	}
 
