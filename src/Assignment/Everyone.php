@@ -48,10 +48,13 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 			'user',
 			'user_id'
 		);
+		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		$title = $this->getTitle();
 		foreach ( $res as $row ) {
-			$allowed = $this->getTitle()->userCan(
+			$allowed = $pm->userCan(
 				'pageassignable',
-				\User::newFromId( (int)$row->user_id )
+				\User::newFromId( (int)$row->user_id ),
+				$title
 			);
 			if ( !$allowed ) {
 				continue;

@@ -49,7 +49,10 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 			return;
 		}
 
-		if ( !$this->context->getTitle()->userCan( 'pageassignable', $user ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'pageassignable', $user, $this->context->getTitle() )
+		) {
 			return;
 		}
 		$assignmentFactory = Services::getInstance()->getService(

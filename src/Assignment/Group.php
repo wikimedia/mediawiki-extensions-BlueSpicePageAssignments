@@ -50,10 +50,13 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 				'ug_group' => $this->getKey()
 			]
 		);
+		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		$title = $this->getTitle();
 		foreach ( $res as $row ) {
-			$allowed = $this->getTitle()->userCan(
+			$allowed = $pm->userCan(
 				'pageassignable',
-				\User::newFromId( (int)$row->ug_user )
+				\User::newFromId( (int)$row->ug_user ),
+				$title
 			);
 			if ( !$allowed ) {
 				continue;

@@ -62,7 +62,9 @@ class Flyout extends BasePanel implements IFlyout {
 		if ( !$title || !$title->exists() ) {
 			return false;
 		}
-		if ( !$title->userCan( 'read' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()->getPermissionManager()
+			->userCan( 'read', $context->getUser(), $title )
+		) {
 			return false;
 		}
 

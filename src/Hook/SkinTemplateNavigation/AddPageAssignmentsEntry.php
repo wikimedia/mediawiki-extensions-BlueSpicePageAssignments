@@ -13,7 +13,13 @@ class AddPageAssignmentsEntry extends SkinTemplateNavigation {
 		if ( !$this->sktemplate->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
 			return true;
 		}
-		if ( !$this->sktemplate->getTitle()->userCan( 'pageassignments' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()->getPermissionManager()
+			->userCan(
+				'pageassignments',
+				$this->sktemplate->getUser(),
+				$this->sktemplate->getTitle()
+			)
+		) {
 			return true;
 		}
 		return false;
