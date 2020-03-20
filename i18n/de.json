@@ -100,5 +100,6 @@
 	"bs-pageassignments-collection-type-assignedpages": "Zuweisungen",
 	"bs-pageassignments-collection-var-namespacename": "Namensraum",
 	"bs-pageassignments-collection-var-assignedpages": "Zugewiesene Seiten",
-	"bs-pageassignments-collection-var-unassignedpages": "Nicht zugewiesene Seiten"
+	"bs-pageassignments-collection-var-unassignedpages": "Nicht zugewiesene Seiten",
+	"bs-pageassignments-pageheader-label": "Zuweisungen"
 }
