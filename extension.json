@@ -54,7 +54,10 @@
 			},
 			"RendererRegistry": {
 				"assignment": "\\BlueSpice\\PageAssignments\\Renderer\\Assignment::factory",
-				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User::factory"
+				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User::factory",
+				"pageheader-assignments": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignments::factory",
+				"pageheader-assignments-base": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignmentBase::factory",
+				"pageheader-assignments-user": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignmentUser::factory"
 			},
 			"NotificationRegistrationFunctions": [
 				"\\BlueSpice\\PageAssignments\\Notifications\\Registrator::registerNotifications"
@@ -70,6 +73,9 @@
 			},
 			"EntityRegistry": {
 				"assignedpages": "\\BlueSpice\\PageAssignments\\EntityConfig\\Collection\\AssignedPages::factory"
+			},
+			"PageHeaderBeforeContentRegistry": {
+				"pageheader-assignments": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignments::factory"
 			}
 		},
 		"BlueSpiceExtendedStatistics": {
@@ -167,7 +173,8 @@
 	"ResourceModules": {
 		"ext.pageassignments.styles": {
 			"styles": [
-				"ext.bluespice.pageassignments.less"
+				"ext.bluespice.pageassignments.less",
+				"ext.bluespice.pageassignments.pageheader.less"
 			],
 			"class": "\\BlueSpice\\ResourceModule\\LessVars"
 		},
