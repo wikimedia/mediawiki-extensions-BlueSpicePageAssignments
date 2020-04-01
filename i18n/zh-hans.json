@@ -96,5 +96,6 @@
 	"bs-pageassignments-sesp-pageassignments-alias": "分配",
 	"bs-pageassignments-sesp-pageassignments-desc": "分配",
 	"bs-pageassignments-secure-lockdown-reason": "仅{{PLURAL:$2|assignee|assignees}} $3有权限进行操作“$1”",
-	"bs-pageassignments-group-lockdown-reason": "您没有查看页面$1的权限"
+	"bs-pageassignments-group-lockdown-reason": "您没有查看页面$1的权限",
+	"bs-pageassignments-collection-type-assignedpages": "作业"
 }
