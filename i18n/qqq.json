@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth",
 			"Beta16",
+			"Guycn2",
 			"Liuxinyu970226",
+			"Patric Wirth",
 			"Umherirrender",
-			"Verdy p",
-			"Guycn2"
+			"Verdy p"
 		]
 	},
 	"bs-pageassignments-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of page assignments extension",

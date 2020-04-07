@@ -1,15 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92",
+			"Derugon",
+			"Epok",
 			"Gomoko",
 			"Samihuc",
-			"Verdy p",
-			"Urhixidur",
 			"Tartare",
-			"Epok",
 			"Thibaut120094",
-			"Derugon"
+			"Urhixidur",
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d’assigner des utilisateurs ou groupes à une page",

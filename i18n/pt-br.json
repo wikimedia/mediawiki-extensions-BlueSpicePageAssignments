@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Cristofer Alves",
-			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
 	"bs-pageassignments-desc": "Permite atribuir uma página a utilizadores ou grupos",

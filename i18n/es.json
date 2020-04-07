@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe",
-			"Igv",
 			"Dgstranz",
+			"Fitoschido",
+			"Igv",
 			"Javiersanp",
-			"Fitoschido"
+			"Macofe"
 		]
 	},
 	"bs-pageassignments-desc": "Permite asignar usuarios o grupos a una página",
