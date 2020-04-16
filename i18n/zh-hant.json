@@ -95,5 +95,6 @@
 	"bs-pageassignments-collection-type-assignedpages": "分配",
 	"bs-pageassignments-collection-var-namespacename": "命名空間",
 	"bs-pageassignments-collection-var-assignedpages": "已分配頁面",
-	"bs-pageassignments-collection-var-unassignedpages": "未分配頁面"
+	"bs-pageassignments-collection-var-unassignedpages": "未分配頁面",
+	"bs-pageassignments-pageheader-label": "分配"
 }

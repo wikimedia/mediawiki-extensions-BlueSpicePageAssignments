@@ -5,6 +5,7 @@
 			"Fitoschido",
 			"Igv",
 			"Javiersanp",
+			"Juenti el toju",
 			"Macofe"
 		]
 	},
@@ -72,5 +73,6 @@
 	"bs-pageassignments-assignee-type-user": "Usuario",
 	"bs-pageassignments-assignee-type-group": "Grupo",
 	"bs-pageassignments-group-lockdown-reason": "No se te ha asignado la página $1",
-	"bs-pageassignments-collection-var-namespacename": "Espacio de nombres"
+	"bs-pageassignments-collection-var-namespacename": "Espacio de nombres",
+	"bs-pageassignments-pageheader-label": "Asignaciones"
 }

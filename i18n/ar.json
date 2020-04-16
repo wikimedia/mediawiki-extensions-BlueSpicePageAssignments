@@ -4,6 +4,7 @@
 			"Meno25",
 			"Mido",
 			"Moud hosny",
+			"Tala Ali",
 			"ديفيد"
 		]
 	},
@@ -96,5 +97,6 @@
 	"bs-pageassignments-collection-type-assignedpages": "التعيينات",
 	"bs-pageassignments-collection-var-namespacename": "النطاق",
 	"bs-pageassignments-collection-var-assignedpages": "الصفحات المخصصة",
-	"bs-pageassignments-collection-var-unassignedpages": "الصفحات غير المخصصة"
+	"bs-pageassignments-collection-var-unassignedpages": "الصفحات غير المخصصة",
+	"bs-pageassignments-pageheader-label": "مهمة"
 }
