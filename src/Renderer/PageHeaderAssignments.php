@@ -25,12 +25,6 @@ class PageHeaderAssignments extends Renderer {
 	protected $factory = null;
 
 	/**
-	 *
-	 * @var int
-	 */
-	protected $limit = 3;
-
-	/**
 	 * Constructor
 	 * @param Config $config
 	 * @param Params $params
@@ -106,6 +100,8 @@ class PageHeaderAssignments extends Renderer {
 			return '';
 		}
 
+		$limit = $this->config->get( 'PageAssignmentsPageHeaderLimit' );
+
 		$factory = Services::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
@@ -144,8 +140,10 @@ class PageHeaderAssignments extends Renderer {
 
 		$cnt = 0;
 		foreach ( $target->getAssignments() as $assignment ) {
-			if ( $cnt === $this->limit ) { continue;
-   }
+			if ( $cnt === $limit ) {
+				continue;
+			}
+
 			$assignments .= $this->makeEntry( $assignment );
 			$cnt++;
 		}
