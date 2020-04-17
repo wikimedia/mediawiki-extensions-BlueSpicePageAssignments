@@ -309,6 +309,9 @@
 		},
 		"PageAssignmentsTarget": {
 			"value": "title"
+		},
+		"PageAssignmentsPageHeaderLimit": {
+			"value": 3
 		}
 	},
 	"Hooks": {
