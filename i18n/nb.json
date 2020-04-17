@@ -94,5 +94,6 @@
 	"bs-pageassignments-collection-type-assignedpages": "Tildelinger",
 	"bs-pageassignments-collection-var-namespacename": "Navnerom",
 	"bs-pageassignments-collection-var-assignedpages": "Tildelte sider",
-	"bs-pageassignments-collection-var-unassignedpages": "Ikke-tildelte sider"
+	"bs-pageassignments-collection-var-unassignedpages": "Ikke-tildelte sider",
+	"bs-pageassignments-pageheader-label": "Tildelinger"
 }
