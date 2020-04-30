@@ -32,6 +32,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 ave assegnate 'a pàgene \"$3\" a 'u gruppe \"Ognune\"",
 	"logentry-bs-pageassignments-remove-specialeveryone": "$1 ave luate l'assegnazione de \"Ognune\" pa pàgene \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "Assegnaziune d'a pàgene",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Avvisame quanne ije avènghe (o ìnu gruppe addò stoche) assignate a 'na pàgene, o l'assegnaziona meje avène luate",
 	"bs-pageassignments-notification-reason": "Mutive pe sta notifeche:",
 	"bs-pageassignments-notification-reason-user": "Te ste assigne direttamende a sta pàgene",
 	"bs-pageassignments-notification-reason-group": "Tu mò si nu membre de {{PLURAL:$1|stu gruppe|ste gruppe}}: $2",
@@ -93,5 +94,6 @@
 	"bs-pageassignments-collection-type-assignedpages": "Assegnaziune",
 	"bs-pageassignments-collection-var-namespacename": "Namespace",
 	"bs-pageassignments-collection-var-assignedpages": "Pàggene assignate",
-	"bs-pageassignments-collection-var-unassignedpages": "Pàggene non assignate"
+	"bs-pageassignments-collection-var-unassignedpages": "Pàggene non assignate",
+	"bs-pageassignments-pageheader-label": "Assegnaziune"
 }
