@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Movses",
 			"Piramidion",
-			"Ата",
 			"Vlad5250",
-			"Movses"
+			"Ата"
 		]
 	},
 	"bs-pageassignments-desc": "Дозволяє Вам призначати користувачів або групи до певної сторінки",
@@ -98,5 +98,6 @@
 	"bs-pageassignments-collection-var-namespacename": "Простір назв",
 	"bs-pageassignments-collection-var-assignedpages": "Призначені сторінки",
 	"bs-pageassignments-collection-var-unassignedpages": "Непризначені сторінки",
-	"echo-pref-tooltip-bs-pageassignments-action-cat": "Сповіщати мене, коли мене (або групу, до якої я належу) призначають до сторінки, або моє призначення вилучають"
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Сповіщати мене, коли мене (або групу, до якої я належу) призначають до сторінки, або моє призначення вилучають",
+	"bs-pageassignments-pageheader-label": "Призначення"
 }

@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe",
-			"Igv",
 			"Dgstranz",
+			"Fitoschido",
+			"Igv",
 			"Javiersanp",
-			"Fitoschido"
+			"Juenti el toju",
+			"Macofe"
 		]
 	},
 	"bs-pageassignments-desc": "Permite asignar usuarios o grupos a una página",
@@ -73,5 +74,6 @@
 	"bs-pageassignments-assignee-type-user": "Usuario",
 	"bs-pageassignments-assignee-type-group": "Grupo",
 	"bs-pageassignments-collection-var-namespacename": "Espacio de nombres",
-	"bs-pageassignments-group-lockdown-reason": "No se te ha asignado la página $1"
+	"bs-pageassignments-group-lockdown-reason": "No se te ha asignado la página $1",
+	"bs-pageassignments-pageheader-label": "Asignaciones"
 }

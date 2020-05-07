@@ -1,15 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92",
+			"Derugon",
+			"Epok",
 			"Gomoko",
 			"Samihuc",
-			"Verdy p",
-			"Urhixidur",
 			"Tartare",
-			"Epok",
 			"Thibaut120094",
-			"Derugon"
+			"Urhixidur",
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d’assigner des utilisateurs ou groupes à une page",
@@ -103,5 +103,6 @@
 	"bs-pageassignments-collection-var-namespacename": "Espace de noms",
 	"bs-pageassignments-collection-var-assignedpages": "Pages assignées",
 	"bs-pageassignments-collection-var-unassignedpages": "Pages non assignées",
-	"echo-pref-tooltip-bs-pageassignments-action-cat": "M’avertir lorsque je suis (ou un groupe auquel j’appartiens est) assigné à une page ou que mon assignation est retirée"
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "M’avertir lorsque je suis (ou un groupe auquel j’appartiens est) assigné à une page ou que mon assignation est retirée",
+	"bs-pageassignments-pageheader-label": "Affectations"
 }

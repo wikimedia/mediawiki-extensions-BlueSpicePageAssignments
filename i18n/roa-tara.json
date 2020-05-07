@@ -93,5 +93,7 @@
 	"bs-pageassignments-collection-type-assignedpages": "Assegnaziune",
 	"bs-pageassignments-collection-var-namespacename": "Namespace",
 	"bs-pageassignments-collection-var-assignedpages": "Pàggene assignate",
-	"bs-pageassignments-collection-var-unassignedpages": "Pàggene non assignate"
+	"bs-pageassignments-collection-var-unassignedpages": "Pàggene non assignate",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Avvisame quanne ije avènghe (o ìnu gruppe addò stoche) assignate a 'na pàgene, o l'assegnaziona meje avène luate",
+	"bs-pageassignments-pageheader-label": "Assegnaziune"
 }

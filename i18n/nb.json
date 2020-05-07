@@ -95,5 +95,6 @@
 	"bs-pageassignments-collection-var-namespacename": "Navnerom",
 	"bs-pageassignments-collection-var-assignedpages": "Tildelte sider",
 	"bs-pageassignments-collection-var-unassignedpages": "Ikke-tildelte sider",
-	"echo-pref-tooltip-bs-pageassignments-action-cat": "Varsle meg når jeg (eller ei gruppe jeg tilhører) får tildelt en side, eller en tildeling fjernes"
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Varsle meg når jeg (eller ei gruppe jeg tilhører) får tildelt en side, eller en tildeling fjernes",
+	"bs-pageassignments-pageheader-label": "Tildelinger"
 }

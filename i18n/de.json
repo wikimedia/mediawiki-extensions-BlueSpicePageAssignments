@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robert Vogel",
-			"Metalhead64",
-			"TMg",
 			"Hwboehm",
 			"Luke081515",
-			"Tiin",
-			"Mglaser"
+			"Metalhead64",
+			"Mglaser",
+			"Robert Vogel",
+			"TMg",
+			"Tiin"
 		]
 	},
 	"bs-pageassignments-desc": "Erlaubt die Zuweisung von Zielgruppen zu einer Seite",

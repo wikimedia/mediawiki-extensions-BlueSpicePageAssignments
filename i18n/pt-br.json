@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Cristofer Alves",
-			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
 	"bs-pageassignments-desc": "Permite atribuir uma página a utilizadores ou grupos",
@@ -97,5 +97,6 @@
 	"bs-pageassignments-collection-var-namespacename": "Espaço nominal",
 	"bs-pageassignments-collection-var-assignedpages": "Páginas atribuídas",
 	"bs-pageassignments-collection-var-unassignedpages": "Páginas não atribuídas",
-	"echo-pref-tooltip-bs-pageassignments-action-cat": "Notificar-me quando estiver (ou um grupo ao qual pertenço) estiver atribuído a uma página ou se minha tarefa for removida"
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Notificar-me quando estiver (ou um grupo ao qual pertenço) estiver atribuído a uma página ou se minha tarefa for removida",
+	"bs-pageassignments-pageheader-label": "Atribuições"
 }
