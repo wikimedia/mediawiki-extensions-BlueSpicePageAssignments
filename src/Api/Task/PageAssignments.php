@@ -199,7 +199,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 * @return string
 	 */
 	protected function getAssigneeThumb( $assignment ) {
-		$factory = \BlueSpice\Services::getInstance()->getBSRendererFactory();
+		$factory = \BlueSpice\Services::getInstance()->getService( 'BSRendererFactory' );
 		$thumbParams = [ 'width' => '32', 'height' => '32' ];
 
 		if ( $assignment->pa_assignee_type == 'group' ) {
@@ -255,7 +255,7 @@ class PageAssignments extends \BSApiTasksBase {
 		$newUsers = [];
 		$removedUsers = [];
 
-		$notificationsManager = \BlueSpice\Services::getInstance()->getBSNotificationManager();
+		$notificationsManager = \BlueSpice\Services::getInstance()->getService( 'BSNotificationManager' );
 
 		$notifier = $notificationsManager->getNotifier();
 

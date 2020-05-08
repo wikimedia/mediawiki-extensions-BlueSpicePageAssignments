@@ -19,7 +19,7 @@ class User extends Assignment {
 	 * @return mixed
 	 */
 	protected function render_image( $val ) {
-		$renderer = Services::getInstance()->getBSRendererFactory()->get(
+		$renderer = Services::getInstance()->getService( 'BSRendererFactory' )->get(
 			'userimage',
 			new Params( [
 				'user' => \User::newFromName( $this->assignment->getKey() )
