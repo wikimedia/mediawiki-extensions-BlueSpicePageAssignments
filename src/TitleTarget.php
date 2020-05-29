@@ -113,8 +113,9 @@ class TitleTarget implements ITarget {
 		return array_filter(
 			$this->getAssignments(),
 			function ( IAssignment $e ) use( $user ) {
-			return in_array( $user->getId(), $e->getUserIds() );
-		 } );
+				return in_array( $user->getId(), $e->getUserIds() );
+			}
+		);
 	}
 
 	/**
@@ -126,14 +127,15 @@ class TitleTarget implements ITarget {
 	public function diff( array $assignments1 = [], array $assignments2 = [] ) {
 		return array_filter( $assignments1,
 			function ( IAssignment $e ) use( $assignments2 ) {
-			foreach ( $assignments2 as $assignment ) {
-				if ( $e->getId() !== $assignment->getId() ) {
-					continue;
+				foreach ( $assignments2 as $assignment ) {
+					if ( $e->getId() !== $assignment->getId() ) {
+						continue;
+					}
+					return false;
 				}
-				return false;
+				return true;
 			}
-			return true;
-		 } );
+		);
 	}
 
 	/**
