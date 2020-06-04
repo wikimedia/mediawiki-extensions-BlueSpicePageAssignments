@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Selven"
+			"Selven",
+			"ValeJappo"
 		]
 	},
 	"pageassignments": "Assegnazioni",
@@ -22,6 +23,7 @@
 	"log-name-bs-pageassignments": "Registro di assegnazioni",
 	"log-description-bs-pageassignments": "Registro delle modifiche sulla pagina assegnazioni",
 	"log-show-hide-bs-pageassignments": "$1 registro assegnazioni",
+	"bs-pageassignments-notification-reason": "Motivi di questa notifica:",
 	"notification-bs-pageassignments-assignment-change-add-subject": "Assegnato a $2",
 	"notification-bs-pageassignments-assignment-change-add-body": "$1 {{GENDER:$2|ti ha assegnato}} alla pagina $2.",
 	"notification-bs-pageassignments-page-move-summary": "$3 è stata {{GENDER:$2|spostata}} da $1",
@@ -46,5 +48,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "Tutti",
 	"bs-pageassignments-assignee-type-everyone": "Tutti",
 	"bs-pageassignments-assignee-type-user": "Utente",
-	"bs-pageassignments-assignee-type-group": "Gruppo"
+	"bs-pageassignments-assignee-type-group": "Gruppo",
+	"bs-pageassignments-collection-var-namespacename": "Namespace"
 }
