@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Selven"
+			"Selven",
+			"ValeJappo"
 		]
 	},
 	"pageassignments": "Assegnazioni",
@@ -46,5 +47,7 @@
 	"bs-pageassignments-assignee-type-user": "Utente",
 	"bs-pageassignments-assignee-type-group": "Gruppo",
 	"bs-pageassignments-sesp-pageassignments-alias": "Assegnazione",
-	"bs-pageassignments-sesp-pageassignments-desc": "Assegnazione"
+	"bs-pageassignments-sesp-pageassignments-desc": "Assegnazione",
+	"bs-pageassignments-notification-reason": "Motivi di questa notifica:",
+	"bs-pageassignments-collection-var-namespacename": "Namespace"
 }

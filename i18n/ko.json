@@ -39,5 +39,6 @@
 	"bs-pageassignments-flyout-form-title": "할당 추가",
 	"bs-pageassignments-flyout-grid-title": "이 문서에 할당된 사용자와 그룹",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "할당된 사용자의 추가 권한",
-	"bs-pageassignments-collection-var-namespacename": "이름공간"
+	"bs-pageassignments-collection-var-namespacename": "이름공간",
+	"bs-pageassignments-notification-reason-group": "당신은 다음 {{PLURAL:$1|그룹}}의 일원입니다: $2"
 }
