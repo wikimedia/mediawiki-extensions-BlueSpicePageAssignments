@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Agusbou2015",
 			"Dgstranz",
 			"Fitoschido",
 			"Igv",
@@ -67,6 +68,8 @@
 	"prefs-pageassign": "Asignación",
 	"bs-usagetracker-pageassignments": "paginas con asignaciones",
 	"apihelp-bs-pageassignable-store-description": "Devuelve la lista de asignados",
+	"apihelp-bs-pageassignment-store-description": "Devuelve las asignaciones de la página específica",
+	"apihelp-bs-pageassignment-store-summary": "Devuelve las asignaciones de la página específica",
 	"apihelp-bs-mypageassignment-store-description": "Devuelve las páginas asignadas al usuario actual",
 	"bs-pageassignments-assignee-special-everyone-label": "Cualquiera",
 	"bs-pageassignments-assignee-type-everyone": "Todos",
