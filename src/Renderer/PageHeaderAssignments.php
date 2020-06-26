@@ -17,7 +17,7 @@ use BlueSpice\PageAssignments\IAssignment;
 
 class PageHeaderAssignments extends Renderer {
 
-	public const SKIN_TEMPLATE = 'skintemplate';
+	const SKIN_TEMPLATE = 'skintemplate';
 	/**
 	 *
 	 * @var PageHeaderBeforeContentFactory
@@ -175,7 +175,7 @@ class PageHeaderAssignments extends Renderer {
 			$template = 'pageheader-assignments-user';
 		}
 
-		$renderer = Services::getInstance()->getBSRendererFactory()->get(
+		$renderer = Services::getInstance()->getService( 'BSRendererFactory' )->get(
 			$template,
 			new \BlueSpice\Renderer\Params( [
 				Assignment::PARAM_ASSIGNMENT => $assignment,
