@@ -34,19 +34,18 @@
 				"pageassignable": {
 					"type": "namespace",
 					"roles": [
+						"reader",
 						"admin",
 						"author",
 						"editor",
 						"maintenanceadmin",
-						"reviewer",
-						"reader"
+						"reviewer"
 					]
 				},
 				"pageassignments": {
 					"type": "namespace",
 					"roles": [
 						"admin",
-						"editor",
 						"maintenanceadmin",
 						"reviewer"
 					]
