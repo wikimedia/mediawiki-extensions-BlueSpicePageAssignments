@@ -175,7 +175,7 @@ class PageHeaderAssignments extends Renderer {
 			$template = 'pageheader-assignments-user';
 		}
 
-		$renderer = Services::getInstance()->getBSRendererFactory()->get(
+		$renderer = Services::getInstance()->getService( 'BSRendererFactory' )->get(
 			$template,
 			new \BlueSpice\Renderer\Params( [
 				Assignment::PARAM_ASSIGNMENT => $assignment,
