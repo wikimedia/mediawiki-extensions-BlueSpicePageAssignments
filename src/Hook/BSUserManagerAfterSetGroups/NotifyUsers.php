@@ -84,7 +84,7 @@ class NotifyUsers extends BSUserManagerAfterSetGroups {
 		);
 
 		/** @var Record $record */
-		foreach ( $recordSet as $record ) {
+		foreach ( $recordSet->getRecords() as $record ) {
 			$this->groupsWithAssignments[] = $record->get( Record::ASSIGNEE_KEY );
 		}
 
