@@ -51,7 +51,7 @@ class AssignmentFactory {
 	/**
 	 *
 	 * @param \Title $title
-	 * @return bool|Target
+	 * @return bool|ITarget
 	 * @throws \MWException
 	 */
 	public function newFromTargetTitle( \Title $title ) {
@@ -95,7 +95,7 @@ class AssignmentFactory {
 
 	/**
 	 *
-	 * @param Target $instance
+	 * @param ITarget $instance
 	 */
 	protected function appendCache( ITarget $instance ) {
 		$this->targetCache[ $instance->getTitle()->getArticleId() ]
@@ -105,7 +105,7 @@ class AssignmentFactory {
 	/**
 	 *
 	 * @param \Title $title
-	 * @return Target|false
+	 * @return ITarget|false
 	 */
 	protected function fromCache( \Title $title ) {
 		if ( isset( $this->targetCache[$title->getArticleID()] ) ) {
@@ -163,7 +163,7 @@ class AssignmentFactory {
 
 	/**
 	 *
-	 * @param Target $target
+	 * @param ITarget $target
 	 * @return true
 	 */
 	public function invalidate( ITarget $target ) {
