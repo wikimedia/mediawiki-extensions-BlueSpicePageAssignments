@@ -341,8 +341,8 @@
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddWikiExplorerResources::callback",
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\FetchPageAssignments::callback"
 		],
-		"SkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
+		"ChameleonSkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\PageAssignments\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
 		"TitleMoveComplete": [
 			"PageAssignmentsHooks::onTitleMoveComplete"

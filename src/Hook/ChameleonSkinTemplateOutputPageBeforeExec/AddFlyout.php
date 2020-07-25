@@ -1,12 +1,12 @@
 <?php
 
-namespace BlueSpice\PageAssignments\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\PageAssignments\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\PageAssignments\Panel\Flyout;
 use BlueSpice\SkinData;
 
-class AddFlyout extends SkinTemplateOutputPageBeforeExec {
+class AddFlyout extends ChameleonSkinTemplateOutputPageBeforeExec {
 
 	protected function skipProcessing() {
 		if ( $this->skin->getTitle()->exists() === false ) {
