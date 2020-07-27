@@ -3,6 +3,7 @@
 		"authors": [
 			"Otokoume",
 			"Shirayuki",
+			"Tmv",
 			"Yusuke1109"
 		]
 	},
@@ -37,9 +38,9 @@
 	"notification-bs-pageassignments-page-delete-subject": "利用者ページ $2 が削除されました",
 	"notification-bs-pageassignments-page-delete-body": "$1 がページ $2 を{{GENDER:$2|削除しました}}。",
 	"notification-bs-pageassignments-user-group-add-body": "$1 があなたにグループ「$4」を{{GENDER:$2|追加しました}}。$3 から現在の割り当てを確認できます。",
-	"notification-bs-pageassignments-user-group-remove-summary": "あなたは{{PLURAL:$5|以下のグループ}}の所属から外れました: $4",
-	"notification-bs-pageassignments-user-group-remove-subject": "{{PLURAL:$5|グループ}}「$4」から除去しました",
-	"notification-bs-pageassignments-user-group-remove-body": "$1 があなたを{{PLURAL:$5|グループ}}「$4」から所属を{{GENDER:$2|外しました}}。$3 から現在の割り当てを確認できます。",
+	"notification-bs-pageassignments-user-group-remove-summary": "あなたは割り当てられたページを持つグループ $4 から削除されました。",
+	"notification-bs-pageassignments-user-group-remove-subject": "割り当てられたページを持つグループ $4 から削除しました",
+	"notification-bs-pageassignments-user-group-remove-body": "あなたは割り当てられたページを持つグループ $4 から削除されました。$3 であなたへの割り当てをご確認ください。",
 	"bs-pageassignments-assignee-type-user": "利用者",
 	"bs-pageassignments-assignee-type-group": "グループ"
 }
