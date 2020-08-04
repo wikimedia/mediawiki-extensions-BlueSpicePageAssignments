@@ -98,7 +98,7 @@ class TitleTarget implements ITarget {
 		foreach ( $this->getAssignments() as $assignment ) {
 			$ids = array_merge_recursive( $ids, $assignment->getUserIds() );
 		}
-		return $ids;
+		return array_unique( $ids );
 	}
 
 	/**
