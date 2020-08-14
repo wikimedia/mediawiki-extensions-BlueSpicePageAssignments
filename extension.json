@@ -156,7 +156,9 @@
 		"PageAssignmentsAlias": "languages/PageAssignments.alias.php"
 	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\PageAssignments\\": "src/",
+		"BlueSpice\\PageAssignments\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
 		"BlueSpice\\PageAssignments\\Tests\\": "tests/phpunit/"
 	},
 	"AutoloadClasses": {
