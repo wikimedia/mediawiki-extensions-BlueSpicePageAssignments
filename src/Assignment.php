@@ -2,9 +2,9 @@
 namespace BlueSpice\PageAssignments;
 
 use BlueSpice\PageAssignments\Data\Record;
-use BlueSpice\Services;
 use Config;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\MediaWikiServices;
 use Title;
 
 abstract class Assignment implements IAssignment, \JsonSerializable {
@@ -109,7 +109,7 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 			return $this->anchor;
 		}
 		if ( !$this->linkRenderer ) {
-			$this->linkRenderer = Services::getInstance()->getLinkRenderer();
+			$this->linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 		}
 		$this->anchor = $this->makeAnchor();
 		return $this->anchor;

@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\Everyone;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
@@ -59,7 +59,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	 * @return null
 	 */
 	protected function appendRowToData() {
-		$assignmentFactory = Services::getInstance()->getService(
+		$assignmentFactory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 

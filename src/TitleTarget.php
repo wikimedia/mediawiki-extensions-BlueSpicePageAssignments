@@ -2,8 +2,8 @@
 namespace BlueSpice\PageAssignments;
 
 use BlueSpice\Data\RecordSet;
-use BlueSpice\Services;
 use Config;
+use MediaWiki\MediaWikiServices;
 use Status;
 use Title;
 use User;
@@ -56,7 +56,7 @@ class TitleTarget implements ITarget {
 	 * @return AssignmentFactory
 	 */
 	public function getFactory() {
-		return Services::getInstance()->getService(
+		return MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 	}

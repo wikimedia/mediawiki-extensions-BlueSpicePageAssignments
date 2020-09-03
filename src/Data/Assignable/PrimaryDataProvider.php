@@ -3,7 +3,7 @@
 namespace BlueSpice\PageAssignments\Data\Assignable;
 
 use BlueSpice\PageAssignments\Data\Record;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
@@ -52,7 +52,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 				"Not an assignable title: '{$title->getFullText()}'"
 			);
 		}
-		$assignableFactory = Services::getInstance()->getService(
+		$assignableFactory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignableFactory'
 		);
 

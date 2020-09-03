@@ -2,7 +2,6 @@
 
 use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Data\Record;
-use BlueSpice\Services;
 
 class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 
@@ -32,7 +31,7 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 		}
 		foreach ( $assignedBy as $pageId => $relatedAssignments ) {
 			$title = \Title::newFromID( $pageId );
-			$link = Services::getInstance()->getLinkRenderer()->makeLink(
+			$link = $this->getServices()->getLinkRenderer()->makeLink(
 				$title
 			);
 			$oDataSet = (object)[
@@ -75,7 +74,7 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 	 * @return \BlueSpice\PageAssignments\IAssignment[]
 	 */
 	protected function getPageAssignments() {
-		$assignmentFactory = Services::getInstance()->getService(
+		$assignmentFactory = $this->getServices()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 		$recordSet = $assignmentFactory->getStore()->getReader()->read(

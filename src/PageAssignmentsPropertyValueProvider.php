@@ -2,8 +2,8 @@
 
 namespace BlueSpice\PageAssignments;
 
-use BlueSpice\Services;
 use BlueSpice\SMWConnector\PropertyValueProvider;
+use MediaWiki\MediaWikiServices;
 use SMW\DIWikiPage;
 use User;
 
@@ -90,7 +90,7 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 		}
 
 		if ( !$this->assignmentFactory ) {
-			$this->assignmentFactory = Services::getInstance()->getService(
+			$this->assignmentFactory = MediaWikiServices::getInstance()->getService(
 				'BSPageAssignmentsAssignmentFactory'
 			);
 		}
