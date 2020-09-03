@@ -13,8 +13,8 @@ use BlueSpice\PageAssignments\Data\DataCollector\AssignedPages\Record as Collect
 use BlueSpice\PageAssignments\Data\Page\Record;
 use BlueSpice\PageAssignments\Data\Page\Store;
 use BlueSpice\PageAssignments\Entity\Collection\AssignedPages as Collection;
-use BlueSpice\Services;
 use Config;
+use MediaWiki\MediaWikiServices;
 use MWException;
 
 class AssignedPages extends StoreSourced\NamespaceCollector {
@@ -39,7 +39,7 @@ class AssignedPages extends StoreSourced\NamespaceCollector {
 
 	/**
 	 * @param string $type
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param Snapshot $snapshot
 	 * @param Config|null $config
 	 * @param EntityFactory|null $factory
@@ -49,7 +49,7 @@ class AssignedPages extends StoreSourced\NamespaceCollector {
 	 * @return static
 	 * @throws MWException
 	 */
-	public static function factory( $type, Services $services, Snapshot $snapshot,
+	public static function factory( $type, MediaWikiServices $services, Snapshot $snapshot,
 		Config $config = null, EntityFactory $factory = null, IStore $store = null,
 		SnapshotFactory $snapshotFactory = null, array $namespaces = null ) {
 		if ( !$config ) {

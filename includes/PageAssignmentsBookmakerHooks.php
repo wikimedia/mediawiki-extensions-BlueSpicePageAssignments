@@ -1,6 +1,6 @@
 <?php
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class PageAssignmentsBookmakerHooks {
 
@@ -84,7 +84,7 @@ class PageAssignmentsBookmakerHooks {
 	 * @return BlueSpice\PageAssignments\AssignmentFactory
 	 */
 	private static function getFactory() {
-		return Services::getInstance()->getService(
+		return MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 	}

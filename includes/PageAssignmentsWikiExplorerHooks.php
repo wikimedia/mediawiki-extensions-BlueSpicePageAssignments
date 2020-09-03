@@ -1,6 +1,6 @@
 <?php
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class PageAssignmentsWikiExplorerHooks {
 
@@ -119,7 +119,7 @@ class PageAssignmentsWikiExplorerHooks {
 		$aData = [];
 		$aUserIds = [];
 		$aGroups = [];
-		$util = Services::getInstance()->getService( 'BSUtilityFactory' );
+		$util = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' );
 
 		foreach ( $oRes as $oRow ) {
 			if ( $oRow->pa_assignee_type == 'group' ) {

@@ -7,7 +7,7 @@ use BlueSpice\Data\FilterFinder;
 use BlueSpice\Data\IPrimaryDataProvider;
 use BlueSpice\PageAssignments\Data\Record;
 use BlueSpice\PageAssignments\Data\Schema;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
@@ -72,7 +72,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	 * @return array
 	 */
 	protected function makePreFilterConds( $params ) {
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignableFactory'
 		);
 		$conds = [

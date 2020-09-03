@@ -3,7 +3,7 @@
 namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
 use BlueSpice\Data\User\Record;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 
@@ -49,13 +49,13 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 			return;
 		}
 
-		if ( !\MediaWiki\MediaWikiServices::getInstance()
+		if ( !MediaWikiServices::getInstance()
 			->getPermissionManager()
 			->userCan( 'pageassignable', $user, $this->context->getTitle() )
 		) {
 			return;
 		}
-		$assignmentFactory = Services::getInstance()->getService(
+		$assignmentFactory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 		$assignment = $assignmentFactory->factory(

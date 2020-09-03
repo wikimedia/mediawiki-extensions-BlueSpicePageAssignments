@@ -1,7 +1,7 @@
 <?php
 namespace BlueSpice\PageAssignments\Assignment;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class Everyone extends \BlueSpice\PageAssignments\Assignment {
 
@@ -43,12 +43,12 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 		}
 		static::$userIdCache = [];
 
-		$loadBalancer = Services::getInstance()->getDBLoadBalancer();
+		$loadBalancer = MediaWikiServices::getInstance()->getDBLoadBalancer();
 		$res = $loadBalancer->getConnection( DB_REPLICA )->select(
 			'user',
 			'user_id'
 		);
-		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		$pm = MediaWikiServices::getInstance()->getPermissionManager();
 		$title = $this->getTitle();
 		foreach ( $res as $row ) {
 			$allowed = $pm->userCan(

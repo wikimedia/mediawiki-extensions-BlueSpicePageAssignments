@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\Assignment;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class User extends \BlueSpice\PageAssignments\Assignment {
 
@@ -22,7 +22,7 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	 * @return string
 	 */
 	public function getText() {
-		$utilities = Services::getInstance()->getService( 'BSUtilityFactory' );
+		$utilities = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' );
 		return $utilities->getUserHelper( $this->getUser() )->getDisplayName();
 	}
 

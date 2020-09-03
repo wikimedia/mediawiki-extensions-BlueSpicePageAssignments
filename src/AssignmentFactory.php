@@ -8,7 +8,7 @@ use BlueSpice\Data\ReaderParams;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\PageAssignments\Data\Assignment\Store;
 use BlueSpice\PageAssignments\Data\Record;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class AssignmentFactory {
 
@@ -157,7 +157,7 @@ class AssignmentFactory {
 	public function getStore() {
 		return new Store(
 			new Context( \RequestContext::getMain(), $this->config ),
-			Services::getInstance()->getDBLoadBalancer()
+			MediaWikiServices::getInstance()->getDBLoadBalancer()
 		);
 	}
 
