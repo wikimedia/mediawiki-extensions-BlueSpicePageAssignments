@@ -232,7 +232,9 @@
 				"bs-pageassignments-dlg-title",
 				"bs-pageassignments-dlg-fldlabel",
 				"bs-pageassignments-action-apiedit-description",
-				"bs-pageassignments-no-assignments"
+				"bs-pageassignments-no-assignments",
+				"bs-pageassignments-book-assignment-not-allowed-title",
+				"bs-pageassignments-book-assignment-not-allowed-text"
 			],
 			"dependencies": [
 				"ext.bluespice.pageassignments.assignable.messages"
