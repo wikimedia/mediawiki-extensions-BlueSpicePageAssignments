@@ -336,7 +336,7 @@
 			"\\BlueSpice\\PageAssignments\\Hook\\LoadExtensionSchemaUpdates\\AddMigrateRespEditorsUpdateMaintenance::callback"
 		],
 		"PersonalUrls": "\\BlueSpice\\PageAssignments\\Hook\\PersonalUrls\\AddMyPageAssignments::callback",
-		"SkinTemplateNavigation": "\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateNavigation\\AddPageAssignmentsEntry::callback",
+		"SkinTemplateNavigation::Universal": "\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateNavigationUniversal\\AddPageAssignmentsEntry::callback",
 		"BeforePageDisplay": [
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddResources::callback",
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddDashboardResources::callback",

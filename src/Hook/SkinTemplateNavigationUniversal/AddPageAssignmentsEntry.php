@@ -1,10 +1,10 @@
 <?php
 
-namespace BlueSpice\PageAssignments\Hook\SkinTemplateNavigation;
+namespace BlueSpice\PageAssignments\Hook\SkinTemplateNavigationUniversal;
 
-use BlueSpice\Hook\SkinTemplateNavigation;
+use BlueSpice\Hook\SkinTemplateNavigationUniversal;
 
-class AddPageAssignmentsEntry extends SkinTemplateNavigation {
+class AddPageAssignmentsEntry extends SkinTemplateNavigationUniversal {
 	/**
 	 *
 	 * @return bool
@@ -13,7 +13,7 @@ class AddPageAssignmentsEntry extends SkinTemplateNavigation {
 		if ( !$this->sktemplate->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
 			return true;
 		}
-		if ( !\MediaWiki\MediaWikiServices::getInstance()->getPermissionManager()
+		if ( !$this->getServices()->getPermissionManager()
 			->userCan(
 				'pageassignments',
 				$this->sktemplate->getUser(),
