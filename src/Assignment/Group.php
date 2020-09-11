@@ -1,7 +1,7 @@
 <?php
 namespace BlueSpice\PageAssignments\Assignment;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class Group extends \BlueSpice\PageAssignments\Assignment {
 
@@ -42,7 +42,7 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 		}
 		static::$userIdCache[$this->getKey()] = [];
 
-		$loadBalancer = Services::getInstance()->getDBLoadBalancer();
+		$loadBalancer = MediaWikiServices::getInstance()->getDBLoadBalancer();
 		$res = $loadBalancer->getConnection( DB_REPLICA )->select(
 			'user_groups',
 			'ug_user',
@@ -50,7 +50,7 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 				'ug_group' => $this->getKey()
 			]
 		);
-		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		$pm = MediaWikiServices::getInstance()->getPermissionManager();
 		$title = $this->getTitle();
 		foreach ( $res as $row ) {
 			$allowed = $pm->userCan(

@@ -7,8 +7,8 @@ use BlueSpice\EntityConfig;
 use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Schema;
 use BlueSpice\ExtendedStatistics\EntityConfig\Collection;
 use BlueSpice\PageAssignments\Entity\Collection\AssignedPages as Entity;
-use BlueSpice\Services;
 use Config;
+use MediaWiki\MediaWikiServices;
 
 class AssignedPages extends EntityConfig {
 
@@ -16,7 +16,7 @@ class AssignedPages extends EntityConfig {
 	 *
 	 * @param Config $config
 	 * @param string $key
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @return EntityConfig
 	 */
 	public static function factory( $config, $key, $services ) {

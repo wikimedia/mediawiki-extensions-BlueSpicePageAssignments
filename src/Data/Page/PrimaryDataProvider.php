@@ -9,9 +9,9 @@ use BlueSpice\Data\Page\PrimaryDataProvider as PageDataProvider;
 use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Assignment;
 use BlueSpice\PageAssignments\Data\Record as AssignmentRecord;
-use BlueSpice\Services;
 use BsStringHelper;
 use Hooks;
+use MediaWiki\MediaWikiServices;
 use Title;
 
 class PrimaryDataProvider extends PageDataProvider {
@@ -115,7 +115,7 @@ class PrimaryDataProvider extends PageDataProvider {
 		if ( $this->pageAssignments !== null ) {
 			return $this->pageAssignments;
 		}
-		$assignmentFactory = Services::getInstance()->getService(
+		$assignmentFactory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 		$recordSet = $assignmentFactory->getStore()->getReader()->read(

@@ -3,7 +3,7 @@
 namespace BlueSpice\PageAssignments\Assignable;
 
 use BlueSpice\PageAssignments\Data\Assignable\Group\Store;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class Group extends \BlueSpice\PageAssignments\Assignable {
 
@@ -14,7 +14,7 @@ class Group extends \BlueSpice\PageAssignments\Assignable {
 	public function getStore() {
 		return new Store(
 			$this->context,
-			Services::getInstance()->getDBLoadBalancer()
+			MediaWikiServices::getInstance()->getDBLoadBalancer()
 		);
 	}
 

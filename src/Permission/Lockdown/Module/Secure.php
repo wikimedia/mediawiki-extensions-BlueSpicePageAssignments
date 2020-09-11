@@ -3,9 +3,9 @@
 namespace BlueSpice\PageAssignments\Permission\Lockdown\Module;
 
 use BlueSpice\PageAssignments\AssignmentFactory;
-use BlueSpice\Services;
 use Config;
 use IContextSource;
+use MediaWiki\MediaWikiServices;
 use Message;
 use Title;
 use User;
@@ -22,11 +22,11 @@ class Secure extends \BlueSpice\Permission\Lockdown\Module {
 	 *
 	 * @param Config $config
 	 * @param IContextSource $context
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param AssignmentFactory $assignmentFactory
 	 */
-	protected function __construct( Config $config, IContextSource $context, Services $services,
-		AssignmentFactory $assignmentFactory ) {
+	protected function __construct( Config $config, IContextSource $context,
+		MediaWikiServices $services, AssignmentFactory $assignmentFactory ) {
 		parent::__construct( $config, $context, $services );
 		$this->assignmentFactory = $assignmentFactory;
 	}
@@ -35,12 +35,12 @@ class Secure extends \BlueSpice\Permission\Lockdown\Module {
 	 *
 	 * @param Config $config
 	 * @param IContextSource $context
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param AssignmentFactory|null $assignmentFactory
 	 * @return \static
 	 */
 	public static function getInstance( Config $config, IContextSource $context,
-		Services $services, AssignmentFactory $assignmentFactory = null ) {
+		MediaWikiServices $services, AssignmentFactory $assignmentFactory = null ) {
 		if ( !$assignmentFactory ) {
 				$assignmentFactory = $services->getService(
 				'BSPageAssignmentsAssignmentFactory'

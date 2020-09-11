@@ -4,6 +4,7 @@ require_once $IP . '/extensions/BlueSpiceFoundation/maintenance/BSMaintenance.ph
 
 use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Data\Record;
+use MediaWiki\MediaWikiServices;
 
 class ManageAssignments extends BSMaintenance {
 
@@ -83,7 +84,9 @@ class ManageAssignments extends BSMaintenance {
 	 * @return \BlueSpice\PageAssignments\AssignmentFactory
 	 */
 	private function getFactory() {
-		return BlueSpice\Services::getInstance()->getService( 'BSPageAssignmentsAssignmentFactory' );
+		return MediaWikiServices::getInstance()->getService(
+			'BSPageAssignmentsAssignmentFactory'
+		);
 	}
 
 	/**

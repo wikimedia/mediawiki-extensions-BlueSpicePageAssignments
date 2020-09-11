@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
@@ -43,7 +43,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 		$this->params = $params;
 		$this->data = [];
 
-		$config = Services::getInstance()->getConfigFactory()->makeConfig(
+		$config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig(
 			'bsg'
 		);
 
@@ -64,7 +64,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	 * @return null
 	 */
 	protected function appendRowToData( $groupname ) {
-		$assignmentFactory = Services::getInstance()->getService(
+		$assignmentFactory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 

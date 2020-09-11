@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\ResourceLoader;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class Messages extends \ResourceLoaderModule {
 	/**
@@ -14,7 +14,7 @@ class Messages extends \ResourceLoaderModule {
 	 */
 	public function getMessages() {
 		$messages = parent::getMessages();
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignableFactory'
 		);
 		foreach ( $factory->getRegisteredTypes() as $type ) {

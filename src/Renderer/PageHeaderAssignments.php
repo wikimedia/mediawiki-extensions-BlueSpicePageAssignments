@@ -6,12 +6,12 @@ use BlueSpice\PageAssignments\IAssignment;
 use BlueSpice\PageHeaderBeforeContentFactory;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
-use BlueSpice\Services;
 use Config;
 use Exception;
 use Html;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 use RequestContext;
 
@@ -45,7 +45,7 @@ class PageHeaderAssignments extends Renderer {
 	/**
 	 *
 	 * @param string $name
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param Config $config
 	 * @param Params $params
 	 * @param IContextSource|null $context
@@ -54,8 +54,8 @@ class PageHeaderAssignments extends Renderer {
 	 * @param PageHeaderBeforeContentFactory|null $factory
 	 * @return Renderer
 	 */
-	public static function factory( $name, Services $services, Config $config, Params $params,
-		IContextSource $context = null, LinkRenderer $linkRenderer = null,
+	public static function factory( $name, MediaWikiServices $services, Config $config,
+		Params $params, IContextSource $context = null, LinkRenderer $linkRenderer = null,
 		QuickTemplate $skinTemplate = null, PageHeaderBeforeContentFactory $factory = null ) {
 		if ( !$context ) {
 			$context = $params->get(
@@ -102,7 +102,7 @@ class PageHeaderAssignments extends Renderer {
 
 		$limit = $this->config->get( 'PageAssignmentsPageHeaderLimit' );
 
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 
@@ -166,7 +166,7 @@ class PageHeaderAssignments extends Renderer {
 
 		$type = $assignment->getType();
 
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignableFactory'
 		);
 
@@ -175,7 +175,7 @@ class PageHeaderAssignments extends Renderer {
 			$template = 'pageheader-assignments-user';
 		}
 
-		$renderer = Services::getInstance()->getService( 'BSRendererFactory' )->get(
+		$renderer = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' )->get(
 			$template,
 			new \BlueSpice\Renderer\Params( [
 				Assignment::PARAM_ASSIGNMENT => $assignment,
@@ -197,7 +197,7 @@ class PageHeaderAssignments extends Renderer {
 			return true;
 		}
 
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 

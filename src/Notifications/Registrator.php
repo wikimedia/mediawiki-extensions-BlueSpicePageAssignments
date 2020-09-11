@@ -3,6 +3,7 @@
 namespace BlueSpice\PageAssignments\Notifications;
 
 use BlueSpice\NotificationManager;
+use MediaWiki\MediaWikiServices;
 
 class Registrator {
 	/**
@@ -91,7 +92,7 @@ class Registrator {
 			}
 		}
 
-		$factory = \BlueSpice\Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
 		$target = $factory->newFromTargetTitle( $title );
