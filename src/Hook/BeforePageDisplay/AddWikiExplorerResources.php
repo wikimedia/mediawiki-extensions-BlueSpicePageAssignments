@@ -2,11 +2,20 @@
 
 namespace BlueSpice\PageAssignments\Hook\BeforePageDisplay;
 
-class AddWikiExplorerResources extends \BlueSpice\Hook\BeforePageDisplay {
+use BlueSpice\Hook\BeforePageDisplay;
+use SpecialPage;
 
+class AddWikiExplorerResources extends BeforePageDisplay {
+
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function skipProcessing() {
-		$wikiExplorer = \SpecialPage::getTitleFor( 'WikiExplorer' );
-		if ( !$wikiExplorer->equals( $this->out->getTitle() ) ) {
+		if ( !$this->getServices()->getSpecialPageFactory()->exists( 'WikiExplorer' ) ) {
+			return true;
+		}
+		if ( !$this->out->getTitle()->equals( SpecialPage::getTitleFor( 'WikiExplorer' ) ) ) {
 			return true;
 		}
 		return false;
