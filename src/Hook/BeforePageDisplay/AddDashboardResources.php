@@ -2,18 +2,37 @@
 
 namespace BlueSpice\PageAssignments\Hook\BeforePageDisplay;
 
-class AddDashboardResources extends \BlueSpice\Hook\BeforePageDisplay {
+use BlueSpice\Hook\BeforePageDisplay;
+use SpecialPage;
 
+class AddDashboardResources extends BeforePageDisplay {
+
+	/**
+	 *
+	 * @var array
+	 */
+	protected $pages = [
+		"AdminDashboard",
+		"UserDashboard",
+	];
+
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function skipProcessing() {
 		$title = $this->out->getTitle();
-		$titles = [
-			$title->equals( \SpecialPage::getTitleFor( "AdminDashboard" ) ),
-			$title->equals( \SpecialPage::getTitleFor( "UserDashboard" ) ),
-		];
-		if ( !in_array( true, $titles ) ) {
-			return true;
+
+		foreach ( $this->pages as $spPage ) {
+			if ( !$this->getServices()->getSpecialPageFactory()->exists( $spPage ) ) {
+				continue;
+			}
+			if ( !$title->equals( SpecialPage::getTitleFor( $spPage ) ) ) {
+				continue;
+			}
+			return false;
 		}
-		return false;
+		return true;
 	}
 
 	protected function doProcess() {
