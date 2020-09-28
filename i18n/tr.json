@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"bs-pageassignments-desc": "Bir sayfaya kullanıcılar veya gruplar atamanıza olanak tanır",
@@ -95,5 +96,7 @@
 	"bs-pageassignments-collection-var-namespacename": "Ad alanı",
 	"bs-pageassignments-collection-var-assignedpages": "Atanan sayfalar",
 	"bs-pageassignments-collection-var-unassignedpages": "Atanmamış sayfalar",
-	"bs-pageassignments-pageheader-label": "Atamalar"
+	"bs-pageassignments-pageheader-label": "Atamalar",
+	"bs-pageassignments-book-assignment-not-allowed-title": "Atanmalar izin verilmiyor",
+	"bs-pageassignments-book-assignment-not-allowed-text": "Kitaba dayalı olmayan kitaplar için atanmalar izin verilmez"
 }
