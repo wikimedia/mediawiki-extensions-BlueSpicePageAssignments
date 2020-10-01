@@ -104,5 +104,7 @@
 	"bs-pageassignments-collection-var-assignedpages": "Pages assignées",
 	"bs-pageassignments-collection-var-unassignedpages": "Pages non assignées",
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "M’avertir lorsque je suis (ou un groupe auquel j’appartiens est) assigné à une page ou que mon assignation est retirée",
-	"bs-pageassignments-pageheader-label": "Affectations"
+	"bs-pageassignments-pageheader-label": "Affectations",
+	"bs-pageassignments-book-assignment-not-allowed-title": "Affectations non autorisées",
+	"bs-pageassignments-book-assignment-not-allowed-text": "Les affectations ne sont pas autorisées pour les livres non basés sur des titres"
 }
