@@ -53,7 +53,7 @@
 	"notification-bs-pageassignments-page-delete-body": "$1 {{GENDER:$2|ave scangellate}} 'a pàgene $2.",
 	"notification-bs-pageassignments-user-group-add-summary": "E' state aggiunde a {{PLURAL:$5|'u|le}} gruppe $4 ca {{PLURAL:$5|tène|tènene}} pàggene assignate {{PLURAL:$5|a jidde|a lore}}",
 	"notification-bs-pageassignments-user-group-add-subject": "Aggiunde a {{PLURAL:$5|'u|le}} gruppe ca {{PLURAL:$5|tène|tènene}} pàggene assignate {{PLURAL:$5|a jidde|a lore}}",
-	"notification-bs-pageassignments-user-group-add-body": "$1 {{GENDER:$2|'ave aggiunde}} a 'u gruppe $4. Pe piacere condrolle l'assegnaziona toje sus a $3.",
+	"notification-bs-pageassignments-user-group-add-body": "E' state aggiunde a 'u {{PLURAL:$5|'u|le}} gruppe $4, ca {{PLURAL:$5|tène|tènene}} pàggene assignate a {{PLURAL:$5|idde|lore}}. Pe piacere condrolle l'assegnaziona toje sus a $3.",
 	"notification-bs-pageassignments-user-group-remove-summary": "E' state luate da {{PLURAL:$5|'u|le}} gruppe $4",
 	"notification-bs-pageassignments-user-group-remove-subject": "Luate da {{PLURAL:$5|'u|le}} gruppe $4",
 	"notification-bs-pageassignments-user-group-remove-body": "$1 {{GENDER:$2|t'ave luate}} da {{PLURAL:$5|'u|le}} gruppe $4. Pe piacere condrolle l'assegnaziona toje sus a $3.",
