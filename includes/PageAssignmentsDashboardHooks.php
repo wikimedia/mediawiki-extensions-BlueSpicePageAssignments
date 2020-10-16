@@ -16,6 +16,7 @@ class PageAssignmentsDashboardHooks {
 					'bs-pageassignments-yourassignments'
 				)->plain(),
 			],
+			'modules' => 'ext.bluespice.pageassignments.portlet',
 			'title' => wfMessage(
 				'bs-pageassignments-yourassignments'
 			)->plain(),
@@ -44,6 +45,7 @@ class PageAssignmentsDashboardHooks {
 					'bs-pageassignments-yourassignments'
 				)->plain(),
 			],
+			'modules' => 'ext.bluespice.pageassignments.portlet'
 		];
 
 		return true;
