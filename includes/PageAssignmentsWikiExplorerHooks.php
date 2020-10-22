@@ -96,6 +96,10 @@ class PageAssignmentsWikiExplorerHooks {
 			return true;
 		}
 
+		foreach ( $aRows as $iKey => $aRowSet ) {
+			$aRows[$iKey]['page_assignments'] = '';
+		}
+
 		$aPageIds = array_keys( $aRows );
 
 		$dbr = wfGetDB( DB_REPLICA );
