@@ -27,6 +27,9 @@
 					}
 				}
 			},
+			"TargetCacheTitleRegistry": {
+				"pageassignments-everyone-blacklist": "\\BlueSpice\\TargetCacheHandler"
+			},
 			"AdminToolRegistry": {
 				"bs-pageassignments-manager": "BlueSpice\\PageAssignments\\AdminTool"
 			},
@@ -309,7 +312,8 @@
 		"PageAssignmentsActivatedTypes": {
 			"value": [
 				"user",
-				"group"
+				"group",
+				"everyone"
 			]
 		},
 		"PageAssignmentsUseAdditionalPermissions": {
