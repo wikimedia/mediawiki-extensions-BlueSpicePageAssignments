@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"KATRINE1993",
-			"Nikosgranturismogt"
+			"Nikosgranturismogt",
+			"Protnet"
 		]
 	},
 	"bs-pageassignments-column-title": "Τίτλος σελίδας",
@@ -12,7 +13,7 @@
 	"notification-bs-pageassignments-page-move-subject": "Το $2 μετακινήθηκε",
 	"notification-bs-pageassignments-page-edit-subject": "Το $2 τροποποιήθηκε",
 	"notification-bs-pageassignments-page-delete-subject": "το $2 διαγράφηκε",
-	"notification-bs-pageassignments-user-group-add-subject": "Προστέθηκε στην ομάδα $4",
+	"notification-bs-pageassignments-user-group-add-subject": "Προστέθηκε σε {{PLURAL:$5|ομάδα|ομάδες}} που {{PLURAL:$5|έχει|έχουν}} σελίδες αντιστοιχισμένες σε {{PLURAL:$5|αυτή|αυτές}}",
 	"bs-pageassignments-assignee-special-everyone-label": "ο καθένας",
 	"bs-pageassignments-assignee-type-everyone": "ο καθένας",
 	"bs-pageassignments-assignee-type-user": "Χρήστης",
