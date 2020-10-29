@@ -41,7 +41,7 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 
 	/**
 	 *
-	 * @var HTML, rendered anchor tag for this assignment
+	 * @var HTML rendered anchor tag for this assignment
 	 */
 	protected $anchor = null;
 
