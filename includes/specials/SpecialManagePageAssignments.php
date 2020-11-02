@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\Special\ManagerBase;
+use MediaWiki\MediaWikiServices;
 
 class SpecialManagePageAssignments extends ManagerBase {
 	/**
@@ -46,7 +47,10 @@ class SpecialManagePageAssignments extends ManagerBase {
 	 */
 	protected function getJSVars() {
 		$aDeps = [];
-		Hooks::run( 'BSPageAssignmentsManager', [ $this, &$aDeps ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'BSPageAssignmentsManager', [
+			$this,
+			&$aDeps
+		] );
 
 		return [
 			'bsPageAssignmentsManagerDeps' => $aDeps
