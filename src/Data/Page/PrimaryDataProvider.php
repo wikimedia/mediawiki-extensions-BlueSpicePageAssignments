@@ -10,7 +10,6 @@ use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Assignment;
 use BlueSpice\PageAssignments\Data\Record as AssignmentRecord;
 use BsStringHelper;
-use Hooks;
 use MediaWiki\MediaWikiServices;
 use Title;
 
@@ -96,11 +95,14 @@ class PrimaryDataProvider extends PageDataProvider {
 			$data[ $key ] = $row->{$key};
 		}
 		$record = new Record( (object)$data );
-		Hooks::run( 'BSPageStoreDataProviderBeforeAppendRow', [
-			$this,
-			$record,
-			$title,
-		] );
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSPageStoreDataProviderBeforeAppendRow',
+			[
+				$this,
+				$record,
+				$title,
+			]
+		);
 		if ( !$record ) {
 			return;
 		}
