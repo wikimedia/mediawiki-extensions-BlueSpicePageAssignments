@@ -312,8 +312,7 @@
 		"PageAssignmentsActivatedTypes": {
 			"value": [
 				"user",
-				"group",
-				"everyone"
+				"group"
 			]
 		},
 		"PageAssignmentsUseAdditionalPermissions": {
