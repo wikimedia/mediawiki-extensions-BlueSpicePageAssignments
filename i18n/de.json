@@ -103,5 +103,7 @@
 	"bs-pageassignments-collection-var-namespacename": "Namensraum",
 	"bs-pageassignments-collection-var-assignedpages": "Zugewiesene Seiten",
 	"bs-pageassignments-collection-var-unassignedpages": "Nicht zugewiesene Seiten",
-	"bs-pageassignments-pageheader-label": "Zuweisungen"
+	"bs-pageassignments-pageheader-label": "Zuweisungen",
+	"bs-pageassignments-book-assignment-not-allowed-title": "Zuweisungen sind nicht erlaubt",
+	"bs-pageassignments-book-assignment-not-allowed-text": "Zuweisungen sind nicht für Bücher erlaubt, die nicht auf Titeln basieren"
 }
