@@ -17,5 +17,6 @@
 	"notification-bs-pageassignments-page-edit-subject": "$2 blev redigeret",
 	"notification-bs-pageassignments-page-delete-subject": "$2 blev slettet",
 	"notification-bs-pageassignments-user-group-add-summary": "Du er blevet tilføjet til gruppen $4",
-	"notification-bs-pageassignments-user-group-add-subject": "Tilføjet til gruppen $4"
+	"notification-bs-pageassignments-user-group-add-subject": "Tilføjet til gruppen $4",
+	"notification-bs-pageassignments-page-delete-summary": "$3 blev {{GENDER:$2|slettet}} af $1"
 }
