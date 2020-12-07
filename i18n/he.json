@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Guycn2",
-			"Steeve815"
+			"Steeve815",
+			"ישראל קלר"
 		]
 	},
 	"bs-pageassignments-desc": "מתן אפשרות לשיוך משתמשים או קבוצות לדפים",
@@ -61,6 +62,8 @@
 	"right-pageassignable": "הופעה ברשימת המשתמשים שניתן לשייך",
 	"right-pageassignments": "עריכת שיוכים של דפים",
 	"prefs-pageassign": "שיוך",
+	"bs-pageassignments-sesp-pageassignments-alias": "שיוך",
+	"bs-pageassignments-sesp-pageassignments-desc": "שיוך",
 	"bs-usagetracker-pageassignments": "דפים עם שיוכים",
 	"apihelp-bs-pageassignable-store-description": "החזרת רשימת המשויכים",
 	"apihelp-bs-pageassignable-store-summary": "החזרת רשימת המשויכים",
