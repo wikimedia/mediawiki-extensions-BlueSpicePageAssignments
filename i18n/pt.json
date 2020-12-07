@@ -100,5 +100,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 atribuiu a página \"$3\" ao grupo \"Todos\"",
 	"bs-pageassignments-collection-var-unassignedpages": "Páginas não atribuídas",
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "Notificar-me quando uma página me for atribuída (ou a um grupo ao qual pertenço), ou a atribuição de uma página me for removida",
-	"bs-pageassignments-pageheader-label": "Atribuições"
+	"bs-pageassignments-pageheader-label": "Atribuições",
+	"bs-pageassignments-book-assignment-not-allowed-title": "Atribuições não são permitidas",
+	"bs-pageassignments-book-assignment-not-allowed-text": "As atribuições não são permitidas para livros não baseados em títulos"
 }
