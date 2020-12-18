@@ -150,6 +150,7 @@ class PageAssignmentsWikiExplorerHooks {
 		}
 
 		foreach ( $aRows as $iKey => $aRowSet ) {
+			$aRows[$iKey]['page_assignments'] = '';
 			if ( array_key_exists( $iKey, $aData ) ) {
 				$aRows[$iKey]['page_assignments'] = Html::rawElement(
 					'ul',
