@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DavidL",
 			"Derugon",
 			"Epok",
 			"Gomoko",
@@ -59,12 +60,12 @@
 	"notification-bs-pageassignments-page-delete-summary": "$3 a été supprimé par $1{{GENDER:$2|}}",
 	"notification-bs-pageassignments-page-delete-subject": "$2 a été supprimé",
 	"notification-bs-pageassignments-page-delete-body": "$1{{GENDER:$2||}} a supprimé la page $2.",
-	"notification-bs-pageassignments-user-group-add-summary": "Vous avez été ajouté au groupe $4 qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées",
+	"notification-bs-pageassignments-user-group-add-summary": "Vous avez été {{GENDER:$6|ajouté|ajoutée}} {{PLURAL:$5|au groupe|aux groupes} $4 qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées",
 	"notification-bs-pageassignments-user-group-add-subject": "Ajouté {{PLURAL:$5|au groupe|aux groupes}} qui {{PLURAL:$5|a|ont}} des pages qui  {{PLURAL:$5|lui|leur}} sont affectées",
-	"notification-bs-pageassignments-user-group-add-body": "Vous avez été ajouté {{PLURAL:x5|au groupe|aux groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées. Veuillez vérifier votre affectation sur $3.",
-	"notification-bs-pageassignments-user-group-remove-summary": "Vous avez été retiré {{PLURAL:$5|du groupe|des groupes}} $4, qui a des pages qui {{PLURAL:$5|lui|leur}} sont affectées",
+	"notification-bs-pageassignments-user-group-add-body": "Vous avez été {{GENDER:$6|ajouté|ajoutée}} {{PLURAL:$5|au groupe|aux groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées. Veuillez vérifier votre affectation sur $3.",
+	"notification-bs-pageassignments-user-group-remove-summary": "Vous avez été {{GENDER:$6|retiré|retirée}} {{PLURAL:$5|du groupe|des groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées",
 	"notification-bs-pageassignments-user-group-remove-subject": "Retiré {{PLURAL:$5|du groupe|des groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées",
-	"notification-bs-pageassignments-user-group-remove-body": "Vous avez été retiré {{PLURAL:$5|du groupe|des groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées. Veuillez vérifier votre affectation sur $3.",
+	"notification-bs-pageassignments-user-group-remove-body": "Vous avez été {{GENDER:$6|retiré|retirée}} {{PLURAL:$5|du groupe|des groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées. Veuillez vérifier votre affectation sur $3.",
 	"prefs-pageassignments": "Assignations de pages",
 	"bs-pageassignments-pref-lockdowngroups": "Groupes verrouillés pour une page lorsque l’utilisateur n’est pas assigné",
 	"bs-pageassignments-yourassignments": "Vos assignations",
