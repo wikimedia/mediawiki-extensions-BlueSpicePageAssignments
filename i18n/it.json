@@ -25,7 +25,7 @@
 	"log-show-hide-bs-pageassignments": "$1 registro assegnazioni",
 	"bs-pageassignments-notification-reason": "Motivi di questa notifica:",
 	"notification-bs-pageassignments-assignment-change-add-subject": "Assegnato a $2",
-	"notification-bs-pageassignments-assignment-change-add-body": "$1 {{GENDER:$2|ti ha assegnato}} alla pagina $2.",
+	"notification-bs-pageassignments-assignment-change-add-body": "$1 {{GENDER:$1|ti ha assegnato}} alla pagina $2.",
 	"notification-bs-pageassignments-user-group-add-summary": "Sei {{GENDER:$6|stato aggiunto|stata aggiunta}} {{PLURAL:$5|al gruppo|ai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
 	"notification-bs-pageassignments-user-group-add-subject": "Aggiunto {{PLURAL:$5|ad un gruppo|a gruppi}} che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
 	"notification-bs-pageassignments-user-group-add-body": "Sei {{GENDER:$6|stato aggiunto|stata aggiunta}} {{PLURAL:$5|al gruppo|ai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}. Controlla il tuo incarico su $3.",
