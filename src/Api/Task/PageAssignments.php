@@ -165,7 +165,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 * This is a convenience method. It could also be done by quering
 	 * 'bs-pageassignment-store' with the right set of filters, but this one
 	 * is much easier to access
-	 * @param object $taskData
+	 * @param \stdClass $taskData
 	 * @param array $params
 	 * @return \BlueSpice\Api\Response\Standard
 	 */

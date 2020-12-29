@@ -31,7 +31,7 @@ class PageAssignmentsDashboardHooks {
 	/**
 	 * Hook Handler for BSDashboardsUserDashboardPortalConfig
 	 *
-	 * @param object $oCaller caller instance
+	 * @param SpecialDashboard $oCaller caller instance
 	 * @param array &$aPortalConfig reference to array portlet configs
 	 * @param bool $bIsDefault default
 	 * @return bool always true to keep hook alive
