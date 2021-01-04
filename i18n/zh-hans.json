@@ -11,6 +11,7 @@
 			"予弦",
 			"佛壁灯",
 			"列维劳德",
+			"机智的小鱼君",
 			"神樂坂秀吉",
 			"科劳"
 		]
@@ -44,10 +45,10 @@
 	"bs-pageassignments-notification-reason": "此次通知的原因：",
 	"bs-pageassignments-notification-reason-user": "您已被直接分配至页面",
 	"bs-pageassignments-notification-reason-group": "您是该{{PLURAL:$1|用户组}}的成员：$2",
-	"notification-bs-pageassignments-assignment-change-add-summary": "$1将您{{GENDER:$2|分配}}给$3",
+	"notification-bs-pageassignments-assignment-change-add-summary": "$1将您分配给$2",
 	"notification-bs-pageassignments-assignment-change-add-subject": "分配给$2",
-	"notification-bs-pageassignments-assignment-change-add-body": "$1将您{{GENDER:$2|分配}}至页面$2。",
-	"notification-bs-pageassignments-assignment-change-remove-summary": "$1{{GENDER:$2|移除}}了您对$3的分配",
+	"notification-bs-pageassignments-assignment-change-add-body": "$1将您{{GENDER:$1|分配}}至页面$2。",
+	"notification-bs-pageassignments-assignment-change-remove-summary": "$1将您从$2的分配中{{GENDER:$1|移除}}了",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "移除对$2的分配",
 	"notification-bs-pageassignments-assignment-change-remove-body": "您对页面$2的分配被$1{{GENDER:$2|移除}}。",
 	"notification-bs-pageassignments-user-group-add-summary": "您已被加入至用户组$4，{{PLURAL:$5|有}}页面指派于{{PLURAL:$5|此}}",
