@@ -130,8 +130,9 @@ class PageAssignmentsWikiExplorerHooks {
 				$aGroups[$oRow->pa_page_id] = $oRow->pa_assignee_key;
 				$aData[$oRow->pa_page_id][] =
 					'<li>' .
+						'<i class="bs-icon-group"></i>' .
 						'<a class="bs-pa-wikiexplorer-groups" href="#">' .
-							$oRow->pa_assignee_key .
+							static::makeGroupAssignmentLabel( $oRow->pa_assignee_key ) .
 						'</a>' .
 					'</li>';
 				continue;
@@ -143,6 +144,7 @@ class PageAssignmentsWikiExplorerHooks {
 			$aUserIds[$oRow->pa_page_id][] = $oUser->getId();
 			$aData[$oRow->pa_page_id][] =
 				'<li>' .
+					'<i class="bs-icon-user"></i>' .
 					'<a class="bs-pa-wikiexplorer-users" href="#">' .
 						$util->getUserHelper( $oUser )->getDisplayName() .
 					'</a>' .
@@ -155,6 +157,7 @@ class PageAssignmentsWikiExplorerHooks {
 				$aRows[$iKey]['page_assignments'] = Html::rawElement(
 					'ul',
 					[
+						'class' => 'bs-wikiexplorer-list-field',
 						'data-articleId' => $iKey,
 						'data-assignees' => FormatJson::encode(
 							$aUserIds[$iKey]
@@ -166,5 +169,17 @@ class PageAssignmentsWikiExplorerHooks {
 		}
 
 		return true;
+	}
+
+	/**
+	 * Copy of `BlueSpice\PageAssignments\Assignment::getText`. Redundant
+	 * implemenation for performance reasons
+	 * @param string $groupname
+	 * @return string
+	 */
+	private static function makeGroupAssignmentLabel( $groupname ) {
+		return Message::newFromKey( "group-{$groupname}" )->exists()
+					? Message::newFromKey( "group-{$groupname}" )->plain()
+					: $groupname;
 	}
 }
