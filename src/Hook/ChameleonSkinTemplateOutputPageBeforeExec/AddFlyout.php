@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
+use BlueSpice\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\PageAssignments\Panel\Flyout;
 use BlueSpice\SkinData;
 
