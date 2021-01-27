@@ -350,9 +350,7 @@
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\PageAssignments\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
-		"TitleMoveComplete": [
-			"PageAssignmentsHooks::onTitleMoveComplete"
-		],
+		"PageMoveComplete": "\\BlueSpice\\PageAssignments\\Hook\\PageMoveComplete\\",
 		"ArticleDeleteComplete": [
 			"PageAssignmentsHooks::onArticleDeleteComplete"
 		],

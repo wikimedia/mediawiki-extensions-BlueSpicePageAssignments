@@ -3,30 +3,6 @@
 class PageAssignmentsHooks {
 
 	/**
-	 * Hook handler for MediaWiki 'TitleMoveComplete' hook. Adapts assignments in case of article move.
-	 * @param Title &$old
-	 * @param Title &$nt
-	 * @param User $user
-	 * @param int $pageid
-	 * @param int $redirid
-	 * @param string $reason
-	 * @return bool Always true to keep other hooks running.
-	 */
-	public static function onTitleMoveComplete( &$old, &$nt, $user, $pageid, $redirid, $reason ) {
-		$dbr = wfGetDB( DB_MASTER );
-		$dbr->update(
-			'bs_pageassignments',
-			[
-				'pa_page_id' => $nt->getArticleID()
-			],
-			[
-				'pa_page_id' => $old->getArticleID()
-			]
-		);
-		return true;
-	}
-
-	/**
 	 * Clears assignments
 	 * @param WikiPage &$wikiPage
 	 * @param User &$user
