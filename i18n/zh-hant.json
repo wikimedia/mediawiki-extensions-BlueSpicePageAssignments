@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
-			"Kly"
+			"Kly",
+			"Liuxinyu970226"
 		]
 	},
 	"bs-pageassignments-desc": "讓您能夠分配使用者或群組給頁面",
@@ -49,12 +49,12 @@
 	"notification-bs-pageassignments-page-delete-summary": "$3 被 $1 給{{GENDER:$2|刪除}}",
 	"notification-bs-pageassignments-page-delete-subject": "$2 已被刪除",
 	"notification-bs-pageassignments-page-delete-body": "$1 {{GENDER:$2|已刪除}}頁面 $2。",
-	"notification-bs-pageassignments-user-group-add-summary": "您已被添加至群組 $4",
-	"notification-bs-pageassignments-user-group-add-subject": "添加至群組 $4",
-	"notification-bs-pageassignments-user-group-add-body": "$1 已將您{{GENDER:$2|添加}}至群組 $4。請檢查您在 $3 的分配。",
-	"notification-bs-pageassignments-user-group-remove-summary": "您已被從{{PLURAL:$5|群組|群組}} $4 裡移除",
-	"notification-bs-pageassignments-user-group-remove-subject": "從{{PLURAL:$5|群組|群組}} $4 移除",
-	"notification-bs-pageassignments-user-group-remove-body": "$1 已將您從{{PLURAL:$5|群組|群組}} $4 裡{{GENDER:$2|移除}}。請檢查您在 $3 的分配。",
+	"notification-bs-pageassignments-user-group-add-summary": "您已被添加至群組$4，{{PLURAL:$5|有}}頁面分配到{{PLURAL:$5|該群組|這些群組}}。",
+	"notification-bs-pageassignments-user-group-add-subject": "已添加至{{PLURAL:$5|群組}}，{{PLURAL:$5|有}}頁面分配到{{PLURAL:$5|該群組|這些群組}}。",
+	"notification-bs-pageassignments-user-group-add-body": "您已被添加至{{PLURAL:$5|群組}}$4，{{PLURAL:$5|有}}頁面分配到{{PLURAL:$5|該群組|這些群組}}。請檢查您在$3的分配。",
+	"notification-bs-pageassignments-user-group-remove-summary": "您已從{{PLURAL:$5|群組}}$4裡移除，有頁面分配到{{PLURAL:$5|該群組|這些群組}}",
+	"notification-bs-pageassignments-user-group-remove-subject": "已從{{PLURAL:$5|群組}}$4移除，{{PLURAL:$5|有}}頁面分配到{{PLURAL:$5|該群組|這些群組}}",
+	"notification-bs-pageassignments-user-group-remove-body": "您已從{{PLURAL:$5|群組}}$4裡移除，{{PLURAL:$5|有}}頁面分配到群組。請檢查您在$3的分配。",
 	"prefs-pageassignments": "頁面分配",
 	"bs-pageassignments-pref-permissions": "添加額外權限給已分配使用者",
 	"bs-pageassignments-yourassignments": "您的分配",
@@ -96,5 +96,8 @@
 	"bs-pageassignments-collection-var-namespacename": "命名空間",
 	"bs-pageassignments-collection-var-assignedpages": "已分配頁面",
 	"bs-pageassignments-collection-var-unassignedpages": "未分配頁面",
-	"echo-pref-tooltip-bs-pageassignments-action-cat": "當我（或是我隸屬的群組）被分配到頁面，或是我的分配被移除時通知我"
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "當我（或是我隸屬的群組）被分配到頁面，或是我的分配被移除時通知我",
+	"bs-pageassignments-pageheader-label": "分配",
+	"bs-pageassignments-book-assignment-not-allowed-title": "分配不被允許",
+	"bs-pageassignments-book-assignment-not-allowed-text": "分配不被允許在非標題書籍上"
 }

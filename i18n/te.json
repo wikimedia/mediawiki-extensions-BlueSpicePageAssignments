@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-pageassignments-assignee-type-user": "వాడుకరి",
-	"bs-pageassignments-collection-var-namespacename": "పేరుబరి"
+	"bs-pageassignments-collection-var-namespacename": "పేరుబరి",
+	"bs-pageassignments-assignee-special-everyone-label": "ప్రతిఒక్కరూ",
+	"bs-pageassignments-assignee-type-everyone": "ప్రతిఒక్కరూ"
 }

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Guycn2",
-			"Steeve815"
+			"Steeve815",
+			"ישראל קלר"
 		]
 	},
 	"bs-pageassignments-desc": "מתן אפשרות לשיוך משתמשים או קבוצות לדפים",
@@ -80,5 +81,7 @@
 	"bs-pageassignments-collection-type-assignedpages": "שיוכים",
 	"bs-pageassignments-collection-var-namespacename": "מרחב שם",
 	"bs-pageassignments-collection-var-assignedpages": "דפים משויכים",
-	"bs-pageassignments-collection-var-unassignedpages": "דפים לא משויכים"
+	"bs-pageassignments-collection-var-unassignedpages": "דפים לא משויכים",
+	"bs-pageassignments-sesp-pageassignments-alias": "שיוך",
+	"bs-pageassignments-sesp-pageassignments-desc": "שיוך"
 }

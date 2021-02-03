@@ -8,5 +8,9 @@
 	"bs-pageassignments-assignee-type-everyone": "Alle",
 	"bs-pageassignments-assignee-type-user": "Bruger",
 	"bs-pageassignments-assignee-type-group": "Gruppe",
-	"bs-pageassignments-collection-var-namespacename": "Navnerum"
+	"bs-pageassignments-collection-var-namespacename": "Navnerum",
+	"bs-pageassignments-column-title": "Sidetitel",
+	"bs-pageassignments-api-error": "Der opstod en fejl",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Du}} er blevet tilføjet til {{PLURAL:$5|gruppen|grupperne}} $4 der har sider til sig.",
+	"notification-bs-pageassignments-user-group-add-subject": "Tilføjet til gruppen $4"
 }

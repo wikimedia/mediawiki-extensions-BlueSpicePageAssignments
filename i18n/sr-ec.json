@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Zoranzoki21",
-			"BadDog"
+			"BadDog",
+			"Kizule",
+			"Zoranzoki21"
 		]
 	},
 	"apihelp-bs-pageassignment-store-description": "Враћа задатке на одређеној страници",
