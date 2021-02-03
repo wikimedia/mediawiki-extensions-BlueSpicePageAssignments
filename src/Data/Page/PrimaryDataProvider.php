@@ -40,7 +40,6 @@ class PrimaryDataProvider extends PageDataProvider {
 	/**
 	 *
 	 * @param \stdClass $row
-	 * @return null
 	 */
 	protected function appendRowToData( \stdClass $row ) {
 		$title = Title::newFromRow( $row );

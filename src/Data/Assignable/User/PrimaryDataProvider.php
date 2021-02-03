@@ -26,7 +26,6 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 	/**
 	 *
 	 * @param \stdClass $row
-	 * @return null
 	 */
 	protected function appendRowToData( $row ) {
 		if ( $this->params->getQuery() !== '' ) {
