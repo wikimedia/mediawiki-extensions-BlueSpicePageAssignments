@@ -54,10 +54,6 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 		return $this->data;
 	}
 
-	/**
-	 *
-	 * @return null
-	 */
 	protected function appendRowToData() {
 		$assignmentFactory = MediaWikiServices::getInstance()->getService(
 			'BSPageAssignmentsAssignmentFactory'
