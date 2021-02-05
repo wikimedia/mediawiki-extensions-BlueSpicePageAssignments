@@ -13,16 +13,24 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 		$this->output( "BSPageAssignments: Migrate Responsible Editors..." );
 		if ( empty( $aRespEditors ) ) {
 			$this->output( "OK\n" );
-			return;
+			return true;
 		}
 
 		$iRespEditors = count( $aRespEditors );
 		$this->output( "($iRespEditors)..." );
+		$this->output( "\n => " );
 		foreach ( $aRespEditors as $aRespEditor ) {
-			$this->insertAssignment( $aRespEditor );
+			try {
+				$this->insertAssignment( $aRespEditor );
+			} catch ( Exception $e ) {
+				$this->output( "f" );
+				continue;
+			}
+			$this->output( "." );
 		}
 
 		$this->output( "OK\n" );
+		return true;
 	}
 
 	/**
@@ -51,10 +59,10 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 		);
 		foreach ( $oRes as $oRow ) {
 			$oUser = User::newFromId( $oRow->re_user_id );
-			if ( !$oUser ) {
+			if ( !$oUser || $oUser->isAnon() ) {
 				continue;
 			}
-			$title = \Title::newFromId( (int)$oRow->re_user_id );
+			$title = \Title::newFromId( (int)$oRow->re_page_id );
 			if ( !$title ) {
 				continue;
 			}
