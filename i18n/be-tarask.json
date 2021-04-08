@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Renessaince"
+			"Renessaince",
+			"W"
 		]
 	},
-	"bs-usagetracker-pageassignments": "старонкі з прысваеньнямі"
+	"bs-usagetracker-pageassignments": "старонкі з прысваеньнямі",
+	"bs-pageassignments-column-title": "Загаловак старонкі"
 }

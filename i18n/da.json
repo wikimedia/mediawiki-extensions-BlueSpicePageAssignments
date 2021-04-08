@@ -12,5 +12,6 @@
 	"bs-pageassignments-column-title": "Sidetitel",
 	"bs-pageassignments-api-error": "Der opstod en fejl",
 	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Du}} er blevet tilføjet til {{PLURAL:$5|gruppen|grupperne}} $4 der har sider til sig.",
-	"notification-bs-pageassignments-user-group-add-subject": "Tilføjet til gruppen $4"
+	"notification-bs-pageassignments-user-group-add-subject": "Tilføjet til gruppen $4",
+	"bs-pageassignments-collection-var-unassignedpages": "Ikke-tildelte sider"
 }
