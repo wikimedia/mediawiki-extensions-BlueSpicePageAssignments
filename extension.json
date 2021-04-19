@@ -21,11 +21,11 @@
 			"Extensions": {
 				"BlueSpicePageAssignments": {
 					"className": "\\BlueSpice\\PageAssignments\\Extension",
-					"extPath": "/BlueSpicePageAssignments",
-					"configDefinitions": {
-						"PageAssignmentsLockdownGroups": "\\BlueSpice\\PageAssignments\\ConfigDefinition\\LockdownGroups::getInstance"
-					}
+					"extPath": "/BlueSpicePageAssignments"
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"PageAssignmentsLockdownGroups": "\\BlueSpice\\PageAssignments\\ConfigDefinition\\LockdownGroups::getInstance"
 			},
 			"TargetCacheTitleRegistry": {
 				"pageassignments-everyone-blacklist": "\\BlueSpice\\TargetCacheHandler"
