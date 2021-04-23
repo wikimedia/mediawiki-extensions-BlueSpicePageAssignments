@@ -1,7 +1,5 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
-
 class PageAssignmentsWikiExplorerHooks {
 
 	/**
@@ -55,33 +53,7 @@ class PageAssignmentsWikiExplorerHooks {
 			"{$sTablePrefix}page.page_id=assigned.pa_page_id"
 		];
 
-		$aTables[] = "{$sTablePrefix}user AS page_assignments";
-		$aJoinConditions["{$sTablePrefix}user AS page_assignments"] = [
-			'LEFT OUTER JOIN',
-			"assigned.pa_assignee_key=page_assignments.user_name"
-		];
-		$aFields[] =
-			"GROUP_CONCAT("
-				. "IF("
-					. "STRCMP(page_assignments.user_real_name,''),"
-					. "page_assignments.user_real_name,assigned.pa_assignee_key"
-				. ")"
-			. ") AS page_assignments";
 		$aFields[] = "assigned.pa_assignee_key";
-
-		if ( array_key_exists( 'page_assignments', $aFilters ) ) {
-			WikiExplorer::filterStringsTable(
-				"CONCAT_WS("
-					. "',',"
-					. "IF("
-						. "STRCMP(page_assignments.user_real_name,''),"
-						. "page_assignments.user_real_name,assigned.pa_assignee_key"
-					. ")"
-				. ")",
-				$aFilters['page_assignments'],
-				$aConditions
-			);
-		}
 
 		return true;
 	}
@@ -120,14 +92,33 @@ class PageAssignmentsWikiExplorerHooks {
 			$aOptions
 		);
 
+		$userKeys = [];
+		foreach ( $oRes as $row ) {
+			if ( $row->pa_assignee_type == 'user' ) {
+				$userKeys[] = $row->pa_assignee_key;
+			}
+		}
+
+		$userKeys = array_unique( $userKeys );
+
+		if ( $userKeys ) {
+			$userNames = $dbr->select(
+				'user',
+				[ 'user_name', 'user_real_name' ],
+				[ 'user_name' => $userKeys ],
+				__METHOD__
+			);
+
+			$userNameToRealNameMap = [];
+			foreach ( $userNames as $row ) {
+				$userNameToRealNameMap[$row->user_name] = $row->user_real_name;
+			}
+		}
+
 		$aData = [];
 		$aUserIds = [];
-		$aGroups = [];
-		$util = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' );
-
 		foreach ( $oRes as $oRow ) {
 			if ( $oRow->pa_assignee_type == 'group' ) {
-				$aGroups[$oRow->pa_page_id] = $oRow->pa_assignee_key;
 				$aData[$oRow->pa_page_id][] =
 					'<li>' .
 						'<i class="bs-icon-group"></i>' .
@@ -137,16 +128,25 @@ class PageAssignmentsWikiExplorerHooks {
 					'</li>';
 				continue;
 			}
+
 			$oUser = User::newFromName( $oRow->pa_assignee_key );
-			if ( !$oUser || $oUser->isAnon() ) {
+			$userExists = isset( $userNameToRealNameMap[$oRow->pa_assignee_key] );
+			if ( !$oUser || !$userExists ) {
 				continue;
 			}
+
 			$aUserIds[$oRow->pa_page_id][] = $oUser->getId();
+			if ( $userNameToRealNameMap[$oRow->pa_assignee_key] ) {
+				$userRealName = $userNameToRealNameMap[$oRow->pa_assignee_key];
+			} else {
+				$userRealName = $oRow->pa_assignee_key;
+			}
+
 			$aData[$oRow->pa_page_id][] =
 				'<li>' .
 					'<i class="bs-icon-user"></i>' .
 					'<a class="bs-pa-wikiexplorer-users" href="#">' .
-						$util->getUserHelper( $oUser )->getDisplayName() .
+						$userRealName .
 					'</a>' .
 				'</li>';
 		}
