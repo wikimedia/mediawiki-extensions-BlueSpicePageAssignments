@@ -131,10 +131,13 @@ class PageAssignments extends \BSApiTasksBase {
 			}
 			$assignments[] = $assignment;
 		}
+
 		$status = $target->save( $assignments );
-		if ( !$status->isOK() ) {
+		if ( !$status->isGood() ) {
 			$result->message = $status->getMessage()->parse();
-			return $result;
+			if ( !$status->isOK() ) {
+				return $result;
+			}
 		}
 
 		$removed = $target->diff(
