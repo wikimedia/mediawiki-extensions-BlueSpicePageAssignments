@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"SaldırganSincap"
 		]
 	},
 	"bs-pageassignments-desc": "Bir sayfaya kullanıcılar veya gruplar atamanıza olanak tanır",
@@ -43,12 +44,12 @@
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1, atamanızı $2 sayfasına kaldırdı",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "$2 atamanın kaldırılması",
 	"notification-bs-pageassignments-assignment-change-remove-body": "$2 sayfasına atamanızı $1 tarafından kaldırıldı.",
-	"notification-bs-pageassignments-user-group-add-summary": "$4 {{PLURAL:$5|grubuna|gruplara}}, {{PLURAL:$5|kendisine}} sayfalar atanmış olarak {{GENDER:$6|eklendiniz}}",
+	"notification-bs-pageassignments-user-group-add-summary": "$4 {{PLURAL:$5|grubuna|gruplara}}, kendisine sayfalar atanmış olarak {{GENDER:$6|eklendiniz}}",
 	"notification-bs-pageassignments-user-group-add-subject": "Kendisine sayfa atanmış {{PLURAL:$5|bir gruba|gruplara}} eklendi",
-	"notification-bs-pageassignments-user-group-add-body": "$4 {{PLURAL:$5|grubuna|gruplara}}, {{PLURAL:$5|kendisine}} sayfalar atanmış olarak {{GENDER:$6|eklendiniz}}. Lütfen atanmanızı $3 sayfasından kontrol edin.",
-	"notification-bs-pageassignments-user-group-remove-summary": "$4 {{PLURAL:$5|grubuna|gruplara}}, {{PLURAL:$5|kendisine}} sayfalar atanmış olarak {{GENDER:$6|kaldırıldınız}}",
+	"notification-bs-pageassignments-user-group-add-body": "$4 {{PLURAL:$5|grubuna|gruplara}}, kendisine sayfalar atanmış olarak {{GENDER:$6|eklendiniz}}. Lütfen atanmanızı $3 sayfasından kontrol edin.",
+	"notification-bs-pageassignments-user-group-remove-summary": "$4 {{PLURAL:$5|grubuna|gruplara}}, kendisine sayfalar atanmış olarak {{GENDER:$6|kaldırıldınız}}",
 	"notification-bs-pageassignments-user-group-remove-subject": "Sayfaları atanmış olan $4 {{PLURAL:$5|grubundan|gruplardan}} kaldırıldı",
-	"notification-bs-pageassignments-user-group-remove-body": "$4 {{PLURAL:$5|grubuna|gruplara}}, {{PLURAL:$5|kendisine}} sayfalar atanmış olarak {{GENDER:$6|kaldırıldınız}}. Lütfen atanmanızı $3 sayfasından kontrol edin.",
+	"notification-bs-pageassignments-user-group-remove-body": "$4 {{PLURAL:$5|grubuna|gruplara}}, kendisine sayfalar atanmış olarak {{GENDER:$6|kaldırıldınız}}. Lütfen atanmanızı $3 sayfasından kontrol edin.",
 	"prefs-pageassignments": "Sayfa Atamaları",
 	"bs-pageassignments-pref-lockdowngroups": "Kullanıcı atanmadığında sayfa için kilitlenen gruplar",
 	"bs-pageassignments-yourassignments": "Atamalarınız",
