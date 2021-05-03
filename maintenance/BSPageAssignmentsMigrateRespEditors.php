@@ -84,7 +84,7 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 	 * @return true
 	 */
 	protected function insertAssignment( $aRespEditor ) {
-		$this->getDB( DB_MASTER )->insert(
+		$this->getDB( DB_PRIMARY )->insert(
 			'bs_pageassignments',
 			$aRespEditor,
 			__METHOD__
@@ -99,7 +99,7 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 	 * @return bool
 	 */
 	protected function assignmentExists( $conds ) {
-		return $this->getDB( DB_MASTER )->selectRow(
+		return $this->getDB( DB_PRIMARY )->selectRow(
 			'bs_pageassignments',
 			'*',
 			$conds,

@@ -34,7 +34,7 @@ class AssignedPages extends EntityConfig {
 	 * @return array
 	 */
 	protected function get_PrimaryAttributeDefinitions() {
-		return array_filter( $this->get_AttributeDefinitions(), function ( $e ) {
+		return array_filter( $this->get_AttributeDefinitions(), static function ( $e ) {
 			return isset( $e[Schema::PRIMARY] ) && $e[Schema::PRIMARY] === true;
 		} );
 	}

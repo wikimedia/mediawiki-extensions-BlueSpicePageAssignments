@@ -5,7 +5,7 @@ use MediaWiki\MediaWikiServices;
 
 return [
 
-	'BSPageAssignmentsAssignmentFactory' => function ( MediaWikiServices $services ) {
+	'BSPageAssignmentsAssignmentFactory' => static function ( MediaWikiServices $services ) {
 		$assignable = $services->getService(
 			'BSPageAssignmentsAssignableFactory'
 		);
@@ -21,7 +21,7 @@ return [
 		);
 	},
 
-	'BSPageAssignmentsAssignableFactory' => function ( MediaWikiServices $services ) {
+	'BSPageAssignmentsAssignableFactory' => static function ( MediaWikiServices $services ) {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpicePageAssignmentsTypeRegistry'
 		);
