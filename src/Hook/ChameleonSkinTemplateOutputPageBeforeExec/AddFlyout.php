@@ -21,7 +21,7 @@ class AddFlyout extends ChameleonSkinTemplateOutputPageBeforeExec {
 			[
 				'pageassignments' => [
 					'position' => 20,
-					'callback' => function ( $sktemplate ) {
+					'callback' => static function ( $sktemplate ) {
 						return new Flyout( $sktemplate );
 					}
 				]

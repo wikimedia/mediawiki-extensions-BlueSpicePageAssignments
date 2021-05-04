@@ -14,7 +14,7 @@ class PageAssignmentsHooks {
 	 */
 	public static function onArticleDeleteComplete( &$wikiPage, &$user, $reason,
 		$id, $content, $logEntry ) {
-		$dbr = wfGetDB( DB_MASTER );
+		$dbr = wfGetDB( DB_PRIMARY );
 		$dbr->delete(
 			'bs_pageassignments',
 			[
@@ -34,7 +34,7 @@ class PageAssignmentsHooks {
 	 */
 	public static function onBSUserManagerAfterDeleteUser( $oUserManager, $oUser,
 		&$oStatus, $oPerformer ) {
-		$dbr = wfGetDB( DB_MASTER );
+		$dbr = wfGetDB( DB_PRIMARY );
 		$dbr->delete(
 			'bs_pageassignments',
 			[
@@ -52,7 +52,7 @@ class PageAssignmentsHooks {
 	 * @return bool
 	 */
 	public static function onBSGroupManagerGroupNameChanged( $sGroup, $sNewGroup ) {
-		$dbr = wfGetDB( DB_MASTER );
+		$dbr = wfGetDB( DB_PRIMARY );
 		$dbr->update(
 			'bs_pageassignments',
 			[
@@ -72,7 +72,7 @@ class PageAssignmentsHooks {
 	 * @return bool
 	 */
 	public static function onBSGroupManagerGroupDeleted( $sGroup ) {
-		$dbr = wfGetDB( DB_MASTER );
+		$dbr = wfGetDB( DB_PRIMARY );
 		$dbr->delete(
 			'bs_pageassignments',
 			[
