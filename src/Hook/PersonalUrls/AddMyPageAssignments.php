@@ -13,7 +13,7 @@ class AddMyPageAssignments extends PersonalUrls {
 	 */
 	protected function skipProcessing() {
 		$user = $this->getContext()->getUser();
-		return !$user->isLoggedIn();
+		return !$user->isRegistered();
 	}
 
 	/**
