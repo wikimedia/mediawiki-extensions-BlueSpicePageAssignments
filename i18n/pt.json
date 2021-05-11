@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Emma Franzen",
 			"Fúlvio",
 			"Hamilton Abreu",
 			"Mansil",
@@ -52,12 +53,12 @@
 	"notification-bs-pageassignments-page-delete-summary": "$3 foi eliminada {{GENDER:$2|pelo utilizador|pela utilizadora}} $1",
 	"notification-bs-pageassignments-page-delete-subject": "$2 foi eliminada",
 	"notification-bs-pageassignments-page-delete-body": "{{GENDER:$2|O utilizador|A utilizadora}} $1 eliminou a página $2.",
-	"notification-bs-pageassignments-user-group-add-summary": "Foi adicionado ao grupo $4 que {{PLURAL:$5|tem|têm}} páginas atribuídas",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER: $6 | Você foi}} adicionado ao {{PLURAL: $5 | grupo | grupos}} {{PLURAL: $5 | $4 | $4}} que {{PLURAL: $5 | tem | têm}} páginas atribuídas para {{PLURAL: $5 | ele | eles}}",
 	"notification-bs-pageassignments-user-group-add-subject": "Adicionado a {{PLURAL:$5|um grupo que tem|grupos que têm}} páginas atribuídas",
-	"notification-bs-pageassignments-user-group-add-body": "Foi adicionado {{PLURAL:$5|ao grupo|aos grupos}} $4, que {{PLURAL:$5|tem|têm}} páginas atribuídas. Verifique a sua atribuição em $3.",
-	"notification-bs-pageassignments-user-group-remove-summary": "Foi removido {{PLURAL:$5|do grupo|dos grupos}} $4, que {{PLURAL:$5|tem|têm}} páginas atribuídas",
-	"notification-bs-pageassignments-user-group-remove-subject": "Removido {{PLURAL:$5|do grupo|dos grupos}} $4, que {{PLURAL:$5|tem|têm}} páginas atribuídas",
-	"notification-bs-pageassignments-user-group-remove-body": "Foi removido{{PLURAL:$5|do grupo|dos grupos}} $4, que {{PLURAL:$5|tem|têm}} páginas atribuídas. Verifique a sua atribuição em $3.",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER: $6 | Você foi}} adicionado ao {{PLURAL: $5 | grupo | grupos}} {{PLURAL: $5 | $4 | $4}}, que {{PLURAL: $ 5 | tem | têm}} páginas atribuído a {{PLURAL: $5 | it | eles}}. Verifique sua atribuição em $3.",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER: $6 | Você foi}} removido do {{PLURAL: $5 | grupo | grupos}} {{PLURAL: $5 | $4 | $4}}, que {{PLURAL: $5 | tem | têm}} páginas atribuído a {{PLURAL: $5 | ele | eles}}",
+	"notification-bs-pageassignments-user-group-remove-subject": "Removido de {{PLURAL: $5 | grupo | grupos}} {{PLURAL: $5 | $4 | $4}}, que {{PLURAL: $5 | tem | têm}} páginas atribuídas a {{PLURAL: $5 | ele | eles} }",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER: $6 | Você foi}} removido do {{PLURAL: $5 | grupo | grupos}} {{PLURAL: $5 | $4 | $4}}, que {{PLURAL: $5 | tem | têm}} páginas atribuído a {{PLURAL: $5 | it | eles}}. Verifique sua atribuição em $3.",
 	"prefs-pageassignments": "Atribuições de páginas",
 	"bs-pageassignments-pref-permissions": "Dar permissões adicionais a utilizadores com atribuições de páginas",
 	"bs-pageassignments-yourassignments": "As suas atribuições de páginas",

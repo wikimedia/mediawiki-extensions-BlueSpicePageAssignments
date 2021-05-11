@@ -12,7 +12,7 @@
 	"notification-bs-pageassignments-page-delete-summary": "$3 را $1 {{GENDER:$2|حذف کرد}}",
 	"notification-bs-pageassignments-page-delete-subject": "$2 حذف شد",
 	"notification-bs-pageassignments-page-delete-body": "$1 صفحهٔ $2 را {{GENDER:$2|حذف کرد}}.",
-	"notification-bs-pageassignments-user-group-add-summary": "شما به گروه $4 افزوده شدید",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|شما}} به {{PLURAL:$5|گروه|گروه‌های}} {{PLURAL:$5|$4|$4}} که صفحه‌های به {{PLURAL:$5|آن|آن‌ها}} اختصاص داده شده، اضافه شده‌اید.",
 	"notification-bs-pageassignments-user-group-add-subject": "به گروه $4 افزوده شد",
 	"bs-pageassignments-assignee-special-everyone-label": "همه‌کس",
 	"bs-pageassignments-assignee-type-everyone": "همه‌کس",
@@ -65,5 +65,8 @@
 	"bs-pageassignments-sesp-pageassignments-alias": "تکلیف",
 	"bs-pageassignments-sesp-pageassignments-desc": "تکلیف",
 	"bs-usagetracker-pageassignments": "صفحه‌های دارای تکلیف",
-	"bs-pageassignments-collection-var-namespacename": "فضای نام"
+	"bs-pageassignments-collection-var-namespacename": "فضای نام",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|شما}} به {{PLURAL:$5|گروه|گروه‌های}} {{PLURAL:$5|$4|$4}} که صفحه‌هایی به {{PLURAL:$5|آن|آن‌ها}} اختصاص داده‌شده، اضافه شدید. لطفاً وظایف خود را در $3 بررسی کنید.",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|شما}} به {{PLURAL:$5|گروه|گروه‌های}} {{PLURAL:$5|$4|$4}} که صفحه‌هایی به {{PLURAL:$5|آن|آن‌ها}} اختصاص داده‌شده، حذف شده‌اید.",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|شما}} از {{PLURAL:$5|گروه|گروه‌های}} {{PLURAL:$5|$4|$4}} که صفحه‌هایی به {{PLURAL:$5|آن|آن‌ها}} اختصاص داده‌شده، حذف شدید. لطفاً وظایف خود را در $3 بررسی کنید."
 }

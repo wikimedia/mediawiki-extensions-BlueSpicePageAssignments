@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Guycn2",
 			"Steeve815",
 			"ישראל קלר"
@@ -34,7 +35,7 @@
 	"bs-pageassignments-notification-reason": "הסיבה להודעה זו:",
 	"bs-pageassignments-notification-reason-user": "{{GENDER:|אתה משויך|את משויכת|אתם משויכים}} לדף זה באופן ישיר",
 	"bs-pageassignments-notification-reason-group": "{{GENDER:|אתה חבר|את חברה|אתם חברים}} {{PLURAL:$1|בקבוצה|בקבוצות}}: $2",
-	"notification-bs-pageassignments-assignment-change-add-summary": "$1 {{GENDER:$2|שייך|שייכה}} אותך לדף $3",
+	"notification-bs-pageassignments-assignment-change-add-summary": "$1 {{GENDER:$1|שייך|שייכה}} אותך לדף $2",
 	"notification-bs-pageassignments-assignment-change-add-subject": "שיוך ל־$2",
 	"notification-bs-pageassignments-assignment-change-add-body": "$1 {{GENDER:$2|שייך|שייכה}} אותך לדף $2.",
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$2|הסיר|הסירה}} את השיוך שלך לדף $3",
