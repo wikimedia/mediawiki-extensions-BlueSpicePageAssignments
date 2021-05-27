@@ -1,8 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Kunokuno"
-		]
-	},
-	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Ika}} pigdagdag sa {{PLURAL:$5|grupo|mga grupo}} $4 na {{PLURAL:$5|nag|nag}} designar nin pahina {{PLURAL:$5|igdi|sainda}}"
-}
