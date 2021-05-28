@@ -5,6 +5,7 @@
 			"Otokoume",
 			"Shirayuki",
 			"Tmv",
+			"UsagiNeko",
 			"Yusuke1109"
 		]
 	},
@@ -30,7 +31,7 @@
 	"notification-bs-pageassignments-assignment-change-add-body": "$1 があなたにページ $2 を{{GENDER:$1|割り当てました}}。",
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 があなたにページ $2 の割り当てを{{GENDER:$1|除去しました}}",
 	"notification-bs-pageassignments-assignment-change-remove-body": "ページ $2 へのあなたの割り当てが $1 により{{GENDER:$1|除去されました}}。",
-	"notification-bs-pageassignments-user-group-add-body": "$1 があなたにグループ「$4」を{{GENDER:$2|追加しました}}。$3 から現在の割り当てを確認できます。",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|あなた}}は{{PLURAL:$5|グループ}}「{{PLURAL:$5|$4}}」に追加されました。{{PLURAL:$5|グループ}}には割り当てられたページが{{PLURAL:$5|あります}}。\n$3 から現在の割り当てを確認してください。",
 	"notification-bs-pageassignments-user-group-remove-summary": "あなたは割り当てられたページを持つグループ $4 から削除されました。",
 	"notification-bs-pageassignments-user-group-remove-subject": "割り当てられたページを持つグループ $4 から削除しました",
 	"notification-bs-pageassignments-user-group-remove-body": "あなたは割り当てられたページを持つグループ $4 から削除されました。$3 であなたへの割り当てをご確認ください。",
