@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Nettrom"
 		]
 	},
 	"bs-pageassignments-desc": "Lar deg tildele brukere eller grupper til ei side",
@@ -47,12 +48,12 @@
 	"notification-bs-pageassignments-page-delete-summary": "$3 ble {{GENDER:$2|slettet}} av $1",
 	"notification-bs-pageassignments-page-delete-subject": "$2 ble slettet",
 	"notification-bs-pageassignments-page-delete-body": "$1 {{GENDER:$2|slettet}} siden $2.",
-	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Du}} har blitt lagt til i {{PLURAL:$5|gruppa|gruppene}} $4 som {{PLURAL:$5|har}} sider tildelt",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Du}} har blitt lagt til i {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}} som {{PLURAL:$5|har}} sider tildelt",
 	"notification-bs-pageassignments-user-group-add-subject": "Lagt til {{PLURAL:$5|gruppe|grupper}} som har sider tildelt",
-	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|Du}} har blitt lagt til i {{PLURAL:$5|gruppa|gruppene}} $4, som har sider tildelt. Sjekk tildelingene på $3.",
-	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|Du}} har blitt fjernet fra {{PLURAL:$5|gruppa|gruppene}} $4, som har sider tildelt",
-	"notification-bs-pageassignments-user-group-remove-subject": "Fjernet fra {{PLURAL:$5|gruppa|gruppene}} $4, som har sider tildelt",
-	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|Du}} har blitt fjernet fra {{PLURAL:$5|gruppa|gruppene}} $4, som har sider tildelt.\nSjekk tildelingene dine på $3.",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|Du}} har blitt lagt til i {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}}, som har sider tildelt. Sjekk tildelingene på $3.",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|Du}} har blitt fjernet fra {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}}, som har sider tildelt",
+	"notification-bs-pageassignments-user-group-remove-subject": "Fjernet fra {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}}, som har sider tildelt",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|Du}} har blitt fjernet fra {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}}, som har sider tildelt.\nSjekk tildelingene dine på $3.",
 	"prefs-pageassignments": "Sidetildelinger",
 	"bs-pageassignments-pref-permissions": "Legg til ekstra tillatelser til tildelte brukere",
 	"bs-pageassignments-yourassignments": "Dine tildelinger",
