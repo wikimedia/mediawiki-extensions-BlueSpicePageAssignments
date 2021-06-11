@@ -25,7 +25,7 @@
 	"log-show-hide-bs-pageassignments": "$1 registro assegnazioni",
 	"bs-pageassignments-notification-reason": "Motivi di questa notifica:",
 	"notification-bs-pageassignments-assignment-change-add-subject": "Assegnato a $2",
-	"notification-bs-pageassignments-assignment-change-add-body": "$1 {{GENDER:$2|ti ha assegnato}} alla pagina $2.",
+	"notification-bs-pageassignments-assignment-change-add-body": "$1 {{GENDER:$1|ti ha assegnato}} alla pagina $2.",
 	"notification-bs-pageassignments-page-move-summary": "$3 è stata {{GENDER:$2|spostata}} da $1",
 	"notification-bs-pageassignments-page-move-subject": "$2 è stata spostata",
 	"notification-bs-pageassignments-page-move-body": "$1 {{GENDER:$2|ha spostato}} la pagina $2.",
@@ -35,9 +35,9 @@
 	"notification-bs-pageassignments-page-delete-summary": "$3 è stata {{GENDER:$2|cancellata}} da $1",
 	"notification-bs-pageassignments-page-delete-subject": "$2 è stata cancellata",
 	"notification-bs-pageassignments-page-delete-body": "$1 {{GENDER:$2|ha cancellato}} la pagina $2.",
-	"notification-bs-pageassignments-user-group-add-summary": "Sei stato aggiunto {{PLURAL:$5|al gruppo|ai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
+	"notification-bs-pageassignments-user-group-add-summary": "Sei {{GENDER:$6|stato aggiunto|stata aggiunta}} {{PLURAL:$5|al gruppo|ai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
 	"notification-bs-pageassignments-user-group-add-subject": "Aggiunto {{PLURAL:$5|ad un gruppo|a gruppi}} che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
-	"notification-bs-pageassignments-user-group-remove-summary": "Sei stato rimosso {{PLURAL:$5|dal gruppo|dai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
+	"notification-bs-pageassignments-user-group-remove-summary": "Sei {{GENDER:$6|stato rimosso|stata rimossa}} {{PLURAL:$5|dal gruppo|dai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
 	"notification-bs-pageassignments-user-group-remove-subject": "Rimosso {{PLURAL:$5|dal gruppo|dai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
 	"prefs-pageassignments": "Pagina assegnazioni",
 	"bs-pageassignments-yourassignments": "Le tue assegnazioni",
@@ -50,5 +50,7 @@
 	"bs-pageassignments-assignee-type-everyone": "Tutti",
 	"bs-pageassignments-assignee-type-user": "Utente",
 	"bs-pageassignments-assignee-type-group": "Gruppo",
-	"bs-pageassignments-collection-var-namespacename": "Namespace"
+	"bs-pageassignments-collection-var-namespacename": "Namespace",
+	"notification-bs-pageassignments-user-group-add-body": "Sei {{GENDER:$6|stato aggiunto|stata aggiunta}} {{PLURAL:$5|al gruppo|ai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}. Controlla il tuo incarico su $3.",
+	"notification-bs-pageassignments-user-group-remove-body": "Sei {{GENDER:$6|stato rimosso|stata rimossa}} {{PLURAL:$5|dal gruppo|dai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}. Controlla il tuo incarico su $3."
 }
