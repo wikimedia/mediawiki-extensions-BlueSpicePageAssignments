@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
 	"bs-pageassignments-assignee-special-everyone-label": "Iedereen",
@@ -24,9 +25,9 @@
 	"notification-bs-pageassignments-page-delete-summary": "$3 is {{GENDER:$2|verwijderd}} door $1",
 	"notification-bs-pageassignments-page-delete-subject": "$2 is verwijderd",
 	"notification-bs-pageassignments-page-delete-body": "$1 {{GENDER:$2|verwijderde}} de pagina $2.",
-	"notification-bs-pageassignments-user-group-add-summary": "U bent aan de groep $4 toegevoegd",
-	"notification-bs-pageassignments-user-group-add-subject": "Aan groep $4 toegevoegd",
-	"notification-bs-pageassignments-user-group-remove-summary": "U bent uit de volgende {{PLURAL:$5|groep|groepen}} verwijderd $4",
-	"notification-bs-pageassignments-user-group-remove-subject": "Ui {{PLURAL:$5|groep|groepen}} verwijderd $4",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|U}} bent toegevoegd aan de groep{{PLURAL:$5||en}} $4, waaraan pagina's zijn toegewezen.",
+	"notification-bs-pageassignments-user-group-add-subject": "Aan {{PLURAL:$5|een groep|groepen}} toegevoegd waaraan pagina's zijn toegewezen",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|U}} bent van de {{PLURAL:$5|groep|groepen}} $4, waaraan pagina's zijn toegewezen, verwijderd",
+	"notification-bs-pageassignments-user-group-remove-subject": "Verwijderd van de groep{{PLURAL:$5||en}} $4, waaraan pagina's zijn toegewezen",
 	"bs-pageassignments-collection-var-namespacename": "Naamruimte"
 }
