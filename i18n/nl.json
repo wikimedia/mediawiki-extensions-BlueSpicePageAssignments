@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
 	"bs-pageassignments-column-title": "Paginanaam",
@@ -11,10 +12,10 @@
 	"notification-bs-pageassignments-assignment-change-add-summary": "$1 {{GENDER:$1|heeft}} $2 aan u toegewezen",
 	"notification-bs-pageassignments-assignment-change-add-subject": "Toegewezen aan $2",
 	"notification-bs-pageassignments-assignment-change-add-body": "$1 {{GENDER:$1|heeft}} u aan de pagina $2 toegewezen.",
-	"notification-bs-pageassignments-user-group-add-summary": "U bent aan de groep $4 toegevoegd",
-	"notification-bs-pageassignments-user-group-add-subject": "Aan groep $4 toegevoegd",
-	"notification-bs-pageassignments-user-group-remove-summary": "U bent uit de volgende {{PLURAL:$5|groep|groepen}} verwijderd $4",
-	"notification-bs-pageassignments-user-group-remove-subject": "Ui {{PLURAL:$5|groep|groepen}} verwijderd $4",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|U}} bent toegevoegd aan de groep{{PLURAL:$5||en}} $4, waaraan pagina's zijn toegewezen.",
+	"notification-bs-pageassignments-user-group-add-subject": "Aan {{PLURAL:$5|een groep|groepen}} toegevoegd waaraan pagina's zijn toegewezen",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|U}} bent van de {{PLURAL:$5|groep|groepen}} $4, waaraan pagina's zijn toegewezen, verwijderd",
+	"notification-bs-pageassignments-user-group-remove-subject": "Verwijderd van de groep{{PLURAL:$5||en}} $4, waaraan pagina's zijn toegewezen",
 	"bs-pageassignments-assignee-special-everyone-label": "Iedereen",
 	"bs-pageassignments-assignee-type-everyone": "Iedereen",
 	"bs-pageassignments-assignee-type-user": "Gebruiker",
