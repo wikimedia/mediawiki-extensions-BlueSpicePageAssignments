@@ -2,12 +2,31 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"McDutchie"
+			"McDutchie",
+			"Romaine"
 		]
 	},
+	"pageassignments": "Opdrachten",
+	"managepageassignments": "Opdrachtbeheer",
+	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Extra rechten voor toegewezen gebruikers",
+	"bs-pageassignments-dlg-title": "Opdrachten",
+	"bs-pageassignments-dlg-fldlabel": "Opdrachten",
+	"bs-pageassignments-menu-label": "Opdracht bewerken",
+	"bs-pageassignments-action-apiedit-description": "Bewerk opdrachten van $1",
 	"bs-pageassignments-column-title": "Paginanaam",
+	"bs-pageassignments-column-assignments": "Opdrachten",
+	"bs-pageassignments-column-assignedby": "Toegewezen door",
+	"bs-pageassignments-no-assignments": "Geen opdrachten",
+	"bs-pageassignments-action-log": "Opdrachtenlogboek",
+	"bs-pageassignments-action-delete-confirm": "Opdracht verwijderen?",
 	"bs-pageassignments-api-error": "Er is een fout opgetreden",
 	"bs-pageassignments-api-error-no-page": "Geen pagina opgegeven",
+	"bs-pageassignments-api-error-insert": "Toewijzing \"$1\" voor \"$2\" kon niet worden opgeslagen",
+	"log-name-bs-pageassignments": "Opdrachtenlogboek",
+	"log-show-hide-bs-pageassignments": "$1 Opdrachtenlogboek",
+	"logeventslist-bs-pageassignments-log": "Opdrachtenlogboek",
+	"echo-category-title-bs-pageassignments-action-cat": "Pagina-opdrachten",
+	"bs-pageassignments-notification-reason": "Redenen voor deze melding:",
 	"bs-pageassignments-notification-reason-group": "U bent lid van {{PLURAL:$2|de groep|de groepen}}: $1",
 	"notification-bs-pageassignments-assignment-change-add-summary": "$1 {{GENDER:$1|heeft}} $2 aan u toegewezen",
 	"notification-bs-pageassignments-assignment-change-add-subject": "Toegewezen aan $2",
