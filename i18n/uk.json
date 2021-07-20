@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Movses",
 			"Piramidion",
 			"Renamerr",
@@ -99,5 +100,7 @@
 	"bs-pageassignments-collection-var-namespacename": "Простір назв",
 	"bs-pageassignments-collection-var-assignedpages": "Призначені сторінки",
 	"bs-pageassignments-collection-var-unassignedpages": "Непризначені сторінки",
-	"bs-pageassignments-pageheader-label": "Призначення"
+	"bs-pageassignments-pageheader-label": "Призначення",
+	"bs-pageassignments-book-assignment-not-allowed-title": "Призначення заборонено",
+	"bs-pageassignments-book-assignment-not-allowed-text": "Доручення заборонено для книг, що не мають назви"
 }
