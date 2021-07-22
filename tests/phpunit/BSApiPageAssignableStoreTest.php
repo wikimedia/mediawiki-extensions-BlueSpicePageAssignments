@@ -25,7 +25,7 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 		return true;
 	}
 
-	protected function setUp() : void {
+	protected function setUp(): void {
 		parent::setUp();
 		new BSUserFixturesProvider();
 		$this->insertPage( "Test", "Dummy content" );
