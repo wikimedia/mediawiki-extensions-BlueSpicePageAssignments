@@ -335,6 +335,11 @@
 			"value": 3
 		}
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\Main"
+		}
+	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\PageAssignments\\Hook\\LoadExtensionSchemaUpdates\\AddPageAssignmentsTable::callback",
@@ -372,7 +377,8 @@
 		"BSApiNamespaceStoreMakeData": "\\BlueSpice\\PageAssignments\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
 		"NamespaceManager::editNamespace": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerEditNamespace\\SetValues::callback",
 		"NamespaceManager::writeNamespaceConfiguration": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback",
-		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers"
+		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
 	},
 	"manifest_version": 2
 }
