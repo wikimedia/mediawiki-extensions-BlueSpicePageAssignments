@@ -3,6 +3,7 @@
 		"authors": [
 			"Beta16",
 			"Selven",
+			"Stefano",
 			"ValeJappo"
 		]
 	},
@@ -24,6 +25,7 @@
 	"log-description-bs-pageassignments": "Registro delle modifiche sulla pagina assegnazioni",
 	"log-show-hide-bs-pageassignments": "$1 registro assegnazioni",
 	"bs-pageassignments-notification-reason": "Motivi di questa notifica:",
+	"bs-pageassignments-notification-reason-group": "Sei membro del gruppo {{PLURAL:$1|the group|the groups}}: $2",
 	"notification-bs-pageassignments-assignment-change-add-subject": "Assegnato a $2",
 	"notification-bs-pageassignments-assignment-change-add-body": "$1 {{GENDER:$1|ti ha assegnato}} alla pagina $2.",
 	"notification-bs-pageassignments-user-group-add-summary": "Sei {{GENDER:$6|stato aggiunto|stata aggiunta}} {{PLURAL:$5|al gruppo|ai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
