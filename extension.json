@@ -373,6 +373,7 @@
 		"BSApiNamespaceStoreMakeData": "\\BlueSpice\\PageAssignments\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
 		"NamespaceManager::editNamespace": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerEditNamespace\\SetValues::callback",
 		"NamespaceManager::writeNamespaceConfiguration": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback",
+		"MergeAccountFromTo": "\\BlueSpice\\PageAssignments\\Hook\\MergeAccountFromTo\\MergePageAssignmentsDBFields::callback",
 		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers"
 	},
 	"manifest_version": 2
