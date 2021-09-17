@@ -4,7 +4,8 @@
 			"Amire80",
 			"Guycn2",
 			"Steeve815",
-			"ישראל קלר"
+			"ישראל קלר",
+			"נדב ס"
 		]
 	},
 	"bs-pageassignments-desc": "מתן אפשרות לשיוך משתמשים או קבוצות לדפים",
@@ -42,7 +43,7 @@
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$1|הסיר|הסירה}} את השיוך שלך לדף $2",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "הסרת שיוך ל־$2",
 	"notification-bs-pageassignments-assignment-change-remove-body": "השיוך שלך לדף $2 {{GENDER:$1|הוסר}} על־ידי $1.",
-	"notification-bs-pageassignments-user-group-add-summary": "נוספת לקבוצה $4",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|נוספת}} ל{{PLURAL:$5|קבוצה|קבוצות}} $4, שיש {{PLURAL:$5|לה|להן}} דפים המשוייכים {{PLURAL:$5|אליה|אליהן}}",
 	"notification-bs-pageassignments-user-group-add-subject": "נוספת לקבוצה $4",
 	"notification-bs-pageassignments-user-group-add-body": "$1 {{GENDER:$2|הוסיף|הוסיפה}} אותך לקבוצה $4. נא לבדוק את השיוכים שלך בדף $3.",
 	"notification-bs-pageassignments-user-group-remove-summary": "הוסרת {{PLURAL:$5|מהקבוצה|מהקבוצות}} $4",
