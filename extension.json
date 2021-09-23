@@ -73,16 +73,8 @@
 			"PermissionLockdownGroupModuleRegistry": {
 				"pageassignments": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Groups\\PageAssignment::getInstance"
 			},
-			"EntityRegistry": {
-				"assignedpages": "\\BlueSpice\\PageAssignments\\EntityConfig\\Collection\\AssignedPages::factory"
-			},
 			"PageHeaderBeforeContentRegistry": {
 				"pageheader-assignments": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignments::factory"
-			}
-		},
-		"BlueSpiceExtendedStatistics": {
-			"SnapshotDataCollectorRegistry": {
-				"assignedpages": "\\BlueSpice\\PageAssignments\\DataCollector\\StoreSourced\\AssignedPages::factory"
 			}
 		},
 		"BlueSpicePageAssignments": {
@@ -103,6 +95,19 @@
 		"BlueSpiceSMWConnector": {
 			"ExtraPropertyRegistry": {
 				"pageassignment": "\\BlueSpice\\PageAssignments\\PageAssignmentsPropertyValueProvider::factory"
+			}
+		},
+		"BlueSpiceExtendedStatistics": {
+			"SnapshotProviders": {
+				"pa-assignedpages": {
+					"class": "\\BlueSpice\\PageAssignments\\Statistics\\SnapshotProvider\\AssignedPages",
+					"services": [ "DBLoadBalancer" ]
+				}
+			},
+			"Reports": {
+				"pa-assignedpages": {
+					"class": "\\BlueSpice\\PageAssignments\\Statistics\\Report\\AssignedPages"
+				}
 			}
 		}
 	},
@@ -287,12 +292,18 @@
 		"ext.bluespice.pageassignments.assignable.messages": {
 			"class": "\\BlueSpice\\PageAssignments\\ResourceLoader\\Messages"
 		},
-		"ext.bluespice.pageassignments.collection.assignedpages": {
+		"ext.bluespice.pageassignments.statistics": {
+			"scripts": [
+				"statistics/AssignedPagesReport.js"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.oOJSPlus.widgets"
+			],
 			"messages": [
-				"bs-pageassignments-collection-type-assignedpages",
-				"bs-pageassignments-collection-var-namespacename",
-				"bs-pageassignments-collection-var-assignedpages",
-				"bs-pageassignments-collection-var-unassignedpages"
+				"bs-pageassignments-statistics-report-assigned-pages",
+				"bs-pageassignments-statistics-report-assigned-pages-axis-assigned",
+				"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned"
 			]
 		}
 	},
