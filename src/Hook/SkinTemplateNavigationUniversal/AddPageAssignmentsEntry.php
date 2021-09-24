@@ -10,7 +10,7 @@ class AddPageAssignmentsEntry extends SkinTemplateNavigationUniversal {
 	 * @return bool
 	 */
 	protected function skipProcessing() {
-		if ( !$this->sktemplate->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
+		if ( $this->sktemplate->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
 			return true;
 		}
 		if ( !$this->getServices()->getPermissionManager()
