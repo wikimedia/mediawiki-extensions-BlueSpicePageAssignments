@@ -88,5 +88,8 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Paginas non assignate",
 	"bs-pageassignments-pageheader-label": "Assignationes",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Assignationes non permittite",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Assignationes non es permittite pro libros non basate sur titulos"
+	"bs-pageassignments-book-assignment-not-allowed-text": "Assignationes non es permittite pro libros non basate sur titulos",
+	"bs-pageassignments-statistics-report-assigned-pages": "Paginas assignate",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assignate",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non assignate"
 }

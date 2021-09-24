@@ -91,5 +91,6 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Páginas não atribuídas",
 	"bs-pageassignments-pageheader-label": "Atribuições",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Tarefas não permitidas",
-	"bs-pageassignments-book-assignment-not-allowed-text": "As atribuições não são permitidas para livros não baseados em títulos"
+	"bs-pageassignments-book-assignment-not-allowed-text": "As atribuições não são permitidas para livros não baseados em títulos",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Atribuído"
 }
