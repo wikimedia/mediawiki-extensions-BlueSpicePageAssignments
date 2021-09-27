@@ -5,7 +5,7 @@ namespace BlueSpice\PageAssignments\Statistics\SnapshotProvider;
 use BlueSpice\ExtendedStatistics\ISnapshotProvider;
 use BlueSpice\ExtendedStatistics\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
-use MWNamespace;
+use MediaWiki\MediaWikiServices;
 use Title;
 use Wikimedia\Rdbms\LoadBalancer;
 
@@ -49,12 +49,13 @@ class AssignedPages implements ISnapshotProvider {
 		$unassigned = 0;
 		$namespaces = [];
 		$categories = [];
+		$namespaceInfo = MediaWikiServices::getInstance()->getNamespaceInfo();
 		foreach ( $res as $row ) {
 			$pageCount = (int)$row->pages;
 			if ( (int)$row->page_namespace === 0 ) {
 				$namespace = '-';
 			} else {
-				$namespace = MWNamespace::getCanonicalName( $row->page_namespace );
+				$namespace = $namespaceInfo->getCanonicalName( $row->page_namespace );
 			}
 			$category = $row->cl_to;
 			$hasAssignment = (bool)$row->pa_page_id;
