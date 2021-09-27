@@ -32,5 +32,8 @@
 	"bs-pageassignments-flyout-intro": "이 문서에 할당된 사용자와 그룹을 관리합니다.",
 	"bs-pageassignments-flyout-form-title": "할당 추가",
 	"bs-pageassignments-flyout-grid-title": "이 문서에 할당된 사용자와 그룹",
-	"bs-pageassignments-collection-var-namespacename": "이름공간"
+	"bs-pageassignments-collection-var-namespacename": "이름공간",
+	"bs-pageassignments-statistics-report-assigned-pages": "할당된 문서",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "할당됨",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "할당되지 않음"
 }

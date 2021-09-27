@@ -45,5 +45,8 @@
 	"bs-pageassignments-assignee-type-everyone": "Tutti",
 	"bs-pageassignments-assignee-type-user": "Utente",
 	"bs-pageassignments-assignee-type-group": "Gruppo",
-	"bs-pageassignments-collection-var-namespacename": "Namespace"
+	"bs-pageassignments-collection-var-namespacename": "Namespace",
+	"bs-pageassignments-statistics-report-assigned-pages": "Pagine assegnate",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assegnato",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non assegnato"
 }

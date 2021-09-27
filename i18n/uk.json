@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"DDPAT",
 			"Movses",
 			"Piramidion",
@@ -47,7 +48,7 @@
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$1|вилучив|вилучила}} Ваше призначення до $2",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "Вилучення призначення до $2",
 	"notification-bs-pageassignments-assignment-change-remove-body": "Ваше призначення до сторінки $2 {{GENDER:$1|було вилучено}} $1.",
-	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Вас}} додано до {{PLURAL:$5|групи|груп}} {{PLURAL:$5|$4|$4}}, що {{PLURAL:$5|має|мають}} сторінки, які {{PLURAL:$5|їй|їм}} призначені",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Вас}} додано до {{PLURAL:$5|групи|груп}} {{PLURAL:$5|$4}}, що {{PLURAL:$5|має|мають}} сторінки, які {{PLURAL:$5|їй|їм}} призначені",
 	"notification-bs-pageassignments-user-group-add-subject": "Додано до {{PLURAL:$5|групи|груп}}, що {{PLURAL:$5|має|мають}} сторінки, які {{PLURAL:$5|їй|їм}} призначені",
 	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|Вас додано}} до {{PLURAL:$5|групи|груп}} {{PLURAL:$5|$4|$4}}, що {{PLURAL:$5|має|мають}} сторінки, які {{PLURAL:$5|їй|їм}} призначені. Будь ласка, перегляньте своє завдання на $3.",
 	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|Вас}} вилучено з {{PLURAL:$5|групи|груп}} {{PLURAL:$5|$4|$4}}, що {{PLURAL:$5|має|мають}} сторінки, які {{PLURAL:$5|їй|їм}} призначені",
@@ -93,5 +94,8 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Непризначені сторінки",
 	"bs-pageassignments-pageheader-label": "Призначення",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Призначення заборонено",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Доручення заборонено для книг, що не мають назви"
+	"bs-pageassignments-book-assignment-not-allowed-text": "Доручення заборонено для книг, що не мають назви",
+	"bs-pageassignments-statistics-report-assigned-pages": "Призначені сторінки",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Призначено",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Не призначено"
 }
