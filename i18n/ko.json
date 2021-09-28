@@ -13,8 +13,8 @@
 	"logentry-bs-pageassignments-add-group": "$1님이 \"$4\" 그룹을 \"$3\" 문서로 {{GENDER:$2|할당했습니다}}",
 	"bs-pageassignments-notification-reason": "이 알림의 이유:",
 	"bs-pageassignments-notification-reason-user": "당신은 문서에 직접 할당되어 있습니다",
-	"notification-bs-pageassignments-assignment-change-add-summary": "$1님이 당신을 $3에 {{GENDER:$2|할당했습니다}}",
-	"notification-bs-pageassignments-assignment-change-add-body": "$1 님이 당신을 $2 문서에 {{GENDER:$2|할당했습니다}}.",
+	"notification-bs-pageassignments-assignment-change-add-summary": "$1님이 당신을 $2에 {{GENDER:$1|할당했습니다}}",
+	"notification-bs-pageassignments-assignment-change-add-body": "$1님이 당신을 $2 문서에 {{GENDER:$1|할당했습니다}}.",
 	"notification-bs-pageassignments-page-move-summary": "$1님이 $3 문서를 {{GENDER:$2|이동했습니다}}",
 	"notification-bs-pageassignments-page-move-subject": "$2이(가) 이동되었습니다",
 	"notification-bs-pageassignments-page-move-body": "$1님이 $2 문서를 {{GENDER:$2|이동했습니다}}.",
@@ -41,5 +41,8 @@
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "할당된 사용자의 추가 권한",
 	"bs-pageassignments-collection-var-namespacename": "이름공간",
 	"bs-pageassignments-notification-reason-group": "당신은 다음 {{PLURAL:$1|그룹}}의 일원입니다: $2",
-	"bs-pageassignments-group-lockdown-reason": "$1 문서에 할당되어 있지 않습니다"
+	"bs-pageassignments-group-lockdown-reason": "$1 문서에 할당되어 있지 않습니다",
+	"bs-pageassignments-statistics-report-assigned-pages": "할당된 문서",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "할당됨",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "할당되지 않음"
 }

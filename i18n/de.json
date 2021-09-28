@@ -6,6 +6,7 @@
 			"Luke081515",
 			"Metalhead64",
 			"Mglaser",
+			"Mschlindwein",
 			"Robert Vogel",
 			"TMg",
 			"Tiin",
@@ -106,5 +107,8 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Nicht zugewiesene Seiten",
 	"bs-pageassignments-pageheader-label": "Zuweisungen",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Zuweisungen sind nicht erlaubt",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Zuweisungen sind nicht für Bücher erlaubt, die nicht auf Titeln basieren"
+	"bs-pageassignments-book-assignment-not-allowed-text": "Zuweisungen sind nicht für Bücher erlaubt, die nicht auf Titeln basieren",
+	"bs-pageassignments-statistics-report-assigned-pages": "Zugewiesene Seiten",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Zugewiesen",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nicht zugewiesen"
 }

@@ -3,6 +3,7 @@
 		"authors": [
 			"DavidL",
 			"Derugon",
+			"DreZhsh",
 			"Epok",
 			"Gomoko",
 			"Samihuc",
@@ -107,5 +108,8 @@
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "M’avertir lorsqu’une page m’est affectée (ou est affectée à un groupe auquel j’appartiens) ou que mon affectation est retirée",
 	"bs-pageassignments-pageheader-label": "Affectations",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Affectations non autorisées",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Les affectations ne sont pas autorisées pour les livres non basés sur des titres"
+	"bs-pageassignments-book-assignment-not-allowed-text": "Les affectations ne sont pas autorisées pour les livres non basés sur des titres",
+	"bs-pageassignments-statistics-report-assigned-pages": "Pages assignées",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Affecté",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non affecté"
 }

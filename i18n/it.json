@@ -54,5 +54,8 @@
 	"notification-bs-pageassignments-user-group-remove-summary": "Sei {{GENDER:$6|stato rimosso|stata rimossa}} {{PLURAL:$5|dal gruppo|dai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}",
 	"notification-bs-pageassignments-user-group-remove-body": "Sei {{GENDER:$6|stato rimosso|stata rimossa}} {{PLURAL:$5|dal gruppo|dai gruppi}} $4 che {{PLURAL:$5|ha|hanno}} pagine assegnate {{PLURAL:$5|ad esso|a loro}}. Controlla il tuo incarico su $3.",
 	"bs-pageassignments-collection-var-namespacename": "Namespace",
-	"bs-pageassignments-notification-reason-group": "Sei membro del gruppo {{PLURAL:$1|the group|the groups}}: $2"
+	"bs-pageassignments-notification-reason-group": "Sei membro del gruppo {{PLURAL:$1|the group|the groups}}: $2",
+	"bs-pageassignments-statistics-report-assigned-pages": "Pagine assegnate",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assegnato",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non assegnato"
 }
