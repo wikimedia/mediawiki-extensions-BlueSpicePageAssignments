@@ -42,12 +42,12 @@
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$1|ave luate}} l'assegnaziona toje a $2",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "Live le assegnaziune a $2",
 	"notification-bs-pageassignments-assignment-change-remove-body": "L'assegnaziona toje a 'a pàgene $2 ha state {{GENDER:$1|luate}} da $1.",
-	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|E' state}} aggiunde a {{PLURAL:$5|'u|le}} gruppe $4 ca {{PLURAL:$5|tène|tènene}} pàggene assignate {{PLURAL:$5|a jidde|a lore}}",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|E' state}} aggiunde a {{PLURAL:$5|'u|le}} gruppe {{PLURAL:$5|$4}} ca {{PLURAL:$5|tène|tènene}} pàggene assignate {{PLURAL:$5|a jidde|a lore}}",
 	"notification-bs-pageassignments-user-group-add-subject": "Aggiunde a {{PLURAL:$5|'u|le}} gruppe ca {{PLURAL:$5|tène|tènene}} pàggene assignate {{PLURAL:$5|a jidde|a lore}}",
-	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|E' state}} aggiunde a 'u {{PLURAL:$5|'u|le}} gruppe $4, ca {{PLURAL:$5|tène|tènene}} pàggene assignate a {{PLURAL:$5|idde|lore}}. Pe piacere condrolle l'assegnaziona toje sus a $3.",
-	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|E' state}} luate da {{PLURAL:$5|'u|le}} gruppe $4, ca tènene le pàggene assignate a {{PLURAL:$5|jidde|lore}}",
-	"notification-bs-pageassignments-user-group-remove-subject": "Luate da {{PLURAL:$5|'u|le}} gruppe $4, ca {{PLURAL:$5|ave|onne}} pàggene assignate a {{PLURAL:$5|jidde|lore}}",
-	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|E' state}} luate da {{PLURAL:$5|'u|le}} gruppe $4, ca {{PLURAL:$5|tène|tènene}} pàggene assignate a lore.  Pe piacere condrolle l'assegnaziona toje sus a $3.",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|E' state}} aggiunde a 'u {{PLURAL:$5|'u|le}} gruppe {{PLURAL:$5|$4}}, ca {{PLURAL:$5|tène|tènene}} pàggene assignate a {{PLURAL:$5|idde|lore}}. Pe piacere condrolle l'assegnaziona toje sus a $3.",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|E' state}} luate da {{PLURAL:$5|'u|le}} gruppe {{PLURAL:$5|$4}}, ca tènene le pàggene assignate a {{PLURAL:$5|jidde|lore}}",
+	"notification-bs-pageassignments-user-group-remove-subject": "Luate da {{PLURAL:$5|'u|le}} gruppe {{PLURAL:$5|$4}}, ca {{PLURAL:$5|ave|onne}} pàggene assignate a {{PLURAL:$5|jidde|lore}}",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|E' state}} luate da {{PLURAL:$5|'u|le}} gruppe {{PLURAL:$5|$4}}, ca {{PLURAL:$5|tène|tènene}} pàggene assignate a lore.  Pe piacere condrolle l'assegnaziona toje sus a $3.",
 	"prefs-pageassignments": "Assegnaziune d'a pàgene",
 	"bs-pageassignments-pref-lockdowngroups": "Le gruppe ca avènene bloccate pe 'na pàgene quanne l'utende non g'è assegnate",
 	"bs-pageassignments-yourassignments": "Le assegnaziune tune",
@@ -88,5 +88,8 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Pàggene non assignate",
 	"bs-pageassignments-pageheader-label": "Assegnaziune",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Assegnaziune non permesse",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Le assegnaziune non ge sò permesse pe titole ca no se basane sus a libbre"
+	"bs-pageassignments-book-assignment-not-allowed-text": "Le assegnaziune non ge sò permesse pe titole ca no se basane sus a libbre",
+	"bs-pageassignments-statistics-report-assigned-pages": "Pàggene assignate",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assegnate",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "None assegnate"
 }

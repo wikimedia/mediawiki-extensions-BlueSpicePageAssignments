@@ -3,6 +3,7 @@
 		"authors": [
 			"Agusbou2015",
 			"Dgstranz",
+			"Fewasser Traduce",
 			"Fitoschido",
 			"Igv",
 			"Javiersanp",
@@ -69,5 +70,7 @@
 	"bs-pageassignments-assignee-type-group": "Grupo",
 	"bs-pageassignments-group-lockdown-reason": "No se te ha asignado la página $1",
 	"bs-pageassignments-collection-var-namespacename": "Espacio de nombres",
-	"bs-pageassignments-pageheader-label": "Asignaciones"
+	"bs-pageassignments-pageheader-label": "Asignaciones",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Asignado",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "No asignado"
 }
