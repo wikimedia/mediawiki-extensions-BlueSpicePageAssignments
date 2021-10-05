@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"1233qwer1234qwer4",
+			"DDPAT",
 			"Irus",
 			"Katunchik",
 			"Movses",
@@ -14,9 +15,13 @@
 	"bs-pageassignments-dlg-title": "Назначения",
 	"bs-pageassignments-dlg-fldlabel": "Назначения",
 	"bs-pageassignments-menu-label": "Изменить назначение",
+	"bs-pageassignments-column-title": "Название страницы",
 	"bs-pageassignments-column-assignments": "Назначения",
 	"bs-pageassignments-api-error": "Произошла ошибка",
 	"logeventslist-bs-pageassignments-log": "Журнал назначений",
+	"prefs-pageassign": "Назначение",
+	"bs-pageassignments-sesp-pageassignments-alias": "Назначение",
+	"bs-pageassignments-sesp-pageassignments-desc": "Назначение",
 	"bs-usagetracker-pageassignments": "страницы с заданиями",
 	"bs-pageassignments-assignee-special-everyone-label": "Каждый",
 	"bs-pageassignments-assignee-type-everyone": "Каждый",
@@ -28,5 +33,7 @@
 	"bs-pageassignments-flyout-form-title": "Добавить назначение",
 	"bs-pageassignments-flyout-grid-title": "Участники и группы, назначенные для этой страницы.",
 	"bs-pageassignments-flyout-manager-btn-label": "Менеджер назначения страниц",
-	"bs-pageassignments-collection-var-namespacename": "Пространство имён"
+	"bs-pageassignments-collection-type-assignedpages": "Назначения",
+	"bs-pageassignments-collection-var-namespacename": "Пространство имён",
+	"bs-pageassignments-pageheader-label": "Назначения"
 }
