@@ -99,5 +99,7 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Niet-toegewezen pagina's",
 	"bs-pageassignments-pageheader-label": "Toewijzingen",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Toewijzingen niet toegestaan",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Toewijzingen zijn niet toegestaan voor niet op titel gebaseerde boeken"
+	"bs-pageassignments-book-assignment-not-allowed-text": "Toewijzingen zijn niet toegestaan voor niet op titel gebaseerde boeken",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Toegewezen",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Niet toegewezen"
 }
