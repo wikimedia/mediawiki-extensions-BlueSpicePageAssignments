@@ -5,7 +5,7 @@ use BlueSpice\Renderer\Params;
 use MediaWiki\MediaWikiServices;
 
 class User extends Assignment {
-	const PARAM_ASSIGNMENT = 'assignment';
+	public const PARAM_ASSIGNMENT = 'assignment';
 
 	/**
 	 *
