@@ -3,11 +3,11 @@
 namespace BlueSpice\PageAssignments\Data;
 
 class Record extends \BlueSpice\Data\Record {
-	const PAGE_ID = 'pa_page_id';
-	const ASSIGNEE_KEY = 'pa_assignee_key';
-	const ASSIGNEE_TYPE = 'pa_assignee_type';
-	const POSITION = 'pa_position';
-	const ANCHOR = 'anchor';
-	const ID = 'id';
-	const TEXT = 'text';
+	public const PAGE_ID = 'pa_page_id';
+	public const ASSIGNEE_KEY = 'pa_assignee_key';
+	public const ASSIGNEE_TYPE = 'pa_assignee_type';
+	public const POSITION = 'pa_position';
+	public const ANCHOR = 'anchor';
+	public const ID = 'id';
+	public const TEXT = 'text';
 }

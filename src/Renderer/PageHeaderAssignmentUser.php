@@ -5,7 +5,7 @@ use MediaWiki\MediaWikiServices;
 use User;
 
 class PageHeaderAssignmentUser extends PageHeaderAssignmentBase {
-	const PARAM_ASSIGNMENT = 'assignment';
+	public const PARAM_ASSIGNMENT = 'assignment';
 
 	/**
 	 *

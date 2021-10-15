@@ -9,7 +9,7 @@ use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
 
 class Assignment extends \BlueSpice\TemplateRenderer {
-	const PARAM_ASSIGNMENT = 'assignment';
+	public const PARAM_ASSIGNMENT = 'assignment';
 
 	/**
 	 *
