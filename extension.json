@@ -347,6 +347,9 @@
 		}
 	},
 	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\CommonUserInterface"
+		},
 		"discovery-skin": {
 			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\DiscoverySkin"
 		}
@@ -390,7 +393,7 @@
 		"NamespaceManager::writeNamespaceConfiguration": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback",
 		"MergeAccountFromTo": "\\BlueSpice\\PageAssignments\\Hook\\MergeAccountFromTo\\MergePageAssignmentsDBFields::callback",
 		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "discovery-skin",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin"
 	},
 	"manifest_version": 2
