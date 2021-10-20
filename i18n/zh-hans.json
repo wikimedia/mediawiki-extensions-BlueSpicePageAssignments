@@ -7,8 +7,10 @@
 			"Endermoon",
 			"LaMagiaaa",
 			"Liuxinyu970226",
+			"TsuyaMarisa",
 			"VulpesVulpes825",
 			"WQL",
+			"Xiplus",
 			"予弦",
 			"佛壁灯",
 			"列维劳德",
@@ -102,5 +104,8 @@
 	"bs-pageassignments-flyout-manager-btn-label": "页面分配管理器",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - 已分配{{PLURAL:$2|页面|页面}}至: $1",
 	"bs-pageassignments-collection-type-assignedpages": "作业",
-	"bs-pageassignments-collection-var-namespacename": "名字空间"
+	"bs-pageassignments-collection-var-namespacename": "命名空间",
+	"bs-pageassignments-statistics-report-assigned-pages": "分配的任务",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "已分配",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "未分配"
 }

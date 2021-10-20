@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fraxinus.cs"
+		]
+	},
+	"bs-pageassignments-statistics-report-assigned-pages": "Přiřazené stránky",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Přiřazeno",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nepřiřazeno"
+}

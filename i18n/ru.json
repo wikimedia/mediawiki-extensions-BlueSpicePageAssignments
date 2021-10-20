@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"1233qwer1234qwer4",
+			"DDPAT",
 			"Irus",
 			"Katunchik",
 			"Movses",
@@ -28,5 +29,11 @@
 	"bs-pageassignments-flyout-form-title": "Добавить назначение",
 	"bs-pageassignments-flyout-grid-title": "Участники и группы, назначенные для этой страницы.",
 	"bs-pageassignments-flyout-manager-btn-label": "Менеджер назначения страниц",
-	"bs-pageassignments-collection-var-namespacename": "Пространство имён"
+	"bs-pageassignments-collection-var-namespacename": "Пространство имён",
+	"bs-pageassignments-column-title": "Название страницы",
+	"prefs-pageassign": "Назначение",
+	"bs-pageassignments-sesp-pageassignments-alias": "Назначение",
+	"bs-pageassignments-sesp-pageassignments-desc": "Назначение",
+	"bs-pageassignments-collection-type-assignedpages": "Назначения",
+	"bs-pageassignments-pageheader-label": "Назначения"
 }
