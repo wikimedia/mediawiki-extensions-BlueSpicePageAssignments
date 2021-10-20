@@ -99,5 +99,8 @@
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "當我（或是我隸屬的群組）被分配到頁面，或是我的分配被移除時通知我",
 	"bs-pageassignments-pageheader-label": "分配",
 	"bs-pageassignments-book-assignment-not-allowed-title": "分配不被允許",
-	"bs-pageassignments-book-assignment-not-allowed-text": "分配不被允許在非標題書籍上"
+	"bs-pageassignments-book-assignment-not-allowed-text": "分配不被允許在非標題書籍上",
+	"bs-pageassignments-statistics-report-assigned-pages": "已分配頁面",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "已分配",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "尚未分配"
 }

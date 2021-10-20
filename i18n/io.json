@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"JSantos"
+			"JSantos",
+			"Joao Xavier"
 		]
 	},
-	"bs-pageassignments-assignee-type-user": "Uzero"
+	"bs-pageassignments-assignee-type-user": "Uzero",
+	"bs-pageassignments-column-title": "Titulo-di-pagino"
 }
