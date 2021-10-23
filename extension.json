@@ -214,7 +214,8 @@
 			],
 			"dependencies": [
 				"ext.pageassignments.scripts",
-				"ext.bluespice.extjs"
+				"ext.bluespice.extjs",
+				"ext.bluespice.pageassignments.dialog.pages"
 			]
 		},
 		"ext.pageassignments.overview": {
@@ -306,6 +307,24 @@
 				"bs-pageassignments-statistics-report-assigned-pages",
 				"bs-pageassignments-statistics-report-assigned-pages-axis-assigned",
 				"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned"
+			]
+		},
+		"ext.bluespice.pageassignments.dialog.pages": {
+			"scripts": [
+				"ui/page/AssignmentsPage.js"
+			],
+			"messages": [
+				"bs-pageassignments-dlg-title",
+				"bs-pageassignments-assignee-type-everyone",
+				"bs-pageassignments-assignee-type-user",
+				"bs-pageassignments-assignee-type-group",
+				"bs-pageassignments-dialog-input-placeholder"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.dialogs",
+				"ext.oOJSPlus.widgets",
+				"ext.oOJSPlus.data",
+				"oojs-ui.styles.icons-user"
 			]
 		}
 	},
