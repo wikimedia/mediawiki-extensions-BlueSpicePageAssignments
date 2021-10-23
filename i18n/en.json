@@ -91,5 +91,6 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "Assignments are not allowed for non title-based books",
 	"bs-pageassignments-statistics-report-assigned-pages": "Assigned pages",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assigned",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Not assigned"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Not assigned",
+	"bs-pageassignments-dialog-input-placeholder": "Add assignments…"
 }

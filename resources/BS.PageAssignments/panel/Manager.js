@@ -112,15 +112,24 @@ Ext.define( 'BS.PageAssignments.panel.Manager', {
 	onBtnEditClick: function( oButton, oEvent ) {
 		var records = this.grdMain.getSelectionModel().getSelection();
 		var record = records[0]; //ATM there is no MULTI selection model
-		var dlg = Ext.create( 'BS.PageAssignments.dialog.PageAssignment', {
-			pageId: record.get( 'page_id' ),
-			pageAssignments: record.get( 'assignments' )
+
+		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+			id: 'bs-pageassignments-set',
+			pages: [
+				new bs.pageassignments.ui.AssignmentsPage( {
+					data: {
+						page: record.get( 'page_id' ),
+						assignments: record.get( 'assignments' )
+					}
+				} )
+			]
 		} );
-		dlg.on( 'ok', function() {
-			this.strMain.reload();
-		}, this );
-		dlg.show();
-		this.callParent( arguments );
+
+		dialog.show().closed.then( function( data ) {
+			if ( data.success ) {
+				this.strMain.reload();
+			}
+		}.bind( this ) );
 	},
 
 	onBtnRemoveClick: function( oButton, oEvent ) {
