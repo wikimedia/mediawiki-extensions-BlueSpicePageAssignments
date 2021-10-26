@@ -68,7 +68,7 @@ interface ITarget {
 
 	/**
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function invalidate();
 }

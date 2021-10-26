@@ -44,7 +44,7 @@ interface IAssignment {
 	public function getTitle();
 
 	/**
-	 * @return integer
+	 * @return int
 	 */
 	public function getPosition();
 
