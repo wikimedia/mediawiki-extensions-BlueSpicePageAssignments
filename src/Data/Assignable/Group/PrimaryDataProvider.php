@@ -47,11 +47,10 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 			'bsg'
 		);
 
-		foreach ( \BsGroupHelper::getAvailableGroups() as $groupname ) {
-			if ( in_array( $groupname, $config->get( 'ImplicitGroups' ) ) ) {
-				continue;
-			}
+		$groupHelper = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )->getGroupHelper();
+		$availableGroups = $groupHelper->getAvailableGroups();
 
+		foreach ( $availableGroups as $groupname ) {
 			$this->appendRowToData( $groupname );
 		}
 
