@@ -6,5 +6,6 @@
 	},
 	"bs-pageassignments-statistics-report-assigned-pages": "Přiřazené stránky",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Přiřazeno",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nepřiřazeno"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nepřiřazeno",
+	"bs-pageassignments-dialog-input-placeholder": "Přidat úlohy…"
 }
