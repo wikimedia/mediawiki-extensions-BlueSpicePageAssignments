@@ -101,5 +101,6 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "Les affectations ne sont pas autorisées pour les livres non basés sur des titres",
 	"bs-pageassignments-statistics-report-assigned-pages": "Pages assignées",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Affecté",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non affecté"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non affecté",
+	"bs-pageassignments-dialog-input-placeholder": "Ajouter des affectations…"
 }
