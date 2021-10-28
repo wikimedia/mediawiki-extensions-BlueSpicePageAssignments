@@ -68,5 +68,6 @@
 	"bs-pageassignments-collection-var-namespacename": "فضای نام",
 	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|شما}} به {{PLURAL:$5|گروه|گروه‌های}} {{PLURAL:$5|$4|$4}} که صفحه‌هایی به {{PLURAL:$5|آن|آن‌ها}} اختصاص داده‌شده، اضافه شدید. لطفاً وظایف خود را در $3 بررسی کنید.",
 	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|شما}} به {{PLURAL:$5|گروه|گروه‌های}} {{PLURAL:$5|$4|$4}} که صفحه‌هایی به {{PLURAL:$5|آن|آن‌ها}} اختصاص داده‌شده، حذف شده‌اید.",
-	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|شما}} از {{PLURAL:$5|گروه|گروه‌های}} {{PLURAL:$5|$4|$4}} که صفحه‌هایی به {{PLURAL:$5|آن|آن‌ها}} اختصاص داده‌شده، حذف شدید. لطفاً وظایف خود را در $3 بررسی کنید."
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|شما}} از {{PLURAL:$5|گروه|گروه‌های}} {{PLURAL:$5|$4|$4}} که صفحه‌هایی به {{PLURAL:$5|آن|آن‌ها}} اختصاص داده‌شده، حذف شدید. لطفاً وظایف خود را در $3 بررسی کنید.",
+	"bs-pageassignments-api-error-no-page": "صفحه مشخص نشده‌است"
 }

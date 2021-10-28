@@ -107,5 +107,6 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "Доручення заборонено для книг, що не мають назви",
 	"bs-pageassignments-statistics-report-assigned-pages": "Призначені сторінки",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Призначено",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Не призначено"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Не призначено",
+	"bs-pageassignments-dialog-input-placeholder": "Додати завдання…"
 }
