@@ -101,5 +101,6 @@
 	"bs-pageassignments-pageheader-label": "Atribuições",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Tarefas não permitidas",
 	"bs-pageassignments-book-assignment-not-allowed-text": "As atribuições não são permitidas para livros não baseados em títulos",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Atribuído"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Atribuído",
+	"bs-pageassignments-dialog-input-placeholder": "Adicionar atribuições…"
 }

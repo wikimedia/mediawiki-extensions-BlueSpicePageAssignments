@@ -6,5 +6,7 @@
 	},
 	"bs-pageassignments-assignee-type-group": "Gruppu",
 	"bs-pageassignments-assignee-type-user": "Utenti",
-	"bs-pageassignments-column-title": "Tìtulu dâ pàggina"
+	"bs-pageassignments-column-title": "Tìtulu dâ pàggina",
+	"bs-pageassignments-assignee-special-everyone-label": "Tutti",
+	"bs-pageassignments-assignee-type-everyone": "Tutti"
 }

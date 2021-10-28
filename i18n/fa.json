@@ -68,5 +68,6 @@
 	"prefs-pageassign": "تکلیف",
 	"bs-pageassignments-sesp-pageassignments-alias": "تکلیف",
 	"bs-pageassignments-sesp-pageassignments-desc": "تکلیف",
-	"bs-usagetracker-pageassignments": "صفحه‌های دارای تکلیف"
+	"bs-usagetracker-pageassignments": "صفحه‌های دارای تکلیف",
+	"bs-pageassignments-api-error-no-page": "صفحه مشخص نشده‌است"
 }
