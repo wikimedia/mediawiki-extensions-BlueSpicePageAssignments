@@ -1,9 +1,29 @@
 <?php
 
-use BlueSpice\Data\ReaderParams;
-use BlueSpice\PageAssignments\Data\Record;
+use BlueSpice\PageAssignments\AssignmentFactory;
+use MediaWiki\Linker\LinkRenderer;
 
 class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
+	/** @var AssignmentFactory */
+	private $assignmentFactory;
+	/** @var LinkRenderer */
+	private $linkRenderer;
+	/** @var array */
+	private $titles;
+
+	/**
+	 * @param ApiMain $mainModule
+	 * @param string $moduleName
+	 * @param string $modulePrefix
+	 */
+	public function __construct( ApiMain $mainModule, $moduleName, $modulePrefix = '' ) {
+		parent::__construct( $mainModule, $moduleName, $modulePrefix );
+
+		$this->assignmentFactory = $this->getServices()->getService(
+			'BSPageAssignmentsAssignmentFactory'
+		);
+		$this->linkRenderer = $this->getServices()->getLinkRenderer();
+	}
 
 	/**
 	 *
@@ -11,33 +31,23 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 	 * @return array
 	 */
 	protected function makeData( $sQuery = '' ) {
-		$assignmentsPerPage = $this->getPageAssignments();
+		$assignments = $this->getAssignmentsForUser( $this->getUser() );
 
 		$aResult = $assignedBy = [];
-		foreach ( $assignmentsPerPage as $pageId => $pageAssignments ) {
-			if ( !\Title::newFromID( $pageId ) ) {
-				continue;
-			}
+		foreach ( $assignments as $pageId => $pageAssignments ) {
 			foreach ( $pageAssignments as $assignment ) {
-				$assigned = in_array(
-					$this->getUser()->getId(),
-					$assignment->getUserIds()
-				);
-				if ( !$assigned ) {
-					continue;
-				}
-				$assignedBy[ $pageId ][] = $assignment;
+				$assignedBy[$pageId][] = $assignment;
 			}
 		}
 		foreach ( $assignedBy as $pageId => $relatedAssignments ) {
-			$title = \Title::newFromID( $pageId );
-			$link = $this->getServices()->getLinkRenderer()->makeLink(
-				$title
-			);
+			if ( !isset( $this->titles[$pageId] ) ) {
+				continue;
+			}
+			$title = $this->titles[$pageId];
 			$oDataSet = (object)[
 				'page_id' => $title->getArticleID(),
 				'page_prefixedtext' => $title->getPrefixedText(),
-				'page_link' => $link,
+				'page_link' => '',
 				'assigned_by' => [],
 				'assignment' => [],
 			];
@@ -48,6 +58,23 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 			$aResult[] = $oDataSet;
 		}
 		return $aResult;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function postProcessData( $aData ) {
+		$data = parent::postProcessData( $aData );
+		foreach ( $data as $dataSet ) {
+			if ( !isset( $this->titles[$dataSet->page_id] ) ) {
+				continue;
+			}
+			$dataSet->page_link = $this->linkRenderer->makeLink(
+				$this->titles[$dataSet->page_id]
+			);
+		}
+
+		return $aData;
 	}
 
 	/**
@@ -62,39 +89,47 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 		}
 
 		$sFieldValue = '';
-		foreach ( $aDataSet->assigned_by as $oAsignee ) {
-			$sFieldValue .= $oAsignee->text;
+		foreach ( $aDataSet->assigned_by as $oAssignee ) {
+			$sFieldValue .= $oAssignee->text;
 		}
 
 		return BsStringHelper::filter( $oFilter->comparison, $sFieldValue, $oFilter->value );
 	}
 
 	/**
-	 *
-	 * @return \BlueSpice\PageAssignments\IAssignment[]
+	 * @param User $user
+	 * @return array
 	 */
-	protected function getPageAssignments() {
-		$assignmentFactory = $this->getServices()->getService(
-			'BSPageAssignmentsAssignmentFactory'
+	protected function getAssignmentsForUser( User $user ) {
+		$db = $this->getDB();
+		$registeredTypes = $this->assignmentFactory->getRegisteredTypes();
+
+		$res = $db->select(
+			[ 'pa' => 'bs_pageassignments', 'p' => 'page' ],
+			[ 'pa.*', 'p.page_id', 'p.page_title', 'p.page_namespace' ],
+			[
+				'pa.pa_assignee_type IN (' . $db->makeList( $registeredTypes ) . ')',
+				'pa.pa_assignee_key' => $user->getName()
+			],
+			__METHOD__,
+			[],
+			[
+				// INNER JOIN to ensure that page exists
+				'p' => [ 'INNER JOIN', [ 'p.page_id = pa.pa_page_id' ] ]
+			]
 		);
-		$recordSet = $assignmentFactory->getStore()->getReader()->read(
-			new ReaderParams( [
-				ReaderParams::PARAM_LIMIT => ReaderParams::LIMIT_INFINITE
-			] )
-		);
+
 		$assignments = [];
-		foreach ( $recordSet->getRecords() as $record ) {
-			$id = $record->get( Record::PAGE_ID );
-			$title = \Title::newFromID( $id );
-			if ( !$title ) {
-				continue;
-			}
-			$assignments[$id][] = $assignmentFactory->factory(
-				$record->get( Record::ASSIGNEE_TYPE ),
-				$record->get( Record::ASSIGNEE_KEY ),
+		foreach ( $res as $row ) {
+			$title = \Title::newFromRow( $row );
+			$this->titles[$title->getArticleID()] = $title;
+			$assignments[$title->getArticleID()][] = $this->assignmentFactory->factory(
+				$row->pa_assignee_type,
+				$row->pa_assignee_key,
 				$title
 			);
 		}
+
 		return $assignments;
 	}
 }
