@@ -59,13 +59,14 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 						'type' => 'string',
 						'comparison' => 'eq',
 						'field' => Record::ASSIGNEE_TYPE,
-						'value' => 'group'
+						'value' => 'user'
 					],
 					[
 						'type' => 'string',
 						'comparison' => 'ct',
 						'field' => Record::ID,
-						'value' => 'bot'
+						// Try to match Ringo
+						'value' => 'ing'
 					]
 				],
 				1

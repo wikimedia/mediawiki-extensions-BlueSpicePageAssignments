@@ -101,14 +101,37 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 	protected function getAssignmentsForUser( User $user ) {
 		$db = $this->getDB();
 		$registeredTypes = $this->assignmentFactory->getRegisteredTypes();
+		$result = $this->getAssignments( [
+			'pa.pa_assignee_type IN (' . $db->makeList( $registeredTypes ) . ')',
+			'pa.pa_assignee_key' => $user->getName(),
+		] );
+		if ( in_array( 'group', $registeredTypes ) ) {
+			$userGroups = $user->getGroups();
+			$result += $this->getAssignments( [
+				'pa.pa_assignee_type' => 'group',
+				'pa.pa_assignee_key IN (' . $db->makeList( $userGroups ) . ')'
+			] );
+		}
 
-		$res = $db->select(
+		if ( in_array( 'everyone', $registeredTypes ) ) {
+			$result += $this->getAssignments( [
+				'pa.pa_assignee_type' => 'everyone',
+			] );
+		}
+
+		return $result;
+	}
+
+	/**
+	 * @param array $conds
+	 * @return \Wikimedia\Rdbms\IResultWrapper
+	 */
+	private function queryAssignments( $conds = [] ) {
+		$db = $this->getDB();
+		return $db->select(
 			[ 'pa' => 'bs_pageassignments', 'p' => 'page' ],
 			[ 'pa.*', 'p.page_id', 'p.page_title', 'p.page_namespace' ],
-			[
-				'pa.pa_assignee_type IN (' . $db->makeList( $registeredTypes ) . ')',
-				'pa.pa_assignee_key' => $user->getName()
-			],
+			$conds,
 			__METHOD__,
 			[],
 			[
@@ -116,11 +139,21 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 				'p' => [ 'INNER JOIN', [ 'p.page_id = pa.pa_page_id' ] ]
 			]
 		);
+	}
 
+	/**
+	 * @param array $conds
+	 * @return array
+	 */
+	private function getAssignments( $conds = [] ) {
+		$res = $this->queryAssignments( $conds );
 		$assignments = [];
 		foreach ( $res as $row ) {
 			$title = \Title::newFromRow( $row );
 			$this->titles[$title->getArticleID()] = $title;
+			if ( !isset( $assignments[$title->getArticleID() ] ) ) {
+				$assignments[$title->getArticleID()] = [];
+			}
 			$assignments[$title->getArticleID()][] = $this->assignmentFactory->factory(
 				$row->pa_assignee_type,
 				$row->pa_assignee_key,
