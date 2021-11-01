@@ -92,5 +92,6 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "分配不被允許在非標題書籍上",
 	"bs-pageassignments-statistics-report-assigned-pages": "已分配頁面",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "已分配",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "尚未分配"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "尚未分配",
+	"bs-pageassignments-dialog-input-placeholder": "添加分配…"
 }
