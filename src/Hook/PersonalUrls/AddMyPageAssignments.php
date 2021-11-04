@@ -25,7 +25,8 @@ class AddMyPageAssignments extends PersonalUrls {
 			'href' => SpecialPage::getTitleFor( 'PageAssignments' )->getLocalURL(),
 			'text' => \MediaWiki\MediaWikiServices::getInstance()
 				->getSpecialPageFactory()
-				->getPage( 'PageAssignments' )->getDescription()
+				->getPage( 'PageAssignments' )->getDescription(),
+			'position' => 60,
 		];
 		return true;
 	}
