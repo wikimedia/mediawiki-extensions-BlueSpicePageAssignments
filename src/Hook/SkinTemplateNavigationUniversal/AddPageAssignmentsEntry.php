@@ -35,7 +35,8 @@ class AddPageAssignmentsEntry extends SkinTemplateNavigationUniversal {
 			'href' => '#',
 			'class' => false,
 			'id' => 'ca-pageassignments',
-			'bs-group' => 'hidden'
+			'bs-group' => 'hidden',
+			'position' => 40,
 		];
 		return true;
 	}
