@@ -19,7 +19,7 @@
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label text for additional permissions:",
 	"bs-pageassignments-dlg-title": "Window title of dialog\n{{Identical|Assignment}}",
 	"bs-pageassignments-dlg-fldlabel": "Window field label\n{{Identical|Assignment}}",
-	"bs-pageassignments-menu-label": "Label text for edit page assignments",
+	"bs-pageassignments-menu-label": "Label text for action menu entry that allows setting page assignments\n{{Identical|Set page assignments}}",
 	"bs-pageassignments-action-apiedit-description": "Client side api module description for BS.PageAssignments.action.ApiTaskEdit to edit an assignment. Parameters:\n*$1 - Page title",
 	"bs-pageassignments-column-title": "Extjs grid column label for Pagetitle\n{{Identical|Page title}}",
 	"bs-pageassignments-column-assignments": "Extjs grid calumn label for assignments\n{{Identical|Assignment}}",

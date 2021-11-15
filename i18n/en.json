@@ -10,7 +10,7 @@
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Additional permissions for assigned users",
 	"bs-pageassignments-dlg-title": "Assignments",
 	"bs-pageassignments-dlg-fldlabel": "Assignments",
-	"bs-pageassignments-menu-label": "Edit assignment",
+	"bs-pageassignments-menu-label": "Set page assignments",
 	"bs-pageassignments-action-apiedit-description": "Edit assignments of $1",
 	"bs-pageassignments-column-title": "Pagetitle",
 	"bs-pageassignments-column-assignments": "Assignments",

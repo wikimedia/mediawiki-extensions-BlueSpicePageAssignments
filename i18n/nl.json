@@ -36,7 +36,7 @@
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Extra rechten voor toegewezen gebruikers",
 	"bs-pageassignments-dlg-title": "Opdrachten",
 	"bs-pageassignments-dlg-fldlabel": "Opdrachten",
-	"bs-pageassignments-menu-label": "Opdracht bewerken",
+	"bs-pageassignments-menu-label": "Pagina's toewijzen",
 	"bs-pageassignments-action-apiedit-description": "Bewerk opdrachten van $1",
 	"bs-pageassignments-column-assignments": "Opdrachten",
 	"bs-pageassignments-column-assignedby": "Toegewezen door",
@@ -101,5 +101,6 @@
 	"bs-pageassignments-book-assignment-not-allowed-title": "Toewijzingen niet toegestaan",
 	"bs-pageassignments-book-assignment-not-allowed-text": "Toewijzingen zijn niet toegestaan voor niet op titel gebaseerde boeken",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Toegewezen",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Niet toegewezen"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Niet toegewezen",
+	"bs-pageassignments-statistics-report-assigned-pages": "Toegewezen pagina's"
 }
