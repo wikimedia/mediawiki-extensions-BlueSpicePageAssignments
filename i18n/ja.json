@@ -3,6 +3,7 @@
 		"authors": [
 			"Foomin10",
 			"Otokoume",
+			"RYOUMA1117",
 			"Shirayuki",
 			"Tmv",
 			"UsagiNeko",
@@ -13,7 +14,7 @@
 	"pageassignments": "割り当て",
 	"bs-pageassignments-dlg-title": "割り当て",
 	"bs-pageassignments-dlg-fldlabel": "割り当て",
-	"bs-pageassignments-menu-label": "割り当てを編集",
+	"bs-pageassignments-menu-label": "ページ割り当てを設定する",
 	"bs-pageassignments-column-title": "ページ名",
 	"bs-pageassignments-column-assignments": "割り当て",
 	"bs-pageassignments-action-log": "割り当て記録",
