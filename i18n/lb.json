@@ -15,7 +15,7 @@
 	"notification-bs-pageassignments-page-edit-body": "$1 {{GENDER:$2|huet}} d'Säit $2 geännert.",
 	"notification-bs-pageassignments-page-delete-subject": "$2 gouf geläscht",
 	"notification-bs-pageassignments-page-delete-body": "$1 {{GENDER:$2|huet}} d'Säit $2 geläscht.",
-	"notification-bs-pageassignments-user-group-add-summary": "Dir gouft bei de Grupp $4 dobäigesat",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Dir}} gouft bei {{PLURAL:$5|de Grupp|d'Gruppen}} {{PLURAL:$5|$4}} derbäigesat  {{PLURAL:$5|deenen eng Säit|deene Säiten}} zougedeellt {{PLURAL:$5|ass|sinn}}",
 	"notification-bs-pageassignments-user-group-add-subject": "Bei de Grupp $4 dobäigesat",
 	"notification-bs-pageassignments-user-group-remove-summary": "Dir gouft erausgeholl aus {{PLURAL:$5|der Grupp|de Gruppen}} $4",
 	"bs-pageassignments-assignee-special-everyone-label": "Jiddwereen",
