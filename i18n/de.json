@@ -100,5 +100,6 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "Zuweisungen sind nicht für Bücher erlaubt, die nicht auf Titeln basieren",
 	"bs-pageassignments-statistics-report-assigned-pages": "Zugewiesene Seiten",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Zugewiesen",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nicht zugewiesen"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nicht zugewiesen",
+	"bs-pageassignments-dialog-input-placeholder": "Zuweisungen hinzufügen..."
 }
