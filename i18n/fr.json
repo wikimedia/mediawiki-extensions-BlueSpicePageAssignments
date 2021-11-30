@@ -20,7 +20,7 @@
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Droits supplémentaires pour les utilisateurs assignés",
 	"bs-pageassignments-dlg-title": "Assignations",
 	"bs-pageassignments-dlg-fldlabel": "Assignations",
-	"bs-pageassignments-menu-label": "Modifier l’assignation",
+	"bs-pageassignments-menu-label": "Définir les affectations de la page",
 	"bs-pageassignments-action-apiedit-description": "Modifier les assignations de $1",
 	"bs-pageassignments-column-title": "Titre de page",
 	"bs-pageassignments-column-assignments": "Assignations",
