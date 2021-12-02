@@ -45,7 +45,7 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getText(): Message {
-		return Message::newFromKey( 'managepageassignments' );
+		return Message::newFromKey( 'bs-pageassignments-text' );
 	}
 
 	/**
@@ -61,7 +61,7 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getAriaLabel(): Message {
-		return Message::newFromKey( 'managepageassignments' );
+		return Message::newFromKey( 'bs-pageassignments-text' );
 	}
 
 }

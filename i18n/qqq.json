@@ -16,6 +16,7 @@
 	"bs-pageassignments-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of page assignments extension",
 	"pageassignments": "Special page name for page assignments\n{{Identical|Assignment}}",
 	"managepageassignments": "Special page name for page assignments manager\n{{Identical|Page assignments manager}}",
+	"bs-pageassignments-text": "Label for global actions menu",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label text for additional permissions:",
 	"bs-pageassignments-dlg-title": "Window title of dialog\n{{Identical|Assignment}}",
 	"bs-pageassignments-dlg-fldlabel": "Window field label\n{{Identical|Assignment}}",
