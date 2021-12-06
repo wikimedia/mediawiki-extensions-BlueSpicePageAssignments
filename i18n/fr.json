@@ -17,6 +17,7 @@
 	"bs-pageassignments-desc": "Vous donne la possibilité d’assigner des utilisateurs ou groupes à une page",
 	"pageassignments": "Assignations",
 	"managepageassignments": "Gestion des assignations",
+	"bs-pageassignments-text": "Affectations",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Droits supplémentaires pour les utilisateurs assignés",
 	"bs-pageassignments-dlg-title": "Assignations",
 	"bs-pageassignments-dlg-fldlabel": "Assignations",
