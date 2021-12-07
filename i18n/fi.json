@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Pyscowicz",
 			"Silvonen"
 		]
 	},
 	"notification-bs-pageassignments-page-move-body": "$1 {{GENDER:$2|siirsi}} sivun $2.",
 	"bs-pageassignments-assignee-special-everyone-label": "Kaikki",
-	"bs-pageassignments-assignee-type-everyone": "Kaikki"
+	"bs-pageassignments-assignee-type-everyone": "Kaikki",
+	"bs-pageassignments-text": "Tehtävät"
 }

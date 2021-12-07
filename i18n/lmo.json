@@ -4,5 +4,6 @@
 			"Salvemm el lombard"
 		]
 	},
-	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Te see stad}} giontad {{PLURAL:$5|al grup|ai grup}} $4 che {{PLURAL:$5|gh'han}} di pagine assegnade a {{PLURAL:$5|chesschì|'stichì}}"
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Te see stad}} giontad {{PLURAL:$5|al grup|ai grup}} $4 che {{PLURAL:$5|gh'han}} di pagine assegnade a {{PLURAL:$5|chesschì|'stichì}}",
+	"bs-pageassignments-text": "Compit"
 }
