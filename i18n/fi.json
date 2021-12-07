@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Pyscowicz",
 			"Silvonen"
 		]
 	},
+	"bs-pageassignments-text": "Tehtävät",
 	"bs-pageassignments-assignee-special-everyone-label": "Kaikki",
 	"bs-pageassignments-assignee-type-everyone": "Kaikki"
 }
