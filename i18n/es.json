@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Agusbou2015",
+			"DDPAT",
 			"Destinid10 2",
 			"Dgstranz",
 			"Fewasser Traduce",
@@ -44,10 +45,10 @@
 	"bs-pageassignments-notification-reason-group": "Eres un miembro {{PLURAL:$1|del grupo|de los grupos}}: $2",
 	"notification-bs-pageassignments-assignment-change-add-summary": "$1 te {{GENDER:$2|asignó}} a $2",
 	"notification-bs-pageassignments-assignment-change-add-subject": "Asignación a $2",
-	"notification-bs-pageassignments-assignment-change-add-body": "$1 te {{GENDER:$2|asignó}} a la página $2.",
-	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$2|quitó}} tu asignación a $3",
+	"notification-bs-pageassignments-assignment-change-add-body": "$1 te {{GENDER:$1|asignó}} a la página $2.",
+	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$1|quitó}} tu asignación a $2",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "Eliminación de la asignación a $2",
-	"notification-bs-pageassignments-assignment-change-remove-body": "$1 {{GENDER:$2|eliminó}} tu asignación a la página $2.",
+	"notification-bs-pageassignments-assignment-change-remove-body": "$1 {{GENDER:$1|eliminó}} tu asignación a la página $2.",
 	"notification-bs-pageassignments-user-group-add-summary": "Te han añadido al grupo $4",
 	"notification-bs-pageassignments-user-group-add-subject": "Añadido al grupo $4",
 	"notification-bs-pageassignments-user-group-add-body": "$1 te {{GENDER:$2|añadió}} al grupo $4. Comprueba tu asignación en $3.",
