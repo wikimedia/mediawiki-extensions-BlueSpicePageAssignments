@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
 			"Melissadilara",
 			"MuratTheTurkish",
 			"SaldırganSincap"
@@ -10,10 +11,11 @@
 	"bs-pageassignments-desc": "Bir sayfaya kullanıcılar veya gruplar atamanıza olanak tanır",
 	"pageassignments": "Atamalar",
 	"managepageassignments": "Atama yönetimi",
+	"bs-pageassignments-text": "Atamalar",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Atanan kullanıcılar için ek izinler",
 	"bs-pageassignments-dlg-title": "Atamalar",
 	"bs-pageassignments-dlg-fldlabel": "Atamalar",
-	"bs-pageassignments-menu-label": "Atamayı düzenle",
+	"bs-pageassignments-menu-label": "Sayfa atamalarını ayarla",
 	"bs-pageassignments-action-apiedit-description": "$1 atamaları düzenleme",
 	"bs-pageassignments-column-title": "Sayfa başlığı",
 	"bs-pageassignments-column-assignments": "Atamalar",
@@ -94,5 +96,6 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "Kitaba dayalı olmayan kitaplar için atanmalar izin verilmez",
 	"bs-pageassignments-statistics-report-assigned-pages": "Atanmış sayfalar",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Atananlar",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Atanmayanlar"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Atanmayanlar",
+	"bs-pageassignments-dialog-input-placeholder": "Atama ekle"
 }
