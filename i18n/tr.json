@@ -4,16 +4,18 @@
 			"BaRaN6161 TURK",
 			"Melissadilara",
 			"MuratTheTurkish",
-			"SaldırganSincap"
+			"SaldırganSincap",
+			"Can"
 		]
 	},
 	"bs-pageassignments-desc": "Bir sayfaya kullanıcılar veya gruplar atamanıza olanak tanır",
 	"pageassignments": "Atamalar",
 	"managepageassignments": "Atama yönetimi",
+	"bs-pageassignments-text": "Atamalar",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Atanan kullanıcılar için ek izinler",
 	"bs-pageassignments-dlg-title": "Atamalar",
 	"bs-pageassignments-dlg-fldlabel": "Atamalar",
-	"bs-pageassignments-menu-label": "Atamayı düzenle",
+	"bs-pageassignments-menu-label": "Sayfa atamalarını ayarla",
 	"bs-pageassignments-action-apiedit-description": "$1 atamaları düzenleme",
 	"bs-pageassignments-column-title": "Sayfa başlığı",
 	"bs-pageassignments-column-assignments": "Atamalar",
@@ -45,15 +47,6 @@
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1, atamanızı $2 sayfasına kaldırdı",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "$2 atamanın kaldırılması",
 	"notification-bs-pageassignments-assignment-change-remove-body": "$2 sayfasına atamanızı $1 tarafından kaldırıldı.",
-	"notification-bs-pageassignments-page-move-summary": "$3, $1 tarafından {{GENDER:$2|taşındı}}",
-	"notification-bs-pageassignments-page-move-subject": "$2 taşındı",
-	"notification-bs-pageassignments-page-move-body": "$1, sayfayı $2 {{GENDER:$2|taşıdı}}.",
-	"notification-bs-pageassignments-page-edit-summary": "$3, $1 tarafından {{GENDER:$2|düzenlendi}}",
-	"notification-bs-pageassignments-page-edit-subject": "$2 düzenlendi",
-	"notification-bs-pageassignments-page-edit-body": "$1, sayfayı $2 {{GENDER:$2|düzenledi}}.",
-	"notification-bs-pageassignments-page-delete-summary": "$3, $1 tarafından {{GENDER:$2|silindi}}",
-	"notification-bs-pageassignments-page-delete-subject": "$2 silindi",
-	"notification-bs-pageassignments-page-delete-body": "$1, sayfayı $2 {{GENDER:$2|sildi}}.",
 	"notification-bs-pageassignments-user-group-add-summary": "$4 {{PLURAL:$5|grubuna|gruplara}}, kendisine sayfalar atanmış olarak {{GENDER:$6|eklendiniz}}",
 	"notification-bs-pageassignments-user-group-add-subject": "Kendisine sayfa atanmış {{PLURAL:$5|bir gruba|gruplara}} eklendi",
 	"notification-bs-pageassignments-user-group-add-body": "$4 {{PLURAL:$5|grubuna|gruplara}}, kendisine sayfalar atanmış olarak {{GENDER:$6|eklendiniz}}. Lütfen atanmanızı $3 sayfasından kontrol edin.",
@@ -103,5 +96,6 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "Kitaba dayalı olmayan kitaplar için atanmalar izin verilmez",
 	"bs-pageassignments-statistics-report-assigned-pages": "Atanmış sayfalar",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Atananlar",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Atanmayanlar"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Atanmayanlar",
+	"bs-pageassignments-dialog-input-placeholder": "Atama ekle"
 }
