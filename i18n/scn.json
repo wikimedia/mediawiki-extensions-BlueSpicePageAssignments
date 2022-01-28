@@ -4,7 +4,9 @@
 			"Ajeje Brazorf"
 		]
 	},
+	"bs-pageassignments-dlg-fldlabel": "Assignazzioni",
 	"bs-pageassignments-column-title": "Tìtulu dâ pàggina",
+	"bs-pageassignments-column-assignments": "Assignazzioni",
 	"bs-pageassignments-assignee-special-everyone-label": "Tutti",
 	"bs-pageassignments-assignee-type-everyone": "Tutti",
 	"bs-pageassignments-assignee-type-user": "Utenti",
