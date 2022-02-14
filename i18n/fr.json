@@ -17,6 +17,7 @@
 	"bs-pageassignments-desc": "Vous donne la possibilité d’assigner des utilisateurs ou groupes à une page",
 	"pageassignments": "Assignations",
 	"managepageassignments": "Gestion des assignations",
+	"bs-pageassignments-text": "Affectations",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Droits supplémentaires pour les utilisateurs assignés",
 	"bs-pageassignments-dlg-title": "Assignations",
 	"bs-pageassignments-dlg-fldlabel": "Assignations",
@@ -52,15 +53,6 @@
 	"notification-bs-pageassignments-assignment-change-remove-summary": "{{GENDER:$1|}}$1 a retiré votre assignation à $2",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "Suppression de l’assignation à $2",
 	"notification-bs-pageassignments-assignment-change-remove-body": "Votre affectation à la page $2 a été retirée par $1.",
-	"notification-bs-pageassignments-page-move-summary": "$3 a été renommé par $1{{GENDER:$2|}}",
-	"notification-bs-pageassignments-page-move-subject": "$2 a été renommé",
-	"notification-bs-pageassignments-page-move-body": "$1{{GENDER:$2|}} a déplacé la page $2.",
-	"notification-bs-pageassignments-page-edit-summary": "$3 a été modifié par $1{{GENDER:$2|}}",
-	"notification-bs-pageassignments-page-edit-subject": "$2 a été modifié",
-	"notification-bs-pageassignments-page-edit-body": "$1{{GENDER:$2||}} a modifié la page $2.",
-	"notification-bs-pageassignments-page-delete-summary": "$3 a été supprimé par $1{{GENDER:$2|}}",
-	"notification-bs-pageassignments-page-delete-subject": "$2 a été supprimé",
-	"notification-bs-pageassignments-page-delete-body": "$1{{GENDER:$2||}} a supprimé la page $2.",
 	"notification-bs-pageassignments-user-group-add-summary": "Vous avez été ajouté{{GENDER:$6||e}} {{PLURAL:$5|au groupe|aux groupes}} $4 qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées.",
 	"notification-bs-pageassignments-user-group-add-subject": "Ajouté {{PLURAL:$5|au groupe|aux groupes}} qui {{PLURAL:$5|a|ont}} des pages qui  {{PLURAL:$5|lui|leur}} sont affectées",
 	"notification-bs-pageassignments-user-group-add-body": "Vous avez été ajouté{{GENDER:$6||e}} {{PLURAL:$5|au groupe|aux groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées. Veuillez vérifier votre affectation sur $3.",
@@ -111,6 +103,5 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Pages assignées",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Affecté",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non affecté",
-	"bs-pageassignments-dialog-input-placeholder": "Ajouter des affectations…",
-	"bs-pageassignments-text": "Affectations"
+	"bs-pageassignments-dialog-input-placeholder": "Ajouter des affectations..."
 }
