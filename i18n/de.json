@@ -102,5 +102,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Zugewiesene Seiten",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Zugewiesen",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nicht zugewiesen",
-	"bs-pageassignments-dialog-input-placeholder": "Zuweisungen hinzufügen …"
+	"bs-pageassignments-dialog-input-placeholder": "Zuweisungen hinzufügen …",
+	"bs-pageassignment-info-dialog": "Zuweisungen"
 }
