@@ -74,7 +74,7 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 			);
 		}
 
-		return $aData;
+		return $data;
 	}
 
 	/**
