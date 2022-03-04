@@ -11,6 +11,7 @@
 	"bs-pageassignments-desc": "Permite atribuir uma página a utilizadores ou grupos",
 	"pageassignments": "Atribuições",
 	"managepageassignments": "Administração de atribuições de páginas",
+	"bs-pageassignments-text": "Atribuições",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Permissões adicionais para utilizadores com atribuições de páginas",
 	"bs-pageassignments-dlg-title": "Atribuições",
 	"bs-pageassignments-dlg-fldlabel": "Atribuições",
@@ -95,5 +96,7 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "As atribuições não são permitidas para livros não baseados em títulos",
 	"bs-pageassignments-statistics-report-assigned-pages": "Páginas atribuídas",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Atribuído",
-	"bs-pageassignments-dialog-input-placeholder": "Adicionar atribuições…"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Não atribuído",
+	"bs-pageassignments-dialog-input-placeholder": "Adicionar atribuições…",
+	"bs-pageassignment-info-dialog": "Atribuições"
 }
