@@ -7,6 +7,7 @@
 	"bs-pageassignments-desc": "Permitte assignar usatores o gruppos a un pagina",
 	"pageassignments": "Assignationes",
 	"managepageassignments": "Gestion de assignationes",
+	"bs-pageassignments-text": "Assignationes",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Permissiones additional pro usatores assignate",
 	"bs-pageassignments-dlg-title": "Assignationes",
 	"bs-pageassignments-dlg-fldlabel": "Assignationes",
@@ -92,5 +93,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Paginas assignate",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assignate",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non assignate",
-	"bs-pageassignments-dialog-input-placeholder": "Adder assignationes…"
+	"bs-pageassignments-dialog-input-placeholder": "Adder assignationes…",
+	"bs-pageassignment-info-dialog": "Assignationes"
 }
