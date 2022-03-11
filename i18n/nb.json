@@ -11,7 +11,7 @@
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Ekstra tillatelser for tildelte brukere",
 	"bs-pageassignments-dlg-title": "Tildelinger",
 	"bs-pageassignments-dlg-fldlabel": "Tildelinger",
-	"bs-pageassignments-menu-label": "Rediger tildeling",
+	"bs-pageassignments-menu-label": "Sett sidetildelinger",
 	"bs-pageassignments-action-apiedit-description": "Rediger tildelingene for $1",
 	"bs-pageassignments-column-title": "Sidetittel",
 	"bs-pageassignments-column-assignments": "Tildelinger",
@@ -99,5 +99,6 @@
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "Varsle meg når jeg (eller ei gruppe jeg tilhører) får tildelt en side, eller en tildeling fjernes",
 	"bs-pageassignments-pageheader-label": "Tildelinger",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Tildelinger ikke tillatt",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Tildelinger er ikke tillatt for ikke-tittelbaserte bøker"
+	"bs-pageassignments-book-assignment-not-allowed-text": "Tildelinger er ikke tillatt for ikke-tittelbaserte bøker",
+	"bs-pageassignments-text": "Tildelinger"
 }

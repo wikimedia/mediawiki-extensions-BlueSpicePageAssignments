@@ -3,7 +3,8 @@
 		"authors": [
 			"Jerrykim306",
 			"Nuevo Paso",
-			"Ykhwong"
+			"Ykhwong",
+			"Yunbj"
 		]
 	},
 	"bs-pageassignments-desc": "사용자나 그룹을 페이지에 할당할 수 있게 합니다",
@@ -44,5 +45,7 @@
 	"bs-pageassignments-group-lockdown-reason": "$1 문서에 할당되어 있지 않습니다",
 	"bs-pageassignments-statistics-report-assigned-pages": "할당된 문서",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "할당됨",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "할당되지 않음"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "할당되지 않음",
+	"bs-pageassignments-nav-link-title-pageassignments": "페이지 할당",
+	"bs-pageassignments-flyout-title": "페이지 할당"
 }

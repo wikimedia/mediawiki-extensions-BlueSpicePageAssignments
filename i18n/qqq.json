@@ -101,5 +101,7 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Statistics report name",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Label for the \"assigned\" axis",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Label for the \"unassigned\" axis",
-	"bs-pageassignments-dialog-input-placeholder": "Placeholder for assignment lookup field"
+	"bs-pageassignments-dialog-input-placeholder": "Placeholder for assignment lookup field",
+	"bs-pageassignments-text": "Label for global actions menu",
+	"bs-pageassignment-info-dialog": "Label for page in page information dialog\n{{Identical|Assignment}}"
 }

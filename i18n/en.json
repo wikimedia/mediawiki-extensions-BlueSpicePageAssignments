@@ -92,5 +92,7 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Assigned pages",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assigned",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Not assigned",
-	"bs-pageassignments-dialog-input-placeholder": "Add assignments…"
+	"bs-pageassignments-dialog-input-placeholder": "Add assignments…",
+	"bs-pageassignments-text": "Assignments",
+	"bs-pageassignment-info-dialog": "Assignments"
 }

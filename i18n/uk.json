@@ -3,6 +3,7 @@
 		"authors": [
 			"Amire80",
 			"DDPAT",
+			"Ice bulldog",
 			"Movses",
 			"Piramidion",
 			"Renamerr",
@@ -16,7 +17,7 @@
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Додаткові права для призначених користувачів",
 	"bs-pageassignments-dlg-title": "Призначення",
 	"bs-pageassignments-dlg-fldlabel": "Призначення",
-	"bs-pageassignments-menu-label": "Редагувати призначення",
+	"bs-pageassignments-menu-label": "Встановити призначення сторінок",
 	"bs-pageassignments-action-apiedit-description": "Редагувати призначення для $1",
 	"bs-pageassignments-column-title": "Назва сторінки",
 	"bs-pageassignments-column-assignments": "Призначення",
@@ -108,5 +109,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Призначені сторінки",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Призначено",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Не призначено",
-	"bs-pageassignments-dialog-input-placeholder": "Додати завдання…"
+	"bs-pageassignments-dialog-input-placeholder": "Додати завдання…",
+	"bs-pageassignments-text": "Призначення"
 }
