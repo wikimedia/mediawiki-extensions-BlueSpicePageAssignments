@@ -4,12 +4,10 @@
 			"McDutchie"
 		]
 	},
-	"bs-pageassignments-pref-lockdowngroups": "Gruppos que se bloca pro un pagina quando le usator non es assignate",
-	"bs-pageassignments-secure-lockdown-reason": "Le action \"$1\" es solmente disponibile pro le {{PLURAL:$2|assignato|assignatos}} $3",
-	"bs-pageassignments-group-lockdown-reason": "Tu non es assignate al pagina $1",
 	"bs-pageassignments-desc": "Permitte assignar usatores o gruppos a un pagina",
 	"pageassignments": "Assignationes",
 	"managepageassignments": "Gestion de assignationes",
+	"bs-pageassignments-text": "Assignationes",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Permissiones additional pro usatores assignate",
 	"bs-pageassignments-dlg-title": "Assignationes",
 	"bs-pageassignments-dlg-fldlabel": "Assignationes",
@@ -52,6 +50,7 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "Removite del gruppo{{PLURAL:$5||s}} $4 le qual{{PLURAL:$5||es}} ha paginas assignate",
 	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|Tu ha essite}} removite del gruppo{{PLURAL:$5||s}} $4 le qual{{PLURAL:$5||es}} ha paginas assignate. Per favor verifica tu assignation sur $3.",
 	"prefs-pageassignments": "Assignationes de paginas",
+	"bs-pageassignments-pref-lockdowngroups": "Gruppos que se bloca pro un pagina quando le usator non es assignate",
 	"bs-pageassignments-yourassignments": "Tu assignationes",
 	"bs-pageassignments-yourassignmentsdesc": "Lista de paginas al quales tu es assignate.",
 	"action-pageassignable": "apparer in le lista de usatores assignabile",
@@ -75,6 +74,8 @@
 	"bs-pageassignments-assignee-type-user": "Usator",
 	"bs-pageassignments-assignee-type-group": "Gruppo",
 	"bs-pageassignments-secure-nsm-label": "Assignationes securisate de paginas",
+	"bs-pageassignments-secure-lockdown-reason": "Le action \"$1\" es solmente disponibile pro le {{PLURAL:$2|assignato|assignatos}} $3",
+	"bs-pageassignments-group-lockdown-reason": "Tu non es assignate al pagina $1",
 	"bs-pageassignments-nav-link-title-pageassignments": "Assignationes de paginas",
 	"bs-pageassignments-flyout-title": "Assignationes de paginas",
 	"bs-pageassignments-flyout-intro": "Tu pote assignar hic usatores o gruppos a iste pagina. Illes essera informate del cambiamentos e potera obtener derectos additional. Si activate, tu pote etiam demandar les de confirmar que illes ha legite le pagina.",
@@ -92,5 +93,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Paginas assignate",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assignate",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non assignate",
-	"bs-pageassignments-dialog-input-placeholder": "Adder assignationes…"
+	"bs-pageassignments-dialog-input-placeholder": "Adder assignationes…",
+	"bs-pageassignment-info-dialog": "Assignationes"
 }
