@@ -1,4 +1,5 @@
 {
+	"name": "BlueSpicePageAssignments",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
