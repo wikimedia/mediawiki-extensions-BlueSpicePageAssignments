@@ -8,10 +8,11 @@
 	"bs-pageassignments-desc": "讓您能夠分配使用者或群組給頁面",
 	"pageassignments": "分配",
 	"managepageassignments": "分配管理",
+	"bs-pageassignments-text": "分配",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "已分配使用者的額外權限",
 	"bs-pageassignments-dlg-title": "分配",
 	"bs-pageassignments-dlg-fldlabel": "分配",
-	"bs-pageassignments-menu-label": "編輯分配",
+	"bs-pageassignments-menu-label": "設定頁面分配",
 	"bs-pageassignments-action-apiedit-description": "編輯$1的分配",
 	"bs-pageassignments-column-title": "頁面標題",
 	"bs-pageassignments-column-assignments": "分配",
@@ -93,5 +94,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "已分配頁面",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "已分配",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "尚未分配",
-	"bs-pageassignments-dialog-input-placeholder": "添加分配…"
+	"bs-pageassignments-dialog-input-placeholder": "添加分配…",
+	"bs-pageassignment-info-dialog": "分配"
 }
