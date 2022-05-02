@@ -37,7 +37,7 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 		// not be saved anymore.
 		// Services should used with caution before everything is initialized.
 		// This needs a follow up change in the AssignmentFactory service some day,
-		// which seperates the AssignmentFactory into a raw data factory which has an
+		// which separates the AssignmentFactory into a raw data factory which has an
 		// assignment type renderer with all the advanced things like link
 		// rendering and such
 
