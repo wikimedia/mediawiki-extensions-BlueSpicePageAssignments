@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
+			"GpieroMW",
 			"Selven",
 			"Stefano",
-			"ValeJappo",
-			"GpieroMW"
+			"ValeJappo"
 		]
 	},
 	"bs-pageassignments-desc": "Consente di assegnare utenti o gruppi a una pagina",
