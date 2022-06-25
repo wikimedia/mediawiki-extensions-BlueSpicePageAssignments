@@ -142,10 +142,5 @@ class ManageAssignments extends BSMaintenance {
 
 }
 
-$maintClass = 'ManageAssignments';
-if ( defined( 'RUN_MAINTENANCE_IF_MAIN' ) ) {
-	require_once RUN_MAINTENANCE_IF_MAIN;
-} else {
-	# Make this work on versions before 1.17
-	require_once RUN_MAINTENANCE_IF_MAIN;
-}
+$maintClass = ManageAssignments::class;
+require_once RUN_MAINTENANCE_IF_MAIN;
