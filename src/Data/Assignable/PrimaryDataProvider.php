@@ -4,12 +4,13 @@ namespace BlueSpice\PageAssignments\Data\Assignable;
 
 use BlueSpice\PageAssignments\Data\Record;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
 
-class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
+class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @var \BlueSpice\Data\Record[]
+	 * @var \MWStake\MediaWiki\Component\DataStore\Record[]
 	 */
 	protected $data = [];
 

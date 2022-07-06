@@ -2,14 +2,15 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable;
 
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Data\Schema;
+use MWStake\MediaWiki\Component\DataStore\DatabaseReader;
+use MWStake\MediaWiki\Component\DataStore\Tests\ReaderParamsTest;
 
-class Reader extends \BlueSpice\Data\DatabaseReader {
+class Reader extends DatabaseReader {
 
 	/**
 	 *
-	 * @param ReaderParams $params
+	 * @param ReaderParamsTest $params
 	 * @return PrimaryDataProvider
 	 */
 	protected function makePrimaryDataProvider( $params ) {

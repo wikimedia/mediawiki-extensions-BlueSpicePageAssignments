@@ -3,8 +3,9 @@
 namespace BlueSpice\PageAssignments\Data\Assignable;
 
 use Exception;
+use MWStake\MediaWiki\Component\DataStore\IStore;
 
-class Store implements \BlueSpice\Data\IStore {
+class Store implements IStore {
 	/**
 	 *
 	 * @var \IContextSource

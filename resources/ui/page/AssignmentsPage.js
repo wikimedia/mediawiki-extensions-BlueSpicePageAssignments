@@ -1,3 +1,5 @@
+bs.util.registerNamespace( 'bs.pageassignments.ui' );
+
 bs.pageassignments.ui.AssignmentsPage = function( cfg ) {
 	cfg = cfg || {};
 
@@ -27,24 +29,22 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 		change: function() {
 			var data = this.assignmentPicker.getSelectedItemData();
 			if ( typeof data === 'object' && data !== null ) {
-				this.grid.addItems( [
-					{
-						type: data.pa_assignee_type,
-						key: data.pa_assignee_key
-					}
-				] );
+				this.appendToStoreData( {
+					type: data.pa_assignee_type,
+					key: data.pa_assignee_key
+				} );
 				this.assignmentPicker.setValue( '' );
 				this.updateDialogSize();
 			}
 		}
 	} );
 
+	this.store = new OOJSPlus.ui.data.store.Store( {
+		pageSize: 99999
+	} );
 	this.grid = new OOJSPlus.ui.data.GridWidget( {
-		deletable: true,
-		pageSize: 9999,
 		noHeader: true,
-		allowDuplicates: false,
-		deleteNoConfirm: true,
+		hidePagination: true,
 		columns: {
 			type: {
 				type: "icon",
@@ -55,11 +55,19 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 			},
 			key: {
 				type: "text"
+			},
+			delete: {
+				type: 'action',
+				actionId: 'delete',
+				icon: 'clear',
+				width: 30
 			}
-		}
+		},
+		store: this.store
 	} );
 	this.grid.connect( this, {
-		rowDeleteComplete: function() {
+		action: function( action, row ) {
+			this.removeFromStoreData( row );
 			this.updateDialogSize();
 		}
 	} );
@@ -82,7 +90,7 @@ bs.pageassignments.ui.AssignmentsPage.prototype.setData = function( data ) {
 				key: data.assignments[i].pa_assignee_key
 			} );
 		}
-		this.grid.addItems( rows );
+		this.grid.store.setData( rows );
 		this.updateDialogSize();
 	}
 };
@@ -101,6 +109,33 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getActionKeys = function() {
 
 bs.pageassignments.ui.AssignmentsPage.prototype.getAbilities = function() {
 	return { done: true, cancel: true };
+};
+
+bs.pageassignments.ui.AssignmentsPage.prototype.appendToStoreData = function( assignment ) {
+	var original = this.store.originalData,
+		duplicate = false;
+	for( var i = 0; i < original.length; i++ ) {
+		if ( assignment.key === original[i].key && assignment.type === original[i].type ) {
+			duplicate = true;
+			break;
+		}
+	}
+	if ( !duplicate ) {
+		original.push( assignment );
+		this.store.setData( original );
+	}
+};
+
+bs.pageassignments.ui.AssignmentsPage.prototype.removeFromStoreData = function( assignment ) {
+	var original = this.store.originalData,
+		newData = [];
+	for( var i = 0; i < original.length; i++ ) {
+		if ( assignment.key === original[i].key && assignment.type === original[i].type ) {
+			continue;
+		}
+		newData.push( original[i] );
+	}
+	this.store.setData( newData );
 };
 
 bs.pageassignments.ui.AssignmentsPage.prototype.onAction = function( action ) {
@@ -127,7 +162,7 @@ bs.pageassignments.ui.AssignmentsPage.prototype.onAction = function( action ) {
 };
 
 bs.pageassignments.ui.AssignmentsPage.prototype.getApiData = function() {
-	var data = this.grid.getData(),
+	var data = this.store.originalData,
 		combined = [];
 
 	for ( var i = 0; i < data.length; i++ ) {
