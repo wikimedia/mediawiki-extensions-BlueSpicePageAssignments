@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
-use BlueSpice\Data\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
 class Reader extends \BlueSpice\Data\User\Reader {
 

@@ -2,15 +2,15 @@
 
 namespace BlueSpice\PageAssignments\Data\Page;
 
-use BlueSpice\Data\Filter;
-use BlueSpice\Data\Filter\StringValue;
-use BlueSpice\Data\FilterFinder;
 use BlueSpice\Data\Page\PrimaryDataProvider as PageDataProvider;
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Assignment;
 use BlueSpice\PageAssignments\Data\Record as AssignmentRecord;
 use BsStringHelper;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\Filter;
+use MWStake\MediaWiki\Component\DataStore\Filter\StringValue;
+use MWStake\MediaWiki\Component\DataStore\FilterFinder;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use Title;
 
 class PrimaryDataProvider extends PageDataProvider {
