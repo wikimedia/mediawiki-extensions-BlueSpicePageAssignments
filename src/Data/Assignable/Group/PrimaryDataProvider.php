@@ -3,8 +3,9 @@
 namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
 
-class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
+class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *

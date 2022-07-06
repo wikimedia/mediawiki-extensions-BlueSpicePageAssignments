@@ -37,16 +37,29 @@ $(document).bind('BSBookshelfUIManagerPanelInit', function( event, sender, oConf
 				var storageLocation = bs.bookshelf.storageLocationRegistry.lookup( record.get( 'book_type' ) );
 
 				if ( storageLocation && storageLocation.isTitleBased() ) {
-					Ext.require( 'BS.PageAssignments.dialog.PageAssignment', function() {
-						var dlg = new BS.PageAssignments.dialog.PageAssignment( {
-							pageId: +record.get( 'page_id' ),
-							pageAssignments: record.get( 'assignments' )
-						} );
-						dlg.on( 'ok', function() {
-							grid.getStore().reload();
-						} );
-						dlg.show();
-					});
+					var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+						id: 'bs-pageassignments-set',
+						pages: function() {
+							var dfd = $.Deferred();
+							mw.loader.using( "ext.bluespice.pageassignments.dialog.pages", function() {
+								dfd.resolve( [
+									new bs.pageassignments.ui.AssignmentsPage( {
+										data: {
+											page: record.get( 'page_id' ),
+											assignments: record.get( 'assignments' )
+										}
+									} )
+								] );
+							}, function( e ) {
+								dfd.reject( e );
+							} );
+							return dfd.promise();
+						}
+					} );
+
+					dialog.show().closed.then( function() {
+						grid.getStore().reload();
+					}.bind( this ) );
 				} else {
 					Ext.Msg.alert(
 						mw.message( 'bs-pageassignments-book-assignment-not-allowed-title' ).text(),

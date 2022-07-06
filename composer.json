@@ -4,7 +4,8 @@
 	"description": "Enables you to assign users or groups to a page",
 	"license": "GPL-3.0-only",
 	"require": {
-		"composer/installers": "~1.0"
+		"composer/installers": "~1.0",
+		"mwstake/mediawiki-component-datastore": "~1"
 	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "38.0.0",
