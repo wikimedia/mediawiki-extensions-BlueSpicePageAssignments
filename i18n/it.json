@@ -81,5 +81,12 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assegnato",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non assegnato",
 	"bs-pageassignments-dialog-input-placeholder": "Aggiungere assegnazioni...",
-	"bs-pageassignment-info-dialog": "Assegnazioni"
+	"bs-pageassignment-info-dialog": "Assegnazioni",
+	"bs-pageassignments-notification-reason-user": "Sei stato assegnato direttamente alla pagina",
+	"notification-bs-pageassignments-assignment-change-remove-subject": "Rimozione dell'assegnazione a $2",
+	"action-pageassignable": "apparire nell'elenco di utenti assegnabili",
+	"apihelp-bs-pageassignable-store-description": "Restituisce l'elenco degli assegnatari",
+	"bs-pageassignments-flyout-form-title": "Aggiungi assegnazione",
+	"bs-pageassignments-flyout-manager-btn-label": "Gestore di assegnazione pagine",
+	"bs-pageassignments-collection-var-assignedpages": "Pagine assegnate"
 }
