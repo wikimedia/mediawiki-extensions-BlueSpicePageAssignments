@@ -324,6 +324,7 @@
 				"ext.oOJSPlus.dialogs",
 				"ext.oOJSPlus.widgets",
 				"ext.oOJSPlus.data",
+				"oojs-ui.styles.icons-interactions",
 				"oojs-ui.styles.icons-user"
 			]
 		},
