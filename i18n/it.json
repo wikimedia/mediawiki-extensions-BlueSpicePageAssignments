@@ -88,5 +88,10 @@
 	"apihelp-bs-pageassignable-store-description": "Restituisce l'elenco degli assegnatari",
 	"bs-pageassignments-flyout-form-title": "Aggiungi assegnazione",
 	"bs-pageassignments-flyout-manager-btn-label": "Gestore di assegnazione pagine",
-	"bs-pageassignments-collection-var-assignedpages": "Pagine assegnate"
+	"bs-pageassignments-collection-var-assignedpages": "Pagine assegnate",
+	"apihelp-bs-pageassignable-store-summary": "Restituisce l'elenco degli assegnatari",
+	"apihelp-bs-pageassignment-tasks-description": "Ottenere o modificare l'elenco delle assegnazioni per una pagina specifica",
+	"apihelp-bs-pageassignment-tasks-summary": "Ottenere o modificare l'elenco di assegnazioni partorisca una pagina specifica",
+	"bs-pageassignments-secure-lockdown-reason": "L'azione \"$1\" è disponibile solo per {{PLURAL:$2|l'assegnatario|gli assegnatari}} $3",
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnato a {{PLURAL:$2|pagina|pagine}}: $1"
 }
