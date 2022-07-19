@@ -88,5 +88,10 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assegnato",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non assegnato",
 	"bs-pageassignments-dialog-input-placeholder": "Aggiungere assegnazioni...",
-	"bs-pageassignment-info-dialog": "Assegnazioni"
+	"bs-pageassignment-info-dialog": "Assegnazioni",
+	"apihelp-bs-pageassignable-store-summary": "Restituisce l'elenco degli assegnatari",
+	"apihelp-bs-pageassignment-tasks-description": "Ottenere o modificare l'elenco delle assegnazioni per una pagina specifica",
+	"apihelp-bs-pageassignment-tasks-summary": "Ottenere o modificare l'elenco di assegnazioni partorisca una pagina specifica",
+	"bs-pageassignments-secure-lockdown-reason": "L'azione \"$1\" è disponibile solo per {{PLURAL:$2|l'assegnatario|gli assegnatari}} $3",
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnato a {{PLURAL:$2|pagina|pagine}}: $1"
 }
