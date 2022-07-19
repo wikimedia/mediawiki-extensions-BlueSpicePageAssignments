@@ -75,7 +75,7 @@
 	"bs-pageassignments-assignee-type-everyone": "Tutti",
 	"bs-pageassignments-assignee-type-user": "Utente",
 	"bs-pageassignments-assignee-type-group": "Gruppo",
-	"bs-pageassignments-secure-lockdown-reason": "L'azione \" $1 \" è disponibile solo per {{PLURAL:$2| assegnatario|assegnatario}} $3",
+	"bs-pageassignments-secure-lockdown-reason": "L'azione \"$1\" è disponibile solo per {{PLURAL:$2|l'assegnatario|gli assegnatari}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Non sei stato assegnato alla pagina $1",
 	"bs-pageassignments-nav-link-title-pageassignments": "Assegnazioni di pagina",
 	"bs-pageassignments-flyout-title": "Assegnazioni di pagina",
