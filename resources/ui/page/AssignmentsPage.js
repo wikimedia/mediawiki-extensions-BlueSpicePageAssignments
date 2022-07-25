@@ -44,7 +44,7 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 	} );
 	this.grid = new OOJSPlus.ui.data.GridWidget( {
 		noHeader: true,
-		hidePagination: true,
+		toolbar: null,
 		columns: {
 			type: {
 				type: "icon",
@@ -67,7 +67,9 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 	} );
 	this.grid.connect( this, {
 		action: function( action, row ) {
-			this.removeFromStoreData( row );
+			if ( action === 'delete' ) {
+				this.removeFromStoreData( row );
+			}
 			this.updateDialogSize();
 		}
 	} );
