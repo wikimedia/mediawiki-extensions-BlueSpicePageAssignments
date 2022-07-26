@@ -45,6 +45,7 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 	this.grid = new OOJSPlus.ui.data.GridWidget( {
 		noHeader: true,
 		toolbar: null,
+		paginator: null,
 		columns: {
 			type: {
 				type: "icon",
