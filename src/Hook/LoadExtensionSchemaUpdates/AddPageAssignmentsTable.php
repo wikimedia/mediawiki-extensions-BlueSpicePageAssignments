@@ -7,18 +7,21 @@ use BlueSpice\Hook\LoadExtensionSchemaUpdates;
 class AddPageAssignmentsTable extends LoadExtensionSchemaUpdates {
 
 	protected function doProcess() {
+		$dbType = $this->updater->getDB()->getType();
 		$dir = $this->getExtensionPath();
 
 		$this->updater->addExtensionTable(
 			'bs_pageassignments',
-			"$dir/maintenance/db/bs_pageassignments.sql"
+			"$dir/maintenance/db/sql/$dbType/bs_pageassignments-generated.sql"
 		);
 
-		$this->updater->modifyExtensionField(
-			'bs_pageassignments',
-			'pa_page_id',
-			"$dir/maintenance/db/ps_pageassignments.primary_key.patch.sql"
-		);
+		if ( $dbType == 'mysql' ) {
+			$this->updater->modifyExtensionField(
+				'bs_pageassignments',
+				'pa_page_id',
+				"$dir/maintenance/db/ps_pageassignments.primary_key.patch.sql"
+			);
+		}
 	}
 
 	/**
