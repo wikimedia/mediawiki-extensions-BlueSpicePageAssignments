@@ -4,5 +4,6 @@
 			"Eleassar"
 		]
 	},
-	"bs-pageassignments-assignee-type-user": "Uporabnik"
+	"bs-pageassignments-assignee-type-user": "Uporabnik",
+	"bs-pageassignments-collection-var-namespacename": "Imenski prostor"
 }
