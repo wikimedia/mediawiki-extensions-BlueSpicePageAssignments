@@ -108,7 +108,8 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 			'pa.pa_assignee_key' => $user->getName(),
 		] );
 		if ( in_array( 'group', $registeredTypes ) ) {
-			$userGroups = $user->getGroups();
+			$userGroupManager = $this->getServices()->getUserGroupManager();
+			$userGroups = $userGroupManager->getUserGroups( $user );
 			$result += $this->getAssignments( [
 				'pa.pa_assignee_type' => 'group',
 				'pa.pa_assignee_key IN (' . $db->makeList( $userGroups ) . ')'
