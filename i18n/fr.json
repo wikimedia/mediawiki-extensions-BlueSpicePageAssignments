@@ -34,7 +34,7 @@
 	"bs-pageassignments-api-error-insert": "L’affectation « $1 » pour « $2 » n’a pas pu être enregistrée",
 	"log-name-bs-pageassignments": "Journal des affectations",
 	"log-description-bs-pageassignments": "Journal des modifications sur les assignations de la page",
-	"log-show-hide-bs-pageassignments": "$1 le journal des assignations",
+	"log-show-hide-bs-pageassignments": "$1 le journal des affectations",
 	"logeventslist-bs-pageassignments-log": "Journal des affectations",
 	"logentry-bs-pageassignments-add-user": "$1{{GENDER:$2|}} a affecté la page « $3 » à l’utilisat{{GENDER:$4|eur|rice}} « $4 »",
 	"logentry-bs-pageassignments-remove-user": "$1{{GENDER:$2|}} a retiré l’affectation de la page « $3 » à l’utilisat{{GENDER:$4|eur|rice}} « $4 »",
