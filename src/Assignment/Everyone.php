@@ -46,7 +46,8 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 		}
 		static::$userIdCache = [];
 
-		$loadBalancer = MediaWikiServices::getInstance()->getDBLoadBalancer();
+		$services = MediaWikiServices::getInstance();
+		$loadBalancer = $services->getDBLoadBalancer();
 		$res = $loadBalancer->getConnection( DB_REPLICA )->select(
 			'user',
 			[ 'user_id', 'user_name' ]
@@ -58,7 +59,7 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 
 		if ( $blacklistedUsersTitle->exists() ) {
 
-			$titleCache = MediaWikiServices::getInstance()->getService( 'BSTargetCacheTitle' );
+			$titleCache = $services->getService( 'BSTargetCacheTitle' );
 			$target = new Target( $blacklistedUsersTitle );
 			$cacheHandler = $titleCache->getHandler( 'pageassignments-everyone-blacklist', $target );
 			$blacklistContent = $cacheHandler->get();
@@ -77,7 +78,8 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 
 		}
 
-		$pm = MediaWikiServices::getInstance()->getPermissionManager();
+		$pm = $services->getPermissionManager();
+		$userFactory = $services->getUserFactory();
 		$title = $this->getTitle();
 
 		foreach ( $res as $row ) {
@@ -86,7 +88,7 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 			}
 			$allowed = $pm->userCan(
 				'pageassignable',
-				\User::newFromId( (int)$row->user_id ),
+				$userFactory->newFromId( (int)$row->user_id ),
 				$title
 			);
 			if ( !$allowed ) {

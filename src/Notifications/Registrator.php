@@ -93,18 +93,18 @@ class Registrator {
 			}
 		}
 
-		$factory = MediaWikiServices::getInstance()->getService(
-			'BSPageAssignmentsAssignmentFactory'
-		);
+		$services = MediaWikiServices::getInstance();
+		$factory = $services->getService( 'BSPageAssignmentsAssignmentFactory' );
 		$target = $factory->newFromTargetTitle( $title );
 		if ( !$target ) {
 			return [];
 		}
 
 		$affectedUsers = [];
+		$userFactory = $services()->getUserFactory();
 		foreach ( $target->getAssignedUserIDs() as $id ) {
 			$affectedUsers[$id] = $target->getAssignmentsForUser(
-				\User::newFromId( $id )
+				$userFactory->newFromId( $id )
 			);
 		}
 
