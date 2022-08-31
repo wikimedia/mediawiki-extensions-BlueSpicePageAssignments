@@ -5,7 +5,6 @@ namespace BlueSpice\PageAssignments;
 use BlueSpice\SMWConnector\PropertyValueProvider;
 use MediaWiki\MediaWikiServices;
 use SMW\DIWikiPage;
-use User;
 
 class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 
@@ -89,8 +88,9 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 			return null;
 		}
 
+		$services = MediaWikiServices::getInstance();
 		if ( !$this->assignmentFactory ) {
-			$this->assignmentFactory = MediaWikiServices::getInstance()->getService(
+			$this->assignmentFactory = $services->getService(
 				'BSPageAssignmentsAssignmentFactory'
 			);
 		}
@@ -100,8 +100,9 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 		}
 
 		$userIds = $target->getAssignedUserIDs();
+		$userFactory = $services->getUserFactory();
 		foreach ( $userIds as $userId ) {
-			$user = User::newFromId( $userId );
+			$user = $userFactory->newFromId( $userId );
 			$dataItem = DIWikiPage::newFromTitle( $user->getUserPage() );
 			$semanticData->addPropertyObjectValue( $property, $dataItem );
 		}
