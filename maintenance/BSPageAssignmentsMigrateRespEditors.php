@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 $extDir = dirname( dirname( __DIR__ ) );
 
 require_once "$extDir/BlueSpiceFoundation/maintenance/BSMaintenance.php";
@@ -53,8 +56,9 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 			__METHOD__,
 			$aOptions
 		);
+		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		foreach ( $oRes as $oRow ) {
-			$oUser = User::newFromId( $oRow->re_user_id );
+			$oUser = $userFactory->newFromId( $oRow->re_user_id );
 			if ( !$oUser || $oUser->isAnon() ) {
 				continue;
 			}

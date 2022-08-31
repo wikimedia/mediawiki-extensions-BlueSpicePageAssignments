@@ -42,7 +42,8 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 		}
 		static::$userIdCache[$this->getKey()] = [];
 
-		$loadBalancer = MediaWikiServices::getInstance()->getDBLoadBalancer();
+		$services = MediaWikiServices::getInstance();
+		$loadBalancer = $services->getDBLoadBalancer();
 		$res = $loadBalancer->getConnection( DB_REPLICA )->select(
 			'user_groups',
 			'ug_user',
@@ -50,12 +51,13 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 				'ug_group' => $this->getKey()
 			]
 		);
-		$pm = MediaWikiServices::getInstance()->getPermissionManager();
+		$pm = $services->getPermissionManager();
+		$userFactory = $services->getUserFactory();
 		$title = $this->getTitle();
 		foreach ( $res as $row ) {
 			$allowed = $pm->userCan(
 				'pageassignable',
-				\User::newFromId( (int)$row->ug_user ),
+				$userFactory->newFromId( (int)$row->ug_user ),
 				$title
 			);
 			if ( !$allowed ) {

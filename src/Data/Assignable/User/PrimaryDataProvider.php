@@ -43,20 +43,18 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 			}
 		}
 
-		$user = \User::newFromId( $row->{Record::ID} );
+		$services = MediaWikiServices::getInstance();
+		$user = $services->getUserFactory()->newFromId( $row->{Record::ID} );
 		if ( !$user ) {
 			return;
 		}
 
-		if ( !MediaWikiServices::getInstance()
-			->getPermissionManager()
+		if ( !$services->getPermissionManager()
 			->userCan( 'pageassignable', $user, $this->context->getTitle() )
 		) {
 			return;
 		}
-		$assignmentFactory = MediaWikiServices::getInstance()->getService(
-			'BSPageAssignmentsAssignmentFactory'
-		);
+		$assignmentFactory = $services->getService( 'BSPageAssignmentsAssignmentFactory' );
 		$assignment = $assignmentFactory->factory(
 			'user',
 			$row->{Record::USER_NAME},
