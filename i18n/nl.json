@@ -102,5 +102,8 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "Toewijzingen zijn niet toegestaan voor niet op titel gebaseerde boeken",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Toegewezen",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Niet toegewezen",
-	"bs-pageassignments-statistics-report-assigned-pages": "Toegewezen pagina's"
+	"bs-pageassignments-statistics-report-assigned-pages": "Toegewezen pagina's",
+	"bs-pageassignments-text": "Toewijzingen",
+	"bs-pageassignments-dialog-input-placeholder": "Toewijzingen toevoegen…",
+	"bs-pageassignment-info-dialog": "Toewijzingen"
 }
