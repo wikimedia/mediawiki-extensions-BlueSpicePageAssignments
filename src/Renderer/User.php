@@ -2,7 +2,6 @@
 namespace BlueSpice\PageAssignments\Renderer;
 
 use BlueSpice\Renderer\Params;
-use MediaWiki\MediaWikiServices;
 
 class User extends Assignment {
 	public const PARAM_ASSIGNMENT = 'assignment';
@@ -19,7 +18,7 @@ class User extends Assignment {
 	 * @return mixed
 	 */
 	protected function render_image( $val ) {
-		$renderer = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' )->get(
+		$renderer = $this->services->getService( 'BSRendererFactory' )->get(
 			'userimage',
 			new Params( [
 				'user' => \User::newFromName( $this->assignment->getKey() )
