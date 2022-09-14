@@ -4,7 +4,6 @@ namespace BlueSpice\PageAssignments\Api\Task;
 
 use BlueSpice\PageAssignments\IAssignment;
 use BlueSpice\PageAssignments\Notifications;
-use MediaWiki\MediaWikiServices;
 
 class PageAssignments extends \BSApiTasksBase {
 
@@ -96,8 +95,7 @@ class PageAssignments extends \BSApiTasksBase {
 			return $result;
 		}
 		$target = $status->getValue();
-		$permissionErrors = MediaWikiServices::getInstance()
-			->getPermissionManager()
+		$permissionErrors = $this->services->getPermissionManager()
 			->getPermissionErrors(
 				'pageassignments',
 				$this->getUser(),
@@ -202,7 +200,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 * @return string
 	 */
 	protected function getAssigneeThumb( $assignment ) {
-		$factory = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' );
+		$factory = $this->services->getService( 'BSRendererFactory' );
 		$thumbParams = [ 'width' => '32', 'height' => '32' ];
 
 		if ( $assignment->pa_assignee_type == 'group' ) {
@@ -258,9 +256,7 @@ class PageAssignments extends \BSApiTasksBase {
 		$newUsers = [];
 		$removedUsers = [];
 
-		$notificationsManager = MediaWikiServices::getInstance()->getService(
-			'BSNotificationManager'
-		);
+		$notificationsManager = $this->services->getService( 'BSNotificationManager' );
 
 		$notifier = $notificationsManager->getNotifier();
 
@@ -306,9 +302,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 * @return \BlueSpice\PageAssignments\AssignmentFactory
 	 */
 	protected function getFactory() {
-		return MediaWikiServices::getInstance()->getService(
-			'BSPageAssignmentsAssignmentFactory'
-		);
+		return $this->services->getService( 'BSPageAssignmentsAssignmentFactory' );
 	}
 
 	/**
