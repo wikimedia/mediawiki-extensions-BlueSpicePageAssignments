@@ -1,7 +1,7 @@
 <?php
 namespace BlueSpice\PageAssignments\Renderer;
 
-use User;
+use MediaWiki\MediaWikiServices;
 
 class PageHeaderAssignmentUser extends PageHeaderAssignmentBase {
 	public const PARAM_ASSIGNMENT = 'assignment';
@@ -19,9 +19,10 @@ class PageHeaderAssignmentUser extends PageHeaderAssignmentBase {
 	public function getArgs() {
 		$args = parent::getArgs();
 
-		$user = User::newFromName( $this->assignment->getKey() );
+		$services = MediaWikiServices::getInstance();
+		$user = $services->getUserFactory()->newFromName( $this->assignment->getKey() );
 
-		$util = $this->services->getService( 'BSUtilityFactory' );
+		$util = $services->getService( 'BSUtilityFactory' );
 
 		$userLink = $this->linkRenderer->makeLink(
 			$user->getUserPage(),

@@ -59,6 +59,13 @@ class PageAssignments extends \BSApiTasksBase {
 	];
 
 	/**
+	 * @inheritDoc
+	 */
+	public function __construct( \ApiMain $mainModule, $moduleName, $modulePrefix = '' ) {
+		parent::__construct( $mainModule, $moduleName, $modulePrefix );
+	}
+
+	/**
 	 *
 	 * @return array
 	 */
@@ -210,7 +217,7 @@ class PageAssignments extends \BSApiTasksBase {
 			return $image->render();
 		}
 
-		$user = \User::newFromName( $assignment->pa_assignee_key );
+		$user = $this->services->getUserFactory()->newFromName( $assignment->pa_assignee_key );
 		if ( $user instanceof \User === false ) {
 			return '';
 		}
