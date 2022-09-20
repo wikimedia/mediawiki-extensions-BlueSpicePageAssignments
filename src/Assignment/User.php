@@ -42,7 +42,8 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	 * @return \User
 	 */
 	protected function getUser() {
-		$user = \User::newFromName( $this->getKey() );
+		$user = MediaWikiServices::getInstance()->getUserFactory()
+			->newFromName( $this->getKey() );
 		if ( !$user ) {
 			return new \User;
 		}
