@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class PageAssignmentsWikiExplorerHooks {
 
 	/**
@@ -117,6 +119,7 @@ class PageAssignmentsWikiExplorerHooks {
 
 		$aData = [];
 		$aUserIds = [];
+		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		foreach ( $oRes as $oRow ) {
 			if ( $oRow->pa_assignee_type == 'group' ) {
 				$aData[$oRow->pa_page_id][] =
@@ -129,7 +132,7 @@ class PageAssignmentsWikiExplorerHooks {
 				continue;
 			}
 
-			$oUser = User::newFromName( $oRow->pa_assignee_key );
+			$oUser = $userFactory->newFromName( $oRow->pa_assignee_key );
 			$userExists = isset( $userNameToRealNameMap[$oRow->pa_assignee_key] );
 			if ( !$oUser || !$userExists ) {
 				continue;
