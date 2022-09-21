@@ -86,7 +86,8 @@ class Registrator {
 	 */
 	protected static function getAssignedUsers( $title ) {
 		if ( $title->isTalkPage() ) {
-			$title = $title->getSubjectPage();
+			$title = MediaWikiServices::getInstance()->getNamespaceInfo()
+				->getSubjectPage( $title );
 			if ( $title instanceof \Title === false ) {
 				return [];
 			}
