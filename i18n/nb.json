@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Jon Harald Søby",
-			"Nettrom"
+			"Nettrom",
+			"EdoAug"
 		]
 	},
 	"bs-pageassignments-desc": "Lar deg tildele brukere eller grupper til ei side",
@@ -90,5 +91,8 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Ikke-tildelte sider",
 	"bs-pageassignments-pageheader-label": "Tildelinger",
 	"bs-pageassignments-book-assignment-not-allowed-title": "Tildelinger ikke tillatt",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Tildelinger er ikke tillatt for ikke-tittelbaserte bøker"
+	"bs-pageassignments-book-assignment-not-allowed-text": "Tildelinger er ikke tillatt for ikke-tittelbaserte bøker",
+	"bs-pageassignments-statistics-report-assigned-pages": "Tildelte sider",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Tildelt",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Ikke tildelt"
 }
