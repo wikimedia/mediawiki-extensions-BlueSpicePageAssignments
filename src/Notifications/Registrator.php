@@ -101,7 +101,7 @@ class Registrator {
 		}
 
 		$affectedUsers = [];
-		$userFactory = $services()->getUserFactory();
+		$userFactory = $services->getUserFactory();
 		foreach ( $target->getAssignedUserIDs() as $id ) {
 			$affectedUsers[$id] = $target->getAssignmentsForUser(
 				$userFactory->newFromId( $id )
