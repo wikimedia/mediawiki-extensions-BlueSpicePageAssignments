@@ -11,8 +11,7 @@
 
 	bs.pageAssignments.report.AssignedPagesReport.prototype.getFilters = function () {
 		return [
-			new bs.aggregatedStatistics.filter.IntervalFilter(),
-			new bs.aggregatedStatistics.filter.NamespaceCategoryFilter( { onlyContentNamespaces: true } )
+			new bs.aggregatedStatistics.filter.NamespaceCategoryFilter( { onlyContentNamespaces: false } )
 		];
 	};
 
