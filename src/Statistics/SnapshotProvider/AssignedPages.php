@@ -27,7 +27,7 @@ class AssignedPages implements ISnapshotProvider {
 	public function generateSnapshot( SnapshotDate $date ): Snapshot {
 		$db = $this->loadBalancer->getConnection( DB_REPLICA );
 
-		$res = $db->select(
+		$resCategories = $db->select(
 			[ 'page', 'bs_pageassignments', 'categorylinks' ],
 			[ 'COUNT(page_title) as pages', 'page_namespace', 'pa_page_id', 'cl_to' ],
 			[],
@@ -45,13 +45,29 @@ class AssignedPages implements ISnapshotProvider {
 			]
 		);
 
+		$resNamespaces = $db->select(
+			[ 'page', 'bs_pageassignments' ],
+			[ 'COUNT(page_title) as pages', 'page_namespace','pa_page_id' ],
+			[],
+			__METHOD__,
+			[
+				'GROUP BY' => 'page_namespace, pa_page_id'
+			],
+			[
+				'bs_pageassignments' => [
+					"LEFT OUTER JOIN", [ 'page_id=pa_page_id' ]
+				]
+			]
+		);
+
 		$assigned = 0;
 		$unassigned = 0;
 		$namespaces = [];
 		$categories = [];
 		$namespaceInfo = MediaWikiServices::getInstance()->getNamespaceInfo();
-		foreach ( $res as $row ) {
+		foreach ( $resCategories as $row ) {
 			$pageCount = (int)$row->pages;
+
 			if ( (int)$row->page_namespace === 0 ) {
 				$namespace = '-';
 			} else {
@@ -64,6 +80,7 @@ class AssignedPages implements ISnapshotProvider {
 			if ( !isset( $namespaces[$namespace] ) ) {
 				$namespaces[$namespace] = [ 'assigned' => 0, 'unassigned' => 0 ];
 			}
+
 			$hasAssignment ?
 				$namespaces[$namespace]['assigned'] += $pageCount :
 				$namespaces[$namespace]['unassigned'] += $pageCount;
@@ -75,6 +92,27 @@ class AssignedPages implements ISnapshotProvider {
 					$categories[$category]['assigned'] += $pageCount :
 					$categories[$category]['unassigned'] += $pageCount;
 			}
+		}
+
+		foreach ( $resNamespaces as $row ) {
+			$pageCount = (int)$row->pages;
+
+			if ( (int)$row->page_namespace === 0 ) {
+				$namespace = '-';
+			} else {
+				$namespace = $namespaceInfo->getCanonicalName( $row->page_namespace );
+			}
+			$hasAssignment = (bool)$row->pa_page_id;
+
+			$hasAssignment ? $assigned++ : $unassigned++;
+			if ( !isset( $namespaces[$namespace] ) ) {
+				$namespaces[$namespace] = [ 'assigned' => 0, 'unassigned' => 0 ];
+			}
+
+			$hasAssignment ?
+				$namespaces[$namespace]['assigned'] = $pageCount :
+				$namespaces[$namespace]['unassigned'] = $pageCount;
+
 		}
 
 		return new Snapshot( $date, $this->getType(), [
