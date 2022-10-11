@@ -31,7 +31,8 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 			if ( typeof data === 'object' && data !== null ) {
 				this.appendToStoreData( {
 					type: data.pa_assignee_type,
-					key: data.pa_assignee_key
+					key: data.pa_assignee_key,
+					text: data.text
 				} );
 				this.assignmentPicker.setValue( '' );
 				this.updateDialogSize();
@@ -54,7 +55,7 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 				},
 				width: 50
 			},
-			key: {
+			text: {
 				type: "text"
 			},
 			delete: {
@@ -89,6 +90,7 @@ bs.pageassignments.ui.AssignmentsPage.prototype.setData = function( data ) {
 		var rows = [];
 		for ( var i = 0; i < data.assignments.length; i++ ) {
 			rows.push( {
+				text: data.assignments[i].text,
 				type: data.assignments[i].pa_assignee_type,
 				key: data.assignments[i].pa_assignee_key
 			} );
