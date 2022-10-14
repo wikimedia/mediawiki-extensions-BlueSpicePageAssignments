@@ -19,10 +19,10 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 	public function __construct( ApiMain $mainModule, $moduleName, $modulePrefix = '' ) {
 		parent::__construct( $mainModule, $moduleName, $modulePrefix );
 
-		$this->assignmentFactory = $this->getServices()->getService(
+		$this->assignmentFactory = $this->services->getService(
 			'BSPageAssignmentsAssignmentFactory'
 		);
-		$this->linkRenderer = $this->getServices()->getLinkRenderer();
+		$this->linkRenderer = $this->services->getLinkRenderer();
 	}
 
 	/**
@@ -108,7 +108,7 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 			'pa.pa_assignee_key' => $user->getName(),
 		] );
 		if ( in_array( 'group', $registeredTypes ) ) {
-			$userGroupManager = $this->getServices()->getUserGroupManager();
+			$userGroupManager = $this->services->getUserGroupManager();
 			$userGroups = $userGroupManager->getUserGroups( $user );
 			$result += $this->getAssignments( [
 				'pa.pa_assignee_type' => 'group',
