@@ -1,6 +1,8 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
+use MWStake\MediaWiki\Component\DataStore\IStore;
+
 interface IAssignable {
 
 	/**
@@ -9,7 +11,7 @@ interface IAssignable {
 	public function getType();
 
 	/**
-	 * @return \BlueSpice\Data\IStore
+	 * @return IStore
 	 */
 	public function getStore();
 

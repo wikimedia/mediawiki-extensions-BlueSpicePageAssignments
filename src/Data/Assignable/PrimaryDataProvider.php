@@ -5,6 +5,7 @@ namespace BlueSpice\PageAssignments\Data\Assignable;
 use BlueSpice\PageAssignments\Data\Record;
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
@@ -38,7 +39,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	public function makeData( $params ) {

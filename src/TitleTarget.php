@@ -1,9 +1,9 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
-use BlueSpice\Data\RecordSet;
 use Config;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\RecordSet;
 use Status;
 use Title;
 use User;
