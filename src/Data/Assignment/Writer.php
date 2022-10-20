@@ -5,12 +5,13 @@ namespace BlueSpice\PageAssignments\Data\Assignment;
 use BlueSpice\PageAssignments\Data\Record;
 use MWStake\MediaWiki\Component\DataStore\DatabaseWriter;
 use MWStake\MediaWiki\Component\DataStore\IReader;
+use MWStake\MediaWiki\Component\DataStore\IRecord;
 use MWStake\MediaWiki\Component\DataStore\Schema;
 
 class Writer extends DatabaseWriter {
 	/**
 	 *
-	 * @param \BlueSpice\Data\IReader $reader
+	 * @param IReader $reader
 	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
 	 * @param \IContextSource|null $context
 	 */
@@ -45,7 +46,7 @@ class Writer extends DatabaseWriter {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\IRecord $record
+	 * @param IRecord $record
 	 * @return array
 	 */
 	protected function makeInsertFields( $record ) {
@@ -70,8 +71,8 @@ class Writer extends DatabaseWriter {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\IRecord $existingRecord
-	 * @param \BlueSpice\Data\IRecord $record
+	 * @param IRecord $existingRecord
+	 * @param IRecord $record
 	 * @return array
 	 */
 	protected function makeUpdateFields( $existingRecord, $record ) {
