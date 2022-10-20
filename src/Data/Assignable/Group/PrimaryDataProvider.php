@@ -4,12 +4,14 @@ namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\Record;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @var \BlueSpice\Data\Record[]
+	 * @var Record[]
 	 */
 	protected $data = [];
 
@@ -37,7 +39,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	public function makeData( $params ) {
