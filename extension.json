@@ -387,6 +387,12 @@
 		},
 		"standard-dialogs": {
 			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\StandardDialogs"
+		},
+		"addMyPageAssignments": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\SkinTemplateNavigation\\AddMyPageAssignments"
+		},
+		"addPageAssignmentsEntry": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\SkinTemplateNavigation\\AddPageAssignmentsEntry"
 		}
 	},
 	"Hooks": {
@@ -394,8 +400,10 @@
 			"\\BlueSpice\\PageAssignments\\Hook\\LoadExtensionSchemaUpdates\\AddPageAssignmentsTable::callback",
 			"\\BlueSpice\\PageAssignments\\Hook\\LoadExtensionSchemaUpdates\\AddMigrateRespEditorsUpdateMaintenance::callback"
 		],
-		"PersonalUrls": "\\BlueSpice\\PageAssignments\\Hook\\PersonalUrls\\AddMyPageAssignments::callback",
-		"SkinTemplateNavigation::Universal": "\\BlueSpice\\PageAssignments\\Hook\\SkinTemplateNavigationUniversal\\AddPageAssignmentsEntry::callback",
+		"SkinTemplateNavigation::Universal": [
+			"addMyPageAssignments",
+			"addPageAssignmentsEntry"
+		],
 		"BeforePageDisplay": [
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddResources::callback",
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddWikiExplorerResources::callback",
