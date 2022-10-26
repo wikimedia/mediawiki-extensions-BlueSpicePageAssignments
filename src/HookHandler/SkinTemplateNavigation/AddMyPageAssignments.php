@@ -4,7 +4,6 @@ namespace BlueSpice\PageAssignments\HookHandler\SkinTemplateNavigation;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
-use RequestContext;
 use SpecialPage;
 
 class AddMyPageAssignments implements SkinTemplateNavigation__UniversalHook {
@@ -14,7 +13,7 @@ class AddMyPageAssignments implements SkinTemplateNavigation__UniversalHook {
 	 * @inheritDoc
 	 */
 	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
-		$user = RequestContext::getMain()->getUser();
+		$user = $sktemplate->getUser();
 		if ( !$user->isRegistered() ) {
 			return;
 		}
