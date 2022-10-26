@@ -15,6 +15,7 @@ use BlueSpice\Tests\BSUserFixturesProvider;
  * @group BlueSpice
  * @group BlueSpiceExtensions
  * @group BlueSpicePageAssignments
+ * @covers BlueSpice\PageAssignments\Api\Store\Assignable
  */
 class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 9;

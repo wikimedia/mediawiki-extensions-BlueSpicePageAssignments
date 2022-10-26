@@ -11,6 +11,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  * @group BlueSpice
  * @group BlueSpiceExtensions
  * @group BlueSpicePageAssignments
+ * @covers BSApiMyPageAssignmentStore
  */
 class BSApiMyPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 2;
