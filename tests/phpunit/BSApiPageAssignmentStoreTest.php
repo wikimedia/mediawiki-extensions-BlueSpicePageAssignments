@@ -11,6 +11,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  * @group BlueSpice
  * @group BlueSpiceExtensions
  * @group BlueSpicePageAssignments
+ * @covers BlueSpice\PageAssignments\Api\Store\Page
  */
 class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	/**
