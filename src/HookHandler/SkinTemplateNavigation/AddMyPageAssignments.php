@@ -19,7 +19,8 @@ class AddMyPageAssignments implements SkinTemplateNavigation__UniversalHook {
 			return;
 		}
 
-		$links['pageassignments'] = [
+		$links['user-menu']['pageassignments'] = [
+			'id' => 'pt-pageassignments',
 			'href' => SpecialPage::getTitleFor( 'PageAssignments' )->getLocalURL(),
 			'text' => MediaWikiServices::getInstance()->getSpecialPageFactory()
 				->getPage( 'PageAssignments' )->getDescription(),
