@@ -8,7 +8,8 @@
 			"Piramidion",
 			"Renamerr",
 			"Vlad5250",
-			"Ата"
+			"Ата",
+			"Пан Хаунд"
 		]
 	},
 	"bs-pageassignments-desc": "Дозволяє Вам призначати користувачів або групи до певної сторінки",
@@ -100,5 +101,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Призначені сторінки",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Призначено",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Не призначено",
-	"bs-pageassignments-dialog-input-placeholder": "Додати завдання…"
+	"bs-pageassignments-dialog-input-placeholder": "Додати завдання…",
+	"bs-pageassignment-info-dialog": "Призначення"
 }
