@@ -6,5 +6,7 @@
 	},
 	"bs-pageassignments-assignee-type-user": "Õõʹnni",
 	"bs-pageassignments-column-title": "Seiddnõmm",
-	"bs-pageassignments-assignee-type-group": "Joukk"
+	"bs-pageassignments-assignee-type-group": "Joukk",
+	"bs-pageassignments-assignee-special-everyone-label": "Puk",
+	"bs-pageassignments-assignee-type-everyone": "Puk"
 }
