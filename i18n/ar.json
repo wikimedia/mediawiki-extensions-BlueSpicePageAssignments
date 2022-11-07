@@ -98,5 +98,14 @@
 	"bs-pageassignments-collection-var-namespacename": "النطاق",
 	"bs-pageassignments-collection-var-assignedpages": "الصفحات المخصصة",
 	"bs-pageassignments-collection-var-unassignedpages": "الصفحات غير المخصصة",
-	"bs-pageassignments-pageheader-label": "مهمة"
+	"bs-pageassignments-pageheader-label": "مهمة",
+	"bs-pageassignments-text": "التعيينات",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "إعلامي عندما أكون (أو مجموعة أنتمي) معي إلى صفحة ، أو عندما تتم إزالة التعيينات الخاصة بي",
+	"bs-pageassignments-book-assignment-not-allowed-title": "الواجبات غير مسموح بها",
+	"bs-pageassignments-book-assignment-not-allowed-text": "الواجبات غير مسموح بها للكتب التي لا تستند إلى العنوان",
+	"bs-pageassignments-statistics-report-assigned-pages": "الصفحات المخصصة",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "تم تعيينها",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "غيرمعتمد",
+	"bs-pageassignments-dialog-input-placeholder": "إضافة مهام ...",
+	"bs-pageassignment-info-dialog": "تعيينات"
 }
