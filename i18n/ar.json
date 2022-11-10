@@ -11,6 +11,7 @@
 	"bs-pageassignments-desc": "يمكنك من تعيين مستخدمين أو مجموعات لصفحة",
 	"pageassignments": "التعيينات",
 	"managepageassignments": "إدارة التعيين",
+	"bs-pageassignments-text": "التعيينات",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "صلاحيات إضافية للمستخدمين المعينين",
 	"bs-pageassignments-dlg-title": "التعيينات",
 	"bs-pageassignments-dlg-fldlabel": "التعيينات",
@@ -36,6 +37,7 @@
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 خصص الصفحة \"$3\" للمجموعة \"الجميع\"",
 	"logentry-bs-pageassignments-remove-specialeveryone": "$1 أزال تعيين \"الجميع\" للصفحة \"$3\"",
 	"echo-category-title-bs-pageassignments-action-cat": "صفحة التعيينات",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "إعلامي عندما أكون (أو مجموعة أنتمي) معي إلى صفحة ، أو عندما تتم إزالة التعيينات الخاصة بي",
 	"bs-pageassignments-notification-reason": "أسباب هذا الإخطار:",
 	"bs-pageassignments-notification-reason-user": "تم تعيينك مباشرة على الصفحة",
 	"bs-pageassignments-notification-reason-group": "أنت عضو في {{PLURAL:$1|المجموعة|المجموعات}}: $2",
@@ -89,5 +91,12 @@
 	"bs-pageassignments-collection-var-namespacename": "النطاق",
 	"bs-pageassignments-collection-var-assignedpages": "الصفحات المخصصة",
 	"bs-pageassignments-collection-var-unassignedpages": "الصفحات غير المخصصة",
-	"bs-pageassignments-pageheader-label": "مهمة"
+	"bs-pageassignments-pageheader-label": "مهمة",
+	"bs-pageassignments-book-assignment-not-allowed-title": "الواجبات غير مسموح بها",
+	"bs-pageassignments-book-assignment-not-allowed-text": "الواجبات غير مسموح بها للكتب التي لا تستند إلى العنوان",
+	"bs-pageassignments-statistics-report-assigned-pages": "الصفحات المخصصة",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "تم تعيينها",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "غيرمعتمد",
+	"bs-pageassignments-dialog-input-placeholder": "إضافة مهام ...",
+	"bs-pageassignment-info-dialog": "تعيينات"
 }
