@@ -9,7 +9,8 @@
 			"Movses",
 			"Pacha Tchernof",
 			"Romanko Mikhail",
-			"Vlad5250"
+			"Vlad5250",
+			"Okras"
 		]
 	},
 	"pageassignments": "Назначения",
@@ -21,6 +22,7 @@
 	"bs-pageassignments-column-assignments": "Назначения",
 	"bs-pageassignments-api-error": "Произошла ошибка",
 	"logeventslist-bs-pageassignments-log": "Журнал назначений",
+	"bs-pageassignments-yourassignments": "Ваши назначения",
 	"prefs-pageassign": "Назначение",
 	"bs-pageassignments-sesp-pageassignments-alias": "Назначение",
 	"bs-pageassignments-sesp-pageassignments-desc": "Назначение",
@@ -37,5 +39,6 @@
 	"bs-pageassignments-flyout-manager-btn-label": "Менеджер назначения страниц",
 	"bs-pageassignments-collection-type-assignedpages": "Назначения",
 	"bs-pageassignments-collection-var-namespacename": "Пространство имён",
-	"bs-pageassignments-pageheader-label": "Назначения"
+	"bs-pageassignments-pageheader-label": "Назначения",
+	"bs-pageassignment-info-dialog": "Назначения"
 }
