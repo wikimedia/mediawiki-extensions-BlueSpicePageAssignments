@@ -64,9 +64,9 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 
 	/**
 	 *
-	 * @return string
+	 * @return array
 	 */
-	public function jsonSerialize() {
+	public function jsonSerialize(): array {
 		return $this->getRecord()->jsonSerialize();
 	}
 
