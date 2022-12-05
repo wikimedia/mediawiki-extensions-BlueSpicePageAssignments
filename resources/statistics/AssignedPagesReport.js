@@ -21,6 +21,7 @@
 
 	bs.pageAssignments.report.AssignedPagesReport.prototype.getAxisLabels = function () {
 		return {
+			value: mw.message( "bs-pageassignments-statistics-report-assigned-pages-axis-label" ).text(),
 			assigned: mw.message( "bs-pageassignments-statistics-report-assigned-pages-axis-assigned" ).text(),
 			unassigned: mw.message( "bs-pageassignments-statistics-report-assigned-pages-axis-unassigned" ).text()
 		};
