@@ -104,5 +104,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Affecté",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non affecté",
 	"bs-pageassignments-dialog-input-placeholder": "Ajouter des affectations...",
-	"bs-pageassignment-info-dialog": "Affectations"
+	"bs-pageassignment-info-dialog": "Affectations",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Nombre de pages"
 }
