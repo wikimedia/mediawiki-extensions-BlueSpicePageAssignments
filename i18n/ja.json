@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Foomin10",
+			"MathXplore",
 			"Otokoume",
 			"RYOUMA1117",
 			"Shirayuki",
@@ -46,5 +47,6 @@
 	"notification-bs-pageassignments-user-group-remove-subject": "割り当てられたページを持つ{{PLURAL:$5|グループ}} {{PLURAL:$5|$4}} から削除しました",
 	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|あなた}}は割り当てられたページを持つ{{PLURAL:$5|グループ}} {{PLURAL:$5|$4}} から削除されました。$3 で{{GENDER:$6|あなた}}への割り当てをご確認ください。",
 	"bs-pageassignments-assignee-type-user": "利用者",
-	"bs-pageassignments-assignee-type-group": "グループ"
+	"bs-pageassignments-assignee-type-group": "グループ",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "ページ数"
 }
