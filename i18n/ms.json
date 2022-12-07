@@ -6,5 +6,6 @@
 	},
 	"bs-pageassignments-text": "Tugasan",
 	"notification-bs-pageassignments-assignment-change-add-summary": "$1 {{GENDER:$1|menugaskan}} anda ke $2",
-	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$1|memindahkan}} tugasan anda ke $2"
+	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$1|memindahkan}} tugasan anda ke $2",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Bilangan laman"
 }
