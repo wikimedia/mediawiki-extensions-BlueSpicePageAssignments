@@ -11,7 +11,7 @@
 	"version": "4.2.0-alpha",
 	"descriptionmsg": "bs-pageassignments-desc",
 	"requires": {
-		"MediaWiki": ">= 1.36.0",
+		"MediaWiki": ">= 1.39.0",
 		"extensions": {
 			"BlueSpiceFoundation": ">= 4.1"
 		}
