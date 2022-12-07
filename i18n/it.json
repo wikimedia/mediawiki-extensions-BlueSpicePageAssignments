@@ -93,5 +93,6 @@
 	"apihelp-bs-pageassignment-tasks-description": "Ottenere o modificare l'elenco delle assegnazioni per una pagina specifica",
 	"apihelp-bs-pageassignment-tasks-summary": "Ottenere o modificare l'elenco di assegnazioni partorisca una pagina specifica",
 	"bs-pageassignments-secure-lockdown-reason": "L'azione \"$1\" è disponibile solo per {{PLURAL:$2|l'assegnatario|gli assegnatari}} $3",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnato a {{PLURAL:$2|pagina|pagine}}: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnato a {{PLURAL:$2|pagina|pagine}}: $1",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Numero di pagine"
 }
