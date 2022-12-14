@@ -77,5 +77,6 @@
 	"bs-pageassignments-collection-type-assignedpages": "Tilldelningar",
 	"bs-pageassignments-collection-var-namespacename": "Namnrymd",
 	"bs-pageassignments-collection-var-assignedpages": "Tilldelade sidor",
-	"bs-pageassignments-collection-var-unassignedpages": "Inte-tilldelade sidor"
+	"bs-pageassignments-collection-var-unassignedpages": "Inte-tilldelade sidor",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Antal sidor"
 }
