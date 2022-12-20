@@ -5,7 +5,8 @@
 			"Mido",
 			"Moud hosny",
 			"Tala Ali",
-			"ديفيد"
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-pageassignments-desc": "يمكنك من تعيين مستخدمين أو مجموعات لصفحة",
@@ -98,5 +99,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "تم تعيينها",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "غيرمعتمد",
 	"bs-pageassignments-dialog-input-placeholder": "إضافة مهام ...",
-	"bs-pageassignment-info-dialog": "تعيينات"
+	"bs-pageassignment-info-dialog": "تعيينات",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "عدد الصفحات"
 }
