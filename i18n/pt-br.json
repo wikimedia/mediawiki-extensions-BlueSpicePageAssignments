@@ -98,5 +98,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Atribuído",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Não atribuído",
 	"bs-pageassignments-dialog-input-placeholder": "Adicionar atribuições…",
-	"bs-pageassignment-info-dialog": "Atribuições"
+	"bs-pageassignment-info-dialog": "Atribuições",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas"
 }
