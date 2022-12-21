@@ -1,10 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Diki Ananta",
-			"Mbrt",
-			"Sumbukompor"
+			"Agam Riyandana"
 		]
 	},
-	"notification-bs-pageassignments-page-move-body": "$1 {{GENDER:$2|pindah}} halaman $2."
+	"notification-bs-pageassignments-page-move-body": "$1 {{GENDER:$2|pindah}} halaman $2.",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Jumlah halaman"
 }
