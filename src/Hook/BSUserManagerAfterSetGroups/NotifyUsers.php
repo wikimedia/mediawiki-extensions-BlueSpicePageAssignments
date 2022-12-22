@@ -3,14 +3,14 @@
 namespace BlueSpice\PageAssignments\Hook\BSUserManagerAfterSetGroups;
 
 use BlueSpice\Context;
-use BlueSpice\Data\Filter;
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Data\Assignment\Store;
 use BlueSpice\PageAssignments\Data\Record;
 use BlueSpice\PageAssignments\Notifications\GroupsAdd;
 use BlueSpice\PageAssignments\Notifications\GroupsRemove;
 use BlueSpice\UserManager\Hook\BSUserManagerAfterSetGroups;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\Filter;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
 class NotifyUsers extends BSUserManagerAfterSetGroups {
 	/** @var array */

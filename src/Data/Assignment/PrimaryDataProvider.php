@@ -8,12 +8,14 @@ use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\FilterFinder;
 use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\Record as DataStoreRecord;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @var \BlueSpice\Data\Record[]
+	 * @var DataStoreRecord[]
 	 */
 	protected $data = [];
 
@@ -24,7 +26,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	protected $db = null;
 
 	/**
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @param \Wikimedia\Rdbms\IDatabase $db
 	 */
 	public function __construct( $params, $db ) {
@@ -33,7 +35,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	public function makeData( $params ) {
@@ -68,7 +70,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	protected function makePreFilterConds( $params ) {
@@ -149,7 +151,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	protected function makePreOptionConds( $params ) {

@@ -3,12 +3,12 @@
 namespace BlueSpice\PageAssignments;
 
 use BlueSpice\Context;
-use BlueSpice\Data\Filter;
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\PageAssignments\Data\Assignment\Store;
 use BlueSpice\PageAssignments\Data\Record;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\Filter;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
 class AssignmentFactory {
 
