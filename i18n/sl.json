@@ -7,5 +7,6 @@
 	"bs-pageassignments-assignee-type-user": "Uporabnik",
 	"bs-pageassignments-collection-var-namespacename": "Imenski prostor",
 	"bs-pageassignments-assignee-type-group": "Skupina",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Število strani"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Število strani",
+	"bs-pageassignments-api-error-no-page": "Stran ni določena"
 }
