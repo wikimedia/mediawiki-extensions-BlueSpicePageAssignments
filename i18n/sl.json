@@ -4,6 +4,8 @@
 			"Eleassar"
 		]
 	},
+	"bs-pageassignments-column-title": "Naslov strani",
+	"bs-pageassignments-api-error": "Prišlo je do napake",
 	"bs-pageassignments-api-error-no-page": "Stran ni določena",
 	"bs-pageassignments-assignee-type-user": "Uporabnik",
 	"bs-pageassignments-assignee-type-group": "Skupina",
