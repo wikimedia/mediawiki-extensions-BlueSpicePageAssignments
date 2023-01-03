@@ -47,7 +47,7 @@
 	"bs-pageassignments-notification-reason": "Motifs pour cette notification :",
 	"bs-pageassignments-notification-reason-user": "Vous êtes assigné directement à la page",
 	"bs-pageassignments-notification-reason-group": "Vous êtes membre {{PLURAL:$1|du groupe|des groupes}} : $2",
-	"notification-bs-pageassignments-assignment-change-add-summary": "{{GENDER:$1|}}$1 {{GENDER:|}}vous a affecté{{GENDER:||e}} à $2",
+	"notification-bs-pageassignments-assignment-change-add-summary": "{{GENDER:$1|}}$1 {{GENDER:|}}vous a affecté{{GENDER:||e|(e)}} à $2",
 	"notification-bs-pageassignments-assignment-change-add-subject": "Assignation à $2",
 	"notification-bs-pageassignments-assignment-change-add-body": "$1 vous a assigné{{GENDER:||e}} à la page $2.",
 	"notification-bs-pageassignments-assignment-change-remove-summary": "{{GENDER:$1|}}$1 a retiré votre affectation à $2",
