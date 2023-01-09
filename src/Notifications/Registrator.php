@@ -4,6 +4,7 @@ namespace BlueSpice\PageAssignments\Notifications;
 
 use BlueSpice\NotificationManager;
 use MediaWiki\MediaWikiServices;
+use Title;
 
 class Registrator {
 	/**
@@ -68,7 +69,7 @@ class Registrator {
 				break;
 			case 'bs-delete':
 				$extra = $event->getExtra();
-				if ( isset( $extra['title'] ) && $extra['title'] instanceof \Title ) {
+				if ( isset( $extra['title'] ) && $extra['title'] instanceof Title ) {
 					$title = $extra['title'];
 					foreach ( self::getAssignedUsers( $title ) as $id => $user ) {
 						$users[$id] = $user;
@@ -81,19 +82,19 @@ class Registrator {
 	/**
 	 * Gets all users assigned to given title
 	 *
-	 * @param \Title $title
+	 * @param Title $title
 	 * @return array
 	 */
 	protected static function getAssignedUsers( $title ) {
+		$services = MediaWikiServices::getInstance();
 		if ( $title->isTalkPage() ) {
-			$title = MediaWikiServices::getInstance()->getNamespaceInfo()
-				->getSubjectPage( $title );
-			if ( $title instanceof \Title === false ) {
+			$titleTarget = $services->getNamespaceInfo()->getSubjectPage( $title );
+			$title = Title::castFromLinkTarget( $titleTarget );
+			if ( $title instanceof Title === false ) {
 				return [];
 			}
 		}
 
-		$services = MediaWikiServices::getInstance();
 		$factory = $services->getService( 'BSPageAssignmentsAssignmentFactory' );
 		$target = $factory->newFromTargetTitle( $title );
 		if ( !$target ) {
