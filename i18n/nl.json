@@ -3,7 +3,8 @@
 		"authors": [
 			"Mainframe98",
 			"McDutchie",
-			"Romaine"
+			"Romaine",
+			"Jillids"
 		]
 	},
 	"bs-pageassignments-desc": "Hiermee kunt u gebruikers of groepen aan een pagina toewijzen",
@@ -96,5 +97,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Toegewezen",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Niet toegewezen",
 	"bs-pageassignments-dialog-input-placeholder": "Toewijzingen toevoegen…",
-	"bs-pageassignment-info-dialog": "Toewijzingen"
+	"bs-pageassignment-info-dialog": "Toewijzingen",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Aantal pagina's"
 }
