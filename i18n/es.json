@@ -106,5 +106,6 @@
 	"bs-pageassignments-dialog-input-placeholder": "Añadir asignaciones...",
 	"bs-pageassignment-info-dialog": "Asignaciones",
 	"bs-pageassignments-secure-lockdown-reason": "La acción «$1» solo está disponible para {{PLURAL:$2|el grupo|los grupos}} $3",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Asignado a {{PLURAL:$2|página|páginas}}: $1"
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Asignado a {{PLURAL:$2|página|páginas}}: $1",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas"
 }
