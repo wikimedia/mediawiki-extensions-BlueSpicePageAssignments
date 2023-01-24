@@ -5,6 +5,7 @@
 			"Can",
 			"Melissadilara",
 			"MuratTheTurkish",
+			"Rapsar",
 			"SaldırganSincap"
 		]
 	},
@@ -59,7 +60,7 @@
 	"bs-pageassignments-yourassignmentsdesc": "Atandığınız sayfaların listesi.",
 	"action-pageassignable": "atanabilir kullanıcılar listesinde görünür",
 	"right-pageassignable": "Atanabilir kullanıcılar listesinde görünür",
-	"action-pageassignments": "sayfanın atamalarını düzenle",
+	"action-pageassignments": "sayfanın atamalarını değiştir",
 	"right-pageassignments": "Sayfanın atamalarını düzenle",
 	"prefs-pageassign": "Atama",
 	"bs-pageassignments-sesp-pageassignments-alias": "Atama",
