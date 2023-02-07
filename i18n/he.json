@@ -88,5 +88,11 @@
 	"bs-pageassignments-text": "שיוכים",
 	"bs-pageassignments-nav-link-title-pageassignments": "שיוכי דפים",
 	"bs-pageassignments-flyout-title": "שיוכי דפים",
-	"bs-pageassignments-pageheader-label": "שיוכים"
+	"bs-pageassignments-pageheader-label": "שיוכים",
+	"action-pageassignable": "להופיע ברשימת המשתמשים שניתן לשייך",
+	"action-pageassignments": "לערוך שיוכים של דפים",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "משויכים",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "לא משויכים",
+	"bs-pageassignments-dialog-input-placeholder": "הוספת שיוכים...",
+	"bs-pageassignment-info-dialog": "שיוכים"
 }
