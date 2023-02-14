@@ -53,7 +53,9 @@
 	"prefs-pageassignments": "שיוכי דפים",
 	"bs-pageassignments-yourassignments": "השיוכים שלך",
 	"bs-pageassignments-yourassignmentsdesc": "רשימת הדפים {{GENDER:|שאתה משויך|שאת משויכת|שאתם משויכים}} אליהם.",
+	"action-pageassignable": "להופיע ברשימת המשתמשים שניתן לשייך",
 	"right-pageassignable": "הופעה ברשימת המשתמשים שניתן לשייך",
+	"action-pageassignments": "לערוך שיוכים של דפים",
 	"right-pageassignments": "עריכת שיוכים של דפים",
 	"prefs-pageassign": "שיוך",
 	"bs-pageassignments-sesp-pageassignments-alias": "שיוך",
@@ -79,5 +81,9 @@
 	"bs-pageassignments-collection-var-namespacename": "מרחב שם",
 	"bs-pageassignments-collection-var-assignedpages": "דפים משויכים",
 	"bs-pageassignments-collection-var-unassignedpages": "דפים לא משויכים",
-	"bs-pageassignments-pageheader-label": "שיוכים"
+	"bs-pageassignments-pageheader-label": "שיוכים",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "משויכים",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "לא משויכים",
+	"bs-pageassignments-dialog-input-placeholder": "הוספת שיוכים...",
+	"bs-pageassignment-info-dialog": "שיוכים"
 }
