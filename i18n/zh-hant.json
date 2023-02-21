@@ -96,5 +96,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "已分配",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "尚未分配",
 	"bs-pageassignments-dialog-input-placeholder": "添加分配…",
-	"bs-pageassignment-info-dialog": "分配"
+	"bs-pageassignment-info-dialog": "分配",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "頁數"
 }
