@@ -394,6 +394,10 @@
 		},
 		"addPageAssignmentsEntry": {
 			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\SkinTemplateNavigation\\AddPageAssignmentsEntry"
+		},
+		"sendStabilizationNotifications": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\SendStabilizationNotifications",
+			"services": [ "TitleFactory", "BSPageAssignmentsAssignmentFactory", "BSNotificationManager" ]
 		}
 	},
 	"Hooks": {
@@ -439,7 +443,9 @@
 		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
-		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
+		"ContentStabilizationStablePointAddedHook": "sendStabilizationNotifications",
+		"ContentStabilizationStablePointUpdatedHook": "sendStabilizationNotifications"
 	},
 	"manifest_version": 2
 }

@@ -95,5 +95,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Not assigned",
 	"bs-pageassignments-dialog-input-placeholder": "Add assignments…",
 	"bs-pageassignment-info-dialog": "Assignments",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Number of pages"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Number of pages",
+	"bs-pageassignments-notification-pagereview-summary": "$1 has reviewed $3",
+	"bs-pageassignments-notification-pagereview-subject": "Review of page $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 has reviewed page $2."
 }
