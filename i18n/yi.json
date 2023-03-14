@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"פוילישער"
+			"פוילישער",
+			"Pacha Tchernof"
 		]
 	},
 	"bs-pageassignments-assignee-type-everyone": "יעדער איינער",
 	"bs-pageassignments-assignee-type-user": "באַניצער",
-	"bs-pageassignments-assignee-type-group": "גרופע"
+	"bs-pageassignments-assignee-type-group": "גרופּע",
+	"bs-pageassignments-collection-var-namespacename": "נאָמענטייל"
 }
