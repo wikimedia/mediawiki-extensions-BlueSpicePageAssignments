@@ -3,24 +3,46 @@
 namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
 use BlueSpice\Data\User\Record;
+use BlueSpice\PageAssignments\IAssignment;
+use GlobalVarConfig;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\Schema;
+use Title;
+use Wikimedia\Rdbms\IDatabase;
 
-class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
+class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQueryStore\PrimaryDataProvider {
+
+	/**
+	 * @var null | ReaderParams
+	 */
+	private $params = null;
 
 	/**
 	 *
-	 * @var \IContextSource
+	 * @var Title
 	 */
-	protected $context = null;
+	protected $title = null;
 
 	/**
-	 *
-	 * @param \Wikimedia\Rdbms\IDatabase $db
-	 * @param \IContextSource $context
+	 * @param IDatabase $db
+	 * @param Schema $schema
+	 * @param GlobalVarConfig $mwsgConfig
+	 * @param Title $title
 	 */
-	public function __construct( $db, $context ) {
-		$this->context = $context;
-		parent::__construct( $db );
+	public function __construct( IDatabase $db, Schema $schema, GlobalVarConfig $mwsgConfig, Title $title ) {
+		parent::__construct( $db, $schema, $mwsgConfig );
+		$this->title = $title;
+	}
+
+	/**
+	 * @param ReaderParams $params
+	 *
+	 * @return \MWStake\MediaWiki\Component\DataStore\Record[]
+	 */
+	public function makeData( $params ) {
+		$this->params = $params;
+		return parent::makeData( $params );
 	}
 
 	/**
@@ -50,7 +72,7 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 		}
 
 		if ( !$services->getPermissionManager()
-			->userCan( 'pageassignable', $user, $this->context->getTitle() )
+			->userCan( 'pageassignable', $user, $this->title )
 		) {
 			return;
 		}
@@ -58,9 +80,9 @@ class PrimaryDataProvider extends \BlueSpice\Data\User\PrimaryDataProvider {
 		$assignment = $assignmentFactory->factory(
 			'user',
 			$row->{Record::USER_NAME},
-			$this->context->getTitle()
+			$this->title
 		);
-		if ( !$assignment instanceof \BlueSpice\PageAssignments\IAssignment ) {
+		if ( !$assignment instanceof IAssignment ) {
 			// :(
 			return;
 		}

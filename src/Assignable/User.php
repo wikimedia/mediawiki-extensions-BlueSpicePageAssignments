@@ -12,9 +12,14 @@ class User extends \BlueSpice\PageAssignments\Assignable {
 	 * @return Store
 	 */
 	public function getStore() {
+		$services = MediaWikiServices::getInstance();
 		return new Store(
-			$this->context,
-			MediaWikiServices::getInstance()->getDBLoadBalancer()
+			$services->getDBLoadBalancer(),
+			$services->getUserFactory(),
+			$services->getLinkRenderer(),
+			$services->getTitleFactory(),
+			$services->getService( 'MWStakeCommonUtilsConfig' ),
+			$this->context->getTitle()
 		);
 	}
 
