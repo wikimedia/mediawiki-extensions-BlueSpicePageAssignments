@@ -13,8 +13,9 @@ class Group extends \BlueSpice\PageAssignments\Assignable {
 	 */
 	public function getStore() {
 		return new Store(
-			$this->context,
-			MediaWikiServices::getInstance()->getDBLoadBalancer()
+			MediaWikiServices::getInstance()->getService( 'MWStakeCommonUtilsFactory' ),
+			MediaWikiServices::getInstance()->getService( 'MWStakeCommonUtilsConfig' ),
+			$this->context->getTitle()
 		);
 	}
 

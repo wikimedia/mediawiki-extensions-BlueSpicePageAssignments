@@ -2,14 +2,31 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
-class Store extends \BlueSpice\PageAssignments\Data\Assignable\Store {
+use GlobalVarConfig;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
+use Title;
+
+class Store extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\Store {
+
+	/** @var Title */
+	protected $contextTitle;
+
+	/**
+	 * @param UtilityFactory $utilityFactory
+	 * @param GlobalVarConfig $mwsgConfig
+	 * @param Title $contextTitle
+	 */
+	public function __construct( UtilityFactory $utilityFactory, GlobalVarConfig $mwsgConfig, Title $contextTitle ) {
+		parent::__construct( $utilityFactory, $mwsgConfig );
+		$this->contextTitle = $contextTitle;
+	}
 
 	/**
 	 *
 	 * @return Reader
 	 */
 	public function getReader() {
-		return new Reader( $this->loadBalancer, $this->context );
+		return new Reader( $this->groupHelper, $this->mwsgConfig, $this->contextTitle );
 	}
 
 }

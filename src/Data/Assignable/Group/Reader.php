@@ -2,17 +2,33 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
+use GlobalVarConfig;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use MWStake\MediaWiki\Component\Utils\Utility\GroupHelper;
+use Title;
 
-class Reader extends \BlueSpice\PageAssignments\Data\Assignable\Reader {
+class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\Reader {
+
+	/** @var Title */
+	protected $contextTitle;
+
+	/**
+	 * @param GroupHelper $groupHelper
+	 * @param GlobalVarConfig $mwsgConfig
+	 * @param Title $contextTitle
+	 */
+	public function __construct( GroupHelper $groupHelper, GlobalVarConfig $mwsgConfig, Title $contextTitle ) {
+		parent::__construct( $groupHelper, $mwsgConfig );
+		$this->contextTitle = $contextTitle;
+	}
 
 	/**
 	 *
 	 * @param ReaderParams $params
 	 * @return PrimaryDataProvider
 	 */
-	protected function makePrimaryDataProvider( $params ) {
-		return new PrimaryDataProvider( $this->db, $this->context );
+	public function makePrimaryDataProvider( $params ) {
+		return new PrimaryDataProvider( $this->groupHelper, $this->mwsgConfig, $this->contextTitle );
 	}
 
 	/**
