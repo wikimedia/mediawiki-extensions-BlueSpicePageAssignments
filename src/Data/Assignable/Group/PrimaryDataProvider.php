@@ -2,62 +2,48 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
+use BlueSpice\PageAssignments\IAssignment;
+use GlobalVarConfig;
 use MediaWiki\MediaWikiServices;
-use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
+use MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\GroupRecord;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
-use MWStake\MediaWiki\Component\DataStore\Record;
+use MWStake\MediaWiki\Component\Utils\Utility\GroupHelper;
+use Title;
 
-class PrimaryDataProvider implements IPrimaryDataProvider {
-
-	/**
-	 *
-	 * @var Record[]
-	 */
-	protected $data = [];
+class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\PrimaryDataProvider {
+	/** @var Title */
+	private $title;
 
 	/**
-	 *
-	 * @var \Wikimedia\Rdbms\IDatabase
+	 * @param GroupHelper $groupHelper
+	 * @param GlobalVarConfig $mwsgConfig
+	 * @param Title $title
 	 */
-	protected $db = null;
-
-	/**
-	 *
-	 * @var \IContextSource
-	 */
-	protected $context = null;
-
-	/**
-	 *
-	 * @param \Wikimedia\Rdbms\IDatabase $db
-	 * @param \IContextSource $context
-	 */
-	public function __construct( $db, $context ) {
-		$this->context = $context;
-		$this->db = $db;
+	public function __construct( GroupHelper $groupHelper, GlobalVarConfig $mwsgConfig, Title $title ) {
+		parent::__construct( $groupHelper, $mwsgConfig );
+		$this->title = $title;
 	}
 
 	/**
-	 *
 	 * @param ReaderParams $params
+	 *
 	 * @return array
 	 */
 	public function makeData( $params ) {
-		$this->params = $params;
+		$parentData = parent::makeData( $params );
+
 		$this->data = [];
-
-		$config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig(
-			'bsg'
-		);
-
-		$groupHelper = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )->getGroupHelper();
-		$availableGroups = $groupHelper->getAvailableGroups();
-
-		foreach ( $availableGroups as $groupname ) {
-			$this->appendRowToData( $groupname );
+		foreach ( $parentData as $dataItem ) {
+			$this->appendRowToData( $dataItem->get( GroupRecord::GROUP_NAME ) );
 		}
-
 		return $this->data;
+	}
+
+	/**
+	 * @return string[]
+	 */
+	protected function getGroupFilter(): array {
+		return [ 'core-minimal', 'extension-minimal', 'custom' ];
 	}
 
 	/**
@@ -72,26 +58,11 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 		$assignment = $assignmentFactory->factory(
 			'group',
 			$groupname,
-			$this->context->getTitle()
+			$this->title
 		);
-		if ( !$assignment instanceof \BlueSpice\PageAssignments\IAssignment ) {
+		if ( !$assignment instanceof IAssignment ) {
 			// :(
 			return;
-		}
-
-		if ( $this->params->getQuery() !== '' ) {
-			$bApply = \BsStringHelper::filter(
-				\BsStringHelper::FILTER_CONTAINS,
-				$assignment->getKey(),
-				$this->params->getQuery()
-			) || \BsStringHelper::filter(
-				\BsStringHelper::FILTER_CONTAINS,
-				$assignment->getText(),
-				$this->params->getQuery()
-			);
-			if ( !$bApply ) {
-				return;
-			}
 		}
 
 		$this->data[] = $assignment->getRecord();
