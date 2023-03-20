@@ -2,9 +2,9 @@
 $IP = dirname( dirname( dirname( __DIR__ ) ) );
 require_once $IP . '/extensions/BlueSpiceFoundation/maintenance/BSMaintenance.php';
 
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\PageAssignments\Data\Record;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
 class ManageAssignments extends BSMaintenance {
 
