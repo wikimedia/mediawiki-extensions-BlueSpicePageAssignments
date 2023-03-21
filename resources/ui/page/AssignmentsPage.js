@@ -51,7 +51,14 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 			type: {
 				type: "icon",
 				valueParser: function( value ) {
-					return value === 'user' ? 'userAvatar' : 'userGroup';
+					var map = {
+						user: 'userAvatar',
+						group: 'userGroup'
+					};
+					if ( map.hasOwnProperty( value ) ) {
+						return map[value];
+					}
+					return value;
 				},
 				width: 50
 			},
