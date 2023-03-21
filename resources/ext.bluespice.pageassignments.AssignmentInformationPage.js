@@ -34,7 +34,7 @@
 				}, me );
 			});
 		}
-	}
+	};
 
 	bs.pageassignments.info.AssignmentsInformationPage.prototype.getData = function () {
 

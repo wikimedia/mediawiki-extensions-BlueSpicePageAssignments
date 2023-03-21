@@ -268,31 +268,6 @@
 				"ext.bluespice.pageassignments.assignable.messages"
 			]
 		},
-		"ext.bluespice.pageassignments.flyout": {
-			"scripts": [
-				"bluespice.pageassignments.flyout.js"
-			],
-			"messages": [
-				"bs-pageassignments-nav-link-title-pageassignments",
-				"bs-pageassignments-flyout-title",
-				"bs-pageassignments-flyout-intro",
-				"bs-pageassignments-flyout-form-title",
-				"bs-pageassignments-flyout-grid-title",
-				"bs-pageassignments-flyout-manager-btn-label"
-			],
-			"dependencies": [
-				"ext.bluespice.extjs",
-				"ext.bluespice"
-			]
-		},
-		"ext.bluespice.pageassignments.graphicallist": {
-			"scripts": [
-				"ext.bluespice.pageassignments.GraphicalList.js"
-			],
-			"dependencies": [
-				"ext.pageassignments.scripts"
-			]
-		},
 		"ext.bluespice.pageassignments.assignable.messages": {
 			"class": "\\BlueSpice\\PageAssignments\\ResourceLoader\\Messages"
 		},
@@ -335,7 +310,8 @@
 				"ext.bluespice.pageassignments.AssignmentInformationPage.js"
 			],
 			"messages": [
-				"bs-pageassignment-info-dialog"
+				"bs-pageassignment-info-dialog",
+				"bs-pageassignments-flyout-title"
 			],
 			"dependencies": [
 				"ext.bluespice"
@@ -411,8 +387,7 @@
 		],
 		"BeforePageDisplay": [
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddResources::callback",
-			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddWikiExplorerResources::callback",
-			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\FetchPageAssignments::callback"
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddWikiExplorerResources::callback"
 		],
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\PageAssignments\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
