@@ -47,6 +47,14 @@ class Registrator {
 				'presentation-model' => PresentationModel\GroupsRemove::class
 			]
 		);
+
+		$notificationsManager->registerNotification(
+			'bs-pageassignments-page-approval',
+			[
+				'category' => 'bs-pageassignments-action-cat',
+				'presentation-model' => PresentationModel\PageReview::class
+			]
+		);
 	}
 
 	/**
