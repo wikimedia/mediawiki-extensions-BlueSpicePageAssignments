@@ -95,5 +95,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nedodeljeno",
 	"bs-pageassignments-dialog-input-placeholder": "Dodajte dodelitve ...",
 	"bs-pageassignment-info-dialog": "Dodelitve",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Število strani"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Število strani",
+	"bs-pageassignments-notification-pagereview-summary": "$1 je pregledal_a $3",
+	"bs-pageassignments-notification-pagereview-subject": "Pregled strani $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 je pregledal_a stran $2."
 }
