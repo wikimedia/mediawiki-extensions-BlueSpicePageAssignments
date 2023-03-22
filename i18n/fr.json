@@ -105,5 +105,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non affecté",
 	"bs-pageassignments-dialog-input-placeholder": "Ajouter des affectations...",
 	"bs-pageassignment-info-dialog": "Affectations",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Nombre de pages"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Nombre de pages",
+	"bs-pageassignments-notification-pagereview-summary": "$1 a relu $3",
+	"bs-pageassignments-notification-pagereview-subject": "Relecture de la page $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 a relu la page $2."
 }
