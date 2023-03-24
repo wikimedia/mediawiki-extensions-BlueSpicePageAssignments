@@ -16,10 +16,6 @@
 	"bs-pageassignments-assignee-type-everyone": "ο καθένας",
 	"bs-pageassignments-assignee-type-user": "Χρήστης",
 	"bs-pageassignments-assignee-type-group": "Ομάδα",
-	"bs-pageassignments-nav-link-title-pageassignments": "Αναθέσεις σελίδας",
 	"bs-pageassignments-flyout-title": "Αναθέσεις σελίδας",
-	"bs-pageassignments-flyout-form-title": "Προσθήκη ανάθεσης",
-	"bs-pageassignments-flyout-grid-title": "Χρήστες και ομάδες ανατεθειμένες σε αυτή τη σελίδα",
-	"bs-pageassignments-flyout-manager-btn-label": "Διαχειριστής αναθέσεων σελίδας",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpice Αναθεση εργασιών σε Σελίδες - Aνατέθηκε {{PLURAL:$2|στην σελίδα|pages}}: $1"
 }
