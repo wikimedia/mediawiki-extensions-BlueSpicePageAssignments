@@ -16,6 +16,9 @@ class AddPageAssignmentsEntry implements SkinTemplateNavigation__UniversalHook {
 		if ( $sktemplate->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
 			return true;
 		}
+		if ( !$sktemplate->getTitle()->exists() ) {
+			return true;
+		}
 		if ( !MediaWikiServices::getInstance()->getPermissionManager()
 			->userCan(
 				'pageassignments',
