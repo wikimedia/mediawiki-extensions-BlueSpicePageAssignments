@@ -13,6 +13,9 @@ class AddPageAssignmentsEntry extends SkinTemplateNavigationUniversal {
 		if ( $this->sktemplate->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
 			return true;
 		}
+		if ( !$this->sktemplate->getTitle()->exists() ) {
+			return true;
+		}
 		if ( !$this->getServices()->getPermissionManager()
 			->userCan(
 				'pageassignments',
