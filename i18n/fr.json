@@ -86,12 +86,7 @@
 	"bs-pageassignments-secure-nsm-label": "Assignations de pages sécurisées",
 	"bs-pageassignments-secure-lockdown-reason": "L’action « $1 » n’est disponible que pour {{PLURAL:$2|l’utilisateur affecté|les utilisateurs affectés}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Vous n’êtes pas assigné à la page $1",
-	"bs-pageassignments-nav-link-title-pageassignments": "Assignations de pages",
 	"bs-pageassignments-flyout-title": "Assignation de pages",
-	"bs-pageassignments-flyout-intro": "Vous pouvez assigner ici des utilisateurs ou des groupes à cette page. Ils seront informés des modifications et pourront obtenir des droits supplémentaires. Si activé, vous pouvez également leur demander de confirmer qu’ils ont lu la page.",
-	"bs-pageassignments-flyout-form-title": "Ajouter une assignation",
-	"bs-pageassignments-flyout-grid-title": "Utilisateurs et groupes assignés à cette page",
-	"bs-pageassignments-flyout-manager-btn-label": "Gestionnaire des assignations de pages",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – Page{{PLURAL:$2||s}} qui vous {{PLURAL:$2|est|sont}} affecté{{PLURAL:$2||s}} : $1",
 	"bs-pageassignments-collection-type-assignedpages": "Affectations",
 	"bs-pageassignments-collection-var-namespacename": "Espace de noms",
@@ -105,5 +100,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non affecté",
 	"bs-pageassignments-dialog-input-placeholder": "Ajouter des affectations...",
 	"bs-pageassignment-info-dialog": "Affectations",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Nombre de pages"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Nombre de pages",
+	"bs-pageassignments-notification-pagereview-summary": "$1 a relu $3",
+	"bs-pageassignments-notification-pagereview-subject": "Relecture de la page $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 a relu la page $2."
 }

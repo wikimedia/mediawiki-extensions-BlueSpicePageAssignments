@@ -11,5 +11,7 @@
 	"apihelp-bs-mypageassignment-store-description": "Врати странице које су додељене тренутном кориснику",
 	"apihelp-bs-pageassignment-tasks-description": "Добијте или измените листу задатака за одређену страницу",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpice доделе страницама — Додељено {{PLURAL:$2|страници|страницама}}: $1",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Број страница"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Број страница",
+	"bs-pageassignments-notification-pagereview-summary": "$1 је прегледао $3",
+	"bs-pageassignments-notification-pagereview-body": "$1 је прегледао страницу $2."
 }
