@@ -100,5 +100,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Não atribuído",
 	"bs-pageassignments-dialog-input-placeholder": "Adicionar atribuições…",
 	"bs-pageassignment-info-dialog": "Atribuições",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas",
+	"bs-pageassignments-notification-pagereview-summary": "$1 revisou $3",
+	"bs-pageassignments-notification-pagereview-subject": "Revisão da página $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 revisou a página $2."
 }
