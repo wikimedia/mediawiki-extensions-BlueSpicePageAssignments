@@ -4,6 +4,7 @@
 			"*Surak*",
 			"Ameisenigel",
 			"Hwboehm",
+			"Justman10000",
 			"Luke081515",
 			"Metalhead64",
 			"Mglaser",
@@ -114,5 +115,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nicht zugewiesen",
 	"bs-pageassignments-dialog-input-placeholder": "Zuweisungen hinzufügen …",
 	"bs-pageassignment-info-dialog": "Zuweisungen",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Anzahl an Seiten"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Anzahl an Seiten",
+	"bs-pageassignments-notification-pagereview-summary": "$1 hat $3 überprüft",
+	"bs-pageassignments-notification-pagereview-subject": "Überprüfung der Seite $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 hat Seite $2 überprüft."
 }
