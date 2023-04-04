@@ -10,7 +10,9 @@
 			"Robert Vogel",
 			"TMg",
 			"Tiin",
-			"Umherirrender"
+			"Umherirrender",
+			"*Surak*",
+			"Justman10000"
 		]
 	},
 	"bs-pageassignments-desc": "Erlaubt die Zuweisung von Zielgruppen zu einer Seite",
@@ -85,12 +87,7 @@
 	"bs-pageassignments-secure-nsm-label": "Abgesicherte Zuweisungen",
 	"bs-pageassignments-secure-lockdown-reason": "Die Aktion „$1“ ist nur für {{PLURAL:$2|den|die}} Bevollmächtigten $3 verfügbar",
 	"bs-pageassignments-group-lockdown-reason": "Du bist nicht der Seite $1 zugewiesen",
-	"bs-pageassignments-nav-link-title-pageassignments": "Seitenzuweisungen",
 	"bs-pageassignments-flyout-title": "Seitenzuweisungen",
-	"bs-pageassignments-flyout-intro": "Du kannst hier Benutzer oder Gruppen dieser Seite zuordnen. Sie werden über Änderungen informiert und können zusätzliche Berechtigungen erhalten. Falls aktiviert, kannst du sie auch darum bitten, zu bestätigen, wenn sie die Seite gelesen haben.",
-	"bs-pageassignments-flyout-form-title": "Zuweisung hinzufügen",
-	"bs-pageassignments-flyout-grid-title": "Benutzer und Gruppen, die dieser Seite zugewiesen sind.",
-	"bs-pageassignments-flyout-manager-btn-label": "Verwaltung von Seitenzuweisungen",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – {{PLURAL:$2|Der Seite|Den Seiten}} zugewiesen: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Zuweisungen",
 	"bs-pageassignments-collection-var-namespacename": "Namensraum",
@@ -104,5 +101,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nicht zugewiesen",
 	"bs-pageassignments-dialog-input-placeholder": "Zuweisungen hinzufügen …",
 	"bs-pageassignment-info-dialog": "Zuweisungen",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Anzahl an Seiten"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Anzahl an Seiten",
+	"bs-pageassignments-notification-pagereview-summary": "$1 hat $3 überprüft",
+	"bs-pageassignments-notification-pagereview-subject": "Überprüfung der Seite $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 hat Seite $2 überprüft."
 }

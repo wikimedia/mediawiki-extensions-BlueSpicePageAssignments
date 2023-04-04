@@ -5,7 +5,8 @@
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Felipe L. Ewald",
-			"Juan90264"
+			"Juan90264",
+			"Re demz"
 		]
 	},
 	"bs-pageassignments-desc": "Permite atribuir uma página a utilizadores ou grupos",
@@ -80,12 +81,7 @@
 	"bs-pageassignments-secure-nsm-label": "Atribuições seguras de páginas",
 	"bs-pageassignments-secure-lockdown-reason": "A operação \"$1\" só está disponível para {{PLURAL:$2|o usuário atribuído|os usuários atribuídos}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Você não está atribuído à página $1",
-	"bs-pageassignments-nav-link-title-pageassignments": "Atribuições de páginas",
 	"bs-pageassignments-flyout-title": "Atribuições de páginas",
-	"bs-pageassignments-flyout-intro": "Você pode atribuir usuários ou grupos a esta página aqui. Eles serão informados sobre mudanças e podem obter direitos adicionais. Se ativado, você também pode pedir para confirmar que leu a página.",
-	"bs-pageassignments-flyout-form-title": "Adicionar atribuição",
-	"bs-pageassignments-flyout-grid-title": "Usuários e grupos para quem esta página foi atribuída",
-	"bs-pageassignments-flyout-manager-btn-label": "Gerenciar as atribuições de páginas",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Página atribuída|Páginas atribuídas}} ao usuário: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Atribuições",
 	"bs-pageassignments-collection-var-namespacename": "Espaço nominal",
@@ -99,5 +95,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Não atribuído",
 	"bs-pageassignments-dialog-input-placeholder": "Adicionar atribuições…",
 	"bs-pageassignment-info-dialog": "Atribuições",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas",
+	"bs-pageassignments-notification-pagereview-summary": "$1 revisou $3",
+	"bs-pageassignments-notification-pagereview-subject": "Revisão da página $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 revisou a página $2."
 }
