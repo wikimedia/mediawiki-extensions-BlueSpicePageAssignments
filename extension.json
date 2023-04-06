@@ -431,7 +431,9 @@
 		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
-		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
+		"ContentStabilizationStablePointAdded": "sendStabilizationNotifications",
+		"ContentStabilizationStablePointUpdated": "sendStabilizationNotifications"
 	},
 	"manifest_version": 2
 }
