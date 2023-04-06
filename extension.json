@@ -419,8 +419,8 @@
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
 		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
-		"ContentStabilizationStablePointAddedHook": "sendStabilizationNotifications",
-		"ContentStabilizationStablePointUpdatedHook": "sendStabilizationNotifications"
+		"ContentStabilizationStablePointAdded": "sendStabilizationNotifications",
+		"ContentStabilizationStablePointUpdated": "sendStabilizationNotifications"
 	},
 	"manifest_version": 2
 }
