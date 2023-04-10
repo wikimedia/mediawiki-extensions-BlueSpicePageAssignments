@@ -107,5 +107,5 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Label for axis of statistics report about number of assigned pages",
 	"bs-pageassignments-notification-pagereview-summary": "Notification summary that describes who approved what page.\n* $1 - username of the user that approved the page.\n* $3 - Name of the page, that was approved",
 	"bs-pageassignments-notification-pagereview-subject": "Notification subject that describes, what page was approved.\n* $2 - Name of the page, that was approved",
-	"bs-pageassignments-notification-pagereview-body": "Notification body that describes, who approved what page.\n* $1 - username of the user that approved the page.\n* $2 - Name of the page, that was approved\n* $3 - Name of the page, that was approved"
+	"bs-pageassignments-notification-pagereview-body": "Notification body that describes, who approved what page.\n* $1 - username of the user that approved the page.\n* $2 - name of the page, that was approved"
 }
