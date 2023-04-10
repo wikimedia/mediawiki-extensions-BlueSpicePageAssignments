@@ -9,7 +9,8 @@
 			"Tmv",
 			"UsagiNeko",
 			"Yusuke1109",
-			"しぃ"
+			"しぃ",
+			"もなー(偽物)"
 		]
 	},
 	"pageassignments": "割り当て",
@@ -51,5 +52,12 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "ページ数",
 	"bs-pageassignments-notification-pagereview-summary": "$1が$3をレビューしました",
 	"bs-pageassignments-notification-pagereview-subject": "ページ$2のレビュー",
-	"bs-pageassignments-notification-pagereview-body": "$1がページ$2をレビューしました。"
+	"bs-pageassignments-notification-pagereview-body": "$1がページ$2をレビューしました。",
+	"prefs-pageassign": "割り当て",
+	"bs-pageassignments-sesp-pageassignments-alias": "割り当て",
+	"bs-pageassignments-sesp-pageassignments-desc": "割り当て",
+	"bs-usagetracker-pageassignments": "割り当てのあるページ",
+	"bs-pageassignments-assignee-special-everyone-label": "すべての人",
+	"bs-pageassignments-assignee-type-everyone": "すべての人",
+	"bs-pageassignments-secure-nsm-label": "ページ割り当てを設定する"
 }
