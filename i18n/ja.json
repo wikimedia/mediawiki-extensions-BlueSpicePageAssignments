@@ -9,7 +9,8 @@
 			"UsagiNeko",
 			"Yusuke1109",
 			"しぃ",
-			"MathXplore"
+			"MathXplore",
+			"もなー(偽物)"
 		]
 	},
 	"pageassignments": "割り当て",
@@ -38,8 +39,15 @@
 	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|あなた}}は割り当てられたページを持つ{{PLURAL:$5|グループ}} {{PLURAL:$5|$4}} から削除されました。",
 	"notification-bs-pageassignments-user-group-remove-subject": "割り当てられたページを持つ{{PLURAL:$5|グループ}} {{PLURAL:$5|$4}} から削除しました",
 	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|あなた}}は割り当てられたページを持つ{{PLURAL:$5|グループ}} {{PLURAL:$5|$4}} から削除されました。$3 で{{GENDER:$6|あなた}}への割り当てをご確認ください。",
+	"prefs-pageassign": "割り当て",
+	"bs-pageassignments-sesp-pageassignments-alias": "割り当て",
+	"bs-pageassignments-sesp-pageassignments-desc": "割り当て",
+	"bs-usagetracker-pageassignments": "割り当てのあるページ",
+	"bs-pageassignments-assignee-special-everyone-label": "すべての人",
+	"bs-pageassignments-assignee-type-everyone": "すべての人",
 	"bs-pageassignments-assignee-type-user": "利用者",
 	"bs-pageassignments-assignee-type-group": "グループ",
+	"bs-pageassignments-secure-nsm-label": "ページ割り当てを設定する",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "ページ数",
 	"bs-pageassignments-notification-pagereview-summary": "$1が$3をレビューしました",
 	"bs-pageassignments-notification-pagereview-subject": "ページ$2のレビュー",
