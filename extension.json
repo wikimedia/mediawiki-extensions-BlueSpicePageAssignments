@@ -224,7 +224,7 @@
 			],
 			"messages": [
 				"bs-pageassignments-column-title",
-				"bs-pageassignments-column-assignedby"
+				"bs-pageassignments-column-assignedto"
 			],
 			"dependencies": [
 				"ext.pageassignments.scripts",
@@ -262,7 +262,7 @@
 		"ext.bluespice.pageassignments.portlet": {
 			"messages": [
 				"bs-pageassignments-column-title",
-				"bs-pageassignments-column-assignedby"
+				"bs-pageassignments-column-assignedto"
 			],
 			"dependencies": [
 				"ext.bluespice.pageassignments.assignable.messages"

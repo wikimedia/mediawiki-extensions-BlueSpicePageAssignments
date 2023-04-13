@@ -34,7 +34,7 @@ Ext.define( 'BS.PageAssignments.portlets.PageAssignmentsPortlet', {
 				dataIndex: 'page_link',
 				width: '40%'
 			},{
-				text : mw.message('bs-pageassignments-column-assignedby').plain(),
+				text : mw.message('bs-pageassignments-column-assignedto').plain(),
 				dataIndex: 'assigned_by',
 				sortable: false,
 				width: '60%',
