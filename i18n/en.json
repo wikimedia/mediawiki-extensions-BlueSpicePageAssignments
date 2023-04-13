@@ -15,7 +15,7 @@
 	"bs-pageassignments-action-apiedit-description": "Edit assignments of $1",
 	"bs-pageassignments-column-title": "Pagetitle",
 	"bs-pageassignments-column-assignments": "Assignments",
-	"bs-pageassignments-column-assignedby": "Assigned by",
+	"bs-pageassignments-column-assignedto": "Assigned to",
 	"bs-pageassignments-no-assignments": "No assignments",
 	"bs-pageassignments-action-log": "Assignments log",
 	"bs-pageassignments-action-delete-confirm": "Remove assignment?",
