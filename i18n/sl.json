@@ -98,5 +98,6 @@
 	"bs-pageassignment-info-dialog": "Dodelitve",
 	"bs-pageassignments-notification-pagereview-summary": "$1 je pregledal_a $3",
 	"bs-pageassignments-notification-pagereview-subject": "Pregled strani $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 je pregledal_a stran $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 je pregledal_a stran $2.",
+	"bs-pageassignments-column-assignedto": "Dodeljeno"
 }
