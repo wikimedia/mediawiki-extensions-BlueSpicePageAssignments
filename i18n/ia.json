@@ -98,5 +98,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Numero de paginas",
 	"bs-pageassignments-notification-pagereview-summary": "$1 ha revidite $3",
 	"bs-pageassignments-notification-pagereview-subject": "Revision del pagina $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 ha revidite le pagina $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 ha revidite le pagina $2.",
+	"bs-pageassignments-column-assignedto": "Assignate a"
 }
