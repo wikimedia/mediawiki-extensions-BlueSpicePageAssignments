@@ -23,7 +23,6 @@
 	"bs-pageassignments-action-apiedit-description": "Редагувати призначення для $1",
 	"bs-pageassignments-column-title": "Назва сторінки",
 	"bs-pageassignments-column-assignments": "Призначення",
-	"bs-pageassignments-column-assignedby": "Призначено користувачем",
 	"bs-pageassignments-no-assignments": "Жодних призначень",
 	"bs-pageassignments-action-log": "Журнал призначень",
 	"bs-pageassignments-action-delete-confirm": "Вилучити призначення?",

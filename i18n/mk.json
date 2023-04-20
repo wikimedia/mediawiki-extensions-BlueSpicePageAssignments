@@ -12,7 +12,6 @@
 	"bs-pageassignments-menu-label": "Уреди доделување",
 	"bs-pageassignments-action-apiedit-description": "Уреди доделувања на $1",
 	"bs-pageassignments-column-assignments": "Доделувања",
-	"bs-pageassignments-column-assignedby": "Доделен од",
 	"bs-pageassignments-no-assignments": "Нема доделувања",
 	"bs-pageassignments-action-log": "Дневник на доделувања",
 	"bs-pageassignments-api-error": "Се појави грешка",

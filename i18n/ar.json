@@ -20,7 +20,6 @@
 	"bs-pageassignments-action-apiedit-description": "تعديل مهام $1",
 	"bs-pageassignments-column-title": "عنوان الصفحة",
 	"bs-pageassignments-column-assignments": "التعيينات",
-	"bs-pageassignments-column-assignedby": "تم التعيين بواسطة",
 	"bs-pageassignments-no-assignments": "لا يوجد تعيينات",
 	"bs-pageassignments-action-log": "سجل المهام",
 	"bs-pageassignments-action-delete-confirm": "إزالة التعيين؟",

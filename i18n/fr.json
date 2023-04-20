@@ -25,7 +25,6 @@
 	"bs-pageassignments-action-apiedit-description": "Modifier les assignations de $1",
 	"bs-pageassignments-column-title": "Titre de page",
 	"bs-pageassignments-column-assignments": "Affectations",
-	"bs-pageassignments-column-assignedby": "Assigné par",
 	"bs-pageassignments-no-assignments": "Aucune assignation",
 	"bs-pageassignments-action-log": "Journal des affectations",
 	"bs-pageassignments-action-delete-confirm": "Supprimer l’affectation ?",

@@ -20,7 +20,6 @@
 	"bs-pageassignments-action-apiedit-description": "$1 atamaları düzenleme",
 	"bs-pageassignments-column-title": "Sayfa başlığı",
 	"bs-pageassignments-column-assignments": "Atamalar",
-	"bs-pageassignments-column-assignedby": "Atayan:",
 	"bs-pageassignments-no-assignments": "Atama yok",
 	"bs-pageassignments-action-log": "Atama günlüğü",
 	"bs-pageassignments-action-delete-confirm": "Atamayı kaldırılsın mı?",

@@ -15,7 +15,7 @@
 	"bs-pageassignments-action-apiedit-description": "Urejanje dodelitev $1",
 	"bs-pageassignments-column-title": "Naslov strani",
 	"bs-pageassignments-column-assignments": "Dodelitve",
-	"bs-pageassignments-column-assignedby": "Dodelil_a",
+	"bs-pageassignments-column-assignedto": "Dodeljeno",
 	"bs-pageassignments-no-assignments": "Ni dodelitev",
 	"bs-pageassignments-action-log": "Dnevnik dodelitev",
 	"bs-pageassignments-action-delete-confirm": "Odstranim dodelitev?",

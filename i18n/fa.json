@@ -15,7 +15,6 @@
 	"bs-pageassignments-action-apiedit-description": "ویرایش تکلیف $1",
 	"bs-pageassignments-column-title": "عنوان صفحه",
 	"bs-pageassignments-column-assignments": "تکلیف‌ها",
-	"bs-pageassignments-column-assignedby": "اختصاص‌داده‌شده توسط",
 	"bs-pageassignments-no-assignments": "تکلیفی موجود نیست",
 	"bs-pageassignments-action-log": "سیاههٔ تکلیف‌ها",
 	"bs-pageassignments-action-delete-confirm": "تکلیف حذف شود؟",

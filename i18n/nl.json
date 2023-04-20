@@ -18,7 +18,6 @@
 	"bs-pageassignments-action-apiedit-description": "Bewerk opdrachten van $1",
 	"bs-pageassignments-column-title": "Paginanaam",
 	"bs-pageassignments-column-assignments": "Opdrachten",
-	"bs-pageassignments-column-assignedby": "Toegewezen door",
 	"bs-pageassignments-no-assignments": "Geen opdrachten",
 	"bs-pageassignments-action-log": "Opdrachtenlogboek",
 	"bs-pageassignments-action-delete-confirm": "Opdracht verwijderen?",

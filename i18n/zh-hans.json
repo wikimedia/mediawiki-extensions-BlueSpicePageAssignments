@@ -35,7 +35,6 @@
 	"bs-pageassignments-action-apiedit-description": "编辑$1的分配",
 	"bs-pageassignments-column-title": "页面标题",
 	"bs-pageassignments-column-assignments": "分配",
-	"bs-pageassignments-column-assignedby": "分配自",
 	"bs-pageassignments-no-assignments": "无分配",
 	"bs-pageassignments-action-log": "分配日志",
 	"bs-pageassignments-action-delete-confirm": "移除分配？",

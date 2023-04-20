@@ -16,7 +16,6 @@
 	"bs-pageassignments-action-apiedit-description": "Redigera tilldelningar för $1",
 	"bs-pageassignments-column-title": "Sidtitel",
 	"bs-pageassignments-column-assignments": "Tilldelningar",
-	"bs-pageassignments-column-assignedby": "Tilldelad av",
 	"bs-pageassignments-no-assignments": "Inga tilldelningar",
 	"bs-pageassignments-action-log": "Tilldelningslogg",
 	"bs-pageassignments-action-delete-confirm": "Ta bort tilldelning?",

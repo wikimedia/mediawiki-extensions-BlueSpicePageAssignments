@@ -19,7 +19,6 @@
 	"bs-pageassignments-action-apiedit-description": "עריכת שיוכים בדף \"$1\"",
 	"bs-pageassignments-column-title": "כותרת הדף",
 	"bs-pageassignments-column-assignments": "שיוכים",
-	"bs-pageassignments-column-assignedby": "שויך על־ידי",
 	"bs-pageassignments-no-assignments": "אין שיוכים",
 	"bs-pageassignments-action-log": "יומן שיוכים",
 	"bs-pageassignments-action-delete-confirm": "להסיר את השיוך?",

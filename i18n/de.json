@@ -26,7 +26,6 @@
 	"bs-pageassignments-action-apiedit-description": "Ändere Zuweisungen von $1",
 	"bs-pageassignments-column-title": "Seitentitel",
 	"bs-pageassignments-column-assignments": "Zuweisungen",
-	"bs-pageassignments-column-assignedby": "Zugewiesen durch",
 	"bs-pageassignments-no-assignments": "Keine Zuweisungen",
 	"bs-pageassignments-action-log": "Zuweisungs-Logbuch",
 	"bs-pageassignments-action-delete-confirm": "Zuweisung entfernen?",

@@ -18,7 +18,6 @@
 	"bs-pageassignments-action-apiedit-description": "Redaguoti $1 užduotis",
 	"bs-pageassignments-column-title": "Puslapio pavadinimas",
 	"bs-pageassignments-column-assignments": "Užduotys",
-	"bs-pageassignments-column-assignedby": "Priskirė",
 	"bs-pageassignments-no-assignments": "Nėra užduočių",
 	"bs-pageassignments-action-log": "Užduočių žurnalas",
 	"bs-pageassignments-action-delete-confirm": "Pašalinti užduotį",

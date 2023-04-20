@@ -19,7 +19,6 @@
 	"bs-pageassignments-action-apiedit-description": "Modificare le assegnazioni di $1",
 	"bs-pageassignments-column-title": "Titolo di pagina",
 	"bs-pageassignments-column-assignments": "Assegnazioni",
-	"bs-pageassignments-column-assignedby": "Assegnato da",
 	"bs-pageassignments-no-assignments": "Nessuna assegnazione",
 	"bs-pageassignments-action-log": "Registro di assegnazioni",
 	"bs-pageassignments-action-delete-confirm": "Rimuovere assegnazione?",

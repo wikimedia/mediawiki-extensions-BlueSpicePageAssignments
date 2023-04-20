@@ -20,7 +20,6 @@
 	"bs-pageassignments-action-apiedit-description": "Editar as atribuições da página $1",
 	"bs-pageassignments-column-title": "Título de página",
 	"bs-pageassignments-column-assignments": "Atribuições",
-	"bs-pageassignments-column-assignedby": "Atribuída por",
 	"bs-pageassignments-no-assignments": "Sem atribuições",
 	"bs-pageassignments-action-log": "Registro de tarefas",
 	"bs-pageassignments-action-delete-confirm": "Remover atribuição?",
