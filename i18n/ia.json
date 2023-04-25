@@ -15,7 +15,7 @@
 	"bs-pageassignments-action-apiedit-description": "Modificar le assignationes de $1",
 	"bs-pageassignments-column-title": "Titulo de pagina",
 	"bs-pageassignments-column-assignments": "Assignationes",
-	"bs-pageassignments-column-assignedby": "Assignate per",
+	"bs-pageassignments-column-assignedto": "Assignate a",
 	"bs-pageassignments-no-assignments": "Nulle assignation",
 	"bs-pageassignments-action-log": "Registro de assignationes",
 	"bs-pageassignments-action-delete-confirm": "Remover assignation?",
