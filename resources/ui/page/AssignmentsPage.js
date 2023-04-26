@@ -21,6 +21,7 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 				wgArticleId: this.page
 			} )
 		},
+		$overlay: this.dialog ? this.dialog.$overlay : true,
 		groupLabelCallback: function( label, data ) {
 			return mw.message( 'bs-pageassignments-assignee-type-' + label ).text();
 		}
