@@ -5,7 +5,8 @@
 			"Jillids",
 			"Mainframe98",
 			"McDutchie",
-			"Romaine"
+			"Romaine",
+			"Sjoerddebruin"
 		]
 	},
 	"bs-pageassignments-column-title": "Paginanaam",
@@ -108,5 +109,6 @@
 	"bs-pageassignments-text": "Toewijzingen",
 	"bs-pageassignments-dialog-input-placeholder": "Toewijzingen toevoegen…",
 	"bs-pageassignment-info-dialog": "Toewijzingen",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Aantal pagina's"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Aantal pagina's",
+	"bs-pageassignments-column-assignedto": "Toegewezen aan"
 }
