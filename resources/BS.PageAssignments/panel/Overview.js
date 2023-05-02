@@ -28,6 +28,7 @@ Ext.define( 'BS.PageAssignments.panel.Overview', {
 				text: mw.message('bs-pageassignments-column-assignedto').plain(),
 				dataIndex: 'assigned_by',
 				sortable: true,
+				hidden: true,
 				filter: {
 					type: 'list'
 				},
