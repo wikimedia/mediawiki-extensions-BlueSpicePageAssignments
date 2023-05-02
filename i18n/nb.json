@@ -17,7 +17,6 @@
 	"bs-pageassignments-action-apiedit-description": "Rediger tildelingene for $1",
 	"bs-pageassignments-column-title": "Sidetittel",
 	"bs-pageassignments-column-assignments": "Tildelinger",
-	"bs-pageassignments-column-assignedby": "Tildelt av",
 	"bs-pageassignments-no-assignments": "Ingen tildelinger",
 	"bs-pageassignments-action-log": "Tildelingslogg",
 	"bs-pageassignments-action-delete-confirm": "Fjerne tildeling?",
@@ -78,12 +77,7 @@
 	"bs-pageassignments-secure-nsm-label": "Sikrede sidetildelinger",
 	"bs-pageassignments-secure-lockdown-reason": "Handlingen «$1» er bare tilgjengelig for {{PLURAL:$2|tildelte}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Du er ikke tildelt siden $1",
-	"bs-pageassignments-nav-link-title-pageassignments": "Sidetildelinger",
 	"bs-pageassignments-flyout-title": "Sidetildelinger",
-	"bs-pageassignments-flyout-intro": "Du kan tildele brukere eller grupper til denne siden. De vil bli informert om endringer og kan få ekstra rettigheter. Hvis det er slått på kan du også be dem bekrefte at de har lest siden.",
-	"bs-pageassignments-flyout-form-title": "Legg til tildeling",
-	"bs-pageassignments-flyout-grid-title": "Brukere og grupper tildelt denne siden",
-	"bs-pageassignments-flyout-manager-btn-label": "Behandling for sidetildelinger",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – tildelt {{PLURAL:$2|side|sider}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Tildelinger",
 	"bs-pageassignments-collection-var-namespacename": "Navnerom",
@@ -94,5 +88,9 @@
 	"bs-pageassignments-book-assignment-not-allowed-text": "Tildelinger er ikke tillatt for ikke-tittelbaserte bøker",
 	"bs-pageassignments-statistics-report-assigned-pages": "Tildelte sider",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Tildelt",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Ikke tildelt"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Ikke tildelt",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Antall sider",
+	"bs-pageassignments-notification-pagereview-summary": "$1 har gjennomgått $3",
+	"bs-pageassignments-notification-pagereview-subject": "Gjennomgang av $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 har gjennomgått $2"
 }
