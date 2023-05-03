@@ -118,5 +118,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Anzahl an Seiten",
 	"bs-pageassignments-notification-pagereview-summary": "$1 hat $3 überprüft",
 	"bs-pageassignments-notification-pagereview-subject": "Überprüfung der Seite $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 hat Seite $2 überprüft."
+	"bs-pageassignments-notification-pagereview-body": "$1 hat Seite $2 überprüft.",
+	"bs-pageassignments-column-assignedto": "Zugewiesen an"
 }
