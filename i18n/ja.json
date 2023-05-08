@@ -6,6 +6,7 @@
 			"Otokoume",
 			"RYOUMA1117",
 			"Shirayuki",
+			"Thibaut120094",
 			"Tmv",
 			"UsagiNeko",
 			"Yusuke1109",
@@ -59,5 +60,6 @@
 	"bs-usagetracker-pageassignments": "割り当てのあるページ",
 	"bs-pageassignments-assignee-special-everyone-label": "すべての人",
 	"bs-pageassignments-assignee-type-everyone": "すべての人",
-	"bs-pageassignments-secure-nsm-label": "ページ割り当てを設定する"
+	"bs-pageassignments-secure-nsm-label": "ページ割り当てを設定する",
+	"bs-pageassignments-column-assignedto": "担当者"
 }
