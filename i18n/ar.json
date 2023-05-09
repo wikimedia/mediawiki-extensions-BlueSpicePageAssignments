@@ -6,7 +6,8 @@
 			"Moud hosny",
 			"Tala Ali",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Alshamiri1"
 		]
 	},
 	"bs-pageassignments-desc": "يمكنك من تعيين مستخدمين أو مجموعات لصفحة",
@@ -20,7 +21,7 @@
 	"bs-pageassignments-action-apiedit-description": "تعديل مهام $1",
 	"bs-pageassignments-column-title": "عنوان الصفحة",
 	"bs-pageassignments-column-assignments": "التعيينات",
-	"bs-pageassignments-column-assignedby": "تم التعيين بواسطة",
+	"bs-pageassignments-column-assignedto": "مخصص ل",
 	"bs-pageassignments-no-assignments": "لا يوجد تعيينات",
 	"bs-pageassignments-action-log": "سجل المهام",
 	"bs-pageassignments-action-delete-confirm": "إزالة التعيين؟",
@@ -81,12 +82,7 @@
 	"bs-pageassignments-secure-nsm-label": "تعيينات الصفحة المؤمنة",
 	"bs-pageassignments-secure-lockdown-reason": "الإجراء  \"$1\"  فقط {{PLURAL:$2|للمعين|للمعينين}} الـ$3",
 	"bs-pageassignments-group-lockdown-reason": "لم يتم تعيينك للصفحة $1",
-	"bs-pageassignments-nav-link-title-pageassignments": "تعيينات الصفحة",
 	"bs-pageassignments-flyout-title": "تعيينات الصفحة",
-	"bs-pageassignments-flyout-intro": "يمكنك تعيين مستخدمين أو مجموعات لهذه الصفحة هنا، سيتم إبلاغهم بالتغييرات ويمكنهم الحصول على صلاحيات إضافية، في حالة التنشيط، يمكنك أيضا مطالبتهم بتأكيد قراءة الصفحة.",
-	"bs-pageassignments-flyout-form-title": "إضافة تعيين",
-	"bs-pageassignments-flyout-grid-title": "المستخدمون والمجموعات المعينون لهذه الصفحة",
-	"bs-pageassignments-flyout-manager-btn-label": "مدير مهام الصفحة",
 	"bs-pageassignments-privacy-transparency-working-assignments": "مهام صفحة بلو سبيس - موكل إلى {{PLURAL:$2|الصفحة|الصفحات}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "التعيينات",
 	"bs-pageassignments-collection-var-namespacename": "النطاق",
@@ -100,5 +96,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "غيرمعتمد",
 	"bs-pageassignments-dialog-input-placeholder": "إضافة مهام ...",
 	"bs-pageassignment-info-dialog": "تعيينات",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "عدد الصفحات"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "عدد الصفحات",
+	"bs-pageassignments-notification-pagereview-summary": "استعرض $1 $3",
+	"bs-pageassignments-notification-pagereview-subject": "مراجعة الصفحة $2",
+	"bs-pageassignments-notification-pagereview-body": "قام $1 بمراجعة الصفحة $2 ."
 }

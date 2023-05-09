@@ -10,7 +10,8 @@
 			"Yusuke1109",
 			"しぃ",
 			"MathXplore",
-			"もなー(偽物)"
+			"もなー(偽物)",
+			"Thibaut120094"
 		]
 	},
 	"pageassignments": "割り当て",
@@ -19,6 +20,7 @@
 	"bs-pageassignments-menu-label": "ページ割り当てを設定する",
 	"bs-pageassignments-column-title": "ページ名",
 	"bs-pageassignments-column-assignments": "割り当て",
+	"bs-pageassignments-column-assignedto": "担当者",
 	"bs-pageassignments-action-log": "割り当て記録",
 	"bs-pageassignments-action-delete-confirm": "割り当てを除去しますか？",
 	"bs-pageassignments-api-error": "エラーが発生しました",
