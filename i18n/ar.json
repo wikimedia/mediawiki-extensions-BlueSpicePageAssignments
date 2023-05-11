@@ -6,7 +6,8 @@
 			"Moud hosny",
 			"Tala Ali",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Alshamiri1"
 		]
 	},
 	"bs-pageassignments-desc": "يمكنك من تعيين مستخدمين أو مجموعات لصفحة",
@@ -50,10 +51,10 @@
 	"notification-bs-pageassignments-assignment-change-remove-body": "تعيينك للصفحة $2 {{GENDER:$2|أزاله|أزالته}} $1.",
 	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6| لقد تمت إضافتك}} إلى {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| $4}} هذا {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}",
 	"notification-bs-pageassignments-user-group-add-subject": "تمت الإضافة إلى {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}",
-	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6| لقد تمت إضافتك}} إلى {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| $4}} ، هذا {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}. يرجى التحقق من مهمتك على $3 .",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6| لقد تمت إضافتك}} إلى {{PLURAL:$5| مجموعة | مجموعات}} $4 ، {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}. يرجى التحقق من مهمتك على $3 .",
 	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6| لقد تمت إزالتك}} من {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| $4}} ، وهو {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}",
-	"notification-bs-pageassignments-user-group-remove-subject": "تمت الإزالة من {{PLURAL:$5|المجموعة|المجموعات}} $4",
-	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6| لقد تمت إزالتك}} من {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| $4}} ، هذا {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}. يرجى التحقق من مهمتك على $3 .",
+	"notification-bs-pageassignments-user-group-remove-subject": "تمت الإزالة من {{PLURAL:$5| مجموعة | مجموعات}} $4 ، {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6| لقد تمت إزالتك}} من {{PLURAL:$5| مجموعة | مجموعات}} $4 ، {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}. يرجى التحقق من مهمتك على $3 .",
 	"prefs-pageassignments": "تعيينات الصفحة",
 	"bs-pageassignments-pref-lockdowngroups": "\\المجموعات التي يتم إقفالها لصفحة عندما لا يتم تعيين المستخدم",
 	"bs-pageassignments-yourassignments": "مهامك",
