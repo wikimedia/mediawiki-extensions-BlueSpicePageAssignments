@@ -19,6 +19,7 @@
 	"bs-pageassignments-action-apiedit-description": "עריכת שיוכים בדף \"$1\"",
 	"bs-pageassignments-column-title": "כותרת הדף",
 	"bs-pageassignments-column-assignments": "שיוכים",
+	"bs-pageassignments-column-assignedto": "מוקצה ל־",
 	"bs-pageassignments-no-assignments": "אין שיוכים",
 	"bs-pageassignments-action-log": "יומן שיוכים",
 	"bs-pageassignments-action-delete-confirm": "להסיר את השיוך?",
@@ -79,8 +80,13 @@
 	"bs-pageassignments-collection-var-assignedpages": "דפים משויכים",
 	"bs-pageassignments-collection-var-unassignedpages": "דפים לא משויכים",
 	"bs-pageassignments-pageheader-label": "שיוכים",
+	"bs-pageassignments-statistics-report-assigned-pages": "דפים מוקצים",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "משויכים",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "לא משויכים",
 	"bs-pageassignments-dialog-input-placeholder": "הוספת שיוכים...",
-	"bs-pageassignment-info-dialog": "שיוכים"
+	"bs-pageassignment-info-dialog": "שיוכים",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "מספר הדפים",
+	"bs-pageassignments-notification-pagereview-summary": "$1 {{GENDER:$1|סקר|סקרה}} את $3",
+	"bs-pageassignments-notification-pagereview-subject": "סקירה של הדף $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 {{gender:$1|סקר|סקרה}} את הדף $2."
 }
