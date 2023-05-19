@@ -6,5 +6,8 @@
 	},
 	"bs-pageassignments-column-title": "စာမျက်နှာခေါင်းစဉ်",
 	"bs-pageassignments-assignee-type-group": "အုပ်စု",
-	"bs-pageassignments-api-error": "အမှားတစ်ခု ဖြစ်ပွားခဲ့ပါသည်"
+	"bs-pageassignments-api-error": "အမှားတစ်ခု ဖြစ်ပွားခဲ့ပါသည်",
+	"bs-pageassignments-assignee-special-everyone-label": "လူတိုင်း",
+	"bs-pageassignments-assignee-type-everyone": "လူတိုင်း",
+	"bs-pageassignments-assignee-type-user": "အသုံးပြုသူ"
 }
