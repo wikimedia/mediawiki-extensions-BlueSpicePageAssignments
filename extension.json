@@ -374,6 +374,9 @@
 		"sendStabilizationNotifications": {
 			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\SendStabilizationNotifications",
 			"services": [ "TitleFactory", "BSPageAssignmentsAssignmentFactory", "BSNotificationManager" ]
+		},
+		"writeNamespaceConfiguration": {
+			"class": "\\BlueSpice\\PageAssignments\\Hook\\WriteNamespaceConfiguration"
 		}
 	},
 	"Hooks": {
@@ -413,7 +416,7 @@
 		"NamespaceManager::getMetaFields": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaFields::callback",
 		"BSApiNamespaceStoreMakeData": "\\BlueSpice\\PageAssignments\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
 		"NamespaceManager::editNamespace": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerEditNamespace\\SetValues::callback",
-		"NamespaceManager::writeNamespaceConfiguration": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback",
+		"NamespaceManagerBeforePersistSettings": "writeNamespaceConfiguration",
 		"MergeAccountFromTo": "\\BlueSpice\\PageAssignments\\Hook\\MergeAccountFromTo\\MergePageAssignmentsDBFields::callback",
 		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
