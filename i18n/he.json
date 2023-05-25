@@ -82,8 +82,10 @@
 	"bs-pageassignments-collection-var-assignedpages": "דפים משויכים",
 	"bs-pageassignments-collection-var-unassignedpages": "דפים לא משויכים",
 	"bs-pageassignments-pageheader-label": "שיוכים",
+	"bs-pageassignments-statistics-report-assigned-pages": "דפים מוקצים",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "משויכים",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "לא משויכים",
 	"bs-pageassignments-dialog-input-placeholder": "הוספת שיוכים...",
-	"bs-pageassignment-info-dialog": "שיוכים"
+	"bs-pageassignment-info-dialog": "שיוכים",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "מספר הדפים"
 }
