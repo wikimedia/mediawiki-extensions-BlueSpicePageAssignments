@@ -100,5 +100,14 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "מספר הדפים",
 	"bs-pageassignments-notification-pagereview-summary": "$1 {{GENDER:$1|סקר|סקרה}} את $3",
 	"bs-pageassignments-notification-pagereview-subject": "סקירה של הדף $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 {{gender:$1|סקר|סקרה}} את הדף $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 {{gender:$1|סקר|סקרה}} את הדף $2.",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 {{GENDER:$2|הקצה}} את הדף \"$3\" לקבוצה \"כולם\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 {{GENDER:$2|הסיר|הסירה}} את ההקצאה של \"כולם\" לדף \"$3\"",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "להודיע לי כאשר אני (או קבוצה שאני שייך אליה) מוקצה לדף, או שההקצאה שלי מוסרת",
+	"bs-pageassignments-pref-lockdowngroups": "קבוצות שננעלות עבור דף כאשר המשתמש אינו מוקצה",
+	"bs-pageassignments-secure-lockdown-reason": "הפעולה \"$1\" זמינה רק {{PLURAL:$2|למוקצה|למוקצים}} $3",
+	"bs-pageassignments-group-lockdown-reason": "אינך {{GENDER:|מוקצה|מוקצית}} לדף $1",
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - הקצאה {{PLURAL:$2|לדף|לדפים}}: $1",
+	"bs-pageassignments-book-assignment-not-allowed-title": "הקצאות אסורות",
+	"bs-pageassignments-book-assignment-not-allowed-text": "הקצאות אינן מותרות עבור ספרים שאינם מבוססי כותרות"
 }
