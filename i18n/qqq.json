@@ -86,7 +86,7 @@
 	"bs-pageassignments-secure-lockdown-reason": "Used to describe that the requested permission for this page is only available for assignees.\n* $1 - Name of the requested action\n* $2 - Number of assignees\n* $3 - Comma separated list of assignees, that are assigned to this page",
 	"bs-pageassignments-group-lockdown-reason": "Used to describe to the user, that the requested permission for the page is only available when the user is assigned to it.\n* $1 - Name of the Page",
 	"bs-pageassignments-flyout-title": "Title text of the flyout",
-	"bs-pageassignments-privacy-transparency-working-assignments": "Message for item in BlueSpicePrivacy when exporting user assignments on a page. $1 - conflated list of pages user is assigned to, $2 - number of pages user is assigned to",
+	"bs-pageassignments-privacy-transparency-working-assignments": "Message for item in BlueSpicePrivacy when exporting user assignments on a page.\n* $1 - conflated list of pages user is assigned to\n* $2 - number of pages user is assigned to",
 	"bs-pageassignments-collection-type-assignedpages": "Label for source type \"assignedpages\" in entry field \"type\"\n{{Identical|Assignments}}",
 	"bs-pageassignments-collection-var-namespacename": "Label for entry field \"namespacename\"\n{{Identical|Namespace}}",
 	"bs-pageassignments-collection-var-assignedpages": "Label for entry field \"assignedpages\"\n{{Identical|Assigned pages}}",
