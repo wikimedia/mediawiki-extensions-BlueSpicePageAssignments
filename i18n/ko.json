@@ -38,5 +38,6 @@
 	"bs-pageassignments-collection-var-namespacename": "이름공간",
 	"bs-pageassignments-statistics-report-assigned-pages": "할당된 문서",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "할당됨",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "할당되지 않음"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "할당되지 않음",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "문서 수"
 }
