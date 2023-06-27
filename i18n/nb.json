@@ -17,6 +17,7 @@
 	"bs-pageassignments-action-apiedit-description": "Rediger tildelingene for $1",
 	"bs-pageassignments-column-title": "Sidetittel",
 	"bs-pageassignments-column-assignments": "Tildelinger",
+	"bs-pageassignments-column-assignedto": "Delegert til",
 	"bs-pageassignments-no-assignments": "Ingen tildelinger",
 	"bs-pageassignments-action-log": "Tildelingslogg",
 	"bs-pageassignments-action-delete-confirm": "Fjerne tildeling?",
