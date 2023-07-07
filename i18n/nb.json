@@ -45,12 +45,12 @@
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 {{GENDER:$1|fjernet}} tildelingen din til $2",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "Fjerning av tildeling til $2",
 	"notification-bs-pageassignments-assignment-change-remove-body": "Din tildeling til siden $2 ble {{GENDER:$1|fjernet}} av $1.",
-	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Du}} har blitt lagt til i {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}} som {{PLURAL:$5|har}} sider tildelt",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Du}} har blitt lagt til i {{PLURAL:$5|gruppa|gruppene}} $4 som {{PLURAL:$5|har}} sider tildelt",
 	"notification-bs-pageassignments-user-group-add-subject": "Lagt til {{PLURAL:$5|gruppe|grupper}} som har sider tildelt",
-	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|Du}} har blitt lagt til i {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}}, som har sider tildelt. Sjekk tildelingene på $3.",
-	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|Du}} har blitt fjernet fra {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}}, som har sider tildelt",
-	"notification-bs-pageassignments-user-group-remove-subject": "Fjernet fra {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}}, som har sider tildelt",
-	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|Du}} har blitt fjernet fra {{PLURAL:$5|gruppa|gruppene}} {{PLURAL:$5|$4}}, som har sider tildelt.\nSjekk tildelingene dine på $3.",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|Du}} har blitt lagt til i {{PLURAL:$5|gruppa|gruppene}} $4, som har sider tildelt. Sjekk tildelingene på $3.",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|Du}} har blitt fjernet fra {{PLURAL:$5|gruppa|gruppene}} $4, som har sider tildelt",
+	"notification-bs-pageassignments-user-group-remove-subject": "Fjernet fra {{PLURAL:$5|gruppa|gruppene}} $4, som har sider tildelt",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|Du}} har blitt fjernet fra {{PLURAL:$5|gruppa|gruppene}} $4, som har sider tildelt.\nSjekk tildelingene dine på $3.",
 	"prefs-pageassignments": "Sidetildelinger",
 	"bs-pageassignments-pref-lockdowngroups": "Grupper som låses for en side når brukeren ikke er tildelt",
 	"bs-pageassignments-yourassignments": "Dine tildelinger",
@@ -99,5 +99,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 har gjennomgått $3",
 	"bs-pageassignments-notification-pagereview-subject": "Gjennomgang av $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 har gjennomgått $2",
-	"bs-pageassignments-column-assignedto": "Delegert til"
+	"bs-pageassignments-column-assignedto": "Delegert til",
+	"bs-pageassignment-info-dialog": "Tildelinger"
 }
