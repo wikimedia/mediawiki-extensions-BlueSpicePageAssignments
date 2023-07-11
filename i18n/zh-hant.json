@@ -17,7 +17,7 @@
 	"bs-pageassignments-action-apiedit-description": "編輯$1的分配",
 	"bs-pageassignments-column-title": "頁面標題",
 	"bs-pageassignments-column-assignments": "分配",
-	"bs-pageassignments-column-assignedby": "分配由",
+	"bs-pageassignments-column-assignedto": "分配給",
 	"bs-pageassignments-no-assignments": "沒有分配",
 	"bs-pageassignments-action-log": "分配日誌",
 	"bs-pageassignments-action-delete-confirm": "移除分配？",
@@ -78,12 +78,7 @@
 	"bs-pageassignments-secure-nsm-label": "安全頁面分配",
 	"bs-pageassignments-secure-lockdown-reason": "操作「$1」僅對{{PLURAL:$2|代理|代理}}$3可用",
 	"bs-pageassignments-group-lockdown-reason": "您未分配到頁面$1",
-	"bs-pageassignments-nav-link-title-pageassignments": "頁面分配",
 	"bs-pageassignments-flyout-title": "頁面分配",
-	"bs-pageassignments-flyout-intro": "您可以分配使用者或群組至此頁面。他們會被告知並取得額外權限。如有啟用，您還可以要求他們確認已讀過頁面。",
-	"bs-pageassignments-flyout-form-title": "添加分配",
-	"bs-pageassignments-flyout-grid-title": "分配到此頁面的使用者和群組",
-	"bs-pageassignments-flyout-manager-btn-label": "頁面分配管理",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - 已分配至{{PLURAL:$2|頁面|頁面}}：$1",
 	"bs-pageassignments-collection-type-assignedpages": "分配",
 	"bs-pageassignments-collection-var-namespacename": "命名空間",
@@ -97,5 +92,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "尚未分配",
 	"bs-pageassignments-dialog-input-placeholder": "添加分配…",
 	"bs-pageassignment-info-dialog": "分配",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "頁數"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "頁數",
+	"bs-pageassignments-notification-pagereview-summary": "$1已檢閱$3",
+	"bs-pageassignments-notification-pagereview-subject": "$2頁的檢閱",
+	"bs-pageassignments-notification-pagereview-body": "$1已檢閱頁面$2。"
 }
