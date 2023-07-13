@@ -100,5 +100,6 @@
 	"bs-pageassignments-notification-pagereview-subject": "Gjennomgang av $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 har gjennomgått $2",
 	"bs-pageassignments-column-assignedto": "Delegert til",
-	"bs-pageassignment-info-dialog": "Tildelinger"
+	"bs-pageassignment-info-dialog": "Tildelinger",
+	"bs-pageassignments-dialog-input-placeholder": "Legg til oppgaver …"
 }
