@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piano1forte2"
+		]
+	},
+	"bs-pageassignments-api-error-insert": "Assignment '$1' for '$2' could not be saved",
+	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|assigned}} the page '$3' to {{GENDER:$4|the user}} '$4'",
+	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|removed}} the assignment of the page '$3' for {{GENDER:$4|the user}} '$4'",
+	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|assigned}} the group '$4' to the page '$3'",
+	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|removed}} the assignment for the group '$4' from the page '$3'",
+	"bs-pageassignments-secure-lockdown-reason": "The action '$1' is only available for the {{PLURAL:$2|assignee|assignees}} $3"
+}
