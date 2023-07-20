@@ -95,6 +95,7 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Tildelte sider",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Tildelt",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Ikke tildelt",
+	"bs-pageassignments-dialog-input-placeholder": "Legg til oppgaver …",
 	"bs-pageassignment-info-dialog": "Tildelinger",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Antall sider"
 }
