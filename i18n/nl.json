@@ -110,5 +110,8 @@
 	"bs-pageassignments-dialog-input-placeholder": "Toewijzingen toevoegen…",
 	"bs-pageassignment-info-dialog": "Toewijzingen",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Aantal pagina's",
-	"bs-pageassignments-column-assignedto": "Toegewezen aan"
+	"bs-pageassignments-column-assignedto": "Toegewezen aan",
+	"bs-pageassignments-notification-pagereview-summary": "$1 heeft $3 beoordeeld",
+	"bs-pageassignments-notification-pagereview-subject": "Beoordeling van pagina $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 heeft pagina $2 beoordeeld."
 }
