@@ -23,7 +23,7 @@ class MoveAssignments extends PageMoveComplete {
 	 * @return bool
 	 */
 	protected function doProcess() {
-		$this->getServices()->getDBLoadBalancer( DB_PRIMARY )->update(
+		$this->getServices()->getDBLoadBalancer()->getConnection( DB_PRIMARY )->update(
 			'bs_pageassignments',
 			[
 				'pa_page_id' => Title::newFromLinkTarget( $this->new )->getArticleID()
