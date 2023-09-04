@@ -3,6 +3,7 @@
 		"authors": [
 			"Anonymoususer12321",
 			"Foomin10",
+			"Kokage si",
 			"MathXplore",
 			"Otokoume",
 			"RYOUMA1117",
@@ -51,6 +52,7 @@
 	"bs-pageassignments-assignee-type-user": "利用者",
 	"bs-pageassignments-assignee-type-group": "グループ",
 	"bs-pageassignments-secure-nsm-label": "ページ割り当てを設定する",
+	"bs-pageassignments-collection-var-namespacename": "名前空間",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "ページ数",
 	"bs-pageassignments-notification-pagereview-summary": "$1が$3をレビューしました",
 	"bs-pageassignments-notification-pagereview-subject": "ページ$2のレビュー",
