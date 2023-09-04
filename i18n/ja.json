@@ -3,6 +3,7 @@
 		"authors": [
 			"Anonymoususer12321",
 			"Foomin10",
+			"Kokage si",
 			"MathXplore",
 			"Otokoume",
 			"RYOUMA1117",
@@ -62,5 +63,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "すべての人",
 	"bs-pageassignments-assignee-type-everyone": "すべての人",
 	"bs-pageassignments-secure-nsm-label": "ページ割り当てを設定する",
-	"bs-pageassignments-column-assignedto": "担当者"
+	"bs-pageassignments-column-assignedto": "担当者",
+	"bs-pageassignments-collection-var-namespacename": "名前空間"
 }
