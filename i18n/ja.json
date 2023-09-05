@@ -11,7 +11,9 @@
 			"しぃ",
 			"MathXplore",
 			"もなー(偽物)",
-			"Thibaut120094"
+			"Thibaut120094",
+			"Anonymoususer12321",
+			"Kokage si"
 		]
 	},
 	"pageassignments": "割り当て",
@@ -50,6 +52,7 @@
 	"bs-pageassignments-assignee-type-user": "利用者",
 	"bs-pageassignments-assignee-type-group": "グループ",
 	"bs-pageassignments-secure-nsm-label": "ページ割り当てを設定する",
+	"bs-pageassignments-collection-var-namespacename": "名前空間",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "ページ数",
 	"bs-pageassignments-notification-pagereview-summary": "$1が$3をレビューしました",
 	"bs-pageassignments-notification-pagereview-subject": "ページ$2のレビュー",
