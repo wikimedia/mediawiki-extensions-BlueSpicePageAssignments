@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"bs-pageassignments-desc": "Dalle a posibilidade de asignar usuarios ou grupos a unha páxina",
@@ -11,7 +12,7 @@
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Permisos adicionais para usuarios asignados",
 	"bs-pageassignments-dlg-title": "Asignacións",
 	"bs-pageassignments-dlg-fldlabel": "Asignacións",
-	"bs-pageassignments-menu-label": "Editar asignación",
+	"bs-pageassignments-menu-label": "Definir as asignacións de páxina",
 	"bs-pageassignments-action-apiedit-description": "Editar asignacións de $1",
 	"bs-pageassignments-column-title": "Título de páxina",
 	"bs-pageassignments-column-assignments": "Asignacións",
