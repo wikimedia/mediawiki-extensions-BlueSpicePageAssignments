@@ -115,6 +115,7 @@ Ext.define( 'BS.PageAssignments.panel.Manager', {
 
 		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
 			id: 'bs-pageassignments-set',
+			title: mw.message( 'bs-pageassignments-dlg-title' ).plain(),
 			pages: [
 				new bs.pageassignments.ui.AssignmentsPage( {
 					data: {
