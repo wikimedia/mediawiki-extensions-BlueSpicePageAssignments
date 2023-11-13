@@ -64,5 +64,13 @@
 	"bs-pageassignments-assignee-type-everyone": "すべての人",
 	"bs-pageassignments-secure-nsm-label": "ページ割り当てを設定する",
 	"bs-pageassignments-column-assignedto": "担当者",
-	"bs-pageassignments-collection-var-namespacename": "名前空間"
+	"bs-pageassignments-collection-var-namespacename": "名前空間",
+	"bs-pageassignments-no-assignments": "割り当てはありません",
+	"bs-pageassignments-api-error-no-page": "ページが指定されていません",
+	"log-description-bs-pageassignments": "ページ割り当ての変更記録",
+	"logeventslist-bs-pageassignments-log": "割り当て記録",
+	"notification-bs-pageassignments-assignment-change-add-subject": "「$2」を割り当てられています",
+	"notification-bs-pageassignments-assignment-change-remove-subject": "$2への割り当ての削除",
+	"bs-pageassignments-yourassignments": "あなたに対する割り当て",
+	"bs-pageassignments-yourassignmentsdesc": "あなたが割り当てられているページのリスト。"
 }
