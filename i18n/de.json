@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"*Surak*",
 			"Ameisenigel",
+			"DraconicDark",
 			"Hwboehm",
+			"Justman10000",
 			"Luke081515",
 			"Metalhead64",
 			"Mglaser",
@@ -10,9 +13,7 @@
 			"Robert Vogel",
 			"TMg",
 			"Tiin",
-			"Umherirrender",
-			"*Surak*",
-			"Justman10000"
+			"Umherirrender"
 		]
 	},
 	"bs-pageassignments-desc": "Erlaubt die Zuweisung von Zielgruppen zu einer Seite",
@@ -41,8 +42,8 @@
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|hat}} {{GENDER:$4|den Benutzer|die Benutzerin}} „$4“ aus den Zuweisungen der Seite „$3“ entfernt",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|hat}} die Gruppe „$4“ die Seite „$3“ zugewiesen",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|hat}} die Gruppe „$4“ aus den Zuweisungen der Seite „$3“ entfernt",
-	"logentry-bs-pageassignments-add-specialeveryone": "$1 hat der Gruppe „Jeder“ die Seite „$3“ zugewiesen",
-	"logentry-bs-pageassignments-remove-specialeveryone": "$1 hat die Gruppe „Jeder“ aus der Zuweisung der Seite „$3“ entfernt",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 hat der Gruppe „Jeder“ die Seite „$3“ {{GENDER:$2|zugewiesen}}",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 hat die Gruppe „Jeder“ aus der Zuweisung der Seite „$3“ {{GENDER:$2|entfernt}}",
 	"echo-category-title-bs-pageassignments-action-cat": "Seitenzuweisungen",
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "Benachrichtigung wenn mir (oder einer Gruppe, zu der ich gehöre) eine Seite zugewiesen wird oder wenn meine Zuweisung entfernt wird",
 	"bs-pageassignments-notification-reason": "Gründe für diese Benachrichtigung:",
@@ -54,12 +55,12 @@
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 hat deine Zuweisung zu $2 {{GENDER:$1|entfernt}}",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "Zuweisung zu $2 entfernt",
 	"notification-bs-pageassignments-assignment-change-remove-body": "Deine Zuweisung zur Seite $2 wurde von $1 {{GENDER:$1|entfernt}}.",
-	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Du wurdest}} {{PLURAL:$5|der Gruppe|den Gruppen}} {{PLURAL:$5|$4}} hinzugefügt, {{PLURAL:$5|der|denen}} Seiten zugewiesen sind",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Du wurdest}} {{PLURAL:$5|der Gruppe|den Gruppen}} $4 hinzugefügt, {{PLURAL:$5|der|denen}} Seiten zugewiesen {{PLURAL:$5|wurde|wurden}}",
 	"notification-bs-pageassignments-user-group-add-subject": "Zu {{PLURAL:$5|Gruppe|Gruppen}} hinzugefügt, {{PLURAL:$5|der|denen}} Seiten zugewiesen sind",
-	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|Du wurdest}} zu {{PLURAL:$5|der Gruppe|den Gruppen}} {{PLURAL:$5|$4}} hinzugefügt, {{PLURAL:$5|der|denen}} Seiten zugewiesen sind. Bitte überprüfe deine Zuweisungen auf $3.",
-	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|Du wurdest}} aus {{PLURAL:$5|der Gruppe|den Gruppen}} {{PLURAL:$5|$4}} entfernt, {{PLURAL:$5|der|denen}} Seiten zugewiesen sind",
-	"notification-bs-pageassignments-user-group-remove-subject": "Aus {{PLURAL:$5|der Gruppe|den Gruppen}} {{PLURAL:$5|$4}} entfernt, {{PLURAL:$5|der|denen}} Seiten zugewiesen sind",
-	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|Du wurdest}} aus {{PLURAL:$5|der Gruppe|den Gruppen}} {{PLURAL:$5|$4}} entfernt, {{PLURAL:$5|der|denen}} Seiten zugewiesen sind. Bitte überprüfe deine Zuweisungen auf $3.",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|Du wurdest}} zu {{PLURAL:$5|der Gruppe|den Gruppen}} $4 hinzugefügt, {{PLURAL:$5|der|denen}} Seiten zugewiesen {{PLURAL:$5|wurde|wurden}}. Bitte überprüfe deine Zuweisungen auf $3.",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|Du wurdest}} aus {{PLURAL:$5|der Gruppe|den Gruppen}} $4 entfernt, {{PLURAL:$5|der|denen}} Seiten zugewiesen {{PLURAL:$5|wurde|wurden}}",
+	"notification-bs-pageassignments-user-group-remove-subject": "Aus {{PLURAL:$5|der Gruppe|den Gruppen}} $4 entfernt, {{PLURAL:$5|der|denen}} Seiten zugewiesen {{PLURAL:$5|wurde|wurden}}",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|Du wurdest}} aus {{PLURAL:$5|der Gruppe|den Gruppen}} $4 entfernt, {{PLURAL:$5|der|denen}} Seiten zugewiesen {{PLURAL:$5|wurde|wurden}}. Bitte überprüfe deine Zuweisungen auf $3.",
 	"prefs-pageassignments": "Seitenzuweisungen",
 	"bs-pageassignments-pref-lockdowngroups": "Gruppen, die für eine Seite geschlossen werden, wenn der Benutzer nicht zugewiesen ist.",
 	"bs-pageassignments-yourassignments": "Deine Zuweisungen",

@@ -1,11 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chaduvari",
 			"Veeven"
 		]
 	},
 	"bs-pageassignments-assignee-special-everyone-label": "ప్రతిఒక్కరూ",
 	"bs-pageassignments-assignee-type-everyone": "ప్రతిఒక్కరూ",
 	"bs-pageassignments-assignee-type-user": "వాడుకరి",
-	"bs-pageassignments-collection-var-namespacename": "పేరుబరి"
+	"bs-pageassignments-collection-var-namespacename": "పేరుబరి",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|మిమ్మల్ని}} $4 {{PLURAL:$5|సమూహానికి|సమూహాలకు}} చేర్చారు. {{PLURAL:$5|దానికి|వాటికి}} పేజీలు ఎసైన్ చేయబడి {{PLURAL:$5|ఉన్నాయి}}.",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|మిమ్మల్ని}} $4 {{PLURAL:$5|సమూహానికి|సమూహాలకు}} చేర్చారు. {{PLURAL:$5|దానికి|వాటికి}} పేజీలు ఎసైన్ చేయబడి {{PLURAL:$5|ఉన్నాయి}}. $3 వద్ద మీ ఎసైన్‌మెంటు చూడండి.",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|మిమ్మల్ని}} $4 {{PLURAL:$5|సమూహం|సమూహాల}} నుండి తీసేసారు. {{PLURAL:$5|దానికి|వాటికి}} పేజీలు ఎసైన్ చేయబడి {{PLURAL:$5|ఉన్నాయి}}",
+	"notification-bs-pageassignments-user-group-remove-subject": "$4 {{PLURAL:$5|సమూహం|సమూహాల}} నుండి తీసేసారు. {{PLURAL:$5|దానికి|వాటికి}} పేజీలు ఎసైన్ చేయబడి {{PLURAL:$5|ఉన్నాయి}}.",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|మిమ్మల్ని}} $4 {{PLURAL:$5|సమూహం|సమూహాల}} నుండి తీసేసారు. {{PLURAL:$5|దానికి|వాటికి}} పేజీలు ఎసైన్ చేయబడి {{PLURAL:$5|ఉన్నాయి}}. $3 వద్ద మీ ఎసైన్‌మెంటు చూడండి."
 }
