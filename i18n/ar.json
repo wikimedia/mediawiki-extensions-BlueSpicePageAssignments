@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"Meno25",
 			"Mido",
 			"Moud hosny",
 			"Tala Ali",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح",
-			"Alshamiri1"
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-pageassignments-desc": "يمكنك من تعيين مستخدمين أو مجموعات لصفحة",
@@ -36,8 +36,8 @@
 	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|أزال|أزالت}} تعيين الصفحة \"$3\" {{GENDER:$4|للمستخدم|للمستخدمة}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|عين|عينت}} المجموعة \"$4\" للصفحة \"$3\"",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2أزال|أزالت}} تعيين المجموعة \"$4\" من الصفحة \"$3\"",
-	"logentry-bs-pageassignments-add-specialeveryone": "$1 خصص الصفحة \"$3\" للمجموعة \"الجميع\"",
-	"logentry-bs-pageassignments-remove-specialeveryone": "$1 أزال تعيين \"الجميع\" للصفحة \"$3\"",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 {{GENDER:$2| تعيين}} الصفحة \" $3 \" لمجموعة \"الجميع\"",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 {{GENDER:$2| أزال}} تعيين \"الجميع\" للصفحة \" $3 \"",
 	"echo-category-title-bs-pageassignments-action-cat": "صفحة التعيينات",
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "إعلامي عندما أكون (أو مجموعة أنتمي) معي إلى صفحة ، أو عندما تتم إزالة التعيينات الخاصة بي",
 	"bs-pageassignments-notification-reason": "أسباب هذا الإخطار:",
@@ -51,10 +51,10 @@
 	"notification-bs-pageassignments-assignment-change-remove-body": "تعيينك للصفحة $2 {{GENDER:$2|أزاله|أزالته}} $1.",
 	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6| لقد تمت إضافتك}} إلى {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| $4}} هذا {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}",
 	"notification-bs-pageassignments-user-group-add-subject": "تمت الإضافة إلى {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}",
-	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6| لقد تمت إضافتك}} إلى {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| $4}} ، هذا {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}. يرجى التحقق من مهمتك على $3 .",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6| لقد تمت إضافتك}} إلى {{PLURAL:$5| مجموعة | مجموعات}} $4 ، {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}. يرجى التحقق من مهمتك على $3 .",
 	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6| لقد تمت إزالتك}} من {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| $4}} ، وهو {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}",
-	"notification-bs-pageassignments-user-group-remove-subject": "تمت الإزالة من {{PLURAL:$5|المجموعة|المجموعات}} $4",
-	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6| لقد تمت إزالتك}} من {{PLURAL:$5| مجموعة | مجموعات}} {{PLURAL:$5| $4}} ، هذا {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}. يرجى التحقق من مهمتك على $3 .",
+	"notification-bs-pageassignments-user-group-remove-subject": "تمت الإزالة من {{PLURAL:$5| مجموعة | مجموعات}} $4 ، {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6| لقد تمت إزالتك}} من {{PLURAL:$5| مجموعة | مجموعات}} $4 ، {{PLURAL:$5| لديها | لها}} صفحات مخصصة لـ {{PLURAL:$5| انها | هم}}. يرجى التحقق من مهمتك على $3 .",
 	"prefs-pageassignments": "تعيينات الصفحة",
 	"bs-pageassignments-pref-lockdowngroups": "\\المجموعات التي يتم إقفالها لصفحة عندما لا يتم تعيين المستخدم",
 	"bs-pageassignments-yourassignments": "مهامك",

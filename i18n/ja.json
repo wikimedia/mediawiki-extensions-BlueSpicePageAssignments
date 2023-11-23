@@ -1,17 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
+			"Anonymoususer12321",
 			"Foomin10",
+			"Kokage si",
+			"MathXplore",
 			"Otokoume",
 			"RYOUMA1117",
 			"Shirayuki",
+			"Thibaut120094",
 			"Tmv",
 			"UsagiNeko",
 			"Yusuke1109",
 			"しぃ",
-			"MathXplore",
-			"もなー(偽物)",
-			"Thibaut120094"
+			"もなー(偽物)"
 		]
 	},
 	"pageassignments": "割り当て",
@@ -37,10 +39,10 @@
 	"notification-bs-pageassignments-assignment-change-add-body": "$1 があなたにページ $2 を{{GENDER:$1|割り当てました}}。",
 	"notification-bs-pageassignments-assignment-change-remove-summary": "$1 があなたにページ $2 の割り当てを{{GENDER:$1|除去しました}}",
 	"notification-bs-pageassignments-assignment-change-remove-body": "ページ $2 へのあなたの割り当てが $1 により{{GENDER:$1|除去されました}}。",
-	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|あなた}}は{{PLURAL:$5|グループ}}「{{PLURAL:$5|$4}}」に追加されました。{{PLURAL:$5|グループ}}には割り当てられたページが{{PLURAL:$5|あります}}。\n$3 から現在の割り当てを確認してください。",
-	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|あなた}}は割り当てられたページを持つ{{PLURAL:$5|グループ}} {{PLURAL:$5|$4}} から削除されました。",
-	"notification-bs-pageassignments-user-group-remove-subject": "割り当てられたページを持つ{{PLURAL:$5|グループ}} {{PLURAL:$5|$4}} から削除しました",
-	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|あなた}}は割り当てられたページを持つ{{PLURAL:$5|グループ}} {{PLURAL:$5|$4}} から削除されました。$3 で{{GENDER:$6|あなた}}への割り当てをご確認ください。",
+	"notification-bs-pageassignments-user-group-add-body": "{{GENDER:$6|あなた}}は{{PLURAL:$5|グループ}} $4 に追加されました。{{PLURAL:$5|グループ}}には割り当てられたページが{{PLURAL:$5|あります}}。\n$3 から現在の割り当てを確認してください。",
+	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|あなた}}は割り当てられたページを持つ{{PLURAL:$5|グループ}} $4 から削除されました。",
+	"notification-bs-pageassignments-user-group-remove-subject": "割り当てられたページを持つ{{PLURAL:$5|グループ}} $4 から削除しました",
+	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|あなた}}は割り当てられたページを持つ{{PLURAL:$5|グループ}} $4 から削除されました。$3 で{{GENDER:$6|あなた}}への割り当てをご確認ください。",
 	"prefs-pageassign": "割り当て",
 	"bs-pageassignments-sesp-pageassignments-alias": "割り当て",
 	"bs-pageassignments-sesp-pageassignments-desc": "割り当て",
@@ -53,5 +55,14 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "ページ数",
 	"bs-pageassignments-notification-pagereview-summary": "$1が$3をレビューしました",
 	"bs-pageassignments-notification-pagereview-subject": "ページ$2のレビュー",
-	"bs-pageassignments-notification-pagereview-body": "$1がページ$2をレビューしました。"
+	"bs-pageassignments-notification-pagereview-body": "$1がページ$2をレビューしました。",
+	"bs-pageassignments-no-assignments": "割り当てはありません",
+	"bs-pageassignments-api-error-no-page": "ページが指定されていません",
+	"log-description-bs-pageassignments": "ページ割り当ての変更記録",
+	"logeventslist-bs-pageassignments-log": "割り当て記録",
+	"notification-bs-pageassignments-assignment-change-add-subject": "「$2」を割り当てられています",
+	"notification-bs-pageassignments-assignment-change-remove-subject": "$2への割り当ての削除",
+	"bs-pageassignments-yourassignments": "あなたに対する割り当て",
+	"bs-pageassignments-yourassignmentsdesc": "あなたが割り当てられているページのリスト。",
+	"bs-pageassignments-collection-var-namespacename": "名前空間"
 }

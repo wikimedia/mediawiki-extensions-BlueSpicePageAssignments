@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Adriendelucca",
 			"Fulup"
 		]
 	},
-	"bs-pageassignments-pageheader-label": "Deverkadennoù"
+	"bs-pageassignments-pageheader-label": "Deverkadennoù",
+	"bs-pageassignments-assignee-special-everyone-label": "An holl",
+	"bs-pageassignments-assignee-type-everyone": "An holl",
+	"bs-pageassignments-assignee-type-user": "Implijer",
+	"bs-pageassignments-assignee-type-group": "Strollad"
 }
