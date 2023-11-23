@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"HanV",
+			"Jillids",
 			"Mainframe98",
 			"McDutchie",
 			"Romaine",
-			"Jillids",
-			"HanV",
 			"Sjoerddebruin"
 		]
 	},
@@ -35,8 +35,8 @@
 	"logentry-bs-pageassignments-remove-user": "$1 heeft de toewijzing van de pagina \"$3\" aan {{GENDER:$4|de gebruiker}} \"$4\" {{GENDER:$2|verwijderd}}",
 	"logentry-bs-pageassignments-add-group": "$1 heeft de groep \"$4\" aan de pagina \"$3\" {{GENDER:$2|toegewezen}}",
 	"logentry-bs-pageassignments-remove-group": "$1 heeft de toewijzing van de groep \"$4\" aan de paigna \"$3\" {{GENDER:$2|verwijderd}}",
-	"logentry-bs-pageassignments-add-specialeveryone": "$1 heeft de pagina \"$3\" aan de groep \"Iedereen\" toegewezen",
-	"logentry-bs-pageassignments-remove-specialeveryone": "$1 heeft de toewijzing van de groep \"Iedereen\" aan de pagina \"$3\" verwijderd",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 {{GENDER:$2|heeft}} de pagina \"$3\" aan de groep \"Iedereen\" toegewezen",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 {{GENDER:$2|heeft}} de toewijzing van de groep \"Iedereen\" aan de pagina \"$3\" verwijderd",
 	"echo-category-title-bs-pageassignments-action-cat": "Pagina-opdrachten",
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "Stel mij op de hoogte wanneer aan mij (of aan een groep waartoe ik behoor) een pagina wordt toegewezen, of wanneer mijn toewijzing wordt verwijderd",
 	"bs-pageassignments-notification-reason": "Redenen voor deze melding:",
