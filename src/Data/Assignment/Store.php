@@ -3,6 +3,7 @@
 namespace BlueSpice\PageAssignments\Data\Assignment;
 
 use MWStake\MediaWiki\Component\DataStore\IStore;
+use Wikimedia\Rdbms\LoadBalancer;
 
 class Store implements IStore {
 
@@ -12,10 +13,13 @@ class Store implements IStore {
 	 */
 	protected $context = null;
 
+	/** @var LoadBalancer */
+	protected $loadBalancer;
+
 	/**
 	 *
 	 * @param \IContextSource $context
-	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
+	 * @param LoadBalancer $loadBalancer
 	 */
 	public function __construct( $context, $loadBalancer ) {
 		$this->context = $context;
