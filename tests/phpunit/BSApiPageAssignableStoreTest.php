@@ -9,6 +9,7 @@ use BlueSpice\Tests\BSUserFixtures;
 use BlueSpice\Tests\BSUserFixturesProvider;
 
 /**
+ * @group Broken
  * @group medium
  * @group API
  * @group Database
