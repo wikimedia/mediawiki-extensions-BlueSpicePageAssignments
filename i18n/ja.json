@@ -72,5 +72,7 @@
 	"notification-bs-pageassignments-assignment-change-add-subject": "「$2」を割り当てられています",
 	"notification-bs-pageassignments-assignment-change-remove-subject": "$2への割り当ての削除",
 	"bs-pageassignments-yourassignments": "あなたに対する割り当て",
-	"bs-pageassignments-yourassignmentsdesc": "あなたが割り当てられているページのリスト。"
+	"bs-pageassignments-yourassignmentsdesc": "あなたが割り当てられているページのリスト。",
+	"bs-pageassignments-text": "割り当て",
+	"prefs-pageassignments": "ページの割り当て"
 }
