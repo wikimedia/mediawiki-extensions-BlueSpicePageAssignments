@@ -17,6 +17,7 @@
 		]
 	},
 	"pageassignments": "割り当て",
+	"bs-pageassignments-text": "割り当て",
 	"bs-pageassignments-dlg-title": "割り当て",
 	"bs-pageassignments-dlg-fldlabel": "割り当て",
 	"bs-pageassignments-menu-label": "ページ割り当てを設定する",
@@ -49,6 +50,7 @@
 	"notification-bs-pageassignments-user-group-remove-summary": "{{GENDER:$6|あなた}}は割り当てられたページを持つ{{PLURAL:$5|グループ}} $4 から削除されました。",
 	"notification-bs-pageassignments-user-group-remove-subject": "割り当てられたページを持つ{{PLURAL:$5|グループ}} $4 から削除しました",
 	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|あなた}}は割り当てられたページを持つ{{PLURAL:$5|グループ}} $4 から削除されました。$3 で{{GENDER:$6|あなた}}への割り当てをご確認ください。",
+	"prefs-pageassignments": "ページの割り当て",
 	"bs-pageassignments-yourassignments": "あなたに対する割り当て",
 	"bs-pageassignments-yourassignmentsdesc": "あなたが割り当てられているページのリスト。",
 	"prefs-pageassign": "割り当て",
