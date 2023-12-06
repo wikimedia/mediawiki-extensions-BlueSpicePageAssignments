@@ -64,5 +64,7 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "ページ数",
 	"bs-pageassignments-notification-pagereview-summary": "$1が$3をレビューしました",
 	"bs-pageassignments-notification-pagereview-subject": "ページ$2のレビュー",
-	"bs-pageassignments-notification-pagereview-body": "$1がページ$2をレビューしました。"
+	"bs-pageassignments-notification-pagereview-body": "$1がページ$2をレビューしました。",
+	"bs-pageassignments-text": "割り当て",
+	"prefs-pageassignments": "ページの割り当て"
 }
