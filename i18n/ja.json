@@ -66,5 +66,9 @@
 	"bs-pageassignments-yourassignments": "あなたに対する割り当て",
 	"bs-pageassignments-yourassignmentsdesc": "あなたが割り当てられているページのリスト。",
 	"bs-pageassignments-text": "割り当て",
-	"prefs-pageassignments": "ページの割り当て"
+	"prefs-pageassignments": "ページの割り当て",
+	"bs-pageassignments-notification-reason-user": "あなたはページに直接割り当てられています",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "割り当てられていません",
+	"bs-pageassignments-dialog-input-placeholder": "割り当てを追加する",
+	"bs-pageassignment-info-dialog": "割り当て"
 }
