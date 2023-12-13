@@ -25,5 +25,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "Przypisane strony",
 	"bs-pageassignments-collection-var-unassignedpages": "Nieprzypisane strony",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Liczba stron",
-	"bs-pageassignments-notification-pagereview-body": "$1 ocenił stronę $2 ."
+	"bs-pageassignments-notification-pagereview-body": "$1 ocenił stronę $2 .",
+	"bs-pageassignments-collection-var-namespacename": "Przestrzeń nazw"
 }
