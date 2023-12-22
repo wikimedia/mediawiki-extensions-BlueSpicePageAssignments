@@ -3,8 +3,10 @@
 namespace BlueSpice\PageAssignments\ResourceLoader;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\ResourceLoader\Module as ResourceLoaderModule;
 
-class Messages extends \ResourceLoaderModule {
+class Messages extends ResourceLoaderModule {
+
 	/**
 	 * Get the messages needed for this module.
 	 *
