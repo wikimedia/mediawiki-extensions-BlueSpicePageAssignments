@@ -20,6 +20,7 @@
 	"bs-pageassignments-action-apiedit-description": "Editar as atribuições da página $1",
 	"bs-pageassignments-column-title": "Título de página",
 	"bs-pageassignments-column-assignments": "Atribuições",
+	"bs-pageassignments-column-assignedto": "Atribuída a",
 	"bs-pageassignments-no-assignments": "Sem atribuições",
 	"bs-pageassignments-action-log": "Registo de atribuições de páginas",
 	"bs-pageassignments-action-delete-confirm": "Remover atribuição?",
@@ -34,8 +35,8 @@
 	"logentry-bs-pageassignments-remove-user": "{{GENDER:$2|O utilizador|A utilizadora}} $1 removeu a atribuição da página \"$3\" {{GENDER:$4|ao utilizador|à utilizadora}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "{{GENDER:$2|O utilizador|A utilizadora}} $1 atribuiu a página \"$3\" ao grupo \"$4\"",
 	"logentry-bs-pageassignments-remove-group": "{{GENDER:$2|O utilizador|A utilizadora}} $1 removeu a atribuição da página \"$3\" ao grupo \"$4\"",
-	"logentry-bs-pageassignments-add-specialeveryone": "$1 atribuiu a página \"$3\" ao grupo \"Todos\"",
-	"logentry-bs-pageassignments-remove-specialeveryone": "$1 removeu a atribuição de \"Todos\" para a página \"$3\"",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 atribuiu a página \"$3\" ao grupo \"Todos\"{{GENDER:$2|}}",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 removeu a atribuição de \"Todos\" para a página \"$3\"{{GENDER:$2|}}",
 	"echo-category-title-bs-pageassignments-action-cat": "Atribuições de páginas",
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "Notificar-me quando uma página me for atribuída (ou a um grupo ao qual pertenço), ou a atribuição de uma página me for removida",
 	"bs-pageassignments-notification-reason": "Motivos para esta notificação:",
@@ -90,5 +91,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Não atribuídas",
 	"bs-pageassignments-dialog-input-placeholder": "Adicionar atribuições…",
 	"bs-pageassignment-info-dialog": "Atribuições",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas",
+	"bs-pageassignments-notification-pagereview-summary": "$1 reviu $3",
+	"bs-pageassignments-notification-pagereview-subject": "Revisão da página $2",
+	"bs-pageassignments-notification-pagereview-body": "$1 reviu a página $2."
 }
