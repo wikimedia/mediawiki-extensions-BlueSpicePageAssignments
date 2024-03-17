@@ -47,7 +47,7 @@ class AssignedPages implements ISnapshotProvider {
 
 		$resNamespaces = $db->select(
 			[ 'page', 'bs_pageassignments' ],
-			[ 'COUNT(page_title) as pages', 'page_namespace','pa_page_id' ],
+			[ 'COUNT(page_title) as pages', 'page_namespace', 'pa_page_id' ],
 			[],
 			__METHOD__,
 			[

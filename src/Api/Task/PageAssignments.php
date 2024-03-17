@@ -122,7 +122,7 @@ class PageAssignments extends \BSApiTasksBase {
 		$assignments = [];
 		foreach ( $taskData->pageAssignments as $id ) {
 			// 'user/WikiSysop' or 'group/bureaucrats'
-			list( $type, $key ) = explode( '/', $id );
+			[ $type, $key ] = explode( '/', $id );
 			if ( empty( $type ) || empty( $key ) ) {
 				continue;
 			}
