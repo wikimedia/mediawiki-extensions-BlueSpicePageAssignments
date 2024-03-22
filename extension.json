@@ -61,9 +61,6 @@
 				"pageheader-assignments-base": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignmentBase::factory",
 				"pageheader-assignments-user": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignmentUser::factory"
 			},
-			"NotificationRegistrationFunctions": [
-				"\\BlueSpice\\PageAssignments\\Notifications\\Registrator::registerNotifications"
-			],
 			"LessVarsRegistry": {
 				"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
 			},
@@ -107,6 +104,28 @@
 			"Reports": {
 				"pa-assignedpages": {
 					"class": "\\BlueSpice\\PageAssignments\\Statistics\\Report\\AssignedPages"
+				}
+			}
+		},
+		"Notifications": {
+			"ManualSubscriberProviderSets": {
+				"pa-assigned": {
+					"class": "\\BlueSpice\\PageAssignments\\Notifications\\SubscriberProviderSet\\Assigned",
+					"services": [ "DBLoadBalancer", "BSPageAssignmentsAssignmentFactory", "UserGroupManager" ]
+				}
+			},
+			"Events": {
+				"bs-pa-assignment-add": {
+					"spec": {
+						"class": "\\BlueSpice\\PageAssignments\\Event\\AssignmentAddEvent"
+					},
+					"buckets": [ "personal" ]
+				},
+				"bs-pa-assignment-remove": {
+					"spec": {
+						"class": "\\BlueSpice\\PageAssignments\\Event\\AssignmentRemoveEvent"
+					},
+					"buckets": [ "personal" ]
 				}
 			}
 		}
@@ -316,6 +335,18 @@
 			"dependencies": [
 				"ext.bluespice"
 			]
+		},
+		"ext.bluespice.pageassignments.notifications.subscriptionSet": {
+			"scripts": [
+				"ui/notifications/AssignedPagesSubscriptionSet.js"
+			],
+			"messages": [
+				"bs-pageassignments-notification-ui-subscriptionset-assigned-pages"
+			],
+			"dependencies": [
+				"ext.notifications.subscription.set",
+				"ext.bluespice"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -371,10 +402,6 @@
 		"addPageAssignmentsEntry": {
 			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\SkinTemplateNavigation\\AddPageAssignmentsEntry"
 		},
-		"sendStabilizationNotifications": {
-			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\SendStabilizationNotifications",
-			"services": [ "TitleFactory", "BSPageAssignmentsAssignmentFactory", "BSNotificationManager" ]
-		},
 		"writeNamespaceConfiguration": {
 			"class": "\\BlueSpice\\PageAssignments\\Hook\\WriteNamespaceConfiguration"
 		}
@@ -399,7 +426,6 @@
 		"ArticleDeleteComplete": [
 			"PageAssignmentsHooks::onArticleDeleteComplete"
 		],
-		"BSUserManagerAfterSetGroups": "\\BlueSpice\\PageAssignments\\Hook\\BSUserManagerAfterSetGroups\\NotifyUsers::callback",
 		"BSBookshelfBookManager": "PageAssignmentsBookmakerHooks::onBSBookshelfBookManager",
 		"BSBookshelfManagerGetBookDataRow": "PageAssignmentsBookmakerHooks::onBSBookshelfManagerGetBookDataRow",
 		"BSUEModulePDFcollectMetaData": "PageAssignmentsBookmakerHooks::onBSUEModulePDFcollectMetaData",
@@ -418,12 +444,9 @@
 		"NamespaceManager::editNamespace": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerEditNamespace\\SetValues::callback",
 		"NamespaceManagerBeforePersistSettings": "writeNamespaceConfiguration",
 		"MergeAccountFromTo": "\\BlueSpice\\PageAssignments\\Hook\\MergeAccountFromTo\\MergePageAssignmentsDBFields::callback",
-		"EchoGetDefaultNotifiedUsers": "\\BlueSpice\\PageAssignments\\Notifications\\Registrator::onEchoGetDefaultNotifiedUsers",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
-		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
-		"ContentStabilizationStablePointAdded": "sendStabilizationNotifications",
-		"ContentStabilizationStablePointUpdated": "sendStabilizationNotifications"
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
 	},
 	"manifest_version": 2
 }
