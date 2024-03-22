@@ -2,8 +2,10 @@
 
 namespace BlueSpice\PageAssignments\Api\Task;
 
+use BlueSpice\PageAssignments\Event\AssignmentAddEvent;
+use BlueSpice\PageAssignments\Event\AssignmentRemoveEvent;
 use BlueSpice\PageAssignments\IAssignment;
-use BlueSpice\PageAssignments\Notifications;
+use MWStake\MediaWiki\Component\Events\Notifier;
 
 class PageAssignments extends \BSApiTasksBase {
 
@@ -278,9 +280,8 @@ class PageAssignments extends \BSApiTasksBase {
 		$newUsers = [];
 		$removedUsers = [];
 
-		$notificationsManager = $this->services->getService( 'BSNotificationManager' );
-
-		$notifier = $notificationsManager->getNotifier();
+		/** @var Notifier $notifier */
+		$notifier = $this->services->getService( 'MWStake.Notifier' );
 
 		if ( !$notifier ) {
 			return true;
@@ -300,22 +301,24 @@ class PageAssignments extends \BSApiTasksBase {
 			);
 		}
 
+		$newUsers = $this->createUserObjects( $newUsers );
+		$removedUsers = $this->createUserObjects( $removedUsers );
 		if ( !empty( $newUsers ) ) {
-			$notification = new Notifications\AssignmentChangeAdd(
+			$event = new AssignmentAddEvent(
 				$this->getUser(),
 				$title,
 				$newUsers
 			);
-			$notifier->notify( $notification );
+			$notifier->emit( $event );
 		}
 
 		if ( !empty( $removedUsers ) ) {
-			$notification = new Notifications\AssignmentChangeRemove(
+			$event = new AssignmentRemoveEvent(
 				$this->getUser(),
 				$title,
 				$removedUsers
 			);
-			$notifier->notify( $notification );
+			$notifier->emit( $event );
 		}
 	}
 
@@ -353,4 +356,18 @@ class PageAssignments extends \BSApiTasksBase {
 		return \Status::newGood( $target );
 	}
 
+	/**
+	 * @param array $userIds
+	 * @return array
+	 */
+	private function createUserObjects( array $userIds ): array {
+		$userFactory = $this->services->getUserFactory();
+		$userIds = array_unique( $userIds );
+		return array_filter( array_map(
+			static function ( $userId ) use ( $userFactory ) {
+				return $userFactory->newFromId( $userId );
+			},
+			$userIds
+		) );
+	}
 }
