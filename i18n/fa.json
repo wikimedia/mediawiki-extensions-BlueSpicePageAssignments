@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ebraminio",
 			"FarsiNevis",
 			"Jeeputer"
 		]
@@ -20,7 +21,7 @@
 	"bs-pageassignments-action-log": "سیاههٔ تکلیف‌ها",
 	"bs-pageassignments-action-delete-confirm": "تکلیف حذف شود؟",
 	"bs-pageassignments-api-error": "خطایی رخ داد",
-	"bs-pageassignments-api-error-no-page": "صفحه مشخص نشده‌است",
+	"bs-pageassignments-api-error-no-page": "صفحه مشخص نشده است",
 	"bs-pageassignments-api-error-insert": "ناتوان در ذخیرهٔ تکلیف «$1» برای «$2»",
 	"log-name-bs-pageassignments": "سیاههٔ تکلیف‌ها",
 	"log-description-bs-pageassignments": "سیاههٔ تغییرات در تکلیف‌های صفحه",
