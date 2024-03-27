@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class PageAssignmentsHooks {
 
 	/**
@@ -14,8 +16,9 @@ class PageAssignmentsHooks {
 	 */
 	public static function onArticleDeleteComplete( &$wikiPage, &$user, $reason,
 		$id, $content, $logEntry ) {
-		$dbr = wfGetDB( DB_PRIMARY );
-		$dbr->delete(
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_PRIMARY );
+		$dbw->delete(
 			'bs_pageassignments',
 			[
 				'pa_page_id' => $wikiPage->getId()
@@ -34,8 +37,9 @@ class PageAssignmentsHooks {
 	 */
 	public static function onBSUserManagerAfterDeleteUser( $oUserManager, $oUser,
 		&$oStatus, $oPerformer ) {
-		$dbr = wfGetDB( DB_PRIMARY );
-		$dbr->delete(
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_PRIMARY );
+		$dbw->delete(
 			'bs_pageassignments',
 			[
 				'pa_assignee_key' => $oUser->getName(),
@@ -52,8 +56,9 @@ class PageAssignmentsHooks {
 	 * @return bool
 	 */
 	public static function onBSGroupManagerGroupNameChanged( $sGroup, $sNewGroup ) {
-		$dbr = wfGetDB( DB_PRIMARY );
-		$dbr->update(
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_PRIMARY );
+		$dbw->update(
 			'bs_pageassignments',
 			[
 				'pa_assignee_key' => $sNewGroup,
@@ -72,8 +77,9 @@ class PageAssignmentsHooks {
 	 * @return bool
 	 */
 	public static function onBSGroupManagerGroupDeleted( $sGroup ) {
-		$dbr = wfGetDB( DB_PRIMARY );
-		$dbr->delete(
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_PRIMARY );
+		$dbw->delete(
 			'bs_pageassignments',
 			[
 				'pa_assignee_key' => $sGroup,

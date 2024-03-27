@@ -46,7 +46,8 @@ class PageAssignmentsWikiExplorerHooks {
 	 */
 	public static function onWikiExplorerQueryPagesWithFilter( $aFilters, &$aTables,
 		&$aFields, &$aConditions, &$aJoinConditions ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_REPLICA );
 		$sTablePrefix = $dbr->tablePrefix();
 
 		$aTables[] = "{$sTablePrefix}bs_pageassignments AS assigned";
@@ -76,7 +77,8 @@ class PageAssignmentsWikiExplorerHooks {
 
 		$aPageIds = array_keys( $aRows );
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$services = MediaWikiServices::getInstance();
+		$dbr = $services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$aTables = [
 			'bs_pageassignments'
 		];
@@ -119,7 +121,7 @@ class PageAssignmentsWikiExplorerHooks {
 
 		$aData = [];
 		$aUserIds = [];
-		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
+		$userFactory = $services->getUserFactory();
 		foreach ( $oRes as $oRow ) {
 			if ( $oRow->pa_assignee_type == 'group' ) {
 				$aData[$oRow->pa_page_id][] =
