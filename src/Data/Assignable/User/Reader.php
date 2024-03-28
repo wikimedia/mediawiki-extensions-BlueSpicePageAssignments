@@ -46,7 +46,7 @@ class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQuerySt
 	 * @return null
 	 */
 	public function makeSecondaryDataProvider() {
-		return null;
+		return new SecondaryDataProvider();
 	}
 
 }
