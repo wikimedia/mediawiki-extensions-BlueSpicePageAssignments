@@ -2,7 +2,6 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
-use MWStake\MediaWiki\Component\DataStore\Filter\StringValue;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams as Base;
 
 class ReaderParams extends Base {
@@ -16,26 +15,17 @@ class ReaderParams extends Base {
 		$this->sort = $params->getSort();
 		$this->start = $params->getStart();
 		$this->limit = $params->getLimit();
-		$this->filter = $params->getFilter();
-	}
-
-	/**
-	 * @return array|\MWStake\MediaWiki\Component\DataStore\Filter[]
-	 */
-	public function getFilter() {
-		$filters = [];
-		foreach ( $this->filter as $filter ) {
+		$filters = $params->getFilter();
+		$this->filter = [];
+		foreach ( $filters as $filter ) {
 			if ( $filter->getField() === 'text' ) {
-				$filters[] = new StringValue( [
-					'field' => 'user_name',
-					'value' => $filter->getValue(),
-					'comparison' => $filter->getComparison()
-				] );
+				// Convert `text` filter to query
+				if ( !$this->query ) {
+					$this->query = $filter->getValue();
+				}
 			} else {
-				$filters[] = $filter;
+				$this->filter[] = $filter;
 			}
 		}
-
-		return $filters;
 	}
 }
