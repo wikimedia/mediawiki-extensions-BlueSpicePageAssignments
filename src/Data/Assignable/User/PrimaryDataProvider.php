@@ -108,7 +108,8 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 		// Unfortunately, due to infra of PA extension, cannot inject
 		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		$pm = MediaWikiServices::getInstance()->getPermissionManager();
-		$userNoGroup = User::newSystemUser( 'DummyCheckAssignable' );
+		$userNoGroup = User::newSystemUser( 'BlueSpice default', [ 'steal' => true ] );
+
 		// Check if user with no groups can be assigned, if yes, do not check for other groups
 		if ( $pm->userCan( 'pageassignable', $userNoGroup, $this->title ) ) {
 			$groups[] = 'user';
