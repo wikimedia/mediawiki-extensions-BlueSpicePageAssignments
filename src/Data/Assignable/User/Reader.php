@@ -2,6 +2,7 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
+use BlueSpice\PageAssignments\Data\Assignable\User\ReaderParams as UserReaderParams;
 use GlobalVarConfig;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\User\UserFactory;
@@ -39,6 +40,14 @@ class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQuerySt
 	public function makePrimaryDataProvider( $params ) {
 		return new PrimaryDataProvider(
 			$this->lb->getConnection( DB_REPLICA ), $this->getSchema(), $this->mwsgConfig, $this->contextTitle );
+	}
+
+	/**
+	 * @param ReaderParams $params
+	 * @return \MWStake\MediaWiki\Component\DataStore\ResultSet
+	 */
+	public function read( $params ) {
+		return parent::read( new UserReaderParams( $params ) );
 	}
 
 	/**
