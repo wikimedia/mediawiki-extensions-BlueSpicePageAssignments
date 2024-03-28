@@ -17,7 +17,6 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 		groupBy: 'pa_assignee_type',
 		labelField: 'text',
 		limit: 50,
-		queryMinChars: 2,
 		additionalQueryParams: {
 			context: JSON.stringify( {
 				wgArticleId: this.page
