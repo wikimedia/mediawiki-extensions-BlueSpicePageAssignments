@@ -2,7 +2,6 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
-use BlueSpice\PageAssignments\Data\Assignable\User\ReaderParams as UserReaderParams;
 use BlueSpice\PageAssignments\Data\Record;
 use GlobalVarConfig;
 use MediaWiki\MediaWikiServices;
@@ -37,14 +36,6 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	public function __construct( IDatabase $db, Schema $schema, GlobalVarConfig $mwsgConfig, Title $title ) {
 		parent::__construct( $db, $schema, $mwsgConfig );
 		$this->title = $title;
-	}
-
-	/**
-	 * @param ReaderParams $params
-	 * @return \MWStake\MediaWiki\Component\DataStore\Record[]
-	 */
-	public function makeData( $params ) {
-		return parent::makeData( new UserReaderParams( $params ) );
 	}
 
 	/**
@@ -108,12 +99,21 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 		// Unfortunately, due to infra of PA extension, cannot inject
 		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		$pm = MediaWikiServices::getInstance()->getPermissionManager();
-		$userNoGroup = User::newSystemUser( 'BlueSpice default', [ 'steal' => true ] );
-
-		// Check if user with no groups can be assigned, if yes, do not check for other groups
-		if ( $pm->userCan( 'pageassignable', $userNoGroup, $this->title ) ) {
-			$groups[] = 'user';
-			return $groups;
+		$userNoGroup = $this->getUserWithNoGroups();
+		if ( $userNoGroup ) {
+			// Check if user with no groups can be assigned, if yes, do not check for other groups
+			if ( $pm->userCan( 'pageassignable', $userNoGroup, $this->title ) ) {
+				$groups[] = 'user';
+				return $groups;
+			}
+		} else {
+			// Fallback in case "user with no group" cannot be retrieved
+			$config = MediaWikiServices::getInstance()->getMainConfig();
+			$groupPermissions = $config->get( 'GroupPermissions' );
+			if ( isset( $groupPermissions['user']['pageassignable'] ) ) {
+				$groups[] = 'user';
+				return $groups;
+			}
 		}
 
 		// If not every user can be assigned, check which groups can
@@ -145,4 +145,21 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 
 		return $groups;
 	}
+
+	/**
+	 * @return User|null
+	 */
+	private function getUserWithNoGroups(): ?User {
+		$user = User::newSystemUser( 'BlueSpice default', [ 'steal' => true ] );
+		if ( !$user ) {
+			return null;
+		}
+		$ugm = MediaWikiServices::getInstance()->getUserGroupManager();
+		foreach ( $ugm->getUserGroups( $user ) as $group ) {
+			$ugm->removeUserFromGroup( $user, $group );
+		}
+
+		return $user;
+	}
+
 }
