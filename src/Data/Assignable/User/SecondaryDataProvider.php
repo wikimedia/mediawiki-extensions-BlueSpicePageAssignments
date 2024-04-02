@@ -25,7 +25,7 @@ class SecondaryDataProvider implements ISecondaryDataProvider {
 			}
 
 			$assignment = $assignmentFactory->factory(
-				'user',
+				$record->get( Record::ASSIGNEE_TYPE ),
 				$user->getName(),
 				$titleFactory->newFromID( $record->get( Record::PAGE_ID ) )
 			);
