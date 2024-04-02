@@ -38,6 +38,7 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 				} );
 				this.assignmentPicker.setValue( '' );
 				this.updateDialogSize();
+				this.dialog.actions.setAbilities( { done: true, cancel: true } );
 			}
 		}
 	} );
