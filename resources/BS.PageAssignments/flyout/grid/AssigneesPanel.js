@@ -27,7 +27,7 @@ Ext.define( 'BS.PageAssignments.flyout.grid.AssigneesPanel', {
 			width: 400,
 			tpl: "<div class='bs-pageassignments-flyout-grid-item item-type-{pa_assignee_type}'>" +
 			"{assignee_image_html}" +
-			"<span>{text}</span> " +
+			"<span>{assignee_real_name}</span> " +
 			"<span class='assignee-type'>{pa_assignee_type}</span></div>",
 			flex: 1
 		} );
