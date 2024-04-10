@@ -194,6 +194,7 @@ class PageAssignments extends \BSApiTasksBase {
 		foreach ( $target->getAssignments() as $assignment ) {
 			$assignment = $assignment->toStdClass();
 			$assignment->assignee_image_html = $this->getAssigneeThumb( $assignment );
+			$assignment->assignee_real_name = $this->getAssigneeRealName( $assignment );
 			$result->payload[] = $assignment;
 		}
 		$result->success = true;
@@ -227,6 +228,20 @@ class PageAssignments extends \BSApiTasksBase {
 		] + $thumbParams ) );
 
 		return $image->render();
+	}
+
+	/**
+	 *
+	 * @param \stdClass $assignment
+	 * @return string
+	 */
+	protected function getAssigneeRealName( $assignment ) {
+		$user = $this->services->getUserFactory()->newFromName( $assignment->pa_assignee_key );
+		if ( $user instanceof \User === false ) {
+			return '';
+		}
+		$username = !empty( $user->getRealName() ) ? $user->getRealName() : $user->getName();
+		return $username;
 	}
 
 	/**
