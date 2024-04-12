@@ -10,7 +10,8 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 		if ( $this->out->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
 			return true;
 		}
-		if ( $this->out->getTitle()->isSpecialPage() ) {
+		$title = $this->out->getTitle();
+		if ( $title && $title->isSpecialPage() ) {
 			return true;
 		}
 
