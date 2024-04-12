@@ -193,7 +193,8 @@ class PageHeaderAssignments extends Renderer {
 	 * @return bool
 	 */
 	protected function skipProcessing() {
-		if ( $this->context->getTitle()->getArticleID() < 1 ) {
+		$title = $this->context->getTitle();
+		if ( $title && $title->getArticleID() < 1 ) {
 			return true;
 		}
 
@@ -201,7 +202,7 @@ class PageHeaderAssignments extends Renderer {
 			'BSPageAssignmentsAssignmentFactory'
 		);
 
-		$target = $factory->newFromTargetTitle( $this->context->getTitle() );
+		$target = $factory->newFromTargetTitle( $title );
 
 		if ( !$target ) {
 			return true;
