@@ -392,9 +392,6 @@
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddResources::callback",
 			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddWikiExplorerResources::callback"
 		],
-		"ChameleonSkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\PageAssignments\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
-		],
 		"PageMoveComplete": "\\BlueSpice\\PageAssignments\\Hook\\PageMoveComplete\\MoveAssignments::callback",
 		"ArticleDeleteComplete": [
 			"PageAssignmentsHooks::onArticleDeleteComplete"
