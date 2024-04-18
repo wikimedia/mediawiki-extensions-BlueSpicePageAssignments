@@ -19,7 +19,7 @@ class SecondaryDataProvider implements ISecondaryDataProvider {
 
 		$processed = [];
 		foreach ( $dataSets as $record ) {
-			$user = $userFactory->newFromName( $record->get( Record::TEXT ) );
+			$user = $userFactory->newFromName( $record->get( Record::ASSIGNEE_KEY ) );
 			if ( !$user ) {
 				continue;
 			}
