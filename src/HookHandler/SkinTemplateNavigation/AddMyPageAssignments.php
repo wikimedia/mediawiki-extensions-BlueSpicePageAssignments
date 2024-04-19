@@ -17,12 +17,15 @@ class AddMyPageAssignments implements SkinTemplateNavigation__UniversalHook {
 		if ( !$user->isRegistered() ) {
 			return;
 		}
+		$specialPage = MediaWikiServices::getInstance()->getSpecialPageFactory()->getPage( 'PageAssignments' );
+		if ( !$specialPage ) {
+			return;
+		}
 
 		$links['user-menu']['pageassignments'] = [
 			'id' => 'pt-pageassignments',
 			'href' => SpecialPage::getTitleFor( 'PageAssignments' )->getLocalURL(),
-			'text' => MediaWikiServices::getInstance()->getSpecialPageFactory()
-				->getPage( 'PageAssignments' )->getDescription(),
+			'text' => $specialPage->getDescription(),
 			'position' => 60,
 		];
 	}
