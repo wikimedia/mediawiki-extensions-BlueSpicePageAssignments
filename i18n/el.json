@@ -11,7 +11,6 @@
 	"bs-pageassignments-api-error": "Ενα σφάλμα συνέβη",
 	"bs-pageassignments-api-error-no-page": "Η σελίδα δεν ορίστηκε",
 	"logeventslist-bs-pageassignments-log": "Μητρώο αναθέσεων",
-	"notification-bs-pageassignments-user-group-add-subject": "Προστέθηκε σε {{PLURAL:$5|ομάδα|ομάδες}} που {{PLURAL:$5|έχει|έχουν}} σελίδες αντιστοιχισμένες σε {{PLURAL:$5|αυτή|αυτές}}",
 	"bs-pageassignments-assignee-special-everyone-label": "ο καθένας",
 	"bs-pageassignments-assignee-type-everyone": "ο καθένας",
 	"bs-pageassignments-assignee-type-user": "Χρήστης",

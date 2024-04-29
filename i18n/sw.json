@@ -1,8 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Wangombe"
-		]
-	},
-	"notification-bs-pageassignments-user-group-remove-body": "{{GENDER:$6|Umeondolewa}} kutoka kwa {{PLURAL:$5|kikundi|vikundi}} $4 , hiyo {{PLURAL:$5|ina|kuwa na}} kurasa zilizogawiwa kwa {{PLURAL:$5|ni|wao}}. Tafadhali angalia kazi yako kwenye $3."
-}
