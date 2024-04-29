@@ -3,10 +3,10 @@
 		"authors": []
 	},
 	"bs-pageassignments-column-assignedto": "Dodeljeno",
-	"apihelp-bs-pageassignment-store-description": "Vraća zadatke na određenoj stranici",
+	"apihelp-bs-pageassignment-store-description": "Vra\u0107a zadatke na odre\u0111enoj stranici",
 	"apihelp-bs-mypageassignment-store-description": "Vrati stranice koje su dodeljene trenutnom korisniku",
-	"apihelp-bs-pageassignment-tasks-description": "Dobijte ili izmenite listu zadataka za određenu stranicu",
-	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpice dodele stranicama — Dodeljeno {{PLURAL:$2|stranici|stranicama}}: $1",
+	"apihelp-bs-pageassignment-tasks-description": "Dobijte ili izmenite listu zadataka za odre\u0111enu stranicu",
+	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpice dodele stranicama \u2014 Dodeljeno {{PLURAL:$2|stranici|stranicama}}: $1",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Broj stranica",
 	"bs-pageassignments-notification-pagereview-summary": "$1 je pregledao $3",
 	"bs-pageassignments-notification-pagereview-body": "$1 je pregledao stranicu $2."
