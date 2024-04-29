@@ -88,10 +88,18 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Assigned pages",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assigned",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Not assigned",
-	"bs-pageassignments-dialog-input-placeholder": "Add assignments…",
+	"bs-pageassignments-dialog-input-placeholder": "Add assignments\u2026",
 	"bs-pageassignment-info-dialog": "Assignments",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Number of pages",
 	"bs-pageassignments-notification-pagereview-summary": "$1 has reviewed $3",
 	"bs-pageassignments-notification-pagereview-subject": "Review of page $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 has reviewed page $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 has reviewed page $2.",
+	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Assigned pages",
+	"bs-pageassignments-event-assignment-add-key-desc": "Assigned to a page",
+	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|assigned}} you to the page $2",
+	"bs-pageassignments-event-assignment-add-bot": "You were assigned to the page $1",
+	"bs-pageassignments-event-assignment-links-intro": "Please visit the page at the following link to check your assignment",
+	"bs-pageassignments-event-assignment-remove-key-desc": "Removed assignment from a page",
+	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|removed}} your assignment from the page $2",
+	"bs-pageassignments-event-assignment-remove-bot": "Your assignment was removed from the page $1"
 }

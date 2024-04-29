@@ -88,10 +88,18 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Paginas assignate",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assignate",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non assignate",
-	"bs-pageassignments-dialog-input-placeholder": "Adder assignationes…",
+	"bs-pageassignments-dialog-input-placeholder": "Adder assignationes\u2026",
 	"bs-pageassignment-info-dialog": "Assignationes",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Numero de paginas",
 	"bs-pageassignments-notification-pagereview-summary": "$1 ha revidite $3",
 	"bs-pageassignments-notification-pagereview-subject": "Revision del pagina $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 ha revidite le pagina $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 ha revidite le pagina $2.",
+	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Paginas assignate",
+	"bs-pageassignments-event-assignment-add-key-desc": "Assignate a un pagina",
+	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|te ha assignate}} al pagina $2",
+	"bs-pageassignments-event-assignment-add-bot": "Tu ha essite assignate al pagina $1",
+	"bs-pageassignments-event-assignment-links-intro": "Per favor visita le pagina con le ligamine sequente pro verificar tu assignation",
+	"bs-pageassignments-event-assignment-remove-key-desc": "Assignation removite de un pagina",
+	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|ha removite}} tu assignation del pagina $2",
+	"bs-pageassignments-event-assignment-remove-bot": "Tu assignation ha essite removite del pagina $1"
 }
