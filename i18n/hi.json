@@ -3,11 +3,11 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Sachinkatiyar",
-			"\u0917\u094b\u092a\u093e\u0932"
+			"गोपाल"
 		]
 	},
-	"notification-bs-pageassignments-assignment-change-add-body": "\u092a\u0943\u0937\u094d\u0920 $1 \u0938\u0947 {{GENDER:$2|\u0905\u0938\u093e\u0907\u0928 \u0915\u093f\u092f\u093e \u0917\u092f\u093e}} $2 \u092a\u0930 \u0906\u092a\u0915\u094b\u0964",
-	"notification-bs-pageassignments-assignment-change-remove-body": "\u092a\u0943\u0937\u094d\u0920 $2 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u093e \u0905\u0938\u093e\u0907\u0928\u092e\u0947\u0902\u091f $1 \u0926\u094d\u0935\u093e\u0930\u093e {{GENDER: $2|\u0939\u091f\u093e \u0926\u093f\u092f\u093e}} \u0925\u093e\u0964",
-	"notification-bs-pageassignments-user-group-remove-body": "$4 \u0938\u0947 {{PLURAL:$5|\u0938\u092e\u0942\u0939|\u0938\u092e\u0942\u0939\u094b\u0902}} $1 \u0926\u094d\u0935\u093e\u0930\u093e \u0939\u091f\u093e\u092f\u093e \u0917\u092f\u093e\u0964 \u0915\u0943\u092a\u092f\u093e $3 \u092a\u0930 \u0905\u092a\u0928\u093e \u0905\u0938\u093e\u0907\u0928\u092e\u0947\u0902\u091f \u0926\u0947\u0916\u0947\u0902\u0964",
-	"bs-pageassignments-pageheader-label": "\u0915\u093e\u0930\u094d\u092f"
+	"notification-bs-pageassignments-assignment-change-add-body": "पृष्ठ $1 से {{GENDER:$2|असाइन किया गया}} $2 पर आपको।",
+	"notification-bs-pageassignments-assignment-change-remove-body": "पृष्ठ $2 के लिए आपका असाइनमेंट $1 द्वारा {{GENDER: $2|हटा दिया}} था।",
+	"notification-bs-pageassignments-user-group-remove-body": "$4 से {{PLURAL:$5|समूह|समूहों}} $1 द्वारा हटाया गया। कृपया $3 पर अपना असाइनमेंट देखें।",
+	"bs-pageassignments-pageheader-label": "कार्य"
 }

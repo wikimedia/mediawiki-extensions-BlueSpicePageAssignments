@@ -4,6 +4,6 @@
 			"V.narsikar"
 		]
 	},
-	"bs-pageassignments-api-error-no-page": "\u092a\u093e\u0928 \u0928\u092e\u0942\u0926 \u0915\u0947\u0932\u0947 \u0928\u093e\u0939\u0940",
-	"notification-bs-pageassignments-user-group-remove-subject": "{{PLURAL:$5|\u0917\u091f\u093e\u092e\u0927\u0942\u0928|\u0917\u091f\u093e\u0902\u092e\u0927\u0942\u0928}} \u0939\u091f\u0935\u093f\u0932\u0947 $4"
+	"bs-pageassignments-api-error-no-page": "पान नमूद केले नाही",
+	"notification-bs-pageassignments-user-group-remove-subject": "{{PLURAL:$5|गटामधून|गटांमधून}} हटविले $4"
 }
