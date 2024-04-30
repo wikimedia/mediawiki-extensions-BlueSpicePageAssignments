@@ -5,18 +5,18 @@
 			"Volvox"
 		]
 	},
-	"bs-pageassignments-column-title": "S\u00e4itentitel",
+	"bs-pageassignments-column-title": "Säitentitel",
 	"bs-pageassignments-api-error": "Et ass e Feeler geschitt",
-	"bs-pageassignments-api-error-no-page": "S\u00e4it net uginn",
-	"bs-pageassignments-notification-reason": "Gr\u00ebnn fir d\u00ebs Notifikatioun",
+	"bs-pageassignments-api-error-no-page": "Säit net uginn",
+	"bs-pageassignments-notification-reason": "Grënn fir dës Notifikatioun",
 	"bs-pageassignments-notification-reason-group": "Dir sidd Member {{PLURAL:$1|vum Grupp|vun de Gruppen}}: $2",
-	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Dir}} gouft bei {{PLURAL:$5|de Grupp|d'Gruppen}} $4 derb\u00e4igesat, {{PLURAL:$5|d\u00e4r|deene}} S\u00e4iten zougedeelt sinn",
-	"notification-bs-pageassignments-user-group-add-subject": "Bei de Grupp $4 dob\u00e4igesat",
+	"notification-bs-pageassignments-user-group-add-summary": "{{GENDER:$6|Dir}} gouft bei {{PLURAL:$5|de Grupp|d'Gruppen}} $4 derbäigesat, {{PLURAL:$5|där|deene}} Säiten zougedeelt sinn",
+	"notification-bs-pageassignments-user-group-add-subject": "Bei de Grupp $4 dobäigesat",
 	"notification-bs-pageassignments-user-group-remove-summary": "Dir gouft erausgeholl aus {{PLURAL:$5|der Grupp|de Gruppen}} $4",
 	"bs-pageassignments-assignee-special-everyone-label": "Jiddwereen",
 	"bs-pageassignments-assignee-type-everyone": "Jiddwereen",
 	"bs-pageassignments-assignee-type-user": "Benotzer",
 	"bs-pageassignments-assignee-type-group": "Grupp",
 	"bs-pageassignments-collection-var-namespacename": "Nummraum",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Zuel vun de S\u00e4iten"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Zuel vun de Säiten"
 }
