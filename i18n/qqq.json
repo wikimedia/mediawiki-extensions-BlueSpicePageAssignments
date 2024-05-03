@@ -77,8 +77,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "Label for entry field \"assignedpages\"\n{{Identical|Assigned pages}}",
 	"bs-pageassignments-collection-var-unassignedpages": "Label for entry field \"unassignedpages\"\n{{Identical|Unassigned pages}}",
 	"bs-pageassignments-pageheader-label": "Label for list with assignments in page header",
-	"bs-pageassignments-book-assignment-not-allowed-title": "Title for dialog when assignments are not allowed for a book title",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Text for dialog when assignments are not allowed for a book title",
 	"bs-pageassignments-statistics-report-assigned-pages": "Statistics report name",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Label for the \"assigned\" axis",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Label for the \"unassigned\" axis",
