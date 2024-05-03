@@ -5,18 +5,6 @@ use MediaWiki\MediaWikiServices;
 class PageAssignmentsBookmakerHooks {
 
 	/**
-	 * Adds dependencies to SpecialBookshelfBookManager
-	 * @param SpecialBookshelfBookManager $oSender
-	 * @param OutputPage $oOutput
-	 * @param stdClass $oConfig
-	 * @return bool
-	 */
-	public static function onBSBookshelfBookManager( $oSender, $oOutput, $oConfig ) {
-		$oConfig->dependencies[] = 'ext.bluespice.pageassignments.bookshelfPlugin';
-		return true;
-	}
-
-	/**
 	 * Adds information about assignments to PDF export
 	 * @param Title $oTitle
 	 * @param DOMDocument $oPageDOM

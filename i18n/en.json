@@ -71,8 +71,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "Assigned pages",
 	"bs-pageassignments-collection-var-unassignedpages": "Unassigned pages",
 	"bs-pageassignments-pageheader-label": "Assignments",
-	"bs-pageassignments-book-assignment-not-allowed-title": "Assignments not allowed",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Assignments are not allowed for non title-based books",
 	"bs-pageassignments-statistics-report-assigned-pages": "Assigned pages",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assigned",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Not assigned",
