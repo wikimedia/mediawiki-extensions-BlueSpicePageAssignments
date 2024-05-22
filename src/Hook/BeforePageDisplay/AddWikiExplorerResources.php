@@ -15,7 +15,8 @@ class AddWikiExplorerResources extends BeforePageDisplay {
 		if ( !$this->getServices()->getSpecialPageFactory()->exists( 'WikiExplorer' ) ) {
 			return true;
 		}
-		if ( !$this->out->getTitle()->equals( SpecialPage::getTitleFor( 'WikiExplorer' ) ) ) {
+		$title = $this->out->getTitle();
+		if ( $title && !$title->equals( SpecialPage::getTitleFor( 'WikiExplorer' ) ) ) {
 			return true;
 		}
 		return false;
