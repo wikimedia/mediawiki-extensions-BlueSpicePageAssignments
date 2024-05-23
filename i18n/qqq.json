@@ -94,5 +94,7 @@
 	"bs-pageassignments-event-assignment-links-intro": "Notification email link intro message",
 	"bs-pageassignments-event-assignment-remove-key-desc": "Notification title label",
 	"bs-pageassignments-event-assignment-remove": "Notification message user is removed from a page\n$1 - agent\n$2 - page anchor",
-	"bs-pageassignments-event-assignment-remove-bot": "Notification message user is removed from a page, by a bot\n$1 - page anchor"
+	"bs-pageassignments-event-assignment-remove-bot": "Notification message user is removed from a page, by a bot\n$1 - page anchor",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Label for action button to change assignments",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Title for action to edit assignments\n$1 - page title"
 }
