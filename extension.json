@@ -357,6 +357,18 @@
 			"scripts": [
 				"bluespice.pageassignments.bookshelf.createBook.js"
 			]
+		},
+		"ext.pageassignments.bookshelf.overviewAction": {
+			"scripts": [
+				"bluespice.pageassignments.bookshelf.overviewAction.js"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.dialogs",
+				"ext.oOJSPlus.widgets",
+				"ext.oOJSPlus.data",
+				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-user"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -414,6 +426,9 @@
 		},
 		"writeNamespaceConfiguration": {
 			"class": "\\BlueSpice\\PageAssignments\\Hook\\WriteNamespaceConfiguration"
+		},
+		"bs-books-overview-page-actions": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\BSBookshelf"
 		}
 	},
 	"Hooks": {
@@ -453,7 +468,8 @@
 		"MergeAccountFromTo": "\\BlueSpice\\PageAssignments\\Hook\\MergeAccountFromTo\\MergePageAssignmentsDBFields::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
-		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
+		"BSBookshelfBooksOverviewBeforeSetBookActions": "bs-books-overview-page-actions"
 	},
 	"manifest_version": 2
 }
