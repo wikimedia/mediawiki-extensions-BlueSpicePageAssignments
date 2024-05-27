@@ -89,5 +89,7 @@
 	"bs-pageassignments-event-assignment-links-intro": "נא לבקר בדף בקישור הבא כדי לבדוק את השיוך שלך",
 	"bs-pageassignments-event-assignment-remove-key-desc": "הוסר שיוך מדף",
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|הסיר|הסירה}} את השיוך שלך מהדף $2",
-	"bs-pageassignments-event-assignment-remove-bot": "השיוך שלך הוסר מהדף $1"
+	"bs-pageassignments-event-assignment-remove-bot": "השיוך שלך הוסר מהדף $1",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "שיוך",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "עריכת שיוכים עבור $1"
 }

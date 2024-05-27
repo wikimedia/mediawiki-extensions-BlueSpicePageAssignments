@@ -3,6 +3,7 @@
 		"authors": [
 			"1233qwer1234qwer4",
 			"DDPAT",
+			"Dirruw'o",
 			"Ice bulldog",
 			"Irus",
 			"Katunchik",
@@ -35,5 +36,7 @@
 	"bs-pageassignments-collection-type-assignedpages": "Назначения",
 	"bs-pageassignments-collection-var-namespacename": "Пространство имён",
 	"bs-pageassignments-pageheader-label": "Назначения",
-	"bs-pageassignment-info-dialog": "Назначения"
+	"bs-pageassignment-info-dialog": "Назначения",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Назначить",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Изменение заданий для $1"
 }
