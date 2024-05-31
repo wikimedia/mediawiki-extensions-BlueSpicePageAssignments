@@ -81,6 +81,11 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 		if ( isset( $this->addedUsers[$username] ) ) {
 			return;
 		}
+
+		if ( $this->isUserBlocked( $row->user_id ) ) {
+			return;
+		}
+
 		$this->addedUsers[$username] = true;
 		$this->data[] = new Record( (object)[
 			Record::ASSIGNEE_KEY => $username,
