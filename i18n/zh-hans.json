@@ -7,6 +7,7 @@
 			"A Retired User",
 			"CrownedWharf566",
 			"Endermoon",
+			"Googology",
 			"GuoPC",
 			"Jbyccc",
 			"LaMagiaaa",
@@ -84,5 +85,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "分配的任务",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "已分配",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "未分配",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "页数"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "页数",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "分配"
 }
