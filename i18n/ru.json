@@ -10,7 +10,8 @@
 			"Okras",
 			"Pacha Tchernof",
 			"Romanko Mikhail",
-			"Vlad5250"
+			"Vlad5250",
+			"Dirruw'o"
 		]
 	},
 	"pageassignments": "Назначения",
@@ -31,14 +32,11 @@
 	"bs-pageassignments-assignee-type-everyone": "Каждый",
 	"bs-pageassignments-assignee-type-user": "Участник",
 	"bs-pageassignments-assignee-type-group": "Группа",
-	"bs-pageassignments-nav-link-title-pageassignments": "Назначения для страницы",
 	"bs-pageassignments-flyout-title": "Назначения для страницы",
-	"bs-pageassignments-flyout-intro": "Вы можете назначать странице участников и группы. Они будут получать оповещения про изменения и смогут получить дополнительные права. Если функция включена, Вы также сможете установить подтверждение прочтения страницы.",
-	"bs-pageassignments-flyout-form-title": "Добавить назначение",
-	"bs-pageassignments-flyout-grid-title": "Участники и группы, назначенные для этой страницы.",
-	"bs-pageassignments-flyout-manager-btn-label": "Менеджер назначения страниц",
 	"bs-pageassignments-collection-type-assignedpages": "Назначения",
 	"bs-pageassignments-collection-var-namespacename": "Пространство имён",
 	"bs-pageassignments-pageheader-label": "Назначения",
-	"bs-pageassignment-info-dialog": "Назначения"
+	"bs-pageassignment-info-dialog": "Назначения",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Назначить",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Изменение заданий для $1"
 }

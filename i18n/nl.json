@@ -94,5 +94,7 @@
 	"bs-pageassignments-event-assignment-links-intro": "Bezoek de pagina via de volgende koppeling om uw toewijzing te controleren",
 	"bs-pageassignments-event-assignment-remove-key-desc": "Toewijzing verwijderd van een pagina",
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|heeft}} uw toewijzing van de pagina $2 verwijderd",
-	"bs-pageassignments-event-assignment-remove-bot": "Uw toewijzing is van de pagina $1 verwijderd"
+	"bs-pageassignments-event-assignment-remove-bot": "Uw toewijzing is van de pagina $1 verwijderd",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Toewijzen",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Toewijzingen voor $1 bewerken"
 }

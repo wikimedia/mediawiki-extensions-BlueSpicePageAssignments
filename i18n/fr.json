@@ -11,7 +11,8 @@
 			"Thibaut120094",
 			"Urhixidur",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Graineahumus"
 		]
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d’assigner des utilisateurs ou groupes à une page",
@@ -47,18 +48,6 @@
 	"bs-pageassignments-notification-reason": "Motifs pour cette notification :",
 	"bs-pageassignments-notification-reason-user": "Vous êtes affecté directement à la page",
 	"bs-pageassignments-notification-reason-group": "Vous êtes membre {{PLURAL:$1|du groupe|des groupes}} : $2",
-	"notification-bs-pageassignments-assignment-change-add-summary": "{{GENDER:$1|}}$1 {{GENDER:|}}vous a affecté{{GENDER:||e|(e)}} à $2",
-	"notification-bs-pageassignments-assignment-change-add-subject": "Assignation à $2",
-	"notification-bs-pageassignments-assignment-change-add-body": "$1 vous a affecté{{GENDER:||e}} à la page $2.",
-	"notification-bs-pageassignments-assignment-change-remove-summary": "{{GENDER:$1|}}$1 a retiré votre affectation à $2",
-	"notification-bs-pageassignments-assignment-change-remove-subject": "Suppression de l’assignation à $2",
-	"notification-bs-pageassignments-assignment-change-remove-body": "Votre affectation à la page $2 a été retirée par $1.",
-	"notification-bs-pageassignments-user-group-add-summary": "Vous avez été ajouté{{GENDER:$6||e}} {{PLURAL:$5|au groupe|aux groupes}} $4 qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées.",
-	"notification-bs-pageassignments-user-group-add-subject": "Ajouté {{PLURAL:$5|au groupe|aux groupes}} qui {{PLURAL:$5|a|ont}} des pages qui  {{PLURAL:$5|lui|leur}} sont affectées",
-	"notification-bs-pageassignments-user-group-add-body": "Vous avez été ajouté{{GENDER:$6||e}} {{PLURAL:$5|au groupe|aux groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées. Veuillez vérifier votre affectation sur $3.",
-	"notification-bs-pageassignments-user-group-remove-summary": "Vous avez été retiré{{GENDER:$6||e}} {{PLURAL:$5|du groupe|des groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées",
-	"notification-bs-pageassignments-user-group-remove-subject": "Retiré {{PLURAL:$5|du groupe|des groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées",
-	"notification-bs-pageassignments-user-group-remove-body": "Vous avez été retiré{{GENDER:$6||e}} {{PLURAL:$5|du groupe|des groupes}} $4, qui {{PLURAL:$5|a|ont}} des pages qui {{PLURAL:$5|lui|leur}} sont affectées. Veuillez vérifier votre affectation sur $3.",
 	"prefs-pageassignments": "Assignations de pages",
 	"bs-pageassignments-pref-lockdowngroups": "Groupes verrouillés pour une page lorsque l’utilisateur n’est pas affecté",
 	"bs-pageassignments-yourassignments": "Vos assignations",
@@ -103,5 +92,11 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Nombre de pages",
 	"bs-pageassignments-notification-pagereview-summary": "$1 a relu $3",
 	"bs-pageassignments-notification-pagereview-subject": "Relecture de la page $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 a relu la page $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 a relu la page $2.",
+	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Pages assignées",
+	"bs-pageassignments-event-assignment-add-key-desc": "Assigné à une page",
+	"bs-pageassignments-event-assignment-add-bot": "Vous avez été assigné à la page $1",
+	"bs-pageassignments-event-assignment-links-intro": "Veuillez visiter la page au lien suivant pour vérifier votre mission",
+	"bs-pageassignments-event-assignment-remove-key-desc": "Affectation supprimée d'une page",
+	"bs-pageassignments-event-assignment-remove-bot": "Votre affectation a été supprimée de la page $1"
 }

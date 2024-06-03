@@ -16,12 +16,6 @@
 	"bs-pageassignments-notification-reason": "이 알림의 이유:",
 	"bs-pageassignments-notification-reason-user": "당신은 문서에 직접 할당되어 있습니다",
 	"bs-pageassignments-notification-reason-group": "당신은 다음 {{PLURAL:$1|그룹}}의 일원입니다: $2",
-	"notification-bs-pageassignments-assignment-change-add-summary": "$1님이 당신을 $2에 {{GENDER:$1|할당했습니다}}",
-	"notification-bs-pageassignments-assignment-change-add-body": "$1님이 당신을 $2 문서에 {{GENDER:$1|할당했습니다}}.",
-	"notification-bs-pageassignments-user-group-add-summary": "$4 그룹에 추가되었습니다",
-	"notification-bs-pageassignments-user-group-add-subject": "$4 그룹에 추가됨",
-	"notification-bs-pageassignments-user-group-remove-summary": "당신은 $4 {{PLURAL:$5|그룹}}에서 제거되었습니다",
-	"notification-bs-pageassignments-user-group-remove-subject": "$4 {{PLURAL:$5|그룹}}에서 제거됨",
 	"prefs-pageassign": "과제",
 	"apihelp-bs-pageassignable-store-summary": "할당된 사용자의 목록을 반환합니다",
 	"apihelp-bs-mypageassignment-store-summary": "현재 사용자에 할당된 문서를 반환합니다",
@@ -35,5 +29,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "할당된 문서",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "할당됨",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "할당되지 않음",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "문서 수"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "문서 수",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "할당"
 }
