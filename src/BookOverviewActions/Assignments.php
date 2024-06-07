@@ -87,7 +87,7 @@ class Assignments implements IBooksOverviewAction {
 	 * @return string
 	 */
 	public function getRequiredPermission(): string {
-		return 'pageassignable';
+		return 'pageassignments';
 	}
 
 	/**
