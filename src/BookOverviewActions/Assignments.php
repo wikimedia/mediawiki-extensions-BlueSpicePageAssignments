@@ -8,9 +8,9 @@ use Title;
 
 class Assignments implements IBooksOverviewAction {
 
-        /**
-         * @var Title
-         */
+	/**
+	 * @var Title
+	 */
 	private $book = null;
 
 	/**
@@ -87,7 +87,7 @@ class Assignments implements IBooksOverviewAction {
 	 * @return string
 	 */
 	public function getRequiredPermission(): string {
-		return 'pageassignable';
+		return 'pageassignments';
 	}
 
 	/**
