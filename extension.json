@@ -109,7 +109,7 @@
 		},
 		"Notifications": {
 			"ManualSubscriberProviderSets": {
-				"pa-assigned": {
+				"pa-assigned-pages": {
 					"class": "\\BlueSpice\\PageAssignments\\Notifications\\SubscriberProviderSet\\Assigned",
 					"services": [ "DBLoadBalancer", "BSPageAssignmentsAssignmentFactory", "UserGroupManager" ]
 				}
