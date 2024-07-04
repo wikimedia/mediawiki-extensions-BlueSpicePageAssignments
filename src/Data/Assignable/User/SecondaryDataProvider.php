@@ -24,6 +24,14 @@ class SecondaryDataProvider implements ISecondaryDataProvider {
 				continue;
 			}
 
+			/**
+			 * Check if the user is disabled
+			 * analogous to CheckBlocksSecondaryAuthenticationProvider::65
+			 */
+			if ( $user->getBlock() ) {
+				continue;
+			}
+
 			$assignment = $assignmentFactory->factory(
 				$record->get( Record::ASSIGNEE_TYPE ),
 				$user->getName(),
