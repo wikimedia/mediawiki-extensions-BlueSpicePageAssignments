@@ -90,5 +90,7 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non assegnato",
 	"bs-pageassignments-dialog-input-placeholder": "Aggiungere assegnazioni...",
 	"bs-pageassignment-info-dialog": "Assegnazioni",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Numero di pagine"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Numero di pagine",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assegna",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifica le assegnazioni per $1"
 }

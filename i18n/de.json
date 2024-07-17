@@ -110,5 +110,11 @@
 	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Zugewiesene Seiten",
 	"bs-pageassignments-event-assignment-add-bot": "Du wurdest der Seite $1 zugewiesen",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Zuweisen",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Zuweisungen für $1 bearbeiten"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Zuweisungen für $1 bearbeiten",
+	"bs-pageassignments-event-assignment-add-key-desc": "Einer Seite zugewiesen",
+	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|wies}} dich auf die Seite $2 zu",
+	"bs-pageassignments-event-assignment-links-intro": "Bitte besuche die Seite unter folgendem Link, um deine Zuordnung zu überprüfen",
+	"bs-pageassignments-event-assignment-remove-key-desc": "Zuweisung von einer Seite entfernt",
+	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|entfernte}} deine Zuweisung von der Seite $2",
+	"bs-pageassignments-event-assignment-remove-bot": "Deine Zuweisung wurde von der Seite entfernt $1"
 }

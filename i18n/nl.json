@@ -98,5 +98,15 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Aantal pagina's",
 	"bs-pageassignments-notification-pagereview-summary": "$1 heeft $3 beoordeeld",
 	"bs-pageassignments-notification-pagereview-subject": "Beoordeling van pagina $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 heeft pagina $2 beoordeeld."
+	"bs-pageassignments-notification-pagereview-body": "$1 heeft pagina $2 beoordeeld.",
+	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Toegewezen pagina’s",
+	"bs-pageassignments-event-assignment-add-key-desc": "Toegewezen aan een pagina",
+	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|heeft}} u aan de pagina $2 toegewezen.",
+	"bs-pageassignments-event-assignment-add-bot": "U bent aan de pagina $1 toegewezen",
+	"bs-pageassignments-event-assignment-links-intro": "Bezoek de pagina via de volgende koppeling om uw toewijzing te controleren",
+	"bs-pageassignments-event-assignment-remove-key-desc": "Toewijzing verwijderd van een pagina",
+	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|heeft}} uw toewijzing van de pagina $2 verwijderd",
+	"bs-pageassignments-event-assignment-remove-bot": "Uw toewijzing is van de pagina $1 verwijderd",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Toewijzen",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Toewijzingen voor $1 bewerken"
 }
