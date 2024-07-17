@@ -6,5 +6,6 @@
 	},
 	"bs-pageassignments-assignee-type-user": "Մասնակից",
 	"bs-pageassignments-assignee-type-group": "Խումբ",
-	"bs-pageassignments-collection-var-namespacename": "Անվանատարածք"
+	"bs-pageassignments-collection-var-namespacename": "Անվանատարածք",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Հանձնարարել"
 }
