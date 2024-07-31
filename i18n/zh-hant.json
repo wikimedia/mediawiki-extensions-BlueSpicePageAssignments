@@ -79,5 +79,15 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "頁數",
 	"bs-pageassignments-notification-pagereview-summary": "$1已檢閱$3",
 	"bs-pageassignments-notification-pagereview-subject": "$2頁的檢閱",
-	"bs-pageassignments-notification-pagereview-body": "$1已檢閱頁面$2。"
+	"bs-pageassignments-notification-pagereview-body": "$1已檢閱頁面$2。",
+	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "已分配頁面",
+	"bs-pageassignments-event-assignment-add-key-desc": "已分配到一個頁面",
+	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|分配}}給您頁面$2",
+	"bs-pageassignments-event-assignment-add-bot": "您被分配到頁面$1",
+	"bs-pageassignments-event-assignment-links-intro": "請參訪以下連結頁面來檢查您的分配",
+	"bs-pageassignments-event-assignment-remove-key-desc": "已從頁面上移除分配",
+	"bs-pageassignments-event-assignment-remove": "已從頁面$2{{GENDER:$1|移除}}您的分配",
+	"bs-pageassignments-event-assignment-remove-bot": "已從頁面$1移除掉您的分配",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "分配",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "編輯$1的分配"
 }
