@@ -68,5 +68,19 @@ Ext.define( 'BS.PageAssignments.panel.Overview', {
 		});
 
 		this.callParent( arguments );
+
+		this.on( 'afterrender', function() {
+			if ( this.headerCt.tabGuardBeforeEl ) {
+				this.headerCt.tabGuardBeforeEl.set( { tabIndex: -1 } );
+			}
+
+			if ( this.headerCt.tabGuardAfterEl ) {
+				this.headerCt.tabGuardAfterEl.set( { tabIndex: -1 } );
+			}
+
+			if ( this.el ) {
+				this.el.set( { tabIndex: -1 } );
+			}
+		}.bind( this ) );
 	}
 });
