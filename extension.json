@@ -107,7 +107,7 @@
 				}
 			}
 		},
-		"Notifications": {
+		"NotifyMe": {
 			"ManualSubscriberProviderSets": {
 				"pa-assigned-pages": {
 					"class": "\\BlueSpice\\PageAssignments\\Notifications\\SubscriberProviderSet\\Assigned",
