@@ -3,7 +3,7 @@
 namespace BlueSpice\PageAssignments\Notifications\SubscriberProviderSet;
 
 use BlueSpice\PageAssignments\AssignmentFactory;
-use MediaWiki\Extension\Notifications\SubscriberProvider\ManualProvider\ISubscriptionSet;
+use MediaWiki\Extension\NotifyMe\SubscriberProvider\ManualProvider\ISubscriptionSet;
 use MediaWiki\User\UserGroupManager;
 use MediaWiki\User\UserIdentity;
 use MWStake\MediaWiki\Component\Events\INotificationEvent;

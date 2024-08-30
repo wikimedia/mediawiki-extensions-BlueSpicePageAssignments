@@ -7,9 +7,10 @@ use MediaWiki\Page\PageIdentity;
 use MediaWiki\User\UserIdentity;
 use Message;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
+use MWStake\MediaWiki\Component\Events\PriorityEvent;
 use MWStake\MediaWiki\Component\Events\TitleEvent;
 
-class AssignmentAddEvent extends TitleEvent {
+class AssignmentAddEvent extends TitleEvent implements PriorityEvent {
 
 	/**
 	 * @var array
