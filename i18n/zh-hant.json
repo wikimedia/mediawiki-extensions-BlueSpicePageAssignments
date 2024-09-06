@@ -69,8 +69,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "已分配頁面",
 	"bs-pageassignments-collection-var-unassignedpages": "未分配頁面",
 	"bs-pageassignments-pageheader-label": "分配",
-	"bs-pageassignments-book-assignment-not-allowed-title": "分配不允許",
-	"bs-pageassignments-book-assignment-not-allowed-text": "分配不被允許在非標題書籍上",
 	"bs-pageassignments-statistics-report-assigned-pages": "已分配頁面",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "已分配",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "尚未分配",

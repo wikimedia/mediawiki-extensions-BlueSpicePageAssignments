@@ -67,8 +67,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "Pàggene assignate",
 	"bs-pageassignments-collection-var-unassignedpages": "Pàggene non assignate",
 	"bs-pageassignments-pageheader-label": "Assegnaziune",
-	"bs-pageassignments-book-assignment-not-allowed-title": "Assegnaziune non permesse",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Le assegnaziune non ge sò permesse pe titole ca no se basane sus a libbre",
 	"bs-pageassignments-statistics-report-assigned-pages": "Pàggene assignate",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assegnate",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "None assegnate",

@@ -73,8 +73,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "الصفحات المخصصة",
 	"bs-pageassignments-collection-var-unassignedpages": "الصفحات غير المخصصة",
 	"bs-pageassignments-pageheader-label": "مهمة",
-	"bs-pageassignments-book-assignment-not-allowed-title": "الواجبات غير مسموح بها",
-	"bs-pageassignments-book-assignment-not-allowed-text": "الواجبات غير مسموح بها للكتب التي لا تستند إلى العنوان",
 	"bs-pageassignments-statistics-report-assigned-pages": "الصفحات المخصصة",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "تم تعيينها",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "غيرمعتمد",

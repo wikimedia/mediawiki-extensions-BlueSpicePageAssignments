@@ -71,8 +71,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "דפים משויכים",
 	"bs-pageassignments-collection-var-unassignedpages": "דפים לא משויכים",
 	"bs-pageassignments-pageheader-label": "שיוכים",
-	"bs-pageassignments-book-assignment-not-allowed-title": "הקצאות אסורות",
-	"bs-pageassignments-book-assignment-not-allowed-text": "הקצאות אינן מותרות עבור ספרים שאינם מבוססי כותרות",
 	"bs-pageassignments-statistics-report-assigned-pages": "דפים מוקצים",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "משויכים",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "לא משויכים",

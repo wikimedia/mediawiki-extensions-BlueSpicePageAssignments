@@ -68,8 +68,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "Dodeljene strani",
 	"bs-pageassignments-collection-var-unassignedpages": "Nedodeljene strani",
 	"bs-pageassignments-pageheader-label": "Dodelitve",
-	"bs-pageassignments-book-assignment-not-allowed-title": "Dodelitve niso dovoljene",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Za knjige, ki ne temeljijo na naslovu, dodelitve niso dovoljene",
 	"bs-pageassignments-statistics-report-assigned-pages": "Dodeljene strani",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Dodeljeno",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nedodeljeno",

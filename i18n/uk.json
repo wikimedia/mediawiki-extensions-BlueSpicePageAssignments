@@ -74,8 +74,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "Призначені сторінки",
 	"bs-pageassignments-collection-var-unassignedpages": "Непризначені сторінки",
 	"bs-pageassignments-pageheader-label": "Призначення",
-	"bs-pageassignments-book-assignment-not-allowed-title": "Призначення заборонено",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Доручення заборонено для книг, що не мають назви",
 	"bs-pageassignments-statistics-report-assigned-pages": "Призначені сторінки",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Призначено",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Не призначено",

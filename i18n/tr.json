@@ -71,8 +71,6 @@
 	"bs-pageassignments-collection-var-assignedpages": "Atanan sayfalar",
 	"bs-pageassignments-collection-var-unassignedpages": "Atanmamış sayfalar",
 	"bs-pageassignments-pageheader-label": "Atamalar",
-	"bs-pageassignments-book-assignment-not-allowed-title": "Atanmalar izin verilmiyor",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Kitaba dayalı olmayan kitaplar için atanmalar izin verilmez",
 	"bs-pageassignments-statistics-report-assigned-pages": "Atanmış sayfalar",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Atananlar",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Atanmayanlar",
