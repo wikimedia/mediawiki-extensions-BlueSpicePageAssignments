@@ -5,7 +5,7 @@ bs.pageassignments.ui.notifications.AssignedPagesSubscriptionSet = function( cfg
 	bs.pageassignments.ui.notifications.AssignedPagesSubscriptionSet.parent.apply( this, arguments );
 };
 
-OO.inheritClass( bs.pageassignments.ui.notifications.AssignedPagesSubscriptionSet, ext.notifications.ui.SubscriptionSet );
+OO.inheritClass( bs.pageassignments.ui.notifications.AssignedPagesSubscriptionSet, ext.notifyme.ui.SubscriptionSet );
 
 
 bs.pageassignments.ui.notifications.AssignedPagesSubscriptionSet.prototype.getLabel = function() {
@@ -24,4 +24,4 @@ bs.pageassignments.ui.notifications.AssignedPagesSubscriptionSet.prototype.getHe
 	return '';
 };
 
-ext.notifications.subscriptionSetRegistry.register( 'pa-assigned-pages', bs.pageassignments.ui.notifications.AssignedPagesSubscriptionSet );
+ext.notifyme.subscriptionSetRegistry.register( 'pa-assigned-pages', bs.pageassignments.ui.notifications.AssignedPagesSubscriptionSet );

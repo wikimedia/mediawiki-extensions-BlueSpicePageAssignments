@@ -330,7 +330,7 @@
 				"bs-pageassignments-notification-ui-subscriptionset-assigned-pages"
 			],
 			"dependencies": [
-				"ext.notifications.subscription.set",
+				"ext.notifyme.subscription.set",
 				"ext.bluespice"
 			]
 		},
