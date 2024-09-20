@@ -72,7 +72,7 @@ class AssignmentAddEvent extends TitleEvent implements PriorityEvent {
 		UserIdentity $agent, MediaWikiServices $services, array $extra = []
 	): array {
 		return array_merge( parent::getArgsForTesting( $agent, $services, $extra ), [
-			$extra['targetUser'] ?? $services->getUserFactory()->newFromName( 'WikiSysop' )
+			[ $extra['targetUser'] ?? $services->getUserFactory()->newFromName( 'WikiSysop' ) ]
 		] );
 	}
 }
