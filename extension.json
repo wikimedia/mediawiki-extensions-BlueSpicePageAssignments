@@ -226,8 +226,12 @@
 			]
 		},
 		"ext.pageassignments.manager": {
-			"scripts": [
-				"ext.bluespice.pageassignments.manager.js"
+			"packageFiles": [
+				"ext.bluespice.pageassignments.manager.js",
+				{
+					"name": "config.json",
+					"callback": "BlueSpice\\PageAssignments\\ClientConfig::makeConfigJson"
+				}
 			],
 			"messages": [
 				"bs-pageassignments-column-title",
@@ -243,16 +247,27 @@
 			]
 		},
 		"ext.pageassignments.overview": {
-			"scripts": [
-				"ext.bluespice.pageassignments.overview.js"
-			],
-			"messages": [
-				"bs-pageassignments-column-title",
-				"bs-pageassignments-column-assignedto"
+			"packageFiles": [
+				"ext.bluespice.pageassignments.overview.js",
+				{
+					"name": "config.json",
+					"callback": "BlueSpice\\PageAssignments\\ClientConfig::makeConfigJson"
+				}
 			],
 			"dependencies": [
-				"ext.pageassignments.scripts",
-				"ext.bluespice.extjs"
+				"ext.pageassignments.overview.panel"
+			]
+		},
+		"ext.pageassignments.overview.panel": {
+			"scripts": [
+				"ui/panel/Overview.js"
+			],
+			"messages": [
+				"bs-pageassignments-column-title"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data"
 			]
 		},
 		"ext.bluespice.pageassignments.wikiexplorer": {
