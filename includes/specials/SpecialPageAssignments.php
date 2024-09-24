@@ -1,57 +1,19 @@
 <?php
 
-use BlueSpice\Special\ManagerBase;
+class SpecialPageAssignments extends SpecialPage {
 
-class SpecialPageAssignments extends ManagerBase {
-	/**
-	 *
-	 * @param string $name
-	 * @param string $restriction
-	 * @param bool $listed
-	 * @param bool $function
-	 * @param string $file
-	 * @param bool $includable
-	 */
-	public function __construct( $name = '', $restriction = '', $listed = true,
-		$function = false, $file = 'default', $includable = false ) {
-		parent::__construct(
-			'PageAssignments',
-			$restriction,
-			$listed,
-			$function,
-			$file,
-			$includable
-		);
+	public function __construct() {
+		parent::__construct( 'PageAssignments' );
 	}
 
 	/**
-	 * @return string ID of the HTML element being added
+	 * @inheritDoc
 	 */
-	protected function getId() {
-		return 'bs-pageassignments-overview';
-	}
+	public function execute( $subPage ) {
+		parent::execute( $subPage );
 
-	/**
-	 * @return array
-	 */
-	protected function getModules() {
-		return [
-			'ext.pageassignments.overview'
-		];
-	}
-
-	/**
-	 *
-	 * @return array
-	 */
-	protected function getJSVars() {
-		$aDeps = [];
-		$this->services->getHookContainer()->run( 'BSPageAssignmentsOverview', [
-			$this,
-			&$aDeps
-		] );
-		return [
-			'bsPageAssignmentsOverviewDeps' => $aDeps
-		];
+		$out = $this->getOutput();
+		$out->addModules( [	'ext.pageassignments.overview' ] );
+		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-pageassignments-overview' ] ) );
 	}
 }
