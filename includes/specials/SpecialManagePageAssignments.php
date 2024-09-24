@@ -39,20 +39,4 @@ class SpecialManagePageAssignments extends ManagerBase {
 			'ext.pageassignments.manager'
 		];
 	}
-
-	/**
-	 *
-	 * @return array
-	 */
-	protected function getJSVars() {
-		$aDeps = [];
-		$this->services->getHookContainer()->run( 'BSPageAssignmentsManager', [
-			$this,
-			&$aDeps
-		] );
-
-		return [
-			'bsPageAssignmentsManagerDeps' => $aDeps
-		];
-	}
 }

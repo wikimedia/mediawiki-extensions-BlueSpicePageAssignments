@@ -7,8 +7,8 @@
 		});
 	}
 
-	var deps = mw.config.get('bsPageAssignmentsManagerDeps');
-	if( deps ) {
+	const deps = require( './config.json' ).pageAssignmentsOverviewDeps;
+	if ( deps ) {
 		mw.loader.using( deps, _renderGrid );
 	}
 	else {
