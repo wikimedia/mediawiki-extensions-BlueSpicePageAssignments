@@ -331,7 +331,8 @@
 			],
 			"messages": [
 				"bs-pageassignment-info-dialog",
-				"bs-pageassignments-flyout-title"
+				"bs-pageassignments-column-assignedto",
+				"bs-pageassignments-column-assignee-type"
 			],
 			"dependencies": [
 				"ext.bluespice"
