@@ -29,6 +29,7 @@ ext.bluespice.pageassignments.ui.panel.Overview.prototype.setupGridConfig = func
 		columns: {
 			page_prefixedtext: { // eslint-disable-line camelcase
 				headerText: mw.message( 'bs-pageassignments-column-title' ).text(),
+				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
 				valueParser: ( val, row ) => {
