@@ -23,9 +23,9 @@
 	"bs-pageassignments-dlg-fldlabel": "Window field label\n{{Identical|Assignment}}",
 	"bs-pageassignments-menu-label": "Label text for action menu entry that allows setting page assignments\n{{Identical|Set page assignments}}",
 	"bs-pageassignments-action-apiedit-description": "Client side api module description for BS.PageAssignments.action.ApiTaskEdit to edit an assignment. Parameters:\n*$1 - Page title",
-	"bs-pageassignments-column-title": "Extjs grid column label for Pagetitle\n{{Identical|Page title}}",
-	"bs-pageassignments-column-assignments": "Extjs grid calumn label for assignments\n{{Identical|Assignment}}",
-	"bs-pageassignments-column-assignedto": "Extjs grid calumn label for assigned to\n{{Identical|Assigned to}}",
+	"bs-pageassignments-column-title": "Grid column label for Pagetitle\n{{Identical|Page title}}",
+	"bs-pageassignments-column-assignments": "Grid column label for assignments\n{{Identical|Assignment}}",
+	"bs-pageassignments-column-assignedto": "Grid column label for Assigned to\n{{Identical|Assigned to}}",
 	"bs-pageassignments-no-assignments": "Text, when no assignments could be found",
 	"bs-pageassignments-action-log": "Tooltip text to the link to the assignments log",
 	"bs-pageassignments-action-delete-confirm": "Remove assignment?",
@@ -113,5 +113,6 @@
 	"bs-pageassignments-event-assignment-remove": "Notification message user is removed from a page\n$1 - agent\n$2 - page anchor",
 	"bs-pageassignments-event-assignment-remove-bot": "Notification message user is removed from a page, by a bot\n$1 - page anchor",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Label for action button to change assignments",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Title for action to edit assignments\n* $1 - page title"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Title for action to edit assignments\n* $1 - page title",
+	"bs-pageassignments-column-assignee-type": "Grid column label for Type"
 }

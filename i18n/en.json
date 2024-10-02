@@ -103,5 +103,6 @@
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|removed}} your assignment from the page $2",
 	"bs-pageassignments-event-assignment-remove-bot": "Your assignment was removed from the page $1",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assign",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Edit assignments for $1"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Edit assignments for $1",
+	"bs-pageassignments-column-assignee-type": "Type"
 }
