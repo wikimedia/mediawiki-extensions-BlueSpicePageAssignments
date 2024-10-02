@@ -62,7 +62,6 @@
 	"bs-pageassignments-secure-nsm-label": "Sikrede sidetildelinger",
 	"bs-pageassignments-secure-lockdown-reason": "Handlingen «$1» er bare tilgjengelig for {{PLURAL:$2|tildelte}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Du er ikke tildelt siden $1",
-	"bs-pageassignments-flyout-title": "Sidetildelinger",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – tildelt {{PLURAL:$2|side|sider}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Tildelinger",
 	"bs-pageassignments-collection-var-namespacename": "Navnerom",

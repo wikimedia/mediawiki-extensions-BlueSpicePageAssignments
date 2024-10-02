@@ -71,7 +71,6 @@
 	"bs-pageassignments-secure-nsm-label": "Assignations de pages sécurisées",
 	"bs-pageassignments-secure-lockdown-reason": "L’action « $1 » n’est disponible que pour {{PLURAL:$2|l’utilisateur affecté|les utilisateurs affectés}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Vous n’êtes pas affecté{{GENDER:||e}} à la page $1",
-	"bs-pageassignments-flyout-title": "Assignation de pages",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – Page{{PLURAL:$2||s}} qui vous {{PLURAL:$2|est|sont}} affecté{{PLURAL:$2||s}} : $1",
 	"bs-pageassignments-collection-type-assignedpages": "Affectations",
 	"bs-pageassignments-collection-var-namespacename": "Espace de noms",

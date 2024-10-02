@@ -64,7 +64,6 @@
 	"bs-pageassignments-secure-nsm-label": "Güvenli sayfa atamaları",
 	"bs-pageassignments-secure-lockdown-reason": "\"$1\" işlemi yalnızca {{PLURAL:$2|alıcı}} $3 için kullanılabilir",
 	"bs-pageassignments-group-lockdown-reason": "Sayfaya $1 atanmamışsınız",
-	"bs-pageassignments-flyout-title": "Sayfa atamaları",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - {{PLURAL:$2|Sayfaya}} atandı: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Atamalar",
 	"bs-pageassignments-collection-var-namespacename": "Ad alanı",

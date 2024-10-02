@@ -61,7 +61,6 @@
 	"bs-pageassignments-assignee-type-group": "Gruppo",
 	"bs-pageassignments-secure-lockdown-reason": "L'azione \"$1\" è disponibile solo per {{PLURAL:$2|l'assegnatario|gli assegnatari}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Non sei stato assegnato alla pagina $1",
-	"bs-pageassignments-flyout-title": "Assegnazioni di pagina",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnato a {{PLURAL:$2|pagina|pagine}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Assegnazioni",
 	"bs-pageassignments-collection-var-namespacename": "Namespace",

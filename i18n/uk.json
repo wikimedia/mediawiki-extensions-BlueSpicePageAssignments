@@ -67,7 +67,6 @@
 	"bs-pageassignments-secure-nsm-label": "Захищені призначення до сторінок",
 	"bs-pageassignments-secure-lockdown-reason": "Дія «$1» доступна лише для {{PLURAL:$2|призначенця|призначенців}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Ви не призначені до сторінки $1",
-	"bs-pageassignments-flyout-title": "Призначення до сторінок",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments — призначено до {{PLURAL:$2|сторінки|сторінок}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Призначення",
 	"bs-pageassignments-collection-var-namespacename": "Простір назв",

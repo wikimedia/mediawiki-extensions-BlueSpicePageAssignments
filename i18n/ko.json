@@ -24,7 +24,6 @@
 	"bs-pageassignments-assignee-type-user": "사용자",
 	"bs-pageassignments-assignee-type-group": "그룹",
 	"bs-pageassignments-group-lockdown-reason": "$1 문서에 할당되어 있지 않습니다",
-	"bs-pageassignments-flyout-title": "페이지 할당",
 	"bs-pageassignments-collection-var-namespacename": "이름공간",
 	"bs-pageassignments-statistics-report-assigned-pages": "할당된 문서",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "할당됨",

@@ -15,6 +15,5 @@
 	"bs-pageassignments-assignee-type-everyone": "ο καθένας",
 	"bs-pageassignments-assignee-type-user": "Χρήστης",
 	"bs-pageassignments-assignee-type-group": "Ομάδα",
-	"bs-pageassignments-flyout-title": "Αναθέσεις σελίδας",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpice Αναθεση εργασιών σε Σελίδες - Aνατέθηκε {{PLURAL:$2|στην σελίδα|pages}}: $1"
 }

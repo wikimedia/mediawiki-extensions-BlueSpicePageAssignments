@@ -32,7 +32,6 @@
 	"bs-pageassignments-assignee-type-everyone": "Каждый",
 	"bs-pageassignments-assignee-type-user": "Участник",
 	"bs-pageassignments-assignee-type-group": "Группа",
-	"bs-pageassignments-flyout-title": "Назначения для страницы",
 	"bs-pageassignments-collection-type-assignedpages": "Назначения",
 	"bs-pageassignments-collection-var-namespacename": "Пространство имён",
 	"bs-pageassignments-pageheader-label": "Назначения",

@@ -60,7 +60,6 @@
 	"bs-pageassignments-secure-nsm-label": "Assegnaziune a 'na pàgene secure",
 	"bs-pageassignments-secure-lockdown-reason": "L'azione \"$1\" jè sulamende disponibbele {{PLURAL:$2|pe l'|pe le }} assegnatarije $3",
 	"bs-pageassignments-group-lockdown-reason": "Non g'è state assegnate a 'a pàgene $1",
-	"bs-pageassignments-flyout-title": "Assegnaziune d'a pàgene",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnate a {{PLURAL:$2|'a pàgene|le pàggene}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Assegnaziune",
 	"bs-pageassignments-collection-var-namespacename": "Namespace",

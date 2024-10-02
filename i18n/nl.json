@@ -65,7 +65,6 @@
 	"bs-pageassignments-secure-nsm-label": "Beveiligde paginatoewijzingen",
 	"bs-pageassignments-secure-lockdown-reason": "De handeling \"$1\" is alleen beschikbaar voor de toegewezene{{PLURAL:$2||n}} $3",
 	"bs-pageassignments-group-lockdown-reason": "U bent niet toegewezen aan de pagina $1",
-	"bs-pageassignments-flyout-title": "Paginatoewijzingen",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Toegewezen aan pagina{{PLURAL:$2||'s}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Toewijzingen",
 	"bs-pageassignments-collection-var-namespacename": "Naamruimte",

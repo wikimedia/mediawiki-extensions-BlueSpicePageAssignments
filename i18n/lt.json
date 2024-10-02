@@ -61,7 +61,6 @@
 	"bs-pageassignments-secure-nsm-label": "Apsaugoto puslapio priskyrimas",
 	"bs-pageassignments-secure-lockdown-reason": "Veiksmas „$1“ galimas tik {{PLURAL:$2|priskirtam|priskirtiem}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Jūs nesate priskirtas puslapiui $1",
-	"bs-pageassignments-flyout-title": "Puslapio priskyrimas",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Priskirta {{PLURAL:$2|puslapiui|puslapiai}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Priskyrimai",
 	"bs-pageassignments-collection-var-namespacename": "Vardų sritis",

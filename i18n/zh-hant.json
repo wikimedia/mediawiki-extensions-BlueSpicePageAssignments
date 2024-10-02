@@ -62,7 +62,6 @@
 	"bs-pageassignments-secure-nsm-label": "安全頁面分配",
 	"bs-pageassignments-secure-lockdown-reason": "操作「$1」僅對{{PLURAL:$2|代理|代理}}$3可用",
 	"bs-pageassignments-group-lockdown-reason": "您未分配到頁面$1",
-	"bs-pageassignments-flyout-title": "頁面分配",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - 已分配至{{PLURAL:$2|頁面|頁面}}：$1",
 	"bs-pageassignments-collection-type-assignedpages": "分配",
 	"bs-pageassignments-collection-var-namespacename": "命名空間",

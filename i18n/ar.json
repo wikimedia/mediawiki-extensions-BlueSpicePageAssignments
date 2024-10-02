@@ -66,7 +66,6 @@
 	"bs-pageassignments-secure-nsm-label": "تعيينات الصفحة المؤمنة",
 	"bs-pageassignments-secure-lockdown-reason": "الإجراء  \"$1\"  فقط {{PLURAL:$2|للمعين|للمعينين}} الـ$3",
 	"bs-pageassignments-group-lockdown-reason": "لم يتم تعيينك للصفحة $1",
-	"bs-pageassignments-flyout-title": "تعيينات الصفحة",
 	"bs-pageassignments-privacy-transparency-working-assignments": "مهام صفحة بلو سبيس - موكل إلى {{PLURAL:$2|الصفحة|الصفحات}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "التعيينات",
 	"bs-pageassignments-collection-var-namespacename": "النطاق",

@@ -60,7 +60,6 @@
 	"bs-pageassignments-secure-nsm-label": "Assignationes securisate de paginas",
 	"bs-pageassignments-secure-lockdown-reason": "Le action \"$1\" es solmente disponibile pro le {{PLURAL:$2|assignato|assignatos}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Tu non es assignate al pagina $1",
-	"bs-pageassignments-flyout-title": "Assignationes de paginas",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assignate al pagina{{PLURAL:$2||s}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Assignationes",
 	"bs-pageassignments-collection-var-namespacename": "Spatio de nomines",
