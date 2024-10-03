@@ -6,6 +6,7 @@
 		]
 	},
 	"bs-pageassignments-column-title": "Säitentitel",
+	"bs-pageassignments-column-assignee-type": "Typ",
 	"bs-pageassignments-api-error": "Et ass e Feeler geschitt",
 	"bs-pageassignments-api-error-no-page": "Säit net uginn",
 	"bs-pageassignments-notification-reason": "Grënn fir dës Notifikatioun",
