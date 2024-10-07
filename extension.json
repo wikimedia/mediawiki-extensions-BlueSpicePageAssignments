@@ -133,6 +133,11 @@
 			"CreateNewBookModules": [
 				"ext.pageassignments.bookshelf.createNewBook"
 			]
+		},
+		"BlueSpiceWikiExplorer": {
+			"PluginModules": [
+				"ext.bluespice.pageassignments.wikiExplorer.columns"
+			]
 		}
 	},
 	"GroupPermissions": {
@@ -365,6 +370,14 @@
 				"oojs-ui.styles.icons-interactions",
 				"oojs-ui.styles.icons-user"
 			]
+		},
+		"ext.bluespice.pageassignments.wikiExplorer.columns": {
+			"scripts": [
+				"ext.bluespice.pageassignments.wikiExplorer.columns.js"
+			],
+			"messages": [
+				"pageassignments"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -446,8 +459,6 @@
 		],
 		"BSBookshelfManagerGetBookDataRow": "PageAssignmentsBookmakerHooks::onBSBookshelfManagerGetBookDataRow",
 		"BSUEModulePDFcollectMetaData": "PageAssignmentsBookmakerHooks::onBSUEModulePDFcollectMetaData",
-		"WikiExplorer::getFieldDefinitions": "PageAssignmentsWikiExplorerHooks::onWikiExplorerGetFieldDefinitions",
-		"WikiExplorer::getColumnDefinitions": "PageAssignmentsWikiExplorerHooks::onWikiExplorerGetColumnDefinitions",
 		"WikiExplorer::queryPagesWithFilter": "PageAssignmentsWikiExplorerHooks::onWikiExplorerQueryPagesWithFilter",
 		"WikiExplorer::buildDataSets": "PageAssignmentsWikiExplorerHooks::onWikiExplorerBuildDataSets",
 		"BSDashboardsUserDashboardPortalConfig": "PageAssignmentsDashboardHooks::onBSDashboardsUserDashboardPortalConfig",
