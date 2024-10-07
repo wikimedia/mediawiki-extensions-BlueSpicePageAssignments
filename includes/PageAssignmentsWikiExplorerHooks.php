@@ -6,37 +6,6 @@ class PageAssignmentsWikiExplorerHooks {
 
 	/**
 	 *
-	 * @param array &$aFields
-	 * @return bool
-	 */
-	public static function onWikiExplorerGetFieldDefinitions( &$aFields ) {
-		$aFields[] = [
-			'name' => 'page_assignments',
-		];
-		return true;
-	}
-
-	/**
-	 *
-	 * @param array &$aColumns
-	 * @return bool
-	 */
-	public static function onWikiExplorerGetColumnDefinitions( &$aColumns ) {
-		$aColumns[] = [
-			'header' => wfMessage( 'pageassignments' )->escaped(),
-			'dataIndex' => 'page_assignments',
-			'id' => 'page_assignments',
-			'filter' => [
-				'type' => 'string'
-			],
-			'width' => 200,
-			'hidden' => true
-		];
-		return true;
-	}
-
-	/**
-	 *
 	 * @param array $aFilters
 	 * @param array &$aTables
 	 * @param array &$aFields
