@@ -10,6 +10,7 @@
 	"bs-pageassignments-desc": "사용자나 그룹을 페이지에 할당할 수 있게 합니다",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "할당된 사용자의 추가 권한",
 	"bs-pageassignments-column-title": "페이지 제목",
+	"bs-pageassignments-column-assignee-type": "유형",
 	"bs-pageassignments-api-error": "오류가 발생했습니다",
 	"bs-pageassignments-api-error-no-page": "페이지가 지정되지 않음",
 	"logentry-bs-pageassignments-add-group": "$1님이 \"$4\" 그룹을 \"$3\" 문서로 {{GENDER:$2|할당했습니다}}",

@@ -18,6 +18,7 @@
 	"bs-pageassignments-column-title": "頁面標題",
 	"bs-pageassignments-column-assignments": "分配",
 	"bs-pageassignments-column-assignedto": "分配給",
+	"bs-pageassignments-column-assignee-type": "類型",
 	"bs-pageassignments-no-assignments": "沒有分配",
 	"bs-pageassignments-action-log": "分配日誌",
 	"bs-pageassignments-action-delete-confirm": "移除分配？",
