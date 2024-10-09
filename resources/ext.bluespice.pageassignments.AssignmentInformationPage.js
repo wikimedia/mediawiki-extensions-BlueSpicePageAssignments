@@ -23,7 +23,20 @@
 	bs.pageassignments.info.AssignmentsInformationPage.prototype.onInfoPanelSelect = async function () {
 		if ( !this.assignmentGrid ) {
 			await mw.loader.using( [ 'ext.oOJSPlus.data', 'oojs-ui.styles.icons-user' ] );
-			const data = await bs.api.tasks.exec( 'pageassignment', 'getForPage', { pageId: mw.config.get( 'wgArticleId' ) } );
+
+			const assignmentsStore = new OOJSPlus.ui.data.store.RemoteStore( {
+				action: 'bs-pageassignment-store',
+				pageSize: 25
+			} );
+			assignmentsStore.filter( new OOJSPlus.ui.data.filter.String( {
+				value: this.pageName,
+				operator: 'eq',
+				type: 'string'
+			} ), 'page_title' );
+
+			const rawData = await assignmentsStore.doLoadData();
+			const pageData = Object.values( rawData ); // eslint-disable-line es/no-object-values
+			const assignmentsData = pageData.length > 0 ? pageData[ 0 ].assignments : [];
 
 			this.assignmentGrid = new OOJSPlus.ui.data.GridWidget( {
 				style: 'differentiate-rows',
@@ -36,10 +49,9 @@
 					pa_assignee_type: { // eslint-disable-line camelcase
 						headerText: mw.message( 'bs-pageassignments-column-assignee-type' ).text(),
 						type: 'text'
-
 					}
 				},
-				data: data.payload
+				data: assignmentsData
 			} );
 
 			this.$element.append( this.assignmentGrid.$element );
