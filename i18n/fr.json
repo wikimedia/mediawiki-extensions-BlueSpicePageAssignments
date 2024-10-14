@@ -12,7 +12,8 @@
 			"Thibaut120094",
 			"Urhixidur",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Terio legale"
 		]
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d’assigner des utilisateurs ou groupes à une page",
@@ -27,6 +28,7 @@
 	"bs-pageassignments-column-title": "Titre de page",
 	"bs-pageassignments-column-assignments": "Affectations",
 	"bs-pageassignments-column-assignedto": "Affecté à",
+	"bs-pageassignments-column-assignee-type": "Type",
 	"bs-pageassignments-no-assignments": "Aucune assignation",
 	"bs-pageassignments-action-log": "Journal des affectations",
 	"bs-pageassignments-action-delete-confirm": "Supprimer l’affectation ?",
@@ -75,15 +77,12 @@
 	"bs-pageassignments-secure-nsm-label": "Assignations de pages sécurisées",
 	"bs-pageassignments-secure-lockdown-reason": "L’action « $1 » n’est disponible que pour {{PLURAL:$2|l’utilisateur affecté|les utilisateurs affectés}} $3",
 	"bs-pageassignments-group-lockdown-reason": "Vous n’êtes pas affecté{{GENDER:||e}} à la page $1",
-	"bs-pageassignments-flyout-title": "Assignation de pages",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – Page{{PLURAL:$2||s}} qui vous {{PLURAL:$2|est|sont}} affecté{{PLURAL:$2||s}} : $1",
 	"bs-pageassignments-collection-type-assignedpages": "Affectations",
 	"bs-pageassignments-collection-var-namespacename": "Espace de noms",
 	"bs-pageassignments-collection-var-assignedpages": "Pages assignées",
 	"bs-pageassignments-collection-var-unassignedpages": "Pages non assignées",
 	"bs-pageassignments-pageheader-label": "Affectations",
-	"bs-pageassignments-book-assignment-not-allowed-title": "Affectations non autorisées",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Les affectations ne sont pas autorisées pour les livres non basés sur des titres",
 	"bs-pageassignments-statistics-report-assigned-pages": "Pages assignées",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Affecté",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non affecté",
