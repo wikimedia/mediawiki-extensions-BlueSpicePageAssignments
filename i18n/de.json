@@ -29,6 +29,7 @@
 	"bs-pageassignments-column-title": "Seitentitel",
 	"bs-pageassignments-column-assignments": "Zuweisungen",
 	"bs-pageassignments-column-assignedto": "Zugewiesen an",
+	"bs-pageassignments-column-assignee-type": "Typ",
 	"bs-pageassignments-no-assignments": "Keine Zuweisungen",
 	"bs-pageassignments-action-log": "Zuweisungs-Logbuch",
 	"bs-pageassignments-action-delete-confirm": "Zuweisung entfernen?",
