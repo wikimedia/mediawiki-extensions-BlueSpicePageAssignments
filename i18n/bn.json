@@ -12,5 +12,6 @@
 	"bs-pageassignments-assignee-special-everyone-label": "সবাই",
 	"bs-pageassignments-assignee-type-everyone": "প্রত্যেকে",
 	"bs-pageassignments-assignee-type-user": "ব্যবহারকারী",
-	"bs-pageassignments-assignee-type-group": "দল"
+	"bs-pageassignments-assignee-type-group": "দল",
+	"bs-pageassignments-column-assignee-type": "ধরন"
 }

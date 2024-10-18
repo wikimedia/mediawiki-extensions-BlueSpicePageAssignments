@@ -103,5 +103,6 @@
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|ha removite}} tu assignation del pagina $2",
 	"bs-pageassignments-event-assignment-remove-bot": "Tu assignation ha essite removite del pagina $1",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assignar",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modificar le assignationes pro $1"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modificar le assignationes pro $1",
+	"bs-pageassignments-column-assignee-type": "Typo"
 }

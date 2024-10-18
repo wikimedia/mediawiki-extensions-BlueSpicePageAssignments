@@ -9,6 +9,7 @@
 			"Graineahumus",
 			"Samihuc",
 			"Tartare",
+			"Terio legale",
 			"Thibaut120094",
 			"Urhixidur",
 			"Verdy p",
@@ -110,5 +111,6 @@
 	"bs-pageassignments-event-assignment-add-bot": "Vous avez été assigné à la page $1",
 	"bs-pageassignments-event-assignment-links-intro": "Veuillez visiter la page au lien suivant pour vérifier votre mission",
 	"bs-pageassignments-event-assignment-remove-key-desc": "Affectation supprimée d'une page",
-	"bs-pageassignments-event-assignment-remove-bot": "Votre affectation a été supprimée de la page $1"
+	"bs-pageassignments-event-assignment-remove-bot": "Votre affectation a été supprimée de la page $1",
+	"bs-pageassignments-column-assignee-type": "Type"
 }

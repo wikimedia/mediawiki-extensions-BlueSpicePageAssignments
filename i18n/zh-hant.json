@@ -105,5 +105,6 @@
 	"bs-pageassignments-event-assignment-remove": "已從頁面$2{{GENDER:$1|移除}}您的分配",
 	"bs-pageassignments-event-assignment-remove-bot": "已從頁面$1移除掉您的分配",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "分配",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "編輯$1的分配"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "編輯$1的分配",
+	"bs-pageassignments-column-assignee-type": "類型"
 }
