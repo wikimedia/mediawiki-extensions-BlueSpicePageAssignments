@@ -12,7 +12,6 @@
 	"bs-pageassignments-menu-label": "Уреди доделување",
 	"bs-pageassignments-action-apiedit-description": "Уреди доделувања на $1",
 	"bs-pageassignments-column-assignments": "Доделувања",
-	"bs-pageassignments-column-assignedby": "Доделен од",
 	"bs-pageassignments-no-assignments": "Нема доделувања",
 	"bs-pageassignments-action-log": "Дневник на доделувања",
 	"bs-pageassignments-api-error": "Се појави грешка",
@@ -25,9 +24,6 @@
 	"echo-category-title-bs-pageassignments-action-cat": "Доделувања на страници",
 	"bs-pageassignments-notification-reason": "Причини за ова известување:",
 	"bs-pageassignments-notification-reason-group": "Вие сте член на {{PLURAL:$1|оваа група|овие групи}}: $2",
-	"notification-bs-pageassignments-assignment-change-remove-subject": "Отстранување на доделувањето до $2",
-	"notification-bs-pageassignments-user-group-add-subject": "Додаден во групата $4",
-	"notification-bs-pageassignments-user-group-remove-subject": "Отстранет од {{PLURAL:$5|групата|групите}} $4",
 	"prefs-pageassignments": "Доделувања на страници",
 	"bs-pageassignments-yourassignments": "Вашите доделувања",
 	"bs-pageassignments-yourassignmentsdesc": "Список на страници за кои сте доделени.",
@@ -37,8 +33,6 @@
 	"bs-pageassignments-assignee-type-user": "Корисник",
 	"bs-pageassignments-assignee-type-group": "Група",
 	"bs-pageassignments-group-lockdown-reason": "Не сте доделени на страницата $1",
-	"bs-pageassignments-nav-link-title-pageassignments": "Доделувања на страници",
-	"bs-pageassignments-flyout-title": "Доделувања на страници",
 	"bs-pageassignments-collection-type-assignedpages": "Доделувања",
 	"bs-pageassignments-collection-var-namespacename": "Именски простор"
 }

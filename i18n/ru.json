@@ -22,6 +22,7 @@
 	"bs-pageassignments-menu-label": "Установить назначения",
 	"bs-pageassignments-column-title": "Название страницы",
 	"bs-pageassignments-column-assignments": "Назначения",
+	"bs-pageassignments-column-assignee-type": "Тип",
 	"bs-pageassignments-api-error": "Произошла ошибка",
 	"logeventslist-bs-pageassignments-log": "Журнал назначений",
 	"bs-pageassignments-yourassignments": "Ваши назначения",
@@ -33,12 +34,10 @@
 	"bs-pageassignments-assignee-type-everyone": "Каждый",
 	"bs-pageassignments-assignee-type-user": "Участник",
 	"bs-pageassignments-assignee-type-group": "Группа",
-	"bs-pageassignments-flyout-title": "Назначения для страницы",
 	"bs-pageassignments-collection-type-assignedpages": "Назначения",
 	"bs-pageassignments-collection-var-namespacename": "Пространство имён",
 	"bs-pageassignments-pageheader-label": "Назначения",
 	"bs-pageassignment-info-dialog": "Назначения",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Назначить",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Изменение заданий для $1",
-	"bs-pageassignments-column-assignee-type": "Тип"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Изменение заданий для $1"
 }

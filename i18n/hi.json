@@ -6,8 +6,5 @@
 			"गोपाल"
 		]
 	},
-	"notification-bs-pageassignments-assignment-change-add-body": "पृष्ठ $1 से {{GENDER:$2|असाइन किया गया}} $2 पर आपको।",
-	"notification-bs-pageassignments-assignment-change-remove-body": "पृष्ठ $2 के लिए आपका असाइनमेंट $1 द्वारा {{GENDER: $2|हटा दिया}} था।",
-	"notification-bs-pageassignments-user-group-remove-body": "$4 से {{PLURAL:$5|समूह|समूहों}} $1 द्वारा हटाया गया। कृपया $3 पर अपना असाइनमेंट देखें।",
 	"bs-pageassignments-pageheader-label": "कार्य"
 }
