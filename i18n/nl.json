@@ -21,6 +21,7 @@
 	"bs-pageassignments-column-title": "Paginanaam",
 	"bs-pageassignments-column-assignments": "Opdrachten",
 	"bs-pageassignments-column-assignedto": "Toegewezen aan",
+	"bs-pageassignments-column-assignee-type": "Type",
 	"bs-pageassignments-no-assignments": "Geen opdrachten",
 	"bs-pageassignments-action-log": "Opdrachtenlogboek",
 	"bs-pageassignments-action-delete-confirm": "Opdracht verwijderen?",
