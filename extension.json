@@ -163,8 +163,8 @@
 		"echo-subscriptions-email-bs-pageassignments-action-cat": true
 	},
 	"SpecialPages": {
-		"PageAssignments": "SpecialPageAssignments",
-		"ManagePageAssignments": "SpecialManagePageAssignments"
+		"PageAssignments": "\\BlueSpice\\PageAssignments\\Special\\PageAssignments",
+		"ManagePageAssignments": "\\BlueSpice\\PageAssignments\\Special\\ManagePageAssignments"
 	},
 	"LogTypes": [
 		"bs-pageassignments"
@@ -204,8 +204,6 @@
 		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
 		"PageAssignmentsWikiExplorerHooks": "includes/PageAssignmentsWikiExplorerHooks.php",
 		"PageAssignmentsDashboardHooks": "includes/PageAssignmentsDashboardHooks.php",
-		"SpecialPageAssignments": "includes/specials/SpecialPageAssignments.php",
-		"SpecialManagePageAssignments": "includes/specials/SpecialManagePageAssignments.php",
 		"BSPageAssignmentsMigrateRespEditors": "maintenance/BSPageAssignmentsMigrateRespEditors.php"
 	},
 	"ResourceModules": {
@@ -238,16 +236,31 @@
 					"callback": "BlueSpice\\PageAssignments\\ClientConfig::makeConfigJson"
 				}
 			],
+			"dependencies": [
+				"ext.pageassignments.manager.panel"
+			]
+		},
+		"ext.pageassignments.manager.panel": {
+			"scripts": [
+				"ui/panel/Manager.js"
+			],
 			"messages": [
 				"bs-pageassignments-column-title",
 				"bs-pageassignments-column-assignments",
 				"bs-pageassignments-no-assignments",
 				"bs-pageassignments-action-log",
-				"bs-pageassignments-action-delete-confirm"
+				"bs-pageassignments-action-delete-confirm",
+				"bs-pageassignments-header-action-edit",
+				"bs-pageassignments-header-action-delete",
+				"bs-pageassignments-title-edit",
+				"bs-pageassignments-title-delete"
 			],
 			"dependencies": [
+				"oojs-ui",
+				"oojs-ui.styles.icons-alerts",
+				"oojs-ui.styles.icons-accessibility",
+				"ext.oOJSPlus.data",
 				"ext.pageassignments.scripts",
-				"ext.bluespice.extjs",
 				"ext.bluespice.pageassignments.dialog.pages"
 			]
 		},
