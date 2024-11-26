@@ -7,6 +7,7 @@
 	],
 	"globals": {
 		"blueSpice": "readonly",
+		"bs": "readonly",
 		"ext": "readonly",
 		"mediaWiki": "readonly",
 		"jQuery": "readonly",

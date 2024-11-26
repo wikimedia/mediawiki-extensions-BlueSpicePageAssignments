@@ -1,18 +1,17 @@
-(function( mw, $, bs, d, undefined ){
-	function _renderGrid() {
-		Ext.onReady(function(){
-			Ext.create( 'BS.PageAssignments.panel.Manager', {
-				renderTo: 'bs-pageassignments-manager'
-			});
-		});
-	}
+( ( mw, $ ) => {
 
-	const deps = require( './config.json' ).pageAssignmentsOverviewDeps;
-	if ( deps ) {
-		mw.loader.using( deps, _renderGrid );
-	}
-	else {
-		_renderGrid();
-	}
+	$( async () => {
+		const deps = require( './config.json' ).pageAssignmentsOverviewDeps;
+		await mw.loader.using( deps );
 
-})( mediaWiki, jQuery, blueSpice, document );
+		const $container = $( '#bs-pageassignments-manager' ); // eslint-disable-line no-jquery/no-global-selector
+		if ( $container.length === 0 ) {
+			return;
+		}
+
+		const panel = new ext.bluespice.pageassignments.ui.panel.Manager();
+
+		$container.append( panel.$element );
+	} );
+
+} )( mediaWiki, jQuery );
