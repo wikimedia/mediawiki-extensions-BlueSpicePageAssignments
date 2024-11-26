@@ -18,7 +18,7 @@ class ManagePageAssignments extends SpecialPage {
 		parent::execute( $subPage );
 
 		$out = $this->getOutput();
-		$out->addModules( [	'ext.pageassignments.manager' ] );
+		$out->addModules( [ 'ext.pageassignments.manager' ] );
 		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-pageassignments-manager' ] ) );
 	}
 }

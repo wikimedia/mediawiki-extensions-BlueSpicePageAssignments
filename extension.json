@@ -203,7 +203,6 @@
 		"PageAssignmentsHooks": "includes/PageAssignmentsHooks.php",
 		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
 		"PageAssignmentsWikiExplorerHooks": "includes/PageAssignmentsWikiExplorerHooks.php",
-		"PageAssignmentsDashboardHooks": "includes/PageAssignmentsDashboardHooks.php",
 		"BSPageAssignmentsMigrateRespEditors": "maintenance/BSPageAssignmentsMigrateRespEditors.php"
 	},
 	"ResourceModules": {
@@ -286,24 +285,6 @@
 			"dependencies": [
 				"oojs-ui",
 				"ext.oOJSPlus.data"
-			]
-		},
-		"ext.bluespice.pageassignments.wikiexplorer": {
-			"scripts": [
-				"ext.bluespice.pageassignments.wikiexplorer.js"
-			],
-			"dependencies": [
-				"ext.bluespice.pageassignments.assignable.messages",
-				"ext.bluespice.extjs"
-			]
-		},
-		"ext.bluespice.pageassignments.portlet": {
-			"messages": [
-				"bs-pageassignments-column-title",
-				"bs-pageassignments-column-assignedto"
-			],
-			"dependencies": [
-				"ext.bluespice.pageassignments.assignable.messages"
 			]
 		},
 		"ext.bluespice.pageassignments.assignable.messages": {
@@ -464,8 +445,7 @@
 			"addPageAssignmentsEntry"
 		],
 		"BeforePageDisplay": [
-			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddResources::callback",
-			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddWikiExplorerResources::callback"
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddResources::callback"
 		],
 		"PageMoveComplete": "\\BlueSpice\\PageAssignments\\Hook\\PageMoveComplete\\MoveAssignments::callback",
 		"ArticleDeleteComplete": [
@@ -475,8 +455,6 @@
 		"BSUEModulePDFcollectMetaData": "PageAssignmentsBookmakerHooks::onBSUEModulePDFcollectMetaData",
 		"WikiExplorer::queryPagesWithFilter": "PageAssignmentsWikiExplorerHooks::onWikiExplorerQueryPagesWithFilter",
 		"WikiExplorer::buildDataSets": "PageAssignmentsWikiExplorerHooks::onWikiExplorerBuildDataSets",
-		"BSDashboardsUserDashboardPortalConfig": "PageAssignmentsDashboardHooks::onBSDashboardsUserDashboardPortalConfig",
-		"BSDashboardsUserDashboardPortalPortlets": "PageAssignmentsDashboardHooks::onBSDashboardsUserDashboardPortalPortlets",
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageAssignments\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageAssignmentsPagesTag::callback",
 		"BSUserManagerAfterDeleteUser": "PageAssignmentsHooks::onBSUserManagerAfterDeleteUser",
 		"BSGroupManagerGroupNameChanged": "PageAssignmentsHooks::onBSGroupManagerGroupNameChanged",
