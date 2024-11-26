@@ -18,7 +18,7 @@ class PageAssignments extends SpecialPage {
 		parent::execute( $subPage );
 
 		$out = $this->getOutput();
-		$out->addModules( [	'ext.pageassignments.overview' ] );
+		$out->addModules( [ 'ext.pageassignments.overview' ] );
 		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-pageassignments-overview' ] ) );
 	}
 }
