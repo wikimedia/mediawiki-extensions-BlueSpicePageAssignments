@@ -98,5 +98,9 @@
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|}}a supprimé votre affectation sur la page $2",
 	"bs-pageassignments-event-assignment-remove-bot": "Votre affectation a été supprimée de la page $1",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Affecter",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifier les affectations pour $1"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifier les affectations pour $1",
+	"bs-pageassignments-header-action-edit": "Modifier",
+	"bs-pageassignments-header-action-delete": "Supprimer",
+	"bs-pageassignments-title-edit": "Modifier des assignations",
+	"bs-pageassignments-title-delete": "Supprimer des assignations"
 }
