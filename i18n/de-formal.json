@@ -7,7 +7,5 @@
 		]
 	},
 	"bs-pageassignments-notification-reason-user": "Sie sind der Seite direkt zugewiesen",
-	"bs-pageassignments-notification-reason-group": "Sie sind Mitglied der {{PLURAL:$1|Gruppe|Gruppen}}: $2",
-	"bs-pageassignments-yourassignments": "Ihre Zuweisungen",
-	"bs-pageassignments-yourassignmentsdesc": "Liste der Seiten, denen Sie zugewiesen sind."
+	"bs-pageassignments-notification-reason-group": "Sie sind Mitglied der {{PLURAL:$1|Gruppe|Gruppen}}: $2"
 }

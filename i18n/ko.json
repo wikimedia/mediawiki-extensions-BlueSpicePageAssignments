@@ -30,5 +30,9 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "할당됨",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "할당되지 않음",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "문서 수",
-	"bs-pageassignments-books-overview-page-book-action-assignment-text": "할당"
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "할당",
+	"bs-pageassignments-header-action-edit": "편집",
+	"bs-pageassignments-header-action-delete": "삭제",
+	"bs-pageassignments-title-edit": "할당 편집",
+	"bs-pageassignments-title-delete": "할당 삭제"
 }
