@@ -16,7 +16,6 @@
 	"bs-pageassignments-dlg-title": "שיוכים",
 	"bs-pageassignments-dlg-fldlabel": "שיוכים",
 	"bs-pageassignments-menu-label": "הגדרת שיוכי דף",
-	"bs-pageassignments-action-apiedit-description": "עריכת שיוכים בדף \"$1\"",
 	"bs-pageassignments-column-title": "כותרת הדף",
 	"bs-pageassignments-column-assignments": "שיוכים",
 	"bs-pageassignments-column-assignedto": "מוקצה ל־",
@@ -44,8 +43,6 @@
 	"bs-pageassignments-notification-reason-group": "{{GENDER:|אתה חבר|את חברה|אתם חברים}} {{PLURAL:$1|בקבוצה|בקבוצות}}: $2",
 	"prefs-pageassignments": "שיוכי דפים",
 	"bs-pageassignments-pref-lockdowngroups": "קבוצות שננעלות עבור דף כאשר המשתמש אינו מוקצה",
-	"bs-pageassignments-yourassignments": "השיוכים שלך",
-	"bs-pageassignments-yourassignmentsdesc": "רשימת הדפים {{GENDER:|שאתה משויך|שאת משויכת|שאתם משויכים}} אליהם.",
 	"action-pageassignable": "להופיע ברשימת המשתמשים שניתן לשייך",
 	"right-pageassignable": "הופעה ברשימת המשתמשים שניתן לשייך",
 	"action-pageassignments": "לערוך שיוכים של דפים",
@@ -89,5 +86,9 @@
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|הסיר|הסירה}} את השיוך שלך מהדף $2",
 	"bs-pageassignments-event-assignment-remove-bot": "השיוך שלך הוסר מהדף $1",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "שיוך",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "עריכת שיוכים עבור $1"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "עריכת שיוכים עבור $1",
+	"bs-pageassignments-header-action-edit": "עריכה",
+	"bs-pageassignments-header-action-delete": "מחיקה",
+	"bs-pageassignments-title-edit": "עריכת שיוכים",
+	"bs-pageassignments-title-delete": "מחיקת שיוכים"
 }

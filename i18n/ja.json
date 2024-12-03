@@ -42,8 +42,6 @@
 	"bs-pageassignments-notification-reason-user": "あなたはページに直接割り当てられています",
 	"bs-pageassignments-notification-reason-group": "あなたは{{PLURAL:$1|以下のグループ}}に所属になりました: $2",
 	"prefs-pageassignments": "ページの割り当て",
-	"bs-pageassignments-yourassignments": "あなたに対する割り当て",
-	"bs-pageassignments-yourassignmentsdesc": "あなたが割り当てられているページのリスト。",
 	"prefs-pageassign": "割り当て",
 	"bs-pageassignments-sesp-pageassignments-alias": "割り当て",
 	"bs-pageassignments-sesp-pageassignments-desc": "割り当て",

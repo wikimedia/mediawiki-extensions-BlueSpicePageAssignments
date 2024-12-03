@@ -25,7 +25,6 @@
 	"bs-pageassignments-dlg-title": "Affectations",
 	"bs-pageassignments-dlg-fldlabel": "Affectations",
 	"bs-pageassignments-menu-label": "Définir les affectations de la page",
-	"bs-pageassignments-action-apiedit-description": "Modifier les assignations de $1",
 	"bs-pageassignments-column-title": "Titre de page",
 	"bs-pageassignments-column-assignments": "Affectations",
 	"bs-pageassignments-column-assignedto": "Affecté à",
@@ -53,8 +52,6 @@
 	"bs-pageassignments-notification-reason-group": "Vous êtes membre {{PLURAL:$1|du groupe|des groupes}} : $2",
 	"prefs-pageassignments": "Assignations de pages",
 	"bs-pageassignments-pref-lockdowngroups": "Groupes verrouillés pour une page lorsque l’utilisateur n’est pas affecté",
-	"bs-pageassignments-yourassignments": "Vos assignations",
-	"bs-pageassignments-yourassignmentsdesc": "Liste des pages auxquelles vous êtes affecté{{GENDER:||e}}.",
 	"action-pageassignable": "apparaître dans la liste des utilisateurs assignables",
 	"right-pageassignable": "Apparaître dans la liste des utilisateurs assignables",
 	"action-pageassignments": "modifier l’assignation d’une page",
@@ -98,5 +95,9 @@
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|}}a supprimé votre affectation sur la page $2",
 	"bs-pageassignments-event-assignment-remove-bot": "Votre affectation a été supprimée de la page $1",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Affecter",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifier les affectations pour $1"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifier les affectations pour $1",
+	"bs-pageassignments-header-action-edit": "Modifier",
+	"bs-pageassignments-header-action-delete": "Supprimer",
+	"bs-pageassignments-title-edit": "Modifier des assignations",
+	"bs-pageassignments-title-delete": "Supprimer des assignations"
 }

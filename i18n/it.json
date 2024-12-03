@@ -16,7 +16,6 @@
 	"bs-pageassignments-dlg-title": "Assegnazioni",
 	"bs-pageassignments-dlg-fldlabel": "Assegnazioni",
 	"bs-pageassignments-menu-label": "Imposta assegnazione pagina",
-	"bs-pageassignments-action-apiedit-description": "Modificare le assegnazioni di $1",
 	"bs-pageassignments-column-title": "Titolo di pagina",
 	"bs-pageassignments-column-assignments": "Assegnazioni",
 	"bs-pageassignments-column-assignedto": "Assegnato  a",
@@ -42,8 +41,6 @@
 	"bs-pageassignments-notification-reason-user": "Sei stato assegnato direttamente alla pagina",
 	"bs-pageassignments-notification-reason-group": "Sei membro {{PLURAL:$1|del gruppo|dei gruppi}}: $2",
 	"prefs-pageassignments": "Pagina assegnazioni",
-	"bs-pageassignments-yourassignments": "Le tue assegnazioni",
-	"bs-pageassignments-yourassignmentsdesc": "Elenco di pagine a cui sei assegnato.",
 	"action-pageassignable": "apparire nell'elenco di utenti assegnabili",
 	"right-pageassignable": "Appare nell'elenco degli utenti assegnabili",
 	"action-pageassignments": "modificare le assegnazioni di una pagina",
@@ -75,5 +72,7 @@
 	"bs-pageassignment-info-dialog": "Assegnazioni",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Numero di pagine",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assegna",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifica le assegnazioni per $1"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifica le assegnazioni per $1",
+	"bs-pageassignments-header-action-edit": "Modifica",
+	"bs-pageassignments-header-action-delete": "Cancella"
 }

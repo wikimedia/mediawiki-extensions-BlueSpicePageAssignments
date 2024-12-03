@@ -12,7 +12,8 @@
 			"Okras",
 			"Pacha Tchernof",
 			"Romanko Mikhail",
-			"Vlad5250"
+			"Vlad5250",
+			"Kareyac"
 		]
 	},
 	"pageassignments": "Назначения",
@@ -25,7 +26,6 @@
 	"bs-pageassignments-column-assignee-type": "Тип",
 	"bs-pageassignments-api-error": "Произошла ошибка",
 	"logeventslist-bs-pageassignments-log": "Журнал назначений",
-	"bs-pageassignments-yourassignments": "Ваши назначения",
 	"prefs-pageassign": "Назначение",
 	"bs-pageassignments-sesp-pageassignments-alias": "Назначение",
 	"bs-pageassignments-sesp-pageassignments-desc": "Назначение",
@@ -39,5 +39,8 @@
 	"bs-pageassignments-pageheader-label": "Назначения",
 	"bs-pageassignment-info-dialog": "Назначения",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Назначить",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Изменение заданий для $1"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Изменение заданий для $1",
+	"bs-pageassignments-header-action-delete": "Удалить",
+	"bs-pageassignments-title-edit": "Редактировать задания",
+	"bs-pageassignments-title-delete": "Удалить задания"
 }
