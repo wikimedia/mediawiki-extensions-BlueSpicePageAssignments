@@ -3,6 +3,7 @@
 		"authors": [
 			"Jerrykim306",
 			"Nuevo Paso",
+			"Suleiman the Magnificent Television",
 			"Ykhwong",
 			"Yunbj"
 		]
@@ -33,6 +34,6 @@
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "할당",
 	"bs-pageassignments-header-action-edit": "편집",
 	"bs-pageassignments-header-action-delete": "삭제",
-	"bs-pageassignments-title-edit": "할당 편집",
-	"bs-pageassignments-title-delete": "할당 삭제"
+	"bs-pageassignments-title-edit": "편집 할당",
+	"bs-pageassignments-title-delete": "과제를 삭제"
 }
