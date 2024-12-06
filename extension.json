@@ -61,9 +61,6 @@
 				"pageheader-assignments-base": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignmentBase::factory",
 				"pageheader-assignments-user": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignmentUser::factory"
 			},
-			"LessVarsRegistry": {
-				"bs-pageassignments-icon-specialeveryone-color": "@bs-color-tertiary"
-			},
 			"PermissionLockdownRegistry": {
 				"pageassignments-secure": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Secure::getInstance"
 			},
@@ -206,13 +203,6 @@
 		"BSPageAssignmentsMigrateRespEditors": "maintenance/BSPageAssignmentsMigrateRespEditors.php"
 	},
 	"ResourceModules": {
-		"ext.pageassignments.styles": {
-			"styles": [
-				"ext.bluespice.pageassignments.less",
-				"ext.bluespice.pageassignments.pageheader.less"
-			],
-			"class": "\\BlueSpice\\ResourceModule\\LessVars"
-		},
 		"ext.pageassignments.scripts": {
 			"scripts": [
 				"ext.bluespice.pageassignments.js"
@@ -246,19 +236,20 @@
 			"messages": [
 				"bs-pageassignments-column-title",
 				"bs-pageassignments-column-assignments",
-				"bs-pageassignments-no-assignments",
 				"bs-pageassignments-action-log",
 				"bs-pageassignments-action-delete-confirm",
 				"bs-pageassignments-header-action-edit",
 				"bs-pageassignments-header-action-delete",
 				"bs-pageassignments-title-edit",
-				"bs-pageassignments-title-delete"
+				"bs-pageassignments-title-delete",
+				"bs-pageassignments-show-unassigned-pages"
 			],
 			"dependencies": [
 				"oojs-ui",
 				"oojs-ui.styles.icons-alerts",
 				"oojs-ui.styles.icons-accessibility",
 				"ext.oOJSPlus.data",
+				"ext.oOJSPlus.managerPanel",
 				"ext.pageassignments.scripts",
 				"ext.bluespice.pageassignments.dialog.pages"
 			]

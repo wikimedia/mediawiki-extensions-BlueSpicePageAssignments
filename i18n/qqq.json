@@ -26,7 +26,6 @@
 	"bs-pageassignments-column-assignments": "Grid column label for assignments. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments\n{{Identical|Assignment}}",
 	"bs-pageassignments-column-assignedto": "Grid column label for Assigned to\n{{Identical|Assigned to}}",
 	"bs-pageassignments-column-assignee-type": "Grid column label for Type",
-	"bs-pageassignments-no-assignments": "Text, when no assignments could be found. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
 	"bs-pageassignments-action-log": "Tooltip text to the link to the assignments log. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
 	"bs-pageassignments-action-delete-confirm": "For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
 	"bs-pageassignments-api-error": "Text, that an error has occurred",
@@ -96,5 +95,6 @@
 	"bs-pageassignments-header-action-edit": "Header text for the column that allows editing assignments\n{{Identical|Edit}}",
 	"bs-pageassignments-header-action-delete": "Header text for the column that allows deleting assignments\n{{Identical|Delete}}",
 	"bs-pageassignments-title-edit": "Title for “Edit assignments” icon. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
-	"bs-pageassignments-title-delete": "Title for “Delete assignments” icon. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments"
+	"bs-pageassignments-title-delete": "Title for “Delete assignments” icon. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
+	"bs-pageassignments-show-unassigned-pages": "Label for \"Show unassigned pages\" button"
 }
