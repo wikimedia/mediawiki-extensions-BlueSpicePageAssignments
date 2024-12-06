@@ -1,34 +1,36 @@
-ext.bluespice = ext.bluespice || {};
-ext.bluespice.pageassignments = ext.bluespice.pageassignments || {};
-ext.bluespice.pageassignments.ui = ext.bluespice.pageassignments.ui || {};
-ext.bluespice.pageassignments.ui.panel = ext.bluespice.pageassignments.ui.panel || {};
+bs.util.registerNamespace( 'ext.bluespice.pageassignments.ui.panel' );
 
 ext.bluespice.pageassignments.ui.panel.Manager = function ( cfg ) {
-	ext.bluespice.pageassignments.ui.panel.Manager.super.apply( this, cfg );
-	this.$element = $( '<div>' );
+	cfg = cfg || {};
+	this.showUnassignedActive = false;
 
 	this.store = new OOJSPlus.ui.data.store.RemoteStore( {
 		action: 'bs-pageassignment-store',
-		pageSize: 25
+		pageSize: 25,
+		filter: {
+			has_assignments: { // eslint-disable-line camelcase
+				type: 'boolean',
+				value: true
+			}
+		},
+		sorter: {
+			page_prefixedtext: { // eslint-disable-line camelcase
+				direction: 'ASC'
+			}
+		}
 	} );
 
-	this.setup();
-};
-
-OO.inheritClass( ext.bluespice.pageassignments.ui.panel.Manager, OO.ui.PanelLayout );
-
-ext.bluespice.pageassignments.ui.panel.Manager.prototype.setup = function () {
 	this.gridCfg = this.setupGridConfig();
-	this.grid = new OOJSPlus.ui.data.GridWidget( this.gridCfg );
-	this.grid.connect( this, {
-		action: 'doActionOnRow'
-	} );
+	cfg.grid = this.gridCfg;
 
-	this.$element.append( this.grid.$element );
+	ext.bluespice.pageassignments.ui.panel.Manager.parent.call( this, cfg );
 };
+
+OO.inheritClass( ext.bluespice.pageassignments.ui.panel.Manager, OOJSPlus.ui.panel.ManagerGrid );
 
 ext.bluespice.pageassignments.ui.panel.Manager.prototype.setupGridConfig = function () {
 	const gridCfg = {
+		multiSelect: false,
 		exportable: true,
 		style: 'differentiate-rows',
 		columns: {
@@ -53,21 +55,7 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.setupGridConfig = funct
 				sortable: true,
 				filter: { type: 'text' },
 				valueParser: ( value ) => {
-					if ( !value.length ) {
-						return mw.message( 'bs-pageassignments-no-assignments' ).plain();
-					}
-
-					const $htmlElement = $( '<tr>' );
-					value.forEach( ( element ) => {
-						const widget = new OOJSPlus.ui.widget.UserWidget( {
-							user_name: element.pa_assignee_key, // eslint-disable-line camelcase
-							showImage: element.pa_assignee_type === 'user',
-							showLink: element.pa_assignee_type === 'user',
-							showRawUsername: false
-						} );
-						$htmlElement.append( $( '<th>' ).append( widget.$element ) );
-					} );
-					return $htmlElement;
+					return this.makeAssignmentsWidget( value );
 				}
 			}
 		},
@@ -77,8 +65,21 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.setupGridConfig = funct
 				title: mw.message( 'bs-pageassignments-title-edit' ).text(),
 				type: 'action',
 				actionId: 'edit',
-				icon: 'settings',
+				icon: 'edit',
 				invisibleHeader: true,
+				visibleOnHover: true,
+				width: 30
+			},
+			secondaryActions: {
+				type: 'secondaryActions',
+				actions: [ {
+					label: mw.message( 'bs-pageassignments-action-log' ).text(),
+					title: mw.message( 'bs-pageassignments-action-log' ).text(),
+					data: 'log',
+					icon: 'article'
+				} ],
+				invisibleHeader: true,
+				visibleOnHover: true,
 				width: 30
 			},
 			delete: {
@@ -88,65 +89,46 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.setupGridConfig = funct
 				actionId: 'delete',
 				icon: 'trash',
 				invisibleHeader: true,
-				width: 30
-			},
-			log: {
-				headerText: mw.message( 'bs-pageassignments-action-log' ).text(),
-				title: mw.message( 'bs-pageassignments-action-log' ).text(),
-				type: 'action',
-				actionId: 'log',
-				icon: 'article',
-				invisibleHeader: true,
+				visibleOnHover: true,
 				width: 30
 			}
 		},
 		store: this.store,
 		provideExportData: () => {
 			const deferred = $.Deferred();
-			const isReadConfirmationNS = ( ns ) => {
-				const namespaces = mw.config.get( 'bsgReadConfirmationActivatedNamespaces', [] );
-				return ( namespaces.some( ( namespace ) => namespace == ns ) ); // eslint-disable-line eqeqeq
-			};
 
 			( async () => {
 				try {
 					this.store.setPageSize( 99999 );
 					const response = await this.store.reload();
-
 					const $table = $( '<table>' );
-					let $row = $( '<tr>' );
 
-					$row.append( $( '<td>' ).text( mw.message( 'bs-pageassignments-column-title' ).text() ) );
-					$row.append( $( '<td>' ).text( mw.message( 'bs-pageassignments-column-assignments' ).text() ) );
-					$row.append( $( '<td>' ).text( mw.message( 'bs-readconfirmation-column-read' ).text() ) ); // BlueSpiceReadConfirmation
+					const $thead = $( '<thead>' )
+						.append( $( '<tr>' )
+							.append( $( '<th>' ).text( mw.message( 'bs-pageassignments-column-title' ).text() ) )
+							.append( $( '<th>' ).text( mw.message( 'bs-pageassignments-column-assignments' ).text() ) )
+							.append( $( '<th>' ).text( mw.message( 'bs-readconfirmation-column-read' ).text() ) ) // BlueSpiceReadConfirmation
+						);
 
-					$table.append( $row );
-
+					const $tbody = $( '<tbody>' );
 					for ( const id in response ) {
 						if ( response.hasOwnProperty( id ) ) { // eslint-disable-line no-prototype-builtins
 							const record = response[ id ];
-							$row = $( '<tr>' );
-
-							$row.append( $( '<td>' ).text( record.page_prefixedtext ) );
 							const assignees = record.assignments.map( ( assignment ) => assignment.pa_assignee_key ).join( ' - ' ); // CSV comma delimiter
-							if ( !assignees ) {
-								$row.append( $( '<td>' ).text( mw.message( 'bs-pageassignments-no-assignments' ).plain() ) );
-							} else {
-								$row.append( $( '<td>' ).text( assignees ) );
-							}
+							let read = record.all_assignees_have_read; // BlueSpiceReadConfirmation
+							read = read === 'disabled' ? mw.message( 'bs-readconfirmation-disabled-ns-short' ).text() : read;
 
-							// BlueSpiceReadConfirmation
-							if ( isReadConfirmationNS( record.page_namespace ) ) {
-								$row.append( $( '<td>' ).text( record.all_assignees_have_read ) );
-							} else {
-								$row.append( $( '<td>' ).text( mw.message( 'bs-readconfirmation-disabled-ns-short' ).text() ) );
-							}
-
-							$table.append( $row );
+							$tbody.append( $( '<tr>' )
+								.append( $( '<td>' ).text( record.page_prefixedtext ) )
+								.append( $( '<td>' ).text( assignees ) )
+								.append( $( '<td>' ).text( read ) )
+							);
 						}
 					}
 
-					deferred.resolve( `<table>${$table.html()}</table>` );
+					$table.append( $thead, $tbody );
+
+					deferred.resolve( `<table>${ $table.html() }</table>` );
 				} catch ( error ) {
 					deferred.reject( 'Failed to load data' );
 				}
@@ -159,12 +141,30 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.setupGridConfig = funct
 	mw.hook( 'BSPageAssignmentsManagerPanelInit' ).fire( gridCfg );
 
 	// Move action columns to the end
-	gridCfg.columns = Object.assign( gridCfg.columns, gridCfg.actions ); // eslint-disable-line compat/compat
+	gridCfg.columns = Object.assign( gridCfg.columns, gridCfg.actions );
 
 	return gridCfg;
 };
 
-ext.bluespice.pageassignments.ui.panel.Manager.prototype.doActionOnRow = function ( action, row ) {
+ext.bluespice.pageassignments.ui.panel.Manager.prototype.getToolbarActions = function () {
+	return [
+		new OOJSPlus.ui.toolbar.tool.ToolbarTool( {
+			name: 'showDisabled',
+			icon: 'block',
+			displayBothIconAndLabel: true,
+			title: mw.msg( 'bs-pageassignments-show-unassigned-pages' ),
+			callback: ( toolInstance ) => {
+				this.showUnassignedActive = !this.showUnassignedActive;
+				this.store.filter( new OOJSPlus.ui.data.filter.Boolean( {
+					value: !this.showUnassignedActive
+				} ), 'has_assignments' );
+				toolInstance.setActive( this.showUnassignedActive );
+			}
+		} )
+	];
+};
+
+ext.bluespice.pageassignments.ui.panel.Manager.prototype.onAction = function ( action, row ) {
 	switch ( action ) {
 		case 'edit': {
 			const assignmentsPage = new bs.pageassignments.ui.AssignmentsPage( {
@@ -176,7 +176,6 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.doActionOnRow = functio
 			this.showPageassignmentsDialog( assignmentsPage );
 			break;
 		}
-
 		case 'delete': {
 			bs.util.confirm(
 				'bs-pa-remove',
@@ -184,12 +183,13 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.doActionOnRow = functio
 					textMsg: 'bs-pageassignments-action-delete-confirm'
 				},
 				{
-					ok: () => { this.onRemovePageassignmentsOk( row.page_id ); }
+					ok: () => {
+						this.onRemovePageassignmentsOk( row.page_id );
+					}
 				}
 			);
 			break;
 		}
-
 		case 'log': {
 			window.location.href = mw.util.getUrl(
 				'Special:Log', {
@@ -199,12 +199,15 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.doActionOnRow = functio
 			);
 			break;
 		}
-
-		// Dynamic action handler
-		// BlueSpiceReadConfirmation
+		// Dynamic secondaryActions handler (BlueSpiceReadConfirmation)
 		default: {
-			if ( this.gridCfg.actions[ action ] ) {
-				this.gridCfg.actions[ action ].doActionOnRow( row );
+			// Find the matching action by its 'data' property
+			const matchingAction = this.gridCfg.actions.secondaryActions.actions.find(
+				( actionObj ) => actionObj.data === action
+			);
+
+			if ( matchingAction ) {
+				matchingAction.doActionOnRow( row );
 			}
 			break;
 		}
@@ -233,4 +236,53 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.onRemovePageassignments
 	if ( result.success ) {
 		this.store.reload();
 	}
+};
+
+ext.bluespice.pageassignments.ui.panel.Manager.prototype.makeAssignmentsWidget = function ( assignments ) {
+	if ( !assignments.length ) {
+		return '';
+	}
+
+	const $widgets = $( '<div>' )
+		.css( {
+			display: 'flex',
+			gap: '15px',
+			'align-items': 'center'
+		} );
+
+	assignments.forEach( ( assignment ) => {
+		let $widget;
+		if ( assignment.pa_assignee_type === 'user' ) {
+			const userWidget = new OOJSPlus.ui.widget.UserWidget( {
+				user_name: assignment.pa_assignee_key, // eslint-disable-line camelcase
+				showLink: true,
+				showRawUsername: false
+			} );
+			$widget = userWidget.$element;
+		}
+
+		if ( assignment.pa_assignee_type === 'group' ) {
+			const iconWidget = new OO.ui.IconWidget( {
+				icon: 'userGroup'
+			} );
+			iconWidget.$element.css( {
+				'margin-left': '5px',
+				'margin-right': '20px'
+			} );
+			const labelWidget = new OOJSPlus.ui.widget.LabelWidget( {
+				label: assignment.pa_assignee_key
+			} );
+
+			$widget = $( '<div>' )
+				.css( {
+					display: 'flex'
+				} )
+				.append( iconWidget.$element )
+				.append( labelWidget.$element );
+		}
+
+		$widgets.append( $widget );
+	} );
+
+	return $widgets;
 };

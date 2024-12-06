@@ -26,7 +26,7 @@
 
 			const assignmentsStore = new OOJSPlus.ui.data.store.RemoteStore( {
 				action: 'bs-pageassignment-store',
-				pageSize: 25
+				pageSize: 10
 			} );
 			assignmentsStore.filter( new OOJSPlus.ui.data.filter.String( {
 				value: this.pageName,
@@ -43,8 +43,35 @@
 				columns: {
 					pa_assignee_key: { // eslint-disable-line camelcase
 						headerText: mw.message( 'bs-pageassignments-column-assignedto' ).text(),
-						type: 'user',
-						showImage: true
+						type: 'text',
+						valueParser: ( value, row ) => {
+							if ( row.pa_assignee_type === 'user' ) {
+								const userWidget = new OOJSPlus.ui.widget.UserWidget( {
+									user_name: value, // eslint-disable-line camelcase
+									showLink: true,
+									showRawUsername: false
+								} );
+
+								return new OO.ui.HtmlSnippet( userWidget.$element );
+							}
+
+							if ( row.pa_assignee_type === 'group' ) {
+								const iconWidget = new OO.ui.IconWidget( {
+									icon: 'userGroup'
+								} );
+								iconWidget.$element.css( {
+									'margin-left': '5px',
+									'margin-right': '20px'
+								} );
+								const labelWidget = new OOJSPlus.ui.widget.LabelWidget( {
+									label: value
+								} );
+
+								return new OO.ui.HtmlSnippet(
+									[ iconWidget.$element, labelWidget.$element ]
+								);
+							}
+						}
 					},
 					pa_assignee_type: { // eslint-disable-line camelcase
 						headerText: mw.message( 'bs-pageassignments-column-assignee-type' ).text(),

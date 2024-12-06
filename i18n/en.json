@@ -16,7 +16,6 @@
 	"bs-pageassignments-column-assignments": "Assignments",
 	"bs-pageassignments-column-assignedto": "Assigned to",
 	"bs-pageassignments-column-assignee-type": "Type",
-	"bs-pageassignments-no-assignments": "No assignments",
 	"bs-pageassignments-action-log": "Assignments log",
 	"bs-pageassignments-action-delete-confirm": "Remove assignment?",
 	"bs-pageassignments-api-error": "An error has occurred",
@@ -86,5 +85,6 @@
 	"bs-pageassignments-header-action-edit": "Edit",
 	"bs-pageassignments-header-action-delete": "Delete",
 	"bs-pageassignments-title-edit": "Edit assignments",
-	"bs-pageassignments-title-delete": "Delete assignments"
+	"bs-pageassignments-title-delete": "Delete assignments",
+	"bs-pageassignments-show-unassigned-pages": "Show unassigned pages"
 }
