@@ -6,7 +6,7 @@
 	"require": {
 		"composer/installers": "~1.0|~2",
 		"mwstake/mediawiki-component-datastore": "~1",
-		"mwstake/mediawiki-component-commonwebapis": "~2"
+		"mwstake/mediawiki-component-commonwebapis": "~3"
 	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "43.0.0",
