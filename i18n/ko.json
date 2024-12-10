@@ -4,7 +4,8 @@
 			"Jerrykim306",
 			"Nuevo Paso",
 			"Ykhwong",
-			"Yunbj"
+			"Yunbj",
+			"Suleiman the Magnificent Television"
 		]
 	},
 	"bs-pageassignments-desc": "사용자나 그룹을 페이지에 할당할 수 있게 합니다",
@@ -33,6 +34,6 @@
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "할당",
 	"bs-pageassignments-header-action-edit": "편집",
 	"bs-pageassignments-header-action-delete": "삭제",
-	"bs-pageassignments-title-edit": "할당 편집",
-	"bs-pageassignments-title-delete": "할당 삭제"
+	"bs-pageassignments-title-edit": "편집 할당",
+	"bs-pageassignments-title-delete": "과제를 삭제"
 }
