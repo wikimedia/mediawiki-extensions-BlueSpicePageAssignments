@@ -132,7 +132,7 @@ class AssignmentFactory {
 					Filter::KEY_TYPE => 'numeric',
 					Filter::KEY_COMPARISON => Filter::COMPARISON_EQUALS,
 				]
-			] ] )
+			], 'limit' => 999 ] )
 		);
 
 		$assignments = [];
