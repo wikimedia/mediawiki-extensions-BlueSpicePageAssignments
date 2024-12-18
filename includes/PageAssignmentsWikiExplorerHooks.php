@@ -18,14 +18,14 @@ class PageAssignmentsWikiExplorerHooks {
 		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
 			->getConnection( DB_REPLICA );
 		$sTablePrefix = $dbr->tablePrefix();
-
-		$aTables[] = "{$sTablePrefix}bs_pageassignments AS assigned";
-		$aJoinConditions["{$sTablePrefix}bs_pageassignments AS assigned"] = [
+		$tableName = $sTablePrefix . 'bs_pageassignments';
+		$aTables[] = "$tableName";
+		$aJoinConditions["$tableName"] = [
 			'LEFT OUTER JOIN',
-			"{$sTablePrefix}page.page_id=assigned.pa_page_id"
+			"page_id=pa_page_id"
 		];
 
-		$aFields[] = "assigned.pa_assignee_key";
+		$aFields[] = "pa_assignee_key";
 
 		return true;
 	}
