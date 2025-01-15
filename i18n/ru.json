@@ -7,6 +7,7 @@
 			"Firapinch",
 			"Ice bulldog",
 			"Irus",
+			"Kareyac",
 			"Katunchik",
 			"Movses",
 			"Okras",
@@ -45,5 +46,8 @@
 	"bs-pageassignment-info-dialog": "Назначения",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Назначить",
 	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Изменение заданий для $1",
-	"bs-pageassignments-column-assignee-type": "Тип"
+	"bs-pageassignments-column-assignee-type": "Тип",
+	"bs-pageassignments-header-action-delete": "Удалить",
+	"bs-pageassignments-title-edit": "Редактировать задания",
+	"bs-pageassignments-title-delete": "Удалить задания"
 }
