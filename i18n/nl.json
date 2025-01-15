@@ -94,5 +94,9 @@
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|heeft}} uw toewijzing van de pagina $2 verwijderd",
 	"bs-pageassignments-event-assignment-remove-bot": "Uw toewijzing is van de pagina $1 verwijderd",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Toewijzen",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Toewijzingen voor $1 bewerken"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Toewijzingen voor $1 bewerken",
+	"bs-pageassignments-header-action-edit": "Bewerken",
+	"bs-pageassignments-header-action-delete": "Verwijderen",
+	"bs-pageassignments-title-edit": "Toewijzingen bewerken",
+	"bs-pageassignments-title-delete": "Toewijzingen intrekken"
 }
