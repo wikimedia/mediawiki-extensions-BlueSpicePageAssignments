@@ -4,6 +4,7 @@ require_once $IP . '/extensions/BlueSpiceFoundation/maintenance/BSMaintenance.ph
 
 use BlueSpice\PageAssignments\Data\Record;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
 class ManageAssignments extends BSMaintenance {

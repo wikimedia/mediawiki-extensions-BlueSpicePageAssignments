@@ -5,7 +5,7 @@ use BlueSpice\PageAssignments\Data\Record;
 use Config;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
-use Title;
+use MediaWiki\Title\Title;
 
 abstract class Assignment implements IAssignment, \JsonSerializable {
 

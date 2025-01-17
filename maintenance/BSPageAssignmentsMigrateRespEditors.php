@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 
 $extDir = dirname( dirname( __DIR__ ) );
 
@@ -62,7 +63,7 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 			if ( !$oUser || $oUser->isAnon() ) {
 				continue;
 			}
-			$title = \Title::newFromId( (int)$oRow->re_page_id );
+			$title = Title::newFromId( (int)$oRow->re_page_id );
 			if ( !$title ) {
 				continue;
 			}

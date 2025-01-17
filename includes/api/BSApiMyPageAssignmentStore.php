@@ -2,6 +2,7 @@
 
 use BlueSpice\PageAssignments\AssignmentFactory;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Title\Title;
 
 class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 	/** @var AssignmentFactory */
@@ -154,7 +155,7 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 		$res = $this->queryAssignments( $conds );
 		$assignments = [];
 		foreach ( $res as $row ) {
-			$title = \Title::newFromRow( $row );
+			$title = Title::newFromRow( $row );
 			$this->titles[$title->getArticleID()] = $title;
 			if ( !isset( $assignments[$title->getArticleID() ] ) ) {
 				$assignments[$title->getArticleID()] = [];

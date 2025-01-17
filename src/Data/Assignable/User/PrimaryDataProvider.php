@@ -5,9 +5,9 @@ namespace BlueSpice\PageAssignments\Data\Assignable\User;
 use BlueSpice\PageAssignments\Data\Record;
 use GlobalVarConfig;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\DataStore\Schema;
-use Title;
 use User;
 use Wikimedia\Rdbms\IDatabase;
 

@@ -7,6 +7,7 @@ use BlueSpice\PageAssignments\Data\Schema;
 use BlueSpice\Tests\BSApiExtJSStoreTestBase;
 use BlueSpice\Tests\BSUserFixtures;
 use BlueSpice\Tests\BSUserFixturesProvider;
+use MediaWiki\Title\Title;
 
 /**
  * @group Broken
@@ -97,7 +98,7 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 	protected function makeContextParams() {
 		return (object)[
 			'wgAction' => "view",
-			'wgArticleId' => (int)\Title::newFromText( 'Test' )->getArticleID(),
+			'wgArticleId' => (int)Title::newFromText( 'Test' )->getArticleID(),
 			'wgCanonicalNamespace' => "",
 			'wgCanonicalSpecialPageName' => false,
 			'wgNamespaceNumber' => 0,

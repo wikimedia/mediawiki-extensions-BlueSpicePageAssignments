@@ -1,6 +1,8 @@
 <?php
 namespace BlueSpice\PageAssignments;
 
+use MediaWiki\Title\Title;
+
 interface IAssignment {
 
 	/**
@@ -39,7 +41,7 @@ interface IAssignment {
 	public function getText();
 
 	/**
-	 * @return \Title
+	 * @return Title
 	 */
 	public function getTitle();
 

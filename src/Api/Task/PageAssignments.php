@@ -5,6 +5,7 @@ namespace BlueSpice\PageAssignments\Api\Task;
 use BlueSpice\PageAssignments\Event\AssignmentAddEvent;
 use BlueSpice\PageAssignments\Event\AssignmentRemoveEvent;
 use BlueSpice\PageAssignments\IAssignment;
+use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\Events\Notifier;
 
 class PageAssignments extends \BSApiTasksBase {
@@ -248,7 +249,7 @@ class PageAssignments extends \BSApiTasksBase {
 
 	/**
 	 *
-	 * @param \Title $title
+	 * @param Title $title
 	 * @param IAssignment[] $addedAssignments
 	 * @param IAssignment[] $removedAssignments
 	 */
@@ -271,7 +272,7 @@ class PageAssignments extends \BSApiTasksBase {
 
 	/**
 	 *
-	 * @param \Title $title
+	 * @param Title $title
 	 * @param array $addedAssignments
 	 * @param array $removedAssignments
 	 * @return bool
@@ -336,7 +337,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 * @return \Status
 	 */
 	protected function getTargetFromID( $pageId ) {
-		$title = \Title::newFromID( $pageId );
+		$title = Title::newFromID( $pageId );
 		if ( !$title || !$title->exists() ) {
 			return \Status::newFatal( 'bs-pageassignments-api-error-no-page' );
 		}
@@ -345,10 +346,10 @@ class PageAssignments extends \BSApiTasksBase {
 
 	/**
 	 *
-	 * @param \Title $title
+	 * @param Title $title
 	 * @return \Status
 	 */
-	protected function getTargetFromTitle( \Title $title ) {
+	protected function getTargetFromTitle( Title $title ) {
 		$target = $this->getFactory()->newFromTargetTitle( $title );
 		if ( !$target ) {
 			return \Status::newFatal( 'bs-pageassignments-api-error-no-page' );
