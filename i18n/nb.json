@@ -17,7 +17,6 @@
 	"bs-pageassignments-column-title": "Sidetittel",
 	"bs-pageassignments-column-assignments": "Tildelinger",
 	"bs-pageassignments-column-assignedto": "Delegert til",
-	"bs-pageassignments-no-assignments": "Ingen tildelinger",
 	"bs-pageassignments-action-log": "Tildelingslogg",
 	"bs-pageassignments-action-delete-confirm": "Fjerne tildeling?",
 	"bs-pageassignments-api-error": "En feil har oppstått",

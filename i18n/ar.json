@@ -21,7 +21,6 @@
 	"bs-pageassignments-column-title": "عنوان الصفحة",
 	"bs-pageassignments-column-assignments": "التعيينات",
 	"bs-pageassignments-column-assignedto": "مخصص ل",
-	"bs-pageassignments-no-assignments": "لا يوجد تعيينات",
 	"bs-pageassignments-action-log": "سجل المهام",
 	"bs-pageassignments-action-delete-confirm": "إزالة التعيين؟",
 	"bs-pageassignments-api-error": "حدث خطأ",

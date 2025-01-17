@@ -17,7 +17,6 @@
 	"bs-pageassignments-column-assignments": "Dodelitve",
 	"bs-pageassignments-column-assignedto": "Dodeljeno",
 	"bs-pageassignments-column-assignee-type": "Tip",
-	"bs-pageassignments-no-assignments": "Ni dodelitev",
 	"bs-pageassignments-action-log": "Dnevnik dodelitev",
 	"bs-pageassignments-action-delete-confirm": "Odstranim dodelitev?",
 	"bs-pageassignments-api-error": "Prišlo je do napake",

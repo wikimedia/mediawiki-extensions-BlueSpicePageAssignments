@@ -19,7 +19,6 @@
 	"bs-pageassignments-column-title": "Puslapio pavadinimas",
 	"bs-pageassignments-column-assignments": "Užduotys",
 	"bs-pageassignments-column-assignedto": "Priskirta",
-	"bs-pageassignments-no-assignments": "Nėra užduočių",
 	"bs-pageassignments-action-log": "Užduočių žurnalas",
 	"bs-pageassignments-action-delete-confirm": "Pašalinti užduotį",
 	"bs-pageassignments-api-error": "Įvyko klaida",

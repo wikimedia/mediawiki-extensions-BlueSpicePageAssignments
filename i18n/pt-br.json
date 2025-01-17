@@ -19,7 +19,6 @@
 	"bs-pageassignments-menu-label": "Definir atribuições de página",
 	"bs-pageassignments-column-title": "Título de página",
 	"bs-pageassignments-column-assignments": "Atribuições",
-	"bs-pageassignments-no-assignments": "Sem atribuições",
 	"bs-pageassignments-action-log": "Registro de tarefas",
 	"bs-pageassignments-action-delete-confirm": "Remover atribuição?",
 	"bs-pageassignments-api-error": "Ocorreu um erro",

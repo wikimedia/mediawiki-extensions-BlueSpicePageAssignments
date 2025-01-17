@@ -29,7 +29,6 @@
 	"bs-pageassignments-column-title": "Título de página",
 	"bs-pageassignments-column-assignments": "Asignaciones",
 	"bs-pageassignments-column-assignedto": "Asignado a",
-	"bs-pageassignments-no-assignments": "Sin asignaciones",
 	"bs-pageassignments-action-log": "Registro de asignaciones",
 	"bs-pageassignments-action-delete-confirm": "¿Quitar asignación?",
 	"bs-pageassignments-api-error": "Ha ocurrido un error",

@@ -19,7 +19,6 @@
 	"bs-pageassignments-menu-label": "Sayfa atamalarını ayarla",
 	"bs-pageassignments-column-title": "Sayfa başlığı",
 	"bs-pageassignments-column-assignments": "Atamalar",
-	"bs-pageassignments-no-assignments": "Atama yok",
 	"bs-pageassignments-action-log": "Atama günlüğü",
 	"bs-pageassignments-action-delete-confirm": "Atamayı kaldırılsın mı?",
 	"bs-pageassignments-api-error": "Bir hata oluştu",
