@@ -93,5 +93,6 @@
 	"bs-pageassignments-header-action-edit": "Edit",
 	"bs-pageassignments-header-action-delete": "Delete",
 	"bs-pageassignments-title-edit": "Edit assignments",
-	"bs-pageassignments-title-delete": "Delete assignments"
+	"bs-pageassignments-title-delete": "Delete assignments",
+	"bs-pageassignments-show-unassigned-pages": "Show unassigned pages"
 }
