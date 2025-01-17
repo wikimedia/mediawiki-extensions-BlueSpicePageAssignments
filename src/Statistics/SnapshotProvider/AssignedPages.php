@@ -6,7 +6,7 @@ use BlueSpice\ExtendedStatistics\ISnapshotProvider;
 use BlueSpice\ExtendedStatistics\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
 use MediaWiki\MediaWikiServices;
-use Title;
+use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\LoadBalancer;
 
 class AssignedPages implements ISnapshotProvider {

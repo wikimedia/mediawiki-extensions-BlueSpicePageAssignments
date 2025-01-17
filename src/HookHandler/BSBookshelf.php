@@ -4,7 +4,7 @@ namespace BlueSpice\PageAssignments\HookHandler;
 
 use BlueSpice\Bookshelf\Hook\BSBookshelfBooksOverviewBeforeSetBookActions;
 use BlueSpice\PageAssignments\BookOverviewActions\Assignments;
-use Title;
+use MediaWiki\Title\Title;
 
 class BSBookshelf implements BSBookshelfBooksOverviewBeforeSetBookActions {
 

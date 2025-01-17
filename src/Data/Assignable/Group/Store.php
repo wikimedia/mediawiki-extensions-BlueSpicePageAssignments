@@ -3,8 +3,8 @@
 namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
 use GlobalVarConfig;
+use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\Utils\UtilityFactory;
-use Title;
 
 class Store extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\Store {
 

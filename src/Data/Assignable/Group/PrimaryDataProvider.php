@@ -5,10 +5,10 @@ namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 use BlueSpice\PageAssignments\IAssignment;
 use GlobalVarConfig;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\GroupRecord;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\Utils\Utility\GroupHelper;
-use Title;
 
 class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\PrimaryDataProvider {
 	/** @var Title */

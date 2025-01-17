@@ -4,8 +4,8 @@ namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
 use GlobalVarConfig;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserFactory;
-use Title;
 use TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 

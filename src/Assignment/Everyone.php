@@ -4,7 +4,7 @@ namespace BlueSpice\PageAssignments\Assignment;
 use BlueSpice\TargetCache\Title\Target;
 use BsPageContentProvider;
 use MediaWiki\MediaWikiServices;
-use Title;
+use MediaWiki\Title\Title;
 
 class Everyone extends \BlueSpice\PageAssignments\Assignment {
 

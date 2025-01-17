@@ -2,7 +2,7 @@
 namespace BlueSpice\PageAssignments;
 
 use Config;
-use Title;
+use MediaWiki\Title\Title;
 use User;
 
 interface ITarget {

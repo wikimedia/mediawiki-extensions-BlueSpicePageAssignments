@@ -3,7 +3,7 @@
 namespace BlueSpice\PageAssignments\Hook\PageMoveComplete;
 
 use BlueSpice\Hook\PageMoveComplete;
-use Title;
+use MediaWiki\Title\Title;
 
 /**
  * Adapts assignments in case of article move.
