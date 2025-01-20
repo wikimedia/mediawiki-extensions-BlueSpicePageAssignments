@@ -6,6 +6,7 @@ use BlueSpice\PageAssignments\Event\AssignmentAddEvent;
 use BlueSpice\PageAssignments\Event\AssignmentRemoveEvent;
 use BlueSpice\PageAssignments\IAssignment;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\Events\Notifier;
 
 class PageAssignments extends \BSApiTasksBase {
@@ -222,7 +223,7 @@ class PageAssignments extends \BSApiTasksBase {
 		}
 
 		$user = $this->services->getUserFactory()->newFromName( $assignment->pa_assignee_key );
-		if ( $user instanceof \User === false ) {
+		if ( $user instanceof User === false ) {
 			return '';
 		}
 
@@ -240,7 +241,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 */
 	protected function getAssigneeRealName( $assignment ) {
 		$user = $this->services->getUserFactory()->newFromName( $assignment->pa_assignee_key );
-		if ( $user instanceof \User === false ) {
+		if ( $user instanceof User === false ) {
 			return '';
 		}
 		$username = !empty( $user->getRealName() ) ? $user->getRealName() : $user->getName();

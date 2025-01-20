@@ -4,7 +4,7 @@ namespace BlueSpice\PageAssignments\Permission\Lockdown\Module\Groups;
 
 use BlueSpice\Permission\Lockdown\Module\Groups\SubModule;
 use MediaWiki\Title\Title;
-use User;
+use MediaWiki\User\User;
 
 class PageAssignment extends SubModule {
 
