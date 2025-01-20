@@ -89,5 +89,6 @@
 	"bs-pageassignments-header-action-edit": "עריכה",
 	"bs-pageassignments-header-action-delete": "מחיקה",
 	"bs-pageassignments-title-edit": "עריכת שיוכים",
-	"bs-pageassignments-title-delete": "מחיקת שיוכים"
+	"bs-pageassignments-title-delete": "מחיקת שיוכים",
+	"bs-pageassignments-show-unassigned-pages": "הצגת דפים שלא הוקצו"
 }
