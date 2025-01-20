@@ -29,6 +29,7 @@
 	"bs-pageassignments-column-title": "Seitentitel",
 	"bs-pageassignments-column-assignments": "Zuweisungen",
 	"bs-pageassignments-column-assignedto": "Zugewiesen an",
+	"bs-pageassignments-column-assignee-type": "Typ",
 	"bs-pageassignments-no-assignments": "Keine Zuweisungen",
 	"bs-pageassignments-action-log": "Zuweisungs-Logbuch",
 	"bs-pageassignments-action-delete-confirm": "Zuweisung entfernen?",
@@ -77,15 +78,12 @@
 	"bs-pageassignments-secure-nsm-label": "Abgesicherte Zuweisungen",
 	"bs-pageassignments-secure-lockdown-reason": "Die Aktion „$1“ ist nur für {{PLURAL:$2|den|die}} Bevollmächtigten $3 verfügbar",
 	"bs-pageassignments-group-lockdown-reason": "Du bist nicht der Seite $1 zugewiesen",
-	"bs-pageassignments-flyout-title": "Seitenzuweisungen",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments – {{PLURAL:$2|Der Seite|Den Seiten}} zugewiesen: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Zuweisungen",
 	"bs-pageassignments-collection-var-namespacename": "Namensraum",
 	"bs-pageassignments-collection-var-assignedpages": "Zugewiesene Seiten",
 	"bs-pageassignments-collection-var-unassignedpages": "Nicht zugewiesene Seiten",
 	"bs-pageassignments-pageheader-label": "Zuweisungen",
-	"bs-pageassignments-book-assignment-not-allowed-title": "Zuweisungen sind nicht erlaubt",
-	"bs-pageassignments-book-assignment-not-allowed-text": "Zuweisungen sind nicht für Bücher erlaubt, die nicht auf Titeln basieren",
 	"bs-pageassignments-statistics-report-assigned-pages": "Zugewiesene Seiten",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Zugewiesen",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nicht zugewiesen",
@@ -104,6 +102,5 @@
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|entfernte}} deine Zuweisung von der Seite $2",
 	"bs-pageassignments-event-assignment-remove-bot": "Deine Zuweisung wurde von der Seite entfernt $1",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Zuweisen",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Zuweisungen für $1 bearbeiten",
-	"bs-pageassignments-column-assignee-type": "Typ"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Zuweisungen für $1 bearbeiten"
 }
