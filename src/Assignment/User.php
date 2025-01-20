@@ -3,6 +3,7 @@
 namespace BlueSpice\PageAssignments\Assignment;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User as MediaWikiUser;
 
 class User extends \BlueSpice\PageAssignments\Assignment {
 
@@ -39,13 +40,13 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 
 	/**
 	 *
-	 * @return \User
+	 * @return MediaWikiUser
 	 */
 	protected function getUser() {
 		$user = MediaWikiServices::getInstance()->getUserFactory()
 			->newFromName( $this->getKey() );
 		if ( !$user ) {
-			return new \User;
+			return new MediaWikiUser;
 		}
 		return $user;
 	}

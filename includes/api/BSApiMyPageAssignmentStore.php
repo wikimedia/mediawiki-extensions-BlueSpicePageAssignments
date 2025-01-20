@@ -3,6 +3,7 @@
 use BlueSpice\PageAssignments\AssignmentFactory;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 
 class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 	/** @var AssignmentFactory */

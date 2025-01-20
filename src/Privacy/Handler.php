@@ -5,6 +5,7 @@ namespace BlueSpice\PageAssignments\Privacy;
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDatabase;
 
 class Handler implements IPrivacyHandler {
@@ -39,11 +40,11 @@ class Handler implements IPrivacyHandler {
 
 	/**
 	 *
-	 * @param \User $userToDelete
-	 * @param \User $deletedUser
+	 * @param User $userToDelete
+	 * @param User $deletedUser
 	 * @return \Status
 	 */
-	public function delete( \User $userToDelete, \User $deletedUser ) {
+	public function delete( User $userToDelete, User $deletedUser ) {
 		$this->db->delete(
 			'bs_pageassignments',
 			[ 'pa_assignee_key' => $userToDelete->getName() ]
@@ -55,10 +56,10 @@ class Handler implements IPrivacyHandler {
 	 *
 	 * @param array $types
 	 * @param string $format
-	 * @param \User $user
+	 * @param User $user
 	 * @return \Status
 	 */
-	public function exportData( array $types, $format, \User $user ) {
+	public function exportData( array $types, $format, User $user ) {
 		if ( !in_array( Transparency::DATA_TYPE_WORKING, $types ) ) {
 			return \Status::newGood( [] );
 		}

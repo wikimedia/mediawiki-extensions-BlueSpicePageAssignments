@@ -6,9 +6,9 @@ use BlueSpice\PageAssignments\Data\Record;
 use GlobalVarConfig;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\DataStore\Schema;
-use User;
 use Wikimedia\Rdbms\IDatabase;
 
 class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQueryStore\PrimaryDataProvider {

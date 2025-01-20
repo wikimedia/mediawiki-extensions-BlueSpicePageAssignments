@@ -4,9 +4,9 @@ namespace BlueSpice\PageAssignments;
 use Config;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\DataStore\RecordSet;
 use Status;
-use User;
 
 class TitleTarget implements ITarget {
 
