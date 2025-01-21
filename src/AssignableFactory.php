@@ -2,6 +2,8 @@
 
 namespace BlueSpice\PageAssignments;
 
+use MediaWiki\Context\RequestContext;
+
 class AssignableFactory {
 
 	/**
@@ -34,7 +36,7 @@ class AssignableFactory {
 	 */
 	public function factory( $type, \IContextSource $context = null ) {
 		if ( !$context ) {
-			$context = \RequestContext::getMain();
+			$context = RequestContext::getMain();
 		}
 		$class = $this->registry->getValue(
 			$type,

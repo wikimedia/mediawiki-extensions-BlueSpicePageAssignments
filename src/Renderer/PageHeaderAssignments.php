@@ -10,10 +10,10 @@ use Config;
 use Exception;
 use Html;
 use IContextSource;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use QuickTemplate;
-use RequestContext;
 
 class PageHeaderAssignments extends Renderer {
 

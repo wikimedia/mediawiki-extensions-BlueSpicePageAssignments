@@ -6,6 +6,7 @@ use BlueSpice\Context;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\PageAssignments\Data\Assignment\Store;
 use BlueSpice\PageAssignments\Data\Record;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\Filter;
@@ -157,7 +158,7 @@ class AssignmentFactory {
 	 */
 	public function getStore() {
 		return new Store(
-			new Context( \RequestContext::getMain(), $this->config ),
+			new Context( RequestContext::getMain(), $this->config ),
 			MediaWikiServices::getInstance()->getDBLoadBalancer()
 		);
 	}
