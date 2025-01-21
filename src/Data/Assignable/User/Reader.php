@@ -6,9 +6,9 @@ use BlueSpice\PageAssignments\Data\Assignable\User\ReaderParams as UserReaderPar
 use GlobalVarConfig;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserFactory;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
-use TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQueryStore\Reader {
