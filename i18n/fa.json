@@ -16,7 +16,6 @@
 	"bs-pageassignments-menu-label": "تنظیم تکلیف‌های صفحه",
 	"bs-pageassignments-column-title": "عنوان صفحه",
 	"bs-pageassignments-column-assignments": "تکلیف‌ها",
-	"bs-pageassignments-no-assignments": "تکلیفی موجود نیست",
 	"bs-pageassignments-action-log": "سیاههٔ تکلیف‌ها",
 	"bs-pageassignments-action-delete-confirm": "تکلیف حذف شود؟",
 	"bs-pageassignments-api-error": "خطایی رخ داد",

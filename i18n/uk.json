@@ -21,7 +21,6 @@
 	"bs-pageassignments-menu-label": "Встановити призначення сторінок",
 	"bs-pageassignments-column-title": "Назва сторінки",
 	"bs-pageassignments-column-assignments": "Призначення",
-	"bs-pageassignments-no-assignments": "Жодних призначень",
 	"bs-pageassignments-action-log": "Журнал призначень",
 	"bs-pageassignments-action-delete-confirm": "Вилучити призначення?",
 	"bs-pageassignments-api-error": "Сталася помилка",

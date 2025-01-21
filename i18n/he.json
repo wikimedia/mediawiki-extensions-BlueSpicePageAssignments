@@ -20,7 +20,6 @@
 	"bs-pageassignments-column-assignments": "שיוכים",
 	"bs-pageassignments-column-assignedto": "מוקצה ל־",
 	"bs-pageassignments-column-assignee-type": "סוג",
-	"bs-pageassignments-no-assignments": "אין שיוכים",
 	"bs-pageassignments-action-log": "יומן שיוכים",
 	"bs-pageassignments-action-delete-confirm": "להסיר את השיוך?",
 	"bs-pageassignments-api-error": "אירעה שגיאה",
@@ -90,5 +89,6 @@
 	"bs-pageassignments-header-action-edit": "עריכה",
 	"bs-pageassignments-header-action-delete": "מחיקה",
 	"bs-pageassignments-title-edit": "עריכת שיוכים",
-	"bs-pageassignments-title-delete": "מחיקת שיוכים"
+	"bs-pageassignments-title-delete": "מחיקת שיוכים",
+	"bs-pageassignments-show-unassigned-pages": "הצגת דפים שלא הוקצו"
 }

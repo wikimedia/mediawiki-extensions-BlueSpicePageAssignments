@@ -38,7 +38,6 @@
 	"bs-pageassignments-column-title": "页面标题",
 	"bs-pageassignments-column-assignments": "分配",
 	"bs-pageassignments-column-assignedto": "负责人",
-	"bs-pageassignments-no-assignments": "无分配",
 	"bs-pageassignments-action-log": "分配日志",
 	"bs-pageassignments-action-delete-confirm": "移除分配？",
 	"bs-pageassignments-api-error": "发生错误",

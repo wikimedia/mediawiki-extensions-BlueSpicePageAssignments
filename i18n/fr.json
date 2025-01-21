@@ -29,7 +29,6 @@
 	"bs-pageassignments-column-assignments": "Affectations",
 	"bs-pageassignments-column-assignedto": "Affecté à",
 	"bs-pageassignments-column-assignee-type": "Type",
-	"bs-pageassignments-no-assignments": "Aucune assignation",
 	"bs-pageassignments-action-log": "Journal des affectations",
 	"bs-pageassignments-action-delete-confirm": "Supprimer l’affectation ?",
 	"bs-pageassignments-api-error": "Une erreur s’est produite",
