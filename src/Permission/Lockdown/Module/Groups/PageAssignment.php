@@ -3,6 +3,7 @@
 namespace BlueSpice\PageAssignments\Permission\Lockdown\Module\Groups;
 
 use BlueSpice\Permission\Lockdown\Module\Groups\SubModule;
+use MediaWiki\Message\Message;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 

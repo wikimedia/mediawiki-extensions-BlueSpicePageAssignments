@@ -2,6 +2,7 @@
 namespace BlueSpice\PageAssignments\Assignment;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
 use MediaWiki\Title\Title;
 
 class Group extends \BlueSpice\PageAssignments\Assignment {
@@ -28,8 +29,8 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 	 * @return string
 	 */
 	public function getText() {
-		return \Message::newFromKey( "group-{$this->getKey()}" )->exists()
-			? \Message::newFromKey( "group-{$this->getKey()}" )->plain()
+		return Message::newFromKey( "group-{$this->getKey()}" )->exists()
+			? Message::newFromKey( "group-{$this->getKey()}" )->plain()
 			: $this->getKey();
 	}
 

@@ -4,6 +4,7 @@ namespace BlueSpice\PageAssignments\Assignment;
 use BlueSpice\TargetCache\Title\Target;
 use BsPageContentProvider;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
 use MediaWiki\Title\Title;
 
 class Everyone extends \BlueSpice\PageAssignments\Assignment {
@@ -31,7 +32,7 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 	 * @return string
 	 */
 	public function getText() {
-		return \Message::newFromKey(
+		return Message::newFromKey(
 			'bs-pageassignments-assignee-special-everyone-label'
 		)->plain();
 	}
