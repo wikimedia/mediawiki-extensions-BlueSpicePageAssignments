@@ -6,9 +6,9 @@ use BlueSpice\PageAssignments\AssignmentFactory;
 use Config;
 use IContextSource;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use Message;
 
 class Secure extends \BlueSpice\Permission\Lockdown\Module {
 
