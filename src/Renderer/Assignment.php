@@ -4,8 +4,8 @@ namespace BlueSpice\PageAssignments\Renderer;
 use BlueSpice\PageAssignments\IAssignment;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Utility\CacheHelper;
-use Config;
 use IContextSource;
+use MediaWiki\Config\Config;
 use MediaWiki\Linker\LinkRenderer;
 
 class Assignment extends \BlueSpice\TemplateRenderer {

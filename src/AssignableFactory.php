@@ -2,6 +2,7 @@
 
 namespace BlueSpice\PageAssignments;
 
+use MediaWiki\Config\Config;
 use MediaWiki\Context\RequestContext;
 
 class AssignableFactory {
@@ -14,14 +15,14 @@ class AssignableFactory {
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
 	 *
 	 * @param \BlueSpice\IRegistry $registry
-	 * @param \Config $config
+	 * @param Config $config
 	 */
 	public function __construct( $registry, $config ) {
 		$this->registry = $registry;

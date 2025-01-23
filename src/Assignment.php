@@ -2,7 +2,7 @@
 namespace BlueSpice\PageAssignments;
 
 use BlueSpice\PageAssignments\Data\Record;
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;

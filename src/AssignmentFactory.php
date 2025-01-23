@@ -6,6 +6,7 @@ use BlueSpice\Context;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\PageAssignments\Data\Assignment\Store;
 use BlueSpice\PageAssignments\Data\Record;
+use MediaWiki\Config\Config;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
@@ -28,7 +29,7 @@ class AssignmentFactory {
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
@@ -40,7 +41,7 @@ class AssignmentFactory {
 	/**
 	 *
 	 * @param AssignableFactory $assignableFactory
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param ExtensionAttributeBasedRegistry $targetRegistry
 	 */
 	public function __construct( AssignableFactory $assignableFactory, $config,
