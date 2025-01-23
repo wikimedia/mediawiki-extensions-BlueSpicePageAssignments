@@ -3,8 +3,8 @@
 namespace BlueSpice\PageAssignments\Permission\Lockdown\Module;
 
 use BlueSpice\PageAssignments\AssignmentFactory;
-use Config;
 use IContextSource;
+use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\Title\Title;
