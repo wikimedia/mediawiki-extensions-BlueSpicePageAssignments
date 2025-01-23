@@ -2,6 +2,7 @@
 namespace BlueSpice\PageAssignments;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Context\IContextSource;
 
 abstract class Assignable implements IAssignable {
 
@@ -19,13 +20,13 @@ abstract class Assignable implements IAssignable {
 
 	/**
 	 *
-	 * @var \IContextSource
+	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
 	 *
-	 * @param \IContextSource $context
+	 * @param IContextSource $context
 	 * @param Config $config
 	 * @param string $type
 	 */
