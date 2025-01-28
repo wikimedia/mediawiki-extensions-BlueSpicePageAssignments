@@ -4,6 +4,7 @@ namespace BlueSpice\PageAssignments\Privacy;
 
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
+use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDatabase;
@@ -23,7 +24,7 @@ class Handler implements IPrivacyHandler {
 	 *
 	 * @param string $oldUsername
 	 * @param string $newUsername
-	 * @return \Status
+	 * @return Status
 	 */
 	public function anonymize( $oldUsername, $newUsername ) {
 		$this->db->update(
@@ -35,21 +36,21 @@ class Handler implements IPrivacyHandler {
 			]
 		);
 
-		return \Status::newGood();
+		return Status::newGood();
 	}
 
 	/**
 	 *
 	 * @param User $userToDelete
 	 * @param User $deletedUser
-	 * @return \Status
+	 * @return Status
 	 */
 	public function delete( User $userToDelete, User $deletedUser ) {
 		$this->db->delete(
 			'bs_pageassignments',
 			[ 'pa_assignee_key' => $userToDelete->getName() ]
 		);
-		return \Status::newGood();
+		return Status::newGood();
 	}
 
 	/**
@@ -57,11 +58,11 @@ class Handler implements IPrivacyHandler {
 	 * @param array $types
 	 * @param string $format
 	 * @param User $user
-	 * @return \Status
+	 * @return Status
 	 */
 	public function exportData( array $types, $format, User $user ) {
 		if ( !in_array( Transparency::DATA_TYPE_WORKING, $types ) ) {
-			return \Status::newGood( [] );
+			return Status::newGood( [] );
 		}
 		$res = $this->db->select(
 			'bs_pageassignments',
@@ -79,10 +80,10 @@ class Handler implements IPrivacyHandler {
 		}
 
 		if ( empty( $titles ) ) {
-			return \Status::newGood( [] );
+			return Status::newGood( [] );
 		}
 
-		return \Status::newGood( [
+		return Status::newGood( [
 			Transparency::DATA_TYPE_WORKING => [
 				wfMessage(
 					'bs-pageassignments-privacy-transparency-working-assignments',
