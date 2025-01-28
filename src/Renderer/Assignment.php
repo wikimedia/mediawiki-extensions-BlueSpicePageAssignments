@@ -6,6 +6,7 @@ use BlueSpice\Renderer\Params;
 use BlueSpice\Utility\CacheHelper;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
+use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 
 class Assignment extends \BlueSpice\TemplateRenderer {
@@ -55,7 +56,7 @@ class Assignment extends \BlueSpice\TemplateRenderer {
 	 * @return mixed
 	 */
 	protected function render_image( $val ) {
-		return \Html::element( 'span', [
+		return Html::element( 'span', [
 			'class' => "bs-icon-" . $this->assignment->getType(),
 		] );
 	}

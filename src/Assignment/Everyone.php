@@ -3,6 +3,7 @@ namespace BlueSpice\PageAssignments\Assignment;
 
 use BlueSpice\TargetCache\Title\Target;
 use BsPageContentProvider;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\Title\Title;
@@ -20,7 +21,7 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 	 * @return string
 	 */
 	protected function makeAnchor() {
-		return \Html::element(
+		return Html::element(
 			'span',
 			[ 'class' => 'bs-pa-special-everyone' ],
 			$this->getText()
