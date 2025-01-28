@@ -5,6 +5,7 @@ namespace BlueSpice\PageAssignments\Api\Task;
 use BlueSpice\PageAssignments\Event\AssignmentAddEvent;
 use BlueSpice\PageAssignments\Event\AssignmentRemoveEvent;
 use BlueSpice\PageAssignments\IAssignment;
+use MediaWiki\Api\ApiMain;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
@@ -66,7 +67,7 @@ class PageAssignments extends \BSApiTasksBase {
 	/**
 	 * @inheritDoc
 	 */
-	public function __construct( \ApiMain $mainModule, $moduleName, $modulePrefix = '' ) {
+	public function __construct( ApiMain $mainModule, $moduleName, $modulePrefix = '' ) {
 		parent::__construct( $mainModule, $moduleName, $modulePrefix );
 	}
 

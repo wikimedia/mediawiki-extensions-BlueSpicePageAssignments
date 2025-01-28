@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\PageAssignments\AssignmentFactory;
+use MediaWiki\Api\ApiMain;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
