@@ -4,7 +4,7 @@ namespace BlueSpice\PageAssignments\HookHandler\SkinTemplateNavigation;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
-use SpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 
 class AddMyPageAssignments implements SkinTemplateNavigation__UniversalHook {
 
