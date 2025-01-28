@@ -3,10 +3,10 @@ namespace BlueSpice\PageAssignments;
 
 use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\DataStore\RecordSet;
-use Status;
 
 class TitleTarget implements ITarget {
 
