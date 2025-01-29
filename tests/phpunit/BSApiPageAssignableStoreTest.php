@@ -7,6 +7,7 @@ use BlueSpice\PageAssignments\Data\Schema;
 use BlueSpice\Tests\BSApiExtJSStoreTestBase;
 use BlueSpice\Tests\BSUserFixtures;
 use BlueSpice\Tests\BSUserFixturesProvider;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\Title\Title;
 
 /**
@@ -90,7 +91,7 @@ class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 	 * @return array
 	 */
 	protected function getAdditionalParams() {
-		return [ 'context' => \FormatJson::encode(
+		return [ 'context' => FormatJson::encode(
 			$this->makeContextParams()
 		) ];
 	}
