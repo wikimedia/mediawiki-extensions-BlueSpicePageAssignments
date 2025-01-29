@@ -6,6 +6,7 @@ use BlueSpice\PageAssignments\Event\AssignmentAddEvent;
 use BlueSpice\PageAssignments\Event\AssignmentRemoveEvent;
 use BlueSpice\PageAssignments\IAssignment;
 use MediaWiki\Api\ApiMain;
+use MediaWiki\Api\ApiMessage;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
@@ -116,7 +117,7 @@ class PageAssignments extends \BSApiTasksBase {
 			);
 		if ( !empty( $permissionErrors ) ) {
 			foreach ( $permissionErrors as $error ) {
-				$result->message .= \ApiMessage::create(
+				$result->message .= ApiMessage::create(
 					$error,
 					null,
 					[ 'title' => $target->getTitle() ]
