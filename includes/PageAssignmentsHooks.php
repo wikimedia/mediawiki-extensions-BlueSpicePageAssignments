@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Content\Content;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Status\Status;
 use MediaWiki\User\User;
