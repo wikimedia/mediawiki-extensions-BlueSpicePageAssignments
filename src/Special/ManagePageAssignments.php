@@ -8,7 +8,7 @@ use MediaWiki\SpecialPage\SpecialPage;
 class ManagePageAssignments extends SpecialPage {
 
 	public function __construct() {
-		parent::__construct( 'ManagePageAssignments' );
+		parent::__construct( 'ManagePageAssignments', 'pageassignments' );
 	}
 
 	/**
