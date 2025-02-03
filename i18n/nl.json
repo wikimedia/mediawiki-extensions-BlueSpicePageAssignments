@@ -90,5 +90,6 @@
 	"bs-pageassignments-header-action-edit": "Bewerken",
 	"bs-pageassignments-header-action-delete": "Verwijderen",
 	"bs-pageassignments-title-edit": "Toewijzingen bewerken",
-	"bs-pageassignments-title-delete": "Toewijzingen intrekken"
+	"bs-pageassignments-title-delete": "Toewijzingen intrekken",
+	"bs-pageassignments-show-unassigned-pages": "Niet-toegewezen pagina’s weergeven"
 }
