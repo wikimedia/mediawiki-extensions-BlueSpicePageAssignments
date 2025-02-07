@@ -443,7 +443,6 @@
 			"PageAssignmentsHooks::onArticleDeleteComplete"
 		],
 		"BSBookshelfManagerGetBookDataRow": "PageAssignmentsBookmakerHooks::onBSBookshelfManagerGetBookDataRow",
-		"BSUEModulePDFcollectMetaData": "PageAssignmentsBookmakerHooks::onBSUEModulePDFcollectMetaData",
 		"WikiExplorer::queryPagesWithFilter": "PageAssignmentsWikiExplorerHooks::onWikiExplorerQueryPagesWithFilter",
 		"WikiExplorer::buildDataSets": "PageAssignmentsWikiExplorerHooks::onWikiExplorerBuildDataSets",
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageAssignments\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageAssignmentsPagesTag::callback",
