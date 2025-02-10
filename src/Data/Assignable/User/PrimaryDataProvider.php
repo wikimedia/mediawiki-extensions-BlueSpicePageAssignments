@@ -3,7 +3,7 @@
 namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
 use BlueSpice\PageAssignments\Data\Record;
-use GlobalVarConfig;
+use MediaWiki\Config\GlobalVarConfig;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;

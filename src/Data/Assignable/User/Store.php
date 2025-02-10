@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PageAssignments\Data\Assignable\User;
 
-use GlobalVarConfig;
+use MediaWiki\Config\GlobalVarConfig;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
