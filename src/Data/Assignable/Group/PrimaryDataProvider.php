@@ -3,7 +3,7 @@
 namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
 use BlueSpice\PageAssignments\IAssignment;
-use GlobalVarConfig;
+use MediaWiki\Config\GlobalVarConfig;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\GroupRecord;
