@@ -71,10 +71,12 @@ class Assigned implements ISubscriptionSet {
 		] );
 		if ( in_array( 'group', $registeredTypes ) ) {
 			$userGroups = $this->userGroupManager->getUserGroups( $user );
-			$result += $this->doGetAssignments( [
-				'pa.pa_assignee_type' => 'group',
-				'pa.pa_assignee_key IN (' . $db->makeList( $userGroups ) . ')'
-			] );
+			if ( !empty( $userGroups ) ) {
+				$result += $this->doGetAssignments( [
+					'pa.pa_assignee_type' => 'group',
+					'pa.pa_assignee_key IN (' . $db->makeList( $userGroups ) . ')'
+				] );
+			}
 		}
 
 		if ( in_array( 'everyone', $registeredTypes ) ) {
