@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fraxinus.cs"
+			"Fraxinus.cs",
+			"Jrobicek"
 		]
 	},
 	"bs-pageassignments-statistics-report-assigned-pages": "Přiřazené stránky",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Přiřazeno",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nepřiřazeno",
-	"bs-pageassignments-dialog-input-placeholder": "Přidat úlohy…"
+	"bs-pageassignments-dialog-input-placeholder": "Přidat úlohy…",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Přiřadit"
 }
