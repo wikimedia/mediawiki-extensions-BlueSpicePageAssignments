@@ -104,5 +104,10 @@
 	"bs-pageassignments-event-assignment-remove-bot": "Tu assignation ha essite removite del pagina $1",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assignar",
 	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modificar le assignationes pro $1",
-	"bs-pageassignments-column-assignee-type": "Typo"
+	"bs-pageassignments-column-assignee-type": "Typo",
+	"bs-pageassignments-header-action-edit": "Modificar",
+	"bs-pageassignments-header-action-delete": "Deler",
+	"bs-pageassignments-title-edit": "Modificar assignationes",
+	"bs-pageassignments-title-delete": "Deler assignationes",
+	"bs-pageassignments-show-unassigned-pages": "Monstrar paginas non assignate"
 }
