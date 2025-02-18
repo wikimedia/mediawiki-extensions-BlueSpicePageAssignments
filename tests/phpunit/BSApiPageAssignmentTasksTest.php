@@ -19,8 +19,6 @@ use BlueSpice\Tests\BSUserFixturesProvider;
  */
 class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 
-	protected $tablesUsed = [ 'bs_pageassignments' ];
-
 	protected function setUp(): void {
 		parent::setUp();
 		new BSUserFixturesProvider();

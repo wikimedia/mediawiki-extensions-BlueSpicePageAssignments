@@ -23,8 +23,6 @@ use MediaWiki\Title\Title;
 class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 9;
 
-	protected $tablesUsed = [ 'page' ];
-
 	protected function skipAssertTotal() {
 		return true;
 	}
