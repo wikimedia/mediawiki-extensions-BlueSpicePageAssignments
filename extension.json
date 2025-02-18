@@ -233,6 +233,9 @@
 			"scripts": [
 				"ui/panel/Manager.js"
 			],
+			"styles": [
+				"stylesheets/AssignmentsPanel.css"
+			],
 			"messages": [
 				"bs-pageassignments-column-title",
 				"bs-pageassignments-column-assignments",
