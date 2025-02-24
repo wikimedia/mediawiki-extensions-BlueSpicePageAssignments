@@ -243,12 +243,7 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.makeAssignmentsWidget =
 		return '';
 	}
 
-	const $widgets = $( '<div>' )
-		.css( {
-			display: 'flex',
-			gap: '15px',
-			'align-items': 'center'
-		} );
+	const $widgets = $( '<div>' ).addClass( 'assignments-widgets' );
 
 	assignments.forEach( ( assignment ) => {
 		let $widget;
@@ -274,9 +269,7 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.makeAssignmentsWidget =
 			} );
 
 			$widget = $( '<div>' )
-				.css( {
-					display: 'flex'
-				} )
+				.addClass( 'assignments-widgets-group' )
 				.append( iconWidget.$element )
 				.append( labelWidget.$element );
 		}
