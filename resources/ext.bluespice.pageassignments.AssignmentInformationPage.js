@@ -22,17 +22,28 @@
 
 	bs.pageassignments.info.AssignmentsInformationPage.prototype.onInfoPanelSelect = async function () {
 		if ( !this.assignmentGrid ) {
+			const title = mw.Title.newFromText( this.pageName );
+			const namespace = title.getNamespaceId();
+			const text = title.getMain();
+
 			await mw.loader.using( [ 'ext.oOJSPlus.data', 'oojs-ui.styles.icons-user' ] );
 
 			const assignmentsStore = new OOJSPlus.ui.data.store.RemoteStore( {
 				action: 'bs-pageassignment-store',
-				pageSize: 10
+				pageSize: 10,
+				filter: {
+					page_namespace: {
+						value: namespace,
+						operator: 'eq',
+						type: 'string'
+					},
+					page_title: {
+						value: text,
+						operator: 'eq',
+						type: 'string'
+					}
+				}
 			} );
-			assignmentsStore.filter( new OOJSPlus.ui.data.filter.String( {
-				value: this.pageName,
-				operator: 'eq',
-				type: 'string'
-			} ), 'page_title' );
 
 			const rawData = await assignmentsStore.doLoadData();
 			const pageData = Object.values( rawData ); // eslint-disable-line es/no-object-values
