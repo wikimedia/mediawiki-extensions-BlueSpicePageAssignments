@@ -3,9 +3,9 @@
 namespace BlueSpice\PageAssignments\Special;
 
 use MediaWiki\Html\Html;
-use MediaWiki\SpecialPage\SpecialPage;
+use OOJSPlus\Special\OOJSGridSpecialPage;
 
-class ManagePageAssignments extends SpecialPage {
+class ManagePageAssignments extends OOJSGridSpecialPage {
 
 	public function __construct() {
 		parent::__construct( 'ManagePageAssignments', 'pageassignments' );
@@ -14,9 +14,7 @@ class ManagePageAssignments extends SpecialPage {
 	/**
 	 * @inheritDoc
 	 */
-	public function execute( $subPage ) {
-		parent::execute( $subPage );
-
+	public function doExecute( $subPage ) {
 		$out = $this->getOutput();
 		$out->addModules( [ 'ext.pageassignments.manager' ] );
 		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-pageassignments-manager' ] ) );
