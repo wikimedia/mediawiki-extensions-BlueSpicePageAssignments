@@ -304,6 +304,9 @@
 			"scripts": [
 				"ui/page/AssignmentsPage.js"
 			],
+			"styles": [
+				"stylesheets/AssignmentsDialog.css"
+			],
 			"messages": [
 				"bs-pageassignments-dlg-title",
 				"bs-pageassignments-assignee-type-everyone",
