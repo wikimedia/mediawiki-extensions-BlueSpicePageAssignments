@@ -51,7 +51,8 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 			'ug_user',
 			[
 				'ug_group' => $this->getKey()
-			]
+			],
+			__METHOD__
 		);
 		$pm = $services->getPermissionManager();
 		$userFactory = $services->getUserFactory();

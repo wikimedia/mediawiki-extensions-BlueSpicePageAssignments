@@ -67,7 +67,8 @@ class Handler implements IPrivacyHandler {
 		$res = $this->db->select(
 			'bs_pageassignments',
 			[ 'pa_page_id' ],
-			[ 'pa_assignee_key' => $user->getName() ]
+			[ 'pa_assignee_key' => $user->getName() ],
+			__METHOD__
 		);
 
 		$titles = [];
