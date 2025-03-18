@@ -52,7 +52,9 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 		$loadBalancer = $services->getDBLoadBalancer();
 		$res = $loadBalancer->getConnection( DB_REPLICA )->select(
 			'user',
-			[ 'user_id', 'user_name' ]
+			[ 'user_id', 'user_name' ],
+			'',
+			__METHOD__
 		);
 
 		$blacklistedUsers = [];
