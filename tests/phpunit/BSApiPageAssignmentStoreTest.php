@@ -71,12 +71,16 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 			$aRes = $this->insertPage( $sPage );
 			$iPageId = $aRes['id'];
 			$this->assertGreaterThan( 0, $iPageId );
-			$dbw->insert( 'bs_pageassignments', [
-				'pa_page_id' => $iPageId,
-				'pa_assignee_key' => $aData['key'],
-				'pa_assignee_type' => $aData['type'],
-				'pa_position' => $iCount
-			] );
+			$dbw->insert(
+				'bs_pageassignments',
+				[
+					'pa_page_id' => $iPageId,
+					'pa_assignee_key' => $aData['key'],
+					'pa_assignee_type' => $aData['type'],
+					'pa_position' => $iCount
+				],
+				__METHOD__
+			);
 
 			$iCount++;
 		}
