@@ -30,7 +30,8 @@ class MoveAssignments extends PageMoveComplete {
 			],
 			[
 				'pa_page_id' => Title::newFromLinkTarget( $this->old )->getArticleID()
-			]
+			],
+			__METHOD__
 		);
 		return true;
 	}
