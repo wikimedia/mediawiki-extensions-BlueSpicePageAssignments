@@ -23,9 +23,8 @@ class PageAssignmentsHooks {
 			->getConnection( DB_PRIMARY );
 		$dbw->delete(
 			'bs_pageassignments',
-			[
-				'pa_page_id' => $wikiPage->getId()
-			]
+			[ 'pa_page_id' => $wikiPage->getId() ],
+			__METHOD__
 		);
 		return true;
 	}
@@ -47,7 +46,8 @@ class PageAssignmentsHooks {
 			[
 				'pa_assignee_key' => $oUser->getName(),
 				'pa_assignee_type' => 'user'
-			]
+			],
+			__METHOD__
 		);
 		return true;
 	}
@@ -88,7 +88,8 @@ class PageAssignmentsHooks {
 			[
 				'pa_assignee_key' => $sGroup,
 				'pa_assignee_type' => 'group'
-			]
+			],
+			__METHOD__
 		);
 		return true;
 	}

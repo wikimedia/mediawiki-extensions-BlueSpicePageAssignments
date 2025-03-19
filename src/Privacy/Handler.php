@@ -49,7 +49,8 @@ class Handler implements IPrivacyHandler {
 	public function delete( User $userToDelete, User $deletedUser ) {
 		$this->db->delete(
 			'bs_pageassignments',
-			[ 'pa_assignee_key' => $userToDelete->getName() ]
+			[ 'pa_assignee_key' => $userToDelete->getName() ],
+			__METHOD__
 		);
 		return Status::newGood();
 	}
