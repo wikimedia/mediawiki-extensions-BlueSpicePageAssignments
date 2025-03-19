@@ -33,7 +33,8 @@ class Handler implements IPrivacyHandler {
 			[
 				'pa_assignee_key' => $oldUsername,
 				'pa_assignee_type' => 'user'
-			]
+			],
+			__METHOD__
 		);
 
 		return Status::newGood();

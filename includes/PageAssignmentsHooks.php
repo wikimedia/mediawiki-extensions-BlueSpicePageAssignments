@@ -69,7 +69,8 @@ class PageAssignmentsHooks {
 			[
 				'pa_assignee_key' => $sGroup,
 				'pa_assignee_type' => 'group'
-			]
+			],
+			__METHOD__
 		);
 		return true;
 	}
