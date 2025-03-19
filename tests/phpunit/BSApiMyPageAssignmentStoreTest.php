@@ -39,30 +39,46 @@ class BSApiMyPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 
 		$iPageID = $this->insertPage( "Test", "Dummy content" )['id'];
 
-		$dbw->insert( 'bs_pageassignments', [
-			'pa_page_id' => 1,
-			'pa_assignee_key' => 'sysop',
-			'pa_assignee_type' => 'group',
-			'pa_position' => 0
-		] );
-		$dbw->insert( 'bs_pageassignments', [
-			'pa_page_id' => $iPageID,
-			'pa_assignee_key' => 'bureaucrat',
-			'pa_assignee_type' => 'group',
-			'pa_position' => 1
-		] );
-		$dbw->insert( 'bs_pageassignments', [
-			'pa_page_id' => $iPageID,
-			'pa_assignee_key' => 'Apitestsysop',
-			'pa_assignee_type' => 'user',
-			'pa_position' => 2
-		] );
-		$dbw->insert( 'bs_pageassignments', [
-			'pa_page_id' => 1,
-			'pa_assignee_key' => 'TestUser',
-			'pa_assignee_type' => 'user',
-			'pa_position' => 3
-		] );
+		$dbw->insert(
+			'bs_pageassignments',
+			[
+				'pa_page_id' => 1,
+				'pa_assignee_key' => 'sysop',
+				'pa_assignee_type' => 'group',
+				'pa_position' => 0
+			],
+			__METHOD__
+		);
+		$dbw->insert(
+			'bs_pageassignments',
+			[
+				'pa_page_id' => $iPageID,
+				'pa_assignee_key' => 'bureaucrat',
+				'pa_assignee_type' => 'group',
+				'pa_position' => 1
+			],
+			__METHOD__
+		);
+		$dbw->insert(
+			'bs_pageassignments',
+			[
+				'pa_page_id' => $iPageID,
+				'pa_assignee_key' => 'Apitestsysop',
+				'pa_assignee_type' => 'user',
+				'pa_position' => 2
+			],
+			__METHOD__
+		);
+		$dbw->insert(
+			'bs_pageassignments',
+			[
+				'pa_page_id' => 1,
+				'pa_assignee_key' => 'TestUser',
+				'pa_assignee_type' => 'user',
+				'pa_position' => 3
+			],
+			__METHOD__
+		);
 		return 2;
 	}
 
