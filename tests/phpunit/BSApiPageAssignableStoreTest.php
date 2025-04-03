@@ -21,6 +21,8 @@ use MediaWiki\Title\Title;
  * @covers BlueSpice\PageAssignments\Api\Store\Assignable
  */
 class BSApiPageAssignableStoreTest extends BSApiExtJSStoreTestBase {
+
+	/** @var int */
 	protected $iFixtureTotal = 9;
 
 	protected function skipAssertTotal() {
