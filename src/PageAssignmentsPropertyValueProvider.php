@@ -27,7 +27,7 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 	 * @param AssignmentFactory|null $factory
 	 * @return \BlueSpice\SMWConnector\IPropertyValueProvider[]
 	 */
-	public static function factory( AssignmentFactory $factory = null ) {
+	public static function factory( ?AssignmentFactory $factory = null ) {
 		// We do not create the service for injection here, because it requires
 		// an instance of LinkRenderer and will create it from the services.
 		// The LinkRenderer requires the user object to be initialized which it

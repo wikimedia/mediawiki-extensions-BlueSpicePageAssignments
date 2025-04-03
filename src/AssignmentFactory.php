@@ -122,7 +122,7 @@ class AssignmentFactory {
 	 * @param Title|null $title
 	 * @return IAssignment[]
 	 */
-	protected function getAssignments( Title $title = null ) {
+	protected function getAssignments( ?Title $title = null ) {
 		if ( !$title || $title->getArticleID() < 1 ) {
 			return [];
 		}

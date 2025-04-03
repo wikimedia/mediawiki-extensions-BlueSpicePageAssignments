@@ -40,7 +40,7 @@ class Secure extends \BlueSpice\Permission\Lockdown\Module {
 	 * @return \static
 	 */
 	public static function getInstance( Config $config, IContextSource $context,
-		MediaWikiServices $services, AssignmentFactory $assignmentFactory = null ) {
+		MediaWikiServices $services, ?AssignmentFactory $assignmentFactory = null ) {
 		if ( !$assignmentFactory ) {
 				$assignmentFactory = $services->getService(
 				'BSPageAssignmentsAssignmentFactory'

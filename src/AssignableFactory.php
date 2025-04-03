@@ -36,7 +36,7 @@ class AssignableFactory {
 	 * @param IContextSource|null $context
 	 * @return IAssignable|null
 	 */
-	public function factory( $type, IContextSource $context = null ) {
+	public function factory( $type, ?IContextSource $context = null ) {
 		if ( !$context ) {
 			$context = RequestContext::getMain();
 		}
