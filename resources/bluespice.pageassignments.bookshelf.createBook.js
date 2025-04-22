@@ -1,19 +1,18 @@
-mw.hook( 'bs.bookshelf.newbook.actionprocess' ).add( function( process, dialog ) {
-	return process.next( function () {
-		const mwApi = new mw.Api();
-		mwApi.get( {
-			action: 'query',
-			titles: dialog.bookTitle,
-			format: 'json',
-			prop: 'info'
-		} ).fail( function () {
-			dialog.showErrors( new OO.ui.Error( arguments[ 0 ], { recoverable: false } ) );
-		} )
-		.done( function ( resp ) {
-			var pages  = resp.query.pages;
-			var pageId = 0;
-			for ( var page in pages ) {
-				pageId = pages[page].pageid;
+mw.hook( 'bs.bookshelf.newbook.actionprocess' ).add( ( process, dialog ) => process.next( () => {
+	const mwApi = new mw.Api();
+	mwApi.get( {
+		action: 'query',
+		titles: dialog.bookTitle,
+		format: 'json',
+		prop: 'info'
+	} ).fail( function () {
+		dialog.showErrors( new OO.ui.Error( arguments[ 0 ], { recoverable: false } ) );
+	} )
+		.done( ( resp ) => {
+			const pages = resp.query.pages;
+			let pageId = 0;
+			for ( const page in pages ) {
+				pageId = pages[ page ].pageid;
 			}
 			blueSpice.api.tasks.exec(
 				'pageassignment',
@@ -22,12 +21,11 @@ mw.hook( 'bs.bookshelf.newbook.actionprocess' ).add( function( process, dialog )
 					pageId: pageId,
 					pageAssignments: [ 'user/' + mw.user.getName() ]
 				}, {
-					success: function() {},
-					failure: function( response ) {
+					success: function () {},
+					failure: function ( response ) {
 						dialog.showErrors( new OO.ui.Error( response ) );
 					}
 				}
 			);
 		} );
-	} );
-} );
+} ) );

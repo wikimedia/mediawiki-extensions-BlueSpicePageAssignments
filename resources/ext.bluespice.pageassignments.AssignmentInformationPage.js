@@ -32,12 +32,12 @@
 				action: 'bs-pageassignment-store',
 				pageSize: 10,
 				filter: {
-					page_namespace: {
+					page_namespace: { // eslint-disable-line camelcase
 						value: namespace,
 						operator: 'eq',
 						type: 'string'
 					},
-					page_title: {
+					page_title: { // eslint-disable-line camelcase
 						value: text,
 						operator: 'eq',
 						type: 'string'
@@ -46,7 +46,7 @@
 			} );
 
 			const rawData = await assignmentsStore.doLoadData();
-			const pageData = Object.values( rawData ); // eslint-disable-line es/no-object-values
+			const pageData = Object.values( rawData );
 			const assignmentsData = pageData.length > 0 ? pageData[ 0 ].assignments : [];
 
 			this.assignmentGrid = new OOJSPlus.ui.data.GridWidget( {
