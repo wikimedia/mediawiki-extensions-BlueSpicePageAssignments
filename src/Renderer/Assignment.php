@@ -55,7 +55,7 @@ class Assignment extends \BlueSpice\TemplateRenderer {
 	 * @param mixed $val
 	 * @return mixed
 	 */
-	protected function render_image( $val ) {
+	protected function render_image( $val ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		return Html::element( 'span', [
 			'class' => "bs-icon-" . $this->assignment->getType(),
 		] );

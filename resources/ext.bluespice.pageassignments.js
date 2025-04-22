@@ -1,16 +1,16 @@
-(function( mw, $, d, undefined ){
-	function _showDialog() {
-		var dfd = $.Deferred();
+( function ( mw, $, d ) {
+	function _showDialog() { // eslint-disable-line no-underscore-dangle
+		const dfd = $.Deferred();
 
-		var api = new mw.Api();
+		const api = new mw.Api();
 		api.postWithToken( 'csrf', {
-			'action': 'bs-pageassignment-tasks',
-			'formatversion': 2,
-			'task': 'getForPage',
-			'taskData': JSON.stringify( {
+			action: 'bs-pageassignment-tasks',
+			formatversion: 2,
+			task: 'getForPage',
+			taskData: JSON.stringify( {
 				pageId: mw.config.get( 'wgArticleId' )
 			} )
-		} ).done( function( response, xhr ){
+		} ).done( ( response ) => {
 			if ( response.success ) {
 				dfd.resolve( [
 					new bs.pageassignments.ui.AssignmentsPage( {
@@ -23,13 +23,13 @@
 			} else {
 				dfd.reject();
 			}
-		} ).fail( function( e ) {
+		} ).fail( () => {
 			dfd.reject();
 		} );
 
-		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+		const dialog = new OOJSPlus.ui.dialog.BookletDialog( {
 			id: 'bs-pageassignments-set',
-			pages: function() {
+			pages: function () {
 				return dfd.promise();
 			}
 		} );
@@ -37,8 +37,8 @@
 		dialog.show();
 	}
 
-	$(d).on( 'click', '#ca-pageassignments a, a#ca-pageassignments', function( e ) {
+	$( d ).on( 'click', '#ca-pageassignments a, a#ca-pageassignments', ( e ) => {
 		e.preventDefault();
 		mw.loader.using( 'ext.bluespice.pageassignments.dialog.pages' ).done( _showDialog );
 	} );
-})( mediaWiki, jQuery, document );
+}( mediaWiki, jQuery, document ) );

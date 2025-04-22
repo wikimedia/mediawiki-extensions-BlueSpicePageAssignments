@@ -1,41 +1,41 @@
-(function( mw, $, d, undefined ){
+( function ( mw, $, d ) {
 
 	function getPageId( pageName ) {
-		var dfd = $.Deferred();
-		var api = new mw.Api();
+		const dfd = $.Deferred();
+		const api = new mw.Api();
 		api.get( {
 			action: 'query',
 			titles: pageName,
 			format: 'json',
 			prop: 'info'
-		} ).fail( function () {
+		} ).fail( ( e ) => {
 			dfd.reject( e );
 		} )
-		.done( function ( resp ) {
-			var pages  = resp.query.pages;
-			var pageId = 0;
-			for ( var page in pages ) {
-				pageId = pages[page].pageid;
-			}
-			dfd.resolve( pageId );
-		} );
+			.done( ( resp ) => {
+				const pages = resp.query.pages;
+				let pageId = 0;
+				for ( const page in pages ) {
+					pageId = pages[ page ].pageid;
+				}
+				dfd.resolve( pageId );
+			} );
 
 		return dfd.promise();
 	}
 
-	function _showDialog( page ) {
-		var dfd = $.Deferred();
+	function _showDialog( page ) { // eslint-disable-line no-underscore-dangle
+		const dfd = $.Deferred();
 
-		getPageId( page ).done( function ( pageID ) {
-			var api = new mw.Api();
+		getPageId( page ).done( ( pageID ) => {
+			const api = new mw.Api();
 			api.postWithToken( 'csrf', {
-				'action': 'bs-pageassignment-tasks',
-				'formatversion': 2,
-				'task': 'getForPage',
-				'taskData': JSON.stringify( {
+				action: 'bs-pageassignment-tasks',
+				formatversion: 2,
+				task: 'getForPage',
+				taskData: JSON.stringify( {
 					pageId: pageID
 				} )
-			} ).done( function( response, xhr ){
+			} ).done( ( response ) => {
 				if ( response.success ) {
 					dfd.resolve( [
 						new bs.pageassignments.ui.AssignmentsPage( {
@@ -48,14 +48,14 @@
 				} else {
 					dfd.reject();
 				}
-			} ).fail( function( e ) {
+			} ).fail( ( e ) => {
 				dfd.reject( e );
 			} );
 		} );
 
-		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+		const dialog = new OOJSPlus.ui.dialog.BookletDialog( {
 			id: 'bs-pageassignments-set',
-			pages: function() {
+			pages: function () {
 				return dfd.promise();
 			}
 		} );
@@ -63,14 +63,14 @@
 		dialog.show();
 	}
 
-	$( d ).on( 'click', '.pageassignments-book-overview', function( e ) {
+	$( d ).on( 'click', '.pageassignments-book-overview', ( e ) => {
 		e.preventDefault();
-		var target = e.target;
-		if ( target.nodeName != 'A' ) {
-			target = $( target).parent();
+		let target = e.target;
+		if ( target.nodeName !== 'A' ) {
+			target = $( target ).parent(); // eslint-disable-line no-jquery/variable-pattern
 		}
 
-		var page = $( target ).data( 'prefixed_db_key' );
+		const page = $( target ).data( 'prefixed_db_key' );
 		mw.loader.using( 'ext.bluespice.pageassignments.dialog.pages' ).done( _showDialog( page ) );
 	} );
-})( mediaWiki, jQuery, document );
+}( mediaWiki, jQuery, document ) );

@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.pageassignments.ui' );
 
-bs.pageassignments.ui.AssignmentsPage = function( cfg ) {
+bs.pageassignments.ui.AssignmentsPage = function ( cfg ) {
 	cfg = cfg || {};
 
 	this.page = cfg.data.page || 0;
@@ -9,10 +9,10 @@ bs.pageassignments.ui.AssignmentsPage = function( cfg ) {
 
 OO.inheritClass( bs.pageassignments.ui.AssignmentsPage, OOJSPlus.ui.booklet.DialogBookletPage );
 
-bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
+bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function () {
 	this.assignmentPicker = new OOJSPlus.ui.widget.StoreDataInputWidget( {
 		id: 'assignment-picker',
-		placeholder: mw.message( "bs-pageassignments-dialog-input-placeholder" ).text(),
+		placeholder: mw.message( 'bs-pageassignments-dialog-input-placeholder' ).text(),
 		queryAction: 'bs-pageassignable-store',
 		groupBy: 'pa_assignee_type',
 		labelField: 'text',
@@ -23,13 +23,13 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 			} )
 		},
 		$overlay: this.dialog ? this.dialog.$overlay : true,
-		groupLabelCallback: function( label, data ) {
-			return mw.message( 'bs-pageassignments-assignee-type-' + label ).text();
+		groupLabelCallback: function ( label ) {
+			return mw.message( 'bs-pageassignments-assignee-type-' + label ).text(); // eslint-disable-line mediawiki/msg-doc
 		}
 	} );
 	this.assignmentPicker.connect( this, {
-		change: function() {
-			var data = this.assignmentPicker.getSelectedItemData();
+		change: function () {
+			const data = this.assignmentPicker.getSelectedItemData();
 			if ( typeof data === 'object' && data !== null ) {
 				this.appendToStoreData( {
 					type: data.pa_assignee_type,
@@ -52,21 +52,21 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 		paginator: null,
 		columns: {
 			type: {
-				type: "icon",
-				valueParser: function( value ) {
-					var map = {
+				type: 'icon',
+				valueParser: function ( value ) {
+					const map = {
 						user: 'userAvatar',
 						group: 'userGroup'
 					};
 					if ( map.hasOwnProperty( value ) ) {
-						return map[value];
+						return map[ value ];
 					}
 					return value;
 				},
 				width: 50
 			},
 			text: {
-				type: "text"
+				type: 'text'
 			},
 			delete: {
 				type: 'action',
@@ -78,7 +78,7 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 		store: this.store
 	} );
 	this.grid.connect( this, {
-		action: function( action, row ) {
+		action: function ( action, row ) {
 			if ( action === 'delete' ) {
 				this.removeFromStoreData( row );
 			}
@@ -92,17 +92,17 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function() {
 	];
 };
 
-bs.pageassignments.ui.AssignmentsPage.prototype.setData = function( data ) {
+bs.pageassignments.ui.AssignmentsPage.prototype.setData = function ( data ) {
 	if ( data.hasOwnProperty( 'page' ) ) {
 		this.page = data.page;
 	}
 	if ( data.hasOwnProperty( 'assignments' ) ) {
-		var rows = [];
-		for ( var i = 0; i < data.assignments.length; i++ ) {
+		const rows = [];
+		for ( let i = 0; i < data.assignments.length; i++ ) {
 			rows.push( {
-				text: data.assignments[i].text,
-				type: data.assignments[i].pa_assignee_type,
-				key: data.assignments[i].pa_assignee_key
+				text: data.assignments[ i ].text,
+				type: data.assignments[ i ].pa_assignee_type,
+				key: data.assignments[ i ].pa_assignee_key
 			} );
 		}
 		this.grid.store.setData( rows );
@@ -110,27 +110,27 @@ bs.pageassignments.ui.AssignmentsPage.prototype.setData = function( data ) {
 	}
 };
 
-bs.pageassignments.ui.AssignmentsPage.prototype.getTitle = function() {
+bs.pageassignments.ui.AssignmentsPage.prototype.getTitle = function () {
 	return mw.message( 'bs-pageassignments-dlg-title' ).plain();
 };
 
-bs.pageassignments.ui.AssignmentsPage.prototype.getSize = function() {
+bs.pageassignments.ui.AssignmentsPage.prototype.getSize = function () {
 	return 'medium';
 };
 
-bs.pageassignments.ui.AssignmentsPage.prototype.getActionKeys = function() {
+bs.pageassignments.ui.AssignmentsPage.prototype.getActionKeys = function () {
 	return [ 'cancel', 'done' ];
 };
 
-bs.pageassignments.ui.AssignmentsPage.prototype.getAbilities = function() {
+bs.pageassignments.ui.AssignmentsPage.prototype.getAbilities = function () {
 	return { done: true, cancel: true };
 };
 
-bs.pageassignments.ui.AssignmentsPage.prototype.appendToStoreData = function( assignment ) {
-	var original = this.store.originalData,
-		duplicate = false;
-	for( var i = 0; i < original.length; i++ ) {
-		if ( assignment.key === original[i].key && assignment.type === original[i].type ) {
+bs.pageassignments.ui.AssignmentsPage.prototype.appendToStoreData = function ( assignment ) {
+	const original = this.store.originalData;
+	let duplicate = false;
+	for ( let i = 0; i < original.length; i++ ) {
+		if ( assignment.key === original[ i ].key && assignment.type === original[ i ].type ) {
 			duplicate = true;
 			break;
 		}
@@ -141,30 +141,30 @@ bs.pageassignments.ui.AssignmentsPage.prototype.appendToStoreData = function( as
 	}
 };
 
-bs.pageassignments.ui.AssignmentsPage.prototype.removeFromStoreData = function( assignment ) {
-	var original = this.store.originalData,
+bs.pageassignments.ui.AssignmentsPage.prototype.removeFromStoreData = function ( assignment ) {
+	const original = this.store.originalData,
 		newData = [];
-	for( var i = 0; i < original.length; i++ ) {
-		if ( assignment.key === original[i].key && assignment.type === original[i].type ) {
+	for ( let i = 0; i < original.length; i++ ) {
+		if ( assignment.key === original[ i ].key && assignment.type === original[ i ].type ) {
 			continue;
 		}
-		newData.push( original[i] );
+		newData.push( original[ i ] );
 	}
 	this.store.setData( newData );
 };
 
-bs.pageassignments.ui.AssignmentsPage.prototype.onAction = function( action ) {
-	var dfd = $.Deferred();
+bs.pageassignments.ui.AssignmentsPage.prototype.onAction = function ( action ) {
+	const dfd = $.Deferred();
 
 	if ( action === 'done' ) {
 		blueSpice.api.tasks.exec(
 			'pageassignment',
 			'edit',
 			this.getApiData(), {
-				success: function() {
+				success: function () {
 					dfd.resolve( { action: 'close', data: { success: true } } );
-				}.bind( this ),
-				failure: function( response ) {
+				},
+				failure: function ( response ) {
 					dfd.reject( response.message );
 				}
 			}
@@ -176,12 +176,12 @@ bs.pageassignments.ui.AssignmentsPage.prototype.onAction = function( action ) {
 	return dfd.promise();
 };
 
-bs.pageassignments.ui.AssignmentsPage.prototype.getApiData = function() {
-	var data = this.store.originalData,
+bs.pageassignments.ui.AssignmentsPage.prototype.getApiData = function () {
+	const data = this.store.originalData,
 		combined = [];
 
-	for ( var i = 0; i < data.length; i++ ) {
-		combined.push( data[i].type + '/' + data[i].key );
+	for ( let i = 0; i < data.length; i++ ) {
+		combined.push( data[ i ].type + '/' + data[ i ].key );
 	}
 
 	return {
@@ -189,4 +189,3 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getApiData = function() {
 		pageAssignments: combined
 	};
 };
-

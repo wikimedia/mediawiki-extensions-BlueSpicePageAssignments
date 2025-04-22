@@ -1,5 +1,5 @@
-mw.hook( 'bs.wikiexplorer.oojs.columns' ).add( function( columns ) {
-	columns.page_assignments = {
+mw.hook( 'bs.wikiexplorer.oojs.columns' ).add( ( columns ) => {
+	columns.page_assignments = { // eslint-disable-line camelcase
 		headerText: mw.message( 'pageassignments' ).escaped(),
 		type: 'text',
 		valueParser: function ( val ) {

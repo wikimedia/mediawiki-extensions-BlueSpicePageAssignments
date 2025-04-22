@@ -29,9 +29,7 @@ ext.bluespice.pageassignments.ui.panel.Overview.prototype.setupGridConfig = func
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
-				valueParser: ( val, row ) => {
-					return new OO.ui.HtmlSnippet( row.page_link );
-				}
+				valueParser: ( val, row ) => new OO.ui.HtmlSnippet( row.page_link )
 			}
 		},
 		store: this.store

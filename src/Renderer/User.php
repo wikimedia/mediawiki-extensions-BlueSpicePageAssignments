@@ -18,7 +18,7 @@ class User extends Assignment {
 	 * @param mixed $val
 	 * @return mixed
 	 */
-	protected function render_image( $val ) {
+	protected function render_image( $val ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$services = MediaWikiServices::getInstance();
 		$renderer = $services->getService( 'BSRendererFactory' )->get(
 			'userimage',

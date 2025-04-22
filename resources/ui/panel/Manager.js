@@ -39,24 +39,20 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.setupGridConfig = funct
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
-				valueParser: ( value ) => {
-					return new OO.ui.HtmlSnippet( mw.html.element(
-						'a',
-						{
-							href: mw.util.getUrl( value )
-						},
-						value
-					) );
-				}
+				valueParser: ( value ) => new OO.ui.HtmlSnippet( mw.html.element(
+					'a',
+					{
+						href: mw.util.getUrl( value )
+					},
+					value
+				) )
 			},
 			assignments: {
 				headerText: mw.message( 'bs-pageassignments-column-assignments' ).plain(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
-				valueParser: ( value ) => {
-					return this.makeAssignmentsWidget( value );
-				}
+				valueParser: ( value ) => this.makeAssignmentsWidget( value )
 			}
 		},
 		actions: {
@@ -112,7 +108,7 @@ ext.bluespice.pageassignments.ui.panel.Manager.prototype.setupGridConfig = funct
 
 					const $tbody = $( '<tbody>' );
 					for ( const id in response ) {
-						if ( response.hasOwnProperty( id ) ) { // eslint-disable-line no-prototype-builtins
+						if ( response.hasOwnProperty( id ) ) {
 							const record = response[ id ];
 							const assignees = record.assignments.map( ( assignment ) => assignment.pa_assignee_key ).join( ' - ' ); // CSV comma delimiter
 							let read = record.all_assignees_have_read; // BlueSpiceReadConfirmation
