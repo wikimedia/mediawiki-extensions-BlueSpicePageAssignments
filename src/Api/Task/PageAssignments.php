@@ -96,7 +96,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 * @param array $params
 	 * @return \BlueSpice\Api\Response\Standard
 	 */
-	protected function task_edit( $taskData, $params ) {
+	protected function task_edit( $taskData, $params ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$result = $this->makeStandardReturn();
 
 		if ( empty( $taskData->pageId ) ) {
@@ -184,7 +184,7 @@ class PageAssignments extends \BSApiTasksBase {
 	 * @param array $params
 	 * @return \BlueSpice\Api\Response\Standard
 	 */
-	protected function task_getForPage( $taskData, $params ) {
+	protected function task_getForPage( $taskData, $params ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$result = $this->makeStandardReturn();
 
 		if ( empty( $taskData->pageId ) ) {

@@ -1,4 +1,4 @@
-(function ( mw, $, bs) {
+( function ( mw, $, bs ) {
 	bs.util.registerNamespace( 'bs.pageAssignments.report' );
 
 	bs.pageAssignments.report.AssignedPagesReport = function ( cfg ) {
@@ -21,10 +21,10 @@
 
 	bs.pageAssignments.report.AssignedPagesReport.prototype.getAxisLabels = function () {
 		return {
-			value: mw.message( "bs-pageassignments-statistics-report-assigned-pages-axis-label" ).text(),
-			assigned: mw.message( "bs-pageassignments-statistics-report-assigned-pages-axis-assigned" ).text(),
-			unassigned: mw.message( "bs-pageassignments-statistics-report-assigned-pages-axis-unassigned" ).text()
+			value: mw.message( 'bs-pageassignments-statistics-report-assigned-pages-axis-label' ).text(),
+			assigned: mw.message( 'bs-pageassignments-statistics-report-assigned-pages-axis-assigned' ).text(),
+			unassigned: mw.message( 'bs-pageassignments-statistics-report-assigned-pages-axis-unassigned' ).text()
 		};
 	};
 
-} )( mediaWiki, jQuery , blueSpice);
+}( mediaWiki, jQuery, blueSpice ) );
