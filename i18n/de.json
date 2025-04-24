@@ -117,5 +117,10 @@
 	"bs-pageassignments-event-assignment-remove-key-desc": "Zuweisung von einer Seite entfernt",
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|entfernte}} deine Zuweisung von der Seite $2",
 	"bs-pageassignments-event-assignment-remove-bot": "Deine Zuweisung wurde von der Seite entfernt $1",
-	"bs-pageassignments-column-assignee-type": "Typ"
+	"bs-pageassignments-column-assignee-type": "Typ",
+	"bs-pageassignments-header-action-edit": "Bearbeiten",
+	"bs-pageassignments-header-action-delete": "Löschen",
+	"bs-pageassignments-title-edit": "Zuweisungen bearbeiten",
+	"bs-pageassignments-title-delete": "Zuweisungen löschen",
+	"bs-pageassignments-show-unassigned-pages": "Nicht zugewiesene Seiten anzeigen"
 }
