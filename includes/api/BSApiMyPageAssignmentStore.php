@@ -81,9 +81,8 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param \stdClass $oFilter
-	 * @param array $aDataSet
+	 * @param \stdClass $aDataSet
 	 * @return bool
 	 */
 	public function filterString( $oFilter, $aDataSet ) {
