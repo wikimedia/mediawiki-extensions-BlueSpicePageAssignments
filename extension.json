@@ -210,8 +210,7 @@
 			],
 			"messages": [
 				"bs-pageassignments-dlg-title",
-				"bs-pageassignments-dlg-fldlabel",
-				"bs-pageassignments-action-apiedit-description"
+				"bs-pageassignments-dlg-fldlabel"
 			],
 			"dependencies": [
 				"ext.bluespice.pageassignments.assignable.messages",
