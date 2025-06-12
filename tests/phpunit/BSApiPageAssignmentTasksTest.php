@@ -19,18 +19,18 @@ use BlueSpice\Tests\BSUserFixturesProvider;
  */
 class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 
+	/** @var int */
+	protected $pageID = 0;
+
 	protected function setUp(): void {
 		parent::setUp();
 		new BSUserFixturesProvider();
 		self::$userFixtures = new BSUserFixtures( $this );
+		$this->pageID = $this->insertPage( "Test", "Dummy content" )['id'];
 	}
 
 	protected function getModuleName() {
 		return 'bs-pageassignment-tasks';
-	}
-
-	public function getTokens() {
-		return $this->getTokenList( self::$users[ 'sysop' ] );
 	}
 
 	/**
@@ -40,7 +40,7 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 		$oData = $this->executeTask(
 			'edit',
 			[
-				'pageId' => 1,
+				'pageId' => $this->pageID,
 				'pageAssignments' => [
 					'user/John',
 					'group/sysop'
@@ -61,7 +61,7 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 		$oData = $this->executeTask(
 			'edit',
 			[
-				'pageId' => 1,
+				'pageId' => $this->pageID,
 				'pageAssignments' => [
 				]
 			]
@@ -85,7 +85,7 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 		$oData = $this->executeTask(
 			'edit',
 			[
-				'pageId' => 1,
+				'pageId' => $this->pageID,
 				'pageAssignments' => [
 					'user/John',
 					'group/sysop'
@@ -98,7 +98,7 @@ class BSApiPageAssignmentTasksTest extends BSApiTasksTestBase {
 		$oData = $this->executeTask(
 			'getForPage',
 			[
-				'pageId' => 1
+				'pageId' => $this->pageID
 			]
 		);
 

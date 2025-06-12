@@ -16,12 +16,12 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
 class BSApiMyPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 
 	/** @var int */
-	protected $iFixtureTotal = 2;
+	protected $iFixtureTotal = 1;
 
 	protected function getStoreSchema() {
 		return [
 			'page_id' => [
-				'type' => 'integer'
+				'type' => 'numeric'
 			],
 			'page_prefixedtext' => [
 				'type' => 'string'
@@ -36,7 +36,7 @@ class BSApiMyPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	protected function createStoreFixtureData() {
-		$dbw = $this->db;
+		$dbw = $this->getDb();
 		$this->setUp();
 
 		$iPageID = $this->insertPage( "Test", "Dummy content" )['id'];
@@ -44,7 +44,7 @@ class BSApiMyPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 		$dbw->insert(
 			'bs_pageassignments',
 			[
-				'pa_page_id' => 1,
+				'pa_page_id' => $iPageID,
 				'pa_assignee_key' => 'sysop',
 				'pa_assignee_type' => 'group',
 				'pa_position' => 0
@@ -74,14 +74,14 @@ class BSApiMyPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 		$dbw->insert(
 			'bs_pageassignments',
 			[
-				'pa_page_id' => 1,
+				'pa_page_id' => $iPageID,
 				'pa_assignee_key' => 'TestUser',
 				'pa_assignee_type' => 'user',
 				'pa_position' => 3
 			],
 			__METHOD__
 		);
-		return 2;
+		return 1;
 	}
 
 	protected function getModuleName() {
@@ -90,7 +90,8 @@ class BSApiMyPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 
 	public function provideSingleFilterData() {
 		return [
-			'Filter by page_prefixedtext' => [ 'string', 'eq', 'page_prefixedtext', 'UTPage', 1 ]
+			'Filter by page_prefixedtext' => [ 'string', 'eq', 'page_prefixedtext', 'notExist', 0 ],
+			'Filter by page_prefixedtext' => [ 'string', 'eq', 'page_prefixedtext', 'Test', 1 ]
 		];
 	}
 
@@ -102,7 +103,7 @@ class BSApiMyPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 						'type' => 'string',
 						'comparison' => 'ct',
 						'field' => 'page_prefixedtext',
-						'value' => 'UT'
+						'value' => 'Te'
 					],
 					[
 						'type' => 'integer',
