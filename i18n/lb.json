@@ -20,5 +20,6 @@
 	"bs-pageassignments-collection-var-namespacename": "Nummraum",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Zuel vun de Säiten",
 	"bs-pageassignments-column-assignee-type": "Typ",
-	"bs-pageassignments-header-action-delete": "Läschen"
+	"bs-pageassignments-header-action-delete": "Läschen",
+	"bs-pageassignments-header-action-edit": "Änneren"
 }
