@@ -86,6 +86,7 @@
 	"bs-pageassignments-book-assignment-not-allowed-title": "Assignments not allowed",
 	"bs-pageassignments-book-assignment-not-allowed-text": "Assignments are not allowed for non title-based books",
 	"bs-pageassignments-statistics-report-assigned-pages": "Assigned pages",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Assigned and unassigned pages in the selected period, filterable by category and namespace",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assigned",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Not assigned",
 	"bs-pageassignments-dialog-input-placeholder": "Add assignments…",

@@ -281,6 +281,7 @@
 			],
 			"messages": [
 				"bs-pageassignments-statistics-report-assigned-pages",
+				"bs-pageassignments-statistics-report-assigned-pages-desc",
 				"bs-pageassignments-statistics-report-assigned-pages-axis-assigned",
 				"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned",
 				"bs-pageassignments-statistics-report-assigned-pages-axis-label"
