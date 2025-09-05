@@ -122,5 +122,6 @@
 	"bs-pageassignments-header-action-delete": "Löschen",
 	"bs-pageassignments-title-edit": "Zuweisungen bearbeiten",
 	"bs-pageassignments-title-delete": "Zuweisungen löschen",
-	"bs-pageassignments-show-unassigned-pages": "Nicht zugewiesene Seiten anzeigen"
+	"bs-pageassignments-show-unassigned-pages": "Nicht zugewiesene Seiten anzeigen",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Zugewiesene und nicht zugewiesene Seiten im gewählten Zeitraum, filterbar nach Kategorie und Namensraum"
 }

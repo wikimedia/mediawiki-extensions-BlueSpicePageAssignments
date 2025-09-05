@@ -94,5 +94,6 @@
 	"bs-pageassignments-header-action-delete": "Delete",
 	"bs-pageassignments-title-edit": "Edit assignments",
 	"bs-pageassignments-title-delete": "Delete assignments",
-	"bs-pageassignments-show-unassigned-pages": "Show unassigned pages"
+	"bs-pageassignments-show-unassigned-pages": "Show unassigned pages",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Assigned and unassigned pages in the selected period, filterable by category and namespace"
 }
