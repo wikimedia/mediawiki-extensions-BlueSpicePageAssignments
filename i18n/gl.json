@@ -66,6 +66,7 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Páxinas sen asignar",
 	"bs-pageassignments-pageheader-label": "Asignacións",
 	"bs-pageassignments-statistics-report-assigned-pages": "Páxinas asignadas",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Páxinas asignadas e páxinas sen asignar no período seleccionado, filtrables por categoría e espazo de nomes",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Asignada",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Non asignada",
 	"bs-pageassignments-dialog-input-placeholder": "Engadir asignacións…",
