@@ -16,6 +16,7 @@
 	},
 	"bs-pageassignments-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of page assignments extension",
 	"pageassignments": "Special page name for page assignments. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments\n{{Identical|Assignment}}",
+	"managepageassignments": "Special page name for page assignments manager. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
 	"bs-pageassignments-text": "Label for global actions menu. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label text for additional permissions:",
 	"bs-pageassignments-dlg-title": "Window title of dialog. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments\n{{Identical|Assignment}}",
