@@ -6,6 +6,7 @@
 	},
 	"bs-pageassignments-desc": "Enables you to assign users or groups to a page",
 	"pageassignments": "Assignments",
+	"managepageassignments": "Assignment management",
 	"bs-pageassignments-text": "Assignments",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Additional permissions for assigned users",
 	"bs-pageassignments-dlg-title": "Assignments",
