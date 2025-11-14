@@ -19,6 +19,7 @@
 	},
 	"bs-pageassignments-desc": "Erlaubt die Zuweisung von Zielgruppen zu einer Seite",
 	"pageassignments": "Zuweisungen",
+	"managepageassignments": "Zuweisungsverwaltung",
 	"bs-pageassignments-text": "Zuweisungen",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Zusätzliche Berechtigungen für zugewiesene Benutzer",
 	"bs-pageassignments-dlg-title": "Zuweisungen",
