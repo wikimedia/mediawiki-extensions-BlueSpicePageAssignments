@@ -68,5 +68,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages": "Atanmış sayfalar",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Atananlar",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Atanmayanlar",
-	"bs-pageassignments-dialog-input-placeholder": "Atama ekle"
+	"bs-pageassignments-dialog-input-placeholder": "Atama ekle",
+	"managepageassignments": "Atama yönetimi"
 }

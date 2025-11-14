@@ -82,5 +82,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "已分配",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "未分配",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "页数",
-	"bs-pageassignments-books-overview-page-book-action-assignment-text": "分配"
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "分配",
+	"managepageassignments": "分配管理"
 }
