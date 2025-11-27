@@ -66,6 +66,7 @@
 	"bs-pageassignments-collection-var-unassignedpages": "未分配頁面",
 	"bs-pageassignments-pageheader-label": "分配",
 	"bs-pageassignments-statistics-report-assigned-pages": "已分配頁面",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "在所選時段內已分配和未分配的頁面，可依分類和命名空間篩選",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "已分配",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "尚未分配",
 	"bs-pageassignments-dialog-input-placeholder": "添加分配…",
@@ -83,5 +84,10 @@
 	"bs-pageassignments-event-assignment-remove": "已從頁面$2{{GENDER:$1|移除}}您的分配",
 	"bs-pageassignments-event-assignment-remove-bot": "已從頁面$1移除掉您的分配",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "分配",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "編輯$1的分配"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "編輯$1的分配",
+	"bs-pageassignments-header-action-edit": "編輯",
+	"bs-pageassignments-header-action-delete": "刪除",
+	"bs-pageassignments-title-edit": "頁面分配",
+	"bs-pageassignments-title-delete": "刪除分配",
+	"bs-pageassignments-show-unassigned-pages": "顯示未分配的頁面"
 }
