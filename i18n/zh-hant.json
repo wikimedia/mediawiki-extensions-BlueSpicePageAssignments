@@ -91,5 +91,10 @@
 	"bs-pageassignments-event-assignment-remove": "已從頁面$2{{GENDER:$1|移除}}您的分配",
 	"bs-pageassignments-event-assignment-remove-bot": "已從頁面$1移除掉您的分配",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "分配",
-	"bs-pageassignments-books-overview-page-book-action-assignment-title": "編輯$1的分配"
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "編輯$1的分配",
+	"bs-pageassignments-header-action-edit": "編輯",
+	"bs-pageassignments-header-action-delete": "刪除",
+	"bs-pageassignments-title-edit": "頁面分配",
+	"bs-pageassignments-title-delete": "刪除分配",
+	"bs-pageassignments-show-unassigned-pages": "顯示未分配的頁面"
 }
