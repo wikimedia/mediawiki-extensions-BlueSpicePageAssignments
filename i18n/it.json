@@ -10,6 +10,7 @@
 	},
 	"bs-pageassignments-desc": "Consente di assegnare utenti o gruppi a una pagina",
 	"pageassignments": "Assegnazioni",
+	"managepageassignments": "Gestore assegnazioni",
 	"bs-pageassignments-text": "Assegnazioni",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Autorizzazioni aggiuntive per gli utenti assegnati",
 	"bs-pageassignments-dlg-title": "Assegnazioni",
@@ -72,6 +73,5 @@
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assegna",
 	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifica le assegnazioni per $1",
 	"bs-pageassignments-header-action-edit": "Modifica",
-	"bs-pageassignments-header-action-delete": "Cancella",
-	"managepageassignments": "Gestore assegnazioni"
+	"bs-pageassignments-header-action-delete": "Cancella"
 }

@@ -19,6 +19,7 @@
 	},
 	"bs-pageassignments-desc": "Vous donne la possibilité d’assigner des utilisateurs ou groupes à une page",
 	"pageassignments": "Affectations",
+	"managepageassignments": "Gestion des assignations",
 	"bs-pageassignments-text": "Affectations",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Droits supplémentaires pour les utilisateurs affectés",
 	"bs-pageassignments-dlg-title": "Affectations",
@@ -98,6 +99,5 @@
 	"bs-pageassignments-header-action-delete": "Supprimer",
 	"bs-pageassignments-title-edit": "Modifier des assignations",
 	"bs-pageassignments-title-delete": "Supprimer des assignations",
-	"bs-pageassignments-show-unassigned-pages": "Afficher les pages non attribuées",
-	"managepageassignments": "Gestion des assignations"
+	"bs-pageassignments-show-unassigned-pages": "Afficher les pages non attribuées"
 }

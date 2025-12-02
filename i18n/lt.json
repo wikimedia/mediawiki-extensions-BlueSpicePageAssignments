@@ -10,6 +10,7 @@
 	},
 	"bs-pageassignments-desc": "Leidžia jums priskirti vartotojus ar grupes į puslapį",
 	"pageassignments": "Užduotys",
+	"managepageassignments": "Užduoties valdymas",
 	"bs-pageassignments-text": "Priskyrimai",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Papildomos teisės priskirtiems vartotojams",
 	"bs-pageassignments-dlg-title": "Užduotys",
@@ -70,6 +71,5 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Puslapių skaičius",
 	"bs-pageassignments-notification-pagereview-summary": "$1 peržiūrėjo $3",
 	"bs-pageassignments-notification-pagereview-subject": "Puslapio $2 apžvalga",
-	"bs-pageassignments-notification-pagereview-body": "$1 peržiūrėjo puslapį $2.",
-	"managepageassignments": "Užduoties valdymas"
+	"bs-pageassignments-notification-pagereview-body": "$1 peržiūrėjo puslapį $2."
 }

@@ -6,6 +6,7 @@
 		]
 	},
 	"pageassignments": "Přiřazení",
+	"managepageassignments": "Správa přiřazení",
 	"bs-pageassignments-text": "Přiřazení",
 	"bs-pageassignments-dlg-title": "Přiřazení",
 	"bs-pageassignments-dlg-fldlabel": "Přiřazení",
@@ -31,6 +32,5 @@
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Přiřadit",
 	"bs-pageassignments-header-action-edit": "Upravit",
 	"bs-pageassignments-title-edit": "Upravit úkoly",
-	"bs-pageassignments-title-delete": "Smazat přiřazení",
-	"managepageassignments": "Správa přiřazení"
+	"bs-pageassignments-title-delete": "Smazat přiřazení"
 }

@@ -20,6 +20,7 @@
 	},
 	"bs-pageassignments-desc": "Permite asignar usuarios o grupos a una página",
 	"pageassignments": "Asignaciones",
+	"managepageassignments": "Gestión de asignaciones",
 	"bs-pageassignments-text": "Asignaciones",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Permisos adicionales para usuarios asignados",
 	"bs-pageassignments-dlg-title": "Asignaciones",
@@ -88,6 +89,5 @@
 	"bs-pageassignments-event-assignment-links-intro": "Por favor visite la página en el siguiente enlace para verificar su tarea.",
 	"bs-pageassignments-event-assignment-remove-key-desc": "Se eliminó la tarea de una página.",
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|eliminado}} tu asignación de la página $2",
-	"bs-pageassignments-event-assignment-remove-bot": "Tu tarea fue eliminada de la página $1",
-	"managepageassignments": "Gestión de asignaciones"
+	"bs-pageassignments-event-assignment-remove-bot": "Tu tarea fue eliminada de la página $1"
 }

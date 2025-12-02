@@ -7,6 +7,7 @@
 	},
 	"bs-pageassignments-desc": "Omogoča vam, da strani dodelite uporabnike ali skupine",
 	"pageassignments": "Dodelitve",
+	"managepageassignments": "Upravljanje dodelitev",
 	"bs-pageassignments-text": "Dodelitve",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Dodatna dovoljenja za dodeljene uporabnike",
 	"bs-pageassignments-dlg-title": "Dodelitve",
@@ -79,6 +80,5 @@
 	"bs-pageassignments-event-assignment-links-intro": "Obiščite stran na naslednji povezavi in preverite svojo nalogo",
 	"bs-pageassignments-event-assignment-remove-key-desc": "Odstranjena naloga s strani",
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|je odstranil|je odstranila|je odstranil_a}} vašo nalogo s strani $2",
-	"bs-pageassignments-event-assignment-remove-bot": "Vaša naloga je bila odstranjena s strani $1",
-	"managepageassignments": "Upravljanje dodelitev"
+	"bs-pageassignments-event-assignment-remove-bot": "Vaša naloga je bila odstranjena s strani $1"
 }
