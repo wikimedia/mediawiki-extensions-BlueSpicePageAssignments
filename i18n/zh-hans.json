@@ -106,5 +106,10 @@
 	"bs-pageassignments-header-action-delete": "删除",
 	"bs-pageassignments-title-edit": "编辑分配",
 	"bs-pageassignments-title-delete": "刪除分配",
-	"bs-pageassignments-show-unassigned-pages": "显示未分配的页面"
+	"bs-pageassignments-show-unassigned-pages": "显示未分配的页面",
+	"bs-pageassignments-event-assignment-add-bot": "您被分配到页面$1",
+	"bs-pageassignments-event-assignment-links-intro": "请访问以下链接页面来检查您的分配",
+	"bs-pageassignments-event-assignment-remove-key-desc": "已从页面上移除分配",
+	"bs-pageassignments-event-assignment-remove": "已从页面$2{{GENDER:$1|移除}}您的分配",
+	"bs-pageassignments-event-assignment-remove-bot": "已从页面$1移除掉您的分配"
 }
