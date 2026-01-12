@@ -65,6 +65,7 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Ikke-tildelte sider",
 	"bs-pageassignments-pageheader-label": "Tildelinger",
 	"bs-pageassignments-statistics-report-assigned-pages": "Tildelte sider",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Tidelte og ikke-tildelte sider i den valgte tidsperioden, kan filtreres etter kategori og navnerom",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Tildelt",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Ikke tildelt",
 	"bs-pageassignments-dialog-input-placeholder": "Legg til oppgaver …",
