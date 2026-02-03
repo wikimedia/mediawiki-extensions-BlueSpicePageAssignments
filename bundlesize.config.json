@@ -1,6 +1,10 @@
 [
 	{
 		"resourceModule": "ext.pageassignments.scripts",
-		"maxSize": "0.6 kB"
+		"maxSize": "2 kB"
+	},
+	{
+		"resourceModule": "ext.bluespice.pageassignments.assignable.messages",
+		"maxSize": "2 kB"
 	}
 ]
