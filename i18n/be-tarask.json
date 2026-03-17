@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Renessaince",
-			"W"
+			"W",
+			"Ucukor"
 		]
 	},
 	"bs-pageassignments-column-title": "Загаловак старонкі",
-	"bs-usagetracker-pageassignments": "старонкі з прысваеньнямі"
+	"bs-usagetracker-pageassignments": "старонкі з прысваеньнямі",
+	"bs-pageassignments-header-action-edit": "Рэдагаваць"
 }
