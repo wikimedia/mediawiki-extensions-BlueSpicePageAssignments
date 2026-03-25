@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"BadDog",
 			"Kizule",
 			"Milicevic01",
@@ -14,5 +15,8 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Број страница",
 	"bs-pageassignments-notification-pagereview-summary": "$1 је прегледао $3",
 	"bs-pageassignments-notification-pagereview-body": "$1 је прегледао страницу $2.",
-	"bs-pageassignments-column-assignedto": "Додељено"
+	"bs-pageassignments-column-assignedto": "Додељено",
+	"bs-pageassignments-column-assignee-type": "Тип",
+	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Додељене странице",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Додели"
 }

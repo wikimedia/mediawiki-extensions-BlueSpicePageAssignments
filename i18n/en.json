@@ -98,5 +98,22 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Number of pages",
 	"bs-pageassignments-notification-pagereview-summary": "$1 has reviewed $3",
 	"bs-pageassignments-notification-pagereview-subject": "Review of page $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 has reviewed page $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 has reviewed page $2.",
+	"bs-pageassignments-column-assignee-type": "Type",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Assigned and unassigned pages in the selected period, filterable by category and namespace",
+	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Assigned pages",
+	"bs-pageassignments-event-assignment-add-key-desc": "Assigned to a page",
+	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|assigned}} you to the page $2",
+	"bs-pageassignments-event-assignment-add-bot": "You were assigned to the page $1",
+	"bs-pageassignments-event-assignment-links-intro": "Please visit the page at the following link to check your assignment",
+	"bs-pageassignments-event-assignment-remove-key-desc": "Removed assignment from a page",
+	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|removed}} your assignment from the page $2",
+	"bs-pageassignments-event-assignment-remove-bot": "Your assignment was removed from the page $1",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assign",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Edit assignments for $1",
+	"bs-pageassignments-header-action-edit": "Edit",
+	"bs-pageassignments-header-action-delete": "Delete",
+	"bs-pageassignments-title-edit": "Edit assignments",
+	"bs-pageassignments-title-delete": "Delete assignments",
+	"bs-pageassignments-show-unassigned-pages": "Show unassigned pages"
 }

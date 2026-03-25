@@ -99,5 +99,22 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 ha revidite $3",
 	"bs-pageassignments-notification-pagereview-subject": "Revision del pagina $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 ha revidite le pagina $2.",
-	"bs-pageassignments-column-assignedto": "Assignate a"
+	"bs-pageassignments-column-assignedto": "Assignate a",
+	"bs-pageassignments-column-assignee-type": "Typo",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Paginas assignate e non assignate in le periodo seligite, filtrabile per categoria e spatio de nomines",
+	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Paginas assignate",
+	"bs-pageassignments-event-assignment-add-key-desc": "Assignate a un pagina",
+	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|te ha assignate}} al pagina $2",
+	"bs-pageassignments-event-assignment-add-bot": "Tu ha essite assignate al pagina $1",
+	"bs-pageassignments-event-assignment-links-intro": "Per favor visita le pagina con le ligamine sequente pro verificar tu assignation",
+	"bs-pageassignments-event-assignment-remove-key-desc": "Assignation removite de un pagina",
+	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|ha removite}} tu assignation del pagina $2",
+	"bs-pageassignments-event-assignment-remove-bot": "Tu assignation ha essite removite del pagina $1",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assignar",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modificar le assignationes pro $1",
+	"bs-pageassignments-header-action-edit": "Modificar",
+	"bs-pageassignments-header-action-delete": "Deler",
+	"bs-pageassignments-title-edit": "Modificar assignationes",
+	"bs-pageassignments-title-delete": "Deler assignationes",
+	"bs-pageassignments-show-unassigned-pages": "Monstrar paginas non assignate"
 }

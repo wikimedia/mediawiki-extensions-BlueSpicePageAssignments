@@ -95,5 +95,10 @@
 	"bs-pageassignments-secure-lockdown-reason": "L'azione \"$1\" è disponibile solo per {{PLURAL:$2|l'assegnatario|gli assegnatari}} $3",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Assegnato a {{PLURAL:$2|pagina|pagine}}: $1",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Numero di pagine",
-	"bs-pageassignments-column-assignedto": "Assegnato  a"
+	"bs-pageassignments-column-assignedto": "Assegnato  a",
+	"bs-pageassignments-column-assignee-type": "Tipo",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assegna",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifica le assegnazioni per $1",
+	"bs-pageassignments-header-action-edit": "Modifica",
+	"bs-pageassignments-header-action-delete": "Cancella"
 }

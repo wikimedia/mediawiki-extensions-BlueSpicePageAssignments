@@ -101,5 +101,6 @@
 	"bs-pageassignments-notification-pagereview-body": "$1 har gjennomgått $2",
 	"bs-pageassignments-column-assignedto": "Delegert til",
 	"bs-pageassignment-info-dialog": "Tildelinger",
-	"bs-pageassignments-dialog-input-placeholder": "Legg til oppgaver …"
+	"bs-pageassignments-dialog-input-placeholder": "Legg til oppgaver …",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Tidelte og ikke-tildelte sider i den valgte tidsperioden, kan filtreres etter kategori og navnerom"
 }
