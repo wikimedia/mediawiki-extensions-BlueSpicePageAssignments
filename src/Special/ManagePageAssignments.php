@@ -8,7 +8,12 @@ use OOJSPlus\Special\OOJSGridSpecialPage;
 class ManagePageAssignments extends OOJSGridSpecialPage {
 
 	public function __construct() {
-		parent::__construct( 'ManagePageAssignments', 'pageassignments' );
+		parent::__construct( 'ManagePageAssignments' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'pageassignments';
 	}
 
 	/**
