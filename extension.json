@@ -196,7 +196,6 @@
 	"AutoloadClasses": {
 		"BSApiMyPageAssignmentStore": "includes/api/BSApiMyPageAssignmentStore.php",
 		"PageAssignmentsHooks": "includes/PageAssignmentsHooks.php",
-		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
 		"PageAssignmentsWikiExplorerHooks": "includes/PageAssignmentsWikiExplorerHooks.php",
 		"BSPageAssignmentsMigrateRespEditors": "maintenance/BSPageAssignmentsMigrateRespEditors.php"
 	},
@@ -449,7 +448,6 @@
 		"ArticleDeleteComplete": [
 			"PageAssignmentsHooks::onArticleDeleteComplete"
 		],
-		"BSBookshelfManagerGetBookDataRow": "PageAssignmentsBookmakerHooks::onBSBookshelfManagerGetBookDataRow",
 		"WikiExplorer::queryPagesWithFilter": "PageAssignmentsWikiExplorerHooks::onWikiExplorerQueryPagesWithFilter",
 		"WikiExplorer::buildDataSets": "PageAssignmentsWikiExplorerHooks::onWikiExplorerBuildDataSets",
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageAssignments\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageAssignmentsPagesTag::callback",
