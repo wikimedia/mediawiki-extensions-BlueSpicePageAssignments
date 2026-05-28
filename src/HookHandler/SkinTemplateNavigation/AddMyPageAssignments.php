@@ -26,7 +26,7 @@ class AddMyPageAssignments implements SkinTemplateNavigation__UniversalHook {
 			'id' => 'pt-pageassignments',
 			'href' => SpecialPage::getTitleFor( 'PageAssignments' )->getLocalURL(),
 			'text' => $specialPage->getDescription(),
-			'position' => 60,
+			'position' => 201,
 		];
 	}
 }
