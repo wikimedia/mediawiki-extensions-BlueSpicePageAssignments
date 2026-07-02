@@ -73,7 +73,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 has reviewed $3",
 	"bs-pageassignments-notification-pagereview-subject": "Review of page $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 has reviewed page $2.",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Assigned pages",
 	"bs-pageassignments-event-assignment-add-key-desc": "Assigned to a page",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|assigned}} you to the page $2",
 	"bs-pageassignments-event-assignment-add-bot": "You were assigned to the page $1",
@@ -87,5 +86,6 @@
 	"bs-pageassignments-header-action-delete": "Delete",
 	"bs-pageassignments-title-edit": "Edit assignments",
 	"bs-pageassignments-title-delete": "Delete assignments",
-	"bs-pageassignments-show-unassigned-pages": "Show unassigned pages"
+	"bs-pageassignments-show-unassigned-pages": "Show unassigned pages",
+	"bs-pageassignments-notifications-watchlist-description": "You are assigned to this page"
 }

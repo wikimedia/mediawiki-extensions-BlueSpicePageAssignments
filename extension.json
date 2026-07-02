@@ -103,12 +103,6 @@
 			}
 		},
 		"NotifyMe": {
-			"ManualSubscriberProviderSets": {
-				"pa-assigned-pages": {
-					"class": "\\BlueSpice\\PageAssignments\\Notifications\\SubscriberProviderSet\\Assigned",
-					"services": [ "DBLoadBalancer", "BSPageAssignmentsAssignmentFactory", "UserGroupManager" ]
-				}
-			},
 			"Events": {
 				"bs-pa-assignment-add": {
 					"spec": {
@@ -331,18 +325,6 @@
 				"ext.bluespice"
 			]
 		},
-		"ext.bluespice.pageassignments.notifications.subscriptionSet": {
-			"scripts": [
-				"ui/notifications/AssignedPagesSubscriptionSet.js"
-			],
-			"messages": [
-				"bs-pageassignments-notification-ui-subscriptionset-assigned-pages"
-			],
-			"dependencies": [
-				"ext.notifyme.subscription.set",
-				"ext.bluespice"
-			]
-		},
 		"ext.pageassignments.bookshelf.createNewBook": {
 			"scripts": [
 				"bluespice.pageassignments.bookshelf.createBook.js"
@@ -430,6 +412,10 @@
 		},
 		"addNamespaceProperties": {
 			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\NamespaceManagerCollectNamespaceProperties\\AddNamespaceProperties"
+		},
+		"notifyMeAddAssigneesAsWatchers": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\NotifyMeAddAssigneesAsWatchers",
+			"services": [ "BSPageAssignmentsAssignmentFactory", "UserFactory" ]
 		}
 	},
 	"Hooks": {
@@ -463,7 +449,9 @@
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
 		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
 		"BSBookshelfBooksOverviewBeforeSetBookActions": "bs-books-overview-page-actions",
-		"NamespaceManagerCollectNamespaceProperties": "addNamespaceProperties"
+		"NamespaceManagerCollectNamespaceProperties": "addNamespaceProperties",
+		"NotifyMeWatchlistProviderGetWatchers": "notifyMeAddAssigneesAsWatchers",
+		"NotifyMeWatchlistProviderGetWatchSource": "notifyMeAddAssigneesAsWatchers"
 	},
 	"manifest_version": 2
 }

@@ -83,7 +83,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "Notification summary that describes who approved what page.\n* $1 - username of the user that approved the page.\n* $3 - Name of the page, that was approved",
 	"bs-pageassignments-notification-pagereview-subject": "Notification subject that describes, what page was approved.\n* $2 - Name of the page, that was approved",
 	"bs-pageassignments-notification-pagereview-body": "Notification body that describes, who approved what page.\n* $1 - username of the user that approved the page.\n* $2 - name of the page, that was approved",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Label for the Notifications subscription set",
 	"bs-pageassignments-event-assignment-add-key-desc": "Notification title label. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
 	"bs-pageassignments-event-assignment-add": "Notification message user is assigned to a page. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments\n\n* $1 - agent\n* $2 - page anchor",
 	"bs-pageassignments-event-assignment-add-bot": "Notification message user is assigned to a page, by a bot. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments\n\n* $1 - page anchor",
@@ -97,5 +96,6 @@
 	"bs-pageassignments-header-action-delete": "Header text for the column that allows deleting assignments\n{{Identical|Delete}}",
 	"bs-pageassignments-title-edit": "Title for “Edit assignments” icon. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
 	"bs-pageassignments-title-delete": "Title for “Delete assignments” icon. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
-	"bs-pageassignments-show-unassigned-pages": "Label for \"Show unassigned pages\" button"
+	"bs-pageassignments-show-unassigned-pages": "Label for \"Show unassigned pages\" button",
+	"bs-pageassignments-notifications-watchlist-description": "Reason user receives a notification - assigned to the page"
 }
