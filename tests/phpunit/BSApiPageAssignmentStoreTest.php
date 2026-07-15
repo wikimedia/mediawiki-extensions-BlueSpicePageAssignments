@@ -15,13 +15,11 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  */
 class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	/**
-	 *
 	 * @var int
 	 */
 	protected $iFixtureTotal = 7;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $aPages = [
@@ -34,7 +32,6 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	];
 
 	/**
-	 *
 	 * @return true
 	 */
 	protected function skipAssertTotal() {
@@ -42,7 +39,6 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getStoreSchema() {
@@ -60,7 +56,6 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function createStoreFixtureData() {
@@ -88,7 +83,6 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getModuleName() {
@@ -96,7 +90,6 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function provideSingleFilterData() {
@@ -119,7 +112,6 @@ class BSApiPageAssignmentStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function provideMultipleFilterData() {
