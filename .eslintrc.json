@@ -21,6 +21,7 @@
 		"es-x/no-async-functions": "off",
 		"es-x/no-object-values": "off",
 		"max-len": "off",
-		"no-prototype-builtins": "off"
+		"no-prototype-builtins": "off",
+		"no-jquery/no-done-fail": "warn"
 	}
 }
