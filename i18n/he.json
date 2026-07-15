@@ -77,7 +77,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 {{GENDER:$1|סקר|סקרה}} את $3",
 	"bs-pageassignments-notification-pagereview-subject": "סקירה של הדף $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 {{gender:$1|סקר|סקרה}} את הדף $2.",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "דפים משויכים",
 	"bs-pageassignments-event-assignment-add-key-desc": "משויך לדף",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|שייך|שייכה}} אותך לדף $2.",
 	"bs-pageassignments-event-assignment-add-bot": "שויכת לדף $1",

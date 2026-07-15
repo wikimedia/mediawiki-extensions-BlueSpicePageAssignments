@@ -79,7 +79,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "استعرض $1 $3",
 	"bs-pageassignments-notification-pagereview-subject": "مراجعة الصفحة $2",
 	"bs-pageassignments-notification-pagereview-body": "قام $1 بمراجعة الصفحة $2 .",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "الصفحات المخصصة",
 	"bs-pageassignments-event-assignment-add-key-desc": "مُخصصة لصفحة",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|أوكلك}} أنت إلى الصفحة $2",
 	"bs-pageassignments-event-assignment-add-bot": "تم تعيينك للصفحة $1",

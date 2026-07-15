@@ -78,7 +78,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1님이 $3 문서를 검토했습니다",
 	"bs-pageassignments-notification-pagereview-subject": "$2 문서의 검토",
 	"bs-pageassignments-notification-pagereview-body": "$1님이 $2 문서를 검토했습니다.",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "할당된 문서",
 	"bs-pageassignments-event-assignment-add-key-desc": "문서에 할당",
 	"bs-pageassignments-event-assignment-add": "당신을 $2 문서에 {{GENDER:$1|할당했습니다}}",
 	"bs-pageassignments-event-assignment-add-bot": "$1 문서에 할당되었습니다",

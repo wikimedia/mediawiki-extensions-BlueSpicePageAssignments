@@ -75,7 +75,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 revisou «$3»",
 	"bs-pageassignments-notification-pagereview-subject": "Revisión da páxina «$2»",
 	"bs-pageassignments-notification-pagereview-body": "$1 revisou a páxina «$2».",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Páxinas asignadas",
 	"bs-pageassignments-event-assignment-add-key-desc": "Asignado a unha páxina",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|asignouche}} a páxina «$2»",
 	"bs-pageassignments-event-assignment-add-bot": "Asignáronche a páxina «$1»",
@@ -89,5 +88,6 @@
 	"bs-pageassignments-header-action-delete": "Eliminar",
 	"bs-pageassignments-title-edit": "Editar asignacións",
 	"bs-pageassignments-title-delete": "Eliminar asignacións",
-	"bs-pageassignments-show-unassigned-pages": "Mostrar as páxinas non asignadas"
+	"bs-pageassignments-show-unassigned-pages": "Mostrar as páxinas non asignadas",
+	"bs-pageassignments-notifications-watchlist-description": "Tes asignada esta páxina"
 }

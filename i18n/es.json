@@ -82,7 +82,6 @@
 	"bs-pageassignments-dialog-input-placeholder": "Añadir asignaciones...",
 	"bs-pageassignment-info-dialog": "Asignaciones",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Páginas asignadas",
 	"bs-pageassignments-event-assignment-add-key-desc": "Asignado a una página",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|te mencionó}} en la página $2",
 	"bs-pageassignments-event-assignment-add-bot": "Se te ha asignado la página $1",

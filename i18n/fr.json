@@ -85,7 +85,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 a relu $3",
 	"bs-pageassignments-notification-pagereview-subject": "Relecture de la page $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 a relu la page $2.",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Pages affectées",
 	"bs-pageassignments-event-assignment-add-key-desc": "Affecté à une page",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|}}vous a affecté à la page $2",
 	"bs-pageassignments-event-assignment-add-bot": "Vous avez été affecté à la page $1",

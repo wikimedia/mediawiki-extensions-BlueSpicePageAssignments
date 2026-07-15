@@ -75,7 +75,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1已檢閱$3",
 	"bs-pageassignments-notification-pagereview-subject": "$2頁的檢閱",
 	"bs-pageassignments-notification-pagereview-body": "$1已檢閱頁面$2。",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "已分配頁面",
 	"bs-pageassignments-event-assignment-add-key-desc": "已分配到一個頁面",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|分配}}給您頁面$2",
 	"bs-pageassignments-event-assignment-add-bot": "您被分配到頁面$1",
