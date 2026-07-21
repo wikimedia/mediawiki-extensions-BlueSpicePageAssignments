@@ -73,7 +73,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 ha revidite $3",
 	"bs-pageassignments-notification-pagereview-subject": "Revision del pagina $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 ha revidite le pagina $2.",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Paginas assignate",
 	"bs-pageassignments-event-assignment-add-key-desc": "Assignate a un pagina",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|te ha assignate}} al pagina $2",
 	"bs-pageassignments-event-assignment-add-bot": "Tu ha essite assignate al pagina $1",

@@ -86,7 +86,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 hat $3 überprüft",
 	"bs-pageassignments-notification-pagereview-subject": "Überprüfung der Seite $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 hat Seite $2 überprüft.",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Zugewiesene Seiten",
 	"bs-pageassignments-event-assignment-add-key-desc": "Einer Seite zugewiesen",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|wies}} {{#FORMAL:dich|Sie}} der Seite $2 zu",
 	"bs-pageassignments-event-assignment-add-bot": "Du wurdest der Seite $1 zugewiesen",

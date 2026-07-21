@@ -71,7 +71,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 jóváhagyta $3-t",
 	"bs-pageassignments-notification-pagereview-subject": "$2 lap jóváhagyása",
 	"bs-pageassignments-notification-pagereview-body": "$1 jóváhagyta a(z)$2 lapot.",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Hozzárendelt lapok",
 	"bs-pageassignments-event-assignment-add-key-desc": "Laphoz hozzárendelve",
 	"bs-pageassignments-event-assignment-add": "{{GENDER:$1|hozzárendelt}} a(z) $2 laphoz",
 	"bs-pageassignments-event-assignment-add-bot": "Hozzá lettél rendelve a(z) $1 laphoz",

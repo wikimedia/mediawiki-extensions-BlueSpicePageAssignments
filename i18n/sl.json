@@ -73,7 +73,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 je pregledal_a $3",
 	"bs-pageassignments-notification-pagereview-subject": "Pregled strani $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 je pregledal_a stran $2.",
-	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Dodeljene strani",
 	"bs-pageassignments-event-assignment-add-key-desc": "Dodeljeno strani",
 	"bs-pageassignments-event-assignment-add": "vas je {{GENDER:$1|dodelil|dodelila|dodelil_a}} strani $2.",
 	"bs-pageassignments-event-assignment-add-bot": "Dodeljeni ste bili strani $1",
