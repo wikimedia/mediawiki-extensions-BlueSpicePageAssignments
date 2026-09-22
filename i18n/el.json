@@ -4,13 +4,15 @@
 			"KATRINE1993",
 			"NikosLikomitros",
 			"Nikosgranturismogt",
-			"Protnet"
+			"Protnet",
+			"PrinceAzuka134"
 		]
 	},
 	"bs-pageassignments-column-title": "Τίτλος σελίδας",
 	"bs-pageassignments-api-error": "Ενα σφάλμα συνέβη",
 	"bs-pageassignments-api-error-no-page": "Η σελίδα δεν ορίστηκε",
 	"logeventslist-bs-pageassignments-log": "Μητρώο αναθέσεων",
+	"bs-pageassignments-pref-lockdowngroups": "Ομάδες που κλειδώνονται για μια σελίδα όταν δεν έχει εκχωρηθεί ο χρήστης",
 	"bs-pageassignments-assignee-special-everyone-label": "ο καθένας",
 	"bs-pageassignments-assignee-type-everyone": "ο καθένας",
 	"bs-pageassignments-assignee-type-user": "Χρήστης",
