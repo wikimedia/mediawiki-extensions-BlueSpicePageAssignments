@@ -4,6 +4,7 @@ namespace BlueSpice\PageAssignments\Assignment;
 
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\User as MediaWikiUser;
+use Wikimedia\HtmlArmor\HtmlArmor;
 
 class User extends \BlueSpice\PageAssignments\Assignment {
 
@@ -13,7 +14,7 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	protected function makeAnchor() {
 		return $this->linkRenderer->makeLink(
 			$this->getUser()->getUserPage(),
-			new \HtmlArmor( $this->getText() )
+			new HtmlArmor( $this->getText() )
 		);
 	}
 
