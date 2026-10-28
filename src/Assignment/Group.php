@@ -4,6 +4,7 @@ namespace BlueSpice\PageAssignments\Assignment;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\Title\Title;
+use Wikimedia\HtmlArmor\HtmlArmor;
 
 class Group extends \BlueSpice\PageAssignments\Assignment {
 
@@ -18,7 +19,7 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 	protected function makeAnchor() {
 		return $this->linkRenderer->makeLink(
 			Title::makeTitle( NS_PROJECT, $this->getText() ),
-			new \HtmlArmor( $this->getText() )
+			new HtmlArmor( $this->getText() )
 		);
 	}
 
